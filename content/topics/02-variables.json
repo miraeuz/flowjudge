@@ -1,0 +1,3188 @@
+{
+  "id": "variables",
+  "order": 2,
+  "title": {
+    "uz": "O‘zgaruvchilar va Assign",
+    "en": "Variables and Assign"
+  },
+  "lesson": {
+    "uz": "Declare bloki nom va turni belgilaydi. Integer — butun son, Real — kasr son, String — matn, Boolean — True yoki False. Assign qiymatni saqlaydi: total = price * count.\nAvval e’lon qiling, so‘ng qiymat bering, oxirida Output qiling. O‘zgaruvchi nomida bo‘sh joy ishlatmang. Bu mavzudagi sonlar shartda beriladi; Input qo‘shmang. Qiymat o‘zgarganda eski qiymatning o‘rniga yangisi yoziladi.",
+    "en": "Declare gives a variable its name and type. Integer stores whole numbers, Real decimals, String text, and Boolean True or False. Assign stores a value: total = price * count.\nDeclare first, assign second, output last. Variable names cannot contain spaces. These tasks supply constants in the statement: do not add Input. An assignment replaces the old value."
+  },
+  "concepts": [
+    {
+      "title": {
+        "uz": "Bloklar",
+        "en": "Blocks"
+      },
+      "text": {
+        "uz": "Shartdagi talab etilgan bloklarga e’tibor bering.",
+        "en": "Check the required blocks in each task."
+      }
+    },
+    {
+      "title": {
+        "uz": "Tekshirish",
+        "en": "Testing"
+      },
+      "text": {
+        "uz": "Har bir Input alohida qatorni o‘qiydi. Natijani namuna bilan taqqoslang.",
+        "en": "Each Input reads one line. Compare your output with the examples."
+      }
+    }
+  ],
+  "classwork": [
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Ikki yetkazish",
+        "en": "School shop: Two deliveries"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: a=26, b=2 qiymatlarni Declare va Assign bilan saqlang. a+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "School shop: Declare and assign a=26, b=2. Store the result of a+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "28"
+        },
+        {
+          "in": "",
+          "out": "28"
+        },
+        {
+          "in": "",
+          "out": "28",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-1",
+        "number": 1
+      },
+      "id": "variables-01",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Ikki yetkazish",
+        "en": "Library: Two deliveries"
+      },
+      "statement": {
+        "uz": "Kutubxona: a=29, b=3 qiymatlarni Declare va Assign bilan saqlang. a+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Library: Declare and assign a=29, b=3. Store the result of a+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "32"
+        },
+        {
+          "in": "",
+          "out": "32"
+        },
+        {
+          "in": "",
+          "out": "32",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-1",
+        "number": 2
+      },
+      "id": "variables-02",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Ikki yetkazish",
+        "en": "Sports centre: Two deliveries"
+      },
+      "statement": {
+        "uz": "Sport markazi: a=32, b=4 qiymatlarni Declare va Assign bilan saqlang. a+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Sports centre: Declare and assign a=32, b=4. Store the result of a+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "36"
+        },
+        {
+          "in": "",
+          "out": "36"
+        },
+        {
+          "in": "",
+          "out": "36",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-1",
+        "number": 3
+      },
+      "id": "variables-03",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Ikki yetkazish",
+        "en": "Learning centre: Two deliveries"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: a=35, b=5 qiymatlarni Declare va Assign bilan saqlang. a+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Learning centre: Declare and assign a=35, b=5. Store the result of a+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "40"
+        },
+        {
+          "in": "",
+          "out": "40"
+        },
+        {
+          "in": "",
+          "out": "40",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-1",
+        "number": 4
+      },
+      "id": "variables-04",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Ikki yetkazish",
+        "en": "Community club: Two deliveries"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: a=38, b=6 qiymatlarni Declare va Assign bilan saqlang. a+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Community club: Declare and assign a=38, b=6. Store the result of a+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "44"
+        },
+        {
+          "in": "",
+          "out": "44"
+        },
+        {
+          "in": "",
+          "out": "44",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-1",
+        "number": 5
+      },
+      "id": "variables-05",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Ikki yetkazish",
+        "en": "Summer camp: Two deliveries"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: a=41, b=7 qiymatlarni Declare va Assign bilan saqlang. a+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Summer camp: Declare and assign a=41, b=7. Store the result of a+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "48"
+        },
+        {
+          "in": "",
+          "out": "48"
+        },
+        {
+          "in": "",
+          "out": "48",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-1",
+        "number": 6
+      },
+      "id": "variables-06",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Ikki yetkazish",
+        "en": "Book fair: Two deliveries"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: a=44, b=8 qiymatlarni Declare va Assign bilan saqlang. a+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Book fair: Declare and assign a=44, b=8. Store the result of a+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "52"
+        },
+        {
+          "in": "",
+          "out": "52"
+        },
+        {
+          "in": "",
+          "out": "52",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-1",
+        "number": 7
+      },
+      "id": "variables-07",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Ikki yetkazish",
+        "en": "Travel group: Two deliveries"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: a=47, b=9 qiymatlarni Declare va Assign bilan saqlang. a+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Travel group: Declare and assign a=47, b=9. Store the result of a+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "56"
+        },
+        {
+          "in": "",
+          "out": "56"
+        },
+        {
+          "in": "",
+          "out": "56",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-1",
+        "number": 8
+      },
+      "id": "variables-08",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Ikki yetkazish",
+        "en": "Workshop: Two deliveries"
+      },
+      "statement": {
+        "uz": "Ustaxona: a=50, b=10 qiymatlarni Declare va Assign bilan saqlang. a+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Workshop: Declare and assign a=50, b=10. Store the result of a+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "60"
+        },
+        {
+          "in": "",
+          "out": "60"
+        },
+        {
+          "in": "",
+          "out": "60",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-1",
+        "number": 9
+      },
+      "id": "variables-09",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Ikki yetkazish",
+        "en": "Volunteer team: Two deliveries"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: a=53, b=11 qiymatlarni Declare va Assign bilan saqlang. a+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Volunteer team: Declare and assign a=53, b=11. Store the result of a+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "64"
+        },
+        {
+          "in": "",
+          "out": "64"
+        },
+        {
+          "in": "",
+          "out": "64",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-1",
+        "number": 10
+      },
+      "id": "variables-10",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Buyurtma narxi",
+        "en": "School shop: Order price"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: a=26, b=2 qiymatlarni Declare va Assign bilan saqlang. a*b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "School shop: Declare and assign a=26, b=2. Store the result of a*b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "52"
+        },
+        {
+          "in": "",
+          "out": "52"
+        },
+        {
+          "in": "",
+          "out": "52",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-2",
+        "number": 1
+      },
+      "id": "variables-11",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Buyurtma narxi",
+        "en": "Library: Order price"
+      },
+      "statement": {
+        "uz": "Kutubxona: a=29, b=3 qiymatlarni Declare va Assign bilan saqlang. a*b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Library: Declare and assign a=29, b=3. Store the result of a*b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "87"
+        },
+        {
+          "in": "",
+          "out": "87"
+        },
+        {
+          "in": "",
+          "out": "87",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-2",
+        "number": 2
+      },
+      "id": "variables-12",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Buyurtma narxi",
+        "en": "Sports centre: Order price"
+      },
+      "statement": {
+        "uz": "Sport markazi: a=32, b=4 qiymatlarni Declare va Assign bilan saqlang. a*b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Sports centre: Declare and assign a=32, b=4. Store the result of a*b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "128"
+        },
+        {
+          "in": "",
+          "out": "128"
+        },
+        {
+          "in": "",
+          "out": "128",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-2",
+        "number": 3
+      },
+      "id": "variables-13",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Buyurtma narxi",
+        "en": "Learning centre: Order price"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: a=35, b=5 qiymatlarni Declare va Assign bilan saqlang. a*b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Learning centre: Declare and assign a=35, b=5. Store the result of a*b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "175"
+        },
+        {
+          "in": "",
+          "out": "175"
+        },
+        {
+          "in": "",
+          "out": "175",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-2",
+        "number": 4
+      },
+      "id": "variables-14",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Buyurtma narxi",
+        "en": "Community club: Order price"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: a=38, b=6 qiymatlarni Declare va Assign bilan saqlang. a*b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Community club: Declare and assign a=38, b=6. Store the result of a*b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "228"
+        },
+        {
+          "in": "",
+          "out": "228"
+        },
+        {
+          "in": "",
+          "out": "228",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-2",
+        "number": 5
+      },
+      "id": "variables-15",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Buyurtma narxi",
+        "en": "Summer camp: Order price"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: a=41, b=7 qiymatlarni Declare va Assign bilan saqlang. a*b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Summer camp: Declare and assign a=41, b=7. Store the result of a*b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "287"
+        },
+        {
+          "in": "",
+          "out": "287"
+        },
+        {
+          "in": "",
+          "out": "287",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-2",
+        "number": 6
+      },
+      "id": "variables-16",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Buyurtma narxi",
+        "en": "Book fair: Order price"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: a=44, b=8 qiymatlarni Declare va Assign bilan saqlang. a*b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Book fair: Declare and assign a=44, b=8. Store the result of a*b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "352"
+        },
+        {
+          "in": "",
+          "out": "352"
+        },
+        {
+          "in": "",
+          "out": "352",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-2",
+        "number": 7
+      },
+      "id": "variables-17",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Buyurtma narxi",
+        "en": "Travel group: Order price"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: a=47, b=9 qiymatlarni Declare va Assign bilan saqlang. a*b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Travel group: Declare and assign a=47, b=9. Store the result of a*b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "423"
+        },
+        {
+          "in": "",
+          "out": "423"
+        },
+        {
+          "in": "",
+          "out": "423",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-2",
+        "number": 8
+      },
+      "id": "variables-18",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Buyurtma narxi",
+        "en": "Workshop: Order price"
+      },
+      "statement": {
+        "uz": "Ustaxona: a=50, b=10 qiymatlarni Declare va Assign bilan saqlang. a*b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Workshop: Declare and assign a=50, b=10. Store the result of a*b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "500"
+        },
+        {
+          "in": "",
+          "out": "500"
+        },
+        {
+          "in": "",
+          "out": "500",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-2",
+        "number": 9
+      },
+      "id": "variables-19",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Buyurtma narxi",
+        "en": "Volunteer team: Order price"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: a=53, b=11 qiymatlarni Declare va Assign bilan saqlang. a*b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Volunteer team: Declare and assign a=53, b=11. Store the result of a*b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "583"
+        },
+        {
+          "in": "",
+          "out": "583"
+        },
+        {
+          "in": "",
+          "out": "583",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-2",
+        "number": 10
+      },
+      "id": "variables-20",
+      "difficulty": "medium"
+    }
+  ],
+  "homework": [
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Qolgan zaxira",
+        "en": "School shop: Remaining stock"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: a=26, b=2 qiymatlarni Declare va Assign bilan saqlang. a-b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "School shop: Declare and assign a=26, b=2. Store the result of a-b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "24"
+        },
+        {
+          "in": "",
+          "out": "24"
+        },
+        {
+          "in": "",
+          "out": "24",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-3",
+        "number": 1
+      },
+      "id": "variables-21",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Qolgan zaxira",
+        "en": "Library: Remaining stock"
+      },
+      "statement": {
+        "uz": "Kutubxona: a=29, b=3 qiymatlarni Declare va Assign bilan saqlang. a-b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Library: Declare and assign a=29, b=3. Store the result of a-b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "26"
+        },
+        {
+          "in": "",
+          "out": "26"
+        },
+        {
+          "in": "",
+          "out": "26",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-3",
+        "number": 2
+      },
+      "id": "variables-22",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Qolgan zaxira",
+        "en": "Sports centre: Remaining stock"
+      },
+      "statement": {
+        "uz": "Sport markazi: a=32, b=4 qiymatlarni Declare va Assign bilan saqlang. a-b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Sports centre: Declare and assign a=32, b=4. Store the result of a-b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "28"
+        },
+        {
+          "in": "",
+          "out": "28"
+        },
+        {
+          "in": "",
+          "out": "28",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-3",
+        "number": 3
+      },
+      "id": "variables-23",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Qolgan zaxira",
+        "en": "Learning centre: Remaining stock"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: a=35, b=5 qiymatlarni Declare va Assign bilan saqlang. a-b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Learning centre: Declare and assign a=35, b=5. Store the result of a-b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "30"
+        },
+        {
+          "in": "",
+          "out": "30"
+        },
+        {
+          "in": "",
+          "out": "30",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-3",
+        "number": 4
+      },
+      "id": "variables-24",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Qolgan zaxira",
+        "en": "Community club: Remaining stock"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: a=38, b=6 qiymatlarni Declare va Assign bilan saqlang. a-b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Community club: Declare and assign a=38, b=6. Store the result of a-b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "32"
+        },
+        {
+          "in": "",
+          "out": "32"
+        },
+        {
+          "in": "",
+          "out": "32",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-3",
+        "number": 5
+      },
+      "id": "variables-25",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Qolgan zaxira",
+        "en": "Summer camp: Remaining stock"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: a=41, b=7 qiymatlarni Declare va Assign bilan saqlang. a-b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Summer camp: Declare and assign a=41, b=7. Store the result of a-b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "34"
+        },
+        {
+          "in": "",
+          "out": "34"
+        },
+        {
+          "in": "",
+          "out": "34",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-3",
+        "number": 6
+      },
+      "id": "variables-26",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Qolgan zaxira",
+        "en": "Book fair: Remaining stock"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: a=44, b=8 qiymatlarni Declare va Assign bilan saqlang. a-b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Book fair: Declare and assign a=44, b=8. Store the result of a-b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "36"
+        },
+        {
+          "in": "",
+          "out": "36"
+        },
+        {
+          "in": "",
+          "out": "36",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-3",
+        "number": 7
+      },
+      "id": "variables-27",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Qolgan zaxira",
+        "en": "Travel group: Remaining stock"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: a=47, b=9 qiymatlarni Declare va Assign bilan saqlang. a-b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Travel group: Declare and assign a=47, b=9. Store the result of a-b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "38"
+        },
+        {
+          "in": "",
+          "out": "38"
+        },
+        {
+          "in": "",
+          "out": "38",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-3",
+        "number": 8
+      },
+      "id": "variables-28",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Qolgan zaxira",
+        "en": "Workshop: Remaining stock"
+      },
+      "statement": {
+        "uz": "Ustaxona: a=50, b=10 qiymatlarni Declare va Assign bilan saqlang. a-b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Workshop: Declare and assign a=50, b=10. Store the result of a-b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "40"
+        },
+        {
+          "in": "",
+          "out": "40"
+        },
+        {
+          "in": "",
+          "out": "40",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-3",
+        "number": 9
+      },
+      "id": "variables-29",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Qolgan zaxira",
+        "en": "Volunteer team: Remaining stock"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: a=53, b=11 qiymatlarni Declare va Assign bilan saqlang. a-b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Volunteer team: Declare and assign a=53, b=11. Store the result of a-b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "42"
+        },
+        {
+          "in": "",
+          "out": "42"
+        },
+        {
+          "in": "",
+          "out": "42",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-3",
+        "number": 10
+      },
+      "id": "variables-30",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Yetkazish bilan narx",
+        "en": "School shop: Cost with delivery"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: a=26, b=2 qiymatlarni Declare va Assign bilan saqlang. a*b+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "School shop: Declare and assign a=26, b=2. Store the result of a*b+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "54"
+        },
+        {
+          "in": "",
+          "out": "54"
+        },
+        {
+          "in": "",
+          "out": "54",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-4",
+        "number": 1
+      },
+      "id": "variables-31",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Yetkazish bilan narx",
+        "en": "Library: Cost with delivery"
+      },
+      "statement": {
+        "uz": "Kutubxona: a=29, b=3 qiymatlarni Declare va Assign bilan saqlang. a*b+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Library: Declare and assign a=29, b=3. Store the result of a*b+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "90"
+        },
+        {
+          "in": "",
+          "out": "90"
+        },
+        {
+          "in": "",
+          "out": "90",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-4",
+        "number": 2
+      },
+      "id": "variables-32",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Yetkazish bilan narx",
+        "en": "Sports centre: Cost with delivery"
+      },
+      "statement": {
+        "uz": "Sport markazi: a=32, b=4 qiymatlarni Declare va Assign bilan saqlang. a*b+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Sports centre: Declare and assign a=32, b=4. Store the result of a*b+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "132"
+        },
+        {
+          "in": "",
+          "out": "132"
+        },
+        {
+          "in": "",
+          "out": "132",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-4",
+        "number": 3
+      },
+      "id": "variables-33",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Yetkazish bilan narx",
+        "en": "Learning centre: Cost with delivery"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: a=35, b=5 qiymatlarni Declare va Assign bilan saqlang. a*b+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Learning centre: Declare and assign a=35, b=5. Store the result of a*b+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "180"
+        },
+        {
+          "in": "",
+          "out": "180"
+        },
+        {
+          "in": "",
+          "out": "180",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-4",
+        "number": 4
+      },
+      "id": "variables-34",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Yetkazish bilan narx",
+        "en": "Community club: Cost with delivery"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: a=38, b=6 qiymatlarni Declare va Assign bilan saqlang. a*b+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Community club: Declare and assign a=38, b=6. Store the result of a*b+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "234"
+        },
+        {
+          "in": "",
+          "out": "234"
+        },
+        {
+          "in": "",
+          "out": "234",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-4",
+        "number": 5
+      },
+      "id": "variables-35",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Yetkazish bilan narx",
+        "en": "Summer camp: Cost with delivery"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: a=41, b=7 qiymatlarni Declare va Assign bilan saqlang. a*b+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Summer camp: Declare and assign a=41, b=7. Store the result of a*b+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "294"
+        },
+        {
+          "in": "",
+          "out": "294"
+        },
+        {
+          "in": "",
+          "out": "294",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-4",
+        "number": 6
+      },
+      "id": "variables-36",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Yetkazish bilan narx",
+        "en": "Book fair: Cost with delivery"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: a=44, b=8 qiymatlarni Declare va Assign bilan saqlang. a*b+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Book fair: Declare and assign a=44, b=8. Store the result of a*b+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "360"
+        },
+        {
+          "in": "",
+          "out": "360"
+        },
+        {
+          "in": "",
+          "out": "360",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-4",
+        "number": 7
+      },
+      "id": "variables-37",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Yetkazish bilan narx",
+        "en": "Travel group: Cost with delivery"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: a=47, b=9 qiymatlarni Declare va Assign bilan saqlang. a*b+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Travel group: Declare and assign a=47, b=9. Store the result of a*b+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "432"
+        },
+        {
+          "in": "",
+          "out": "432"
+        },
+        {
+          "in": "",
+          "out": "432",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-4",
+        "number": 8
+      },
+      "id": "variables-38",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Yetkazish bilan narx",
+        "en": "Workshop: Cost with delivery"
+      },
+      "statement": {
+        "uz": "Ustaxona: a=50, b=10 qiymatlarni Declare va Assign bilan saqlang. a*b+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Workshop: Declare and assign a=50, b=10. Store the result of a*b+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "510"
+        },
+        {
+          "in": "",
+          "out": "510"
+        },
+        {
+          "in": "",
+          "out": "510",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-4",
+        "number": 9
+      },
+      "id": "variables-39",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Yetkazish bilan narx",
+        "en": "Volunteer team: Cost with delivery"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: a=53, b=11 qiymatlarni Declare va Assign bilan saqlang. a*b+b ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Volunteer team: Declare and assign a=53, b=11. Store the result of a*b+b in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "594"
+        },
+        {
+          "in": "",
+          "out": "594"
+        },
+        {
+          "in": "",
+          "out": "594",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-4",
+        "number": 10
+      },
+      "id": "variables-40",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Uch bo‘lim rejasi",
+        "en": "School shop: Three-department plan"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: a=26, b=2 qiymatlarni Declare va Assign bilan saqlang. a+b+a ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "School shop: Declare and assign a=26, b=2. Store the result of a+b+a in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "54"
+        },
+        {
+          "in": "",
+          "out": "54"
+        },
+        {
+          "in": "",
+          "out": "54",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-5",
+        "number": 1
+      },
+      "id": "variables-41",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Uch bo‘lim rejasi",
+        "en": "Library: Three-department plan"
+      },
+      "statement": {
+        "uz": "Kutubxona: a=29, b=3 qiymatlarni Declare va Assign bilan saqlang. a+b+a ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Library: Declare and assign a=29, b=3. Store the result of a+b+a in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "61"
+        },
+        {
+          "in": "",
+          "out": "61"
+        },
+        {
+          "in": "",
+          "out": "61",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-5",
+        "number": 2
+      },
+      "id": "variables-42",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Uch bo‘lim rejasi",
+        "en": "Sports centre: Three-department plan"
+      },
+      "statement": {
+        "uz": "Sport markazi: a=32, b=4 qiymatlarni Declare va Assign bilan saqlang. a+b+a ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Sports centre: Declare and assign a=32, b=4. Store the result of a+b+a in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "68"
+        },
+        {
+          "in": "",
+          "out": "68"
+        },
+        {
+          "in": "",
+          "out": "68",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-5",
+        "number": 3
+      },
+      "id": "variables-43",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Uch bo‘lim rejasi",
+        "en": "Learning centre: Three-department plan"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: a=35, b=5 qiymatlarni Declare va Assign bilan saqlang. a+b+a ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Learning centre: Declare and assign a=35, b=5. Store the result of a+b+a in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "75"
+        },
+        {
+          "in": "",
+          "out": "75"
+        },
+        {
+          "in": "",
+          "out": "75",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-5",
+        "number": 4
+      },
+      "id": "variables-44",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Uch bo‘lim rejasi",
+        "en": "Community club: Three-department plan"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: a=38, b=6 qiymatlarni Declare va Assign bilan saqlang. a+b+a ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Community club: Declare and assign a=38, b=6. Store the result of a+b+a in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "82"
+        },
+        {
+          "in": "",
+          "out": "82"
+        },
+        {
+          "in": "",
+          "out": "82",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-5",
+        "number": 5
+      },
+      "id": "variables-45",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Uch bo‘lim rejasi",
+        "en": "Summer camp: Three-department plan"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: a=41, b=7 qiymatlarni Declare va Assign bilan saqlang. a+b+a ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Summer camp: Declare and assign a=41, b=7. Store the result of a+b+a in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "89"
+        },
+        {
+          "in": "",
+          "out": "89"
+        },
+        {
+          "in": "",
+          "out": "89",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-5",
+        "number": 6
+      },
+      "id": "variables-46",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Uch bo‘lim rejasi",
+        "en": "Book fair: Three-department plan"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: a=44, b=8 qiymatlarni Declare va Assign bilan saqlang. a+b+a ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Book fair: Declare and assign a=44, b=8. Store the result of a+b+a in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "96"
+        },
+        {
+          "in": "",
+          "out": "96"
+        },
+        {
+          "in": "",
+          "out": "96",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-5",
+        "number": 7
+      },
+      "id": "variables-47",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Uch bo‘lim rejasi",
+        "en": "Travel group: Three-department plan"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: a=47, b=9 qiymatlarni Declare va Assign bilan saqlang. a+b+a ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Travel group: Declare and assign a=47, b=9. Store the result of a+b+a in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "103"
+        },
+        {
+          "in": "",
+          "out": "103"
+        },
+        {
+          "in": "",
+          "out": "103",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-5",
+        "number": 8
+      },
+      "id": "variables-48",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Uch bo‘lim rejasi",
+        "en": "Workshop: Three-department plan"
+      },
+      "statement": {
+        "uz": "Ustaxona: a=50, b=10 qiymatlarni Declare va Assign bilan saqlang. a+b+a ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Workshop: Declare and assign a=50, b=10. Store the result of a+b+a in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "110"
+        },
+        {
+          "in": "",
+          "out": "110"
+        },
+        {
+          "in": "",
+          "out": "110",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-5",
+        "number": 9
+      },
+      "id": "variables-49",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Uch bo‘lim rejasi",
+        "en": "Volunteer team: Three-department plan"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: a=53, b=11 qiymatlarni Declare va Assign bilan saqlang. a+b+a ifoda natijasini r o‘zgaruvchiga yozib, chiqaring. Input ishlatmang.",
+        "en": "Volunteer team: Declare and assign a=53, b=11. Store the result of a+b+a in r and print r. Do not use Input."
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "117"
+        },
+        {
+          "in": "",
+          "out": "117"
+        },
+        {
+          "in": "",
+          "out": "117",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "assign"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "variables-5",
+        "number": 10
+      },
+      "id": "variables-50",
+      "difficulty": "hard"
+    }
+  ]
+}

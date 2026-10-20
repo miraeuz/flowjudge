@@ -1,0 +1,3688 @@
+{
+  "id": "functions",
+  "order": 14,
+  "title": {
+    "uz": "Funksiyalar",
+    "en": "Functions"
+  },
+  "lesson": {
+    "uz": "Funksiya takror ishlatiladigan vazifani nom bilan ajratadi. Parametrlar kirish qiymatlari, return variable esa natija. Main ichida natijani F(a,b) kabi ifoda orqali oling.\nFunksiyaga faqat kerakli parametrlarni bering. Mahalliy o‘zgaruvchilar boshqa funksiyaga avtomatik ko‘rinmaydi. Bu mavzuda hisobni alohida funksiyada bajaring; Main kiritish va chiqarish bilan shug‘ullansin.",
+    "en": "A function names a reusable operation. Parameters supply input and the return variable holds its result. In Main, call it in an expression such as F(a,b).\nPass only the needed parameters. Local variables are not automatically visible in other functions. Put the calculation in a separate function; let Main handle input and output."
+  },
+  "concepts": [
+    {
+      "title": {
+        "uz": "Bloklar",
+        "en": "Blocks"
+      },
+      "text": {
+        "uz": "Shartdagi talab etilgan bloklarga e’tibor bering.",
+        "en": "Check the required blocks in each task."
+      }
+    },
+    {
+      "title": {
+        "uz": "Tekshirish",
+        "en": "Testing"
+      },
+      "text": {
+        "uz": "Har bir Input alohida qatorni o‘qiydi. Natijani namuna bilan taqqoslang.",
+        "en": "Each Input reads one line. Compare your output with the examples."
+      }
+    }
+  ],
+  "classwork": [
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Narx funksiyasi",
+        "en": "School shop: Price function"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: buyum narxi a va soni b uchun jami narx. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "School shop: Create an Integer-returning function Calculate(a,b) for the total cost for price a and quantity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "60"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "100",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990000",
+          "hidden": true
+        },
+        {
+          "in": "2\n2",
+          "out": "4",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "68",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-1",
+        "number": 1
+      },
+      "id": "functions-01",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Narx funksiyasi",
+        "en": "Library: Price function"
+      },
+      "statement": {
+        "uz": "Kutubxona: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: buyum narxi a va soni b uchun jami narx. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Library: Create an Integer-returning function Calculate(a,b) for the total cost for price a and quantity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "60"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "100",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990000",
+          "hidden": true
+        },
+        {
+          "in": "3\n3",
+          "out": "9",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "68",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-1",
+        "number": 2
+      },
+      "id": "functions-02",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Narx funksiyasi",
+        "en": "Sports centre: Price function"
+      },
+      "statement": {
+        "uz": "Sport markazi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: buyum narxi a va soni b uchun jami narx. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Sports centre: Create an Integer-returning function Calculate(a,b) for the total cost for price a and quantity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "60"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "100",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990000",
+          "hidden": true
+        },
+        {
+          "in": "4\n4",
+          "out": "16",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "68",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-1",
+        "number": 3
+      },
+      "id": "functions-03",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Narx funksiyasi",
+        "en": "Learning centre: Price function"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: buyum narxi a va soni b uchun jami narx. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Learning centre: Create an Integer-returning function Calculate(a,b) for the total cost for price a and quantity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "60"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "100",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990000",
+          "hidden": true
+        },
+        {
+          "in": "5\n5",
+          "out": "25",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "68",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-1",
+        "number": 4
+      },
+      "id": "functions-04",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Narx funksiyasi",
+        "en": "Community club: Price function"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: buyum narxi a va soni b uchun jami narx. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Community club: Create an Integer-returning function Calculate(a,b) for the total cost for price a and quantity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "60"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "100",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990000",
+          "hidden": true
+        },
+        {
+          "in": "6\n6",
+          "out": "36",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "68",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-1",
+        "number": 5
+      },
+      "id": "functions-05",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Narx funksiyasi",
+        "en": "Summer camp: Price function"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: buyum narxi a va soni b uchun jami narx. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Summer camp: Create an Integer-returning function Calculate(a,b) for the total cost for price a and quantity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "60"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "100",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990000",
+          "hidden": true
+        },
+        {
+          "in": "7\n7",
+          "out": "49",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "68",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-1",
+        "number": 6
+      },
+      "id": "functions-06",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Narx funksiyasi",
+        "en": "Book fair: Price function"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: buyum narxi a va soni b uchun jami narx. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Book fair: Create an Integer-returning function Calculate(a,b) for the total cost for price a and quantity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "60"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "100",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990000",
+          "hidden": true
+        },
+        {
+          "in": "8\n8",
+          "out": "64",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "68",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-1",
+        "number": 7
+      },
+      "id": "functions-07",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Narx funksiyasi",
+        "en": "Travel group: Price function"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: buyum narxi a va soni b uchun jami narx. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Travel group: Create an Integer-returning function Calculate(a,b) for the total cost for price a and quantity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "60"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "100",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990000",
+          "hidden": true
+        },
+        {
+          "in": "9\n9",
+          "out": "81",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "68",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-1",
+        "number": 8
+      },
+      "id": "functions-08",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Narx funksiyasi",
+        "en": "Workshop: Price function"
+      },
+      "statement": {
+        "uz": "Ustaxona: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: buyum narxi a va soni b uchun jami narx. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Workshop: Create an Integer-returning function Calculate(a,b) for the total cost for price a and quantity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "60"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "100",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990000",
+          "hidden": true
+        },
+        {
+          "in": "10\n10",
+          "out": "100",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "68",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-1",
+        "number": 9
+      },
+      "id": "functions-09",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Narx funksiyasi",
+        "en": "Volunteer team: Price function"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: buyum narxi a va soni b uchun jami narx. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Volunteer team: Create an Integer-returning function Calculate(a,b) for the total cost for price a and quantity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "60"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "100",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990000",
+          "hidden": true
+        },
+        {
+          "in": "11\n11",
+          "out": "121",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "68",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-1",
+        "number": 10
+      },
+      "id": "functions-10",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Yetkazish funksiyasi",
+        "en": "School shop: Delivery function"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: narx a, son b va 2 yetkazish to‘lovi uchun jami summa. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "School shop: Create an Integer-returning function Calculate(a,b) for the total for price a, quantity b and delivery charge 2. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "62"
+        },
+        {
+          "in": "0\n1",
+          "out": "2"
+        },
+        {
+          "in": "1\n100",
+          "out": "102",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990002",
+          "hidden": true
+        },
+        {
+          "in": "2\n2",
+          "out": "6",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "70",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-2",
+        "number": 1
+      },
+      "id": "functions-11",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Yetkazish funksiyasi",
+        "en": "Library: Delivery function"
+      },
+      "statement": {
+        "uz": "Kutubxona: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: narx a, son b va 3 yetkazish to‘lovi uchun jami summa. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Library: Create an Integer-returning function Calculate(a,b) for the total for price a, quantity b and delivery charge 3. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "63"
+        },
+        {
+          "in": "0\n1",
+          "out": "3"
+        },
+        {
+          "in": "1\n100",
+          "out": "103",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990003",
+          "hidden": true
+        },
+        {
+          "in": "3\n3",
+          "out": "12",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "71",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-2",
+        "number": 2
+      },
+      "id": "functions-12",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Yetkazish funksiyasi",
+        "en": "Sports centre: Delivery function"
+      },
+      "statement": {
+        "uz": "Sport markazi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: narx a, son b va 4 yetkazish to‘lovi uchun jami summa. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Sports centre: Create an Integer-returning function Calculate(a,b) for the total for price a, quantity b and delivery charge 4. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "64"
+        },
+        {
+          "in": "0\n1",
+          "out": "4"
+        },
+        {
+          "in": "1\n100",
+          "out": "104",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990004",
+          "hidden": true
+        },
+        {
+          "in": "4\n4",
+          "out": "20",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "72",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-2",
+        "number": 3
+      },
+      "id": "functions-13",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Yetkazish funksiyasi",
+        "en": "Learning centre: Delivery function"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: narx a, son b va 5 yetkazish to‘lovi uchun jami summa. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Learning centre: Create an Integer-returning function Calculate(a,b) for the total for price a, quantity b and delivery charge 5. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "65"
+        },
+        {
+          "in": "0\n1",
+          "out": "5"
+        },
+        {
+          "in": "1\n100",
+          "out": "105",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990005",
+          "hidden": true
+        },
+        {
+          "in": "5\n5",
+          "out": "30",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "73",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-2",
+        "number": 4
+      },
+      "id": "functions-14",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Yetkazish funksiyasi",
+        "en": "Community club: Delivery function"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: narx a, son b va 6 yetkazish to‘lovi uchun jami summa. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Community club: Create an Integer-returning function Calculate(a,b) for the total for price a, quantity b and delivery charge 6. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "66"
+        },
+        {
+          "in": "0\n1",
+          "out": "6"
+        },
+        {
+          "in": "1\n100",
+          "out": "106",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990006",
+          "hidden": true
+        },
+        {
+          "in": "6\n6",
+          "out": "42",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "74",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-2",
+        "number": 5
+      },
+      "id": "functions-15",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Yetkazish funksiyasi",
+        "en": "Summer camp: Delivery function"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: narx a, son b va 7 yetkazish to‘lovi uchun jami summa. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Summer camp: Create an Integer-returning function Calculate(a,b) for the total for price a, quantity b and delivery charge 7. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "67"
+        },
+        {
+          "in": "0\n1",
+          "out": "7"
+        },
+        {
+          "in": "1\n100",
+          "out": "107",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990007",
+          "hidden": true
+        },
+        {
+          "in": "7\n7",
+          "out": "56",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "75",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-2",
+        "number": 6
+      },
+      "id": "functions-16",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Yetkazish funksiyasi",
+        "en": "Book fair: Delivery function"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: narx a, son b va 8 yetkazish to‘lovi uchun jami summa. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Book fair: Create an Integer-returning function Calculate(a,b) for the total for price a, quantity b and delivery charge 8. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "68"
+        },
+        {
+          "in": "0\n1",
+          "out": "8"
+        },
+        {
+          "in": "1\n100",
+          "out": "108",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990008",
+          "hidden": true
+        },
+        {
+          "in": "8\n8",
+          "out": "72",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "76",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-2",
+        "number": 7
+      },
+      "id": "functions-17",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Yetkazish funksiyasi",
+        "en": "Travel group: Delivery function"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: narx a, son b va 9 yetkazish to‘lovi uchun jami summa. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Travel group: Create an Integer-returning function Calculate(a,b) for the total for price a, quantity b and delivery charge 9. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "69"
+        },
+        {
+          "in": "0\n1",
+          "out": "9"
+        },
+        {
+          "in": "1\n100",
+          "out": "109",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990009",
+          "hidden": true
+        },
+        {
+          "in": "9\n9",
+          "out": "90",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "77",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-2",
+        "number": 8
+      },
+      "id": "functions-18",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Yetkazish funksiyasi",
+        "en": "Workshop: Delivery function"
+      },
+      "statement": {
+        "uz": "Ustaxona: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: narx a, son b va 10 yetkazish to‘lovi uchun jami summa. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Workshop: Create an Integer-returning function Calculate(a,b) for the total for price a, quantity b and delivery charge 10. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "70"
+        },
+        {
+          "in": "0\n1",
+          "out": "10"
+        },
+        {
+          "in": "1\n100",
+          "out": "110",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990010",
+          "hidden": true
+        },
+        {
+          "in": "10\n10",
+          "out": "110",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "78",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-2",
+        "number": 9
+      },
+      "id": "functions-19",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Yetkazish funksiyasi",
+        "en": "Volunteer team: Delivery function"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: narx a, son b va 11 yetkazish to‘lovi uchun jami summa. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Volunteer team: Create an Integer-returning function Calculate(a,b) for the total for price a, quantity b and delivery charge 11. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "71"
+        },
+        {
+          "in": "0\n1",
+          "out": "11"
+        },
+        {
+          "in": "1\n100",
+          "out": "111",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "990011",
+          "hidden": true
+        },
+        {
+          "in": "11\n11",
+          "out": "132",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "79",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-2",
+        "number": 10
+      },
+      "id": "functions-20",
+      "difficulty": "medium"
+    }
+  ],
+  "homework": [
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Qutilar funksiyasi",
+        "en": "School shop: Box function"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun to‘liq qutilar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "School shop: Create an Integer-returning function Calculate(a,b) for the full boxes for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "6"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "101",
+          "hidden": true
+        },
+        {
+          "in": "2\n2",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-3",
+        "number": 1
+      },
+      "id": "functions-21",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Qutilar funksiyasi",
+        "en": "Library: Box function"
+      },
+      "statement": {
+        "uz": "Kutubxona: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun to‘liq qutilar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Library: Create an Integer-returning function Calculate(a,b) for the full boxes for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "6"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "101",
+          "hidden": true
+        },
+        {
+          "in": "3\n3",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-3",
+        "number": 2
+      },
+      "id": "functions-22",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Qutilar funksiyasi",
+        "en": "Sports centre: Box function"
+      },
+      "statement": {
+        "uz": "Sport markazi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun to‘liq qutilar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Sports centre: Create an Integer-returning function Calculate(a,b) for the full boxes for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "6"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "101",
+          "hidden": true
+        },
+        {
+          "in": "4\n4",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-3",
+        "number": 3
+      },
+      "id": "functions-23",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Qutilar funksiyasi",
+        "en": "Learning centre: Box function"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun to‘liq qutilar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Learning centre: Create an Integer-returning function Calculate(a,b) for the full boxes for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "6"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "101",
+          "hidden": true
+        },
+        {
+          "in": "5\n5",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-3",
+        "number": 4
+      },
+      "id": "functions-24",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Qutilar funksiyasi",
+        "en": "Community club: Box function"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun to‘liq qutilar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Community club: Create an Integer-returning function Calculate(a,b) for the full boxes for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "6"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "101",
+          "hidden": true
+        },
+        {
+          "in": "6\n6",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-3",
+        "number": 5
+      },
+      "id": "functions-25",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Qutilar funksiyasi",
+        "en": "Summer camp: Box function"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun to‘liq qutilar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Summer camp: Create an Integer-returning function Calculate(a,b) for the full boxes for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "6"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "101",
+          "hidden": true
+        },
+        {
+          "in": "7\n7",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-3",
+        "number": 6
+      },
+      "id": "functions-26",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Qutilar funksiyasi",
+        "en": "Book fair: Box function"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun to‘liq qutilar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Book fair: Create an Integer-returning function Calculate(a,b) for the full boxes for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "6"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "101",
+          "hidden": true
+        },
+        {
+          "in": "8\n8",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-3",
+        "number": 7
+      },
+      "id": "functions-27",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Qutilar funksiyasi",
+        "en": "Travel group: Box function"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun to‘liq qutilar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Travel group: Create an Integer-returning function Calculate(a,b) for the full boxes for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "6"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "101",
+          "hidden": true
+        },
+        {
+          "in": "9\n9",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-3",
+        "number": 8
+      },
+      "id": "functions-28",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Qutilar funksiyasi",
+        "en": "Workshop: Box function"
+      },
+      "statement": {
+        "uz": "Ustaxona: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun to‘liq qutilar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Workshop: Create an Integer-returning function Calculate(a,b) for the full boxes for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "6"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "101",
+          "hidden": true
+        },
+        {
+          "in": "10\n10",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-3",
+        "number": 9
+      },
+      "id": "functions-29",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Qutilar funksiyasi",
+        "en": "Volunteer team: Box function"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun to‘liq qutilar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Volunteer team: Create an Integer-returning function Calculate(a,b) for the full boxes for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "6"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "101",
+          "hidden": true
+        },
+        {
+          "in": "11\n11",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-3",
+        "number": 10
+      },
+      "id": "functions-30",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Qoldiq funksiyasi",
+        "en": "School shop: Remainder function"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun ortgan buyumlar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "School shop: Create an Integer-returning function Calculate(a,b) for the leftovers for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "2"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "2\n2",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-4",
+        "number": 1
+      },
+      "id": "functions-31",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Qoldiq funksiyasi",
+        "en": "Library: Remainder function"
+      },
+      "statement": {
+        "uz": "Kutubxona: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun ortgan buyumlar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Library: Create an Integer-returning function Calculate(a,b) for the leftovers for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "2"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "3\n3",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-4",
+        "number": 2
+      },
+      "id": "functions-32",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Qoldiq funksiyasi",
+        "en": "Sports centre: Remainder function"
+      },
+      "statement": {
+        "uz": "Sport markazi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun ortgan buyumlar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Sports centre: Create an Integer-returning function Calculate(a,b) for the leftovers for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "2"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "4\n4",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-4",
+        "number": 3
+      },
+      "id": "functions-33",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Qoldiq funksiyasi",
+        "en": "Learning centre: Remainder function"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun ortgan buyumlar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Learning centre: Create an Integer-returning function Calculate(a,b) for the leftovers for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "2"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "5\n5",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-4",
+        "number": 4
+      },
+      "id": "functions-34",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Qoldiq funksiyasi",
+        "en": "Community club: Remainder function"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun ortgan buyumlar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Community club: Create an Integer-returning function Calculate(a,b) for the leftovers for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "2"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "6\n6",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-4",
+        "number": 5
+      },
+      "id": "functions-35",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Qoldiq funksiyasi",
+        "en": "Summer camp: Remainder function"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun ortgan buyumlar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Summer camp: Create an Integer-returning function Calculate(a,b) for the leftovers for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "2"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "7\n7",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-4",
+        "number": 6
+      },
+      "id": "functions-36",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Qoldiq funksiyasi",
+        "en": "Book fair: Remainder function"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun ortgan buyumlar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Book fair: Create an Integer-returning function Calculate(a,b) for the leftovers for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "2"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "8\n8",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-4",
+        "number": 7
+      },
+      "id": "functions-37",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Qoldiq funksiyasi",
+        "en": "Travel group: Remainder function"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun ortgan buyumlar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Travel group: Create an Integer-returning function Calculate(a,b) for the leftovers for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "2"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "9\n9",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-4",
+        "number": 8
+      },
+      "id": "functions-38",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Qoldiq funksiyasi",
+        "en": "Workshop: Remainder function"
+      },
+      "statement": {
+        "uz": "Ustaxona: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun ortgan buyumlar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Workshop: Create an Integer-returning function Calculate(a,b) for the leftovers for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "2"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "10\n10",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-4",
+        "number": 9
+      },
+      "id": "functions-39",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Qoldiq funksiyasi",
+        "en": "Volunteer team: Remainder function"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: a buyum va quti sig‘imi b uchun ortgan buyumlar soni. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Volunteer team: Create an Integer-returning function Calculate(a,b) for the leftovers for a items and capacity b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "2"
+        },
+        {
+          "in": "0\n1",
+          "out": "0"
+        },
+        {
+          "in": "1\n100",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "11\n11",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-4",
+        "number": 10
+      },
+      "id": "functions-40",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Ta’minot funksiyasi",
+        "en": "School shop: Supply function"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: ikki bo‘lim kunlik miqdorlari a va b uchun 2 kunlik jami. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "School shop: Create an Integer-returning function Calculate(a,b) for the total over 2 days for daily amounts a and b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "46"
+        },
+        {
+          "in": "0\n1",
+          "out": "2"
+        },
+        {
+          "in": "1\n100",
+          "out": "202",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "20198",
+          "hidden": true
+        },
+        {
+          "in": "2\n2",
+          "out": "8",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "42",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-5",
+        "number": 1
+      },
+      "id": "functions-41",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Ta’minot funksiyasi",
+        "en": "Library: Supply function"
+      },
+      "statement": {
+        "uz": "Kutubxona: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: ikki bo‘lim kunlik miqdorlari a va b uchun 3 kunlik jami. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Library: Create an Integer-returning function Calculate(a,b) for the total over 3 days for daily amounts a and b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "69"
+        },
+        {
+          "in": "0\n1",
+          "out": "3"
+        },
+        {
+          "in": "1\n100",
+          "out": "303",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "30297",
+          "hidden": true
+        },
+        {
+          "in": "3\n3",
+          "out": "18",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "63",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-5",
+        "number": 2
+      },
+      "id": "functions-42",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Ta’minot funksiyasi",
+        "en": "Sports centre: Supply function"
+      },
+      "statement": {
+        "uz": "Sport markazi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: ikki bo‘lim kunlik miqdorlari a va b uchun 4 kunlik jami. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Sports centre: Create an Integer-returning function Calculate(a,b) for the total over 4 days for daily amounts a and b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "92"
+        },
+        {
+          "in": "0\n1",
+          "out": "4"
+        },
+        {
+          "in": "1\n100",
+          "out": "404",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "40396",
+          "hidden": true
+        },
+        {
+          "in": "4\n4",
+          "out": "32",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "84",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-5",
+        "number": 3
+      },
+      "id": "functions-43",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Ta’minot funksiyasi",
+        "en": "Learning centre: Supply function"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: ikki bo‘lim kunlik miqdorlari a va b uchun 5 kunlik jami. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Learning centre: Create an Integer-returning function Calculate(a,b) for the total over 5 days for daily amounts a and b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "115"
+        },
+        {
+          "in": "0\n1",
+          "out": "5"
+        },
+        {
+          "in": "1\n100",
+          "out": "505",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "50495",
+          "hidden": true
+        },
+        {
+          "in": "5\n5",
+          "out": "50",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "105",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-5",
+        "number": 4
+      },
+      "id": "functions-44",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Ta’minot funksiyasi",
+        "en": "Community club: Supply function"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: ikki bo‘lim kunlik miqdorlari a va b uchun 6 kunlik jami. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Community club: Create an Integer-returning function Calculate(a,b) for the total over 6 days for daily amounts a and b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "138"
+        },
+        {
+          "in": "0\n1",
+          "out": "6"
+        },
+        {
+          "in": "1\n100",
+          "out": "606",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "60594",
+          "hidden": true
+        },
+        {
+          "in": "6\n6",
+          "out": "72",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "126",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-5",
+        "number": 5
+      },
+      "id": "functions-45",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Ta’minot funksiyasi",
+        "en": "Summer camp: Supply function"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: ikki bo‘lim kunlik miqdorlari a va b uchun 7 kunlik jami. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Summer camp: Create an Integer-returning function Calculate(a,b) for the total over 7 days for daily amounts a and b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "161"
+        },
+        {
+          "in": "0\n1",
+          "out": "7"
+        },
+        {
+          "in": "1\n100",
+          "out": "707",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "70693",
+          "hidden": true
+        },
+        {
+          "in": "7\n7",
+          "out": "98",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "147",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-5",
+        "number": 6
+      },
+      "id": "functions-46",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Ta’minot funksiyasi",
+        "en": "Book fair: Supply function"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: ikki bo‘lim kunlik miqdorlari a va b uchun 8 kunlik jami. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Book fair: Create an Integer-returning function Calculate(a,b) for the total over 8 days for daily amounts a and b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "184"
+        },
+        {
+          "in": "0\n1",
+          "out": "8"
+        },
+        {
+          "in": "1\n100",
+          "out": "808",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "80792",
+          "hidden": true
+        },
+        {
+          "in": "8\n8",
+          "out": "128",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "168",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-5",
+        "number": 7
+      },
+      "id": "functions-47",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Ta’minot funksiyasi",
+        "en": "Travel group: Supply function"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: ikki bo‘lim kunlik miqdorlari a va b uchun 9 kunlik jami. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Travel group: Create an Integer-returning function Calculate(a,b) for the total over 9 days for daily amounts a and b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "207"
+        },
+        {
+          "in": "0\n1",
+          "out": "9"
+        },
+        {
+          "in": "1\n100",
+          "out": "909",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "90891",
+          "hidden": true
+        },
+        {
+          "in": "9\n9",
+          "out": "162",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "189",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-5",
+        "number": 8
+      },
+      "id": "functions-48",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Ta’minot funksiyasi",
+        "en": "Workshop: Supply function"
+      },
+      "statement": {
+        "uz": "Ustaxona: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: ikki bo‘lim kunlik miqdorlari a va b uchun 10 kunlik jami. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Workshop: Create an Integer-returning function Calculate(a,b) for the total over 10 days for daily amounts a and b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "230"
+        },
+        {
+          "in": "0\n1",
+          "out": "10"
+        },
+        {
+          "in": "1\n100",
+          "out": "1010",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "100990",
+          "hidden": true
+        },
+        {
+          "in": "10\n10",
+          "out": "200",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "210",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-5",
+        "number": 9
+      },
+      "id": "functions-49",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Ta’minot funksiyasi",
+        "en": "Volunteer team: Supply function"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: Calculate(a,b) nomli Integer qaytaruvchi funksiya yarating: ikki bo‘lim kunlik miqdorlari a va b uchun 11 kunlik jami. Main ikki qiymatni o‘qib, funksiyani chaqirsin va natijani chiqarsin.",
+        "en": "Volunteer team: Create an Integer-returning function Calculate(a,b) for the total over 11 days for daily amounts a and b. Main reads both values, calls the function and prints its result."
+      },
+      "inputFormat": {
+        "uz": "Ikki qator: a (0..10000), b (1..100).",
+        "en": "Two lines: a (0..10000), b (1..100)."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "20\n3",
+          "out": "253"
+        },
+        {
+          "in": "0\n1",
+          "out": "11"
+        },
+        {
+          "in": "1\n100",
+          "out": "1111",
+          "hidden": true
+        },
+        {
+          "in": "10000\n99",
+          "out": "111089",
+          "hidden": true
+        },
+        {
+          "in": "11\n11",
+          "out": "242",
+          "hidden": true
+        },
+        {
+          "in": "17\n4",
+          "out": "231",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [],
+        "requiredFunction": "Calculate"
+      },
+      "variant": {
+        "family": "functions-5",
+        "number": 10
+      },
+      "id": "functions-50",
+      "difficulty": "hard"
+    }
+  ]
+}

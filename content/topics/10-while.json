@@ -1,0 +1,3738 @@
+{
+  "id": "while",
+  "order": 10,
+  "title": {
+    "uz": "While — shartli takrorlash",
+    "en": "While — conditional loops"
+  },
+  "lesson": {
+    "uz": "While shartni avval tekshiradi: shart False bo‘lsa, tana bir marta ham bajarilmaydi. Takrorlash soni oldindan noma’lum bo‘lganda ishlating.\nTo‘xtash belgisi 0 bo‘lsa, birinchi qiymatni sikldan oldin o‘qing. Siklda uni qayta ishlang, keyin keyingi Input’ni bajaring. 0 ni hisobga qo‘shmang. Shartga ta’sir qiluvchi qiymat yangilanmasa, cheksiz sikl paydo bo‘ladi.",
+    "en": "While checks its condition first, so its body may run zero times. Use it when the number of repetitions is unknown.\nFor a sentinel of 0, read once before the loop, process the value, then read again inside the loop. Do not count the sentinel. If the condition never changes, the loop will not finish."
+  },
+  "concepts": [
+    {
+      "title": {
+        "uz": "Bloklar",
+        "en": "Blocks"
+      },
+      "text": {
+        "uz": "Shartdagi talab etilgan bloklarga e’tibor bering.",
+        "en": "Check the required blocks in each task."
+      }
+    },
+    {
+      "title": {
+        "uz": "Tekshirish",
+        "en": "Testing"
+      },
+      "text": {
+        "uz": "Har bir Input alohida qatorni o‘qiydi. Natijani namuna bilan taqqoslang.",
+        "en": "Each Input reads one line. Compare your output with the examples."
+      }
+    }
+  ],
+  "classwork": [
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Partiyalar yig‘indisi",
+        "en": "School shop: Batch total"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. jami buyumlar sonini toping. While ishlating.",
+        "en": "School shop: Read positive batch quantities until 0. Exclude the sentinel. Find the total item count. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "13"
+        },
+        {
+          "in": "2\n0",
+          "out": "2"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "1\n2\n3\n0",
+          "out": "6",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "153",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-1",
+        "number": 1
+      },
+      "id": "while-01",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Partiyalar yig‘indisi",
+        "en": "Library: Batch total"
+      },
+      "statement": {
+        "uz": "Kutubxona: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. jami buyumlar sonini toping. While ishlating.",
+        "en": "Library: Read positive batch quantities until 0. Exclude the sentinel. Find the total item count. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "13"
+        },
+        {
+          "in": "3\n0",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "2\n3\n4\n0",
+          "out": "9",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "153",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-1",
+        "number": 2
+      },
+      "id": "while-02",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Partiyalar yig‘indisi",
+        "en": "Sports centre: Batch total"
+      },
+      "statement": {
+        "uz": "Sport markazi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. jami buyumlar sonini toping. While ishlating.",
+        "en": "Sports centre: Read positive batch quantities until 0. Exclude the sentinel. Find the total item count. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "13"
+        },
+        {
+          "in": "4\n0",
+          "out": "4"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n5\n0",
+          "out": "12",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "153",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-1",
+        "number": 3
+      },
+      "id": "while-03",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Partiyalar yig‘indisi",
+        "en": "Learning centre: Batch total"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. jami buyumlar sonini toping. While ishlating.",
+        "en": "Learning centre: Read positive batch quantities until 0. Exclude the sentinel. Find the total item count. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "13"
+        },
+        {
+          "in": "5\n0",
+          "out": "5"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "4\n5\n6\n0",
+          "out": "15",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "153",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-1",
+        "number": 4
+      },
+      "id": "while-04",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Partiyalar yig‘indisi",
+        "en": "Community club: Batch total"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. jami buyumlar sonini toping. While ishlating.",
+        "en": "Community club: Read positive batch quantities until 0. Exclude the sentinel. Find the total item count. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "13"
+        },
+        {
+          "in": "6\n0",
+          "out": "6"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "5\n6\n7\n0",
+          "out": "18",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "153",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-1",
+        "number": 5
+      },
+      "id": "while-05",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Partiyalar yig‘indisi",
+        "en": "Summer camp: Batch total"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. jami buyumlar sonini toping. While ishlating.",
+        "en": "Summer camp: Read positive batch quantities until 0. Exclude the sentinel. Find the total item count. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "13"
+        },
+        {
+          "in": "7\n0",
+          "out": "7"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "6\n7\n8\n0",
+          "out": "21",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "153",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-1",
+        "number": 6
+      },
+      "id": "while-06",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Partiyalar yig‘indisi",
+        "en": "Book fair: Batch total"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. jami buyumlar sonini toping. While ishlating.",
+        "en": "Book fair: Read positive batch quantities until 0. Exclude the sentinel. Find the total item count. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "13"
+        },
+        {
+          "in": "8\n0",
+          "out": "8"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "7\n8\n9\n0",
+          "out": "24",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "153",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-1",
+        "number": 7
+      },
+      "id": "while-07",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Partiyalar yig‘indisi",
+        "en": "Travel group: Batch total"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. jami buyumlar sonini toping. While ishlating.",
+        "en": "Travel group: Read positive batch quantities until 0. Exclude the sentinel. Find the total item count. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "13"
+        },
+        {
+          "in": "9\n0",
+          "out": "9"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "8\n9\n10\n0",
+          "out": "27",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "153",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-1",
+        "number": 8
+      },
+      "id": "while-08",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Partiyalar yig‘indisi",
+        "en": "Workshop: Batch total"
+      },
+      "statement": {
+        "uz": "Ustaxona: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. jami buyumlar sonini toping. While ishlating.",
+        "en": "Workshop: Read positive batch quantities until 0. Exclude the sentinel. Find the total item count. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "13"
+        },
+        {
+          "in": "10\n0",
+          "out": "10"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "9\n10\n11\n0",
+          "out": "30",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "153",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-1",
+        "number": 9
+      },
+      "id": "while-09",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Partiyalar yig‘indisi",
+        "en": "Volunteer team: Batch total"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. jami buyumlar sonini toping. While ishlating.",
+        "en": "Volunteer team: Read positive batch quantities until 0. Exclude the sentinel. Find the total item count. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "13"
+        },
+        {
+          "in": "11\n0",
+          "out": "11"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "10\n11\n12\n0",
+          "out": "33",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "153",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-1",
+        "number": 10
+      },
+      "id": "while-10",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Qabul qilingan partiya",
+        "en": "School shop: Received batches"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. qabul qilingan partiyalar sonini toping. While ishlating.",
+        "en": "School shop: Read positive batch quantities until 0. Exclude the sentinel. Find the number of received batches. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "3"
+        },
+        {
+          "in": "2\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "1\n2\n3\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-2",
+        "number": 1
+      },
+      "id": "while-11",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Qabul qilingan partiya",
+        "en": "Library: Received batches"
+      },
+      "statement": {
+        "uz": "Kutubxona: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. qabul qilingan partiyalar sonini toping. While ishlating.",
+        "en": "Library: Read positive batch quantities until 0. Exclude the sentinel. Find the number of received batches. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "3"
+        },
+        {
+          "in": "3\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "2\n3\n4\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-2",
+        "number": 2
+      },
+      "id": "while-12",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Qabul qilingan partiya",
+        "en": "Sports centre: Received batches"
+      },
+      "statement": {
+        "uz": "Sport markazi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. qabul qilingan partiyalar sonini toping. While ishlating.",
+        "en": "Sports centre: Read positive batch quantities until 0. Exclude the sentinel. Find the number of received batches. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "3"
+        },
+        {
+          "in": "4\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n5\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-2",
+        "number": 3
+      },
+      "id": "while-13",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Qabul qilingan partiya",
+        "en": "Learning centre: Received batches"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. qabul qilingan partiyalar sonini toping. While ishlating.",
+        "en": "Learning centre: Read positive batch quantities until 0. Exclude the sentinel. Find the number of received batches. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "3"
+        },
+        {
+          "in": "5\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "4\n5\n6\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-2",
+        "number": 4
+      },
+      "id": "while-14",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Qabul qilingan partiya",
+        "en": "Community club: Received batches"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. qabul qilingan partiyalar sonini toping. While ishlating.",
+        "en": "Community club: Read positive batch quantities until 0. Exclude the sentinel. Find the number of received batches. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "3"
+        },
+        {
+          "in": "6\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "5\n6\n7\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-2",
+        "number": 5
+      },
+      "id": "while-15",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Qabul qilingan partiya",
+        "en": "Summer camp: Received batches"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. qabul qilingan partiyalar sonini toping. While ishlating.",
+        "en": "Summer camp: Read positive batch quantities until 0. Exclude the sentinel. Find the number of received batches. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "3"
+        },
+        {
+          "in": "7\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "6\n7\n8\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-2",
+        "number": 6
+      },
+      "id": "while-16",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Qabul qilingan partiya",
+        "en": "Book fair: Received batches"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. qabul qilingan partiyalar sonini toping. While ishlating.",
+        "en": "Book fair: Read positive batch quantities until 0. Exclude the sentinel. Find the number of received batches. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "3"
+        },
+        {
+          "in": "8\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "7\n8\n9\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-2",
+        "number": 7
+      },
+      "id": "while-17",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Qabul qilingan partiya",
+        "en": "Travel group: Received batches"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. qabul qilingan partiyalar sonini toping. While ishlating.",
+        "en": "Travel group: Read positive batch quantities until 0. Exclude the sentinel. Find the number of received batches. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "3"
+        },
+        {
+          "in": "9\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "8\n9\n10\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-2",
+        "number": 8
+      },
+      "id": "while-18",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Qabul qilingan partiya",
+        "en": "Workshop: Received batches"
+      },
+      "statement": {
+        "uz": "Ustaxona: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. qabul qilingan partiyalar sonini toping. While ishlating.",
+        "en": "Workshop: Read positive batch quantities until 0. Exclude the sentinel. Find the number of received batches. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "3"
+        },
+        {
+          "in": "10\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "9\n10\n11\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-2",
+        "number": 9
+      },
+      "id": "while-19",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Qabul qilingan partiya",
+        "en": "Volunteer team: Received batches"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. qabul qilingan partiyalar sonini toping. While ishlating.",
+        "en": "Volunteer team: Read positive batch quantities until 0. Exclude the sentinel. Find the number of received batches. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "3"
+        },
+        {
+          "in": "11\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "10\n11\n12\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-2",
+        "number": 10
+      },
+      "id": "while-20",
+      "difficulty": "medium"
+    }
+  ],
+  "homework": [
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Katta partiyalar",
+        "en": "School shop: Large batches"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. kamida 2 buyumli partiyalar sonini toping. While ishlating.",
+        "en": "School shop: Read positive batch quantities until 0. Exclude the sentinel. Find the number of batches with at least 2 items. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "3"
+        },
+        {
+          "in": "2\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n2\n3\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-3",
+        "number": 1
+      },
+      "id": "while-21",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Katta partiyalar",
+        "en": "Library: Large batches"
+      },
+      "statement": {
+        "uz": "Kutubxona: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. kamida 3 buyumli partiyalar sonini toping. While ishlating.",
+        "en": "Library: Read positive batch quantities until 0. Exclude the sentinel. Find the number of batches with at least 3 items. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "2"
+        },
+        {
+          "in": "3\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "2\n3\n4\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-3",
+        "number": 2
+      },
+      "id": "while-22",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Katta partiyalar",
+        "en": "Sports centre: Large batches"
+      },
+      "statement": {
+        "uz": "Sport markazi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. kamida 4 buyumli partiyalar sonini toping. While ishlating.",
+        "en": "Sports centre: Read positive batch quantities until 0. Exclude the sentinel. Find the number of batches with at least 4 items. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "2"
+        },
+        {
+          "in": "4\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n5\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "2",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-3",
+        "number": 3
+      },
+      "id": "while-23",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Katta partiyalar",
+        "en": "Learning centre: Large batches"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. kamida 5 buyumli partiyalar sonini toping. While ishlating.",
+        "en": "Learning centre: Read positive batch quantities until 0. Exclude the sentinel. Find the number of batches with at least 5 items. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "1"
+        },
+        {
+          "in": "5\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n5\n6\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "2",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-3",
+        "number": 4
+      },
+      "id": "while-24",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Katta partiyalar",
+        "en": "Community club: Large batches"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. kamida 6 buyumli partiyalar sonini toping. While ishlating.",
+        "en": "Community club: Read positive batch quantities until 0. Exclude the sentinel. Find the number of batches with at least 6 items. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "1"
+        },
+        {
+          "in": "6\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "5\n6\n7\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "2",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-3",
+        "number": 5
+      },
+      "id": "while-25",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Katta partiyalar",
+        "en": "Summer camp: Large batches"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. kamida 7 buyumli partiyalar sonini toping. While ishlating.",
+        "en": "Summer camp: Read positive batch quantities until 0. Exclude the sentinel. Find the number of batches with at least 7 items. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "1"
+        },
+        {
+          "in": "7\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "6\n7\n8\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "2",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-3",
+        "number": 6
+      },
+      "id": "while-26",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Katta partiyalar",
+        "en": "Book fair: Large batches"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. kamida 8 buyumli partiyalar sonini toping. While ishlating.",
+        "en": "Book fair: Read positive batch quantities until 0. Exclude the sentinel. Find the number of batches with at least 8 items. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "0"
+        },
+        {
+          "in": "8\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n8\n9\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "2",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-3",
+        "number": 7
+      },
+      "id": "while-27",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Katta partiyalar",
+        "en": "Travel group: Large batches"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. kamida 9 buyumli partiyalar sonini toping. While ishlating.",
+        "en": "Travel group: Read positive batch quantities until 0. Exclude the sentinel. Find the number of batches with at least 9 items. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "0"
+        },
+        {
+          "in": "9\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "8\n9\n10\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "2",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-3",
+        "number": 8
+      },
+      "id": "while-28",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Katta partiyalar",
+        "en": "Workshop: Large batches"
+      },
+      "statement": {
+        "uz": "Ustaxona: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. kamida 10 buyumli partiyalar sonini toping. While ishlating.",
+        "en": "Workshop: Read positive batch quantities until 0. Exclude the sentinel. Find the number of batches with at least 10 items. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "0"
+        },
+        {
+          "in": "10\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "9\n10\n11\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "2",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-3",
+        "number": 9
+      },
+      "id": "while-29",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Katta partiyalar",
+        "en": "Volunteer team: Large batches"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. kamida 11 buyumli partiyalar sonini toping. While ishlating.",
+        "en": "Volunteer team: Read positive batch quantities until 0. Exclude the sentinel. Find the number of batches with at least 11 items. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "0"
+        },
+        {
+          "in": "11\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "10\n11\n12\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "2",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-3",
+        "number": 10
+      },
+      "id": "while-30",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Eng katta partiya",
+        "en": "School shop: Largest batch"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. eng katta partiya (partiya bo‘lmasa 0)ni toping. While ishlating.",
+        "en": "School shop: Read positive batch quantities until 0. Exclude the sentinel. Find the largest batch (0 if no batches). Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "7"
+        },
+        {
+          "in": "2\n0",
+          "out": "2"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "1\n2\n3\n0",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-4",
+        "number": 1
+      },
+      "id": "while-31",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Eng katta partiya",
+        "en": "Library: Largest batch"
+      },
+      "statement": {
+        "uz": "Kutubxona: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. eng katta partiya (partiya bo‘lmasa 0)ni toping. While ishlating.",
+        "en": "Library: Read positive batch quantities until 0. Exclude the sentinel. Find the largest batch (0 if no batches). Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "7"
+        },
+        {
+          "in": "3\n0",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "2\n3\n4\n0",
+          "out": "4",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-4",
+        "number": 2
+      },
+      "id": "while-32",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Eng katta partiya",
+        "en": "Sports centre: Largest batch"
+      },
+      "statement": {
+        "uz": "Sport markazi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. eng katta partiya (partiya bo‘lmasa 0)ni toping. While ishlating.",
+        "en": "Sports centre: Read positive batch quantities until 0. Exclude the sentinel. Find the largest batch (0 if no batches). Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "7"
+        },
+        {
+          "in": "4\n0",
+          "out": "4"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n5\n0",
+          "out": "5",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-4",
+        "number": 3
+      },
+      "id": "while-33",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Eng katta partiya",
+        "en": "Learning centre: Largest batch"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. eng katta partiya (partiya bo‘lmasa 0)ni toping. While ishlating.",
+        "en": "Learning centre: Read positive batch quantities until 0. Exclude the sentinel. Find the largest batch (0 if no batches). Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "7"
+        },
+        {
+          "in": "5\n0",
+          "out": "5"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "4\n5\n6\n0",
+          "out": "6",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-4",
+        "number": 4
+      },
+      "id": "while-34",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Eng katta partiya",
+        "en": "Community club: Largest batch"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. eng katta partiya (partiya bo‘lmasa 0)ni toping. While ishlating.",
+        "en": "Community club: Read positive batch quantities until 0. Exclude the sentinel. Find the largest batch (0 if no batches). Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "7"
+        },
+        {
+          "in": "6\n0",
+          "out": "6"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "5\n6\n7\n0",
+          "out": "7",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-4",
+        "number": 5
+      },
+      "id": "while-35",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Eng katta partiya",
+        "en": "Summer camp: Largest batch"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. eng katta partiya (partiya bo‘lmasa 0)ni toping. While ishlating.",
+        "en": "Summer camp: Read positive batch quantities until 0. Exclude the sentinel. Find the largest batch (0 if no batches). Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "7"
+        },
+        {
+          "in": "7\n0",
+          "out": "7"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "6\n7\n8\n0",
+          "out": "8",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-4",
+        "number": 6
+      },
+      "id": "while-36",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Eng katta partiya",
+        "en": "Book fair: Largest batch"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. eng katta partiya (partiya bo‘lmasa 0)ni toping. While ishlating.",
+        "en": "Book fair: Read positive batch quantities until 0. Exclude the sentinel. Find the largest batch (0 if no batches). Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "7"
+        },
+        {
+          "in": "8\n0",
+          "out": "8"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "7\n8\n9\n0",
+          "out": "9",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-4",
+        "number": 7
+      },
+      "id": "while-37",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Eng katta partiya",
+        "en": "Travel group: Largest batch"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. eng katta partiya (partiya bo‘lmasa 0)ni toping. While ishlating.",
+        "en": "Travel group: Read positive batch quantities until 0. Exclude the sentinel. Find the largest batch (0 if no batches). Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "7"
+        },
+        {
+          "in": "9\n0",
+          "out": "9"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "8\n9\n10\n0",
+          "out": "10",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-4",
+        "number": 8
+      },
+      "id": "while-38",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Eng katta partiya",
+        "en": "Workshop: Largest batch"
+      },
+      "statement": {
+        "uz": "Ustaxona: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. eng katta partiya (partiya bo‘lmasa 0)ni toping. While ishlating.",
+        "en": "Workshop: Read positive batch quantities until 0. Exclude the sentinel. Find the largest batch (0 if no batches). Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "7"
+        },
+        {
+          "in": "10\n0",
+          "out": "10"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "9\n10\n11\n0",
+          "out": "11",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-4",
+        "number": 9
+      },
+      "id": "while-39",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Eng katta partiya",
+        "en": "Volunteer team: Largest batch"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. eng katta partiya (partiya bo‘lmasa 0)ni toping. While ishlating.",
+        "en": "Volunteer team: Read positive batch quantities until 0. Exclude the sentinel. Find the largest batch (0 if no batches). Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "7"
+        },
+        {
+          "in": "11\n0",
+          "out": "11"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "10\n11\n12\n0",
+          "out": "12",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-4",
+        "number": 10
+      },
+      "id": "while-40",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Partiyalarni qadoqlash",
+        "en": "School shop: Batch packing"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. har partiyadan 2 sig‘imli to‘liq qutilarning umumiy sonini toping. While ishlating.",
+        "en": "School shop: Read positive batch quantities until 0. Exclude the sentinel. Find the total full boxes of capacity 2, packing each batch separately. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "6"
+        },
+        {
+          "in": "2\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n2\n3\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "76",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-5",
+        "number": 1
+      },
+      "id": "while-41",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Partiyalarni qadoqlash",
+        "en": "Library: Batch packing"
+      },
+      "statement": {
+        "uz": "Kutubxona: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. har partiyadan 3 sig‘imli to‘liq qutilarning umumiy sonini toping. While ishlating.",
+        "en": "Library: Read positive batch quantities until 0. Exclude the sentinel. Find the total full boxes of capacity 3, packing each batch separately. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "3"
+        },
+        {
+          "in": "3\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "2\n3\n4\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "50",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-5",
+        "number": 2
+      },
+      "id": "while-42",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Partiyalarni qadoqlash",
+        "en": "Sports centre: Batch packing"
+      },
+      "statement": {
+        "uz": "Sport markazi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. har partiyadan 4 sig‘imli to‘liq qutilarning umumiy sonini toping. While ishlating.",
+        "en": "Sports centre: Read positive batch quantities until 0. Exclude the sentinel. Find the total full boxes of capacity 4, packing each batch separately. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "2"
+        },
+        {
+          "in": "4\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n5\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "37",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-5",
+        "number": 3
+      },
+      "id": "while-43",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Partiyalarni qadoqlash",
+        "en": "Learning centre: Batch packing"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. har partiyadan 5 sig‘imli to‘liq qutilarning umumiy sonini toping. While ishlating.",
+        "en": "Learning centre: Read positive batch quantities until 0. Exclude the sentinel. Find the total full boxes of capacity 5, packing each batch separately. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "1"
+        },
+        {
+          "in": "5\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n5\n6\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "30",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-5",
+        "number": 4
+      },
+      "id": "while-44",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Partiyalarni qadoqlash",
+        "en": "Community club: Batch packing"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. har partiyadan 6 sig‘imli to‘liq qutilarning umumiy sonini toping. While ishlating.",
+        "en": "Community club: Read positive batch quantities until 0. Exclude the sentinel. Find the total full boxes of capacity 6, packing each batch separately. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "1"
+        },
+        {
+          "in": "6\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "5\n6\n7\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "24",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-5",
+        "number": 5
+      },
+      "id": "while-45",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Partiyalarni qadoqlash",
+        "en": "Summer camp: Batch packing"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. har partiyadan 7 sig‘imli to‘liq qutilarning umumiy sonini toping. While ishlating.",
+        "en": "Summer camp: Read positive batch quantities until 0. Exclude the sentinel. Find the total full boxes of capacity 7, packing each batch separately. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "1"
+        },
+        {
+          "in": "7\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "6\n7\n8\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "21",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-5",
+        "number": 6
+      },
+      "id": "while-46",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Partiyalarni qadoqlash",
+        "en": "Book fair: Batch packing"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. har partiyadan 8 sig‘imli to‘liq qutilarning umumiy sonini toping. While ishlating.",
+        "en": "Book fair: Read positive batch quantities until 0. Exclude the sentinel. Find the total full boxes of capacity 8, packing each batch separately. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "0"
+        },
+        {
+          "in": "8\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n8\n9\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "18",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-5",
+        "number": 7
+      },
+      "id": "while-47",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Partiyalarni qadoqlash",
+        "en": "Travel group: Batch packing"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. har partiyadan 9 sig‘imli to‘liq qutilarning umumiy sonini toping. While ishlating.",
+        "en": "Travel group: Read positive batch quantities until 0. Exclude the sentinel. Find the total full boxes of capacity 9, packing each batch separately. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "0"
+        },
+        {
+          "in": "9\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "8\n9\n10\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "16",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-5",
+        "number": 8
+      },
+      "id": "while-48",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Partiyalarni qadoqlash",
+        "en": "Workshop: Batch packing"
+      },
+      "statement": {
+        "uz": "Ustaxona: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. har partiyadan 10 sig‘imli to‘liq qutilarning umumiy sonini toping. While ishlating.",
+        "en": "Workshop: Read positive batch quantities until 0. Exclude the sentinel. Find the total full boxes of capacity 10, packing each batch separately. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "0"
+        },
+        {
+          "in": "10\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "9\n10\n11\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "15",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-5",
+        "number": 9
+      },
+      "id": "while-49",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Partiyalarni qadoqlash",
+        "en": "Volunteer team: Batch packing"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: Musbat partiya miqdorlari 0 kelguncha kiritiladi. 0 ni hisoblamang. har partiyadan 11 sig‘imli to‘liq qutilarning umumiy sonini toping. While ishlating.",
+        "en": "Volunteer team: Read positive batch quantities until 0. Exclude the sentinel. Find the total full boxes of capacity 11, packing each batch separately. Use While."
+      },
+      "inputFormat": {
+        "uz": "0..100 ta musbat miqdor (1..10000), oxirida 0. Har biri alohida qatorda.",
+        "en": "0..100 positive quantities (1..10000), then 0, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "4\n7\n2\n0",
+          "out": "0"
+        },
+        {
+          "in": "11\n0",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n1\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "10\n11\n12\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "100\n3\n50\n0",
+          "out": "13",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "variant": {
+        "family": "while-5",
+        "number": 10
+      },
+      "id": "while-50",
+      "difficulty": "hard"
+    }
+  ]
+}

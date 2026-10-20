@@ -1,0 +1,3838 @@
+{
+  "id": "search-sort",
+  "order": 13,
+  "title": {
+    "uz": "Qidirish va saralash",
+    "en": "Searching and sorting"
+  },
+  "lesson": {
+    "uz": "Chiziqli qidiruv elementlarni ketma-ket tekshiradi. Topilmasa -1, topilsa shartda so‘ralgan indeks yoki sonni qaytaring. Takrorlangan qiymatlar bo‘lishi mumkin.\nOddiy saralashda ichma-ich sikl bilan qiymatlarni solishtirib, vaqtinchalik o‘zgaruvchi yordamida almashtiring. O‘sish tartibi kichikdan kattaga. Indeks 0 dan boshlanadi. Saralash asl tartibni o‘zgartiradi.",
+    "en": "Linear search checks elements one by one. Return -1 when absent or the requested index/count when found. Values may repeat.\nFor simple sorting, compare values with nested loops and swap using a temporary variable. Ascending order means smallest first. Indexes start at 0. Sorting changes the original order."
+  },
+  "concepts": [
+    {
+      "title": {
+        "uz": "Bloklar",
+        "en": "Blocks"
+      },
+      "text": {
+        "uz": "Shartdagi talab etilgan bloklarga e’tibor bering.",
+        "en": "Check the required blocks in each task."
+      }
+    },
+    {
+      "title": {
+        "uz": "Tekshirish",
+        "en": "Testing"
+      },
+      "text": {
+        "uz": "Har bir Input alohida qatorni o‘qiydi. Natijani namuna bilan taqqoslang.",
+        "en": "Each Input reads one line. Compare your output with the examples."
+      }
+    }
+  ],
+  "classwork": [
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Birinchi mos qiymat",
+        "en": "School shop: First matching value"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: n ta zaxirani massivga saqlang. So‘ng 2 ga teng birinchi zaxira indeksini (topilmasa -1) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "School shop: Store n stock values in an array, then print the first index holding 2 (-1 if absent). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n2",
+          "out": "0"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "-1",
+          "hidden": true
+        },
+        {
+          "in": "4\n3\n2\n1\n2",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "-1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "-1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-1",
+        "number": 1
+      },
+      "id": "search-sort-01",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Birinchi mos qiymat",
+        "en": "Library: First matching value"
+      },
+      "statement": {
+        "uz": "Kutubxona: n ta zaxirani massivga saqlang. So‘ng 3 ga teng birinchi zaxira indeksini (topilmasa -1) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Library: Store n stock values in an array, then print the first index holding 3 (-1 if absent). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "-1"
+        },
+        {
+          "in": "1\n3",
+          "out": "0"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "-1",
+          "hidden": true
+        },
+        {
+          "in": "4\n4\n3\n2\n3",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "-1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-1",
+        "number": 2
+      },
+      "id": "search-sort-02",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Birinchi mos qiymat",
+        "en": "Sports centre: First matching value"
+      },
+      "statement": {
+        "uz": "Sport markazi: n ta zaxirani massivga saqlang. So‘ng 4 ga teng birinchi zaxira indeksini (topilmasa -1) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Sports centre: Store n stock values in an array, then print the first index holding 4 (-1 if absent). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "0"
+        },
+        {
+          "in": "1\n4",
+          "out": "0"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "-1",
+          "hidden": true
+        },
+        {
+          "in": "4\n5\n4\n3\n4",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "-1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "-1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-1",
+        "number": 3
+      },
+      "id": "search-sort-03",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Birinchi mos qiymat",
+        "en": "Learning centre: First matching value"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: n ta zaxirani massivga saqlang. So‘ng 5 ga teng birinchi zaxira indeksini (topilmasa -1) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Learning centre: Store n stock values in an array, then print the first index holding 5 (-1 if absent). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "-1"
+        },
+        {
+          "in": "1\n5",
+          "out": "0"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "-1",
+          "hidden": true
+        },
+        {
+          "in": "4\n6\n5\n4\n5",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "-1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "-1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-1",
+        "number": 4
+      },
+      "id": "search-sort-04",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Birinchi mos qiymat",
+        "en": "Community club: First matching value"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: n ta zaxirani massivga saqlang. So‘ng 6 ga teng birinchi zaxira indeksini (topilmasa -1) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Community club: Store n stock values in an array, then print the first index holding 6 (-1 if absent). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "-1"
+        },
+        {
+          "in": "1\n6",
+          "out": "0"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "-1",
+          "hidden": true
+        },
+        {
+          "in": "4\n7\n6\n5\n6",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "-1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "-1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-1",
+        "number": 5
+      },
+      "id": "search-sort-05",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Birinchi mos qiymat",
+        "en": "Summer camp: First matching value"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: n ta zaxirani massivga saqlang. So‘ng 7 ga teng birinchi zaxira indeksini (topilmasa -1) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Summer camp: Store n stock values in an array, then print the first index holding 7 (-1 if absent). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "1"
+        },
+        {
+          "in": "1\n7",
+          "out": "0"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "-1",
+          "hidden": true
+        },
+        {
+          "in": "4\n8\n7\n6\n7",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "-1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "-1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-1",
+        "number": 6
+      },
+      "id": "search-sort-06",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Birinchi mos qiymat",
+        "en": "Book fair: First matching value"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: n ta zaxirani massivga saqlang. So‘ng 8 ga teng birinchi zaxira indeksini (topilmasa -1) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Book fair: Store n stock values in an array, then print the first index holding 8 (-1 if absent). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "-1"
+        },
+        {
+          "in": "1\n8",
+          "out": "0"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "-1",
+          "hidden": true
+        },
+        {
+          "in": "4\n9\n8\n7\n8",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "-1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "-1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-1",
+        "number": 7
+      },
+      "id": "search-sort-07",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Birinchi mos qiymat",
+        "en": "Travel group: First matching value"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: n ta zaxirani massivga saqlang. So‘ng 9 ga teng birinchi zaxira indeksini (topilmasa -1) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Travel group: Store n stock values in an array, then print the first index holding 9 (-1 if absent). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "-1"
+        },
+        {
+          "in": "1\n9",
+          "out": "0"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "-1",
+          "hidden": true
+        },
+        {
+          "in": "4\n10\n9\n8\n9",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "-1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-1",
+        "number": 8
+      },
+      "id": "search-sort-08",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Birinchi mos qiymat",
+        "en": "Workshop: First matching value"
+      },
+      "statement": {
+        "uz": "Ustaxona: n ta zaxirani massivga saqlang. So‘ng 10 ga teng birinchi zaxira indeksini (topilmasa -1) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Workshop: Store n stock values in an array, then print the first index holding 10 (-1 if absent). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "-1"
+        },
+        {
+          "in": "1\n10",
+          "out": "0"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "-1",
+          "hidden": true
+        },
+        {
+          "in": "4\n11\n10\n9\n10",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "-1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "-1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-1",
+        "number": 9
+      },
+      "id": "search-sort-09",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Birinchi mos qiymat",
+        "en": "Volunteer team: First matching value"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: n ta zaxirani massivga saqlang. So‘ng 11 ga teng birinchi zaxira indeksini (topilmasa -1) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Volunteer team: Store n stock values in an array, then print the first index holding 11 (-1 if absent). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "-1"
+        },
+        {
+          "in": "1\n11",
+          "out": "0"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "-1",
+          "hidden": true
+        },
+        {
+          "in": "4\n12\n11\n10\n11",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "-1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "-1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-1",
+        "number": 10
+      },
+      "id": "search-sort-10",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Mos qiymatlar soni",
+        "en": "School shop: Matching count"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: n ta zaxirani massivga saqlang. So‘ng 2 qiymat necha marta uchrashini chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "School shop: Store n stock values in an array, then print the occurrence count of 2. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "1"
+        },
+        {
+          "in": "1\n2",
+          "out": "1"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n3\n2\n1\n2",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "0",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-2",
+        "number": 1
+      },
+      "id": "search-sort-11",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Mos qiymatlar soni",
+        "en": "Library: Matching count"
+      },
+      "statement": {
+        "uz": "Kutubxona: n ta zaxirani massivga saqlang. So‘ng 3 qiymat necha marta uchrashini chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Library: Store n stock values in an array, then print the occurrence count of 3. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "0"
+        },
+        {
+          "in": "1\n3",
+          "out": "1"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n4\n3\n2\n3",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "0",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-2",
+        "number": 2
+      },
+      "id": "search-sort-12",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Mos qiymatlar soni",
+        "en": "Sports centre: Matching count"
+      },
+      "statement": {
+        "uz": "Sport markazi: n ta zaxirani massivga saqlang. So‘ng 4 qiymat necha marta uchrashini chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Sports centre: Store n stock values in an array, then print the occurrence count of 4. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "1"
+        },
+        {
+          "in": "1\n4",
+          "out": "1"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n5\n4\n3\n4",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "0",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-2",
+        "number": 3
+      },
+      "id": "search-sort-13",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Mos qiymatlar soni",
+        "en": "Learning centre: Matching count"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: n ta zaxirani massivga saqlang. So‘ng 5 qiymat necha marta uchrashini chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Learning centre: Store n stock values in an array, then print the occurrence count of 5. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "0"
+        },
+        {
+          "in": "1\n5",
+          "out": "1"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n6\n5\n4\n5",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "0",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-2",
+        "number": 4
+      },
+      "id": "search-sort-14",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Mos qiymatlar soni",
+        "en": "Community club: Matching count"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: n ta zaxirani massivga saqlang. So‘ng 6 qiymat necha marta uchrashini chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Community club: Store n stock values in an array, then print the occurrence count of 6. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "0"
+        },
+        {
+          "in": "1\n6",
+          "out": "1"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n7\n6\n5\n6",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "0",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-2",
+        "number": 5
+      },
+      "id": "search-sort-15",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Mos qiymatlar soni",
+        "en": "Summer camp: Matching count"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: n ta zaxirani massivga saqlang. So‘ng 7 qiymat necha marta uchrashini chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Summer camp: Store n stock values in an array, then print the occurrence count of 7. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "1"
+        },
+        {
+          "in": "1\n7",
+          "out": "1"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n8\n7\n6\n7",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "0",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-2",
+        "number": 6
+      },
+      "id": "search-sort-16",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Mos qiymatlar soni",
+        "en": "Book fair: Matching count"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: n ta zaxirani massivga saqlang. So‘ng 8 qiymat necha marta uchrashini chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Book fair: Store n stock values in an array, then print the occurrence count of 8. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "0"
+        },
+        {
+          "in": "1\n8",
+          "out": "1"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n9\n8\n7\n8",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "0",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-2",
+        "number": 7
+      },
+      "id": "search-sort-17",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Mos qiymatlar soni",
+        "en": "Travel group: Matching count"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: n ta zaxirani massivga saqlang. So‘ng 9 qiymat necha marta uchrashini chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Travel group: Store n stock values in an array, then print the occurrence count of 9. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "0"
+        },
+        {
+          "in": "1\n9",
+          "out": "1"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n10\n9\n8\n9",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "0",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-2",
+        "number": 8
+      },
+      "id": "search-sort-18",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Mos qiymatlar soni",
+        "en": "Workshop: Matching count"
+      },
+      "statement": {
+        "uz": "Ustaxona: n ta zaxirani massivga saqlang. So‘ng 10 qiymat necha marta uchrashini chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Workshop: Store n stock values in an array, then print the occurrence count of 10. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "0"
+        },
+        {
+          "in": "1\n10",
+          "out": "1"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n11\n10\n9\n10",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "0",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-2",
+        "number": 9
+      },
+      "id": "search-sort-19",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Mos qiymatlar soni",
+        "en": "Volunteer team: Matching count"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: n ta zaxirani massivga saqlang. So‘ng 11 qiymat necha marta uchrashini chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Volunteer team: Store n stock values in an array, then print the occurrence count of 11. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "0"
+        },
+        {
+          "in": "1\n11",
+          "out": "1"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n12\n11\n10\n11",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "0",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-2",
+        "number": 10
+      },
+      "id": "search-sort-20",
+      "difficulty": "medium"
+    }
+  ],
+  "homework": [
+    {
+      "title": {
+        "uz": "Maktab do‘koni: O‘sish tartibi",
+        "en": "School shop: Ascending order"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: n ta zaxirani massivga saqlang. So‘ng zaxiralarni o‘sish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "School shop: Store n stock values in an array, then print stock values in ascending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "2\n4\n7"
+        },
+        {
+          "in": "1\n2",
+          "out": "2"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n3\n2\n1\n2",
+          "out": "1\n2\n2\n3",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "1\n3\n9\n15\n20",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-3",
+        "number": 1
+      },
+      "id": "search-sort-21",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: O‘sish tartibi",
+        "en": "Library: Ascending order"
+      },
+      "statement": {
+        "uz": "Kutubxona: n ta zaxirani massivga saqlang. So‘ng zaxiralarni o‘sish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Library: Store n stock values in an array, then print stock values in ascending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "2\n4\n7"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n4\n3\n2\n3",
+          "out": "2\n3\n3\n4",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "1\n3\n9\n15\n20",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-3",
+        "number": 2
+      },
+      "id": "search-sort-22",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: O‘sish tartibi",
+        "en": "Sports centre: Ascending order"
+      },
+      "statement": {
+        "uz": "Sport markazi: n ta zaxirani massivga saqlang. So‘ng zaxiralarni o‘sish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Sports centre: Store n stock values in an array, then print stock values in ascending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "2\n4\n7"
+        },
+        {
+          "in": "1\n4",
+          "out": "4"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n5\n4\n3\n4",
+          "out": "3\n4\n4\n5",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "1\n3\n9\n15\n20",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-3",
+        "number": 3
+      },
+      "id": "search-sort-23",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: O‘sish tartibi",
+        "en": "Learning centre: Ascending order"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: n ta zaxirani massivga saqlang. So‘ng zaxiralarni o‘sish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Learning centre: Store n stock values in an array, then print stock values in ascending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "2\n4\n7"
+        },
+        {
+          "in": "1\n5",
+          "out": "5"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n6\n5\n4\n5",
+          "out": "4\n5\n5\n6",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "1\n3\n9\n15\n20",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-3",
+        "number": 4
+      },
+      "id": "search-sort-24",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: O‘sish tartibi",
+        "en": "Community club: Ascending order"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: n ta zaxirani massivga saqlang. So‘ng zaxiralarni o‘sish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Community club: Store n stock values in an array, then print stock values in ascending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "2\n4\n7"
+        },
+        {
+          "in": "1\n6",
+          "out": "6"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n7\n6\n5\n6",
+          "out": "5\n6\n6\n7",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "1\n3\n9\n15\n20",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-3",
+        "number": 5
+      },
+      "id": "search-sort-25",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: O‘sish tartibi",
+        "en": "Summer camp: Ascending order"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: n ta zaxirani massivga saqlang. So‘ng zaxiralarni o‘sish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Summer camp: Store n stock values in an array, then print stock values in ascending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "2\n4\n7"
+        },
+        {
+          "in": "1\n7",
+          "out": "7"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n8\n7\n6\n7",
+          "out": "6\n7\n7\n8",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "1\n3\n9\n15\n20",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-3",
+        "number": 6
+      },
+      "id": "search-sort-26",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: O‘sish tartibi",
+        "en": "Book fair: Ascending order"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: n ta zaxirani massivga saqlang. So‘ng zaxiralarni o‘sish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Book fair: Store n stock values in an array, then print stock values in ascending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "2\n4\n7"
+        },
+        {
+          "in": "1\n8",
+          "out": "8"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n9\n8\n7\n8",
+          "out": "7\n8\n8\n9",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "1\n3\n9\n15\n20",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-3",
+        "number": 7
+      },
+      "id": "search-sort-27",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: O‘sish tartibi",
+        "en": "Travel group: Ascending order"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: n ta zaxirani massivga saqlang. So‘ng zaxiralarni o‘sish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Travel group: Store n stock values in an array, then print stock values in ascending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "2\n4\n7"
+        },
+        {
+          "in": "1\n9",
+          "out": "9"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n10\n9\n8\n9",
+          "out": "8\n9\n9\n10",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "1\n3\n9\n15\n20",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-3",
+        "number": 8
+      },
+      "id": "search-sort-28",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: O‘sish tartibi",
+        "en": "Workshop: Ascending order"
+      },
+      "statement": {
+        "uz": "Ustaxona: n ta zaxirani massivga saqlang. So‘ng zaxiralarni o‘sish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Workshop: Store n stock values in an array, then print stock values in ascending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "2\n4\n7"
+        },
+        {
+          "in": "1\n10",
+          "out": "10"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n11\n10\n9\n10",
+          "out": "9\n10\n10\n11",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "1\n3\n9\n15\n20",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-3",
+        "number": 9
+      },
+      "id": "search-sort-29",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: O‘sish tartibi",
+        "en": "Volunteer team: Ascending order"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: n ta zaxirani massivga saqlang. So‘ng zaxiralarni o‘sish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Volunteer team: Store n stock values in an array, then print stock values in ascending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "2\n4\n7"
+        },
+        {
+          "in": "1\n11",
+          "out": "11"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n12\n11\n10\n11",
+          "out": "10\n11\n11\n12",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "1\n3\n9\n15\n20",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-3",
+        "number": 10
+      },
+      "id": "search-sort-30",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Kamayish tartibi",
+        "en": "School shop: Descending order"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: n ta zaxirani massivga saqlang. So‘ng zaxiralarni kamayish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "School shop: Store n stock values in an array, then print stock values in descending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "7\n4\n2"
+        },
+        {
+          "in": "1\n2",
+          "out": "2"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n3\n2\n1\n2",
+          "out": "3\n2\n2\n1",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "20\n15\n9\n3\n1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-4",
+        "number": 1
+      },
+      "id": "search-sort-31",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Kamayish tartibi",
+        "en": "Library: Descending order"
+      },
+      "statement": {
+        "uz": "Kutubxona: n ta zaxirani massivga saqlang. So‘ng zaxiralarni kamayish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Library: Store n stock values in an array, then print stock values in descending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "7\n4\n2"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n4\n3\n2\n3",
+          "out": "4\n3\n3\n2",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "20\n15\n9\n3\n1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-4",
+        "number": 2
+      },
+      "id": "search-sort-32",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Kamayish tartibi",
+        "en": "Sports centre: Descending order"
+      },
+      "statement": {
+        "uz": "Sport markazi: n ta zaxirani massivga saqlang. So‘ng zaxiralarni kamayish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Sports centre: Store n stock values in an array, then print stock values in descending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "7\n4\n2"
+        },
+        {
+          "in": "1\n4",
+          "out": "4"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n5\n4\n3\n4",
+          "out": "5\n4\n4\n3",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "20\n15\n9\n3\n1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-4",
+        "number": 3
+      },
+      "id": "search-sort-33",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Kamayish tartibi",
+        "en": "Learning centre: Descending order"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: n ta zaxirani massivga saqlang. So‘ng zaxiralarni kamayish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Learning centre: Store n stock values in an array, then print stock values in descending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "7\n4\n2"
+        },
+        {
+          "in": "1\n5",
+          "out": "5"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n6\n5\n4\n5",
+          "out": "6\n5\n5\n4",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "20\n15\n9\n3\n1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-4",
+        "number": 4
+      },
+      "id": "search-sort-34",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Kamayish tartibi",
+        "en": "Community club: Descending order"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: n ta zaxirani massivga saqlang. So‘ng zaxiralarni kamayish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Community club: Store n stock values in an array, then print stock values in descending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "7\n4\n2"
+        },
+        {
+          "in": "1\n6",
+          "out": "6"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n7\n6\n5\n6",
+          "out": "7\n6\n6\n5",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "20\n15\n9\n3\n1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-4",
+        "number": 5
+      },
+      "id": "search-sort-35",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Kamayish tartibi",
+        "en": "Summer camp: Descending order"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: n ta zaxirani massivga saqlang. So‘ng zaxiralarni kamayish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Summer camp: Store n stock values in an array, then print stock values in descending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "7\n4\n2"
+        },
+        {
+          "in": "1\n7",
+          "out": "7"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n8\n7\n6\n7",
+          "out": "8\n7\n7\n6",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "20\n15\n9\n3\n1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-4",
+        "number": 6
+      },
+      "id": "search-sort-36",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Kamayish tartibi",
+        "en": "Book fair: Descending order"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: n ta zaxirani massivga saqlang. So‘ng zaxiralarni kamayish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Book fair: Store n stock values in an array, then print stock values in descending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "7\n4\n2"
+        },
+        {
+          "in": "1\n8",
+          "out": "8"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n9\n8\n7\n8",
+          "out": "9\n8\n8\n7",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "20\n15\n9\n3\n1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-4",
+        "number": 7
+      },
+      "id": "search-sort-37",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Kamayish tartibi",
+        "en": "Travel group: Descending order"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: n ta zaxirani massivga saqlang. So‘ng zaxiralarni kamayish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Travel group: Store n stock values in an array, then print stock values in descending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "7\n4\n2"
+        },
+        {
+          "in": "1\n9",
+          "out": "9"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n10\n9\n8\n9",
+          "out": "10\n9\n9\n8",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "20\n15\n9\n3\n1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-4",
+        "number": 8
+      },
+      "id": "search-sort-38",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Kamayish tartibi",
+        "en": "Workshop: Descending order"
+      },
+      "statement": {
+        "uz": "Ustaxona: n ta zaxirani massivga saqlang. So‘ng zaxiralarni kamayish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Workshop: Store n stock values in an array, then print stock values in descending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "7\n4\n2"
+        },
+        {
+          "in": "1\n10",
+          "out": "10"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n11\n10\n9\n10",
+          "out": "11\n10\n10\n9",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "20\n15\n9\n3\n1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-4",
+        "number": 9
+      },
+      "id": "search-sort-39",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Kamayish tartibi",
+        "en": "Volunteer team: Descending order"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: n ta zaxirani massivga saqlang. So‘ng zaxiralarni kamayish tartibida chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Volunteer team: Store n stock values in an array, then print stock values in descending order. Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "7\n4\n2"
+        },
+        {
+          "in": "1\n11",
+          "out": "11"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0\n0\n0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n12\n11\n10\n11",
+          "out": "12\n11\n11\n10",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "20\n15\n9\n3\n1",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100\n100\n100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-4",
+        "number": 10
+      },
+      "id": "search-sort-40",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Ikkinchi eng kichik",
+        "en": "School shop: Second smallest"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: n ta zaxirani massivga saqlang. So‘ng ikkinchi eng kichik qiymatni (takrorlar ham o‘rin egallaydi, n=1 bo‘lsa yagona qiymat) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "School shop: Store n stock values in an array, then print the second-smallest value (duplicates count; for n=1 print the only value). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "4"
+        },
+        {
+          "in": "1\n2",
+          "out": "2"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n3\n2\n1\n2",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-5",
+        "number": 1
+      },
+      "id": "search-sort-41",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Ikkinchi eng kichik",
+        "en": "Library: Second smallest"
+      },
+      "statement": {
+        "uz": "Kutubxona: n ta zaxirani massivga saqlang. So‘ng ikkinchi eng kichik qiymatni (takrorlar ham o‘rin egallaydi, n=1 bo‘lsa yagona qiymat) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Library: Store n stock values in an array, then print the second-smallest value (duplicates count; for n=1 print the only value). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "4"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n4\n3\n2\n3",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-5",
+        "number": 2
+      },
+      "id": "search-sort-42",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Ikkinchi eng kichik",
+        "en": "Sports centre: Second smallest"
+      },
+      "statement": {
+        "uz": "Sport markazi: n ta zaxirani massivga saqlang. So‘ng ikkinchi eng kichik qiymatni (takrorlar ham o‘rin egallaydi, n=1 bo‘lsa yagona qiymat) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Sports centre: Store n stock values in an array, then print the second-smallest value (duplicates count; for n=1 print the only value). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "4"
+        },
+        {
+          "in": "1\n4",
+          "out": "4"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n5\n4\n3\n4",
+          "out": "4",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-5",
+        "number": 3
+      },
+      "id": "search-sort-43",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Ikkinchi eng kichik",
+        "en": "Learning centre: Second smallest"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: n ta zaxirani massivga saqlang. So‘ng ikkinchi eng kichik qiymatni (takrorlar ham o‘rin egallaydi, n=1 bo‘lsa yagona qiymat) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Learning centre: Store n stock values in an array, then print the second-smallest value (duplicates count; for n=1 print the only value). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "4"
+        },
+        {
+          "in": "1\n5",
+          "out": "5"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n6\n5\n4\n5",
+          "out": "5",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-5",
+        "number": 4
+      },
+      "id": "search-sort-44",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Ikkinchi eng kichik",
+        "en": "Community club: Second smallest"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: n ta zaxirani massivga saqlang. So‘ng ikkinchi eng kichik qiymatni (takrorlar ham o‘rin egallaydi, n=1 bo‘lsa yagona qiymat) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Community club: Store n stock values in an array, then print the second-smallest value (duplicates count; for n=1 print the only value). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "4"
+        },
+        {
+          "in": "1\n6",
+          "out": "6"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n7\n6\n5\n6",
+          "out": "6",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-5",
+        "number": 5
+      },
+      "id": "search-sort-45",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Ikkinchi eng kichik",
+        "en": "Summer camp: Second smallest"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: n ta zaxirani massivga saqlang. So‘ng ikkinchi eng kichik qiymatni (takrorlar ham o‘rin egallaydi, n=1 bo‘lsa yagona qiymat) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Summer camp: Store n stock values in an array, then print the second-smallest value (duplicates count; for n=1 print the only value). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "4"
+        },
+        {
+          "in": "1\n7",
+          "out": "7"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n8\n7\n6\n7",
+          "out": "7",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-5",
+        "number": 6
+      },
+      "id": "search-sort-46",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Ikkinchi eng kichik",
+        "en": "Book fair: Second smallest"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: n ta zaxirani massivga saqlang. So‘ng ikkinchi eng kichik qiymatni (takrorlar ham o‘rin egallaydi, n=1 bo‘lsa yagona qiymat) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Book fair: Store n stock values in an array, then print the second-smallest value (duplicates count; for n=1 print the only value). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "4"
+        },
+        {
+          "in": "1\n8",
+          "out": "8"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n9\n8\n7\n8",
+          "out": "8",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-5",
+        "number": 7
+      },
+      "id": "search-sort-47",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Ikkinchi eng kichik",
+        "en": "Travel group: Second smallest"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: n ta zaxirani massivga saqlang. So‘ng ikkinchi eng kichik qiymatni (takrorlar ham o‘rin egallaydi, n=1 bo‘lsa yagona qiymat) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Travel group: Store n stock values in an array, then print the second-smallest value (duplicates count; for n=1 print the only value). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "4"
+        },
+        {
+          "in": "1\n9",
+          "out": "9"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n10\n9\n8\n9",
+          "out": "9",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-5",
+        "number": 8
+      },
+      "id": "search-sort-48",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Ikkinchi eng kichik",
+        "en": "Workshop: Second smallest"
+      },
+      "statement": {
+        "uz": "Ustaxona: n ta zaxirani massivga saqlang. So‘ng ikkinchi eng kichik qiymatni (takrorlar ham o‘rin egallaydi, n=1 bo‘lsa yagona qiymat) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Workshop: Store n stock values in an array, then print the second-smallest value (duplicates count; for n=1 print the only value). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "4"
+        },
+        {
+          "in": "1\n10",
+          "out": "10"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n11\n10\n9\n10",
+          "out": "10",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-5",
+        "number": 9
+      },
+      "id": "search-sort-49",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Ikkinchi eng kichik",
+        "en": "Volunteer team: Second smallest"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: n ta zaxirani massivga saqlang. So‘ng ikkinchi eng kichik qiymatni (takrorlar ham o‘rin egallaydi, n=1 bo‘lsa yagona qiymat) chiqaring. Indekslar 0 dan boshlanadi.",
+        "en": "Volunteer team: Store n stock values in an array, then print the second-smallest value (duplicates count; for n=1 print the only value). Indexes start at 0."
+      },
+      "inputFormat": {
+        "uz": "n (1..100), keyin n ta butun son (0..10000), har biri alohida qatorda.",
+        "en": "n (1..100), then n integers (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "4"
+        },
+        {
+          "in": "1\n11",
+          "out": "11"
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n12\n11\n10\n11",
+          "out": "11",
+          "hidden": true
+        },
+        {
+          "in": "5\n20\n3\n9\n1\n15",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "3\n100\n100\n100",
+          "out": "100",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "declare",
+          "for"
+        ],
+        "requireArray": true
+      },
+      "variant": {
+        "family": "search-sort-5",
+        "number": 10
+      },
+      "id": "search-sort-50",
+      "difficulty": "hard"
+    }
+  ]
+}

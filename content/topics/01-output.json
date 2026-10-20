@@ -1,0 +1,3138 @@
+{
+  "id": "output",
+  "order": 1,
+  "title": {
+    "uz": "Output — ekranga chiqarish",
+    "en": "Output — display"
+  },
+  "lesson": {
+    "uz": "Flowgorithm’da Start va End orasiga Output blokini qo‘ying. Matn qo‘shtirnoq ichida yoziladi: \"Salom\". Son yoki ifoda esa qo‘shtirnoqsiz yoziladi: 12 + 3. New Line yoqilsa, keyingi natija yangi qatordan chiqadi.\nFile → Save orqali .fprg fayl saqlang. Bu mavzuda Input kerak emas: topshiriqdagi aniq matn yoki hisob natijasini chiqaring. Bo‘sh joylar va qatorlar tartibini tekshiring.",
+    "en": "Place Output between Start and End. Put text in double quotes: \"Hello\". Write numbers and expressions without quotes: 12 + 3. Enable New Line to move the next output to another line.\nSave a .fprg file using File → Save. This topic needs no Input: print the specified text or calculated result. Check spaces and line order."
+  },
+  "concepts": [
+    {
+      "title": {
+        "uz": "Bloklar",
+        "en": "Blocks"
+      },
+      "text": {
+        "uz": "Shartdagi talab etilgan bloklarga e’tibor bering.",
+        "en": "Check the required blocks in each task."
+      }
+    },
+    {
+      "title": {
+        "uz": "Tekshirish",
+        "en": "Testing"
+      },
+      "text": {
+        "uz": "Har bir Input alohida qatorni o‘qiydi. Natijani namuna bilan taqqoslang.",
+        "en": "Each Input reads one line. Compare your output with the examples."
+      }
+    }
+  ],
+  "classwork": [
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Xush kelibsiz xabari",
+        "en": "School shop: Welcome message"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nMIRAE\nSchool shop",
+        "en": "Print exactly these lines:\nMIRAE\nSchool shop"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "MIRAE\nSchool shop"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nSchool shop"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nSchool shop",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-1",
+        "number": 1
+      },
+      "id": "output-01",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Xush kelibsiz xabari",
+        "en": "Library: Welcome message"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nMIRAE\nLibrary",
+        "en": "Print exactly these lines:\nMIRAE\nLibrary"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "MIRAE\nLibrary"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nLibrary"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nLibrary",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-1",
+        "number": 2
+      },
+      "id": "output-02",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Xush kelibsiz xabari",
+        "en": "Sports centre: Welcome message"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nMIRAE\nSports centre",
+        "en": "Print exactly these lines:\nMIRAE\nSports centre"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "MIRAE\nSports centre"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nSports centre"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nSports centre",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-1",
+        "number": 3
+      },
+      "id": "output-03",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Xush kelibsiz xabari",
+        "en": "Learning centre: Welcome message"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nMIRAE\nLearning centre",
+        "en": "Print exactly these lines:\nMIRAE\nLearning centre"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "MIRAE\nLearning centre"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nLearning centre"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nLearning centre",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-1",
+        "number": 4
+      },
+      "id": "output-04",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Xush kelibsiz xabari",
+        "en": "Community club: Welcome message"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nMIRAE\nCommunity club",
+        "en": "Print exactly these lines:\nMIRAE\nCommunity club"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "MIRAE\nCommunity club"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nCommunity club"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nCommunity club",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-1",
+        "number": 5
+      },
+      "id": "output-05",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Xush kelibsiz xabari",
+        "en": "Summer camp: Welcome message"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nMIRAE\nSummer camp",
+        "en": "Print exactly these lines:\nMIRAE\nSummer camp"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "MIRAE\nSummer camp"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nSummer camp"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nSummer camp",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-1",
+        "number": 6
+      },
+      "id": "output-06",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Xush kelibsiz xabari",
+        "en": "Book fair: Welcome message"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nMIRAE\nBook fair",
+        "en": "Print exactly these lines:\nMIRAE\nBook fair"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "MIRAE\nBook fair"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nBook fair"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nBook fair",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-1",
+        "number": 7
+      },
+      "id": "output-07",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Xush kelibsiz xabari",
+        "en": "Travel group: Welcome message"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nMIRAE\nTravel group",
+        "en": "Print exactly these lines:\nMIRAE\nTravel group"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "MIRAE\nTravel group"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nTravel group"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nTravel group",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-1",
+        "number": 8
+      },
+      "id": "output-08",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Xush kelibsiz xabari",
+        "en": "Workshop: Welcome message"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nMIRAE\nWorkshop",
+        "en": "Print exactly these lines:\nMIRAE\nWorkshop"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "MIRAE\nWorkshop"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nWorkshop"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nWorkshop",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-1",
+        "number": 9
+      },
+      "id": "output-09",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Xush kelibsiz xabari",
+        "en": "Volunteer team: Welcome message"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nMIRAE\nVolunteer team",
+        "en": "Print exactly these lines:\nMIRAE\nVolunteer team"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "MIRAE\nVolunteer team"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nVolunteer team"
+        },
+        {
+          "in": "",
+          "out": "MIRAE\nVolunteer team",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-1",
+        "number": 10
+      },
+      "id": "output-10",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Ochilish vaqti",
+        "en": "School shop: Opening time"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nSchool shop\nOPEN 2:00",
+        "en": "Print exactly these lines:\nSchool shop\nOPEN 2:00"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "School shop\nOPEN 2:00"
+        },
+        {
+          "in": "",
+          "out": "School shop\nOPEN 2:00"
+        },
+        {
+          "in": "",
+          "out": "School shop\nOPEN 2:00",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-2",
+        "number": 1
+      },
+      "id": "output-11",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Ochilish vaqti",
+        "en": "Library: Opening time"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nLibrary\nOPEN 3:00",
+        "en": "Print exactly these lines:\nLibrary\nOPEN 3:00"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "Library\nOPEN 3:00"
+        },
+        {
+          "in": "",
+          "out": "Library\nOPEN 3:00"
+        },
+        {
+          "in": "",
+          "out": "Library\nOPEN 3:00",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-2",
+        "number": 2
+      },
+      "id": "output-12",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Ochilish vaqti",
+        "en": "Sports centre: Opening time"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nSports centre\nOPEN 4:00",
+        "en": "Print exactly these lines:\nSports centre\nOPEN 4:00"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "Sports centre\nOPEN 4:00"
+        },
+        {
+          "in": "",
+          "out": "Sports centre\nOPEN 4:00"
+        },
+        {
+          "in": "",
+          "out": "Sports centre\nOPEN 4:00",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-2",
+        "number": 3
+      },
+      "id": "output-13",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Ochilish vaqti",
+        "en": "Learning centre: Opening time"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nLearning centre\nOPEN 5:00",
+        "en": "Print exactly these lines:\nLearning centre\nOPEN 5:00"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "Learning centre\nOPEN 5:00"
+        },
+        {
+          "in": "",
+          "out": "Learning centre\nOPEN 5:00"
+        },
+        {
+          "in": "",
+          "out": "Learning centre\nOPEN 5:00",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-2",
+        "number": 4
+      },
+      "id": "output-14",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Ochilish vaqti",
+        "en": "Community club: Opening time"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nCommunity club\nOPEN 6:00",
+        "en": "Print exactly these lines:\nCommunity club\nOPEN 6:00"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "Community club\nOPEN 6:00"
+        },
+        {
+          "in": "",
+          "out": "Community club\nOPEN 6:00"
+        },
+        {
+          "in": "",
+          "out": "Community club\nOPEN 6:00",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-2",
+        "number": 5
+      },
+      "id": "output-15",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Ochilish vaqti",
+        "en": "Summer camp: Opening time"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nSummer camp\nOPEN 7:00",
+        "en": "Print exactly these lines:\nSummer camp\nOPEN 7:00"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "Summer camp\nOPEN 7:00"
+        },
+        {
+          "in": "",
+          "out": "Summer camp\nOPEN 7:00"
+        },
+        {
+          "in": "",
+          "out": "Summer camp\nOPEN 7:00",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-2",
+        "number": 6
+      },
+      "id": "output-16",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Ochilish vaqti",
+        "en": "Book fair: Opening time"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nBook fair\nOPEN 8:00",
+        "en": "Print exactly these lines:\nBook fair\nOPEN 8:00"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "Book fair\nOPEN 8:00"
+        },
+        {
+          "in": "",
+          "out": "Book fair\nOPEN 8:00"
+        },
+        {
+          "in": "",
+          "out": "Book fair\nOPEN 8:00",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-2",
+        "number": 7
+      },
+      "id": "output-17",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Ochilish vaqti",
+        "en": "Travel group: Opening time"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nTravel group\nOPEN 9:00",
+        "en": "Print exactly these lines:\nTravel group\nOPEN 9:00"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "Travel group\nOPEN 9:00"
+        },
+        {
+          "in": "",
+          "out": "Travel group\nOPEN 9:00"
+        },
+        {
+          "in": "",
+          "out": "Travel group\nOPEN 9:00",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-2",
+        "number": 8
+      },
+      "id": "output-18",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Ochilish vaqti",
+        "en": "Workshop: Opening time"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nWorkshop\nOPEN 10:00",
+        "en": "Print exactly these lines:\nWorkshop\nOPEN 10:00"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "Workshop\nOPEN 10:00"
+        },
+        {
+          "in": "",
+          "out": "Workshop\nOPEN 10:00"
+        },
+        {
+          "in": "",
+          "out": "Workshop\nOPEN 10:00",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-2",
+        "number": 9
+      },
+      "id": "output-19",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Ochilish vaqti",
+        "en": "Volunteer team: Opening time"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nVolunteer team\nOPEN 11:00",
+        "en": "Print exactly these lines:\nVolunteer team\nOPEN 11:00"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "Volunteer team\nOPEN 11:00"
+        },
+        {
+          "in": "",
+          "out": "Volunteer team\nOPEN 11:00"
+        },
+        {
+          "in": "",
+          "out": "Volunteer team\nOPEN 11:00",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-2",
+        "number": 10
+      },
+      "id": "output-20",
+      "difficulty": "medium"
+    }
+  ],
+  "homework": [
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Qadamlar ro‘yxati",
+        "en": "School shop: Step list"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nSTEP 2\nLEARN\nSTEP 3\nCREATE",
+        "en": "Print exactly these lines:\nSTEP 2\nLEARN\nSTEP 3\nCREATE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "STEP 2\nLEARN\nSTEP 3\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 2\nLEARN\nSTEP 3\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 2\nLEARN\nSTEP 3\nCREATE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-3",
+        "number": 1
+      },
+      "id": "output-21",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Qadamlar ro‘yxati",
+        "en": "Library: Step list"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nSTEP 3\nLEARN\nSTEP 4\nCREATE",
+        "en": "Print exactly these lines:\nSTEP 3\nLEARN\nSTEP 4\nCREATE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "STEP 3\nLEARN\nSTEP 4\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 3\nLEARN\nSTEP 4\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 3\nLEARN\nSTEP 4\nCREATE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-3",
+        "number": 2
+      },
+      "id": "output-22",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Qadamlar ro‘yxati",
+        "en": "Sports centre: Step list"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nSTEP 4\nLEARN\nSTEP 5\nCREATE",
+        "en": "Print exactly these lines:\nSTEP 4\nLEARN\nSTEP 5\nCREATE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "STEP 4\nLEARN\nSTEP 5\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 4\nLEARN\nSTEP 5\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 4\nLEARN\nSTEP 5\nCREATE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-3",
+        "number": 3
+      },
+      "id": "output-23",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Qadamlar ro‘yxati",
+        "en": "Learning centre: Step list"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nSTEP 5\nLEARN\nSTEP 6\nCREATE",
+        "en": "Print exactly these lines:\nSTEP 5\nLEARN\nSTEP 6\nCREATE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "STEP 5\nLEARN\nSTEP 6\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 5\nLEARN\nSTEP 6\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 5\nLEARN\nSTEP 6\nCREATE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-3",
+        "number": 4
+      },
+      "id": "output-24",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Qadamlar ro‘yxati",
+        "en": "Community club: Step list"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nSTEP 6\nLEARN\nSTEP 7\nCREATE",
+        "en": "Print exactly these lines:\nSTEP 6\nLEARN\nSTEP 7\nCREATE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "STEP 6\nLEARN\nSTEP 7\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 6\nLEARN\nSTEP 7\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 6\nLEARN\nSTEP 7\nCREATE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-3",
+        "number": 5
+      },
+      "id": "output-25",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Qadamlar ro‘yxati",
+        "en": "Summer camp: Step list"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nSTEP 7\nLEARN\nSTEP 8\nCREATE",
+        "en": "Print exactly these lines:\nSTEP 7\nLEARN\nSTEP 8\nCREATE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "STEP 7\nLEARN\nSTEP 8\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 7\nLEARN\nSTEP 8\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 7\nLEARN\nSTEP 8\nCREATE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-3",
+        "number": 6
+      },
+      "id": "output-26",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Qadamlar ro‘yxati",
+        "en": "Book fair: Step list"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nSTEP 8\nLEARN\nSTEP 9\nCREATE",
+        "en": "Print exactly these lines:\nSTEP 8\nLEARN\nSTEP 9\nCREATE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "STEP 8\nLEARN\nSTEP 9\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 8\nLEARN\nSTEP 9\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 8\nLEARN\nSTEP 9\nCREATE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-3",
+        "number": 7
+      },
+      "id": "output-27",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Qadamlar ro‘yxati",
+        "en": "Travel group: Step list"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nSTEP 9\nLEARN\nSTEP 10\nCREATE",
+        "en": "Print exactly these lines:\nSTEP 9\nLEARN\nSTEP 10\nCREATE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "STEP 9\nLEARN\nSTEP 10\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 9\nLEARN\nSTEP 10\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 9\nLEARN\nSTEP 10\nCREATE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-3",
+        "number": 8
+      },
+      "id": "output-28",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Qadamlar ro‘yxati",
+        "en": "Workshop: Step list"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nSTEP 10\nLEARN\nSTEP 11\nCREATE",
+        "en": "Print exactly these lines:\nSTEP 10\nLEARN\nSTEP 11\nCREATE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "STEP 10\nLEARN\nSTEP 11\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 10\nLEARN\nSTEP 11\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 10\nLEARN\nSTEP 11\nCREATE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-3",
+        "number": 9
+      },
+      "id": "output-29",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Qadamlar ro‘yxati",
+        "en": "Volunteer team: Step list"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nSTEP 11\nLEARN\nSTEP 12\nCREATE",
+        "en": "Print exactly these lines:\nSTEP 11\nLEARN\nSTEP 12\nCREATE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "STEP 11\nLEARN\nSTEP 12\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 11\nLEARN\nSTEP 12\nCREATE"
+        },
+        {
+          "in": "",
+          "out": "STEP 11\nLEARN\nSTEP 12\nCREATE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-3",
+        "number": 10
+      },
+      "id": "output-30",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Xona belgisi",
+        "en": "School shop: Room sign"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nROOM 2\nSEATS 8",
+        "en": "Print exactly these lines:\nROOM 2\nSEATS 8"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "ROOM 2\nSEATS 8"
+        },
+        {
+          "in": "",
+          "out": "ROOM 2\nSEATS 8"
+        },
+        {
+          "in": "",
+          "out": "ROOM 2\nSEATS 8",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-4",
+        "number": 1
+      },
+      "id": "output-31",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Xona belgisi",
+        "en": "Library: Room sign"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nROOM 3\nSEATS 12",
+        "en": "Print exactly these lines:\nROOM 3\nSEATS 12"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "ROOM 3\nSEATS 12"
+        },
+        {
+          "in": "",
+          "out": "ROOM 3\nSEATS 12"
+        },
+        {
+          "in": "",
+          "out": "ROOM 3\nSEATS 12",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-4",
+        "number": 2
+      },
+      "id": "output-32",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Xona belgisi",
+        "en": "Sports centre: Room sign"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nROOM 4\nSEATS 16",
+        "en": "Print exactly these lines:\nROOM 4\nSEATS 16"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "ROOM 4\nSEATS 16"
+        },
+        {
+          "in": "",
+          "out": "ROOM 4\nSEATS 16"
+        },
+        {
+          "in": "",
+          "out": "ROOM 4\nSEATS 16",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-4",
+        "number": 3
+      },
+      "id": "output-33",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Xona belgisi",
+        "en": "Learning centre: Room sign"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nROOM 5\nSEATS 20",
+        "en": "Print exactly these lines:\nROOM 5\nSEATS 20"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "ROOM 5\nSEATS 20"
+        },
+        {
+          "in": "",
+          "out": "ROOM 5\nSEATS 20"
+        },
+        {
+          "in": "",
+          "out": "ROOM 5\nSEATS 20",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-4",
+        "number": 4
+      },
+      "id": "output-34",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Xona belgisi",
+        "en": "Community club: Room sign"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nROOM 6\nSEATS 24",
+        "en": "Print exactly these lines:\nROOM 6\nSEATS 24"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "ROOM 6\nSEATS 24"
+        },
+        {
+          "in": "",
+          "out": "ROOM 6\nSEATS 24"
+        },
+        {
+          "in": "",
+          "out": "ROOM 6\nSEATS 24",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-4",
+        "number": 5
+      },
+      "id": "output-35",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Xona belgisi",
+        "en": "Summer camp: Room sign"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nROOM 7\nSEATS 28",
+        "en": "Print exactly these lines:\nROOM 7\nSEATS 28"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "ROOM 7\nSEATS 28"
+        },
+        {
+          "in": "",
+          "out": "ROOM 7\nSEATS 28"
+        },
+        {
+          "in": "",
+          "out": "ROOM 7\nSEATS 28",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-4",
+        "number": 6
+      },
+      "id": "output-36",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Xona belgisi",
+        "en": "Book fair: Room sign"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nROOM 8\nSEATS 32",
+        "en": "Print exactly these lines:\nROOM 8\nSEATS 32"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "ROOM 8\nSEATS 32"
+        },
+        {
+          "in": "",
+          "out": "ROOM 8\nSEATS 32"
+        },
+        {
+          "in": "",
+          "out": "ROOM 8\nSEATS 32",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-4",
+        "number": 7
+      },
+      "id": "output-37",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Xona belgisi",
+        "en": "Travel group: Room sign"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nROOM 9\nSEATS 36",
+        "en": "Print exactly these lines:\nROOM 9\nSEATS 36"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "ROOM 9\nSEATS 36"
+        },
+        {
+          "in": "",
+          "out": "ROOM 9\nSEATS 36"
+        },
+        {
+          "in": "",
+          "out": "ROOM 9\nSEATS 36",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-4",
+        "number": 8
+      },
+      "id": "output-38",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Xona belgisi",
+        "en": "Workshop: Room sign"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nROOM 10\nSEATS 40",
+        "en": "Print exactly these lines:\nROOM 10\nSEATS 40"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "ROOM 10\nSEATS 40"
+        },
+        {
+          "in": "",
+          "out": "ROOM 10\nSEATS 40"
+        },
+        {
+          "in": "",
+          "out": "ROOM 10\nSEATS 40",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-4",
+        "number": 9
+      },
+      "id": "output-39",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Xona belgisi",
+        "en": "Volunteer team: Room sign"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nROOM 11\nSEATS 44",
+        "en": "Print exactly these lines:\nROOM 11\nSEATS 44"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "ROOM 11\nSEATS 44"
+        },
+        {
+          "in": "",
+          "out": "ROOM 11\nSEATS 44"
+        },
+        {
+          "in": "",
+          "out": "ROOM 11\nSEATS 44",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-4",
+        "number": 10
+      },
+      "id": "output-40",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Qisqa hisobot",
+        "en": "School shop: Short report"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nSchool shop\n10\nDONE",
+        "en": "Print exactly these lines:\nSchool shop\n10\nDONE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "School shop\n10\nDONE"
+        },
+        {
+          "in": "",
+          "out": "School shop\n10\nDONE"
+        },
+        {
+          "in": "",
+          "out": "School shop\n10\nDONE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-5",
+        "number": 1
+      },
+      "id": "output-41",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Qisqa hisobot",
+        "en": "Library: Short report"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nLibrary\n15\nDONE",
+        "en": "Print exactly these lines:\nLibrary\n15\nDONE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "Library\n15\nDONE"
+        },
+        {
+          "in": "",
+          "out": "Library\n15\nDONE"
+        },
+        {
+          "in": "",
+          "out": "Library\n15\nDONE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-5",
+        "number": 2
+      },
+      "id": "output-42",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Qisqa hisobot",
+        "en": "Sports centre: Short report"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nSports centre\n20\nDONE",
+        "en": "Print exactly these lines:\nSports centre\n20\nDONE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "Sports centre\n20\nDONE"
+        },
+        {
+          "in": "",
+          "out": "Sports centre\n20\nDONE"
+        },
+        {
+          "in": "",
+          "out": "Sports centre\n20\nDONE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-5",
+        "number": 3
+      },
+      "id": "output-43",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Qisqa hisobot",
+        "en": "Learning centre: Short report"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nLearning centre\n25\nDONE",
+        "en": "Print exactly these lines:\nLearning centre\n25\nDONE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "Learning centre\n25\nDONE"
+        },
+        {
+          "in": "",
+          "out": "Learning centre\n25\nDONE"
+        },
+        {
+          "in": "",
+          "out": "Learning centre\n25\nDONE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-5",
+        "number": 4
+      },
+      "id": "output-44",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Qisqa hisobot",
+        "en": "Community club: Short report"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nCommunity club\n30\nDONE",
+        "en": "Print exactly these lines:\nCommunity club\n30\nDONE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "Community club\n30\nDONE"
+        },
+        {
+          "in": "",
+          "out": "Community club\n30\nDONE"
+        },
+        {
+          "in": "",
+          "out": "Community club\n30\nDONE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-5",
+        "number": 5
+      },
+      "id": "output-45",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Qisqa hisobot",
+        "en": "Summer camp: Short report"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nSummer camp\n35\nDONE",
+        "en": "Print exactly these lines:\nSummer camp\n35\nDONE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "Summer camp\n35\nDONE"
+        },
+        {
+          "in": "",
+          "out": "Summer camp\n35\nDONE"
+        },
+        {
+          "in": "",
+          "out": "Summer camp\n35\nDONE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-5",
+        "number": 6
+      },
+      "id": "output-46",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Qisqa hisobot",
+        "en": "Book fair: Short report"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nBook fair\n40\nDONE",
+        "en": "Print exactly these lines:\nBook fair\n40\nDONE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "Book fair\n40\nDONE"
+        },
+        {
+          "in": "",
+          "out": "Book fair\n40\nDONE"
+        },
+        {
+          "in": "",
+          "out": "Book fair\n40\nDONE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-5",
+        "number": 7
+      },
+      "id": "output-47",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Qisqa hisobot",
+        "en": "Travel group: Short report"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nTravel group\n45\nDONE",
+        "en": "Print exactly these lines:\nTravel group\n45\nDONE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "Travel group\n45\nDONE"
+        },
+        {
+          "in": "",
+          "out": "Travel group\n45\nDONE"
+        },
+        {
+          "in": "",
+          "out": "Travel group\n45\nDONE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-5",
+        "number": 8
+      },
+      "id": "output-48",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Qisqa hisobot",
+        "en": "Workshop: Short report"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nWorkshop\n50\nDONE",
+        "en": "Print exactly these lines:\nWorkshop\n50\nDONE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "Workshop\n50\nDONE"
+        },
+        {
+          "in": "",
+          "out": "Workshop\n50\nDONE"
+        },
+        {
+          "in": "",
+          "out": "Workshop\n50\nDONE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-5",
+        "number": 9
+      },
+      "id": "output-49",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Qisqa hisobot",
+        "en": "Volunteer team: Short report"
+      },
+      "statement": {
+        "uz": "Ekranga quyidagi qatorlarni aynan chiqaring:\nVolunteer team\n55\nDONE",
+        "en": "Print exactly these lines:\nVolunteer team\n55\nDONE"
+      },
+      "inputFormat": {
+        "uz": "Kirish ma’lumoti yo‘q.",
+        "en": "No input."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "",
+          "out": "Volunteer team\n55\nDONE"
+        },
+        {
+          "in": "",
+          "out": "Volunteer team\n55\nDONE"
+        },
+        {
+          "in": "",
+          "out": "Volunteer team\n55\nDONE",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "output"
+        ],
+        "forbiddenBlocks": [
+          "input"
+        ]
+      },
+      "variant": {
+        "family": "output-5",
+        "number": 10
+      },
+      "id": "output-50",
+      "difficulty": "hard"
+    }
+  ]
+}

@@ -1,0 +1,3738 @@
+{
+  "id": "projects",
+  "order": 15,
+  "title": {
+    "uz": "Amaliy mini-loyihalar",
+    "en": "Practical mini-projects"
+  },
+  "lesson": {
+    "uz": "Loyihani kichik bosqichlarga bo‘ling: ma’lumot olish, tekshirish, hisoblash va chiqarish. Avval oddiy misolni qog‘ozda yeching, so‘ng bloklarga aylantiring.\nKassa uchun yig‘indi, baholar uchun hisoblagich va o‘rtacha, ombor uchun shartli yangilash kerak bo‘ladi. Natijalar tartibi shart bilan aynan mos bo‘lsin. Loyihada menyu, qo‘shimcha matn yoki tasodifiy son kerak emas, agar shart so‘ramasa.",
+    "en": "Break a project into input, validation, calculation and output. Work through a small example on paper before drawing blocks.\nA checkout needs totals, a grade book needs counters and averages, and stock tracking needs conditional updates. Match the specified output order. Do not add a menu, prompts or randomness unless requested."
+  },
+  "concepts": [
+    {
+      "title": {
+        "uz": "Bloklar",
+        "en": "Blocks"
+      },
+      "text": {
+        "uz": "Shartdagi talab etilgan bloklarga e’tibor bering.",
+        "en": "Check the required blocks in each task."
+      }
+    },
+    {
+      "title": {
+        "uz": "Tekshirish",
+        "en": "Testing"
+      },
+      "text": {
+        "uz": "Har bir Input alohida qatorni o‘qiydi. Natijani namuna bilan taqqoslang.",
+        "en": "Each Input reads one line. Compare your output with the examples."
+      }
+    }
+  ],
+  "classwork": [
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Bonusli kassa",
+        "en": "School shop: Checkout with rewards"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: Har xarid qiymati berilgan. Jami summa va har 2 so‘m uchun 1 ball hisobida jami bonusni chiqaring.",
+        "en": "School shop: Given purchase amounts, print total spending and bonus points (1 per 2 units of total spending)."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n6"
+        },
+        {
+          "in": "1\n2",
+          "out": "2\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n3\n100",
+          "out": "106\n53",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n21",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-1",
+        "number": 1
+      },
+      "id": "projects-01",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Bonusli kassa",
+        "en": "Library: Checkout with rewards"
+      },
+      "statement": {
+        "uz": "Kutubxona: Har xarid qiymati berilgan. Jami summa va har 3 so‘m uchun 1 ball hisobida jami bonusni chiqaring.",
+        "en": "Library: Given purchase amounts, print total spending and bonus points (1 per 3 units of total spending)."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n4"
+        },
+        {
+          "in": "1\n3",
+          "out": "3\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n2\n3\n4\n100",
+          "out": "109\n36",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n14",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-1",
+        "number": 2
+      },
+      "id": "projects-02",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Bonusli kassa",
+        "en": "Sports centre: Checkout with rewards"
+      },
+      "statement": {
+        "uz": "Sport markazi: Har xarid qiymati berilgan. Jami summa va har 4 so‘m uchun 1 ball hisobida jami bonusni chiqaring.",
+        "en": "Sports centre: Given purchase amounts, print total spending and bonus points (1 per 4 units of total spending)."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n3"
+        },
+        {
+          "in": "1\n4",
+          "out": "4\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n3\n4\n5\n100",
+          "out": "112\n28",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n10",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-1",
+        "number": 3
+      },
+      "id": "projects-03",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Bonusli kassa",
+        "en": "Learning centre: Checkout with rewards"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: Har xarid qiymati berilgan. Jami summa va har 5 so‘m uchun 1 ball hisobida jami bonusni chiqaring.",
+        "en": "Learning centre: Given purchase amounts, print total spending and bonus points (1 per 5 units of total spending)."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n2"
+        },
+        {
+          "in": "1\n5",
+          "out": "5\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n4\n5\n6\n100",
+          "out": "115\n23",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n8",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-1",
+        "number": 4
+      },
+      "id": "projects-04",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Bonusli kassa",
+        "en": "Community club: Checkout with rewards"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: Har xarid qiymati berilgan. Jami summa va har 6 so‘m uchun 1 ball hisobida jami bonusni chiqaring.",
+        "en": "Community club: Given purchase amounts, print total spending and bonus points (1 per 6 units of total spending)."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n2"
+        },
+        {
+          "in": "1\n6",
+          "out": "6\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n5\n6\n7\n100",
+          "out": "118\n19",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n7",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-1",
+        "number": 5
+      },
+      "id": "projects-05",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Bonusli kassa",
+        "en": "Summer camp: Checkout with rewards"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: Har xarid qiymati berilgan. Jami summa va har 7 so‘m uchun 1 ball hisobida jami bonusni chiqaring.",
+        "en": "Summer camp: Given purchase amounts, print total spending and bonus points (1 per 7 units of total spending)."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n1"
+        },
+        {
+          "in": "1\n7",
+          "out": "7\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n6\n7\n8\n100",
+          "out": "121\n17",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n6",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-1",
+        "number": 6
+      },
+      "id": "projects-06",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Bonusli kassa",
+        "en": "Book fair: Checkout with rewards"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: Har xarid qiymati berilgan. Jami summa va har 8 so‘m uchun 1 ball hisobida jami bonusni chiqaring.",
+        "en": "Book fair: Given purchase amounts, print total spending and bonus points (1 per 8 units of total spending)."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n1"
+        },
+        {
+          "in": "1\n8",
+          "out": "8\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n7\n8\n9\n100",
+          "out": "124\n15",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n5",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-1",
+        "number": 7
+      },
+      "id": "projects-07",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Bonusli kassa",
+        "en": "Travel group: Checkout with rewards"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: Har xarid qiymati berilgan. Jami summa va har 9 so‘m uchun 1 ball hisobida jami bonusni chiqaring.",
+        "en": "Travel group: Given purchase amounts, print total spending and bonus points (1 per 9 units of total spending)."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n1"
+        },
+        {
+          "in": "1\n9",
+          "out": "9\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n8\n9\n10\n100",
+          "out": "127\n14",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-1",
+        "number": 8
+      },
+      "id": "projects-08",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Bonusli kassa",
+        "en": "Workshop: Checkout with rewards"
+      },
+      "statement": {
+        "uz": "Ustaxona: Har xarid qiymati berilgan. Jami summa va har 10 so‘m uchun 1 ball hisobida jami bonusni chiqaring.",
+        "en": "Workshop: Given purchase amounts, print total spending and bonus points (1 per 10 units of total spending)."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n1"
+        },
+        {
+          "in": "1\n10",
+          "out": "10\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n9\n10\n11\n100",
+          "out": "130\n13",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-1",
+        "number": 9
+      },
+      "id": "projects-09",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Bonusli kassa",
+        "en": "Volunteer team: Checkout with rewards"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: Har xarid qiymati berilgan. Jami summa va har 11 so‘m uchun 1 ball hisobida jami bonusni chiqaring.",
+        "en": "Volunteer team: Given purchase amounts, print total spending and bonus points (1 per 11 units of total spending)."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n1"
+        },
+        {
+          "in": "1\n11",
+          "out": "11\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n10\n11\n12\n100",
+          "out": "133\n12",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-1",
+        "number": 10
+      },
+      "id": "projects-10",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: O‘quvchilar hisoboti",
+        "en": "School shop: Student report"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: Har o‘quvchi bali berilgan. Jami ball va kamida 2 ball olganlar sonini chiqaring.",
+        "en": "School shop: Given student scores, print the total and number scoring at least 2."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n3"
+        },
+        {
+          "in": "1\n2",
+          "out": "2\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n3\n100",
+          "out": "106\n3",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n6",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-2",
+        "number": 1
+      },
+      "id": "projects-11",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: O‘quvchilar hisoboti",
+        "en": "Library: Student report"
+      },
+      "statement": {
+        "uz": "Kutubxona: Har o‘quvchi bali berilgan. Jami ball va kamida 3 ball olganlar sonini chiqaring.",
+        "en": "Library: Given student scores, print the total and number scoring at least 3."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n2"
+        },
+        {
+          "in": "1\n3",
+          "out": "3\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n2\n3\n4\n100",
+          "out": "109\n3",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n5",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-2",
+        "number": 2
+      },
+      "id": "projects-12",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: O‘quvchilar hisoboti",
+        "en": "Sports centre: Student report"
+      },
+      "statement": {
+        "uz": "Sport markazi: Har o‘quvchi bali berilgan. Jami ball va kamida 4 ball olganlar sonini chiqaring.",
+        "en": "Sports centre: Given student scores, print the total and number scoring at least 4."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n2"
+        },
+        {
+          "in": "1\n4",
+          "out": "4\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n3\n4\n5\n100",
+          "out": "112\n3",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n5",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-2",
+        "number": 3
+      },
+      "id": "projects-13",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: O‘quvchilar hisoboti",
+        "en": "Learning centre: Student report"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: Har o‘quvchi bali berilgan. Jami ball va kamida 5 ball olganlar sonini chiqaring.",
+        "en": "Learning centre: Given student scores, print the total and number scoring at least 5."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n1"
+        },
+        {
+          "in": "1\n5",
+          "out": "5\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n4\n5\n6\n100",
+          "out": "115\n3",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-2",
+        "number": 4
+      },
+      "id": "projects-14",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: O‘quvchilar hisoboti",
+        "en": "Community club: Student report"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: Har o‘quvchi bali berilgan. Jami ball va kamida 6 ball olganlar sonini chiqaring.",
+        "en": "Community club: Given student scores, print the total and number scoring at least 6."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n1"
+        },
+        {
+          "in": "1\n6",
+          "out": "6\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n5\n6\n7\n100",
+          "out": "118\n3",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-2",
+        "number": 5
+      },
+      "id": "projects-15",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: O‘quvchilar hisoboti",
+        "en": "Summer camp: Student report"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: Har o‘quvchi bali berilgan. Jami ball va kamida 7 ball olganlar sonini chiqaring.",
+        "en": "Summer camp: Given student scores, print the total and number scoring at least 7."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n1"
+        },
+        {
+          "in": "1\n7",
+          "out": "7\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n6\n7\n8\n100",
+          "out": "121\n3",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-2",
+        "number": 6
+      },
+      "id": "projects-16",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: O‘quvchilar hisoboti",
+        "en": "Book fair: Student report"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: Har o‘quvchi bali berilgan. Jami ball va kamida 8 ball olganlar sonini chiqaring.",
+        "en": "Book fair: Given student scores, print the total and number scoring at least 8."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n0"
+        },
+        {
+          "in": "1\n8",
+          "out": "8\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n7\n8\n9\n100",
+          "out": "124\n3",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-2",
+        "number": 7
+      },
+      "id": "projects-17",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: O‘quvchilar hisoboti",
+        "en": "Travel group: Student report"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: Har o‘quvchi bali berilgan. Jami ball va kamida 9 ball olganlar sonini chiqaring.",
+        "en": "Travel group: Given student scores, print the total and number scoring at least 9."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n0"
+        },
+        {
+          "in": "1\n9",
+          "out": "9\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n8\n9\n10\n100",
+          "out": "127\n3",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n2",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-2",
+        "number": 8
+      },
+      "id": "projects-18",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: O‘quvchilar hisoboti",
+        "en": "Workshop: Student report"
+      },
+      "statement": {
+        "uz": "Ustaxona: Har o‘quvchi bali berilgan. Jami ball va kamida 10 ball olganlar sonini chiqaring.",
+        "en": "Workshop: Given student scores, print the total and number scoring at least 10."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n0"
+        },
+        {
+          "in": "1\n10",
+          "out": "10\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n9\n10\n11\n100",
+          "out": "130\n3",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n2",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-2",
+        "number": 9
+      },
+      "id": "projects-19",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: O‘quvchilar hisoboti",
+        "en": "Volunteer team: Student report"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: Har o‘quvchi bali berilgan. Jami ball va kamida 11 ball olganlar sonini chiqaring.",
+        "en": "Volunteer team: Given student scores, print the total and number scoring at least 11."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n0"
+        },
+        {
+          "in": "1\n11",
+          "out": "11\n1"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n10\n11\n12\n100",
+          "out": "133\n3",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-2",
+        "number": 10
+      },
+      "id": "projects-20",
+      "difficulty": "medium"
+    }
+  ],
+  "homework": [
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Qadoqlash hisoboti",
+        "en": "School shop: Packing report"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: Har partiya miqdori berilgan. Har partiyani alohida 2 sig‘imli qutilarga joylang. Jami to‘liq qutilar va jami ortgan buyumlarni chiqaring.",
+        "en": "School shop: Pack each batch separately into boxes of 2. Print the total full boxes and total leftover items."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "6\n1"
+        },
+        {
+          "in": "1\n2",
+          "out": "1\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n3\n100",
+          "out": "52\n2",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "21\n0",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-3",
+        "number": 1
+      },
+      "id": "projects-21",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Qadoqlash hisoboti",
+        "en": "Library: Packing report"
+      },
+      "statement": {
+        "uz": "Kutubxona: Har partiya miqdori berilgan. Har partiyani alohida 3 sig‘imli qutilarga joylang. Jami to‘liq qutilar va jami ortgan buyumlarni chiqaring.",
+        "en": "Library: Pack each batch separately into boxes of 3. Print the total full boxes and total leftover items."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "3\n4"
+        },
+        {
+          "in": "1\n3",
+          "out": "1\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n2\n3\n4\n100",
+          "out": "35\n4",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "12\n6",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-3",
+        "number": 2
+      },
+      "id": "projects-22",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Qadoqlash hisoboti",
+        "en": "Sports centre: Packing report"
+      },
+      "statement": {
+        "uz": "Sport markazi: Har partiya miqdori berilgan. Har partiyani alohida 4 sig‘imli qutilarga joylang. Jami to‘liq qutilar va jami ortgan buyumlarni chiqaring.",
+        "en": "Sports centre: Pack each batch separately into boxes of 4. Print the total full boxes and total leftover items."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "2\n5"
+        },
+        {
+          "in": "1\n4",
+          "out": "1\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n3\n4\n5\n100",
+          "out": "27\n4",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "9\n6",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-3",
+        "number": 3
+      },
+      "id": "projects-23",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Qadoqlash hisoboti",
+        "en": "Learning centre: Packing report"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: Har partiya miqdori berilgan. Har partiyani alohida 5 sig‘imli qutilarga joylang. Jami to‘liq qutilar va jami ortgan buyumlarni chiqaring.",
+        "en": "Learning centre: Pack each batch separately into boxes of 5. Print the total full boxes and total leftover items."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "1\n8"
+        },
+        {
+          "in": "1\n5",
+          "out": "1\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n4\n5\n6\n100",
+          "out": "22\n5",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "6\n12",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-3",
+        "number": 4
+      },
+      "id": "projects-24",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Qadoqlash hisoboti",
+        "en": "Community club: Packing report"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: Har partiya miqdori berilgan. Har partiyani alohida 6 sig‘imli qutilarga joylang. Jami to‘liq qutilar va jami ortgan buyumlarni chiqaring.",
+        "en": "Community club: Pack each batch separately into boxes of 6. Print the total full boxes and total leftover items."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "1\n7"
+        },
+        {
+          "in": "1\n6",
+          "out": "1\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n5\n6\n7\n100",
+          "out": "18\n10",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "5\n12",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-3",
+        "number": 5
+      },
+      "id": "projects-25",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Qadoqlash hisoboti",
+        "en": "Summer camp: Packing report"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: Har partiya miqdori berilgan. Har partiyani alohida 7 sig‘imli qutilarga joylang. Jami to‘liq qutilar va jami ortgan buyumlarni chiqaring.",
+        "en": "Summer camp: Pack each batch separately into boxes of 7. Print the total full boxes and total leftover items."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "1\n6"
+        },
+        {
+          "in": "1\n7",
+          "out": "1\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n6\n7\n8\n100",
+          "out": "16\n9",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "3\n21",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-3",
+        "number": 6
+      },
+      "id": "projects-26",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Qadoqlash hisoboti",
+        "en": "Book fair: Packing report"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: Har partiya miqdori berilgan. Har partiyani alohida 8 sig‘imli qutilarga joylang. Jami to‘liq qutilar va jami ortgan buyumlarni chiqaring.",
+        "en": "Book fair: Pack each batch separately into boxes of 8. Print the total full boxes and total leftover items."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "0\n13"
+        },
+        {
+          "in": "1\n8",
+          "out": "1\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n7\n8\n9\n100",
+          "out": "14\n12",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "3\n18",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-3",
+        "number": 7
+      },
+      "id": "projects-27",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Qadoqlash hisoboti",
+        "en": "Travel group: Packing report"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: Har partiya miqdori berilgan. Har partiyani alohida 9 sig‘imli qutilarga joylang. Jami to‘liq qutilar va jami ortgan buyumlarni chiqaring.",
+        "en": "Travel group: Pack each batch separately into boxes of 9. Print the total full boxes and total leftover items."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "0\n13"
+        },
+        {
+          "in": "1\n9",
+          "out": "1\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n8\n9\n10\n100",
+          "out": "13\n10",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "2\n24",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-3",
+        "number": 8
+      },
+      "id": "projects-28",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Qadoqlash hisoboti",
+        "en": "Workshop: Packing report"
+      },
+      "statement": {
+        "uz": "Ustaxona: Har partiya miqdori berilgan. Har partiyani alohida 10 sig‘imli qutilarga joylang. Jami to‘liq qutilar va jami ortgan buyumlarni chiqaring.",
+        "en": "Workshop: Pack each batch separately into boxes of 10. Print the total full boxes and total leftover items."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "0\n13"
+        },
+        {
+          "in": "1\n10",
+          "out": "1\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n9\n10\n11\n100",
+          "out": "12\n10",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "2\n22",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-3",
+        "number": 9
+      },
+      "id": "projects-29",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Qadoqlash hisoboti",
+        "en": "Volunteer team: Packing report"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: Har partiya miqdori berilgan. Har partiyani alohida 11 sig‘imli qutilarga joylang. Jami to‘liq qutilar va jami ortgan buyumlarni chiqaring.",
+        "en": "Volunteer team: Pack each batch separately into boxes of 11. Print the total full boxes and total leftover items."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "0\n13"
+        },
+        {
+          "in": "1\n11",
+          "out": "1\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n10\n11\n12\n100",
+          "out": "11\n12",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "1\n31",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-3",
+        "number": 10
+      },
+      "id": "projects-30",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Tushum hisoboti",
+        "en": "School shop: Revenue report"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: Har kun tushumi berilgan. Umumiy tushum va eng katta kunlik tushumni chiqaring. n=0 bo‘lsa ikkala natija 0.",
+        "en": "School shop: Given daily revenue, print the total and maximum daily revenue. If n=0 both are 0."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n7"
+        },
+        {
+          "in": "1\n2",
+          "out": "2\n2"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n3\n100",
+          "out": "106\n100",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n12",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-4",
+        "number": 1
+      },
+      "id": "projects-31",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Tushum hisoboti",
+        "en": "Library: Revenue report"
+      },
+      "statement": {
+        "uz": "Kutubxona: Har kun tushumi berilgan. Umumiy tushum va eng katta kunlik tushumni chiqaring. n=0 bo‘lsa ikkala natija 0.",
+        "en": "Library: Given daily revenue, print the total and maximum daily revenue. If n=0 both are 0."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n7"
+        },
+        {
+          "in": "1\n3",
+          "out": "3\n3"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n2\n3\n4\n100",
+          "out": "109\n100",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n12",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-4",
+        "number": 2
+      },
+      "id": "projects-32",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Tushum hisoboti",
+        "en": "Sports centre: Revenue report"
+      },
+      "statement": {
+        "uz": "Sport markazi: Har kun tushumi berilgan. Umumiy tushum va eng katta kunlik tushumni chiqaring. n=0 bo‘lsa ikkala natija 0.",
+        "en": "Sports centre: Given daily revenue, print the total and maximum daily revenue. If n=0 both are 0."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n7"
+        },
+        {
+          "in": "1\n4",
+          "out": "4\n4"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n3\n4\n5\n100",
+          "out": "112\n100",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n12",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-4",
+        "number": 3
+      },
+      "id": "projects-33",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Tushum hisoboti",
+        "en": "Learning centre: Revenue report"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: Har kun tushumi berilgan. Umumiy tushum va eng katta kunlik tushumni chiqaring. n=0 bo‘lsa ikkala natija 0.",
+        "en": "Learning centre: Given daily revenue, print the total and maximum daily revenue. If n=0 both are 0."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n7"
+        },
+        {
+          "in": "1\n5",
+          "out": "5\n5"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n4\n5\n6\n100",
+          "out": "115\n100",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n12",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-4",
+        "number": 4
+      },
+      "id": "projects-34",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Tushum hisoboti",
+        "en": "Community club: Revenue report"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: Har kun tushumi berilgan. Umumiy tushum va eng katta kunlik tushumni chiqaring. n=0 bo‘lsa ikkala natija 0.",
+        "en": "Community club: Given daily revenue, print the total and maximum daily revenue. If n=0 both are 0."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n7"
+        },
+        {
+          "in": "1\n6",
+          "out": "6\n6"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n5\n6\n7\n100",
+          "out": "118\n100",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n12",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-4",
+        "number": 5
+      },
+      "id": "projects-35",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Tushum hisoboti",
+        "en": "Summer camp: Revenue report"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: Har kun tushumi berilgan. Umumiy tushum va eng katta kunlik tushumni chiqaring. n=0 bo‘lsa ikkala natija 0.",
+        "en": "Summer camp: Given daily revenue, print the total and maximum daily revenue. If n=0 both are 0."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n7"
+        },
+        {
+          "in": "1\n7",
+          "out": "7\n7"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n6\n7\n8\n100",
+          "out": "121\n100",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n12",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-4",
+        "number": 6
+      },
+      "id": "projects-36",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Tushum hisoboti",
+        "en": "Book fair: Revenue report"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: Har kun tushumi berilgan. Umumiy tushum va eng katta kunlik tushumni chiqaring. n=0 bo‘lsa ikkala natija 0.",
+        "en": "Book fair: Given daily revenue, print the total and maximum daily revenue. If n=0 both are 0."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n7"
+        },
+        {
+          "in": "1\n8",
+          "out": "8\n8"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n7\n8\n9\n100",
+          "out": "124\n100",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n12",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-4",
+        "number": 7
+      },
+      "id": "projects-37",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Tushum hisoboti",
+        "en": "Travel group: Revenue report"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: Har kun tushumi berilgan. Umumiy tushum va eng katta kunlik tushumni chiqaring. n=0 bo‘lsa ikkala natija 0.",
+        "en": "Travel group: Given daily revenue, print the total and maximum daily revenue. If n=0 both are 0."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n7"
+        },
+        {
+          "in": "1\n9",
+          "out": "9\n9"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n8\n9\n10\n100",
+          "out": "127\n100",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n12",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-4",
+        "number": 8
+      },
+      "id": "projects-38",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Tushum hisoboti",
+        "en": "Workshop: Revenue report"
+      },
+      "statement": {
+        "uz": "Ustaxona: Har kun tushumi berilgan. Umumiy tushum va eng katta kunlik tushumni chiqaring. n=0 bo‘lsa ikkala natija 0.",
+        "en": "Workshop: Given daily revenue, print the total and maximum daily revenue. If n=0 both are 0."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n7"
+        },
+        {
+          "in": "1\n10",
+          "out": "10\n10"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n9\n10\n11\n100",
+          "out": "130\n100",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n12",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-4",
+        "number": 9
+      },
+      "id": "projects-39",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Tushum hisoboti",
+        "en": "Volunteer team: Revenue report"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: Har kun tushumi berilgan. Umumiy tushum va eng katta kunlik tushumni chiqaring. n=0 bo‘lsa ikkala natija 0.",
+        "en": "Volunteer team: Given daily revenue, print the total and maximum daily revenue. If n=0 both are 0."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n7"
+        },
+        {
+          "in": "1\n11",
+          "out": "11\n11"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n10\n11\n12\n100",
+          "out": "133\n100",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "42\n12",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-4",
+        "number": 10
+      },
+      "id": "projects-40",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Avtobus qatnovlari",
+        "en": "School shop: Bus trips"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: Har qatnov uchun yo‘lovchilar soni berilgan. Avtobus 2 kishini oladi. Har qatnovda sig‘gan yo‘lovchilar va sig‘maganlarning umumiy sonlarini chiqaring.",
+        "en": "School shop: Each trip has a passenger count. A bus holds 2. Print total carried and total left behind across all trips."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "6\n7"
+        },
+        {
+          "in": "1\n2",
+          "out": "2\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n3\n100",
+          "out": "7\n99",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "12\n30",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-5",
+        "number": 1
+      },
+      "id": "projects-41",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Avtobus qatnovlari",
+        "en": "Library: Bus trips"
+      },
+      "statement": {
+        "uz": "Kutubxona: Har qatnov uchun yo‘lovchilar soni berilgan. Avtobus 3 kishini oladi. Har qatnovda sig‘gan yo‘lovchilar va sig‘maganlarning umumiy sonlarini chiqaring.",
+        "en": "Library: Each trip has a passenger count. A bus holds 3. Print total carried and total left behind across all trips."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "8\n5"
+        },
+        {
+          "in": "1\n3",
+          "out": "3\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n2\n3\n4\n100",
+          "out": "11\n98",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "17\n25",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-5",
+        "number": 2
+      },
+      "id": "projects-42",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Avtobus qatnovlari",
+        "en": "Sports centre: Bus trips"
+      },
+      "statement": {
+        "uz": "Sport markazi: Har qatnov uchun yo‘lovchilar soni berilgan. Avtobus 4 kishini oladi. Har qatnovda sig‘gan yo‘lovchilar va sig‘maganlarning umumiy sonlarini chiqaring.",
+        "en": "Sports centre: Each trip has a passenger count. A bus holds 4. Print total carried and total left behind across all trips."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "10\n3"
+        },
+        {
+          "in": "1\n4",
+          "out": "4\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n3\n4\n5\n100",
+          "out": "15\n97",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "22\n20",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-5",
+        "number": 3
+      },
+      "id": "projects-43",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Avtobus qatnovlari",
+        "en": "Learning centre: Bus trips"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: Har qatnov uchun yo‘lovchilar soni berilgan. Avtobus 5 kishini oladi. Har qatnovda sig‘gan yo‘lovchilar va sig‘maganlarning umumiy sonlarini chiqaring.",
+        "en": "Learning centre: Each trip has a passenger count. A bus holds 5. Print total carried and total left behind across all trips."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "11\n2"
+        },
+        {
+          "in": "1\n5",
+          "out": "5\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n4\n5\n6\n100",
+          "out": "19\n96",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "26\n16",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-5",
+        "number": 4
+      },
+      "id": "projects-44",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Avtobus qatnovlari",
+        "en": "Community club: Bus trips"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: Har qatnov uchun yo‘lovchilar soni berilgan. Avtobus 6 kishini oladi. Har qatnovda sig‘gan yo‘lovchilar va sig‘maganlarning umumiy sonlarini chiqaring.",
+        "en": "Community club: Each trip has a passenger count. A bus holds 6. Print total carried and total left behind across all trips."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "12\n1"
+        },
+        {
+          "in": "1\n6",
+          "out": "6\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n5\n6\n7\n100",
+          "out": "23\n95",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "30\n12",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-5",
+        "number": 5
+      },
+      "id": "projects-45",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Avtobus qatnovlari",
+        "en": "Summer camp: Bus trips"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: Har qatnov uchun yo‘lovchilar soni berilgan. Avtobus 7 kishini oladi. Har qatnovda sig‘gan yo‘lovchilar va sig‘maganlarning umumiy sonlarini chiqaring.",
+        "en": "Summer camp: Each trip has a passenger count. A bus holds 7. Print total carried and total left behind across all trips."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n0"
+        },
+        {
+          "in": "1\n7",
+          "out": "7\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n6\n7\n8\n100",
+          "out": "27\n94",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "33\n9",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-5",
+        "number": 6
+      },
+      "id": "projects-46",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Avtobus qatnovlari",
+        "en": "Book fair: Bus trips"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: Har qatnov uchun yo‘lovchilar soni berilgan. Avtobus 8 kishini oladi. Har qatnovda sig‘gan yo‘lovchilar va sig‘maganlarning umumiy sonlarini chiqaring.",
+        "en": "Book fair: Each trip has a passenger count. A bus holds 8. Print total carried and total left behind across all trips."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n0"
+        },
+        {
+          "in": "1\n8",
+          "out": "8\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n7\n8\n9\n100",
+          "out": "31\n93",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "36\n6",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-5",
+        "number": 7
+      },
+      "id": "projects-47",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Avtobus qatnovlari",
+        "en": "Travel group: Bus trips"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: Har qatnov uchun yo‘lovchilar soni berilgan. Avtobus 9 kishini oladi. Har qatnovda sig‘gan yo‘lovchilar va sig‘maganlarning umumiy sonlarini chiqaring.",
+        "en": "Travel group: Each trip has a passenger count. A bus holds 9. Print total carried and total left behind across all trips."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n0"
+        },
+        {
+          "in": "1\n9",
+          "out": "9\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n8\n9\n10\n100",
+          "out": "35\n92",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "38\n4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-5",
+        "number": 8
+      },
+      "id": "projects-48",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Avtobus qatnovlari",
+        "en": "Workshop: Bus trips"
+      },
+      "statement": {
+        "uz": "Ustaxona: Har qatnov uchun yo‘lovchilar soni berilgan. Avtobus 10 kishini oladi. Har qatnovda sig‘gan yo‘lovchilar va sig‘maganlarning umumiy sonlarini chiqaring.",
+        "en": "Workshop: Each trip has a passenger count. A bus holds 10. Print total carried and total left behind across all trips."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n0"
+        },
+        {
+          "in": "1\n10",
+          "out": "10\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n9\n10\n11\n100",
+          "out": "39\n91",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "40\n2",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-5",
+        "number": 9
+      },
+      "id": "projects-49",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Avtobus qatnovlari",
+        "en": "Volunteer team: Bus trips"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: Har qatnov uchun yo‘lovchilar soni berilgan. Avtobus 11 kishini oladi. Har qatnovda sig‘gan yo‘lovchilar va sig‘maganlarning umumiy sonlarini chiqaring.",
+        "en": "Volunteer team: Each trip has a passenger count. A bus holds 11. Print total carried and total left behind across all trips."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), keyin n ta butun miqdor (0..10000), har biri alohida qatorda.",
+        "en": "n (0..100), then n integer quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n4\n7\n2",
+          "out": "13\n0"
+        },
+        {
+          "in": "1\n11",
+          "out": "11\n0"
+        },
+        {
+          "in": "0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n0\n0\n0\n0\n0",
+          "out": "0\n0",
+          "hidden": true
+        },
+        {
+          "in": "4\n10\n11\n12\n100",
+          "out": "43\n90",
+          "hidden": true
+        },
+        {
+          "in": "6\n2\n4\n6\n8\n10\n12",
+          "out": "41\n1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "projects-5",
+        "number": 10
+      },
+      "id": "projects-50",
+      "difficulty": "hard"
+    }
+  ]
+}

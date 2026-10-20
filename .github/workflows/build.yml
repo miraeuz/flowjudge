@@ -2,30 +2,51 @@ name: Build Windows installer
 on:
   push:
     branches: [main]
-    tags: ['v*']
+    tags: ["v*"]
+  pull_request:
   workflow_dispatch:
+permissions:
+  contents: read
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 22 }
-      - run: node tests/run.mjs
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - run: npm test
+      - run: npm run test:ui
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: UI-diagnostics
+          path: qa/*.png
+          if-no-files-found: ignore
   windows:
+    if: github.event_name != 'pull_request'
     needs: test
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 22 }
-      - run: npm install --no-audit --no-fund
-      - name: Inject Telegram secrets (kept out of git)
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Configure activation from repository secrets
         run: node tools/write-config.mjs
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-      - run: npx electron-builder --win --publish never
+      - run: npm run dist
+      - name: Check exactly one installer
+        shell: pwsh
+        run: |
+          $installers = @(Get-ChildItem release/Flowgorithm-Academy-Setup-*.exe)
+          if ($installers.Count -ne 1) { throw 'Expected exactly one Windows installer' }
       - uses: actions/upload-artifact@v4
         with:
           name: Flowgorithm-Academy-Setup
@@ -38,9 +59,13 @@ jobs:
     permissions:
       contents: write
     steps:
+      - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
-        with: { path: dist, merge-multiple: true }
+        with:
+          name: Flowgorithm-Academy-Setup
+          path: dist
       - uses: softprops/action-gh-release@v2
         with:
           files: dist/*.exe
           generate_release_notes: true
+          body_path: docs/RELEASE-0.2.0.md

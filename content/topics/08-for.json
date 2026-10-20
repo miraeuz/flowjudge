@@ -1,0 +1,3738 @@
+{
+  "id": "for",
+  "order": 8,
+  "title": {
+    "uz": "For — sanalgan takrorlash",
+    "en": "For — counted repetition"
+  },
+  "lesson": {
+    "uz": "For takrorlash soni oldindan ma’lum bo‘lganda qulay. i ni Integer sifatida e’lon qiling. Start=1, End=n, Step=1 bo‘lsa, i 1 dan n gacha, n ham kirgan holda yuradi.\nYig‘indi uchun s=0 dan boshlang va har aylanishda s=s+value qiling. Hisoblagich uchun c=0, shart bajarilganda c=c+1. Keraksiz Output’ni sikl ichiga joylamang.",
+    "en": "Use For when the number of repetitions is known. Declare i as Integer. Start=1, End=n, Step=1 visits 1 through n, including n.\nInitialize a total with s=0 and add each value inside the loop. Initialize a counter with c=0 and increment when a condition matches. Avoid accidental extra output inside the loop."
+  },
+  "concepts": [
+    {
+      "title": {
+        "uz": "Bloklar",
+        "en": "Blocks"
+      },
+      "text": {
+        "uz": "Shartdagi talab etilgan bloklarga e’tibor bering.",
+        "en": "Check the required blocks in each task."
+      }
+    },
+    {
+      "title": {
+        "uz": "Tekshirish",
+        "en": "Testing"
+      },
+      "text": {
+        "uz": "Har bir Input alohida qatorni o‘qiydi. Natijani namuna bilan taqqoslang.",
+        "en": "Each Input reads one line. Compare your output with the examples."
+      }
+    }
+  ],
+  "classwork": [
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Kunlik yetkazishlar",
+        "en": "School shop: Daily deliveries"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: n kun uchun miqdorlar berilgan. kunlik yetkazilgan buyumlar yig‘indisini toping. For ishlating.",
+        "en": "School shop: Given quantities for n days, find the total daily deliveries. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n5\n7",
+          "out": "15"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n5\n7\n9\n11\n13\n15",
+          "out": "63",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n5\n7\n9\n11\n13\n15\n17\n19\n21",
+          "out": "120",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n5\n7\n9\n11",
+          "out": "35",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-1",
+        "number": 1
+      },
+      "id": "for-01",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Kunlik yetkazishlar",
+        "en": "Library: Daily deliveries"
+      },
+      "statement": {
+        "uz": "Kutubxona: n kun uchun miqdorlar berilgan. kunlik yetkazilgan buyumlar yig‘indisini toping. For ishlating.",
+        "en": "Library: Given quantities for n days, find the total daily deliveries. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n6\n9",
+          "out": "18"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n6\n9\n12\n15\n18\n21",
+          "out": "84",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n6\n9\n12\n15\n18\n21\n24\n27\n0",
+          "out": "135",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n6\n9\n12\n15",
+          "out": "45",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-1",
+        "number": 2
+      },
+      "id": "for-02",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Kunlik yetkazishlar",
+        "en": "Sports centre: Daily deliveries"
+      },
+      "statement": {
+        "uz": "Sport markazi: n kun uchun miqdorlar berilgan. kunlik yetkazilgan buyumlar yig‘indisini toping. For ishlating.",
+        "en": "Sports centre: Given quantities for n days, find the total daily deliveries. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n7\n11",
+          "out": "21"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n7\n11\n15\n19\n23\n27",
+          "out": "105",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n7\n11\n15\n19\n23\n27\n1\n5\n9",
+          "out": "120",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n7\n11\n15\n19",
+          "out": "55",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-1",
+        "number": 3
+      },
+      "id": "for-03",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Kunlik yetkazishlar",
+        "en": "Learning centre: Daily deliveries"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: n kun uchun miqdorlar berilgan. kunlik yetkazilgan buyumlar yig‘indisini toping. For ishlating.",
+        "en": "Learning centre: Given quantities for n days, find the total daily deliveries. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n8\n13",
+          "out": "24"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n8\n13\n18\n23\n28\n3",
+          "out": "96",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n8\n13\n18\n23\n28\n3\n8\n13\n18",
+          "out": "135",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n8\n13\n18\n23",
+          "out": "65",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-1",
+        "number": 4
+      },
+      "id": "for-04",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Kunlik yetkazishlar",
+        "en": "Community club: Daily deliveries"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: n kun uchun miqdorlar berilgan. kunlik yetkazilgan buyumlar yig‘indisini toping. For ishlating.",
+        "en": "Community club: Given quantities for n days, find the total daily deliveries. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n9\n15",
+          "out": "27"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n9\n15\n21\n27\n3\n9",
+          "out": "87",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n9\n15\n21\n27\n3\n9\n15\n21\n27",
+          "out": "150",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n9\n15\n21\n27",
+          "out": "75",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-1",
+        "number": 5
+      },
+      "id": "for-05",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Kunlik yetkazishlar",
+        "en": "Summer camp: Daily deliveries"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: n kun uchun miqdorlar berilgan. kunlik yetkazilgan buyumlar yig‘indisini toping. For ishlating.",
+        "en": "Summer camp: Given quantities for n days, find the total daily deliveries. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n10\n17",
+          "out": "30"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n10\n17\n24\n1\n8\n15",
+          "out": "78",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n10\n17\n24\n1\n8\n15\n22\n29\n6",
+          "out": "135",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n10\n17\n24\n1",
+          "out": "55",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-1",
+        "number": 6
+      },
+      "id": "for-06",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Kunlik yetkazishlar",
+        "en": "Book fair: Daily deliveries"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: n kun uchun miqdorlar berilgan. kunlik yetkazilgan buyumlar yig‘indisini toping. For ishlating.",
+        "en": "Book fair: Given quantities for n days, find the total daily deliveries. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n11\n19",
+          "out": "33"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n11\n19\n27\n5\n13\n21",
+          "out": "99",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n11\n19\n27\n5\n13\n21\n29\n7\n15",
+          "out": "150",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n11\n19\n27\n5",
+          "out": "65",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-1",
+        "number": 7
+      },
+      "id": "for-07",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Kunlik yetkazishlar",
+        "en": "Travel group: Daily deliveries"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: n kun uchun miqdorlar berilgan. kunlik yetkazilgan buyumlar yig‘indisini toping. For ishlating.",
+        "en": "Travel group: Given quantities for n days, find the total daily deliveries. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n12\n21",
+          "out": "36"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n12\n21\n0\n9\n18\n27",
+          "out": "90",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n12\n21\n0\n9\n18\n27\n6\n15\n24",
+          "out": "135",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n12\n21\n0\n9",
+          "out": "45",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-1",
+        "number": 8
+      },
+      "id": "for-08",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Kunlik yetkazishlar",
+        "en": "Workshop: Daily deliveries"
+      },
+      "statement": {
+        "uz": "Ustaxona: n kun uchun miqdorlar berilgan. kunlik yetkazilgan buyumlar yig‘indisini toping. For ishlating.",
+        "en": "Workshop: Given quantities for n days, find the total daily deliveries. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n13\n23",
+          "out": "39"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n13\n23\n3\n13\n23\n3",
+          "out": "81",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n13\n23\n3\n13\n23\n3\n13\n23\n3",
+          "out": "120",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n13\n23\n3\n13",
+          "out": "55",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-1",
+        "number": 9
+      },
+      "id": "for-09",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Kunlik yetkazishlar",
+        "en": "Volunteer team: Daily deliveries"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: n kun uchun miqdorlar berilgan. kunlik yetkazilgan buyumlar yig‘indisini toping. For ishlating.",
+        "en": "Volunteer team: Given quantities for n days, find the total daily deliveries. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n14\n25",
+          "out": "42"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n14\n25\n6\n17\n28\n9",
+          "out": "102",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n14\n25\n6\n17\n28\n9\n20\n1\n12",
+          "out": "135",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n14\n25\n6\n17",
+          "out": "65",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-1",
+        "number": 10
+      },
+      "id": "for-10",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Rejaga yetgan kunlar",
+        "en": "School shop: Days meeting the target"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: n kun uchun miqdorlar berilgan. kamida 2 buyum yetkazilgan kunlar sonini toping. For ishlating.",
+        "en": "School shop: Given quantities for n days, find the number of days delivering at least 2 items. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n5\n7",
+          "out": "3"
+        },
+        {
+          "in": "1\n3",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n5\n7\n9\n11\n13\n15",
+          "out": "7",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n5\n7\n9\n11\n13\n15\n17\n19\n21",
+          "out": "10",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n5\n7\n9\n11",
+          "out": "5",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-2",
+        "number": 1
+      },
+      "id": "for-11",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Rejaga yetgan kunlar",
+        "en": "Library: Days meeting the target"
+      },
+      "statement": {
+        "uz": "Kutubxona: n kun uchun miqdorlar berilgan. kamida 3 buyum yetkazilgan kunlar sonini toping. For ishlating.",
+        "en": "Library: Given quantities for n days, find the number of days delivering at least 3 items. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n6\n9",
+          "out": "3"
+        },
+        {
+          "in": "1\n3",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n6\n9\n12\n15\n18\n21",
+          "out": "7",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n6\n9\n12\n15\n18\n21\n24\n27\n0",
+          "out": "9",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n6\n9\n12\n15",
+          "out": "5",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-2",
+        "number": 2
+      },
+      "id": "for-12",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Rejaga yetgan kunlar",
+        "en": "Sports centre: Days meeting the target"
+      },
+      "statement": {
+        "uz": "Sport markazi: n kun uchun miqdorlar berilgan. kamida 4 buyum yetkazilgan kunlar sonini toping. For ishlating.",
+        "en": "Sports centre: Given quantities for n days, find the number of days delivering at least 4 items. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n7\n11",
+          "out": "2"
+        },
+        {
+          "in": "1\n3",
+          "out": "0"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n7\n11\n15\n19\n23\n27",
+          "out": "6",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n7\n11\n15\n19\n23\n27\n1\n5\n9",
+          "out": "8",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n7\n11\n15\n19",
+          "out": "4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-2",
+        "number": 3
+      },
+      "id": "for-13",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Rejaga yetgan kunlar",
+        "en": "Learning centre: Days meeting the target"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: n kun uchun miqdorlar berilgan. kamida 5 buyum yetkazilgan kunlar sonini toping. For ishlating.",
+        "en": "Learning centre: Given quantities for n days, find the number of days delivering at least 5 items. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n8\n13",
+          "out": "2"
+        },
+        {
+          "in": "1\n3",
+          "out": "0"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n8\n13\n18\n23\n28\n3",
+          "out": "5",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n8\n13\n18\n23\n28\n3\n8\n13\n18",
+          "out": "8",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n8\n13\n18\n23",
+          "out": "4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-2",
+        "number": 4
+      },
+      "id": "for-14",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Rejaga yetgan kunlar",
+        "en": "Community club: Days meeting the target"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: n kun uchun miqdorlar berilgan. kamida 6 buyum yetkazilgan kunlar sonini toping. For ishlating.",
+        "en": "Community club: Given quantities for n days, find the number of days delivering at least 6 items. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n9\n15",
+          "out": "2"
+        },
+        {
+          "in": "1\n3",
+          "out": "0"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n9\n15\n21\n27\n3\n9",
+          "out": "5",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n9\n15\n21\n27\n3\n9\n15\n21\n27",
+          "out": "8",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n9\n15\n21\n27",
+          "out": "4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-2",
+        "number": 5
+      },
+      "id": "for-15",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Rejaga yetgan kunlar",
+        "en": "Summer camp: Days meeting the target"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: n kun uchun miqdorlar berilgan. kamida 7 buyum yetkazilgan kunlar sonini toping. For ishlating.",
+        "en": "Summer camp: Given quantities for n days, find the number of days delivering at least 7 items. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n10\n17",
+          "out": "2"
+        },
+        {
+          "in": "1\n3",
+          "out": "0"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n10\n17\n24\n1\n8\n15",
+          "out": "5",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n10\n17\n24\n1\n8\n15\n22\n29\n6",
+          "out": "7",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n10\n17\n24\n1",
+          "out": "3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-2",
+        "number": 6
+      },
+      "id": "for-16",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Rejaga yetgan kunlar",
+        "en": "Book fair: Days meeting the target"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: n kun uchun miqdorlar berilgan. kamida 8 buyum yetkazilgan kunlar sonini toping. For ishlating.",
+        "en": "Book fair: Given quantities for n days, find the number of days delivering at least 8 items. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n11\n19",
+          "out": "2"
+        },
+        {
+          "in": "1\n3",
+          "out": "0"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n11\n19\n27\n5\n13\n21",
+          "out": "5",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n11\n19\n27\n5\n13\n21\n29\n7\n15",
+          "out": "7",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n11\n19\n27\n5",
+          "out": "3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-2",
+        "number": 7
+      },
+      "id": "for-17",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Rejaga yetgan kunlar",
+        "en": "Travel group: Days meeting the target"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: n kun uchun miqdorlar berilgan. kamida 9 buyum yetkazilgan kunlar sonini toping. For ishlating.",
+        "en": "Travel group: Given quantities for n days, find the number of days delivering at least 9 items. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n12\n21",
+          "out": "2"
+        },
+        {
+          "in": "1\n3",
+          "out": "0"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n12\n21\n0\n9\n18\n27",
+          "out": "5",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n12\n21\n0\n9\n18\n27\n6\n15\n24",
+          "out": "7",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n12\n21\n0\n9",
+          "out": "3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-2",
+        "number": 8
+      },
+      "id": "for-18",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Rejaga yetgan kunlar",
+        "en": "Workshop: Days meeting the target"
+      },
+      "statement": {
+        "uz": "Ustaxona: n kun uchun miqdorlar berilgan. kamida 10 buyum yetkazilgan kunlar sonini toping. For ishlating.",
+        "en": "Workshop: Given quantities for n days, find the number of days delivering at least 10 items. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n13\n23",
+          "out": "2"
+        },
+        {
+          "in": "1\n3",
+          "out": "0"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n13\n23\n3\n13\n23\n3",
+          "out": "4",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n13\n23\n3\n13\n23\n3\n13\n23\n3",
+          "out": "6",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n13\n23\n3\n13",
+          "out": "3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-2",
+        "number": 9
+      },
+      "id": "for-19",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Rejaga yetgan kunlar",
+        "en": "Volunteer team: Days meeting the target"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: n kun uchun miqdorlar berilgan. kamida 11 buyum yetkazilgan kunlar sonini toping. For ishlating.",
+        "en": "Volunteer team: Given quantities for n days, find the number of days delivering at least 11 items. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n14\n25",
+          "out": "2"
+        },
+        {
+          "in": "1\n3",
+          "out": "0"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n14\n25\n6\n17\n28\n9",
+          "out": "4",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n14\n25\n6\n17\n28\n9\n20\n1\n12",
+          "out": "6",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n14\n25\n6\n17",
+          "out": "3",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-2",
+        "number": 10
+      },
+      "id": "for-20",
+      "difficulty": "medium"
+    }
+  ],
+  "homework": [
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Qo‘shimcha buyumlar",
+        "en": "School shop: Bonus items"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: n kun uchun miqdorlar berilgan. har kuni 2 tadan qo‘shimcha berilgandan keyingi jami miqdorni toping. For ishlating.",
+        "en": "School shop: Given quantities for n days, find the total after adding 2 bonus items each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n5\n7",
+          "out": "21"
+        },
+        {
+          "in": "1\n3",
+          "out": "5"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n5\n7\n9\n11\n13\n15",
+          "out": "77",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n5\n7\n9\n11\n13\n15\n17\n19\n21",
+          "out": "140",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n5\n7\n9\n11",
+          "out": "45",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-3",
+        "number": 1
+      },
+      "id": "for-21",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Qo‘shimcha buyumlar",
+        "en": "Library: Bonus items"
+      },
+      "statement": {
+        "uz": "Kutubxona: n kun uchun miqdorlar berilgan. har kuni 3 tadan qo‘shimcha berilgandan keyingi jami miqdorni toping. For ishlating.",
+        "en": "Library: Given quantities for n days, find the total after adding 3 bonus items each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n6\n9",
+          "out": "27"
+        },
+        {
+          "in": "1\n3",
+          "out": "6"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n6\n9\n12\n15\n18\n21",
+          "out": "105",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n6\n9\n12\n15\n18\n21\n24\n27\n0",
+          "out": "165",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n6\n9\n12\n15",
+          "out": "60",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-3",
+        "number": 2
+      },
+      "id": "for-22",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Qo‘shimcha buyumlar",
+        "en": "Sports centre: Bonus items"
+      },
+      "statement": {
+        "uz": "Sport markazi: n kun uchun miqdorlar berilgan. har kuni 4 tadan qo‘shimcha berilgandan keyingi jami miqdorni toping. For ishlating.",
+        "en": "Sports centre: Given quantities for n days, find the total after adding 4 bonus items each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n7\n11",
+          "out": "33"
+        },
+        {
+          "in": "1\n3",
+          "out": "7"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n7\n11\n15\n19\n23\n27",
+          "out": "133",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n7\n11\n15\n19\n23\n27\n1\n5\n9",
+          "out": "160",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n7\n11\n15\n19",
+          "out": "75",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-3",
+        "number": 3
+      },
+      "id": "for-23",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Qo‘shimcha buyumlar",
+        "en": "Learning centre: Bonus items"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: n kun uchun miqdorlar berilgan. har kuni 5 tadan qo‘shimcha berilgandan keyingi jami miqdorni toping. For ishlating.",
+        "en": "Learning centre: Given quantities for n days, find the total after adding 5 bonus items each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n8\n13",
+          "out": "39"
+        },
+        {
+          "in": "1\n3",
+          "out": "8"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n8\n13\n18\n23\n28\n3",
+          "out": "131",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n8\n13\n18\n23\n28\n3\n8\n13\n18",
+          "out": "185",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n8\n13\n18\n23",
+          "out": "90",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-3",
+        "number": 4
+      },
+      "id": "for-24",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Qo‘shimcha buyumlar",
+        "en": "Community club: Bonus items"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: n kun uchun miqdorlar berilgan. har kuni 6 tadan qo‘shimcha berilgandan keyingi jami miqdorni toping. For ishlating.",
+        "en": "Community club: Given quantities for n days, find the total after adding 6 bonus items each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n9\n15",
+          "out": "45"
+        },
+        {
+          "in": "1\n3",
+          "out": "9"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n9\n15\n21\n27\n3\n9",
+          "out": "129",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n9\n15\n21\n27\n3\n9\n15\n21\n27",
+          "out": "210",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n9\n15\n21\n27",
+          "out": "105",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-3",
+        "number": 5
+      },
+      "id": "for-25",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Qo‘shimcha buyumlar",
+        "en": "Summer camp: Bonus items"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: n kun uchun miqdorlar berilgan. har kuni 7 tadan qo‘shimcha berilgandan keyingi jami miqdorni toping. For ishlating.",
+        "en": "Summer camp: Given quantities for n days, find the total after adding 7 bonus items each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n10\n17",
+          "out": "51"
+        },
+        {
+          "in": "1\n3",
+          "out": "10"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n10\n17\n24\n1\n8\n15",
+          "out": "127",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n10\n17\n24\n1\n8\n15\n22\n29\n6",
+          "out": "205",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n10\n17\n24\n1",
+          "out": "90",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-3",
+        "number": 6
+      },
+      "id": "for-26",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Qo‘shimcha buyumlar",
+        "en": "Book fair: Bonus items"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: n kun uchun miqdorlar berilgan. har kuni 8 tadan qo‘shimcha berilgandan keyingi jami miqdorni toping. For ishlating.",
+        "en": "Book fair: Given quantities for n days, find the total after adding 8 bonus items each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n11\n19",
+          "out": "57"
+        },
+        {
+          "in": "1\n3",
+          "out": "11"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n11\n19\n27\n5\n13\n21",
+          "out": "155",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n11\n19\n27\n5\n13\n21\n29\n7\n15",
+          "out": "230",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n11\n19\n27\n5",
+          "out": "105",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-3",
+        "number": 7
+      },
+      "id": "for-27",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Qo‘shimcha buyumlar",
+        "en": "Travel group: Bonus items"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: n kun uchun miqdorlar berilgan. har kuni 9 tadan qo‘shimcha berilgandan keyingi jami miqdorni toping. For ishlating.",
+        "en": "Travel group: Given quantities for n days, find the total after adding 9 bonus items each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n12\n21",
+          "out": "63"
+        },
+        {
+          "in": "1\n3",
+          "out": "12"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n12\n21\n0\n9\n18\n27",
+          "out": "153",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n12\n21\n0\n9\n18\n27\n6\n15\n24",
+          "out": "225",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n12\n21\n0\n9",
+          "out": "90",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-3",
+        "number": 8
+      },
+      "id": "for-28",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Qo‘shimcha buyumlar",
+        "en": "Workshop: Bonus items"
+      },
+      "statement": {
+        "uz": "Ustaxona: n kun uchun miqdorlar berilgan. har kuni 10 tadan qo‘shimcha berilgandan keyingi jami miqdorni toping. For ishlating.",
+        "en": "Workshop: Given quantities for n days, find the total after adding 10 bonus items each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n13\n23",
+          "out": "69"
+        },
+        {
+          "in": "1\n3",
+          "out": "13"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n13\n23\n3\n13\n23\n3",
+          "out": "151",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n13\n23\n3\n13\n23\n3\n13\n23\n3",
+          "out": "220",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n13\n23\n3\n13",
+          "out": "105",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-3",
+        "number": 9
+      },
+      "id": "for-29",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Qo‘shimcha buyumlar",
+        "en": "Volunteer team: Bonus items"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: n kun uchun miqdorlar berilgan. har kuni 11 tadan qo‘shimcha berilgandan keyingi jami miqdorni toping. For ishlating.",
+        "en": "Volunteer team: Given quantities for n days, find the total after adding 11 bonus items each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n14\n25",
+          "out": "75"
+        },
+        {
+          "in": "1\n3",
+          "out": "14"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n14\n25\n6\n17\n28\n9",
+          "out": "179",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n14\n25\n6\n17\n28\n9\n20\n1\n12",
+          "out": "245",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n14\n25\n6\n17",
+          "out": "120",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-3",
+        "number": 10
+      },
+      "id": "for-30",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Toq kundagi yetkazish",
+        "en": "School shop: Odd-day deliveries"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: n kun uchun miqdorlar berilgan. toq tartib raqamli kunlardagi jami miqdor (kunlar 1 dan boshlanadi)ni toping. For ishlating.",
+        "en": "School shop: Given quantities for n days, find the total on odd-numbered days (days start at 1). Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n5\n7",
+          "out": "10"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n5\n7\n9\n11\n13\n15",
+          "out": "36",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n5\n7\n9\n11\n13\n15\n17\n19\n21",
+          "out": "55",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n5\n7\n9\n11",
+          "out": "21",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-4",
+        "number": 1
+      },
+      "id": "for-31",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Toq kundagi yetkazish",
+        "en": "Library: Odd-day deliveries"
+      },
+      "statement": {
+        "uz": "Kutubxona: n kun uchun miqdorlar berilgan. toq tartib raqamli kunlardagi jami miqdor (kunlar 1 dan boshlanadi)ni toping. For ishlating.",
+        "en": "Library: Given quantities for n days, find the total on odd-numbered days (days start at 1). Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n6\n9",
+          "out": "12"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n6\n9\n12\n15\n18\n21",
+          "out": "48",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n6\n9\n12\n15\n18\n21\n24\n27\n0",
+          "out": "75",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n6\n9\n12\n15",
+          "out": "27",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-4",
+        "number": 2
+      },
+      "id": "for-32",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Toq kundagi yetkazish",
+        "en": "Sports centre: Odd-day deliveries"
+      },
+      "statement": {
+        "uz": "Sport markazi: n kun uchun miqdorlar berilgan. toq tartib raqamli kunlardagi jami miqdor (kunlar 1 dan boshlanadi)ni toping. For ishlating.",
+        "en": "Sports centre: Given quantities for n days, find the total on odd-numbered days (days start at 1). Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n7\n11",
+          "out": "14"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n7\n11\n15\n19\n23\n27",
+          "out": "60",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n7\n11\n15\n19\n23\n27\n1\n5\n9",
+          "out": "65",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n7\n11\n15\n19",
+          "out": "33",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-4",
+        "number": 3
+      },
+      "id": "for-33",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Toq kundagi yetkazish",
+        "en": "Learning centre: Odd-day deliveries"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: n kun uchun miqdorlar berilgan. toq tartib raqamli kunlardagi jami miqdor (kunlar 1 dan boshlanadi)ni toping. For ishlating.",
+        "en": "Learning centre: Given quantities for n days, find the total on odd-numbered days (days start at 1). Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n8\n13",
+          "out": "16"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n8\n13\n18\n23\n28\n3",
+          "out": "42",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n8\n13\n18\n23\n28\n3\n8\n13\n18",
+          "out": "55",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n8\n13\n18\n23",
+          "out": "39",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-4",
+        "number": 4
+      },
+      "id": "for-34",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Toq kundagi yetkazish",
+        "en": "Community club: Odd-day deliveries"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: n kun uchun miqdorlar berilgan. toq tartib raqamli kunlardagi jami miqdor (kunlar 1 dan boshlanadi)ni toping. For ishlating.",
+        "en": "Community club: Given quantities for n days, find the total on odd-numbered days (days start at 1). Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n9\n15",
+          "out": "18"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n9\n15\n21\n27\n3\n9",
+          "out": "54",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n9\n15\n21\n27\n3\n9\n15\n21\n27",
+          "out": "75",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n9\n15\n21\n27",
+          "out": "45",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-4",
+        "number": 5
+      },
+      "id": "for-35",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Toq kundagi yetkazish",
+        "en": "Summer camp: Odd-day deliveries"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: n kun uchun miqdorlar berilgan. toq tartib raqamli kunlardagi jami miqdor (kunlar 1 dan boshlanadi)ni toping. For ishlating.",
+        "en": "Summer camp: Given quantities for n days, find the total on odd-numbered days (days start at 1). Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n10\n17",
+          "out": "20"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n10\n17\n24\n1\n8\n15",
+          "out": "36",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n10\n17\n24\n1\n8\n15\n22\n29\n6",
+          "out": "65",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n10\n17\n24\n1",
+          "out": "21",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-4",
+        "number": 6
+      },
+      "id": "for-36",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Toq kundagi yetkazish",
+        "en": "Book fair: Odd-day deliveries"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: n kun uchun miqdorlar berilgan. toq tartib raqamli kunlardagi jami miqdor (kunlar 1 dan boshlanadi)ni toping. For ishlating.",
+        "en": "Book fair: Given quantities for n days, find the total on odd-numbered days (days start at 1). Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n11\n19",
+          "out": "22"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n11\n19\n27\n5\n13\n21",
+          "out": "48",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n11\n19\n27\n5\n13\n21\n29\n7\n15",
+          "out": "55",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n11\n19\n27\n5",
+          "out": "27",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-4",
+        "number": 7
+      },
+      "id": "for-37",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Toq kundagi yetkazish",
+        "en": "Travel group: Odd-day deliveries"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: n kun uchun miqdorlar berilgan. toq tartib raqamli kunlardagi jami miqdor (kunlar 1 dan boshlanadi)ni toping. For ishlating.",
+        "en": "Travel group: Given quantities for n days, find the total on odd-numbered days (days start at 1). Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n12\n21",
+          "out": "24"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n12\n21\n0\n9\n18\n27",
+          "out": "60",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n12\n21\n0\n9\n18\n27\n6\n15\n24",
+          "out": "75",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n12\n21\n0\n9",
+          "out": "33",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-4",
+        "number": 8
+      },
+      "id": "for-38",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Toq kundagi yetkazish",
+        "en": "Workshop: Odd-day deliveries"
+      },
+      "statement": {
+        "uz": "Ustaxona: n kun uchun miqdorlar berilgan. toq tartib raqamli kunlardagi jami miqdor (kunlar 1 dan boshlanadi)ni toping. For ishlating.",
+        "en": "Workshop: Given quantities for n days, find the total on odd-numbered days (days start at 1). Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n13\n23",
+          "out": "26"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n13\n23\n3\n13\n23\n3",
+          "out": "42",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n13\n23\n3\n13\n23\n3\n13\n23\n3",
+          "out": "65",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n13\n23\n3\n13",
+          "out": "39",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-4",
+        "number": 9
+      },
+      "id": "for-39",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Toq kundagi yetkazish",
+        "en": "Volunteer team: Odd-day deliveries"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: n kun uchun miqdorlar berilgan. toq tartib raqamli kunlardagi jami miqdor (kunlar 1 dan boshlanadi)ni toping. For ishlating.",
+        "en": "Volunteer team: Given quantities for n days, find the total on odd-numbered days (days start at 1). Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n14\n25",
+          "out": "28"
+        },
+        {
+          "in": "1\n3",
+          "out": "3"
+        },
+        {
+          "in": "0",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n14\n25\n6\n17\n28\n9",
+          "out": "54",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n14\n25\n6\n17\n28\n9\n20\n1\n12",
+          "out": "55",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n14\n25\n6\n17",
+          "out": "45",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-4",
+        "number": 10
+      },
+      "id": "for-40",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Har kunlik qutilar",
+        "en": "School shop: Daily full boxes"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: n kun uchun miqdorlar berilgan. har bir kun uchun 2 sig‘imli to‘liq qutilar sonini toping. For ishlating.",
+        "en": "School shop: Given quantities for n days, find the number of full boxes of capacity 2 for each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n5\n7",
+          "out": "1\n2\n3"
+        },
+        {
+          "in": "1\n3",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n5\n7\n9\n11\n13\n15",
+          "out": "1\n2\n3\n4\n5\n6\n7",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n5\n7\n9\n11\n13\n15\n17\n19\n21",
+          "out": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n5\n7\n9\n11",
+          "out": "1\n2\n3\n4\n5",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-5",
+        "number": 1
+      },
+      "id": "for-41",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Har kunlik qutilar",
+        "en": "Library: Daily full boxes"
+      },
+      "statement": {
+        "uz": "Kutubxona: n kun uchun miqdorlar berilgan. har bir kun uchun 3 sig‘imli to‘liq qutilar sonini toping. For ishlating.",
+        "en": "Library: Given quantities for n days, find the number of full boxes of capacity 3 for each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n6\n9",
+          "out": "1\n2\n3"
+        },
+        {
+          "in": "1\n3",
+          "out": "1"
+        },
+        {
+          "in": "0",
+          "out": "",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n6\n9\n12\n15\n18\n21",
+          "out": "1\n2\n3\n4\n5\n6\n7",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n6\n9\n12\n15\n18\n21\n24\n27\n0",
+          "out": "1\n2\n3\n4\n5\n6\n7\n8\n9\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n6\n9\n12\n15",
+          "out": "1\n2\n3\n4\n5",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-5",
+        "number": 2
+      },
+      "id": "for-42",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Har kunlik qutilar",
+        "en": "Sports centre: Daily full boxes"
+      },
+      "statement": {
+        "uz": "Sport markazi: n kun uchun miqdorlar berilgan. har bir kun uchun 4 sig‘imli to‘liq qutilar sonini toping. For ishlating.",
+        "en": "Sports centre: Given quantities for n days, find the number of full boxes of capacity 4 for each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n7\n11",
+          "out": "0\n1\n2"
+        },
+        {
+          "in": "1\n3",
+          "out": "0"
+        },
+        {
+          "in": "0",
+          "out": "",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n7\n11\n15\n19\n23\n27",
+          "out": "0\n1\n2\n3\n4\n5\n6",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n7\n11\n15\n19\n23\n27\n1\n5\n9",
+          "out": "0\n1\n2\n3\n4\n5\n6\n0\n1\n2",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n7\n11\n15\n19",
+          "out": "0\n1\n2\n3\n4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-5",
+        "number": 3
+      },
+      "id": "for-43",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Har kunlik qutilar",
+        "en": "Learning centre: Daily full boxes"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: n kun uchun miqdorlar berilgan. har bir kun uchun 5 sig‘imli to‘liq qutilar sonini toping. For ishlating.",
+        "en": "Learning centre: Given quantities for n days, find the number of full boxes of capacity 5 for each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n8\n13",
+          "out": "0\n1\n2"
+        },
+        {
+          "in": "1\n3",
+          "out": "0"
+        },
+        {
+          "in": "0",
+          "out": "",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n8\n13\n18\n23\n28\n3",
+          "out": "0\n1\n2\n3\n4\n5\n0",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n8\n13\n18\n23\n28\n3\n8\n13\n18",
+          "out": "0\n1\n2\n3\n4\n5\n0\n1\n2\n3",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n8\n13\n18\n23",
+          "out": "0\n1\n2\n3\n4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-5",
+        "number": 4
+      },
+      "id": "for-44",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Har kunlik qutilar",
+        "en": "Community club: Daily full boxes"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: n kun uchun miqdorlar berilgan. har bir kun uchun 6 sig‘imli to‘liq qutilar sonini toping. For ishlating.",
+        "en": "Community club: Given quantities for n days, find the number of full boxes of capacity 6 for each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n9\n15",
+          "out": "0\n1\n2"
+        },
+        {
+          "in": "1\n3",
+          "out": "0"
+        },
+        {
+          "in": "0",
+          "out": "",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n9\n15\n21\n27\n3\n9",
+          "out": "0\n1\n2\n3\n4\n0\n1",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n9\n15\n21\n27\n3\n9\n15\n21\n27",
+          "out": "0\n1\n2\n3\n4\n0\n1\n2\n3\n4",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n9\n15\n21\n27",
+          "out": "0\n1\n2\n3\n4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-5",
+        "number": 5
+      },
+      "id": "for-45",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Har kunlik qutilar",
+        "en": "Summer camp: Daily full boxes"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: n kun uchun miqdorlar berilgan. har bir kun uchun 7 sig‘imli to‘liq qutilar sonini toping. For ishlating.",
+        "en": "Summer camp: Given quantities for n days, find the number of full boxes of capacity 7 for each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n10\n17",
+          "out": "0\n1\n2"
+        },
+        {
+          "in": "1\n3",
+          "out": "0"
+        },
+        {
+          "in": "0",
+          "out": "",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n10\n17\n24\n1\n8\n15",
+          "out": "0\n1\n2\n3\n0\n1\n2",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n10\n17\n24\n1\n8\n15\n22\n29\n6",
+          "out": "0\n1\n2\n3\n0\n1\n2\n3\n4\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n10\n17\n24\n1",
+          "out": "0\n1\n2\n3\n0",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-5",
+        "number": 6
+      },
+      "id": "for-46",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Har kunlik qutilar",
+        "en": "Book fair: Daily full boxes"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: n kun uchun miqdorlar berilgan. har bir kun uchun 8 sig‘imli to‘liq qutilar sonini toping. For ishlating.",
+        "en": "Book fair: Given quantities for n days, find the number of full boxes of capacity 8 for each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n11\n19",
+          "out": "0\n1\n2"
+        },
+        {
+          "in": "1\n3",
+          "out": "0"
+        },
+        {
+          "in": "0",
+          "out": "",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n11\n19\n27\n5\n13\n21",
+          "out": "0\n1\n2\n3\n0\n1\n2",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n11\n19\n27\n5\n13\n21\n29\n7\n15",
+          "out": "0\n1\n2\n3\n0\n1\n2\n3\n0\n1",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n11\n19\n27\n5",
+          "out": "0\n1\n2\n3\n0",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-5",
+        "number": 7
+      },
+      "id": "for-47",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Har kunlik qutilar",
+        "en": "Travel group: Daily full boxes"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: n kun uchun miqdorlar berilgan. har bir kun uchun 9 sig‘imli to‘liq qutilar sonini toping. For ishlating.",
+        "en": "Travel group: Given quantities for n days, find the number of full boxes of capacity 9 for each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n12\n21",
+          "out": "0\n1\n2"
+        },
+        {
+          "in": "1\n3",
+          "out": "0"
+        },
+        {
+          "in": "0",
+          "out": "",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n12\n21\n0\n9\n18\n27",
+          "out": "0\n1\n2\n0\n1\n2\n3",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n12\n21\n0\n9\n18\n27\n6\n15\n24",
+          "out": "0\n1\n2\n0\n1\n2\n3\n0\n1\n2",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n12\n21\n0\n9",
+          "out": "0\n1\n2\n0\n1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-5",
+        "number": 8
+      },
+      "id": "for-48",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Har kunlik qutilar",
+        "en": "Workshop: Daily full boxes"
+      },
+      "statement": {
+        "uz": "Ustaxona: n kun uchun miqdorlar berilgan. har bir kun uchun 10 sig‘imli to‘liq qutilar sonini toping. For ishlating.",
+        "en": "Workshop: Given quantities for n days, find the number of full boxes of capacity 10 for each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n13\n23",
+          "out": "0\n1\n2"
+        },
+        {
+          "in": "1\n3",
+          "out": "0"
+        },
+        {
+          "in": "0",
+          "out": "",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n13\n23\n3\n13\n23\n3",
+          "out": "0\n1\n2\n0\n1\n2\n0",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n13\n23\n3\n13\n23\n3\n13\n23\n3",
+          "out": "0\n1\n2\n0\n1\n2\n0\n1\n2\n0",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n13\n23\n3\n13",
+          "out": "0\n1\n2\n0\n1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-5",
+        "number": 9
+      },
+      "id": "for-49",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Har kunlik qutilar",
+        "en": "Volunteer team: Daily full boxes"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: n kun uchun miqdorlar berilgan. har bir kun uchun 11 sig‘imli to‘liq qutilar sonini toping. For ishlating.",
+        "en": "Volunteer team: Given quantities for n days, find the number of full boxes of capacity 11 for each day. Use For."
+      },
+      "inputFormat": {
+        "uz": "n (0..100), so‘ng n ta miqdor (0..10000). Har biri yangi qatorda.",
+        "en": "n (0..100), then n quantities (0..10000), one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "3\n3\n14\n25",
+          "out": "0\n1\n2"
+        },
+        {
+          "in": "1\n3",
+          "out": "0"
+        },
+        {
+          "in": "0",
+          "out": "",
+          "hidden": true
+        },
+        {
+          "in": "7\n3\n14\n25\n6\n17\n28\n9",
+          "out": "0\n1\n2\n0\n1\n2\n0",
+          "hidden": true
+        },
+        {
+          "in": "10\n3\n14\n25\n6\n17\n28\n9\n20\n1\n12",
+          "out": "0\n1\n2\n0\n1\n2\n0\n1\n0\n1",
+          "hidden": true
+        },
+        {
+          "in": "5\n3\n14\n25\n6\n17",
+          "out": "0\n1\n2\n0\n1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ]
+      },
+      "variant": {
+        "family": "for-5",
+        "number": 10
+      },
+      "id": "for-50",
+      "difficulty": "hard"
+    }
+  ]
+}

@@ -1,0 +1,3788 @@
+{
+  "id": "nested-for",
+  "order": 9,
+  "title": {
+    "uz": "Ichma-ich For",
+    "en": "Nested For loops"
+  },
+  "lesson": {
+    "uz": "Tashqi For qatorlar, ichki For shu qatordagi elementlar uchun ishlaydi. Har ikki siklning hisoblagichi alohida: i va j. r qator va c ustun uchun ichki amal r*c marta bajariladi.\nJadval ma’lumotlarini qatorma-qator kiriting. Har qator yig‘indisi kerak bo‘lsa s=0 ni tashqi sikl ichida, ichki sikldan oldin yozing. Umumiy yig‘indi uchun esa ikkala sikldan oldin.",
+    "en": "The outer For visits rows and the inner For visits items within each row. Use separate counters i and j. With r rows and c columns, the inner action runs r*c times.\nRead data row by row. Reset a row total inside the outer loop before entering the inner loop. Initialize a grand total before both loops."
+  },
+  "concepts": [
+    {
+      "title": {
+        "uz": "Bloklar",
+        "en": "Blocks"
+      },
+      "text": {
+        "uz": "Shartdagi talab etilgan bloklarga e’tibor bering.",
+        "en": "Check the required blocks in each task."
+      }
+    },
+    {
+      "title": {
+        "uz": "Tekshirish",
+        "en": "Testing"
+      },
+      "text": {
+        "uz": "Har bir Input alohida qatorni o‘qiydi. Natijani namuna bilan taqqoslang.",
+        "en": "Each Input reads one line. Compare your output with the examples."
+      }
+    }
+  ],
+  "classwork": [
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Javondagi jami buyum",
+        "en": "School shop: Total shelf stock"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: n qator va k ustunli javon jadvali beriladi. barcha javonlardagi jami buyumlarni chiqaring. Ichma-ich For ishlating.",
+        "en": "School shop: For a shelf grid of n rows and k columns, output the total items on all shelves. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n4\n6\n8\n10\n12",
+          "out": "42"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n4\n6\n8\n10",
+          "out": "30",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n4\n6\n8",
+          "out": "20",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n4\n6\n8\n10\n12\n14\n16\n18\n0\n2\n4",
+          "out": "96",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n4\n6\n8",
+          "out": "20",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-1",
+        "number": 1
+      },
+      "id": "nested-for-01",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Javondagi jami buyum",
+        "en": "Library: Total shelf stock"
+      },
+      "statement": {
+        "uz": "Kutubxona: n qator va k ustunli javon jadvali beriladi. barcha javonlardagi jami buyumlarni chiqaring. Ichma-ich For ishlating.",
+        "en": "Library: For a shelf grid of n rows and k columns, output the total items on all shelves. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n5\n8\n11\n14\n17",
+          "out": "57"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n5\n8\n11\n14",
+          "out": "40",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n5\n8\n11",
+          "out": "26",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n5\n8\n11\n14\n17\n0\n3\n6\n9\n12\n15",
+          "out": "102",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n5\n8\n11",
+          "out": "26",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-1",
+        "number": 2
+      },
+      "id": "nested-for-02",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Javondagi jami buyum",
+        "en": "Sports centre: Total shelf stock"
+      },
+      "statement": {
+        "uz": "Sport markazi: n qator va k ustunli javon jadvali beriladi. barcha javonlardagi jami buyumlarni chiqaring. Ichma-ich For ishlating.",
+        "en": "Sports centre: For a shelf grid of n rows and k columns, output the total items on all shelves. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n6\n10\n14\n18\n2",
+          "out": "52"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n6\n10\n14\n18",
+          "out": "50",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n6\n10\n14",
+          "out": "32",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n6\n10\n14\n18\n2\n6\n10\n14\n18\n2\n6",
+          "out": "108",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n6\n10\n14",
+          "out": "32",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-1",
+        "number": 3
+      },
+      "id": "nested-for-03",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Javondagi jami buyum",
+        "en": "Learning centre: Total shelf stock"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: n qator va k ustunli javon jadvali beriladi. barcha javonlardagi jami buyumlarni chiqaring. Ichma-ich For ishlating.",
+        "en": "Learning centre: For a shelf grid of n rows and k columns, output the total items on all shelves. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n7\n12\n17\n2\n7",
+          "out": "47"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n7\n12\n17\n2",
+          "out": "40",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n7\n12\n17",
+          "out": "38",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n7\n12\n17\n2\n7\n12\n17\n2\n7\n12\n17",
+          "out": "114",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n7\n12\n17",
+          "out": "38",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-1",
+        "number": 4
+      },
+      "id": "nested-for-04",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Javondagi jami buyum",
+        "en": "Community club: Total shelf stock"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: n qator va k ustunli javon jadvali beriladi. barcha javonlardagi jami buyumlarni chiqaring. Ichma-ich For ishlating.",
+        "en": "Community club: For a shelf grid of n rows and k columns, output the total items on all shelves. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n8\n14\n0\n6\n12",
+          "out": "42"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n8\n14\n0\n6",
+          "out": "30",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n8\n14\n0",
+          "out": "24",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n8\n14\n0\n6\n12\n18\n4\n10\n16\n2\n8",
+          "out": "100",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n8\n14\n0",
+          "out": "24",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-1",
+        "number": 5
+      },
+      "id": "nested-for-05",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Javondagi jami buyum",
+        "en": "Summer camp: Total shelf stock"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: n qator va k ustunli javon jadvali beriladi. barcha javonlardagi jami buyumlarni chiqaring. Ichma-ich For ishlating.",
+        "en": "Summer camp: For a shelf grid of n rows and k columns, output the total items on all shelves. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n9\n16\n3\n10\n17",
+          "out": "57"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n9\n16\n3\n10",
+          "out": "40",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n9\n16\n3",
+          "out": "30",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n9\n16\n3\n10\n17\n4\n11\n18\n5\n12\n19",
+          "out": "126",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n9\n16\n3",
+          "out": "30",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-1",
+        "number": 6
+      },
+      "id": "nested-for-06",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Javondagi jami buyum",
+        "en": "Book fair: Total shelf stock"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: n qator va k ustunli javon jadvali beriladi. barcha javonlardagi jami buyumlarni chiqaring. Ichma-ich For ishlating.",
+        "en": "Book fair: For a shelf grid of n rows and k columns, output the total items on all shelves. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n10\n18\n6\n14\n2",
+          "out": "52"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n10\n18\n6\n14",
+          "out": "50",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n10\n18\n6",
+          "out": "36",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n10\n18\n6\n14\n2\n10\n18\n6\n14\n2\n10",
+          "out": "112",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n10\n18\n6",
+          "out": "36",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-1",
+        "number": 7
+      },
+      "id": "nested-for-07",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Javondagi jami buyum",
+        "en": "Travel group: Total shelf stock"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: n qator va k ustunli javon jadvali beriladi. barcha javonlardagi jami buyumlarni chiqaring. Ichma-ich For ishlating.",
+        "en": "Travel group: For a shelf grid of n rows and k columns, output the total items on all shelves. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n11\n0\n9\n18\n7",
+          "out": "47"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n11\n0\n9\n18",
+          "out": "40",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n11\n0\n9",
+          "out": "22",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n11\n0\n9\n18\n7\n16\n5\n14\n3\n12\n1",
+          "out": "98",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n11\n0\n9",
+          "out": "22",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-1",
+        "number": 8
+      },
+      "id": "nested-for-08",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Javondagi jami buyum",
+        "en": "Workshop: Total shelf stock"
+      },
+      "statement": {
+        "uz": "Ustaxona: n qator va k ustunli javon jadvali beriladi. barcha javonlardagi jami buyumlarni chiqaring. Ichma-ich For ishlating.",
+        "en": "Workshop: For a shelf grid of n rows and k columns, output the total items on all shelves. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n12\n2\n12\n2\n12",
+          "out": "42"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n12\n2\n12\n2",
+          "out": "30",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n12\n2\n12",
+          "out": "28",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n12\n2\n12\n2\n12\n2\n12\n2\n12\n2\n12",
+          "out": "84",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n12\n2\n12",
+          "out": "28",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-1",
+        "number": 9
+      },
+      "id": "nested-for-09",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Javondagi jami buyum",
+        "en": "Volunteer team: Total shelf stock"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: n qator va k ustunli javon jadvali beriladi. barcha javonlardagi jami buyumlarni chiqaring. Ichma-ich For ishlating.",
+        "en": "Volunteer team: For a shelf grid of n rows and k columns, output the total items on all shelves. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n13\n4\n15\n6\n17",
+          "out": "57"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n13\n4\n15\n6",
+          "out": "40",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n13\n4\n15",
+          "out": "34",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n13\n4\n15\n6\n17\n8\n19\n10\n1\n12\n3",
+          "out": "110",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n13\n4\n15",
+          "out": "34",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-1",
+        "number": 10
+      },
+      "id": "nested-for-10",
+      "difficulty": "easy"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Qatorlar hisoboti",
+        "en": "School shop: Row report"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: n qator va k ustunli javon jadvali beriladi. har bir qatorning yig‘indisi, qator tartibidani chiqaring. Ichma-ich For ishlating.",
+        "en": "School shop: For a shelf grid of n rows and k columns, output the sum of each row in row order. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n4\n6\n8\n10\n12",
+          "out": "12\n30"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n4\n6\n8\n10",
+          "out": "30",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n4\n6\n8",
+          "out": "2\n4\n6\n8",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n4\n6\n8\n10\n12\n14\n16\n18\n0\n2\n4",
+          "out": "20\n52\n24",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n4\n6\n8",
+          "out": "6\n14",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-2",
+        "number": 1
+      },
+      "id": "nested-for-11",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Qatorlar hisoboti",
+        "en": "Library: Row report"
+      },
+      "statement": {
+        "uz": "Kutubxona: n qator va k ustunli javon jadvali beriladi. har bir qatorning yig‘indisi, qator tartibidani chiqaring. Ichma-ich For ishlating.",
+        "en": "Library: For a shelf grid of n rows and k columns, output the sum of each row in row order. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n5\n8\n11\n14\n17",
+          "out": "15\n42"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n5\n8\n11\n14",
+          "out": "40",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n5\n8\n11",
+          "out": "2\n5\n8\n11",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n5\n8\n11\n14\n17\n0\n3\n6\n9\n12\n15",
+          "out": "26\n34\n42",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n5\n8\n11",
+          "out": "7\n19",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-2",
+        "number": 2
+      },
+      "id": "nested-for-12",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Qatorlar hisoboti",
+        "en": "Sports centre: Row report"
+      },
+      "statement": {
+        "uz": "Sport markazi: n qator va k ustunli javon jadvali beriladi. har bir qatorning yig‘indisi, qator tartibidani chiqaring. Ichma-ich For ishlating.",
+        "en": "Sports centre: For a shelf grid of n rows and k columns, output the sum of each row in row order. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n6\n10\n14\n18\n2",
+          "out": "18\n34"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n6\n10\n14\n18",
+          "out": "50",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n6\n10\n14",
+          "out": "2\n6\n10\n14",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n6\n10\n14\n18\n2\n6\n10\n14\n18\n2\n6",
+          "out": "32\n36\n40",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n6\n10\n14",
+          "out": "8\n24",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-2",
+        "number": 3
+      },
+      "id": "nested-for-13",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Qatorlar hisoboti",
+        "en": "Learning centre: Row report"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: n qator va k ustunli javon jadvali beriladi. har bir qatorning yig‘indisi, qator tartibidani chiqaring. Ichma-ich For ishlating.",
+        "en": "Learning centre: For a shelf grid of n rows and k columns, output the sum of each row in row order. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n7\n12\n17\n2\n7",
+          "out": "21\n26"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n7\n12\n17\n2",
+          "out": "40",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n7\n12\n17",
+          "out": "2\n7\n12\n17",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n7\n12\n17\n2\n7\n12\n17\n2\n7\n12\n17",
+          "out": "38\n38\n38",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n7\n12\n17",
+          "out": "9\n29",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-2",
+        "number": 4
+      },
+      "id": "nested-for-14",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Qatorlar hisoboti",
+        "en": "Community club: Row report"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: n qator va k ustunli javon jadvali beriladi. har bir qatorning yig‘indisi, qator tartibidani chiqaring. Ichma-ich For ishlating.",
+        "en": "Community club: For a shelf grid of n rows and k columns, output the sum of each row in row order. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n8\n14\n0\n6\n12",
+          "out": "24\n18"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n8\n14\n0\n6",
+          "out": "30",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n8\n14\n0",
+          "out": "2\n8\n14\n0",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n8\n14\n0\n6\n12\n18\n4\n10\n16\n2\n8",
+          "out": "24\n40\n36",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n8\n14\n0",
+          "out": "10\n14",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-2",
+        "number": 5
+      },
+      "id": "nested-for-15",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Qatorlar hisoboti",
+        "en": "Summer camp: Row report"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: n qator va k ustunli javon jadvali beriladi. har bir qatorning yig‘indisi, qator tartibidani chiqaring. Ichma-ich For ishlating.",
+        "en": "Summer camp: For a shelf grid of n rows and k columns, output the sum of each row in row order. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n9\n16\n3\n10\n17",
+          "out": "27\n30"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n9\n16\n3\n10",
+          "out": "40",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n9\n16\n3",
+          "out": "2\n9\n16\n3",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n9\n16\n3\n10\n17\n4\n11\n18\n5\n12\n19",
+          "out": "30\n42\n54",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n9\n16\n3",
+          "out": "11\n19",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-2",
+        "number": 6
+      },
+      "id": "nested-for-16",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Qatorlar hisoboti",
+        "en": "Book fair: Row report"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: n qator va k ustunli javon jadvali beriladi. har bir qatorning yig‘indisi, qator tartibidani chiqaring. Ichma-ich For ishlating.",
+        "en": "Book fair: For a shelf grid of n rows and k columns, output the sum of each row in row order. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n10\n18\n6\n14\n2",
+          "out": "30\n22"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n10\n18\n6\n14",
+          "out": "50",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n10\n18\n6",
+          "out": "2\n10\n18\n6",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n10\n18\n6\n14\n2\n10\n18\n6\n14\n2\n10",
+          "out": "36\n44\n32",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n10\n18\n6",
+          "out": "12\n24",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-2",
+        "number": 7
+      },
+      "id": "nested-for-17",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Qatorlar hisoboti",
+        "en": "Travel group: Row report"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: n qator va k ustunli javon jadvali beriladi. har bir qatorning yig‘indisi, qator tartibidani chiqaring. Ichma-ich For ishlating.",
+        "en": "Travel group: For a shelf grid of n rows and k columns, output the sum of each row in row order. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n11\n0\n9\n18\n7",
+          "out": "13\n34"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n11\n0\n9\n18",
+          "out": "40",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n11\n0\n9",
+          "out": "2\n11\n0\n9",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n11\n0\n9\n18\n7\n16\n5\n14\n3\n12\n1",
+          "out": "22\n46\n30",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n11\n0\n9",
+          "out": "13\n9",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-2",
+        "number": 8
+      },
+      "id": "nested-for-18",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Qatorlar hisoboti",
+        "en": "Workshop: Row report"
+      },
+      "statement": {
+        "uz": "Ustaxona: n qator va k ustunli javon jadvali beriladi. har bir qatorning yig‘indisi, qator tartibidani chiqaring. Ichma-ich For ishlating.",
+        "en": "Workshop: For a shelf grid of n rows and k columns, output the sum of each row in row order. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n12\n2\n12\n2\n12",
+          "out": "16\n26"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n12\n2\n12\n2",
+          "out": "30",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n12\n2\n12",
+          "out": "2\n12\n2\n12",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n12\n2\n12\n2\n12\n2\n12\n2\n12\n2\n12",
+          "out": "28\n28\n28",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n12\n2\n12",
+          "out": "14\n14",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-2",
+        "number": 9
+      },
+      "id": "nested-for-19",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Qatorlar hisoboti",
+        "en": "Volunteer team: Row report"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: n qator va k ustunli javon jadvali beriladi. har bir qatorning yig‘indisi, qator tartibidani chiqaring. Ichma-ich For ishlating.",
+        "en": "Volunteer team: For a shelf grid of n rows and k columns, output the sum of each row in row order. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n13\n4\n15\n6\n17",
+          "out": "19\n38"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n13\n4\n15\n6",
+          "out": "40",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n13\n4\n15",
+          "out": "2\n13\n4\n15",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n13\n4\n15\n6\n17\n8\n19\n10\n1\n12\n3",
+          "out": "34\n50\n26",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n13\n4\n15",
+          "out": "15\n19",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-2",
+        "number": 10
+      },
+      "id": "nested-for-20",
+      "difficulty": "medium"
+    }
+  ],
+  "homework": [
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Kam zaxirali katak",
+        "en": "School shop: Low-stock cells"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: n qator va k ustunli javon jadvali beriladi. 2 dan kam buyumli kataklar sonini chiqaring. Ichma-ich For ishlating.",
+        "en": "School shop: For a shelf grid of n rows and k columns, output the number of cells holding fewer than 2 items. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n4\n6\n8\n10\n12",
+          "out": "0"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "0"
+        },
+        {
+          "in": "1\n5\n2\n4\n6\n8\n10",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n4\n6\n8",
+          "out": "0",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n4\n6\n8\n10\n12\n14\n16\n18\n0\n2\n4",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n4\n6\n8",
+          "out": "0",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-3",
+        "number": 1
+      },
+      "id": "nested-for-21",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Kam zaxirali katak",
+        "en": "Library: Low-stock cells"
+      },
+      "statement": {
+        "uz": "Kutubxona: n qator va k ustunli javon jadvali beriladi. 3 dan kam buyumli kataklar sonini chiqaring. Ichma-ich For ishlating.",
+        "en": "Library: For a shelf grid of n rows and k columns, output the number of cells holding fewer than 3 items. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n5\n8\n11\n14\n17",
+          "out": "1"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "1"
+        },
+        {
+          "in": "1\n5\n2\n5\n8\n11\n14",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n5\n8\n11",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n5\n8\n11\n14\n17\n0\n3\n6\n9\n12\n15",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n5\n8\n11",
+          "out": "1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-3",
+        "number": 2
+      },
+      "id": "nested-for-22",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Kam zaxirali katak",
+        "en": "Sports centre: Low-stock cells"
+      },
+      "statement": {
+        "uz": "Sport markazi: n qator va k ustunli javon jadvali beriladi. 4 dan kam buyumli kataklar sonini chiqaring. Ichma-ich For ishlating.",
+        "en": "Sports centre: For a shelf grid of n rows and k columns, output the number of cells holding fewer than 4 items. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n6\n10\n14\n18\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "1"
+        },
+        {
+          "in": "1\n5\n2\n6\n10\n14\n18",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n6\n10\n14",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n6\n10\n14\n18\n2\n6\n10\n14\n18\n2\n6",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n6\n10\n14",
+          "out": "1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-3",
+        "number": 3
+      },
+      "id": "nested-for-23",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Kam zaxirali katak",
+        "en": "Learning centre: Low-stock cells"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: n qator va k ustunli javon jadvali beriladi. 5 dan kam buyumli kataklar sonini chiqaring. Ichma-ich For ishlating.",
+        "en": "Learning centre: For a shelf grid of n rows and k columns, output the number of cells holding fewer than 5 items. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n7\n12\n17\n2\n7",
+          "out": "2"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "1"
+        },
+        {
+          "in": "1\n5\n2\n7\n12\n17\n2",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n7\n12\n17",
+          "out": "1",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n7\n12\n17\n2\n7\n12\n17\n2\n7\n12\n17",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n7\n12\n17",
+          "out": "1",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-3",
+        "number": 4
+      },
+      "id": "nested-for-24",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Kam zaxirali katak",
+        "en": "Community club: Low-stock cells"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: n qator va k ustunli javon jadvali beriladi. 6 dan kam buyumli kataklar sonini chiqaring. Ichma-ich For ishlating.",
+        "en": "Community club: For a shelf grid of n rows and k columns, output the number of cells holding fewer than 6 items. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n8\n14\n0\n6\n12",
+          "out": "2"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "1"
+        },
+        {
+          "in": "1\n5\n2\n8\n14\n0\n6",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n8\n14\n0",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n8\n14\n0\n6\n12\n18\n4\n10\n16\n2\n8",
+          "out": "4",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n8\n14\n0",
+          "out": "2",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-3",
+        "number": 5
+      },
+      "id": "nested-for-25",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Kam zaxirali katak",
+        "en": "Summer camp: Low-stock cells"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: n qator va k ustunli javon jadvali beriladi. 7 dan kam buyumli kataklar sonini chiqaring. Ichma-ich For ishlating.",
+        "en": "Summer camp: For a shelf grid of n rows and k columns, output the number of cells holding fewer than 7 items. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n9\n16\n3\n10\n17",
+          "out": "2"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "1"
+        },
+        {
+          "in": "1\n5\n2\n9\n16\n3\n10",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n9\n16\n3",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n9\n16\n3\n10\n17\n4\n11\n18\n5\n12\n19",
+          "out": "4",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n9\n16\n3",
+          "out": "2",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-3",
+        "number": 6
+      },
+      "id": "nested-for-26",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Kam zaxirali katak",
+        "en": "Book fair: Low-stock cells"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: n qator va k ustunli javon jadvali beriladi. 8 dan kam buyumli kataklar sonini chiqaring. Ichma-ich For ishlating.",
+        "en": "Book fair: For a shelf grid of n rows and k columns, output the number of cells holding fewer than 8 items. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n10\n18\n6\n14\n2",
+          "out": "3"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "1"
+        },
+        {
+          "in": "1\n5\n2\n10\n18\n6\n14",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n10\n18\n6",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n10\n18\n6\n14\n2\n10\n18\n6\n14\n2\n10",
+          "out": "5",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n10\n18\n6",
+          "out": "2",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-3",
+        "number": 7
+      },
+      "id": "nested-for-27",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Kam zaxirali katak",
+        "en": "Travel group: Low-stock cells"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: n qator va k ustunli javon jadvali beriladi. 9 dan kam buyumli kataklar sonini chiqaring. Ichma-ich For ishlating.",
+        "en": "Travel group: For a shelf grid of n rows and k columns, output the number of cells holding fewer than 9 items. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n11\n0\n9\n18\n7",
+          "out": "3"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "1"
+        },
+        {
+          "in": "1\n5\n2\n11\n0\n9\n18",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n11\n0\n9",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n11\n0\n9\n18\n7\n16\n5\n14\n3\n12\n1",
+          "out": "6",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n11\n0\n9",
+          "out": "2",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-3",
+        "number": 8
+      },
+      "id": "nested-for-28",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Kam zaxirali katak",
+        "en": "Workshop: Low-stock cells"
+      },
+      "statement": {
+        "uz": "Ustaxona: n qator va k ustunli javon jadvali beriladi. 10 dan kam buyumli kataklar sonini chiqaring. Ichma-ich For ishlating.",
+        "en": "Workshop: For a shelf grid of n rows and k columns, output the number of cells holding fewer than 10 items. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n12\n2\n12\n2\n12",
+          "out": "3"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "1"
+        },
+        {
+          "in": "1\n5\n2\n12\n2\n12\n2",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n12\n2\n12",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n12\n2\n12\n2\n12\n2\n12\n2\n12\n2\n12",
+          "out": "6",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n12\n2\n12",
+          "out": "2",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-3",
+        "number": 9
+      },
+      "id": "nested-for-29",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Kam zaxirali katak",
+        "en": "Volunteer team: Low-stock cells"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: n qator va k ustunli javon jadvali beriladi. 11 dan kam buyumli kataklar sonini chiqaring. Ichma-ich For ishlating.",
+        "en": "Volunteer team: For a shelf grid of n rows and k columns, output the number of cells holding fewer than 11 items. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n13\n4\n15\n6\n17",
+          "out": "3"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "1"
+        },
+        {
+          "in": "1\n5\n2\n13\n4\n15\n6",
+          "out": "3",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n13\n4\n15",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n13\n4\n15\n6\n17\n8\n19\n10\n1\n12\n3",
+          "out": "7",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n13\n4\n15",
+          "out": "2",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-3",
+        "number": 10
+      },
+      "id": "nested-for-30",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Birinchi ustun",
+        "en": "School shop: First column"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: n qator va k ustunli javon jadvali beriladi. birinchi ustundagi buyumlar yig‘indisini chiqaring. Ichma-ich For ishlating.",
+        "en": "School shop: For a shelf grid of n rows and k columns, output the sum of items in the first column. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n4\n6\n8\n10\n12",
+          "out": "10"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n4\n6\n8\n10",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n4\n6\n8",
+          "out": "20",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n4\n6\n8\n10\n12\n14\n16\n18\n0\n2\n4",
+          "out": "30",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n4\n6\n8",
+          "out": "8",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-4",
+        "number": 1
+      },
+      "id": "nested-for-31",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Birinchi ustun",
+        "en": "Library: First column"
+      },
+      "statement": {
+        "uz": "Kutubxona: n qator va k ustunli javon jadvali beriladi. birinchi ustundagi buyumlar yig‘indisini chiqaring. Ichma-ich For ishlating.",
+        "en": "Library: For a shelf grid of n rows and k columns, output the sum of items in the first column. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n5\n8\n11\n14\n17",
+          "out": "13"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n5\n8\n11\n14",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n5\n8\n11",
+          "out": "26",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n5\n8\n11\n14\n17\n0\n3\n6\n9\n12\n15",
+          "out": "22",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n5\n8\n11",
+          "out": "10",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-4",
+        "number": 2
+      },
+      "id": "nested-for-32",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Birinchi ustun",
+        "en": "Sports centre: First column"
+      },
+      "statement": {
+        "uz": "Sport markazi: n qator va k ustunli javon jadvali beriladi. birinchi ustundagi buyumlar yig‘indisini chiqaring. Ichma-ich For ishlating.",
+        "en": "Sports centre: For a shelf grid of n rows and k columns, output the sum of items in the first column. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n6\n10\n14\n18\n2",
+          "out": "16"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n6\n10\n14\n18",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n6\n10\n14",
+          "out": "32",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n6\n10\n14\n18\n2\n6\n10\n14\n18\n2\n6",
+          "out": "34",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n6\n10\n14",
+          "out": "12",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-4",
+        "number": 3
+      },
+      "id": "nested-for-33",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Birinchi ustun",
+        "en": "Learning centre: First column"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: n qator va k ustunli javon jadvali beriladi. birinchi ustundagi buyumlar yig‘indisini chiqaring. Ichma-ich For ishlating.",
+        "en": "Learning centre: For a shelf grid of n rows and k columns, output the sum of items in the first column. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n7\n12\n17\n2\n7",
+          "out": "19"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n7\n12\n17\n2",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n7\n12\n17",
+          "out": "38",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n7\n12\n17\n2\n7\n12\n17\n2\n7\n12\n17",
+          "out": "6",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n7\n12\n17",
+          "out": "14",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-4",
+        "number": 4
+      },
+      "id": "nested-for-34",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Birinchi ustun",
+        "en": "Community club: First column"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: n qator va k ustunli javon jadvali beriladi. birinchi ustundagi buyumlar yig‘indisini chiqaring. Ichma-ich For ishlating.",
+        "en": "Community club: For a shelf grid of n rows and k columns, output the sum of items in the first column. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n8\n14\n0\n6\n12",
+          "out": "2"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n8\n14\n0\n6",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n8\n14\n0",
+          "out": "24",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n8\n14\n0\n6\n12\n18\n4\n10\n16\n2\n8",
+          "out": "18",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n8\n14\n0",
+          "out": "16",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-4",
+        "number": 5
+      },
+      "id": "nested-for-35",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Birinchi ustun",
+        "en": "Summer camp: First column"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: n qator va k ustunli javon jadvali beriladi. birinchi ustundagi buyumlar yig‘indisini chiqaring. Ichma-ich For ishlating.",
+        "en": "Summer camp: For a shelf grid of n rows and k columns, output the sum of items in the first column. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n9\n16\n3\n10\n17",
+          "out": "5"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n9\n16\n3\n10",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n9\n16\n3",
+          "out": "30",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n9\n16\n3\n10\n17\n4\n11\n18\n5\n12\n19",
+          "out": "30",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n9\n16\n3",
+          "out": "18",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-4",
+        "number": 6
+      },
+      "id": "nested-for-36",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Birinchi ustun",
+        "en": "Book fair: First column"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: n qator va k ustunli javon jadvali beriladi. birinchi ustundagi buyumlar yig‘indisini chiqaring. Ichma-ich For ishlating.",
+        "en": "Book fair: For a shelf grid of n rows and k columns, output the sum of items in the first column. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n10\n18\n6\n14\n2",
+          "out": "8"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n10\n18\n6\n14",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n10\n18\n6",
+          "out": "36",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n10\n18\n6\n14\n2\n10\n18\n6\n14\n2\n10",
+          "out": "22",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n10\n18\n6",
+          "out": "20",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-4",
+        "number": 7
+      },
+      "id": "nested-for-37",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Birinchi ustun",
+        "en": "Travel group: First column"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: n qator va k ustunli javon jadvali beriladi. birinchi ustundagi buyumlar yig‘indisini chiqaring. Ichma-ich For ishlating.",
+        "en": "Travel group: For a shelf grid of n rows and k columns, output the sum of items in the first column. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n11\n0\n9\n18\n7",
+          "out": "11"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n11\n0\n9\n18",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n11\n0\n9",
+          "out": "22",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n11\n0\n9\n18\n7\n16\n5\n14\n3\n12\n1",
+          "out": "34",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n11\n0\n9",
+          "out": "2",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-4",
+        "number": 8
+      },
+      "id": "nested-for-38",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Birinchi ustun",
+        "en": "Workshop: First column"
+      },
+      "statement": {
+        "uz": "Ustaxona: n qator va k ustunli javon jadvali beriladi. birinchi ustundagi buyumlar yig‘indisini chiqaring. Ichma-ich For ishlating.",
+        "en": "Workshop: For a shelf grid of n rows and k columns, output the sum of items in the first column. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n12\n2\n12\n2\n12",
+          "out": "14"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n12\n2\n12\n2",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n12\n2\n12",
+          "out": "28",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n12\n2\n12\n2\n12\n2\n12\n2\n12\n2\n12",
+          "out": "6",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n12\n2\n12",
+          "out": "4",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-4",
+        "number": 9
+      },
+      "id": "nested-for-39",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Birinchi ustun",
+        "en": "Volunteer team: First column"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: n qator va k ustunli javon jadvali beriladi. birinchi ustundagi buyumlar yig‘indisini chiqaring. Ichma-ich For ishlating.",
+        "en": "Volunteer team: For a shelf grid of n rows and k columns, output the sum of items in the first column. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n13\n4\n15\n6\n17",
+          "out": "17"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "2"
+        },
+        {
+          "in": "1\n5\n2\n13\n4\n15\n6",
+          "out": "2",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n13\n4\n15",
+          "out": "34",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n13\n4\n15\n6\n17\n8\n19\n10\n1\n12\n3",
+          "out": "18",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n13\n4\n15",
+          "out": "6",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-4",
+        "number": 10
+      },
+      "id": "nested-for-40",
+      "difficulty": "medium"
+    },
+    {
+      "title": {
+        "uz": "Maktab do‘koni: Barcha katakni to‘ldirish",
+        "en": "School shop: Restock all cells"
+      },
+      "statement": {
+        "uz": "Maktab do‘koni: n qator va k ustunli javon jadvali beriladi. har bir katakka yana 2 ta qo‘shilgandagi umumiy miqdorni chiqaring. Ichma-ich For ishlating.",
+        "en": "School shop: For a shelf grid of n rows and k columns, output the grand total after adding 2 to each cell. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n4\n6\n8\n10\n12",
+          "out": "54"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "4"
+        },
+        {
+          "in": "1\n5\n2\n4\n6\n8\n10",
+          "out": "40",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n4\n6\n8",
+          "out": "28",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n4\n6\n8\n10\n12\n14\n16\n18\n0\n2\n4",
+          "out": "120",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n4\n6\n8",
+          "out": "28",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-5",
+        "number": 1
+      },
+      "id": "nested-for-41",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Kutubxona: Barcha katakni to‘ldirish",
+        "en": "Library: Restock all cells"
+      },
+      "statement": {
+        "uz": "Kutubxona: n qator va k ustunli javon jadvali beriladi. har bir katakka yana 3 ta qo‘shilgandagi umumiy miqdorni chiqaring. Ichma-ich For ishlating.",
+        "en": "Library: For a shelf grid of n rows and k columns, output the grand total after adding 3 to each cell. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n5\n8\n11\n14\n17",
+          "out": "75"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "5"
+        },
+        {
+          "in": "1\n5\n2\n5\n8\n11\n14",
+          "out": "55",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n5\n8\n11",
+          "out": "38",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n5\n8\n11\n14\n17\n0\n3\n6\n9\n12\n15",
+          "out": "138",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n5\n8\n11",
+          "out": "38",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-5",
+        "number": 2
+      },
+      "id": "nested-for-42",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Sport markazi: Barcha katakni to‘ldirish",
+        "en": "Sports centre: Restock all cells"
+      },
+      "statement": {
+        "uz": "Sport markazi: n qator va k ustunli javon jadvali beriladi. har bir katakka yana 4 ta qo‘shilgandagi umumiy miqdorni chiqaring. Ichma-ich For ishlating.",
+        "en": "Sports centre: For a shelf grid of n rows and k columns, output the grand total after adding 4 to each cell. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n6\n10\n14\n18\n2",
+          "out": "76"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "6"
+        },
+        {
+          "in": "1\n5\n2\n6\n10\n14\n18",
+          "out": "70",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n6\n10\n14",
+          "out": "48",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n6\n10\n14\n18\n2\n6\n10\n14\n18\n2\n6",
+          "out": "156",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n6\n10\n14",
+          "out": "48",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-5",
+        "number": 3
+      },
+      "id": "nested-for-43",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "O‘quv markazi: Barcha katakni to‘ldirish",
+        "en": "Learning centre: Restock all cells"
+      },
+      "statement": {
+        "uz": "O‘quv markazi: n qator va k ustunli javon jadvali beriladi. har bir katakka yana 5 ta qo‘shilgandagi umumiy miqdorni chiqaring. Ichma-ich For ishlating.",
+        "en": "Learning centre: For a shelf grid of n rows and k columns, output the grand total after adding 5 to each cell. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n7\n12\n17\n2\n7",
+          "out": "77"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "7"
+        },
+        {
+          "in": "1\n5\n2\n7\n12\n17\n2",
+          "out": "65",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n7\n12\n17",
+          "out": "58",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n7\n12\n17\n2\n7\n12\n17\n2\n7\n12\n17",
+          "out": "174",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n7\n12\n17",
+          "out": "58",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-5",
+        "number": 4
+      },
+      "id": "nested-for-44",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Mahalla klubi: Barcha katakni to‘ldirish",
+        "en": "Community club: Restock all cells"
+      },
+      "statement": {
+        "uz": "Mahalla klubi: n qator va k ustunli javon jadvali beriladi. har bir katakka yana 6 ta qo‘shilgandagi umumiy miqdorni chiqaring. Ichma-ich For ishlating.",
+        "en": "Community club: For a shelf grid of n rows and k columns, output the grand total after adding 6 to each cell. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n8\n14\n0\n6\n12",
+          "out": "78"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "8"
+        },
+        {
+          "in": "1\n5\n2\n8\n14\n0\n6",
+          "out": "60",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n8\n14\n0",
+          "out": "48",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n8\n14\n0\n6\n12\n18\n4\n10\n16\n2\n8",
+          "out": "172",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n8\n14\n0",
+          "out": "48",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-5",
+        "number": 5
+      },
+      "id": "nested-for-45",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Yozgi oromgoh: Barcha katakni to‘ldirish",
+        "en": "Summer camp: Restock all cells"
+      },
+      "statement": {
+        "uz": "Yozgi oromgoh: n qator va k ustunli javon jadvali beriladi. har bir katakka yana 7 ta qo‘shilgandagi umumiy miqdorni chiqaring. Ichma-ich For ishlating.",
+        "en": "Summer camp: For a shelf grid of n rows and k columns, output the grand total after adding 7 to each cell. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n9\n16\n3\n10\n17",
+          "out": "99"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "9"
+        },
+        {
+          "in": "1\n5\n2\n9\n16\n3\n10",
+          "out": "75",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n9\n16\n3",
+          "out": "58",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n9\n16\n3\n10\n17\n4\n11\n18\n5\n12\n19",
+          "out": "210",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n9\n16\n3",
+          "out": "58",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-5",
+        "number": 6
+      },
+      "id": "nested-for-46",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Kitob yarmarkasi: Barcha katakni to‘ldirish",
+        "en": "Book fair: Restock all cells"
+      },
+      "statement": {
+        "uz": "Kitob yarmarkasi: n qator va k ustunli javon jadvali beriladi. har bir katakka yana 8 ta qo‘shilgandagi umumiy miqdorni chiqaring. Ichma-ich For ishlating.",
+        "en": "Book fair: For a shelf grid of n rows and k columns, output the grand total after adding 8 to each cell. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n10\n18\n6\n14\n2",
+          "out": "100"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "10"
+        },
+        {
+          "in": "1\n5\n2\n10\n18\n6\n14",
+          "out": "90",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n10\n18\n6",
+          "out": "68",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n10\n18\n6\n14\n2\n10\n18\n6\n14\n2\n10",
+          "out": "208",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n10\n18\n6",
+          "out": "68",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-5",
+        "number": 7
+      },
+      "id": "nested-for-47",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Sayohat guruhi: Barcha katakni to‘ldirish",
+        "en": "Travel group: Restock all cells"
+      },
+      "statement": {
+        "uz": "Sayohat guruhi: n qator va k ustunli javon jadvali beriladi. har bir katakka yana 9 ta qo‘shilgandagi umumiy miqdorni chiqaring. Ichma-ich For ishlating.",
+        "en": "Travel group: For a shelf grid of n rows and k columns, output the grand total after adding 9 to each cell. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n11\n0\n9\n18\n7",
+          "out": "101"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "11"
+        },
+        {
+          "in": "1\n5\n2\n11\n0\n9\n18",
+          "out": "85",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n11\n0\n9",
+          "out": "58",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n11\n0\n9\n18\n7\n16\n5\n14\n3\n12\n1",
+          "out": "206",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n11\n0\n9",
+          "out": "58",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-5",
+        "number": 8
+      },
+      "id": "nested-for-48",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Ustaxona: Barcha katakni to‘ldirish",
+        "en": "Workshop: Restock all cells"
+      },
+      "statement": {
+        "uz": "Ustaxona: n qator va k ustunli javon jadvali beriladi. har bir katakka yana 10 ta qo‘shilgandagi umumiy miqdorni chiqaring. Ichma-ich For ishlating.",
+        "en": "Workshop: For a shelf grid of n rows and k columns, output the grand total after adding 10 to each cell. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n12\n2\n12\n2\n12",
+          "out": "102"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "12"
+        },
+        {
+          "in": "1\n5\n2\n12\n2\n12\n2",
+          "out": "80",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n12\n2\n12",
+          "out": "68",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n12\n2\n12\n2\n12\n2\n12\n2\n12\n2\n12",
+          "out": "204",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n12\n2\n12",
+          "out": "68",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-5",
+        "number": 9
+      },
+      "id": "nested-for-49",
+      "difficulty": "hard"
+    },
+    {
+      "title": {
+        "uz": "Ko‘ngillilar jamoasi: Barcha katakni to‘ldirish",
+        "en": "Volunteer team: Restock all cells"
+      },
+      "statement": {
+        "uz": "Ko‘ngillilar jamoasi: n qator va k ustunli javon jadvali beriladi. har bir katakka yana 11 ta qo‘shilgandagi umumiy miqdorni chiqaring. Ichma-ich For ishlating.",
+        "en": "Volunteer team: For a shelf grid of n rows and k columns, output the grand total after adding 11 to each cell. Use nested For loops."
+      },
+      "inputFormat": {
+        "uz": "n, k (1..10), keyin n*k son (0..100). Sonlar qatorma-qator, har biri alohida satrda.",
+        "en": "n, k (1..10), then n*k integers (0..100), row by row, one per line."
+      },
+      "outputFormat": {
+        "uz": "So‘ralgan natijalarni berilgan tartibda, har birini alohida qatorda chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print the requested results in order, one per line, with no extra text."
+      },
+      "tests": [
+        {
+          "in": "2\n3\n2\n13\n4\n15\n6\n17",
+          "out": "123"
+        },
+        {
+          "in": "1\n1\n2",
+          "out": "13"
+        },
+        {
+          "in": "1\n5\n2\n13\n4\n15\n6",
+          "out": "95",
+          "hidden": true
+        },
+        {
+          "in": "4\n1\n2\n13\n4\n15",
+          "out": "78",
+          "hidden": true
+        },
+        {
+          "in": "3\n4\n2\n13\n4\n15\n6\n17\n8\n19\n10\n1\n12\n3",
+          "out": "242",
+          "hidden": true
+        },
+        {
+          "in": "2\n2\n2\n13\n4\n15",
+          "out": "78",
+          "hidden": true
+        }
+      ],
+      "hints": [
+        {
+          "uz": "Kirishdagi qiymatlarni yozib oling va bitta namunani qo‘lda hisoblang.",
+          "en": "Name the input values and work through one example by hand."
+        },
+        {
+          "uz": "Darsdagi blok tartibidan foydalaning. Natija qayerda yangilanishini aniqlang.",
+          "en": "Use the block order from the lesson. Identify where the result changes."
+        },
+        {
+          "uz": "Eng kichik kirish qiymati va shart chegarasini alohida tekshiring. Keraksiz matn chiqarmang.",
+          "en": "Check the smallest valid input and condition boundaries. Avoid extra output text."
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "for"
+        ],
+        "requireNestedFor": true
+      },
+      "variant": {
+        "family": "nested-for-5",
+        "number": 10
+      },
+      "id": "nested-for-50",
+      "difficulty": "hard"
+    }
+  ]
+}
