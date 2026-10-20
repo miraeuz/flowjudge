@@ -1,0 +1,23 @@
+{
+  "id": "input", "order": 3,
+  "title": { "uz": "Input — ma'lumot kiritish", "en": "Input — reading data" },
+  "lesson": { "uz": "Input bloki foydalanuvchidan qiymat oladi...", "en": "The Input block reads a value from the user..." },
+  "classwork": [
+    {
+      "id": "input-01",
+      "title": { "uz": "Do'kondagi daftarlar", "en": "Notebooks in the shop" },
+      "statement": {
+        "uz": "Do'konga keltirilgan daftarlar soni kiritiladi. Kun davomida 12 tasi sotildi. Nechta daftar qoldi?",
+        "en": "The number of notebooks delivered to a shop is entered. 12 were sold during the day. How many are left?"
+      },
+      "inputFormat": { "uz": "Bitta butun son", "en": "One integer" },
+      "judge": { "mode": "numbers", "eps": 1e-6 },
+      "tests": [
+        { "in": "50", "out": "38" },
+        { "in": "12", "out": "0" },
+        { "in": "100", "out": "88", "hidden": true }
+      ]
+    }
+  ],
+  "homework": []
+}
