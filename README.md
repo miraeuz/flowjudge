@@ -1,15 +1,12 @@
-# FlowJudge — Flowgorithm judge engine (step 2 of the Flowgorithm Academy)
+# Flowgorithm Academy
 
-    node tests/run.mjs        # 15 tests, no dependencies (Node 18+)
+Desktop app (Electron) to learn Flowgorithm: lessons, problems, and an automatic judge for `.fprg` files.
 
-```js
-import { judge } from './engine/fprg.mjs';
-const res = judge(fprgXmlText, [{ in: '2\n3', out: '5' }], { mode: 'numbers' });
-// -> { verdict: 'AC'|'WA'|'RE'|'TLE'|'CE', passed, total, results: [...] }
-```
+- `engine/fprg.mjs` — .fprg interpreter + judge (`node tests/run.mjs`)
+- `content/topics/*.json` — topics, lessons, problems (uz/en) with visible + hidden tests
+- `main.js` — activation (one-time Telegram code), judge IPC; hidden tests never reach the UI
+- `renderer/` — liquid-glass UI, day/night/system theme, uz/en
 
-- Each `Input` block reads one line of test input.
-- Judge modes: `tokens` (default), `numbers` (ignores text, good for realistic problems), `exact`.
-- Supports Declare, Assign, Input, Output, If, For, While, Do, Call, arrays, user functions,
-  `div`/`mod`/`%`/`^`/`&`, `and`/`or`/`not`, common built-ins. Step limit protects from infinite loops.
-- Problem file format: `content/topics/03-input.example.json`.
+## Installers
+Push to `main` → Actions → **Build** → Artifacts (Windows, macOS, Linux).
+Add repository secrets `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` (Settings → Secrets and variables → Actions).

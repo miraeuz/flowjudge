@@ -1,0 +1,205 @@
+{
+ "id": "input",
+ "order": 3,
+ "title": {
+  "uz": "Input — ma'lumot kiritish",
+  "en": "Input — reading data"
+ },
+ "lesson": {
+  "uz": "Input bloki foydalanuvchidan qiymat oladi va o'zgaruvchiga saqlaydi. Tartib: Declare → Input → Assign (hisoblash) → Output. Butun sonlar uchun Integer, kasrlar uchun Real turini tanlang.",
+  "en": "The Input block reads a value from the user and stores it in a variable. Order: Declare → Input → Assign (calculate) → Output. Use Integer for whole numbers and Real for fractions."
+ },
+ "classwork": [
+  {
+   "id": "input-01",
+   "title": {
+    "uz": "Do'kondagi daftarlar",
+    "en": "Notebooks in the shop"
+   },
+   "statement": {
+    "uz": "Do'konga keltirilgan daftarlar soni kiritiladi. Kun davomida 12 tasi sotildi. Nechta daftar qoldi?",
+    "en": "The number of notebooks delivered to a shop is entered. 12 were sold during the day. How many are left?"
+   },
+   "inputFormat": {
+    "uz": "Bitta butun son",
+    "en": "One integer"
+   },
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "50",
+     "out": "38"
+    },
+    {
+     "in": "12",
+     "out": "0"
+    },
+    {
+     "in": "100",
+     "out": "88",
+     "hidden": true
+    },
+    {
+     "in": "13",
+     "out": "1",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-02",
+   "title": {
+    "uz": "Qalamlar qutisi",
+    "en": "Boxes of pencils"
+   },
+   "statement": {
+    "uz": "Bir qutida 6 ta qalam bor. Do'konga kelgan qutilar soni kiritiladi. Jami nechta qalam keltirildi?",
+    "en": "A box holds 6 pencils. The number of boxes delivered is entered. How many pencils arrived in total?"
+   },
+   "inputFormat": {
+    "uz": "Qutilar soni",
+    "en": "Number of boxes"
+   },
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "3",
+     "out": "18"
+    },
+    {
+     "in": "10",
+     "out": "60"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "25",
+     "out": "150",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-03",
+   "title": {
+    "uz": "Muzqaymoq",
+    "en": "Ice cream"
+   },
+   "statement": {
+    "uz": "Anvarning cho'ntagidagi pul (so'mda) kiritiladi. U 2000 so'mga muzqaymoq oldi. Qancha pul qoldi?",
+    "en": "The amount of money in Anvar's pocket is entered. He bought ice cream for 2000. How much is left?"
+   },
+   "inputFormat": {
+    "uz": "Pul miqdori",
+    "en": "Amount of money"
+   },
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5000",
+     "out": "3000"
+    },
+    {
+     "in": "2000",
+     "out": "0"
+    },
+    {
+     "in": "15000",
+     "out": "13000",
+     "hidden": true
+    },
+    {
+     "in": "2500",
+     "out": "500",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-04",
+   "title": {
+    "uz": "Daftarlar narxi",
+    "en": "Price of notebooks"
+   },
+   "statement": {
+    "uz": "Bitta daftar narxi va sotib olinadigan daftarlar soni kiritiladi. Jami necha so'm to'lash kerak?",
+    "en": "The price of one notebook and the number to buy are entered. How much must be paid in total?"
+   },
+   "inputFormat": {
+    "uz": "Ikki qator: narx, soni",
+    "en": "Two lines: price, count"
+   },
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "3000\n4",
+     "out": "12000"
+    },
+    {
+     "in": "2500\n10",
+     "out": "25000"
+    },
+    {
+     "in": "1200\n0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "999\n7",
+     "out": "6993",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-05",
+   "title": {
+    "uz": "Konfetlarni bo'lish",
+    "en": "Sharing candies"
+   },
+   "statement": {
+    "uz": "Konfetlar soni va bolalar soni kiritiladi. Har bir bolaga nechtadan konfet tushadi va nechta konfet ortib qoladi? (Ikki sonni chiqaring)",
+    "en": "The number of candies and children is entered. How many candies does each child get and how many are left over? (Print two numbers)"
+   },
+   "inputFormat": {
+    "uz": "Ikki qator: konfetlar, bolalar",
+    "en": "Two lines: candies, children"
+   },
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "50\n7",
+     "out": "7 1"
+    },
+    {
+     "in": "20\n5",
+     "out": "4 0"
+    },
+    {
+     "in": "3\n4",
+     "out": "0 3",
+     "hidden": true
+    },
+    {
+     "in": "100\n9",
+     "out": "11 1",
+     "hidden": true
+    }
+   ]
+  }
+ ],
+ "homework": []
+}

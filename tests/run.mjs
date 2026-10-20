@@ -20,4 +20,20 @@ ok('numbers mode ignores prompt text', judge(sum.replace('a+b','&quot;Natija: &q
 const simple = readFileSync(new URL('./fixtures/simple.fprg', import.meta.url), 'utf8');
 ok('your simple.fprg runs', run(simple, '3\n2\n' + '1\n'.repeat(11)) === 'asdsad\n');
 ok('your simple.fprg: RE when input runs out', judge(simple, [{in:'3\n2',out:''}]).verdict === 'RE');
+const FN = (name, body) => `<function name="${name}" type="Integer" variable="r"><parameters/><body>${body}</body></function>`;
+const V = x => judge(x, [{in:'',out:''}]).verdict;
+ok('SEC: constructor() is not callable', V(P(D('r','Integer') + `<assign variable="r" expression="constructor(1)"/>`)) === 'RE');
+ok('SEC: infinite recursion -> RE (no crash)', V(P(D('r','Integer') + `<assign variable="r" expression="F()"/>`).replace('</flowgorithm>', FN('F','<assign variable="r" expression="F()"/>') + '</flowgorithm>')) === 'RE');
+ok('SEC: huge array rejected', V(P(`<declare name="a" type="Integer" array="True" size="1000000000"/>`)) === 'RE');
+ok('SEC: string doubling bomb stopped', V(P(D('s','String') + D('i','Integer') + `<assign variable="s" expression="&quot;ab&quot;"/><for variable="i" start="1" end="40" direction="inc" step="1"><assign variable="s" expression="s &amp; s"/></for>`)) === 'RE');
+ok('missing ) is CE', V(P(D('r','Integer') + `<assign variable="r" expression="(1+2"/>`)) === 'CE');
+ok('assign to whole array is RE', V(P(`<declare name="a" type="Integer" array="True" size="2"/><assign variable="a" expression="5"/>`)) === 'RE');
+ok('oversized file is CE', judge('x'.repeat(2e6), [{in:'',out:''}]).verdict === 'CE');
+import { readdirSync } from 'node:fs';
+const cdir = new URL('../content/topics/', import.meta.url);
+for (const f of readdirSync(cdir).filter(f => f.endsWith('.json'))) {
+  const tp = JSON.parse(readFileSync(new URL(f, cdir), 'utf8')); const ids = new Set();
+  const all = [...tp.classwork, ...tp.homework];
+  ok(`content ${f}: ids unique, bilingual, >=3 tests incl. hidden`, all.every(p => !ids.has(p.id) && ids.add(p.id) && p.title.uz && p.title.en && p.statement.uz && p.statement.en && p.tests.length >= 3 && p.tests.some(t => t.hidden)));
+}
 process.exit(bad ? 1 : 0);
