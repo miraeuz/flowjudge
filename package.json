@@ -1,15 +1,51 @@
 {
-  "name": "flowgorithm-academy", "productName": "Flowgorithm Academy", "version": "0.1.0",
-  "description": "Learn algorithms with Flowgorithm — lessons, problems and an automatic judge.",
-  "author": "miraeuz <miraeuz@users.noreply.github.com>", "license": "MIT", "main": "main.js",
-  "scripts": { "start": "electron .", "test": "node tests/run.mjs", "dist": "electron-builder --publish never" },
-  "devDependencies": { "electron": "^33.2.0", "electron-builder": "^25.1.8" },
+  "name": "flowgorithm-academy",
+  "productName": "Flowgorithm Academy",
+  "version": "0.1.1",
+  "description": "Learn algorithms with Flowgorithm \u2014 lessons, problems and an automatic judge.",
+  "author": "miraeuz <miraeuz@users.noreply.github.com>",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "node tests/run.mjs",
+    "dist": "electron-builder --publish never"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
   "build": {
-    "appId": "uz.miraeuz.flowgorithmacademy", "productName": "Flowgorithm Academy",
-    "directories": { "output": "release" },
-    "files": ["main.js", "preload.js", "renderer/**", "engine/**", "content/**", "config.json"],
-    "win": { "target": ["nsis", "zip"] },
-    "mac": { "target": ["dmg", "zip"], "category": "public.app-category.education" },
-    "linux": { "target": ["AppImage", "deb"], "category": "Education" }
+    "appId": "uz.miraeuz.flowgorithmacademy",
+    "productName": "Flowgorithm Academy",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer/**",
+      "engine/**",
+      "content/**",
+      "config.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "Flowgorithm-Academy-Setup-${version}.exe"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "deleteAppDataOnUninstall": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
   }
 }
