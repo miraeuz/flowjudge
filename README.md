@@ -8,9 +8,11 @@ Download **one** `Flowgorithm-Academy-Setup-<version>.exe` from the release. No 
 
 Flowgorithm itself is used to **author** flowcharts and must already be installed on the student's PC. It is not bundled or needed by the judging engine. This project does not redistribute Flowgorithm.
 
-## Version 0.2.0
+## Version 0.3.0
 
 - Mirae violet interface with fluid grids, responsive sidebar, day/night/system themes, Uzbek/English, text sizing and reduced motion.
+- Four-stage learning map, last-exercise resume, bookmarks, retry filter, focus view and previous/next navigation.
+- Bounded read-only flowchart previews and verdict-specific guidance.
 - Learning path, next-unsolved shortcut, topic lessons, classwork/homework tabs and searchable exercises. Search handles common Uzbek apostrophe variants.
 - 15 topics, 300 classwork + 450 homework exercises. These are **practice families with scenario/parameter variants**, not 750 distinct algorithms. See [curriculum notes](docs/CURRICULUM.md).
 - `.fprg` drag/drop, per-test verdicts, visible-test differences, hints, local progress, first-solve XP and the latest 1,000 attempts.
@@ -40,8 +42,8 @@ The complete test suite checks every reference solution against independently ca
 Repository Actions secrets: `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`. A push to `main` builds an artifact; a version tag also publishes one `.exe` release asset. Pull requests run tests without accessing secrets.
 
 ```sh
-git tag v0.2.0
-git push origin v0.2.0
+git tag v0.3.0
+git push origin v0.3.0
 ```
 
 GitHub may display its automatic source archives below the installer. Those are GitHub-generated source links, not additional student installers.
@@ -54,4 +56,4 @@ GitHub may display its automatic source archives below the installer. Those are 
 - The interpreter supports the tested Flowgorithm subset; full semantic parity with every Flowgorithm version is not certified. File I/O and unsupported blocks are rejected.
 - The installer is unsigned unless a signing certificate is configured. No automatic updater, exam proctoring, classroom aggregation, similarity checker, certificate generator or execution tracer is claimed in this release.
 
-See [release notes](docs/RELEASE-0.2.0.md) and [teacher guide](docs/TEACHER-GUIDE.md).
+See [release notes](docs/RELEASE-0.3.0.md) and [teacher guide](docs/TEACHER-GUIDE.md).

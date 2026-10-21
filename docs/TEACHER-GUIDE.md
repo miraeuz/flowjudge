@@ -22,3 +22,11 @@ Har bir mashq birinchi marta qabul qilinganda 10 XP hisoblanadi. Qayta yuborish 
 Kod kelmasa botga avval Start yuborilganini va chat ID to‘g‘riligini tekshiring. Bir kompyuterdan 10 daqiqada uchta so‘rov mumkin. Secrets o‘zgarsa yangi build kerak; eski o‘rnatish fayli o‘z-o‘zidan yangilanmaydi.
 
 Bot kaliti eski mexanizmda o‘rnatish fayliga joylanadi va ajratib olinishi mumkin. Keng tarqatishdan avval serverdagi faollashtirish xizmatiga o‘tish zarur.
+
+## 0.3 versiyadagi yangi imkoniyatlar
+
+- Mashqdagi **Saqlash** tugmasi orqali uni keyinga belgilang. Mashqlar sahifasida **Saqlanganlar** filtrini tanlang. Belgilar shu kompyuterda saqlanadi, JSON natija zaxirasiga kirmaydi.
+- **Qayta ishlash** filtri hali yechilmagan va oxirgi urinishi xato bo‘lgan mashqlarni ko‘rsatadi.
+- Fayl yuborgach **Chizma** bo‘limida yuklangan fayl bloklarini ko‘ring. Bu bajarilish animatsiyasi emas; murakkab chizmalar qisqartirib ko‘rsatilishi mumkin.
+- **Diqqat rejimi** yon menyuni yashiradi. Escape orqali oddiy ko‘rinishga qayting.
+- **Keyingi** tugmasi orqali mashqlarni ketma-ket bajaring. Mavzudagi so‘nggi mashqdan keyin navbatdagi mavzuga o‘tiladi.

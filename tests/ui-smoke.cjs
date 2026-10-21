@@ -7,6 +7,7 @@ const fs = require("fs"),
     args: ["tests/ui-host.cjs", "--no-sandbox", "--ozone-platform=headless"],
   });
   const page = await browser.firstWindow();
+  await page.evaluate(() => localStorage.clear());
   const errors = [];
   page.on("pageerror", (e) => errors.push(e.message));
   const topics = fs
@@ -25,20 +26,30 @@ const fs = require("fs"),
     ({ topics }) => {
       localStorage.lang = "uz";
       localStorage.theme = "light";
-      let progress = {};
+      let progress = {},
+        attempts = [];
       window.api = {
         status: async () => ({ state: "ok", name: "Mirae student" }),
         topics: async () => topics,
-        state: async () => ({ progress, attempts: [] }),
+        state: async () => ({ progress, attempts }),
         judge: async (a) => {
-          progress[a.topic + "/" + a.problem] = Date.now();
+          const verdict = a.file.includes("WRONG_OUTPUT") ? "WA" : "AC";
+          const key = a.topic + "/" + a.problem;
+          if (verdict === "AC") progress[key] = Date.now();
+          attempts.push({
+            key,
+            at: Date.now(),
+            verdict,
+            passed: verdict === "AC" ? 3 : 0,
+            total: 3,
+          });
           return {
-            verdict: "AC",
-            passed: 3,
+            verdict,
+            passed: verdict === "AC" ? 3 : 0,
             total: 3,
             results: [1, 2, 3].map((n) => ({
               n,
-              verdict: "AC",
+              verdict,
               hidden: n === 3,
             })),
           };
@@ -81,14 +92,101 @@ const fs = require("fs"),
   await page.locator("#search").fill("Do‘kondagi daftarlar");
   assert.equal(await page.locator(".problem-row").count(), 1);
   await page.locator(".problem-row").click();
-  await page
-    .locator("#file")
-    .setInputFiles({
-      name: "solution.fprg",
-      mimeType: "text/xml",
-      buffer: Buffer.from("<flowgorithm/>"),
-    });
+  await page.locator("#file").setInputFiles({
+    name: "solution.fprg",
+    mimeType: "text/xml",
+    buffer: fs.readFileSync("tests/reference/input__input-01.fprg"),
+  });
   await page.getByRole("heading", { name: "Qabul qilindi" }).waitFor();
+  // New learning features: navigation, persistent bookmarks, focus and safe preview.
+  await page.locator('[data-action="bookmark"]').click();
+  assert.equal(
+    await page.locator('[data-action="bookmark"]').getAttribute("aria-pressed"),
+    "true",
+  );
+  await page.locator('[data-action="focus"]').click();
+  assert.equal(await page.locator("html").getAttribute("data-focus"), "true");
+  await page.keyboard.press("Escape");
+  assert.equal(await page.locator("html").getAttribute("data-focus"), "false");
+  await page.locator('[data-subtab="flow"]').click();
+  await page.locator(".flow-node").first().waitFor();
+  assert((await page.locator(".flow-node").count()) >= 3);
+  await page.setViewportSize({ width: 420, height: 900 });
+  assert(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  );
+  await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.screenshot({ path: "qa/flowchart-preview.png", fullPage: true });
+  const previewChecks = await page.evaluate(() => {
+    const P = (b) =>
+      `<flowgorithm><function name="Main"><body>${b}</body></function></flowgorithm>`;
+    const dangerous = P(
+      '<output expression="&lt;img src=x onerror=alert(1)&gt;"/>',
+    );
+    const box = document.createElement("div");
+    box.innerHTML = FlowPreview.render(dangerous, "en");
+    const safe =
+      box.querySelectorAll("img,script").length === 0 &&
+      box.textContent.includes("<img");
+    const bad = FlowPreview.render("<!DOCTYPE x><flowgorithm/>", "en").includes(
+      "Could not preview",
+    );
+    const bounded = FlowPreview.render(
+      P('<output expression="1"/>'.repeat(500)),
+      "en",
+    ).includes("abbreviated");
+    const branches = FlowPreview.render(
+      P(
+        '<if expression="a&gt;0"><then><output expression="1"/></then><else><output expression="0"/></else></if>',
+      ),
+      "en",
+    ).includes("flow-branches");
+    return { safe, bad, bounded, branches };
+  });
+  assert.deepEqual(previewChecks, {
+    safe: true,
+    bad: true,
+    bounded: true,
+    branches: true,
+  });
+  await page.locator('[data-subtab="feedback"]').click();
+  await page.locator(".next-success").click();
+  await page.waitForURL((url) => url.hash === "#/t/input/input-02");
+  await page.locator("#file").setInputFiles({
+    name: "retry.fprg",
+    mimeType: "text/xml",
+    buffer: Buffer.from(
+      '<flowgorithm><function name="Main"><body><output expression="&quot;WRONG_OUTPUT&quot;"/></body></function></flowgorithm>',
+    ),
+  });
+  await page.locator(".feedback-guide").waitFor();
+  await page.evaluate(() => (location.hash = "#/practice"));
+  await page.locator("#filter").selectOption("review");
+  assert.equal(await page.locator(".problem-row").count(), 1);
+  await page.locator("#filter").selectOption("saved");
+  assert.equal(await page.locator(".problem-row").count(), 1);
+  await page.reload();
+  await page.locator("#filter").selectOption("saved");
+  assert.equal(
+    await page.locator(".problem-row").count(),
+    1,
+    "bookmark survives reload",
+  );
+  await page.locator(".problem-row").click();
+  await page.locator('[data-action="bookmark"]').click();
+  assert.equal(
+    await page.locator('[data-action="bookmark"]').getAttribute("aria-pressed"),
+    "false",
+  );
+  await page.evaluate(() => (location.hash = "#/map"));
+  await page.locator(".stage-summary").first().waitFor();
+  assert.equal(await page.locator(".stage-summary").count(), 4);
+  await page.screenshot({ path: "qa/learning-map.png", fullPage: true });
+  await page.getByRole("button", { name: "Tilni almashtirish" }).click();
+  await page.getByRole("heading", { name: "Your learning path" }).waitFor();
+  await page.getByRole("button", { name: "Change language" }).click();
   await page.getByRole("button", { name: "Mavzuni almashtirish" }).click();
   await page.screenshot({ path: "qa/problem-dark.png", fullPage: true });
   await page.evaluate(() => (location.hash = "#/"));
@@ -99,7 +197,7 @@ const fs = require("fs"),
   assert.deepEqual(errors, []);
   await browser.close();
   console.log(
-    "PASS UI routes at four widths, search, submission state, themes, zero page errors. Bridge mocked; native Electron checks are separate.",
+    "PASS UI routes at four widths, search, bookmarks/reload, focus/Escape, retry filter, next exercise, safe bounded XML preview, learning stages, language/themes and zero page errors. Bridge mocked; native Electron checks are separate.",
   );
 })().catch((e) => {
   console.error(e);
