@@ -2,11 +2,14 @@ const { _electron } = require("playwright");
 const fs = require("fs"),
   path = require("path"),
   assert = require("assert/strict");
+let diagnosticPage, host;
 (async () => {
   const browser = await _electron.launch({
     args: ["tests/ui-host.cjs", "--no-sandbox", "--ozone-platform=headless"],
   });
+  host = browser;
   const page = await browser.firstWindow();
+  diagnosticPage = page;
   await page.evaluate(() => localStorage.clear());
   const errors = [];
   page.on("pageerror", (e) => errors.push(e.message));
@@ -154,6 +157,8 @@ const fs = require("fs"),
   await page.locator('[data-subtab="feedback"]').click();
   await page.locator(".next-success").click();
   await page.waitForURL((url) => url.hash === "#/t/input/input-02");
+  // A hash URL changes before its render callback; wait for the new exercise before uploading.
+  await page.getByRole("heading", { name: "Qalamlar qutisi", exact: true }).waitFor();
   await page.locator("#file").setInputFiles({
     name: "retry.fprg",
     mimeType: "text/xml",
@@ -199,7 +204,9 @@ const fs = require("fs"),
   console.log(
     "PASS UI routes at four widths, search, bookmarks/reload, focus/Escape, retry filter, next exercise, safe bounded XML preview, learning stages, language/themes and zero page errors. Bridge mocked; native Electron checks are separate.",
   );
-})().catch((e) => {
+})().catch(async (e) => {
   console.error(e);
+  try { await diagnosticPage?.screenshot({path: "qa/failure.png", fullPage: true}); } catch {}
+  try { await host?.close(); } catch {}
   process.exit(1);
 });
