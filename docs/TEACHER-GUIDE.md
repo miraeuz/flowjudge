@@ -30,3 +30,19 @@ Bot kaliti eski mexanizmda o‘rnatish fayliga joylanadi va ajratib olinishi mum
 - Fayl yuborgach **Chizma** bo‘limida yuklangan fayl bloklarini ko‘ring. Bu bajarilish animatsiyasi emas; murakkab chizmalar qisqartirib ko‘rsatilishi mumkin.
 - **Diqqat rejimi** yon menyuni yashiradi. Escape orqali oddiy ko‘rinishga qayting.
 - **Keyingi** tugmasi orqali mashqlarni ketma-ket bajaring. Mavzudagi so‘nggi mashqdan keyin navbatdagi mavzuga o‘tiladi.
+
+
+## Version 0.4 additions
+Number algorithms lab adds 20 classwork and 30 homework exercises: five variants
+of each of digit sum, digit count, reversal, palindrome, GCD, LCM, primality,
+divisor count, factorial and Fibonacci. Total: 16 topics / 800 exercises.
+Variants use different stated input bounds and deterministic test sets; they are
+not 50 distinct algorithms. Two examples per exercise are public; remaining
+cases are hidden. Python independently calculates expected answers.
+Run `python tools/build-number-lab.py` to regenerate this additive topic.
+Original exercise IDs and solutions remain unchanged.
+The bilingual lesson includes digit extraction, an Euclidean trace and common
+boundary mistakes. Reference .fprg files are excluded from the installer.
+Native Flowgorithm compatibility and classroom difficulty still need teacher review.
+Sidebar: use the panel button or Ctrl+B. Desktop choice persists on this device;
+mobile navigation closes with Escape or when opening a page.

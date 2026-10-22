@@ -91,6 +91,26 @@ let diagnosticPage, host;
     }
   }
   await page.setViewportSize({ width: 1440, height: 1000 });
+  await page.locator('[data-action="sidebar"]').click();
+  assert.equal(await page.locator("html").getAttribute("data-sidebar"), "compact");
+  assert.equal(await page.locator('[data-action="sidebar"]').getAttribute("aria-expanded"), "false");
+  await page.reload();
+  await page.waitForFunction(() => document.documentElement.dataset.sidebar === "compact");
+  await page.screenshot({path:"qa/sidebar-compact.png",fullPage:true});
+  await page.keyboard.press("Control+b");
+  assert.equal(await page.locator("html").getAttribute("data-sidebar"), "expanded");
+  await page.setViewportSize({width:420,height:900});
+  await page.waitForFunction(() => document.querySelector(".sidebar").getBoundingClientRect().width === 0);
+  await page.locator('[data-action="sidebar"]').click();
+  assert.equal(await page.locator("html").getAttribute("data-mobile-nav"), "open");
+  await page.screenshot({path:"qa/mobile-navigation.png",fullPage:true});
+  await page.keyboard.press("Escape");
+  assert.equal(await page.locator("html").getAttribute("data-mobile-nav"), "closed");
+  await page.locator('[data-action="sidebar"]').click();
+  await page.locator('.sidebar a[href="#/map"]').click();
+  await page.waitForFunction(() => document.documentElement.dataset.mobileNav === "closed");
+  await page.locator('.stage-topic[href="#/t/number-lab"]').waitFor();
+  await page.setViewportSize({width:1440,height:1000});
   await page.evaluate(() => (location.hash = "#/practice"));
   await page.locator("#search").fill("Do‘kondagi daftarlar");
   assert.equal(await page.locator(".problem-row").count(), 1);

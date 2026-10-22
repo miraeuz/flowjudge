@@ -1745,3 +1745,41 @@ details p {
   color: var(--accent);
   box-shadow: none;
 }
+
+/* 0.4 navigation: compact desktop rail and an accessible mobile disclosure. */
+.top-leading { display:flex; align-items:center; gap:1rem; min-width:0; }
+.sidebar-toggle { display:grid; place-items:center; padding:.55rem; flex:none; }
+.sidebar-toggle:hover { background:var(--tint); color:var(--accent); }
+.sidebar-toggle[aria-expanded="false"] .toggle-chevron { transform:rotate(180deg); transform-origin:14px 12px; }
+.nav-item .nav-label { font-size:.83rem; width:auto; flex:1; }
+.nav-item.active { box-shadow:inset 3px 0 var(--accent); }
+.sidebar { transition:width .2s ease; }
+.workspace { transition:none; }
+.topbar { background:var(--surface); }
+.topic-card:hover, .stage-topic:hover { border-color:var(--accent); box-shadow:0 10px 30px #7141dc12; }
+@media (min-width:761px) {
+  :root[data-sidebar="compact"] .sidebar { width:5.5rem; padding:2rem .75rem 1.2rem; }
+  :root[data-sidebar="compact"] .workspace { margin-left:5.5rem; }
+  :root[data-sidebar="compact"] .brand { padding:0; justify-content:center; }
+  :root[data-sidebar="compact"] .brand-copy,
+  :root[data-sidebar="compact"] .nav-label,
+  :root[data-sidebar="compact"] .nav-caption,
+  :root[data-sidebar="compact"] .offline,
+  :root[data-sidebar="compact"] .sidebar-bottom > p,
+  :root[data-sidebar="compact"] .profile > div { display:none; }
+  :root[data-sidebar="compact"] .sidebar nav { margin-top:2.5rem; }
+  :root[data-sidebar="compact"] .nav-item { justify-content:center; padding:.8rem; }
+  :root[data-sidebar="compact"] .profile { justify-content:center; }
+}
+@media (max-width:760px) {
+  .sidebar { display:none; padding:1rem; }
+  :root[data-mobile-nav="open"] .sidebar { display:flex; }
+  .sidebar nav { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); overflow:visible; }
+  .nav-item { white-space:normal; }
+  .breadcrumb { display:none; }
+  .topbar { position:sticky; top:0; z-index:11; backdrop-filter:blur(20px); }
+}
+:root[data-focus="true"] .workspace { margin-left:0; }
+:root[data-focus="true"] .sidebar-toggle { display:none; }
+@media (prefers-reduced-motion:reduce) { .sidebar,.workspace { transition:none; } }
+:root[data-motion="reduced"] .sidebar,:root[data-motion="reduced"] .workspace { transition:none; }

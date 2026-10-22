@@ -23,6 +23,10 @@ for (const file of readdirSync(dir).filter((x) => x.endsWith(".json"))) {
       id + " requires two examples",
     );
     assert(p.tests.some((x) => x.hidden));
+    for (const test of p.tests) {
+      assert.equal(typeof test.in, "string", id + " invalid input");
+      assert.equal(typeof test.out, "string", id + " invalid output");
+    }
     const xml = readFileSync(
       new URL(`reference/${t.id}__${p.id}.fprg`, import.meta.url),
       "utf8",
@@ -45,8 +49,8 @@ for (const file of readdirSync(dir).filter((x) => x.endsWith(".json"))) {
     count++;
   }
 }
-assert.equal(count, 750);
-assert.equal(topics.size, 15);
+assert.equal(count, 800);
+assert.equal(topics.size, 16);
 console.log(
   `PASS ${count} reference solutions, ${count} wrong solutions, bilingual fields and 20/30 counts across ${topics.size} topics`,
 );

@@ -1,0 +1,6348 @@
+{
+  "id": "number-lab",
+  "order": 16,
+  "title": {
+    "uz": "Sonlar laboratoriyasi",
+    "en": "Number algorithms lab"
+  },
+  "lesson": {
+    "uz": "Bu bo‘limda raqamlar, bo‘luvchilar va ketma-ketliklar bilan ishlaysiz. Avval While, If, div va mod mavzularini takrorlang. Har bir Input alohida qatorni o‘qiydi; faqat talab qilingan sonni chiqaring.\nRaqamlar: 407 mod 10 = 7, 407 div 10 = 40. Har aylanish sonni kichraytiradi. n=0 holatini alohida tekshiring.\nEvklid algoritmi: (48,18) → (18,12) → (12,6) → (6,0). Oxirgi noldan farqli qiymat EKUB = 6. EKUK = (48 div 6)*18 = 144.\nTub sonlarda 0 va 1 tub emas. Kvadrat ildizgacha tekshiring: i*i <= n. Faktorial uchun ko‘paytma 1 dan boshlanadi. Fibonacci uchun eski qiymatlarni yo‘qotmasdan yangilang.",
+    "en": "Practice digits, divisors and sequences. Review While, If, div and mod first. Each Input reads a separate line; print only the requested number.\nDigits: 407 mod 10 = 7 and 407 div 10 = 40. Each iteration makes the number smaller. Check n=0 separately.\nEuclid: (48,18) → (18,12) → (12,6) → (6,0). The last nonzero value is GCD = 6. LCM = (48 div 6)*18 = 144.\nZero and one are not prime. Test up to the square root with i*i <= n. Start factorial products at 1. Update Fibonacci values without losing the previous pair."
+  },
+  "concepts": [
+    {
+      "title": {
+        "uz": "Qo‘lda kuzating",
+        "en": "Trace by hand"
+      },
+      "text": {
+        "uz": "120 uchun x va natija qiymatlarini har qadamda yozing. Natija 21 bo‘lishi kerak.",
+        "en": "For 120, record x and the result after each iteration. Reversal must produce 21."
+      }
+    },
+    {
+      "title": {
+        "uz": "Chegara holatlari",
+        "en": "Boundary cases"
+      },
+      "text": {
+        "uz": "0, 1, takror raqamlar, oxiri 0 bo‘lgan sonlar, teng sonlar va tub son kvadratlarini tekshiring.",
+        "en": "Check zero, one, repeated digits, trailing zeros, equal inputs and squares of primes."
+      }
+    }
+  ],
+  "classwork": [
+    {
+      "id": "digit-sum-01",
+      "title": {
+        "uz": "Raqamlar yig‘indisi · 1",
+        "en": "Digit sum · 1"
+      },
+      "statement": {
+        "uz": "n sonining o‘nlik yozuvidagi raqamlar yig‘indisini chiqaring. While blokidan foydalaning.",
+        "en": "Print the sum of the decimal digits of n. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..199999 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..199999."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "199999\n",
+          "out": "46\n",
+          "hidden": true
+        },
+        {
+          "in": "199998\n",
+          "out": "45\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "9\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "36\n",
+          "hidden": true
+        },
+        {
+          "in": "64697\n",
+          "out": "32\n",
+          "hidden": true
+        },
+        {
+          "in": "25373\n",
+          "out": "20\n",
+          "hidden": true
+        },
+        {
+          "in": "9901\n",
+          "out": "19\n",
+          "hidden": true
+        },
+        {
+          "in": "151412\n",
+          "out": "14\n",
+          "hidden": true
+        },
+        {
+          "in": "120182\n",
+          "out": "14\n",
+          "hidden": true
+        },
+        {
+          "in": "41389\n",
+          "out": "25\n",
+          "hidden": true
+        },
+        {
+          "in": "47796\n",
+          "out": "33\n",
+          "hidden": true
+        },
+        {
+          "in": "107579\n",
+          "out": "29\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Har safar oxirgi raqamni mod 10 bilan oling, keyin div 10 bilan olib tashlang.",
+          "en": "Extract the last digit with mod 10, then remove it with div 10."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "digit-sum",
+        "number": 1
+      }
+    },
+    {
+      "id": "digit-sum-02",
+      "title": {
+        "uz": "Raqamlar yig‘indisi · 2",
+        "en": "Digit sum · 2"
+      },
+      "statement": {
+        "uz": "n sonining o‘nlik yozuvidagi raqamlar yig‘indisini chiqaring. While blokidan foydalaning.",
+        "en": "Print the sum of the decimal digits of n. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..249999 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..249999."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "249999\n",
+          "out": "42\n",
+          "hidden": true
+        },
+        {
+          "in": "249998\n",
+          "out": "41\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "9\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "36\n",
+          "hidden": true
+        },
+        {
+          "in": "172372\n",
+          "out": "22\n",
+          "hidden": true
+        },
+        {
+          "in": "116922\n",
+          "out": "21\n",
+          "hidden": true
+        },
+        {
+          "in": "23819\n",
+          "out": "23\n",
+          "hidden": true
+        },
+        {
+          "in": "156956\n",
+          "out": "32\n",
+          "hidden": true
+        },
+        {
+          "in": "20706\n",
+          "out": "15\n",
+          "hidden": true
+        },
+        {
+          "in": "219071\n",
+          "out": "20\n",
+          "hidden": true
+        },
+        {
+          "in": "45019\n",
+          "out": "19\n",
+          "hidden": true
+        },
+        {
+          "in": "146550\n",
+          "out": "21\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Har safar oxirgi raqamni mod 10 bilan oling, keyin div 10 bilan olib tashlang.",
+          "en": "Extract the last digit with mod 10, then remove it with div 10."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "digit-sum",
+        "number": 2
+      }
+    },
+    {
+      "id": "digit-count-01",
+      "title": {
+        "uz": "Raqamlar soni · 1",
+        "en": "Digit count · 1"
+      },
+      "statement": {
+        "uz": "n nechta o‘nlik raqamdan iboratligini chiqaring. 0 bitta raqamdan iborat. While blokidan foydalaning.",
+        "en": "Print the number of decimal digits in n. Zero has one digit. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..199999 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..199999."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "199999\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "199998\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "122912\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "191149\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "115145\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "192748\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "114374\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "186085\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "64492\n",
+          "out": "5\n",
+          "hidden": true
+        },
+        {
+          "in": "117063\n",
+          "out": "6\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "0 holatini alohida ko‘ring; qolgan sonlarda div 10 amallari sonini sanang.",
+          "en": "Handle zero separately; otherwise count divisions by 10."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "digit-count",
+        "number": 1
+      }
+    },
+    {
+      "id": "digit-count-02",
+      "title": {
+        "uz": "Raqamlar soni · 2",
+        "en": "Digit count · 2"
+      },
+      "statement": {
+        "uz": "n nechta o‘nlik raqamdan iboratligini chiqaring. 0 bitta raqamdan iborat. While blokidan foydalaning.",
+        "en": "Print the number of decimal digits in n. Zero has one digit. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..249999 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..249999."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "249999\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "249998\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "104731\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "214135\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "61727\n",
+          "out": "5\n",
+          "hidden": true
+        },
+        {
+          "in": "160531\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "111174\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "247821\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "130962\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "228666\n",
+          "out": "6\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "0 holatini alohida ko‘ring; qolgan sonlarda div 10 amallari sonini sanang.",
+          "en": "Handle zero separately; otherwise count divisions by 10."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "digit-count",
+        "number": 2
+      }
+    },
+    {
+      "id": "reverse-01",
+      "title": {
+        "uz": "Raqamlarni teskarilash · 1",
+        "en": "Reverse digits · 1"
+      },
+      "statement": {
+        "uz": "n raqamlarini teskari tartibda yozganda hosil bo‘ladigan butun sonni chiqaring. Boshidagi nollar tushib qoladi: 120 → 21. While blokidan foydalaning.",
+        "en": "Print the integer formed by reversing the digits of n. Leading zeros disappear: 120 → 21. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..199999 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..199999."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "199999\n",
+          "out": "999991\n",
+          "hidden": true
+        },
+        {
+          "in": "199998\n",
+          "out": "899991\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "9\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "11\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "101\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "21\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "121\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "1001\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "9999\n",
+          "hidden": true
+        },
+        {
+          "in": "187523\n",
+          "out": "325781\n",
+          "hidden": true
+        },
+        {
+          "in": "98853\n",
+          "out": "35889\n",
+          "hidden": true
+        },
+        {
+          "in": "20601\n",
+          "out": "10602\n",
+          "hidden": true
+        },
+        {
+          "in": "147093\n",
+          "out": "390741\n",
+          "hidden": true
+        },
+        {
+          "in": "18652\n",
+          "out": "25681\n",
+          "hidden": true
+        },
+        {
+          "in": "24022\n",
+          "out": "22042\n",
+          "hidden": true
+        },
+        {
+          "in": "38859\n",
+          "out": "95883\n",
+          "hidden": true
+        },
+        {
+          "in": "36145\n",
+          "out": "54163\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Natijani 10 ga ko‘paytirib, keyingi raqamni qo‘shing.",
+          "en": "Multiply the result by 10 before appending the next digit."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "reverse",
+        "number": 1
+      }
+    },
+    {
+      "id": "reverse-02",
+      "title": {
+        "uz": "Raqamlarni teskarilash · 2",
+        "en": "Reverse digits · 2"
+      },
+      "statement": {
+        "uz": "n raqamlarini teskari tartibda yozganda hosil bo‘ladigan butun sonni chiqaring. Boshidagi nollar tushib qoladi: 120 → 21. While blokidan foydalaning.",
+        "en": "Print the integer formed by reversing the digits of n. Leading zeros disappear: 120 → 21. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..249999 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..249999."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "249999\n",
+          "out": "999942\n",
+          "hidden": true
+        },
+        {
+          "in": "249998\n",
+          "out": "899942\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "9\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "11\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "101\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "21\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "121\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "1001\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "9999\n",
+          "hidden": true
+        },
+        {
+          "in": "53500\n",
+          "out": "535\n",
+          "hidden": true
+        },
+        {
+          "in": "234212\n",
+          "out": "212432\n",
+          "hidden": true
+        },
+        {
+          "in": "6738\n",
+          "out": "8376\n",
+          "hidden": true
+        },
+        {
+          "in": "182788\n",
+          "out": "887281\n",
+          "hidden": true
+        },
+        {
+          "in": "22295\n",
+          "out": "59222\n",
+          "hidden": true
+        },
+        {
+          "in": "210366\n",
+          "out": "663012\n",
+          "hidden": true
+        },
+        {
+          "in": "84075\n",
+          "out": "57048\n",
+          "hidden": true
+        },
+        {
+          "in": "91917\n",
+          "out": "71919\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Natijani 10 ga ko‘paytirib, keyingi raqamni qo‘shing.",
+          "en": "Multiply the result by 10 before appending the next digit."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "reverse",
+        "number": 2
+      }
+    },
+    {
+      "id": "palindrome-01",
+      "title": {
+        "uz": "Palindrom son · 1",
+        "en": "Palindrome number · 1"
+      },
+      "statement": {
+        "uz": "n chapdan va o‘ngdan bir xil o‘qilsa 1, aks holda 0 chiqaring. 0 va bir xonali sonlar ham palindrom. While blokidan foydalaning.",
+        "en": "Print 1 if n reads the same forwards and backwards, otherwise 0. Zero and one-digit numbers are palindromes. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..199999 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..199999."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "199999\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "199998\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "89426\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "4175\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "115936\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "60188\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "92310\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "162494\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "55986\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "13386\n",
+          "out": "0\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Asl sonni saqlang va teskari son bilan solishtiring.",
+          "en": "Keep the original number and compare it with the reversed number."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "palindrome",
+        "number": 1
+      }
+    },
+    {
+      "id": "palindrome-02",
+      "title": {
+        "uz": "Palindrom son · 2",
+        "en": "Palindrome number · 2"
+      },
+      "statement": {
+        "uz": "n chapdan va o‘ngdan bir xil o‘qilsa 1, aks holda 0 chiqaring. 0 va bir xonali sonlar ham palindrom. While blokidan foydalaning.",
+        "en": "Print 1 if n reads the same forwards and backwards, otherwise 0. Zero and one-digit numbers are palindromes. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..249999 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..249999."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "249999\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "249998\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "118587\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "197751\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "111353\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "238886\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "213967\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "219164\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "136444\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "193032\n",
+          "out": "0\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Asl sonni saqlang va teskari son bilan solishtiring.",
+          "en": "Keep the original number and compare it with the reversed number."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "palindrome",
+        "number": 2
+      }
+    },
+    {
+      "id": "gcd-01",
+      "title": {
+        "uz": "Eng katta umumiy bo‘luvchi · 1",
+        "en": "Greatest common divisor · 1"
+      },
+      "statement": {
+        "uz": "n va m ning eng katta umumiy bo‘luvchisini chiqaring. While blokidan foydalaning.",
+        "en": "Print the greatest common divisor of n and m. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n va m — 1..2000 oralig‘idagi butun sonlar, har biri alohida qatorda.",
+        "en": "n and m, each on a separate line: integers in 1..2000."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "1\n2000\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "2000\n1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "2000\n2000\n",
+          "out": "2000\n",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "48\n18\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "17\n19\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "1849\n204\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "683\n1214\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "1452\n1507\n",
+          "out": "11\n",
+          "hidden": true
+        },
+        {
+          "in": "300\n437\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "1695\n894\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "1548\n1441\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "1314\n1366\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "267\n1958\n",
+          "out": "89\n",
+          "hidden": true
+        },
+        {
+          "in": "1621\n448\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "595\n174\n",
+          "out": "1\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Evklid algoritmi: (x,y) juftligini (y,x mod y) bilan almashtiring.",
+          "en": "Euclid: replace (x,y) with (y,x mod y)."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "gcd",
+        "number": 1
+      }
+    },
+    {
+      "id": "gcd-02",
+      "title": {
+        "uz": "Eng katta umumiy bo‘luvchi · 2",
+        "en": "Greatest common divisor · 2"
+      },
+      "statement": {
+        "uz": "n va m ning eng katta umumiy bo‘luvchisini chiqaring. While blokidan foydalaning.",
+        "en": "Print the greatest common divisor of n and m. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n va m — 1..2500 oralig‘idagi butun sonlar, har biri alohida qatorda.",
+        "en": "n and m, each on a separate line: integers in 1..2500."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "1\n2500\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "2500\n1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "2500\n2500\n",
+          "out": "2500\n",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "48\n18\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "17\n19\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "1587\n2122\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "1142\n1525\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "2404\n801\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "55\n840\n",
+          "out": "5\n",
+          "hidden": true
+        },
+        {
+          "in": "2108\n1086\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "2082\n2249\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "1194\n697\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "741\n1729\n",
+          "out": "247\n",
+          "hidden": true
+        },
+        {
+          "in": "1523\n462\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "1937\n192\n",
+          "out": "1\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Evklid algoritmi: (x,y) juftligini (y,x mod y) bilan almashtiring.",
+          "en": "Euclid: replace (x,y) with (y,x mod y)."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "gcd",
+        "number": 2
+      }
+    },
+    {
+      "id": "lcm-01",
+      "title": {
+        "uz": "Eng kichik umumiy karrali · 1",
+        "en": "Least common multiple · 1"
+      },
+      "statement": {
+        "uz": "n va m ning eng kichik musbat umumiy karralisini chiqaring. While blokidan foydalaning.",
+        "en": "Print the least positive common multiple of n and m. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n va m — 1..2000 oralig‘idagi butun sonlar, har biri alohida qatorda.",
+        "en": "n and m, each on a separate line: integers in 1..2000."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "1\n2000\n",
+          "out": "2000\n",
+          "hidden": false
+        },
+        {
+          "in": "2000\n1\n",
+          "out": "2000\n",
+          "hidden": false
+        },
+        {
+          "in": "2000\n2000\n",
+          "out": "2000\n",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "48\n18\n",
+          "out": "144\n",
+          "hidden": true
+        },
+        {
+          "in": "17\n19\n",
+          "out": "323\n",
+          "hidden": true
+        },
+        {
+          "in": "1260\n1979\n",
+          "out": "2493540\n",
+          "hidden": true
+        },
+        {
+          "in": "643\n1854\n",
+          "out": "1192122\n",
+          "hidden": true
+        },
+        {
+          "in": "577\n1421\n",
+          "out": "819917\n",
+          "hidden": true
+        },
+        {
+          "in": "1004\n1545\n",
+          "out": "1551180\n",
+          "hidden": true
+        },
+        {
+          "in": "1866\n674\n",
+          "out": "628842\n",
+          "hidden": true
+        },
+        {
+          "in": "1876\n110\n",
+          "out": "103180\n",
+          "hidden": true
+        },
+        {
+          "in": "1882\n13\n",
+          "out": "24466\n",
+          "hidden": true
+        },
+        {
+          "in": "65\n1903\n",
+          "out": "123695\n",
+          "hidden": true
+        },
+        {
+          "in": "1687\n718\n",
+          "out": "1211266\n",
+          "hidden": true
+        },
+        {
+          "in": "91\n553\n",
+          "out": "7189\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Avval EKUBni toping. EKUK = (n div EKUB) * m.",
+          "en": "Find the GCD first. LCM = (n div GCD) * m."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "lcm",
+        "number": 1
+      }
+    },
+    {
+      "id": "lcm-02",
+      "title": {
+        "uz": "Eng kichik umumiy karrali · 2",
+        "en": "Least common multiple · 2"
+      },
+      "statement": {
+        "uz": "n va m ning eng kichik musbat umumiy karralisini chiqaring. While blokidan foydalaning.",
+        "en": "Print the least positive common multiple of n and m. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n va m — 1..2500 oralig‘idagi butun sonlar, har biri alohida qatorda.",
+        "en": "n and m, each on a separate line: integers in 1..2500."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "1\n2500\n",
+          "out": "2500\n",
+          "hidden": false
+        },
+        {
+          "in": "2500\n1\n",
+          "out": "2500\n",
+          "hidden": false
+        },
+        {
+          "in": "2500\n2500\n",
+          "out": "2500\n",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "48\n18\n",
+          "out": "144\n",
+          "hidden": true
+        },
+        {
+          "in": "17\n19\n",
+          "out": "323\n",
+          "hidden": true
+        },
+        {
+          "in": "1904\n1622\n",
+          "out": "1544144\n",
+          "hidden": true
+        },
+        {
+          "in": "1430\n778\n",
+          "out": "556270\n",
+          "hidden": true
+        },
+        {
+          "in": "1650\n1619\n",
+          "out": "2671350\n",
+          "hidden": true
+        },
+        {
+          "in": "1963\n2390\n",
+          "out": "4691570\n",
+          "hidden": true
+        },
+        {
+          "in": "309\n1645\n",
+          "out": "508305\n",
+          "hidden": true
+        },
+        {
+          "in": "1049\n1861\n",
+          "out": "1952189\n",
+          "hidden": true
+        },
+        {
+          "in": "299\n519\n",
+          "out": "155181\n",
+          "hidden": true
+        },
+        {
+          "in": "1669\n1835\n",
+          "out": "3062615\n",
+          "hidden": true
+        },
+        {
+          "in": "2321\n2317\n",
+          "out": "5377757\n",
+          "hidden": true
+        },
+        {
+          "in": "2459\n1545\n",
+          "out": "3799155\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Avval EKUBni toping. EKUK = (n div EKUB) * m.",
+          "en": "Find the GCD first. LCM = (n div GCD) * m."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "lcm",
+        "number": 2
+      }
+    },
+    {
+      "id": "prime-01",
+      "title": {
+        "uz": "Tub sonni tekshirish · 1",
+        "en": "Primality check · 1"
+      },
+      "statement": {
+        "uz": "n tub bo‘lsa 1, aks holda 0 chiqaring. Tub son 1 dan katta va aynan ikkita musbat bo‘luvchiga ega. While blokidan foydalaning.",
+        "en": "Print 1 if n is prime, otherwise 0. A prime is greater than 1 and has exactly two positive divisors. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..2000 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..2000."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "2000\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "1999\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "486\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "485\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "1125\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "1097\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "748\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "1531\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "610\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "896\n",
+          "out": "0\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "1 tub emas. Bo‘luvchilarni i*i <= n bo‘lguncha tekshirish yetarli.",
+          "en": "One is not prime. Testing divisors while i*i <= n is enough."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "prime",
+        "number": 1
+      }
+    },
+    {
+      "id": "prime-02",
+      "title": {
+        "uz": "Tub sonni tekshirish · 2",
+        "en": "Primality check · 2"
+      },
+      "statement": {
+        "uz": "n tub bo‘lsa 1, aks holda 0 chiqaring. Tub son 1 dan katta va aynan ikkita musbat bo‘luvchiga ega. While blokidan foydalaning.",
+        "en": "Print 1 if n is prime, otherwise 0. A prime is greater than 1 and has exactly two positive divisors. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..2500 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..2500."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "2500\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "2499\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "1812\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "861\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "485\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "541\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "1393\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "2144\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "284\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "536\n",
+          "out": "0\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "1 tub emas. Bo‘luvchilarni i*i <= n bo‘lguncha tekshirish yetarli.",
+          "en": "One is not prime. Testing divisors while i*i <= n is enough."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "prime",
+        "number": 2
+      }
+    },
+    {
+      "id": "divisors-01",
+      "title": {
+        "uz": "Bo‘luvchilar soni · 1",
+        "en": "Divisor count · 1"
+      },
+      "statement": {
+        "uz": "n ning musbat bo‘luvchilari sonini chiqaring. Masalan, 6 ning bo‘luvchilari 1, 2, 3, 6 — jami 4 ta. While blokidan foydalaning.",
+        "en": "Print the number of positive divisors of n. For example, 6 has divisors 1, 2, 3, 6: four in total. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 1..200 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 1..200."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "2\n",
+          "out": "2\n",
+          "hidden": false
+        },
+        {
+          "in": "200\n",
+          "out": "12\n",
+          "hidden": true
+        },
+        {
+          "in": "199\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "9\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "16\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "172\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "196\n",
+          "out": "9\n",
+          "hidden": true
+        },
+        {
+          "in": "70\n",
+          "out": "8\n",
+          "hidden": true
+        },
+        {
+          "in": "16\n",
+          "out": "5\n",
+          "hidden": true
+        },
+        {
+          "in": "182\n",
+          "out": "8\n",
+          "hidden": true
+        },
+        {
+          "in": "8\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "38\n",
+          "out": "4\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "1 dan n gacha tekshiring; qoldiq 0 bo‘lsa hisoblagichni oshiring.",
+          "en": "Test 1 through n and increment the count when the remainder is zero."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "divisors",
+        "number": 1
+      }
+    },
+    {
+      "id": "divisors-02",
+      "title": {
+        "uz": "Bo‘luvchilar soni · 2",
+        "en": "Divisor count · 2"
+      },
+      "statement": {
+        "uz": "n ning musbat bo‘luvchilari sonini chiqaring. Masalan, 6 ning bo‘luvchilari 1, 2, 3, 6 — jami 4 ta. While blokidan foydalaning.",
+        "en": "Print the number of positive divisors of n. For example, 6 has divisors 1, 2, 3, 6: four in total. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 1..250 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 1..250."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "2\n",
+          "out": "2\n",
+          "hidden": false
+        },
+        {
+          "in": "250\n",
+          "out": "8\n",
+          "hidden": true
+        },
+        {
+          "in": "249\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "9\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "16\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "226\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "241\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "93\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "233\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "191\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "126\n",
+          "out": "12\n",
+          "hidden": true
+        },
+        {
+          "in": "87\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "134\n",
+          "out": "4\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "1 dan n gacha tekshiring; qoldiq 0 bo‘lsa hisoblagichni oshiring.",
+          "en": "Test 1 through n and increment the count when the remainder is zero."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "divisors",
+        "number": 2
+      }
+    },
+    {
+      "id": "factorial-01",
+      "title": {
+        "uz": "Faktorial · 1",
+        "en": "Factorial · 1"
+      },
+      "statement": {
+        "uz": "n! ni chiqaring: 1 dan n gacha sonlar ko‘paytmasi. 0! = 1. While blokidan foydalaning.",
+        "en": "Print n!, the product of integers from 1 through n. By definition, 0! = 1. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..2 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..2."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "2\n",
+          "out": "2\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Ko‘paytmani 0 emas, 1 dan boshlang.",
+          "en": "Initialize a product to 1, not 0."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "factorial",
+        "number": 1
+      }
+    },
+    {
+      "id": "factorial-02",
+      "title": {
+        "uz": "Faktorial · 2",
+        "en": "Factorial · 2"
+      },
+      "statement": {
+        "uz": "n! ni chiqaring: 1 dan n gacha sonlar ko‘paytmasi. 0! = 1. While blokidan foydalaning.",
+        "en": "Print n!, the product of integers from 1 through n. By definition, 0! = 1. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..3 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..3."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "3\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "2\n",
+          "out": "2\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Ko‘paytmani 0 emas, 1 dan boshlang.",
+          "en": "Initialize a product to 1, not 0."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "factorial",
+        "number": 2
+      }
+    },
+    {
+      "id": "fibonacci-01",
+      "title": {
+        "uz": "Fibonacci soni · 1",
+        "en": "Fibonacci number · 1"
+      },
+      "statement": {
+        "uz": "F(0)=0, F(1)=1 va F(n)=F(n−1)+F(n−2). F(n) ni chiqaring. While blokidan foydalaning.",
+        "en": "Given F(0)=0, F(1)=1 and F(n)=F(n−1)+F(n−2), print F(n). Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..6 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..6."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "6\n",
+          "out": "8\n",
+          "hidden": true
+        },
+        {
+          "in": "5\n",
+          "out": "5\n",
+          "hidden": true
+        },
+        {
+          "in": "4\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "3\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "2\n",
+          "out": "1\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Oldingi ikkita qiymatni saqlang; yangilashdan oldin yig‘indini vaqtinchalik o‘zgaruvchiga yozing.",
+          "en": "Keep the previous two values; save their sum before replacing either value."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "fibonacci",
+        "number": 1
+      }
+    },
+    {
+      "id": "fibonacci-02",
+      "title": {
+        "uz": "Fibonacci soni · 2",
+        "en": "Fibonacci number · 2"
+      },
+      "statement": {
+        "uz": "F(0)=0, F(1)=1 va F(n)=F(n−1)+F(n−2). F(n) ni chiqaring. While blokidan foydalaning.",
+        "en": "Given F(0)=0, F(1)=1 and F(n)=F(n−1)+F(n−2), print F(n). Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..7 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..7."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "medium",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "7\n",
+          "out": "13\n",
+          "hidden": true
+        },
+        {
+          "in": "6\n",
+          "out": "8\n",
+          "hidden": true
+        },
+        {
+          "in": "2\n",
+          "out": "1\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Oldingi ikkita qiymatni saqlang; yangilashdan oldin yig‘indini vaqtinchalik o‘zgaruvchiga yozing.",
+          "en": "Keep the previous two values; save their sum before replacing either value."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "fibonacci",
+        "number": 2
+      }
+    }
+  ],
+  "homework": [
+    {
+      "id": "digit-sum-03",
+      "title": {
+        "uz": "Raqamlar yig‘indisi · 3",
+        "en": "Digit sum · 3"
+      },
+      "statement": {
+        "uz": "n sonining o‘nlik yozuvidagi raqamlar yig‘indisini chiqaring. While blokidan foydalaning.",
+        "en": "Print the sum of the decimal digits of n. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..333333 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..333333."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "333333\n",
+          "out": "18\n",
+          "hidden": true
+        },
+        {
+          "in": "333332\n",
+          "out": "17\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "9\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "36\n",
+          "hidden": true
+        },
+        {
+          "in": "168782\n",
+          "out": "32\n",
+          "hidden": true
+        },
+        {
+          "in": "300975\n",
+          "out": "24\n",
+          "hidden": true
+        },
+        {
+          "in": "270161\n",
+          "out": "17\n",
+          "hidden": true
+        },
+        {
+          "in": "234036\n",
+          "out": "18\n",
+          "hidden": true
+        },
+        {
+          "in": "134879\n",
+          "out": "32\n",
+          "hidden": true
+        },
+        {
+          "in": "51815\n",
+          "out": "20\n",
+          "hidden": true
+        },
+        {
+          "in": "47327\n",
+          "out": "23\n",
+          "hidden": true
+        },
+        {
+          "in": "115710\n",
+          "out": "15\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Har safar oxirgi raqamni mod 10 bilan oling, keyin div 10 bilan olib tashlang.",
+          "en": "Extract the last digit with mod 10, then remove it with div 10."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "digit-sum",
+        "number": 3
+      }
+    },
+    {
+      "id": "digit-sum-04",
+      "title": {
+        "uz": "Raqamlar yig‘indisi · 4",
+        "en": "Digit sum · 4"
+      },
+      "statement": {
+        "uz": "n sonining o‘nlik yozuvidagi raqamlar yig‘indisini chiqaring. While blokidan foydalaning.",
+        "en": "Print the sum of the decimal digits of n. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..499999 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..499999."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "499999\n",
+          "out": "49\n",
+          "hidden": true
+        },
+        {
+          "in": "499998\n",
+          "out": "48\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "9\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "36\n",
+          "hidden": true
+        },
+        {
+          "in": "368679\n",
+          "out": "39\n",
+          "hidden": true
+        },
+        {
+          "in": "464627\n",
+          "out": "29\n",
+          "hidden": true
+        },
+        {
+          "in": "178826\n",
+          "out": "32\n",
+          "hidden": true
+        },
+        {
+          "in": "497830\n",
+          "out": "31\n",
+          "hidden": true
+        },
+        {
+          "in": "203910\n",
+          "out": "15\n",
+          "hidden": true
+        },
+        {
+          "in": "345657\n",
+          "out": "30\n",
+          "hidden": true
+        },
+        {
+          "in": "369288\n",
+          "out": "36\n",
+          "hidden": true
+        },
+        {
+          "in": "252711\n",
+          "out": "18\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Har safar oxirgi raqamni mod 10 bilan oling, keyin div 10 bilan olib tashlang.",
+          "en": "Extract the last digit with mod 10, then remove it with div 10."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "digit-sum",
+        "number": 4
+      }
+    },
+    {
+      "id": "digit-sum-05",
+      "title": {
+        "uz": "Raqamlar yig‘indisi · 5",
+        "en": "Digit sum · 5"
+      },
+      "statement": {
+        "uz": "n sonining o‘nlik yozuvidagi raqamlar yig‘indisini chiqaring. While blokidan foydalaning.",
+        "en": "Print the sum of the decimal digits of n. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..999999 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..999999."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "999999\n",
+          "out": "54\n",
+          "hidden": true
+        },
+        {
+          "in": "999998\n",
+          "out": "53\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "9\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "36\n",
+          "hidden": true
+        },
+        {
+          "in": "157476\n",
+          "out": "30\n",
+          "hidden": true
+        },
+        {
+          "in": "115215\n",
+          "out": "15\n",
+          "hidden": true
+        },
+        {
+          "in": "543270\n",
+          "out": "21\n",
+          "hidden": true
+        },
+        {
+          "in": "239156\n",
+          "out": "26\n",
+          "hidden": true
+        },
+        {
+          "in": "64086\n",
+          "out": "24\n",
+          "hidden": true
+        },
+        {
+          "in": "102698\n",
+          "out": "26\n",
+          "hidden": true
+        },
+        {
+          "in": "96554\n",
+          "out": "29\n",
+          "hidden": true
+        },
+        {
+          "in": "480538\n",
+          "out": "28\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Har safar oxirgi raqamni mod 10 bilan oling, keyin div 10 bilan olib tashlang.",
+          "en": "Extract the last digit with mod 10, then remove it with div 10."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "digit-sum",
+        "number": 5
+      }
+    },
+    {
+      "id": "digit-count-03",
+      "title": {
+        "uz": "Raqamlar soni · 3",
+        "en": "Digit count · 3"
+      },
+      "statement": {
+        "uz": "n nechta o‘nlik raqamdan iboratligini chiqaring. 0 bitta raqamdan iborat. While blokidan foydalaning.",
+        "en": "Print the number of decimal digits in n. Zero has one digit. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..333333 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..333333."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "333333\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "333332\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "31193\n",
+          "out": "5\n",
+          "hidden": true
+        },
+        {
+          "in": "142103\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "106808\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "73462\n",
+          "out": "5\n",
+          "hidden": true
+        },
+        {
+          "in": "116167\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "322256\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "159691\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "164794\n",
+          "out": "6\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "0 holatini alohida ko‘ring; qolgan sonlarda div 10 amallari sonini sanang.",
+          "en": "Handle zero separately; otherwise count divisions by 10."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "digit-count",
+        "number": 3
+      }
+    },
+    {
+      "id": "digit-count-04",
+      "title": {
+        "uz": "Raqamlar soni · 4",
+        "en": "Digit count · 4"
+      },
+      "statement": {
+        "uz": "n nechta o‘nlik raqamdan iboratligini chiqaring. 0 bitta raqamdan iborat. While blokidan foydalaning.",
+        "en": "Print the number of decimal digits in n. Zero has one digit. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..499999 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..499999."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "499999\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "499998\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "182925\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "480074\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "272470\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "229221\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "217116\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "103884\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "301224\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "191851\n",
+          "out": "6\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "0 holatini alohida ko‘ring; qolgan sonlarda div 10 amallari sonini sanang.",
+          "en": "Handle zero separately; otherwise count divisions by 10."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "digit-count",
+        "number": 4
+      }
+    },
+    {
+      "id": "digit-count-05",
+      "title": {
+        "uz": "Raqamlar soni · 5",
+        "en": "Digit count · 5"
+      },
+      "statement": {
+        "uz": "n nechta o‘nlik raqamdan iboratligini chiqaring. 0 bitta raqamdan iborat. While blokidan foydalaning.",
+        "en": "Print the number of decimal digits in n. Zero has one digit. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..999999 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..999999."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "999999\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "999998\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "895454\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "273658\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "402493\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "719303\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "941260\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "726262\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "898366\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "861019\n",
+          "out": "6\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "0 holatini alohida ko‘ring; qolgan sonlarda div 10 amallari sonini sanang.",
+          "en": "Handle zero separately; otherwise count divisions by 10."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "digit-count",
+        "number": 5
+      }
+    },
+    {
+      "id": "reverse-03",
+      "title": {
+        "uz": "Raqamlarni teskarilash · 3",
+        "en": "Reverse digits · 3"
+      },
+      "statement": {
+        "uz": "n raqamlarini teskari tartibda yozganda hosil bo‘ladigan butun sonni chiqaring. Boshidagi nollar tushib qoladi: 120 → 21. While blokidan foydalaning.",
+        "en": "Print the integer formed by reversing the digits of n. Leading zeros disappear: 120 → 21. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..333333 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..333333."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "333333\n",
+          "out": "333333\n",
+          "hidden": true
+        },
+        {
+          "in": "333332\n",
+          "out": "233333\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "9\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "11\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "101\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "21\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "121\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "1001\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "9999\n",
+          "hidden": true
+        },
+        {
+          "in": "25576\n",
+          "out": "67552\n",
+          "hidden": true
+        },
+        {
+          "in": "203460\n",
+          "out": "64302\n",
+          "hidden": true
+        },
+        {
+          "in": "203305\n",
+          "out": "503302\n",
+          "hidden": true
+        },
+        {
+          "in": "248955\n",
+          "out": "559842\n",
+          "hidden": true
+        },
+        {
+          "in": "178641\n",
+          "out": "146871\n",
+          "hidden": true
+        },
+        {
+          "in": "320382\n",
+          "out": "283023\n",
+          "hidden": true
+        },
+        {
+          "in": "209778\n",
+          "out": "877902\n",
+          "hidden": true
+        },
+        {
+          "in": "132380\n",
+          "out": "83231\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Natijani 10 ga ko‘paytirib, keyingi raqamni qo‘shing.",
+          "en": "Multiply the result by 10 before appending the next digit."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "reverse",
+        "number": 3
+      }
+    },
+    {
+      "id": "reverse-04",
+      "title": {
+        "uz": "Raqamlarni teskarilash · 4",
+        "en": "Reverse digits · 4"
+      },
+      "statement": {
+        "uz": "n raqamlarini teskari tartibda yozganda hosil bo‘ladigan butun sonni chiqaring. Boshidagi nollar tushib qoladi: 120 → 21. While blokidan foydalaning.",
+        "en": "Print the integer formed by reversing the digits of n. Leading zeros disappear: 120 → 21. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..499999 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..499999."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "499999\n",
+          "out": "999994\n",
+          "hidden": true
+        },
+        {
+          "in": "499998\n",
+          "out": "899994\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "9\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "11\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "101\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "21\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "121\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "1001\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "9999\n",
+          "hidden": true
+        },
+        {
+          "in": "147250\n",
+          "out": "52741\n",
+          "hidden": true
+        },
+        {
+          "in": "288594\n",
+          "out": "495882\n",
+          "hidden": true
+        },
+        {
+          "in": "485809\n",
+          "out": "908584\n",
+          "hidden": true
+        },
+        {
+          "in": "307741\n",
+          "out": "147703\n",
+          "hidden": true
+        },
+        {
+          "in": "472503\n",
+          "out": "305274\n",
+          "hidden": true
+        },
+        {
+          "in": "25996\n",
+          "out": "69952\n",
+          "hidden": true
+        },
+        {
+          "in": "198347\n",
+          "out": "743891\n",
+          "hidden": true
+        },
+        {
+          "in": "112043\n",
+          "out": "340211\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Natijani 10 ga ko‘paytirib, keyingi raqamni qo‘shing.",
+          "en": "Multiply the result by 10 before appending the next digit."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "reverse",
+        "number": 4
+      }
+    },
+    {
+      "id": "reverse-05",
+      "title": {
+        "uz": "Raqamlarni teskarilash · 5",
+        "en": "Reverse digits · 5"
+      },
+      "statement": {
+        "uz": "n raqamlarini teskari tartibda yozganda hosil bo‘ladigan butun sonni chiqaring. Boshidagi nollar tushib qoladi: 120 → 21. While blokidan foydalaning.",
+        "en": "Print the integer formed by reversing the digits of n. Leading zeros disappear: 120 → 21. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..999999 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..999999."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "999999\n",
+          "out": "999999\n",
+          "hidden": true
+        },
+        {
+          "in": "999998\n",
+          "out": "899999\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "9\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "11\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "101\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "21\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "121\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "1001\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "9999\n",
+          "hidden": true
+        },
+        {
+          "in": "353080\n",
+          "out": "80353\n",
+          "hidden": true
+        },
+        {
+          "in": "494692\n",
+          "out": "296494\n",
+          "hidden": true
+        },
+        {
+          "in": "434117\n",
+          "out": "711434\n",
+          "hidden": true
+        },
+        {
+          "in": "824920\n",
+          "out": "29428\n",
+          "hidden": true
+        },
+        {
+          "in": "11102\n",
+          "out": "20111\n",
+          "hidden": true
+        },
+        {
+          "in": "701459\n",
+          "out": "954107\n",
+          "hidden": true
+        },
+        {
+          "in": "788112\n",
+          "out": "211887\n",
+          "hidden": true
+        },
+        {
+          "in": "266596\n",
+          "out": "695662\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Natijani 10 ga ko‘paytirib, keyingi raqamni qo‘shing.",
+          "en": "Multiply the result by 10 before appending the next digit."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "reverse",
+        "number": 5
+      }
+    },
+    {
+      "id": "palindrome-03",
+      "title": {
+        "uz": "Palindrom son · 3",
+        "en": "Palindrome number · 3"
+      },
+      "statement": {
+        "uz": "n chapdan va o‘ngdan bir xil o‘qilsa 1, aks holda 0 chiqaring. 0 va bir xonali sonlar ham palindrom. While blokidan foydalaning.",
+        "en": "Print 1 if n reads the same forwards and backwards, otherwise 0. Zero and one-digit numbers are palindromes. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..333333 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..333333."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "333333\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "333332\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "201611\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "294894\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "173323\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "144700\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "95249\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "144012\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "28188\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "332302\n",
+          "out": "0\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Asl sonni saqlang va teskari son bilan solishtiring.",
+          "en": "Keep the original number and compare it with the reversed number."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "palindrome",
+        "number": 3
+      }
+    },
+    {
+      "id": "palindrome-04",
+      "title": {
+        "uz": "Palindrom son · 4",
+        "en": "Palindrome number · 4"
+      },
+      "statement": {
+        "uz": "n chapdan va o‘ngdan bir xil o‘qilsa 1, aks holda 0 chiqaring. 0 va bir xonali sonlar ham palindrom. While blokidan foydalaning.",
+        "en": "Print 1 if n reads the same forwards and backwards, otherwise 0. Zero and one-digit numbers are palindromes. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..499999 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..499999."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "499999\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "499998\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "481033\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "390941\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "336250\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "452777\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "380028\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "4111\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "487417\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "319229\n",
+          "out": "0\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Asl sonni saqlang va teskari son bilan solishtiring.",
+          "en": "Keep the original number and compare it with the reversed number."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "palindrome",
+        "number": 4
+      }
+    },
+    {
+      "id": "palindrome-05",
+      "title": {
+        "uz": "Palindrom son · 5",
+        "en": "Palindrome number · 5"
+      },
+      "statement": {
+        "uz": "n chapdan va o‘ngdan bir xil o‘qilsa 1, aks holda 0 chiqaring. 0 va bir xonali sonlar ham palindrom. While blokidan foydalaning.",
+        "en": "Print 1 if n reads the same forwards and backwards, otherwise 0. Zero and one-digit numbers are palindromes. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..999999 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..999999."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "999999\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "999998\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "253146\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "689516\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "870975\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "261721\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "597406\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "276020\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "982155\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "199875\n",
+          "out": "0\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Asl sonni saqlang va teskari son bilan solishtiring.",
+          "en": "Keep the original number and compare it with the reversed number."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "palindrome",
+        "number": 5
+      }
+    },
+    {
+      "id": "gcd-03",
+      "title": {
+        "uz": "Eng katta umumiy bo‘luvchi · 3",
+        "en": "Greatest common divisor · 3"
+      },
+      "statement": {
+        "uz": "n va m ning eng katta umumiy bo‘luvchisini chiqaring. While blokidan foydalaning.",
+        "en": "Print the greatest common divisor of n and m. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n va m — 1..3333 oralig‘idagi butun sonlar, har biri alohida qatorda.",
+        "en": "n and m, each on a separate line: integers in 1..3333."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "1\n3333\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "3333\n1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "3333\n3333\n",
+          "out": "3333\n",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "48\n18\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "17\n19\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "2288\n612\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "2480\n1616\n",
+          "out": "16\n",
+          "hidden": true
+        },
+        {
+          "in": "3033\n1058\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "3005\n204\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "841\n1191\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "2082\n842\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "565\n1173\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "3038\n1183\n",
+          "out": "7\n",
+          "hidden": true
+        },
+        {
+          "in": "2101\n2742\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "2032\n3107\n",
+          "out": "1\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Evklid algoritmi: (x,y) juftligini (y,x mod y) bilan almashtiring.",
+          "en": "Euclid: replace (x,y) with (y,x mod y)."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "gcd",
+        "number": 3
+      }
+    },
+    {
+      "id": "gcd-04",
+      "title": {
+        "uz": "Eng katta umumiy bo‘luvchi · 4",
+        "en": "Greatest common divisor · 4"
+      },
+      "statement": {
+        "uz": "n va m ning eng katta umumiy bo‘luvchisini chiqaring. While blokidan foydalaning.",
+        "en": "Print the greatest common divisor of n and m. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n va m — 1..5000 oralig‘idagi butun sonlar, har biri alohida qatorda.",
+        "en": "n and m, each on a separate line: integers in 1..5000."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "1\n5000\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "5000\n1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "5000\n5000\n",
+          "out": "5000\n",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "48\n18\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "17\n19\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "4574\n2636\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "3036\n3538\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "1816\n4045\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "4938\n1551\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "739\n344\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "3397\n3069\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "4894\n2683\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "2988\n3319\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "3828\n3242\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "1421\n1521\n",
+          "out": "1\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Evklid algoritmi: (x,y) juftligini (y,x mod y) bilan almashtiring.",
+          "en": "Euclid: replace (x,y) with (y,x mod y)."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "gcd",
+        "number": 4
+      }
+    },
+    {
+      "id": "gcd-05",
+      "title": {
+        "uz": "Eng katta umumiy bo‘luvchi · 5",
+        "en": "Greatest common divisor · 5"
+      },
+      "statement": {
+        "uz": "n va m ning eng katta umumiy bo‘luvchisini chiqaring. While blokidan foydalaning.",
+        "en": "Print the greatest common divisor of n and m. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n va m — 1..10000 oralig‘idagi butun sonlar, har biri alohida qatorda.",
+        "en": "n and m, each on a separate line: integers in 1..10000."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "1\n10000\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "10000\n1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "10000\n10000\n",
+          "out": "10000\n",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "48\n18\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "17\n19\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "4511\n1240\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "4192\n2644\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "8189\n8723\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "2157\n7628\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "1937\n4943\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "7908\n9301\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "9809\n3889\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "9075\n4810\n",
+          "out": "5\n",
+          "hidden": true
+        },
+        {
+          "in": "5698\n3186\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "5503\n6898\n",
+          "out": "1\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Evklid algoritmi: (x,y) juftligini (y,x mod y) bilan almashtiring.",
+          "en": "Euclid: replace (x,y) with (y,x mod y)."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "gcd",
+        "number": 5
+      }
+    },
+    {
+      "id": "lcm-03",
+      "title": {
+        "uz": "Eng kichik umumiy karrali · 3",
+        "en": "Least common multiple · 3"
+      },
+      "statement": {
+        "uz": "n va m ning eng kichik musbat umumiy karralisini chiqaring. While blokidan foydalaning.",
+        "en": "Print the least positive common multiple of n and m. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n va m — 1..3333 oralig‘idagi butun sonlar, har biri alohida qatorda.",
+        "en": "n and m, each on a separate line: integers in 1..3333."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "1\n3333\n",
+          "out": "3333\n",
+          "hidden": false
+        },
+        {
+          "in": "3333\n1\n",
+          "out": "3333\n",
+          "hidden": false
+        },
+        {
+          "in": "3333\n3333\n",
+          "out": "3333\n",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "48\n18\n",
+          "out": "144\n",
+          "hidden": true
+        },
+        {
+          "in": "17\n19\n",
+          "out": "323\n",
+          "hidden": true
+        },
+        {
+          "in": "1428\n804\n",
+          "out": "95676\n",
+          "hidden": true
+        },
+        {
+          "in": "2979\n2306\n",
+          "out": "6869574\n",
+          "hidden": true
+        },
+        {
+          "in": "547\n2663\n",
+          "out": "1456661\n",
+          "hidden": true
+        },
+        {
+          "in": "28\n333\n",
+          "out": "9324\n",
+          "hidden": true
+        },
+        {
+          "in": "2348\n1219\n",
+          "out": "2862212\n",
+          "hidden": true
+        },
+        {
+          "in": "2384\n2728\n",
+          "out": "812944\n",
+          "hidden": true
+        },
+        {
+          "in": "1292\n1542\n",
+          "out": "996132\n",
+          "hidden": true
+        },
+        {
+          "in": "1828\n1902\n",
+          "out": "1738428\n",
+          "hidden": true
+        },
+        {
+          "in": "1504\n1331\n",
+          "out": "2001824\n",
+          "hidden": true
+        },
+        {
+          "in": "1785\n3288\n",
+          "out": "1956360\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Avval EKUBni toping. EKUK = (n div EKUB) * m.",
+          "en": "Find the GCD first. LCM = (n div GCD) * m."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "lcm",
+        "number": 3
+      }
+    },
+    {
+      "id": "lcm-04",
+      "title": {
+        "uz": "Eng kichik umumiy karrali · 4",
+        "en": "Least common multiple · 4"
+      },
+      "statement": {
+        "uz": "n va m ning eng kichik musbat umumiy karralisini chiqaring. While blokidan foydalaning.",
+        "en": "Print the least positive common multiple of n and m. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n va m — 1..5000 oralig‘idagi butun sonlar, har biri alohida qatorda.",
+        "en": "n and m, each on a separate line: integers in 1..5000."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "1\n5000\n",
+          "out": "5000\n",
+          "hidden": false
+        },
+        {
+          "in": "5000\n1\n",
+          "out": "5000\n",
+          "hidden": false
+        },
+        {
+          "in": "5000\n5000\n",
+          "out": "5000\n",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "48\n18\n",
+          "out": "144\n",
+          "hidden": true
+        },
+        {
+          "in": "17\n19\n",
+          "out": "323\n",
+          "hidden": true
+        },
+        {
+          "in": "862\n1586\n",
+          "out": "683566\n",
+          "hidden": true
+        },
+        {
+          "in": "4924\n3129\n",
+          "out": "15407196\n",
+          "hidden": true
+        },
+        {
+          "in": "3477\n749\n",
+          "out": "2604273\n",
+          "hidden": true
+        },
+        {
+          "in": "4133\n310\n",
+          "out": "1281230\n",
+          "hidden": true
+        },
+        {
+          "in": "3821\n4358\n",
+          "out": "16651918\n",
+          "hidden": true
+        },
+        {
+          "in": "895\n2043\n",
+          "out": "1828485\n",
+          "hidden": true
+        },
+        {
+          "in": "4603\n4171\n",
+          "out": "19199113\n",
+          "hidden": true
+        },
+        {
+          "in": "1478\n752\n",
+          "out": "555728\n",
+          "hidden": true
+        },
+        {
+          "in": "4408\n2927\n",
+          "out": "12902216\n",
+          "hidden": true
+        },
+        {
+          "in": "2638\n1272\n",
+          "out": "1677768\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Avval EKUBni toping. EKUK = (n div EKUB) * m.",
+          "en": "Find the GCD first. LCM = (n div GCD) * m."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "lcm",
+        "number": 4
+      }
+    },
+    {
+      "id": "lcm-05",
+      "title": {
+        "uz": "Eng kichik umumiy karrali · 5",
+        "en": "Least common multiple · 5"
+      },
+      "statement": {
+        "uz": "n va m ning eng kichik musbat umumiy karralisini chiqaring. While blokidan foydalaning.",
+        "en": "Print the least positive common multiple of n and m. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n va m — 1..10000 oralig‘idagi butun sonlar, har biri alohida qatorda.",
+        "en": "n and m, each on a separate line: integers in 1..10000."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "1\n10000\n",
+          "out": "10000\n",
+          "hidden": false
+        },
+        {
+          "in": "10000\n1\n",
+          "out": "10000\n",
+          "hidden": false
+        },
+        {
+          "in": "10000\n10000\n",
+          "out": "10000\n",
+          "hidden": true
+        },
+        {
+          "in": "1\n1\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "48\n18\n",
+          "out": "144\n",
+          "hidden": true
+        },
+        {
+          "in": "17\n19\n",
+          "out": "323\n",
+          "hidden": true
+        },
+        {
+          "in": "5141\n6263\n",
+          "out": "32198083\n",
+          "hidden": true
+        },
+        {
+          "in": "1731\n2158\n",
+          "out": "3735498\n",
+          "hidden": true
+        },
+        {
+          "in": "7184\n7750\n",
+          "out": "27838000\n",
+          "hidden": true
+        },
+        {
+          "in": "9287\n1808\n",
+          "out": "16790896\n",
+          "hidden": true
+        },
+        {
+          "in": "9817\n8124\n",
+          "out": "79753308\n",
+          "hidden": true
+        },
+        {
+          "in": "1111\n5573\n",
+          "out": "6191603\n",
+          "hidden": true
+        },
+        {
+          "in": "8522\n9044\n",
+          "out": "38536484\n",
+          "hidden": true
+        },
+        {
+          "in": "3465\n6762\n",
+          "out": "1115730\n",
+          "hidden": true
+        },
+        {
+          "in": "2681\n4993\n",
+          "out": "13386233\n",
+          "hidden": true
+        },
+        {
+          "in": "6435\n2535\n",
+          "out": "83655\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Avval EKUBni toping. EKUK = (n div EKUB) * m.",
+          "en": "Find the GCD first. LCM = (n div GCD) * m."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "lcm",
+        "number": 5
+      }
+    },
+    {
+      "id": "prime-03",
+      "title": {
+        "uz": "Tub sonni tekshirish · 3",
+        "en": "Primality check · 3"
+      },
+      "statement": {
+        "uz": "n tub bo‘lsa 1, aks holda 0 chiqaring. Tub son 1 dan katta va aynan ikkita musbat bo‘luvchiga ega. While blokidan foydalaning.",
+        "en": "Print 1 if n is prime, otherwise 0. A prime is greater than 1 and has exactly two positive divisors. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..3333 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..3333."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "3333\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "3332\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "1870\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "3061\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "2722\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "1807\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "312\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "1450\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "1849\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "1409\n",
+          "out": "1\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "1 tub emas. Bo‘luvchilarni i*i <= n bo‘lguncha tekshirish yetarli.",
+          "en": "One is not prime. Testing divisors while i*i <= n is enough."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "prime",
+        "number": 3
+      }
+    },
+    {
+      "id": "prime-04",
+      "title": {
+        "uz": "Tub sonni tekshirish · 4",
+        "en": "Primality check · 4"
+      },
+      "statement": {
+        "uz": "n tub bo‘lsa 1, aks holda 0 chiqaring. Tub son 1 dan katta va aynan ikkita musbat bo‘luvchiga ega. While blokidan foydalaning.",
+        "en": "Print 1 if n is prime, otherwise 0. A prime is greater than 1 and has exactly two positive divisors. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..5000 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..5000."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "5000\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "4999\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "459\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "2461\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "2369\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "742\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "2573\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "3777\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "1614\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "268\n",
+          "out": "0\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "1 tub emas. Bo‘luvchilarni i*i <= n bo‘lguncha tekshirish yetarli.",
+          "en": "One is not prime. Testing divisors while i*i <= n is enough."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "prime",
+        "number": 4
+      }
+    },
+    {
+      "id": "prime-05",
+      "title": {
+        "uz": "Tub sonni tekshirish · 5",
+        "en": "Primality check · 5"
+      },
+      "statement": {
+        "uz": "n tub bo‘lsa 1, aks holda 0 chiqaring. Tub son 1 dan katta va aynan ikkita musbat bo‘luvchiga ega. While blokidan foydalaning.",
+        "en": "Print 1 if n is prime, otherwise 0. A prime is greater than 1 and has exactly two positive divisors. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..10000 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..10000."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "10000\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "9999\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "1001\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "3031\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "2367\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "1769\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "6964\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "6690\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "2472\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "9088\n",
+          "out": "0\n",
+          "hidden": true
+        },
+        {
+          "in": "3697\n",
+          "out": "1\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "1 tub emas. Bo‘luvchilarni i*i <= n bo‘lguncha tekshirish yetarli.",
+          "en": "One is not prime. Testing divisors while i*i <= n is enough."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "prime",
+        "number": 5
+      }
+    },
+    {
+      "id": "divisors-03",
+      "title": {
+        "uz": "Bo‘luvchilar soni · 3",
+        "en": "Divisor count · 3"
+      },
+      "statement": {
+        "uz": "n ning musbat bo‘luvchilari sonini chiqaring. Masalan, 6 ning bo‘luvchilari 1, 2, 3, 6 — jami 4 ta. While blokidan foydalaning.",
+        "en": "Print the number of positive divisors of n. For example, 6 has divisors 1, 2, 3, 6: four in total. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 1..333 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 1..333."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "2\n",
+          "out": "2\n",
+          "hidden": false
+        },
+        {
+          "in": "333\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "332\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "9\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "16\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "255\n",
+          "out": "8\n",
+          "hidden": true
+        },
+        {
+          "in": "179\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "4\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "240\n",
+          "out": "20\n",
+          "hidden": true
+        },
+        {
+          "in": "159\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "91\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "184\n",
+          "out": "8\n",
+          "hidden": true
+        },
+        {
+          "in": "177\n",
+          "out": "4\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "1 dan n gacha tekshiring; qoldiq 0 bo‘lsa hisoblagichni oshiring.",
+          "en": "Test 1 through n and increment the count when the remainder is zero."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "divisors",
+        "number": 3
+      }
+    },
+    {
+      "id": "divisors-04",
+      "title": {
+        "uz": "Bo‘luvchilar soni · 4",
+        "en": "Divisor count · 4"
+      },
+      "statement": {
+        "uz": "n ning musbat bo‘luvchilari sonini chiqaring. Masalan, 6 ning bo‘luvchilari 1, 2, 3, 6 — jami 4 ta. While blokidan foydalaning.",
+        "en": "Print the number of positive divisors of n. For example, 6 has divisors 1, 2, 3, 6: four in total. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 1..500 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 1..500."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "2\n",
+          "out": "2\n",
+          "hidden": false
+        },
+        {
+          "in": "500\n",
+          "out": "12\n",
+          "hidden": true
+        },
+        {
+          "in": "499\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "9\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "16\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "23\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "461\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "78\n",
+          "out": "8\n",
+          "hidden": true
+        },
+        {
+          "in": "240\n",
+          "out": "20\n",
+          "hidden": true
+        },
+        {
+          "in": "434\n",
+          "out": "8\n",
+          "hidden": true
+        },
+        {
+          "in": "367\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "207\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "334\n",
+          "out": "4\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "1 dan n gacha tekshiring; qoldiq 0 bo‘lsa hisoblagichni oshiring.",
+          "en": "Test 1 through n and increment the count when the remainder is zero."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "divisors",
+        "number": 4
+      }
+    },
+    {
+      "id": "divisors-05",
+      "title": {
+        "uz": "Bo‘luvchilar soni · 5",
+        "en": "Divisor count · 5"
+      },
+      "statement": {
+        "uz": "n ning musbat bo‘luvchilari sonini chiqaring. Masalan, 6 ning bo‘luvchilari 1, 2, 3, 6 — jami 4 ta. While blokidan foydalaning.",
+        "en": "Print the number of positive divisors of n. For example, 6 has divisors 1, 2, 3, 6: four in total. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 1..1000 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 1..1000."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "2\n",
+          "out": "2\n",
+          "hidden": false
+        },
+        {
+          "in": "1000\n",
+          "out": "16\n",
+          "hidden": true
+        },
+        {
+          "in": "999\n",
+          "out": "8\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "100\n",
+          "out": "9\n",
+          "hidden": true
+        },
+        {
+          "in": "101\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "120\n",
+          "out": "16\n",
+          "hidden": true
+        },
+        {
+          "in": "121\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "242\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "494\n",
+          "out": "8\n",
+          "hidden": true
+        },
+        {
+          "in": "785\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "337\n",
+          "out": "2\n",
+          "hidden": true
+        },
+        {
+          "in": "292\n",
+          "out": "6\n",
+          "hidden": true
+        },
+        {
+          "in": "165\n",
+          "out": "8\n",
+          "hidden": true
+        },
+        {
+          "in": "581\n",
+          "out": "4\n",
+          "hidden": true
+        },
+        {
+          "in": "502\n",
+          "out": "4\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "1 dan n gacha tekshiring; qoldiq 0 bo‘lsa hisoblagichni oshiring.",
+          "en": "Test 1 through n and increment the count when the remainder is zero."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "divisors",
+        "number": 5
+      }
+    },
+    {
+      "id": "factorial-03",
+      "title": {
+        "uz": "Faktorial · 3",
+        "en": "Factorial · 3"
+      },
+      "statement": {
+        "uz": "n! ni chiqaring: 1 dan n gacha sonlar ko‘paytmasi. 0! = 1. While blokidan foydalaning.",
+        "en": "Print n!, the product of integers from 1 through n. By definition, 0! = 1. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..4 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..4."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "4\n",
+          "out": "24\n",
+          "hidden": true
+        },
+        {
+          "in": "3\n",
+          "out": "6\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Ko‘paytmani 0 emas, 1 dan boshlang.",
+          "en": "Initialize a product to 1, not 0."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "factorial",
+        "number": 3
+      }
+    },
+    {
+      "id": "factorial-04",
+      "title": {
+        "uz": "Faktorial · 4",
+        "en": "Factorial · 4"
+      },
+      "statement": {
+        "uz": "n! ni chiqaring: 1 dan n gacha sonlar ko‘paytmasi. 0! = 1. While blokidan foydalaning.",
+        "en": "Print n!, the product of integers from 1 through n. By definition, 0! = 1. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..6 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..6."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "6\n",
+          "out": "720\n",
+          "hidden": true
+        },
+        {
+          "in": "5\n",
+          "out": "120\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Ko‘paytmani 0 emas, 1 dan boshlang.",
+          "en": "Initialize a product to 1, not 0."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "factorial",
+        "number": 4
+      }
+    },
+    {
+      "id": "factorial-05",
+      "title": {
+        "uz": "Faktorial · 5",
+        "en": "Factorial · 5"
+      },
+      "statement": {
+        "uz": "n! ni chiqaring: 1 dan n gacha sonlar ko‘paytmasi. 0! = 1. While blokidan foydalaning.",
+        "en": "Print n!, the product of integers from 1 through n. By definition, 0! = 1. Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..12 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..12."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "12\n",
+          "out": "479001600\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "39916800\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "362880\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "3628800\n",
+          "hidden": true
+        },
+        {
+          "in": "6\n",
+          "out": "720\n",
+          "hidden": true
+        },
+        {
+          "in": "4\n",
+          "out": "24\n",
+          "hidden": true
+        },
+        {
+          "in": "8\n",
+          "out": "40320\n",
+          "hidden": true
+        },
+        {
+          "in": "5\n",
+          "out": "120\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Ko‘paytmani 0 emas, 1 dan boshlang.",
+          "en": "Initialize a product to 1, not 0."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "factorial",
+        "number": 5
+      }
+    },
+    {
+      "id": "fibonacci-03",
+      "title": {
+        "uz": "Fibonacci soni · 3",
+        "en": "Fibonacci number · 3"
+      },
+      "statement": {
+        "uz": "F(0)=0, F(1)=1 va F(n)=F(n−1)+F(n−2). F(n) ni chiqaring. While blokidan foydalaning.",
+        "en": "Given F(0)=0, F(1)=1 and F(n)=F(n−1)+F(n−2), print F(n). Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..10 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..10."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "10\n",
+          "out": "55\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "34\n",
+          "hidden": true
+        },
+        {
+          "in": "8\n",
+          "out": "21\n",
+          "hidden": true
+        },
+        {
+          "in": "5\n",
+          "out": "5\n",
+          "hidden": true
+        },
+        {
+          "in": "4\n",
+          "out": "3\n",
+          "hidden": true
+        },
+        {
+          "in": "7\n",
+          "out": "13\n",
+          "hidden": true
+        },
+        {
+          "in": "2\n",
+          "out": "1\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Oldingi ikkita qiymatni saqlang; yangilashdan oldin yig‘indini vaqtinchalik o‘zgaruvchiga yozing.",
+          "en": "Keep the previous two values; save their sum before replacing either value."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "fibonacci",
+        "number": 3
+      }
+    },
+    {
+      "id": "fibonacci-04",
+      "title": {
+        "uz": "Fibonacci soni · 4",
+        "en": "Fibonacci number · 4"
+      },
+      "statement": {
+        "uz": "F(0)=0, F(1)=1 va F(n)=F(n−1)+F(n−2). F(n) ni chiqaring. While blokidan foydalaning.",
+        "en": "Given F(0)=0, F(1)=1 and F(n)=F(n−1)+F(n−2), print F(n). Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..15 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..15."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "15\n",
+          "out": "610\n",
+          "hidden": true
+        },
+        {
+          "in": "14\n",
+          "out": "377\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "34\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "55\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "89\n",
+          "hidden": true
+        },
+        {
+          "in": "7\n",
+          "out": "13\n",
+          "hidden": true
+        },
+        {
+          "in": "13\n",
+          "out": "233\n",
+          "hidden": true
+        },
+        {
+          "in": "8\n",
+          "out": "21\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Oldingi ikkita qiymatni saqlang; yangilashdan oldin yig‘indini vaqtinchalik o‘zgaruvchiga yozing.",
+          "en": "Keep the previous two values; save their sum before replacing either value."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "fibonacci",
+        "number": 4
+      }
+    },
+    {
+      "id": "fibonacci-05",
+      "title": {
+        "uz": "Fibonacci soni · 5",
+        "en": "Fibonacci number · 5"
+      },
+      "statement": {
+        "uz": "F(0)=0, F(1)=1 va F(n)=F(n−1)+F(n−2). F(n) ni chiqaring. While blokidan foydalaning.",
+        "en": "Given F(0)=0, F(1)=1 and F(n)=F(n−1)+F(n−2), print F(n). Use a While block."
+      },
+      "inputFormat": {
+        "uz": "n — 0..30 oralig‘idagi butun son, bitta qatorda.",
+        "en": "n on one line: integers in 0..30."
+      },
+      "outputFormat": {
+        "uz": "Bitta butun sonni chiqaring. Qo‘shimcha matn chiqarmang.",
+        "en": "Print one integer, with no extra text."
+      },
+      "difficulty": "hard",
+      "tests": [
+        {
+          "in": "0\n",
+          "out": "0\n",
+          "hidden": false
+        },
+        {
+          "in": "1\n",
+          "out": "1\n",
+          "hidden": false
+        },
+        {
+          "in": "30\n",
+          "out": "832040\n",
+          "hidden": true
+        },
+        {
+          "in": "29\n",
+          "out": "514229\n",
+          "hidden": true
+        },
+        {
+          "in": "9\n",
+          "out": "34\n",
+          "hidden": true
+        },
+        {
+          "in": "10\n",
+          "out": "55\n",
+          "hidden": true
+        },
+        {
+          "in": "11\n",
+          "out": "89\n",
+          "hidden": true
+        },
+        {
+          "in": "26\n",
+          "out": "121393\n",
+          "hidden": true
+        },
+        {
+          "in": "19\n",
+          "out": "4181\n",
+          "hidden": true
+        },
+        {
+          "in": "28\n",
+          "out": "317811\n",
+          "hidden": true
+        },
+        {
+          "in": "2\n",
+          "out": "1\n",
+          "hidden": true
+        },
+        {
+          "in": "4\n",
+          "out": "3\n",
+          "hidden": true
+        }
+      ],
+      "judge": {
+        "mode": "tokens",
+        "requiredBlocks": [
+          "while"
+        ]
+      },
+      "hints": [
+        {
+          "uz": "Oldingi ikkita qiymatni saqlang; yangilashdan oldin yig‘indini vaqtinchalik o‘zgaruvchiga yozing.",
+          "en": "Keep the previous two values; save their sum before replacing either value."
+        },
+        {
+          "uz": "Namuna uchun o‘zgaruvchilar jadvalini tuzing.",
+          "en": "Build a variable trace table for the example."
+        }
+      ],
+      "variant": {
+        "family": "fibonacci",
+        "number": 5
+      }
+    }
+  ]
+}

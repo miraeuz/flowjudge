@@ -1,7 +1,7 @@
 {
   "name": "flowgorithm-academy",
   "productName": "Flowgorithm Academy",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Learn algorithms with Flowgorithm \u2014 lessons, problems and an automatic judge.",
   "author": "miraeuz <miraeuz@users.noreply.github.com>",
   "license": "MIT",

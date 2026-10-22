@@ -35,6 +35,9 @@
   let uploadedXml = "",
     submissionTab = "feedback",
     focusMode = false;
+  let sidebarCompact = localStorage.sidebarCompact === "true";
+  let mobileNavOpen = false;
+  const narrowScreen = matchMedia("(max-width: 760px)");
   let bookmarks;
   try {
     const stored = JSON.parse(localStorage.bookmarks || "[]");
@@ -74,6 +77,7 @@
     "⇅",
     "ƒ",
     "✧",
+    "#",
   ];
   const path = () => location.hash.slice(2).split("/");
   const nav = (hash) => {
@@ -103,10 +107,11 @@
       ["progress", "▥", T("Natijalarim", "My progress")],
       ["settings", "⚙", T("Sozlamalar", "Settings")],
     ];
-    return `<button class="skip" data-action="skip">${T("Asosiy qismga o‘tish", "Skip to content")}</button><aside class="sidebar"><a class="brand" href="#/"><span class="logo">◈</span><span>Flowgorithm<small>ACADEMY BY MIRAE</small></span></a>
- <div class="nav-caption">${T("ISH MAYDONI", "WORKSPACE")}</div><nav>${links.map(([id, icon, label]) => `<a href="#/${id === "home" ? "" : id}" class="nav-item ${route === id ? "active" : ""}" ${route === id ? 'aria-current="page"' : ""}><span>${icon}</span>${label}</a>`).join("")}</nav>
+    const expanded = narrowScreen.matches ? mobileNavOpen : !sidebarCompact;
+    return `<button class="skip" data-action="skip">${T("Asosiy qismga o‘tish", "Skip to content")}</button><aside class="sidebar" id="academy-navigation"><a class="brand" href="#/"><span class="logo">◈</span><span class="brand-copy">Flowgorithm<small>ACADEMY BY MIRAE</small></span></a>
+ <div class="nav-caption">${T("ISH MAYDONI", "WORKSPACE")}</div><nav>${links.map(([id, icon, label]) => `<a href="#/${id === "home" ? "" : id}" title="${label}" aria-label="${label}" class="nav-item ${route === id ? "active" : ""}" ${route === id ? 'aria-current="page"' : ""}><span aria-hidden="true">${icon}</span><span class="nav-label">${label}</span></a>`).join("")}</nav>
  <div class="sidebar-bottom"><div class="offline"><i></i>${T("Oflayn o‘rganish", "Learn offline")}</div><p>${T("Kichik qadamlar. Katta imkoniyatlar.", "Small steps. Extraordinary possibilities.")}</p><div class="profile"><span class="avatar">${esc((act.name || "M").slice(0, 1).toUpperCase())}</span><div><strong>${esc(act.name || T("Xush kelibsiz", "Welcome"))}</strong><small>${T("Algoritm yaratuvchisi", "Algorithm explorer")}</small></div></div></div></aside>
- <div class="workspace"><header class="topbar"><span class="breadcrumb">${T("O‘rganing", "Learn")} <span>/</span> ${T("Yarating", "Build")} <span>/</span> ${T("Sinab ko‘ring", "Test")}</span><div class="top-actions"><button data-action="language" class="icon-btn" aria-label="${T("Tilni almashtirish", "Change language")}">${lang.toUpperCase()}</button><button data-action="theme" class="icon-btn" aria-label="${T("Mavzuni almashtirish", "Change theme")}">${theme === "dark" ? "☾" : theme === "light" ? "☀" : "◐"}</button><span class="pill desktop">${T("Shaxsiy o‘quv maydoni", "Your learning space")}</span></div></header><main id="main" tabindex="-1">${body}</main><div class="toast" id="toast" role="status" ${notice ? "" : "hidden"}>${esc(notice)}</div></div>`;
+ <div class="workspace"><header class="topbar"><div class="top-leading"><button class="sidebar-toggle icon-btn" data-action="sidebar" aria-controls="academy-navigation" aria-expanded="${expanded}" aria-label="${T("Menyuni ochish yoki yig‘ish", "Toggle navigation")}" title="${T("Menyuni ochish yoki yig‘ish", "Toggle navigation")} · Ctrl+B"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M9 4v16"/><path class="toggle-chevron" d="m15 9-3 3 3 3"/></svg></button><span class="breadcrumb">${T("O‘rganing", "Learn")} <span>/</span> ${T("Yarating", "Build")} <span>/</span> ${T("Sinab ko‘ring", "Test")}</span></div><div class="top-actions"><button data-action="language" class="icon-btn" aria-label="${T("Tilni almashtirish", "Change language")}">${lang.toUpperCase()}</button><button data-action="theme" class="icon-btn" aria-label="${T("Mavzuni almashtirish", "Change theme")}">${theme === "dark" ? "☾" : theme === "light" ? "☀" : "◐"}</button><span class="pill desktop">${T("Shaxsiy o‘quv maydoni", "Your learning space")}</span></div></header><main id="main" tabindex="-1">${body}</main><div class="toast" id="toast" role="status" ${notice ? "" : "hidden"}>${esc(notice)}</div></div>`;
   }
   function gate() {
     return `<section class="activation"><div><div class="eyebrow">MIRAE ACADEMY</div><h1>${T("G‘oyadan<br>algoritmgacha.", "From an idea.<br>To an algorithm.")}</h1><p class="lead">${T("O‘qing, Flowgorithm’da yarating va yechimingizni tekshiring. O‘z sur’atingizda.", "Learn a concept, build it in Flowgorithm, and test your solution. At your own pace.")}</p><div class="flow-illustration" aria-hidden="true"><span>Start</span><i>↓</i><span class="flow-input">Input</span><i>↓</i><span class="flow-process">Create something.</span><i>↓</i><span>Output</span></div></div><section class="glass activation-card"><span class="label">${T("BIR MARTALIK FAOLLASHTIRISH", "ONE-TIME ACTIVATION")}</span><h2>${T("O‘rganishni boshlang", "Make room for learning")}</h2><p class="muted">${T("Ismingizni kiriting. Kod o‘qituvchining Telegram chatiga boradi.", "Enter your name. Your teacher receives the code in Telegram.")}</p>${act.state === "clock" ? `<p class="error">${T("Kompyuter sana-vaqtini tekshiring.", "Check your computer date and time.")}</p>` : `${act.state === "expired" ? `<p class="error">${T("Faollashtirish muddati tugadi. Yangi kod oling.", "Activation expired. Request a new code.")}</p>` : ""}<label for="name">${T("Ism va familiya", "Full name")}</label><input id="name" maxlength="60" autocomplete="name" value="${esc(currentName)}" placeholder="${T("Masalan: Aziz Karimov", "e.g. Aziz Karimov")}">${button(T("Telegram orqali kod so‘rash", "Request code via Telegram"), "send")}<div class="divider"></div><label for="code">${T("6 xonali kod", "6-digit code")}</label><input id="code" maxlength="6" inputmode="numeric" autocomplete="one-time-code" placeholder="000000">${button(T("Tasdiqlash va boshlash →", "Verify & start learning →"), "verify")}<p class="muted small">${T("Kod 10 daqiqa amal qiladi. Faollashtirgach, internet shart emas.", "The code lasts 10 minutes. After activation, learning works offline.")}</p>`}</section></section>`;
@@ -171,12 +176,12 @@
           "Arrays, functions and projects",
         ),
         12,
-        15,
+        topics.length,
         "04",
       ],
     ];
     const next = topics.find((t) => percent(t) < 100);
-    return `${title(T("Sizning o‘quv xaritangiz", "Your learning path"))}<p class="lead">${T("To‘rt bosqich. O‘n besh mavzu. Har qadamda yangi ko‘nikma.", "Four stages. Fifteen topics. A new skill at every step.")}</p><div class="stage-index">${stages
+    return `${title(T("Sizning o‘quv xaritangiz", "Your learning path"))}<p class="lead">${T("To‘rt bosqich. Har qadamda yangi ko‘nikma.", "Four stages. A new skill at every step.")}</p><div class="stage-index">${stages
       .map(([name, sub, start, end, n]) => {
         const ts = topics.filter((t) => t.order >= start && t.order <= end),
           total = ts.reduce(
@@ -355,9 +360,11 @@
       )
       .join(
         "",
-      )}</select><label for="language-select">${T("Til", "Language")}</label><select id="language-select"><option value="uz" ${lang === "uz" ? "selected" : ""}>O‘zbekcha</option><option value="en" ${lang === "en" ? "selected" : ""}>English</option></select><label class="check"><input type="checkbox" id="motion" ${localStorage.reducedMotion === "true" ? "checked" : ""}>${T("Animatsiyalarni kamaytirish", "Reduce motion")}</label><label for="font-size">${T("Matn o‘lchami", "Text size")}</label><select id="font-size">${["100", "110", "120"].map((v) => `<option value="${v}" ${(localStorage.fontSize || "100") === v ? "selected" : ""}>${v}%</option>`).join("")}</select><div class="divider"></div><h2>${T("Natijalarni saqlash", "Keep your progress")}</h2><p class="muted">${T("Import mavjud yechimlarni saqlagan holda natijalarni birlashtiradi. Faollashtirish boshqa kompyuterga ko‘chirilmaydi.", "Import merges solved problems without removing existing progress. Activation does not transfer to another computer.")}</p><div class="button-row">${button(T("Zaxira yaratish", "Export backup"), "backup")}${button(T("Zaxirani tiklash", "Restore backup"), "restore", "btn ghost")}</div><p class="small muted">${T("Qisqa tugmalar: Ctrl+K — qidiruv, Ctrl+O — yechim fayli, Ctrl+, — sozlamalar.", "Shortcuts: Ctrl+K — search, Ctrl+O — solution file, Ctrl+, — settings.")}</p></section>`;
+      )}</select><label for="language-select">${T("Til", "Language")}</label><select id="language-select"><option value="uz" ${lang === "uz" ? "selected" : ""}>O‘zbekcha</option><option value="en" ${lang === "en" ? "selected" : ""}>English</option></select><label class="check"><input type="checkbox" id="motion" ${localStorage.reducedMotion === "true" ? "checked" : ""}>${T("Animatsiyalarni kamaytirish", "Reduce motion")}</label><label for="font-size">${T("Matn o‘lchami", "Text size")}</label><select id="font-size">${["100", "110", "120"].map((v) => `<option value="${v}" ${(localStorage.fontSize || "100") === v ? "selected" : ""}>${v}%</option>`).join("")}</select><div class="divider"></div><h2>${T("Natijalarni saqlash", "Keep your progress")}</h2><p class="muted">${T("Import mavjud yechimlarni saqlagan holda natijalarni birlashtiradi. Faollashtirish boshqa kompyuterga ko‘chirilmaydi.", "Import merges solved problems without removing existing progress. Activation does not transfer to another computer.")}</p><div class="button-row">${button(T("Zaxira yaratish", "Export backup"), "backup")}${button(T("Zaxirani tiklash", "Restore backup"), "restore", "btn ghost")}</div><p class="small muted">${T("Qisqa tugmalar: Ctrl+B — menyu, Ctrl+K — qidiruv, Ctrl+O — yechim fayli, Ctrl+, — sozlamalar.", "Shortcuts: Ctrl+B — sidebar, Ctrl+K — search, Ctrl+O — solution file, Ctrl+, — settings.")}</p></section>`;
   }
   function render() {
+    document.documentElement.dataset.sidebar = sidebarCompact ? "compact" : "expanded";
+    document.documentElement.dataset.mobileNav = mobileNavOpen ? "open" : "closed";
     document.documentElement.dataset.theme = theme === "system" ? "" : theme;
     document.documentElement.dataset.motion =
       localStorage.reducedMotion === "true" ? "reduced" : "";
@@ -386,6 +393,16 @@
                   : home();
     $("app").innerHTML = shell(body);
   }
+  function toggleSidebar() {
+    if (narrowScreen.matches) mobileNavOpen = !mobileNavOpen;
+    else {
+      sidebarCompact = !sidebarCompact;
+      localStorage.sidebarCompact = String(sidebarCompact);
+    }
+    render();
+    document.querySelector('[data-action="sidebar"]')?.focus();
+  }
+  narrowScreen.addEventListener("change", () => { mobileNavOpen = false; render(); });
   function notify(message) {
     notice = message;
     const el = $("toast");
@@ -501,6 +518,10 @@
     }
     const a = b.dataset.action;
     if (!a) return;
+    if (a === "sidebar") {
+      toggleSidebar();
+      return;
+    }
     if (a === "skip") {
       $("main")?.focus();
       return;
@@ -630,6 +651,10 @@
     if (e.target.closest?.("#drop")) submit(e.dataTransfer.files[0]);
   });
   document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && mobileNavOpen) {
+      mobileNavOpen = false; render();
+      document.querySelector('[data-action="sidebar"]')?.focus(); return;
+    }
     if (e.key === "Escape" && focusMode) {
       focusMode = false;
       render();
@@ -637,6 +662,7 @@
       return;
     }
     if (!(e.ctrlKey || e.metaKey)) return;
+    if (e.key.toLowerCase() === "b") { e.preventDefault(); toggleSidebar(); }
     if (e.key.toLowerCase() === "k") {
       e.preventDefault();
       if (!$("search")) {
@@ -654,6 +680,7 @@
     }
   });
   window.addEventListener("hashchange", () => {
+    mobileNavOpen = false;
     query = "";
     render();
     window.scrollTo(0, 0);
