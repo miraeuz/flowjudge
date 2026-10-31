@@ -734,5 +734,252 @@
    "judge": null,
    "tests": []
   }
+ ],
+ "practice": [
+  {
+   "id": "array-p01",
+   "title": {
+    "uz": "Eng arzon narx",
+    "en": "Cheapest price"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda mahsulotlar soni N, keyin N ta narx kiritiladi. Eng arzon narxni va u nechanchi ekanini (1 dan, birinchi uchragani) alohida qatorlarda chiqaring.",
+    "en": "N products are entered first, then N prices. Print the lowest price and its position (from 1, first occurrence) on separate lines."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "4\n50\n20\n80\n20",
+     "out": "20\n2"
+    },
+    {
+     "in": "1\n7",
+     "out": "7\n1"
+    },
+    {
+     "in": "3\n9\n8\n7",
+     "out": "7\n3",
+     "hidden": true
+    },
+    {
+     "in": "5\n3\n3\n3\n3\n3",
+     "out": "3\n1",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-p02",
+   "title": {
+    "uz": "O'rtachadan yuqori",
+    "en": "Above average"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda o'quvchilar soni N, keyin N ta ball kiritiladi. O'rtacha balldan (kasr bilan) qat'iy yuqori ball olganlar nechta?",
+    "en": "N students are entered first, then N scores. How many scored strictly above the average (as a decimal)?"
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "4\n50\n60\n70\n80",
+     "out": "2"
+    },
+    {
+     "in": "3\n5\n5\n5",
+     "out": "0"
+    },
+    {
+     "in": "5\n1\n2\n3\n4\n100",
+     "out": "1",
+     "hidden": true
+    },
+    {
+     "in": "2\n10\n20",
+     "out": "1",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-p03",
+   "title": {
+    "uz": "Teskari tartib",
+    "en": "Reverse order"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta son kiritiladi. Ularni teskari tartibda, har birini alohida qatorda chiqaring.",
+    "en": "N is entered first, then N numbers. Print them in reverse order, one per line."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "3\n1\n2\n3",
+     "out": "3\n2\n1"
+    },
+    {
+     "in": "1\n7",
+     "out": "7"
+    },
+    {
+     "in": "4\n5\n-1\n0\n9",
+     "out": "9\n0\n-1\n5",
+     "hidden": true
+    },
+    {
+     "in": "2\n10\n20",
+     "out": "20\n10",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-p04",
+   "title": {
+    "uz": "Birinchi son necha marta",
+    "en": "How often is the first"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta son kiritiladi. Birinchi kiritilgan son jami necha marta uchrashini (o'zi ham hisobga) chiqaring.",
+    "en": "N is entered first, then N numbers. Print how many times the first number appears in total (including itself)."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n3\n1\n3\n3\n2",
+     "out": "3"
+    },
+    {
+     "in": "1\n9",
+     "out": "1"
+    },
+    {
+     "in": "4\n1\n2\n3\n4",
+     "out": "1",
+     "hidden": true
+    },
+    {
+     "in": "6\n7\n7\n7\n7\n7\n7",
+     "out": "6",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-p05",
+   "title": {
+    "uz": "Juft indekslar yig'indisi",
+    "en": "Even-index sum"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta son kiritiladi. Indeksi juft (0, 2, 4, ...) bo'lgan elementlar yig'indisini chiqaring.",
+    "en": "N is entered first, then N numbers. Print the sum of the elements whose index is even (0, 2, 4, ...)."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n1\n2\n3\n4\n5",
+     "out": "9"
+    },
+    {
+     "in": "2\n10\n20",
+     "out": "10"
+    },
+    {
+     "in": "1\n4",
+     "out": "4",
+     "hidden": true
+    },
+    {
+     "in": "4\n1\n1\n1\n1",
+     "out": "2",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-p06",
+   "title": {
+    "uz": "Chapga siljitish",
+    "en": "Rotate left"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta son kiritiladi. Ro'yxatni bir qadam chapga siljiting: birinchi element oxiriga o'tadi. Natijani har bir son alohida qatorda chiqaring.",
+    "en": "N is entered first, then N numbers. Rotate the list one step left: the first element moves to the end. Print the result, one number per line."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "4\n1\n2\n3\n4",
+     "out": "2\n3\n4\n1"
+    },
+    {
+     "in": "1\n5",
+     "out": "5"
+    },
+    {
+     "in": "3\n9\n8\n7",
+     "out": "8\n7\n9",
+     "hidden": true
+    },
+    {
+     "in": "2\n4\n6",
+     "out": "6\n4",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-p07",
+   "title": {
+    "uz": "Ikkinchi eng katta",
+    "en": "Second largest"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N (N ≥ 2), keyin N ta son kiritiladi; kamida ikkita har xil son bor. Eng kattasidan keyingi, takrorlanmaydigan ikkinchi eng katta qiymatni chiqaring.",
+    "en": "N (N ≥ 2) is entered first, then N numbers with at least two different values. Print the second largest distinct value."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "4\n3\n9\n9\n5",
+     "out": "5"
+    },
+    {
+     "in": "2\n1\n2",
+     "out": "1"
+    },
+    {
+     "in": "5\n10\n20\n30\n40\n50",
+     "out": "40",
+     "hidden": true
+    },
+    {
+     "in": "4\n-1\n-5\n-1\n-3",
+     "out": "-3",
+     "hidden": true
+    }
+   ]
+  }
  ]
 }

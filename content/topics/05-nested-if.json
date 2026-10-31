@@ -1394,5 +1394,167 @@
    "judge": null,
    "tests": []
   }
+ ],
+ "practice": [
+  {
+   "id": "nested-if-p01",
+   "title": {
+    "uz": "Kredit qarori",
+    "en": "Loan decision"
+   },
+   "statement": {
+    "uz": "Bank kredit beradi, agar mijoz kamida 18 yoshda va oylik daromadi kamida 3000000 so'm bo'lsa. Yosh va daromad (shu tartibda) kiritiladi. Natija: “Berilsin”; yoshi yetarli, daromadi kam bo'lsa “Daromad kam”; yoshi yetmasa “Yosh kichik”.",
+    "en": "A bank grants a loan if the client is at least 18 and earns at least 3000000 per month. Age and income (in that order) are entered. Print “Berilsin”; if the age is fine but income is low print “Daromad kam”; if too young print “Yosh kichik”."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "25\n5000000",
+     "out": "Berilsin"
+    },
+    {
+     "in": "18\n3000000",
+     "out": "Berilsin"
+    },
+    {
+     "in": "30\n1000000",
+     "out": "Daromad kam",
+     "hidden": true
+    },
+    {
+     "in": "17\n9000000",
+     "out": "Yosh kichik",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-p02",
+   "title": {
+    "uz": "Parol kuchi",
+    "en": "Password strength"
+   },
+   "statement": {
+    "uz": "Parol uzunligi va unda raqam bor-yo'qligi (1 — bor, 0 — yo'q) kiritiladi. Uzunlik 8 dan kam bo'lsa “Qisqa”; aks holda raqam bo'lmasa “Raqam yo'q”; ikkalasi ham yaxshi bo'lsa “Yaxshi” deb chiqaring.",
+    "en": "A password length and whether it contains a digit (1 — yes, 0 — no) are entered. If the length is below 8 print “Qisqa”; otherwise if there is no digit print “Raqam yo'q”; if both are fine print “Yaxshi”."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5\n1",
+     "out": "Qisqa"
+    },
+    {
+     "in": "8\n0",
+     "out": "Raqam yo'q"
+    },
+    {
+     "in": "8\n1",
+     "out": "Yaxshi",
+     "hidden": true
+    },
+    {
+     "in": "12\n0",
+     "out": "Raqam yo'q",
+     "hidden": true
+    },
+    {
+     "in": "7\n0",
+     "out": "Qisqa",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-p03",
+   "title": {
+    "uz": "Sport guruhi",
+    "en": "Sports group"
+   },
+   "statement": {
+    "uz": "12 yoshgacha — “Bolalar” guruhi. 12–17 yoshlilar vazni 50 kg dan kam bo'lsa “Yengil”, aks holda “O'rta” guruhga yoziladi. 18 va undan kattalar — “Kattalar”. Yosh va vazn kiritiladi, guruhni chiqaring.",
+    "en": "Under 12 — group “Bolalar”. Ages 12–17 go to “Yengil” if weight is below 50 kg, otherwise “O'rta”. 18 and older — “Kattalar”. Age and weight are entered; print the group."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "10\n30",
+     "out": "Bolalar"
+    },
+    {
+     "in": "14\n45",
+     "out": "Yengil"
+    },
+    {
+     "in": "14\n50",
+     "out": "O'rta",
+     "hidden": true
+    },
+    {
+     "in": "25\n80",
+     "out": "Kattalar",
+     "hidden": true
+    },
+    {
+     "in": "17\n49",
+     "out": "Yengil",
+     "hidden": true
+    },
+    {
+     "in": "12\n60",
+     "out": "O'rta",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-p04",
+   "title": {
+    "uz": "Svetofor",
+    "en": "Traffic light"
+   },
+   "statement": {
+    "uz": "Svetofor kodi (1 — qizil, 2 — sariq, 3 — yashil) va chorrahagacha masofa (metr) kiritiladi. Yashil — “O'ting”. Sariqda masofa 10 m yoki kam bo'lsa “O'ting”, aks holda “To'xtang”. Qizil — “To'xtang”.",
+    "en": "A traffic light code (1 red, 2 yellow, 3 green) and the distance to the crossing (metres) are entered. Green — “O'ting”. On yellow, “O'ting” if the distance is 10 m or less, otherwise “To'xtang”. Red — “To'xtang”."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3\n50",
+     "out": "O'ting"
+    },
+    {
+     "in": "2\n5",
+     "out": "O'ting"
+    },
+    {
+     "in": "2\n30",
+     "out": "To'xtang",
+     "hidden": true
+    },
+    {
+     "in": "1\n0",
+     "out": "To'xtang",
+     "hidden": true
+    },
+    {
+     "in": "2\n10",
+     "out": "O'ting",
+     "hidden": true
+    }
+   ]
+  }
  ]
 }

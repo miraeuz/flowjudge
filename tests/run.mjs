@@ -33,13 +33,19 @@ import { readdirSync } from 'node:fs';
 const cdir = new URL('../content/topics/', import.meta.url);
 for (const f of readdirSync(cdir).filter(f => f.endsWith('.json'))) {
   const tp = JSON.parse(readFileSync(new URL(f, cdir), 'utf8')); const ids = new Set();
-  const all = [...tp.classwork, ...tp.homework, ...(tp.extra || [])];
+  const all = [...tp.classwork, ...tp.homework, ...(tp.extra || []), ...(tp.practice || [])];
   ok(`content ${f}: ${all.length} problems, unique ids, text present, judged ones have tests`, all.every(p => !ids.has(p.id) && ids.add(p.id) && p.title.uz && p.statement.uz && (!p.judge || (p.tests.length >= 1 && p.tests.every(x => typeof x.out === 'string')))));
 }
 const basics = JSON.parse(readFileSync(new URL('../content/topics/01-basics.json', import.meta.url), 'utf8'));
 const j1 = [...basics.classwork, ...basics.homework, ...basics.extra].find(p => p.judge);
 ok('auto-judged imported problem: correct file is Accepted, wrong is WA', judge(P(`<output expression="${j1.tests[0].out}" newline="True"/>`), j1.tests, j1.judge).verdict === 'AC' && judge(P(`<output expression="12345" newline="True"/>`), j1.tests, j1.judge).verdict === 'WA');
 let judged = 0, weak = 0;
-for (const f of readdirSync(cdir).filter(f => f.endsWith('.json'))) { const tp = JSON.parse(readFileSync(new URL(f, cdir), 'utf8')); for (const p of [...tp.classwork, ...tp.homework, ...(tp.extra || [])]) if (p.tests.length) { judged++; if (p.tests.length < 1 || (p.tests.length > 1 && p.tests.filter(x => x.hidden).length < 1)) weak++; } }
+for (const f of readdirSync(cdir).filter(f => f.endsWith('.json'))) { const tp = JSON.parse(readFileSync(new URL(f, cdir), 'utf8')); for (const p of [...tp.classwork, ...tp.homework, ...(tp.extra || []), ...(tp.practice || [])]) if (p.tests.length) { judged++; if (p.tests.length < 1 || (p.tests.length > 1 && p.tests.filter(x => x.hidden).length < 1)) weak++; } }
 ok(`checkers: ${judged} problems have tests, none weak (multi-test ones all have hidden tests)`, judged >= 89 && weak === 0);
+const prob = (tid, id) => { const tp = JSON.parse(readFileSync(new URL(`../content/topics/${readdirSync(cdir).find(f => f.endsWith(`-${tid}.json`))}`, import.meta.url), 'utf8')); return tp.practice.find(p => p.id === id); };
+const run3 = (tid, id, xml) => { const p = prob(tid, id); return judge(xml, p.tests, p.judge).verdict; };
+ok('practice if-p01 (leap year) solved by a real flowchart', run3('if', 'if-p01', P(D('y','Integer') + `<input variable="y"/><if expression="(y mod 4 = 0 and y mod 100 &lt;&gt; 0) or y mod 400 = 0"><then><output expression="&quot;Kabisa&quot;" newline="True"/></then><else><output expression="&quot;Oddiy&quot;" newline="True"/></else></if>`)) === 'AC');
+ok('practice while-p01 (saving) solved by a real flowchart', run3('while', 'while-p01', P(D('g, s, t, m','Integer') + `<input variable="g"/><input variable="s"/><while expression="t &lt; g"><assign variable="t" expression="t + s"/><assign variable="m" expression="m + 1"/></while><output expression="m" newline="True"/>`)) === 'AC');
+ok('practice for-p04 (rainy streak) solved by a real flowchart', run3('for', 'for-p04', P(D('n, i, x, cur, best','Integer') + `<input variable="n"/><for variable="i" start="1" end="n" direction="inc" step="1"><input variable="x"/><if expression="x = 1"><then><assign variable="cur" expression="cur + 1"/><if expression="cur &gt; best"><then><assign variable="best" expression="cur"/></then><else/></if></then><else><assign variable="cur" expression="0"/></else></if></for><output expression="best" newline="True"/>`)) === 'AC');
+ok('practice: a lazy hard-coded answer fails the hidden tests', run3('if', 'if-p01', P(`<output expression="&quot;Kabisa&quot;" newline="True"/>`)) === 'WA');
 process.exit(bad ? 1 : 0);

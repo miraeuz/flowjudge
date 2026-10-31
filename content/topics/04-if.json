@@ -1942,5 +1942,252 @@
    "judge": null,
    "tests": []
   }
+ ],
+ "practice": [
+  {
+   "id": "if-p01",
+   "title": {
+    "uz": "Kabisa yili",
+    "en": "Leap year"
+   },
+   "statement": {
+    "uz": "Yil kiritiladi. Yil 4 ga bo'linib 100 ga bo'linmasa yoki 400 ga bo'linsa — “Kabisa”, aks holda “Oddiy” deb chiqaring.",
+    "en": "A year is entered. If it is divisible by 4 but not by 100, or divisible by 400, print “Kabisa”, otherwise print “Oddiy”."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "2024",
+     "out": "Kabisa"
+    },
+    {
+     "in": "1900",
+     "out": "Oddiy"
+    },
+    {
+     "in": "2000",
+     "out": "Kabisa",
+     "hidden": true
+    },
+    {
+     "in": "2023",
+     "out": "Oddiy",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-p02",
+   "title": {
+    "uz": "Uchburchak yasash",
+    "en": "Can we build a triangle?"
+   },
+   "statement": {
+    "uz": "Uchta tayoqcha uzunligi kiritiladi. Har qanday ikkitasining yig'indisi uchinchisidan katta bo'lsa “Ha”, aks holda “Yo'q” deb chiqaring.",
+    "en": "Three stick lengths are entered. If the sum of any two is greater than the third, print “Ha”, otherwise print “Yo'q”."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3\n4\n5",
+     "out": "Ha"
+    },
+    {
+     "in": "1\n2\n3",
+     "out": "Yo'q"
+    },
+    {
+     "in": "5\n5\n9",
+     "out": "Ha",
+     "hidden": true
+    },
+    {
+     "in": "10\n1\n1",
+     "out": "Yo'q",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-p03",
+   "title": {
+    "uz": "Kino bileti",
+    "en": "Cinema ticket"
+   },
+   "statement": {
+    "uz": "Kinoteatr narxni yoshga qarab belgilaydi: 6 yoshgacha — 0 (bepul), 6–17 yosh — 15000, 18–59 yosh — 30000, 60 va undan katta — 12000 so'm. Yosh kiritiladi, bilet narxini chiqaring.",
+    "en": "A cinema prices by age: under 6 — 0 (free), 6–17 — 15000, 18–59 — 30000, 60 and over — 12000. The age is entered; print the ticket price."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "4",
+     "out": "0"
+    },
+    {
+     "in": "6",
+     "out": "15000"
+    },
+    {
+     "in": "17",
+     "out": "15000",
+     "hidden": true
+    },
+    {
+     "in": "18",
+     "out": "30000",
+     "hidden": true
+    },
+    {
+     "in": "59",
+     "out": "30000",
+     "hidden": true
+    },
+    {
+     "in": "60",
+     "out": "12000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-p04",
+   "title": {
+    "uz": "Yetkazib berish narxi",
+    "en": "Delivery price"
+   },
+   "statement": {
+    "uz": "Kuryer xizmati: 5 kg gacha (5 kg ham) yuk uchun 20000 so'm. Og'irroq bo'lsa, har bir ortiqcha kg uchun yana 4000 so'm qo'shiladi. Yuk og'irligi (butun kg) kiritiladi. Narxni chiqaring.",
+    "en": "A courier charges 20000 for parcels up to 5 kg (inclusive). For heavier ones, 4000 is added per extra kg. The weight (whole kg) is entered. Print the price."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "3",
+     "out": "20000"
+    },
+    {
+     "in": "5",
+     "out": "20000"
+    },
+    {
+     "in": "6",
+     "out": "24000",
+     "hidden": true
+    },
+    {
+     "in": "12",
+     "out": "48000",
+     "hidden": true
+    },
+    {
+     "in": "1",
+     "out": "20000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-p05",
+   "title": {
+    "uz": "Baho harfi",
+    "en": "Letter grade"
+   },
+   "statement": {
+    "uz": "Imtihon bali (0–100) kiritiladi. 90 va undan yuqori — A, 75–89 — B, 60–74 — C, 40–59 — D, 40 dan past — F. Harfni chiqaring.",
+    "en": "An exam score (0–100) is entered. 90 and above — A, 75–89 — B, 60–74 — C, 40–59 — D, below 40 — F. Print the letter."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "95",
+     "out": "A"
+    },
+    {
+     "in": "90",
+     "out": "A"
+    },
+    {
+     "in": "89",
+     "out": "B",
+     "hidden": true
+    },
+    {
+     "in": "75",
+     "out": "B",
+     "hidden": true
+    },
+    {
+     "in": "60",
+     "out": "C",
+     "hidden": true
+    },
+    {
+     "in": "59",
+     "out": "D",
+     "hidden": true
+    },
+    {
+     "in": "40",
+     "out": "D",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "F",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-p06",
+   "title": {
+    "uz": "Chegirma pog'onalari",
+    "en": "Discount tiers"
+   },
+   "statement": {
+    "uz": "Xarid summasi 500000 va undan ko'p bo'lsa 15%, 200000 va undan ko'p bo'lsa 10% chegirma beriladi, aks holda chegirma yo'q. Summa kiritiladi, to'lanadigan pulni chiqaring.",
+    "en": "A purchase of 500000 or more gets 15% off, 200000 or more gets 10% off, otherwise no discount. The amount is entered; print the amount to pay."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "100000",
+     "out": "100000"
+    },
+    {
+     "in": "200000",
+     "out": "180000"
+    },
+    {
+     "in": "500000",
+     "out": "425000",
+     "hidden": true
+    },
+    {
+     "in": "350000",
+     "out": "315000",
+     "hidden": true
+    }
+   ]
+  }
  ]
 }

@@ -3374,5 +3374,162 @@
    "judge": null,
    "tests": []
   }
+ ],
+ "practice": [
+  {
+   "id": "types-p01",
+   "title": {
+    "uz": "Qaytim pullari",
+    "en": "Making change"
+   },
+   "statement": {
+    "uz": "Sotuvchi qaytimni faqat 5000 va 1000 so'mlik pullar bilan beradi. Qaytim summasi kiritiladi (1000 ga karrali). Avval nechta 5000 so'mlik, keyin nechta 1000 so'mlik kerakligini (alohida qatorlarda) chiqaring. 5000 lik pullardan imkon qadar ko'proq foydalaning.",
+    "en": "A cashier gives change only in 5000 and 1000 notes. The change amount is entered (a multiple of 1000). Print how many 5000 notes, then how many 1000 notes (separate lines), using as many 5000 notes as possible."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "12000",
+     "out": "2\n2"
+    },
+    {
+     "in": "5000",
+     "out": "1\n0"
+    },
+    {
+     "in": "3000",
+     "out": "0\n3",
+     "hidden": true
+    },
+    {
+     "in": "47000",
+     "out": "9\n2",
+     "hidden": true
+    },
+    {
+     "in": "0",
+     "out": "0\n0",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "types-p02",
+   "title": {
+    "uz": "Soat va daqiqa",
+    "en": "Clock time"
+   },
+   "statement": {
+    "uz": "Yarim tundan beri o'tgan daqiqalar soni kiritiladi (0–1439). Soat va daqiqani alohida qatorlarda chiqaring.",
+    "en": "Minutes since midnight are entered (0–1439). Print the hours and the minutes on separate lines."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "75",
+     "out": "1\n15"
+    },
+    {
+     "in": "600",
+     "out": "10\n0"
+    },
+    {
+     "in": "1439",
+     "out": "23\n59",
+     "hidden": true
+    },
+    {
+     "in": "0",
+     "out": "0\n0",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "types-p03",
+   "title": {
+    "uz": "Teskari kod",
+    "en": "Reversed code"
+   },
+   "statement": {
+    "uz": "Uch xonali kod kiritiladi (100–999). Raqamlarini teskari tartibda yozib hosil bo'lgan sonni chiqaring (masalan, 120 → 21).",
+    "en": "A 3-digit code is entered (100–999). Print the number you get by writing its digits in reverse (e.g. 120 → 21)."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "123",
+     "out": "321"
+    },
+    {
+     "in": "500",
+     "out": "5"
+    },
+    {
+     "in": "907",
+     "out": "709",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "1",
+     "hidden": true
+    },
+    {
+     "in": "450",
+     "out": "54",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "types-p04",
+   "title": {
+    "uz": "Mikroavtobuslar",
+    "en": "Minibuses"
+   },
+   "statement": {
+    "uz": "Ekskursiyaga N kishi boradi. Har bir mikroavtobusga 4 kishi sig'adi. Nechta mikroavtobus kerak?",
+    "en": "N people go on a school trip. Each minibus seats 4. How many minibuses are needed?"
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "8",
+     "out": "2"
+    },
+    {
+     "in": "9",
+     "out": "3"
+    },
+    {
+     "in": "1",
+     "out": "1",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "25",
+     "hidden": true
+    },
+    {
+     "in": "3",
+     "out": "1",
+     "hidden": true
+    }
+   ]
+  }
  ]
 }

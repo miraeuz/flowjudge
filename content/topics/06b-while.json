@@ -1,0 +1,197 @@
+{
+ "id": "while",
+ "order": 6.5,
+ "title": {
+  "uz": "While — shartli tsikl",
+  "en": "While — conditional loops"
+ },
+ "lesson": {
+  "uz": "While shart rost bo'lguncha takrorlaydi. Necha marta takrorlanishi oldindan noma'lum bo'lganda ishlating.",
+  "en": "While repeats as long as a condition is true. Use it when you do not know in advance how many repetitions you need."
+ },
+ "classwork": [],
+ "homework": [],
+ "extra": [],
+ "practice": [
+  {
+   "id": "while-p01",
+   "title": {
+    "uz": "Telefon uchun jamg'arma",
+    "en": "Saving for a phone"
+   },
+   "statement": {
+    "uz": "Telefon uchun G so'm kerak, siz har oy S so'm tejaysiz. Avval G, keyin S kiritiladi. Necha oydan keyin kerakli summa yig'iladi? (G = 0 bo'lsa — 0 oy.)",
+    "en": "You need G for a phone and save S every month. G is entered first, then S. After how many months will you have enough? (If G = 0 — 0 months.)"
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "1000000\n300000",
+     "out": "4"
+    },
+    {
+     "in": "500000\n500000",
+     "out": "1"
+    },
+    {
+     "in": "0\n100",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "1000001\n1000000",
+     "out": "2",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-p02",
+   "title": {
+    "uz": "Nol kiritilguncha",
+    "en": "Until zero"
+   },
+   "statement": {
+    "uz": "Sonlar birma-bir kiritiladi; 0 kiritilsa dastur to'xtaydi (0 hisobga kirmaydi). Kiritilgan sonlar yig'indisini va nechta son kiritilganini (alohida qatorlarda) chiqaring.",
+    "en": "Numbers are entered one by one; entering 0 stops the program (0 does not count). Print the sum of the entered numbers and how many were entered (separate lines)."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n3\n8\n0",
+     "out": "16\n3"
+    },
+    {
+     "in": "-2\n4\n0",
+     "out": "2\n2"
+    },
+    {
+     "in": "0",
+     "out": "0\n0",
+     "hidden": true
+    },
+    {
+     "in": "10\n0",
+     "out": "10\n1",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-p03",
+   "title": {
+    "uz": "Oqayotgan hovuz",
+    "en": "Leaking pool"
+   },
+   "statement": {
+    "uz": "Hovuzga har daqiqada 7 litr suv quyiladi. Daqiqa oxirida hovuz hali to'lmagan bo'lsa, 2 litr suv oqib ketadi. Hovuz sig'imi (litr) kiritiladi. Necha daqiqada to'lishini chiqaring.",
+    "en": "7 litres of water are poured into a pool every minute. If the pool is not yet full at the end of a minute, 2 litres leak out. The capacity (litres) is entered. Print how many minutes until it is full."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "1"
+    },
+    {
+     "in": "7",
+     "out": "1"
+    },
+    {
+     "in": "8",
+     "out": "2",
+     "hidden": true
+    },
+    {
+     "in": "20",
+     "out": "4",
+     "hidden": true
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-p04",
+   "title": {
+    "uz": "Aholi o'sishi",
+    "en": "Population growth"
+   },
+   "statement": {
+    "uz": "Shahar aholisi P kishi va har yili 10% ga ko'payadi. Avval P, keyin maqsad T kiritiladi. Necha yildan keyin aholi soni T ga yetadi yoki undan oshadi?",
+    "en": "A city has P people and grows 10% every year. P is entered first, then the target T. After how many years does the population reach or exceed T?"
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "1000\n2000",
+     "out": "8"
+    },
+    {
+     "in": "1000\n1000",
+     "out": "0"
+    },
+    {
+     "in": "500\n600",
+     "out": "2",
+     "hidden": true
+    },
+    {
+     "in": "100\n1000",
+     "out": "25",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-p05",
+   "title": {
+    "uz": "Bankomat PIN kodi",
+    "en": "ATM PIN"
+   },
+   "statement": {
+    "uz": "Bankomat PIN kodi 1234. Urinishlar birma-bir kiritiladi. To'g'ri kod kiritilsa “Ochildi”. Uchta noto'g'ri urinishdan keyin “Bloklandi” chiqarilib, dastur to'xtaydi.",
+    "en": "The ATM PIN is 1234. Attempts are entered one by one. A correct code prints “Ochildi”. After three wrong attempts print “Bloklandi” and stop."
+   },
+   "source": "practice",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1234",
+     "out": "Ochildi"
+    },
+    {
+     "in": "1\n2\n1234",
+     "out": "Ochildi"
+    },
+    {
+     "in": "1\n2\n3",
+     "out": "Bloklandi",
+     "hidden": true
+    },
+    {
+     "in": "4321\n1234",
+     "out": "Ochildi",
+     "hidden": true
+    }
+   ]
+  }
+ ]
+}

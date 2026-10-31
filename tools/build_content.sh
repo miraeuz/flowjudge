@@ -3,3 +3,4 @@
 set -e
 python3 tools/import_problems.py "${1:-tools/_docs_tmp}"
 python3 tools/build_checkers.py
+python3 tools/build_practice.py
