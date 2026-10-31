@@ -2,6 +2,7 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const fs = require('fs'), path = require('path'), https = require('https'), crypto = require('crypto'), os = require('os');
 const { pathToFileURL } = require('url');
+if (process.platform === 'linux' && process.env.APPIMAGE) app.commandLine.appendSwitch('no-sandbox'); // Ubuntu 23.10+ blocks the Chromium sandbox inside AppImages; the app only loads local files
 
 let cfg = {}; try { cfg = JSON.parse(fs.readFileSync(path.join(__dirname, 'config.json'), 'utf8')); } catch {}
 const DAY = 864e5, YEAR = 365 * DAY, STATE = () => path.join(app.getPath('userData'), 'state.json');
