@@ -1,0 +1,497 @@
+{
+ "id": "exam",
+ "order": 10,
+ "title": {
+  "uz": "Imtihon",
+  "en": "Exam"
+ },
+ "lesson": {
+  "uz": "Murakkabroq, bir necha mavzuni birlashtiruvchi masalalar.",
+  "en": "Harder problems that combine several topics."
+ },
+ "classwork": [
+  {
+   "id": "exam-101",
+   "title": {
+    "uz": "Foydalanuvchi 5 ta o'quvchining bahosini (int) kiritadi.…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 5 ta o'quvchining bahosini (int) kiritadi. Ularning o'rtacha bahosini toping va nechta o'quvchi 55 dan yuqori baho olganini sanab chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-102",
+   "title": {
+    "uz": "Do'konda 3 xil mahsulot sotildi. Har birining soni (int)…"
+   },
+   "statement": {
+    "uz": "Do'konda 3 xil mahsulot sotildi. Har birining soni (int) va 1 dona narxi (double) kiritiladi. Har bir mahsulot uchun tushumni chiqaring va oxirida umumiy tushumni toping."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-103",
+   "title": {
+    "uz": "Foydalanuvchi mahsulot narxi (double) va sotib olingan…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi mahsulot narxi (double) va sotib olingan sonini (int) kiritadi. Umumiy summani hisoblang. Agar summa 200 000 dan katta bo'lsa 10% chegirma qo'llang, aks holda chegirmasiz. Yakuniy to'lovni chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-104",
+   "title": {
+    "uz": "Bir hafta (7 kun) davomida har kuni yugurilgan masofa…"
+   },
+   "statement": {
+    "uz": "Bir hafta (7 kun) davomida har kuni yugurilgan masofa (double, km) kiritiladi. Har kuni: agar 3 km dan ko'p yoki teng bo'lsa \"Yaxshi\", aks holda \"Kam\" deb chiqaring. Oxirida haftalik jami masofani toping."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-105",
+   "title": {
+    "uz": "Foydalanuvchi 6 ta son (int) kiritadi. Ularning ichidan…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 6 ta son (int) kiritadi. Ularning ichidan eng katta sonni toping."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-106",
+   "title": {
+    "uz": "Kiritilgan sekundlar soni necha soat, necha daqiqa va…"
+   },
+   "statement": {
+    "uz": "Kiritilgan sekundlar soni necha soat, necha daqiqa va necha sekundga bo'linishini toping (div va mod bilan) va \"X soat Y daqiqa Z sekund\" ko'rinishida chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-107",
+   "title": {
+    "uz": "Foydalanuvchi ismini (string) va oylik maoshini (double)…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ismini (string) va oylik maoshini (double) kiritadi. Yillik maoshni hisoblang (12 oy). Agar yillik maosh 50 000 000 dan katta bo'lsa \"Ismi, yaxshi maosh\", aks holda \"Ismi, oddiy maosh\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-108",
+   "title": {
+    "uz": "1 dan N gacha bo'lgan sonlar ichidan faqat juft sonlarni…"
+   },
+   "statement": {
+    "uz": "1 dan N gacha bo'lgan sonlar ichidan faqat juft sonlarni chiqaring va ularning yig'indisini toping (N kiritiladi)."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-109",
+   "title": {
+    "uz": "Foydalanuvchi 8 ta son (int) kiritadi. Har biri 3 ga…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 8 ta son (int) kiritadi. Har biri 3 ga bo'linsa \"3 ga bo'linadi\" deb chiqaring. Oxirida nechta son 3 ga bo'linishini sanab chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-110",
+   "title": {
+    "uz": "Foydalanuvchi asosiy summa (double) va yillik foizni…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi asosiy summa (double) va yillik foizni (int) kiritadi. 1 yildan keyingi foydani hisoblang (summa × foiz ÷ 100). Agar foyda 1 000 000 dan katta bo'lsa \"Katta foyda\", aks holda \"Oddiy foyda\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-111",
+   "title": {
+    "uz": "5 ta mahsulotning narxi (double) kiritiladi. Har biri…"
+   },
+   "statement": {
+    "uz": "5 ta mahsulotning narxi (double) kiritiladi. Har biri uchun: agar 30 000 dan katta yoki teng bo'lsa \"Qimmat\", aks holda \"Arzon\" deb chiqaring. Oxirida barcha narxlarning o'rtachasini toping."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-112",
+   "title": {
+    "uz": "Foydalanuvchi 3 xonali son kiritadi. Uning raqamlari…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 3 xonali son kiritadi. Uning raqamlari yig'indisini toping."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-113",
+   "title": {
+    "uz": "Foydalanuvchi telefon balansini (double) va necha marta…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi telefon balansini (double) va necha marta to'ldirishini (int) kiritadi. Shuncha marta to'ldirilgan summani kiritib balansga qo'shing. Oxirida yangi balansni chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-114",
+   "title": {
+    "uz": "Foydalanuvchi 7 ta son (int) kiritadi. Nechtasi musbat va…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 7 ta son (int) kiritadi. Nechtasi musbat va nechtasi manfiy ekanini alohida sanab chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-115",
+   "title": {
+    "uz": "O'quvchi 5 ta fandan baho (int) oladi. Har birini…"
+   },
+   "statement": {
+    "uz": "O'quvchi 5 ta fandan baho (int) oladi. Har birini kiriting va o'rtacha bahoni toping. Agar o'rtacha 4 dan katta yoki teng bo'lsa \"A'lochi\", 3 dan katta yoki teng bo'lsa \"Yaxshi\", aks holda \"Yiqildi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-116",
+   "title": {
+    "uz": "Mahsulotning og'irligi grammda kiritiladi. Uning ichida…"
+   },
+   "statement": {
+    "uz": "Mahsulotning og'irligi grammda kiritiladi. Uning ichida nechta kilogramm va nechta gramm borligini toping (1 kg = 1000 g) va \"X kg Y g\" ko'rinishida chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-117",
+   "title": {
+    "uz": "Foydalanuvchi N ta odamning yoshini (int) kiritadi. Har…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi N ta odamning yoshini (int) kiritadi. Har biri uchun: agar 18 dan katta yoki teng bo'lsa \"Katta\", aks holda \"Bola\" deb chiqaring. Oxirida nechta katta odam borligini sanab chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-118",
+   "title": {
+    "uz": "Bir do'kon N kun ishladi (N kiritiladi). Har kungi savdo…"
+   },
+   "statement": {
+    "uz": "Bir do'kon N kun ishladi (N kiritiladi). Har kungi savdo (double) kiritiladi. Barcha kunlarning umumiy va o'rtacha savdosini toping."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-119",
+   "title": {
+    "uz": "Foydalanuvchi ikkita son kiritadi. Ularning yig'indisi,…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ikkita son kiritadi. Ularning yig'indisi, ayirmasi, ko'paytmasi va bo'linmasini alohida chiqaring. Agar ikkinchi son 0 bo'lsa \"Nolga bo'lish mumkin emas\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-120",
+   "title": {
+    "uz": "Foydalanuvchi ismini (string), necha kun o'qiganini (int)…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ismini (string), necha kun o'qiganini (int) va har kuni o'rtacha necha soat o'qiganini (double) kiritadi. Umumiy o'qigan soatni toping (kun × soat). Agar 20 dan katta yoki teng bo'lsa \"Ismi, yaxshi o'qiyapsiz\", aks holda \"Ismi, ko'proq o'qing\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_orta",
+   "judge": null,
+   "tests": []
+  }
+ ],
+ "homework": [
+  {
+   "id": "exam-121",
+   "title": {
+    "uz": "Foydalanuvchi N ta o'quvchining bahosini (int) kiritadi.…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi N ta o'quvchining bahosini (int) kiritadi. Ularning o'rtacha bahosini toping, eng yuqori bahoni aniqlang va nechta o'quvchi 55 dan yuqori baho olganini sanab chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-122",
+   "title": {
+    "uz": "Do'konda M xil mahsulot sotildi. Har birining sotilgan…"
+   },
+   "statement": {
+    "uz": "Do'konda M xil mahsulot sotildi. Har birining sotilgan miqdori (int) va 1 dona narxi (double) kiritiladi. Har bir mahsulot uchun tushumni chiqaring, agar tushum 100 000 dan katta bo'lsa \"Ko'p sotildi\" deb belgilang. Oxirida umumiy tushumni toping."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-123",
+   "title": {
+    "uz": "Foydalanuvchi mahsulot narxi (double) va sotib olingan…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi mahsulot narxi (double) va sotib olingan sonini (int) kiritadi. Umumiy summani hisoblang. Agar summa 500 000 dan katta bo'lsa 15%, 200 000 dan katta bo'lsa 10%, aks holda 5% chegirma qo'llang va yakuniy to'lovni chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-124",
+   "title": {
+    "uz": "Bir hafta (7 kun) davomida har kuni yugurilgan masofa…"
+   },
+   "statement": {
+    "uz": "Bir hafta (7 kun) davomida har kuni yugurilgan masofa (double, km) kiritiladi. Har kuni: agar 5 km dan ko'p yoki teng bo'lsa \"Zo'r\", 3 km dan ko'p bo'lsa \"Yaxshi\", aks holda \"Kam\" deb chiqaring. Oxirida haftalik jami va o'rtacha masofani toping."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-125",
+   "title": {
+    "uz": "Foydalanuvchi N ta son (int) kiritadi. Ularning ichidan…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi N ta son (int) kiritadi. Ularning ichidan eng katta va eng kichik sonni toping hamda ular orasidagi farqni chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-126",
+   "title": {
+    "uz": "Kiritilgan sekundlar soni necha kun, necha soat, necha…"
+   },
+   "statement": {
+    "uz": "Kiritilgan sekundlar soni necha kun, necha soat, necha daqiqa va necha sekundga bo'linishini toping (div va mod bilan) va to'liq ko'rinishda chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-127",
+   "title": {
+    "uz": "Foydalanuvchi ismini (string) va oylik daromadini…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ismini (string) va oylik daromadini (double) kiritadi. Yillik daromadni hisoblang (12 oy). Agar yillik daromad 100 000 000 dan katta bo'lsa \"Ismi, yuqori daromad\", 50 000 000 dan katta bo'lsa \"Ismi, o'rta daromad\", aks holda \"Ismi, past daromad\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-128",
+   "title": {
+    "uz": "1 dan N gacha bo'lgan sonlar ichidan faqat 3 ga yoki 5 ga…"
+   },
+   "statement": {
+    "uz": "1 dan N gacha bo'lgan sonlar ichidan faqat 3 ga yoki 5 ga bo'linadiganlarini chiqaring va ularning yig'indisini toping (N kiritiladi)."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-129",
+   "title": {
+    "uz": "M ta jamoa bor, har birida K o'yinchi (M va K…"
+   },
+   "statement": {
+    "uz": "M ta jamoa bor, har birida K o'yinchi (M va K kiritiladi). Har bir o'yinchining ochkosi (int) kiritiladi. Har bir jamoa tugagach, o'sha jamoaning jami va o'rtacha ochkosini chiqaring. Oxirida eng yuqori jami ochkoli jamoani aniqlang."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-130",
+   "title": {
+    "uz": "Foydalanuvchi asosiy summa (double) va yillik foizni…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi asosiy summa (double) va yillik foizni (int) kiritadi. 5 yil davomida har yili foyda summaga qo'shilib boradi (foyda = joriy summa × foiz ÷ 100). Har yil oxirida yangi summani chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-131",
+   "title": {
+    "uz": "N ta mahsulotning narxi (double) kiritiladi. Har biri…"
+   },
+   "statement": {
+    "uz": "N ta mahsulotning narxi (double) kiritiladi. Har biri uchun: agar 30 000 dan katta yoki teng bo'lsa \"Qimmat\", aks holda \"Arzon\" deb chiqaring. Oxirida eng qimmat mahsulot narxini va barcha mahsulotlar o'rtacha narxini toping."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-132",
+   "title": {
+    "uz": "Foydalanuvchi 3 xonali son kiritadi. Uning raqamlari…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 3 xonali son kiritadi. Uning raqamlari yig'indisini toping va raqamlarini teskari tartibda yozib hosil bo'lgan yangi sonni chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-133",
+   "title": {
+    "uz": "Do'konda P ta kassa bor, har birida Q xaridor (P va Q…"
+   },
+   "statement": {
+    "uz": "Do'konda P ta kassa bor, har birida Q xaridor (P va Q kiritiladi). Har bir xaridor to'lagan summa (double) kiritiladi. Har bir kassa tugagach, o'sha kassaning jami tushumini chiqaring. Oxirida barcha kassalarning umumiy tushumini toping."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-134",
+   "title": {
+    "uz": "Foydalanuvchi N ta sonni (int) kiritadi. Nechtasi musbat,…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi N ta sonni (int) kiritadi. Nechtasi musbat, nechtasi manfiy va nechtasi nol ekanini alohida sanab chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-135",
+   "title": {
+    "uz": "Bir o'quvchi K ta fandan baho oladi (K kiritiladi). Har…"
+   },
+   "statement": {
+    "uz": "Bir o'quvchi K ta fandan baho oladi (K kiritiladi). Har birini kiriting va o'rtacha bahoni toping. Agar o'rtacha 4.5 dan katta yoki teng bo'lsa \"A'lochi\", 3.5 dan katta bo'lsa \"Yaxshi\", 3 dan katta yoki teng bo'lsa \"Qoniqarli\", aks holda \"Yiqildi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-136",
+   "title": {
+    "uz": "Mahsulotning og'irligi grammda kiritiladi. Uning ichida…"
+   },
+   "statement": {
+    "uz": "Mahsulotning og'irligi grammda kiritiladi. Uning ichida nechta tonna, nechta kilogramm va nechta gramm borligini toping (1 t = 1000 kg, 1 kg = 1000 g) va to'liq ko'rinishda chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-137",
+   "title": {
+    "uz": "Telefon balansi (double) va to'ldirishlar soni (int)…"
+   },
+   "statement": {
+    "uz": "Telefon balansi (double) va to'ldirishlar soni (int) kiritiladi. Shuncha marta to'ldirilgan summa kiritilib balansga qo'shiladi. Har to'ldirishdan keyin balansni chiqaring. Oxirida jami qancha pul qo'shilganini alohida toping."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-138",
+   "title": {
+    "uz": "N ta odamning yoshi (int) kiritiladi. Har biri uchun: 0–6…"
+   },
+   "statement": {
+    "uz": "N ta odamning yoshi (int) kiritiladi. Har biri uchun: 0–6 \"Bog'cha\", 7–17 \"Maktab\", 18–59 \"Katta\", aks holda \"Keksa\" deb chiqaring. Oxirida nechta maktab yoshidagi odam borligini sanab chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-139",
+   "title": {
+    "uz": "Bir do'kon N kun ishladi (N kiritiladi). Har kungi savdo…"
+   },
+   "statement": {
+    "uz": "Bir do'kon N kun ishladi (N kiritiladi). Har kungi savdo (double) kiritiladi. Eng yuqori savdo bo'lgan kunni (nechanchi kun) va o'sha kundagi savdo miqdorini aniqlang. Oxirida oylik umumiy savdoni toping."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "exam-140",
+   "title": {
+    "uz": "Foydalanuvchi ismini (string), necha kun o'qiganini (int)…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ismini (string), necha kun o'qiganini (int) va har kuni o'rtacha necha soat o'qiganini (double) kiritadi. Umumiy o'qigan soatni toping (kun × soat). Agar 40 dan katta bo'lsa \"Ismi, a'lo\", 20 dan katta bo'lsa \"Ismi, yaxshi\", 10 dan katta bo'lsa \"Ismi, o'rtacha\", aks holda \"Ismi, ko'proq o'qi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Imtihon_20_qiyin",
+   "judge": null,
+   "tests": []
+  }
+ ],
+ "extra": []
+}

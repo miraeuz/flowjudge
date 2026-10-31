@@ -1,0 +1,1182 @@
+{
+ "id": "for",
+ "order": 6,
+ "title": {
+  "uz": "For — sanoqli tsikl",
+  "en": "For — counted loops"
+ },
+ "lesson": {
+  "uz": "For boshlang'ich, oxirgi qiymat va qadam bilan amalni takrorlaydi.",
+  "en": "For repeats an action using a start, an end and a step."
+ },
+ "classwork": [
+  {
+   "id": "for-101",
+   "title": {
+    "uz": "Do'stlaringizga salom aytish"
+   },
+   "statement": {
+    "uz": "Sizda 6 ta do'stingiz bor. Har biriga “Salom, do'stim!” deb yozmoqchisiz. For tsikli yordamida 6 marta shu gapni ekranga chiqaring. Har safar chiqargandan keyin “Xabar yuborildi” deb ham yozing."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-102",
+   "title": {
+    "uz": "Ballarni hisoblash"
+   },
+   "statement": {
+    "uz": "O'yinda 5 marta o'ynadingiz. Har safar necha ball olganingizni kiritasiz. Har bir ball kiritilgandan keyin uni ekranga chiqarasiz. Barcha 5 ta o'yin tugagach, umumiy to'plagan ballingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-103",
+   "title": {
+    "uz": "Kunlik harorat"
+   },
+   "statement": {
+    "uz": "7 kun davomida har kuni havo haroratini kiritasiz. Har bir kiritilgan harorat uchun: agar 25 dan yuqori yoki teng bo'lsa “Issiq kun”, aks holda “Sovuq kun” deb chiqarasiz. 7 kun tugagach, nechta issiq kun bo'lganini sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-104",
+   "title": {
+    "uz": "Do'kondagi xarajatlar"
+   },
+   "statement": {
+    "uz": "Do'konga bordiingiz va 8 ta mahsulot sotib oldingiz. Har bir mahsulotning narxini kiritasiz. Har bir narx kiritilgandan keyin uni chiqarasiz. Barcha mahsulotlar tugagach, umumiy sarflangan pulni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-105",
+   "title": {
+    "uz": "Uy ishlarini bajarish"
+   },
+   "statement": {
+    "uz": "Onangiz sizga 5 ta uy ishi berdi. Har bir ishni bajardingizmi yoki yo'qmi deb kiritasiz (1 yoki 0). Agar 1 kiritgan bo'lsangiz “Bajardim”, 0 bo'lsa “Bajarmadim” deb chiqarasiz. Oxirida nechta ishni bajarganingizni sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-106",
+   "title": {
+    "uz": "Yugurish kunlari"
+   },
+   "statement": {
+    "uz": "Siz 6 kun yugurdingiz. Har kuni necha kilometr yugurganingizni kiritasiz. Agar 3 km dan ko'p yoki teng yugursangiz “Yaxshi yugurdingiz”, aks holda “Yana yugurishingiz kerak” deb chiqarasiz. Oxirida jami necha kilometr yugurganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-107",
+   "title": {
+    "uz": "Kitob o'qish"
+   },
+   "statement": {
+    "uz": "5 kun davomida kitob o'qidingiz. Har kuni necha sahifa o'qiganingizni kiritasiz. Har kuni sahifa sonini chiqarasiz. 5 kun tugagach, jami necha sahifa o'qiganingizni hisoblab chiqarasiz. Agar jami 50 sahifadan ko'p o'qigan bo'lsangiz “Yaxshi o'qiyapsiz”, aks holda “Yana o'qishingiz kerak” deb chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-108",
+   "title": {
+    "uz": "Baholar"
+   },
+   "statement": {
+    "uz": "Siz 7 ta faningizdan baho oldingiz. Har bir bahoni (1 dan 5 gacha) kiritasiz. Har bir baho uchun: 5 bo'lsa “A'lo”, 4 bo'lsa “Yaxshi”, 3 bo'lsa “Qoniqarli”, 3 dan past bo'lsa “Qayta o'qish kerak” deb chiqarasiz. Oxirida nechta a'lo baho olganingizni sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-109",
+   "title": {
+    "uz": "Telefon to'ldirish"
+   },
+   "statement": {
+    "uz": "Telefoningizni 4 marta to'ldirdingiz. Har safar qancha pul to'ldirganingizni kiritasiz. Har safar summani chiqarasiz. Oxirida jami qancha pul to'ldirganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-110",
+   "title": {
+    "uz": "Sport zalidagi mashqlar"
+   },
+   "statement": {
+    "uz": "Sport zaliga 5 marta bordiingiz. Har safar necha marta push-up qilganingizni kiritasiz. Agar 15 tadan ko'p yoki teng qilsangiz “Kuchli”, aks holda “Yana mashq qiling” deb chiqarasiz. Oxirida jami necha marta push-up qilganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-111",
+   "title": {
+    "uz": "Kunlik sarf-xarajat"
+   },
+   "statement": {
+    "uz": "7 kun davomida har kuni qancha pul sarflaganingizni kiritasiz. Har kuni: agar 50 000 so'mdan ko'p sarflasangiz “Ko'p sarflandingiz”, aks holda “Yaxshi tejadingiz” deb chiqarasiz. Oxirida jami qancha pul sarflaganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-112",
+   "title": {
+    "uz": "O'yin yutishlari"
+   },
+   "statement": {
+    "uz": "Kompyuter o'yinida 8 marta o'ynadingiz. Har safar yutganingizni yoki yutqazganingizni kiritasiz (1 yoki 0). Agar 1 kiritgan bo'lsangiz “Yutdingiz!”, 0 bo'lsa “Yutqazdingiz” deb chiqarasiz. Oxirida nechta marta yutganingizni sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-113",
+   "title": {
+    "uz": "Meva narxlari"
+   },
+   "statement": {
+    "uz": "Bozordan 6 ta meva sotib oldingiz. Har bir mevaning narxini kiritasiz. Agar narx 15 000 so'mdan qimmat yoki teng bo'lsa “Qimmat meva”, aks holda “Arzon meva” deb chiqarasiz. Oxirida barcha mevalarning umumiy narxini hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-114",
+   "title": {
+    "uz": "Darsga kechikish"
+   },
+   "statement": {
+    "uz": "Maktabda 6 ta dars bor. Har bir darsga necha daqiqa kechikkaningizni kiritasiz. Agar 5 daqiqadan ko'p kechiksangiz “Kechikdingiz”, aks holda “Vaqtida keldingiz” deb chiqarasiz. Oxirida jami necha daqiqa kechikkaningizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-115",
+   "title": {
+    "uz": "Velosipedda yurish"
+   },
+   "statement": {
+    "uz": "5 kun davomida velosipedda yurdingiz. Har kuni necha soat yurganingizni kiritasiz. Agar 1 soatdan ko'p yoki teng yursangiz “Yaxshi mashq”, aks holda “Kam yurdingiz” deb chiqarasiz. Oxirida jami necha soat yurganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-116",
+   "title": {
+    "uz": "Nonushta yeyish"
+   },
+   "statement": {
+    "uz": "7 kun davomida nonushta yedingizmi yoki yo'qmi deb kiritasiz (1 yoki 0). Har kuni: 1 bo'lsa “Nonushta yedingiz”, 0 bo'lsa “Nonushta yemadingiz” deb chiqarasiz. Oxirida nechta kun nonushta yeganingizni sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-117",
+   "title": {
+    "uz": "O'yinchoqlar narxi"
+   },
+   "statement": {
+    "uz": "Do'kondan 5 ta o'yinchoq sotib oldingiz. Har birining narxini kiritasiz. Har bir narxni chiqarasiz. Oxirida umumiy summani hisoblab chiqarasiz. Agar umumiy summa 100 000 so'mdan oshsa “Ko'p pul sarfladingiz”, aks holda “Yaxshi tejadingiz” deb chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-118",
+   "title": {
+    "uz": "Futbol gollari"
+   },
+   "statement": {
+    "uz": "Futbol o'yinida 6 ta gol urildi. Har bir golni qaysi jamoa urganini kiritasiz (1 yoki 2). Har safar “1-jamoa gol urdi” yoki “2-jamoa gol urdi” deb chiqarasiz. Oxirida qaysi jamoa ko'proq gol urganini aniqlab chiqarasiz. Agar teng bo'lsa “Durang” deb chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-119",
+   "title": {
+    "uz": "Kunlik suv ichish"
+   },
+   "statement": {
+    "uz": "7 kun davomida har kuni necha stakan suv ichganingizni kiritasiz. Agar 8 stakandan ko'p yoki teng ichsangiz “Yaxshi ichdingiz”, aks holda “Kam suv ichdingiz” deb chiqarasiz. Oxirida jami necha stakan suv ichganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-120",
+   "title": {
+    "uz": "Maktab baholari va o'rtacha"
+   },
+   "statement": {
+    "uz": "Siz 5 ta nazorat ishidan baho oldingiz. Har bir bahoni kiritasiz. Har bir bahoni chiqarasiz. Oxirida barcha baholarning yig'indisini hisoblab, o'rtacha bahoni topasiz (yig'indi / 5). Agar o'rtacha 4.5 dan yuqori yoki teng bo'lsa “A'lochi”, aks holda “Yaxshi o'qiyapsiz” deb chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Boshlovchilar_20_masala",
+   "judge": null,
+   "tests": []
+  }
+ ],
+ "homework": [
+  {
+   "id": "for-121",
+   "title": {
+    "uz": "1 dan 10 gacha bo'lgan sonlarni ekranga chiqaring."
+   },
+   "statement": {
+    "uz": "1 dan 10 gacha bo'lgan sonlarni ekranga chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-122",
+   "title": {
+    "uz": "1 dan N gacha sonlarni chiqaring (N kiritiladi)."
+   },
+   "statement": {
+    "uz": "1 dan N gacha sonlarni chiqaring (N kiritiladi)."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-123",
+   "title": {
+    "uz": "\"Salom\" so'zini N marta chiqaring (N kiritiladi)."
+   },
+   "statement": {
+    "uz": "\"Salom\" so'zini N marta chiqaring (N kiritiladi)."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-124",
+   "title": {
+    "uz": "1 dan 5 gacha sonlarni chiqaring."
+   },
+   "statement": {
+    "uz": "1 dan 5 gacha sonlarni chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-125",
+   "title": {
+    "uz": "A dan B gacha sonlarni chiqaring (A va B kiritiladi)."
+   },
+   "statement": {
+    "uz": "A dan B gacha sonlarni chiqaring (A va B kiritiladi)."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-126",
+   "title": {
+    "uz": "10 dan 1 gacha teskari sanab chiqaring."
+   },
+   "statement": {
+    "uz": "10 dan 1 gacha teskari sanab chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-127",
+   "title": {
+    "uz": "1 dan N gacha sonlarning yig'indisini toping (N…"
+   },
+   "statement": {
+    "uz": "1 dan N gacha sonlarning yig'indisini toping (N kiritiladi)."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-128",
+   "title": {
+    "uz": "N ta yulduzcha () chiqaring (N kiritiladi)."
+   },
+   "statement": {
+    "uz": "N ta yulduzcha () chiqaring (N kiritiladi)."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-129",
+   "title": {
+    "uz": "2 dan 20 gacha 2 qadam bilan (juft sonlarni) chiqaring."
+   },
+   "statement": {
+    "uz": "2 dan 20 gacha 2 qadam bilan (juft sonlarni) chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-130",
+   "title": {
+    "uz": "N ta o'quvchiga navbat raqamini (1, 2, 3, ...) chiqaring…"
+   },
+   "statement": {
+    "uz": "N ta o'quvchiga navbat raqamini (1, 2, 3, ...) chiqaring (N kiritiladi)."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-131",
+   "title": {
+    "uz": "1 dan N gacha har bir sonni 2 ga ko'paytirib chiqaring (N…"
+   },
+   "statement": {
+    "uz": "1 dan N gacha har bir sonni 2 ga ko'paytirib chiqaring (N kiritiladi)."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-132",
+   "title": {
+    "uz": "1 dan 10 gacha sonlarning kvadratini chiqaring."
+   },
+   "statement": {
+    "uz": "1 dan 10 gacha sonlarning kvadratini chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-133",
+   "title": {
+    "uz": "N ta son kiritiladi. Ularning yig'indisini toping."
+   },
+   "statement": {
+    "uz": "N ta son kiritiladi. Ularning yig'indisini toping."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-134",
+   "title": {
+    "uz": "1 dan N gacha sonlarni chiqaring, oxirida \"Tugadi\" deb…"
+   },
+   "statement": {
+    "uz": "1 dan N gacha sonlarni chiqaring, oxirida \"Tugadi\" deb yozing."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-135",
+   "title": {
+    "uz": "3 dan 30 gacha 3 qadam bilan sonlarni chiqaring."
+   },
+   "statement": {
+    "uz": "3 dan 30 gacha 3 qadam bilan sonlarni chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-136",
+   "title": {
+    "uz": "\"Men dasturchi bo'laman\" jumlasini N marta chiqaring."
+   },
+   "statement": {
+    "uz": "\"Men dasturchi bo'laman\" jumlasini N marta chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-137",
+   "title": {
+    "uz": "1 dan 5 gacha har bir son yonida uning ikki barobarini…"
+   },
+   "statement": {
+    "uz": "1 dan 5 gacha har bir son yonida uning ikki barobarini chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-138",
+   "title": {
+    "uz": "N ta son kiritiladi. Har birini ekranga qayta chiqarin"
+   },
+   "statement": {
+    "uz": "N ta son kiritiladi. Har birini ekranga qayta chiqarin"
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-139",
+   "title": {
+    "uz": "\"Yashasin!\" so'zini N marta chiqaring."
+   },
+   "statement": {
+    "uz": "\"Yashasin!\" so'zini N marta chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-140",
+   "title": {
+    "uz": "1 dan N gacha sonlarni chiqaring, har birining yoniga…"
+   },
+   "statement": {
+    "uz": "1 dan N gacha sonlarni chiqaring, har birining yoniga \"-son\" deb yozing."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-141",
+   "title": {
+    "uz": "1 dan 20 gacha juft sonlarni chiqaring."
+   },
+   "statement": {
+    "uz": "1 dan 20 gacha juft sonlarni chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-142",
+   "title": {
+    "uz": "1 dan 20 gacha toq sonlarni chiqaring."
+   },
+   "statement": {
+    "uz": "1 dan 20 gacha toq sonlarni chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-143",
+   "title": {
+    "uz": "N ta \"+\" belgisini chiqaring."
+   },
+   "statement": {
+    "uz": "N ta \"+\" belgisini chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-144",
+   "title": {
+    "uz": "1 dan 5 gacha sonlarning kubini chiqaring."
+   },
+   "statement": {
+    "uz": "1 dan 5 gacha sonlarning kubini chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-145",
+   "title": {
+    "uz": "A dan B gacha sonlarning yig'indisini toping (A va B…"
+   },
+   "statement": {
+    "uz": "A dan B gacha sonlarning yig'indisini toping (A va B kiritiladi)."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-146",
+   "title": {
+    "uz": "\"Assalomu alaykum\" jumlasini N marta chiqaring."
+   },
+   "statement": {
+    "uz": "\"Assalomu alaykum\" jumlasini N marta chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-147",
+   "title": {
+    "uz": "1 dan N gacha har bir songa 5 qo'shib chiqaring."
+   },
+   "statement": {
+    "uz": "1 dan N gacha har bir songa 5 qo'shib chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-148",
+   "title": {
+    "uz": "1 dan 10 gacha sonlarni va ularning yig'indisini…"
+   },
+   "statement": {
+    "uz": "1 dan 10 gacha sonlarni va ularning yig'indisini chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-149",
+   "title": {
+    "uz": "N ta son kiritiladi. Har birini 2 ga ko'paytirib…"
+   },
+   "statement": {
+    "uz": "N ta son kiritiladi. Har birini 2 ga ko'paytirib chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-150",
+   "title": {
+    "uz": "2 dan 30 gacha 2 qadam bilan chiqaring."
+   },
+   "statement": {
+    "uz": "2 dan 30 gacha 2 qadam bilan chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  }
+ ],
+ "extra": [
+  {
+   "id": "for-151",
+   "title": {
+    "uz": "N ta o'quvchiga \"Keldi\" deb chiqaring."
+   },
+   "statement": {
+    "uz": "N ta o'quvchiga \"Keldi\" deb chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-152",
+   "title": {
+    "uz": "N dan 1 gacha teskari sanab chiqaring (N kiritiladi)."
+   },
+   "statement": {
+    "uz": "N dan 1 gacha teskari sanab chiqaring (N kiritiladi)."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-153",
+   "title": {
+    "uz": "Ismingizni N marta chiqaring (N kiritiladi)."
+   },
+   "statement": {
+    "uz": "Ismingizni N marta chiqaring (N kiritiladi)."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-154",
+   "title": {
+    "uz": "1 dan N gacha sonlarni chiqaring."
+   },
+   "statement": {
+    "uz": "1 dan N gacha sonlarni chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-155",
+   "title": {
+    "uz": "N dan 1 gacha teskari sanab chiqaring."
+   },
+   "statement": {
+    "uz": "N dan 1 gacha teskari sanab chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-156",
+   "title": {
+    "uz": "\"Rahmat\" so'zini N marta chiqaring."
+   },
+   "statement": {
+    "uz": "\"Rahmat\" so'zini N marta chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-157",
+   "title": {
+    "uz": "1 dan N gacha sonlarning yig'indisini toping."
+   },
+   "statement": {
+    "uz": "1 dan N gacha sonlarning yig'indisini toping."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-158",
+   "title": {
+    "uz": "A dan B gacha sonlarni chiqaring."
+   },
+   "statement": {
+    "uz": "A dan B gacha sonlarni chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-159",
+   "title": {
+    "uz": "N ta yulduzcha () chiqaring."
+   },
+   "statement": {
+    "uz": "N ta yulduzcha () chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-160",
+   "title": {
+    "uz": "N ta o'quvchiga navbat raqamini bering."
+   },
+   "statement": {
+    "uz": "N ta o'quvchiga navbat raqamini bering."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-161",
+   "title": {
+    "uz": "5 sonining ko'paytirish jadvalini chiqaring: 5×1, 5×2,…"
+   },
+   "statement": {
+    "uz": "5 sonining ko'paytirish jadvalini chiqaring: 5×1, 5×2, ..., 5×10."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-162",
+   "title": {
+    "uz": "Kiritilgan sonning ko'paytirish jadvalini chiqaring (1…"
+   },
+   "statement": {
+    "uz": "Kiritilgan sonning ko'paytirish jadvalini chiqaring (1 dan 10 gacha)."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-163",
+   "title": {
+    "uz": "N kun davomida har kungi harorat kiritiladi. Umumiy…"
+   },
+   "statement": {
+    "uz": "N kun davomida har kungi harorat kiritiladi. Umumiy yig'indini toping."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-164",
+   "title": {
+    "uz": "N kun davomida harorat kiritiladi. O'rtacha haroratni…"
+   },
+   "statement": {
+    "uz": "N kun davomida harorat kiritiladi. O'rtacha haroratni toping."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-165",
+   "title": {
+    "uz": "N ta mahsulotning narxi kiritiladi. Jami narxni toping."
+   },
+   "statement": {
+    "uz": "N ta mahsulotning narxi kiritiladi. Jami narxni toping."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-166",
+   "title": {
+    "uz": "N ta o'quvchining bahosi kiritiladi. Yig'indisini toping."
+   },
+   "statement": {
+    "uz": "N ta o'quvchining bahosi kiritiladi. Yig'indisini toping."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-167",
+   "title": {
+    "uz": "N ta o'quvchining bahosi kiritiladi. O'rtacha bahoni…"
+   },
+   "statement": {
+    "uz": "N ta o'quvchining bahosi kiritiladi. O'rtacha bahoni toping."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-168",
+   "title": {
+    "uz": "1 dan N gacha sonlarning kvadratini chiqaring."
+   },
+   "statement": {
+    "uz": "1 dan N gacha sonlarning kvadratini chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-169",
+   "title": {
+    "uz": "Do'konga N kishi keladi. Har biriga \"Xush kelibsiz\" deb…"
+   },
+   "statement": {
+    "uz": "Do'konga N kishi keladi. Har biriga \"Xush kelibsiz\" deb chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-170",
+   "title": {
+    "uz": "N ta son kiritiladi. Ularning yig'indisini va…"
+   },
+   "statement": {
+    "uz": "N ta son kiritiladi. Ularning yig'indisini va o'rtachasini toping."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-171",
+   "title": {
+    "uz": "\"Hurra!\" so'zini N marta chiqaring."
+   },
+   "statement": {
+    "uz": "\"Hurra!\" so'zini N marta chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-172",
+   "title": {
+    "uz": "N ta son kiritiladi. Eng kattasini toping."
+   },
+   "statement": {
+    "uz": "N ta son kiritiladi. Eng kattasini toping."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-173",
+   "title": {
+    "uz": "N ta son kiritiladi. Eng kichigini toping."
+   },
+   "statement": {
+    "uz": "N ta son kiritiladi. Eng kichigini toping."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-174",
+   "title": {
+    "uz": "1 dan N gacha sonlarni ikki barobar qilib chiqaring."
+   },
+   "statement": {
+    "uz": "1 dan N gacha sonlarni ikki barobar qilib chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-175",
+   "title": {
+    "uz": "Bir hafta (7 kun) davomida sarflangan pul kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Bir hafta (7 kun) davomida sarflangan pul kiritiladi. Umumiy xarajatni toping."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-176",
+   "title": {
+    "uz": "N ta mahsulotning og'irligi (kg) kiritiladi. Umumiy…"
+   },
+   "statement": {
+    "uz": "N ta mahsulotning og'irligi (kg) kiritiladi. Umumiy og'irlikni toping."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-177",
+   "title": {
+    "uz": "N ta bolaning yoshi kiritiladi. Yoshlar yig'indisini…"
+   },
+   "statement": {
+    "uz": "N ta bolaning yoshi kiritiladi. Yoshlar yig'indisini toping."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-178",
+   "title": {
+    "uz": "2 dan N gacha juft sonlarni chiqaring."
+   },
+   "statement": {
+    "uz": "2 dan N gacha juft sonlarni chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-179",
+   "title": {
+    "uz": "1 dan N gacha toq sonlarni chiqaring."
+   },
+   "statement": {
+    "uz": "1 dan N gacha toq sonlarni chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-180",
+   "title": {
+    "uz": "N ta qatorda \"\" belgisini chiqaring."
+   },
+   "statement": {
+    "uz": "N ta qatorda \"\" belgisini chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-181",
+   "title": {
+    "uz": "N ta son kiritiladi. Ularning ko'paytmasini toping."
+   },
+   "statement": {
+    "uz": "N ta son kiritiladi. Ularning ko'paytmasini toping."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-182",
+   "title": {
+    "uz": "Do'kon N kun ishladi. Har kungi savdo kiritiladi. Umumiy…"
+   },
+   "statement": {
+    "uz": "Do'kon N kun ishladi. Har kungi savdo kiritiladi. Umumiy savdoni toping."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-183",
+   "title": {
+    "uz": "N ta o'quvchining ismi kiritiladi. Har biriga \"Salom,…"
+   },
+   "statement": {
+    "uz": "N ta o'quvchining ismi kiritiladi. Har biriga \"Salom, [ism]\" deb chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-184",
+   "title": {
+    "uz": "1 dan 12 gacha (oylar) sonlarni chiqaring."
+   },
+   "statement": {
+    "uz": "1 dan 12 gacha (oylar) sonlarni chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-185",
+   "title": {
+    "uz": "N ta sonning yig'indisini toping. Agar yig'indi 100 dan…"
+   },
+   "statement": {
+    "uz": "N ta sonning yig'indisini toping. Agar yig'indi 100 dan katta bo'lsa \"Katta\" deb yozing."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-186",
+   "title": {
+    "uz": "1 dan N gacha sonlarni chiqaring; 5 dan kattalarini…"
+   },
+   "statement": {
+    "uz": "1 dan N gacha sonlarni chiqaring; 5 dan kattalarini \"Katta\" deb belgilang."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-187",
+   "title": {
+    "uz": "N ta baho kiritiladi. Nechtasi 55 dan katta ekanini…"
+   },
+   "statement": {
+    "uz": "N ta baho kiritiladi. Nechtasi 55 dan katta ekanini sanang."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-188",
+   "title": {
+    "uz": "N ta son kiritiladi. Nechtasi 10 dan katta ekanini sanang."
+   },
+   "statement": {
+    "uz": "N ta son kiritiladi. Nechtasi 10 dan katta ekanini sanang."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-189",
+   "title": {
+    "uz": "10 ta mahsulotning narxi kiritiladi. Jami narxni toping."
+   },
+   "statement": {
+    "uz": "10 ta mahsulotning narxi kiritiladi. Jami narxni toping."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-190",
+   "title": {
+    "uz": "N ta odamning bo'yi kiritiladi. Eng balandini toping."
+   },
+   "statement": {
+    "uz": "N ta odamning bo'yi kiritiladi. Eng balandini toping."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-191",
+   "title": {
+    "uz": "1 dan N gacha sonlarni chiqaring va yig'indisini oxirida…"
+   },
+   "statement": {
+    "uz": "1 dan N gacha sonlarni chiqaring va yig'indisini oxirida chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-192",
+   "title": {
+    "uz": "Bir sinfda N o'quvchi bor. Har biriga tartib raqami bilan…"
+   },
+   "statement": {
+    "uz": "Bir sinfda N o'quvchi bor. Har biriga tartib raqami bilan \"keldi\" deb chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-193",
+   "title": {
+    "uz": "N ta baho kiritiladi. 50 dan kattalari nechtaligini…"
+   },
+   "statement": {
+    "uz": "N ta baho kiritiladi. 50 dan kattalari nechtaligini sanang."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-194",
+   "title": {
+    "uz": "N kunlik daromad kiritiladi. Eng yuqori kunlik daromadni…"
+   },
+   "statement": {
+    "uz": "N kunlik daromad kiritiladi. Eng yuqori kunlik daromadni toping."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-195",
+   "title": {
+    "uz": "N marta \"=\" belgisini chiqarib, bir chiziq hosil qiling."
+   },
+   "statement": {
+    "uz": "N marta \"=\" belgisini chiqarib, bir chiziq hosil qiling."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-196",
+   "title": {
+    "uz": "1 dan N gacha sonlarning yig'indisini va o'rtachasini…"
+   },
+   "statement": {
+    "uz": "1 dan N gacha sonlarning yig'indisini va o'rtachasini chiqaring."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "for-197",
+   "title": {
+    "uz": "N ta mahsulotning narxi kiritiladi. 100 000 dan…"
+   },
+   "statement": {
+    "uz": "N ta mahsulotning narxi kiritiladi. 100 000 dan qimmatlari nechtaligini sanang."
+   },
+   "source": "For_masalalar_toplami",
+   "judge": null,
+   "tests": []
+  }
+ ]
+}

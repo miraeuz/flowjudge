@@ -1,0 +1,738 @@
+{
+ "id": "array",
+ "order": 8,
+ "title": {
+  "uz": "Array — massivlar",
+  "en": "Arrays"
+ },
+ "lesson": {
+  "uz": "Massiv bir nechta qiymatni bitta nom ostida saqlaydi. Elementlarga indeks bilan murojaat qilinadi (0 dan).",
+  "en": "An array stores several values under one name. Elements are accessed by index (from 0)."
+ },
+ "classwork": [
+  {
+   "id": "array-101",
+   "title": {
+    "uz": "Massiv berilgan: a = [5, 8, 3, 7, 2]. Barcha elementlarni…"
+   },
+   "statement": {
+    "uz": "Massiv berilgan: a = [5, 8, 3, 7, 2]. Barcha elementlarni ekranga chiqaring."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-102",
+   "title": {
+    "uz": "Massiv berilgan: a = [10, 20, 30, 40]. Elementlar…"
+   },
+   "statement": {
+    "uz": "Massiv berilgan: a = [10, 20, 30, 40]. Elementlar yig'indisini toping."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-103",
+   "title": {
+    "uz": "Baholar massivi: baho = [5, 4, 3, 5, 4]. O'rtacha bahoni…"
+   },
+   "statement": {
+    "uz": "Baholar massivi: baho = [5, 4, 3, 5, 4]. O'rtacha bahoni toping."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-104",
+   "title": {
+    "uz": "Narxlar massivi: narx = [12000, 8000, 15000, 6000].…"
+   },
+   "statement": {
+    "uz": "Narxlar massivi: narx = [12000, 8000, 15000, 6000]. Umumiy narxni toping."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-105",
+   "title": {
+    "uz": "Yoshlar massivi: yosh = [12, 15, 9, 18, 7]. Eng katta…"
+   },
+   "statement": {
+    "uz": "Yoshlar massivi: yosh = [12, 15, 9, 18, 7]. Eng katta yoshni toping."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-106",
+   "title": {
+    "uz": "Yoshlar massivi: yosh = [12, 15, 9, 18, 7]. Eng kichik…"
+   },
+   "statement": {
+    "uz": "Yoshlar massivi: yosh = [12, 15, 9, 18, 7]. Eng kichik yoshni toping."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-107",
+   "title": {
+    "uz": "Massiv berilgan: a = [1, 2, 3, 4, 5]. Elementlarni…"
+   },
+   "statement": {
+    "uz": "Massiv berilgan: a = [1, 2, 3, 4, 5]. Elementlarni teskari tartibda chiqaring."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-108",
+   "title": {
+    "uz": "Og'irliklar massivi: ogirlik = [3, 5, 2, 4] (kg). Umumiy…"
+   },
+   "statement": {
+    "uz": "Og'irliklar massivi: ogirlik = [3, 5, 2, 4] (kg). Umumiy og'irlikni toping."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-109",
+   "title": {
+    "uz": "Harorat massivi: harorat = [24, 27, 30, 22, 26, 28, 25]…"
+   },
+   "statement": {
+    "uz": "Harorat massivi: harorat = [24, 27, 30, 22, 26, 28, 25] (7 kun). Eng issiq kunni toping."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-110",
+   "title": {
+    "uz": "Harorat massivi: harorat = [24, 27, 30, 22, 26, 28, 25].…"
+   },
+   "statement": {
+    "uz": "Harorat massivi: harorat = [24, 27, 30, 22, 26, 28, 25]. O'rtacha haroratni toping."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-111",
+   "title": {
+    "uz": "Baholar massivi: baho = [55, 40, 70, 90, 30, 65].…"
+   },
+   "statement": {
+    "uz": "Baholar massivi: baho = [55, 40, 70, 90, 30, 65]. Nechtasi 55 dan katta ekanini sanang."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-112",
+   "title": {
+    "uz": "Massiv berilgan: a = [7, 3, 9, 1, 6]. Eng katta sonni…"
+   },
+   "statement": {
+    "uz": "Massiv berilgan: a = [7, 3, 9, 1, 6]. Eng katta sonni toping."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-113",
+   "title": {
+    "uz": "Massiv berilgan: a = [7, 3, 9, 1, 6]. Eng kichik sonni…"
+   },
+   "statement": {
+    "uz": "Massiv berilgan: a = [7, 3, 9, 1, 6]. Eng kichik sonni toping."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-114",
+   "title": {
+    "uz": "Narxlar massivi: narx = [50000, 120000, 90000, 30000].…"
+   },
+   "statement": {
+    "uz": "Narxlar massivi: narx = [50000, 120000, 90000, 30000]. 100000 dan qimmatlari nechtaligini sanang."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-115",
+   "title": {
+    "uz": "Massiv berilgan: a = [2, 4, 6, 8, 10]. Har bir elementni…"
+   },
+   "statement": {
+    "uz": "Massiv berilgan: a = [2, 4, 6, 8, 10]. Har bir elementni 2 ga ko'paytirib chiqaring."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-116",
+   "title": {
+    "uz": "Ismlar massivi: ism = [\"Ali\", \"Vali\", \"Guli\"]. Har biriga…"
+   },
+   "statement": {
+    "uz": "Ismlar massivi: ism = [\"Ali\", \"Vali\", \"Guli\"]. Har biriga \"Salom, [ism]\" deb chiqaring."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-117",
+   "title": {
+    "uz": "Massiv berilgan: a = [4, 12, 7, 20, 3]. Faqat 10 dan…"
+   },
+   "statement": {
+    "uz": "Massiv berilgan: a = [4, 12, 7, 20, 3]. Faqat 10 dan kattalarini chiqaring."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-118",
+   "title": {
+    "uz": "Massiv berilgan: a = [10, 20, 30, 40, 50]. Yig'indisi va…"
+   },
+   "statement": {
+    "uz": "Massiv berilgan: a = [10, 20, 30, 40, 50]. Yig'indisi va o'rtachasini toping."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-119",
+   "title": {
+    "uz": "Bo'ylar massivi: boy = [140, 155, 148, 160, 150]. Eng…"
+   },
+   "statement": {
+    "uz": "Bo'ylar massivi: boy = [140, 155, 148, 160, 150]. Eng baland bo'yni toping."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-120",
+   "title": {
+    "uz": "Massiv berilgan: a = [8, 3, 5, 9, 1]. Birinchi va oxirgi…"
+   },
+   "statement": {
+    "uz": "Massiv berilgan: a = [8, 3, 5, 9, 1]. Birinchi va oxirgi elementni chiqaring."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  }
+ ],
+ "homework": [
+  {
+   "id": "array-121",
+   "title": {
+    "uz": "Mahsulot sonlari massivi: son = [6, 4, 10, 8]. Jami…"
+   },
+   "statement": {
+    "uz": "Mahsulot sonlari massivi: son = [6, 4, 10, 8]. Jami mahsulotlar sonini toping."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-122",
+   "title": {
+    "uz": "Massiv berilgan: a = [2, 3, 4]. Elementlar ko'paytmasini…"
+   },
+   "statement": {
+    "uz": "Massiv berilgan: a = [2, 3, 4]. Elementlar ko'paytmasini toping."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-123",
+   "title": {
+    "uz": "Fan baholari massivi: baho = [5, 4, 5, 3, 4]. O'rtacha…"
+   },
+   "statement": {
+    "uz": "Fan baholari massivi: baho = [5, 4, 5, 3, 4]. O'rtacha bahoni toping."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-124",
+   "title": {
+    "uz": "Kunlik daromadlar massivi: daromad = [200000, 350000,…"
+   },
+   "statement": {
+    "uz": "Kunlik daromadlar massivi: daromad = [200000, 350000, 150000, 400000]. Eng yuqori daromadli kunni toping."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-125",
+   "title": {
+    "uz": "Massiv berilgan: a = [120, 80, 200, 60, 150]. Nechtasi…"
+   },
+   "statement": {
+    "uz": "Massiv berilgan: a = [120, 80, 200, 60, 150]. Nechtasi 100 dan katta ekanini sanang."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-126",
+   "title": {
+    "uz": "Vaznlar massivi: vazn = [30, 28, 35, 32] (kg). O'rtacha…"
+   },
+   "statement": {
+    "uz": "Vaznlar massivi: vazn = [30, 28, 35, 32] (kg). O'rtacha vaznni toping."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-127",
+   "title": {
+    "uz": "Massiv berilgan: a = [11, 22, 33, 44]. Elementlarni…"
+   },
+   "statement": {
+    "uz": "Massiv berilgan: a = [11, 22, 33, 44]. Elementlarni tartib raqami bilan chiqaring (1-son, 2-son, ...)."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-128",
+   "title": {
+    "uz": "Oylik xarajatlar massivi: xarajat = [500000, 600000,…"
+   },
+   "statement": {
+    "uz": "Oylik xarajatlar massivi: xarajat = [500000, 600000, 450000, 700000, 550000, 480000] (6 oy). Umumiy va o'rtacha xarajatni toping."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-129",
+   "title": {
+    "uz": "Narxlar massivi: narx = [15000, 9000, 22000, 7000]. Eng…"
+   },
+   "statement": {
+    "uz": "Narxlar massivi: narx = [15000, 9000, 22000, 7000]. Eng arzon mahsulotni (eng kichik narxni) toping."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-130",
+   "title": {
+    "uz": "Massiv berilgan: a = [100, 250, 300, 150]. Yig'indisini…"
+   },
+   "statement": {
+    "uz": "Massiv berilgan: a = [100, 250, 300, 150]. Yig'indisini toping; agar 500 dan katta bo'lsa \"Katta\" deb yozing."
+   },
+   "source": "Array_kirishsiz_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-131",
+   "title": {
+    "uz": "N ta o'quvchining bahosi massivga kiritiladi. Ularning…"
+   },
+   "statement": {
+    "uz": "N ta o'quvchining bahosi massivga kiritiladi. Ularning barchasini ekranga chiqaring."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-132",
+   "title": {
+    "uz": "5 ta sonni massivga kiriting va ularning yig'indisini…"
+   },
+   "statement": {
+    "uz": "5 ta sonni massivga kiriting va ularning yig'indisini toping."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-133",
+   "title": {
+    "uz": "N ta mahsulot narxi massivga kiritiladi. Umumiy narxni…"
+   },
+   "statement": {
+    "uz": "N ta mahsulot narxi massivga kiritiladi. Umumiy narxni toping."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-134",
+   "title": {
+    "uz": "N ta o'quvchining bahosi massivga kiritiladi. O'rtacha…"
+   },
+   "statement": {
+    "uz": "N ta o'quvchining bahosi massivga kiritiladi. O'rtacha bahoni toping."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-135",
+   "title": {
+    "uz": "5 ta bolaning yoshi massivga kiritiladi. Eng katta yoshni…"
+   },
+   "statement": {
+    "uz": "5 ta bolaning yoshi massivga kiritiladi. Eng katta yoshni toping."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-136",
+   "title": {
+    "uz": "5 ta bolaning yoshi massivga kiritiladi. Eng kichik…"
+   },
+   "statement": {
+    "uz": "5 ta bolaning yoshi massivga kiritiladi. Eng kichik yoshni toping."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-137",
+   "title": {
+    "uz": "N ta sonni massivga kiriting. Ularni teskari tartibda…"
+   },
+   "statement": {
+    "uz": "N ta sonni massivga kiriting. Ularni teskari tartibda chiqaring."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-138",
+   "title": {
+    "uz": "N ta mahsulot og'irligi (kg) massivga kiritiladi. Umumiy…"
+   },
+   "statement": {
+    "uz": "N ta mahsulot og'irligi (kg) massivga kiritiladi. Umumiy og'irlikni toping."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-139",
+   "title": {
+    "uz": "7 kunlik harorat massivga kiritiladi. Eng issiq kunni…"
+   },
+   "statement": {
+    "uz": "7 kunlik harorat massivga kiritiladi. Eng issiq kunni (eng katta haroratni) toping."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-140",
+   "title": {
+    "uz": "7 kunlik harorat massivga kiritiladi. O'rtacha haroratni…"
+   },
+   "statement": {
+    "uz": "7 kunlik harorat massivga kiritiladi. O'rtacha haroratni toping."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-141",
+   "title": {
+    "uz": "N ta o'quvchining bahosi massivga kiritiladi. Nechtasi 55…"
+   },
+   "statement": {
+    "uz": "N ta o'quvchining bahosi massivga kiritiladi. Nechtasi 55 dan katta ekanini sanang."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-142",
+   "title": {
+    "uz": "N ta sonni massivga kiriting. Ularning eng kattasini…"
+   },
+   "statement": {
+    "uz": "N ta sonni massivga kiriting. Ularning eng kattasini toping."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-143",
+   "title": {
+    "uz": "N ta sonni massivga kiriting. Ularning eng kichigini…"
+   },
+   "statement": {
+    "uz": "N ta sonni massivga kiriting. Ularning eng kichigini toping."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-144",
+   "title": {
+    "uz": "N ta mahsulot narxi massivga kiritiladi. 100 000 dan…"
+   },
+   "statement": {
+    "uz": "N ta mahsulot narxi massivga kiritiladi. 100 000 dan qimmatlari nechtaligini sanang."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-145",
+   "title": {
+    "uz": "5 ta sonni massivga kiriting. Har birini 2 ga ko'paytirib…"
+   },
+   "statement": {
+    "uz": "5 ta sonni massivga kiriting. Har birini 2 ga ko'paytirib chiqaring."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-146",
+   "title": {
+    "uz": "N ta o'quvchining ismi massivga kiritiladi. Har biriga…"
+   },
+   "statement": {
+    "uz": "N ta o'quvchining ismi massivga kiritiladi. Har biriga \"Salom, [ism]\" deb chiqaring."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-147",
+   "title": {
+    "uz": "N ta sonni massivga kiriting. Faqat 10 dan kattalarini…"
+   },
+   "statement": {
+    "uz": "N ta sonni massivga kiriting. Faqat 10 dan kattalarini chiqaring."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-148",
+   "title": {
+    "uz": "10 ta sonni massivga kiriting. Ularning yig'indisi va…"
+   },
+   "statement": {
+    "uz": "10 ta sonni massivga kiriting. Ularning yig'indisi va o'rtachasini toping."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-149",
+   "title": {
+    "uz": "N ta bolaning bo'yi massivga kiritiladi. Eng baland…"
+   },
+   "statement": {
+    "uz": "N ta bolaning bo'yi massivga kiritiladi. Eng baland bolani (eng katta bo'yni) toping."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-150",
+   "title": {
+    "uz": "N ta sonni massivga kiriting. Birinchi va oxirgi sonni…"
+   },
+   "statement": {
+    "uz": "N ta sonni massivga kiriting. Birinchi va oxirgi sonni chiqaring."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  }
+ ],
+ "extra": [
+  {
+   "id": "array-151",
+   "title": {
+    "uz": "N ta mahsulot soni massivga kiritiladi. Jami mahsulotlar…"
+   },
+   "statement": {
+    "uz": "N ta mahsulot soni massivga kiritiladi. Jami mahsulotlar sonini toping."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-152",
+   "title": {
+    "uz": "N ta sonni massivga kiriting. Ularning ko'paytmasini…"
+   },
+   "statement": {
+    "uz": "N ta sonni massivga kiriting. Ularning ko'paytmasini toping."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-153",
+   "title": {
+    "uz": "5 ta fandan baho massivga kiritiladi. O'rtacha bahoni…"
+   },
+   "statement": {
+    "uz": "5 ta fandan baho massivga kiritiladi. O'rtacha bahoni toping."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-154",
+   "title": {
+    "uz": "N ta kunlik daromad massivga kiritiladi. Eng yuqori…"
+   },
+   "statement": {
+    "uz": "N ta kunlik daromad massivga kiritiladi. Eng yuqori daromadli kunni toping."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-155",
+   "title": {
+    "uz": "N ta sonni massivga kiriting. Nechtasi 100 dan katta…"
+   },
+   "statement": {
+    "uz": "N ta sonni massivga kiriting. Nechtasi 100 dan katta ekanini sanang."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-156",
+   "title": {
+    "uz": "N ta o'quvchining vazni massivga kiritiladi. O'rtacha…"
+   },
+   "statement": {
+    "uz": "N ta o'quvchining vazni massivga kiritiladi. O'rtacha vaznni toping."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-157",
+   "title": {
+    "uz": "N ta sonni massivga kiriting. Ularni tartib raqami bilan…"
+   },
+   "statement": {
+    "uz": "N ta sonni massivga kiriting. Ularni tartib raqami bilan chiqaring (1-son, 2-son, ...)."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-158",
+   "title": {
+    "uz": "6 oylik xarajat massivga kiritiladi. Umumiy va o'rtacha…"
+   },
+   "statement": {
+    "uz": "6 oylik xarajat massivga kiritiladi. Umumiy va o'rtacha xarajatni toping."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-159",
+   "title": {
+    "uz": "N ta mahsulot narxi massivga kiritiladi. Eng arzon…"
+   },
+   "statement": {
+    "uz": "N ta mahsulot narxi massivga kiritiladi. Eng arzon mahsulotni (eng kichik narxni) toping."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "array-160",
+   "title": {
+    "uz": "N ta sonni massivga kiriting. Ularning yig'indisini…"
+   },
+   "statement": {
+    "uz": "N ta sonni massivga kiriting. Ularning yig'indisini toping va agar 500 dan katta bo'lsa \"Katta\" deb yozing."
+   },
+   "source": "Array_hayotiy_30",
+   "judge": null,
+   "tests": []
+  }
+ ]
+}

@@ -1,0 +1,1398 @@
+{
+ "id": "nested-if",
+ "order": 5,
+ "title": {
+  "uz": "Ichma-ich If va mantiq",
+  "en": "Nested If and logic"
+ },
+ "lesson": {
+  "uz": "If ichida yana If. and / or / not bilan murakkab shartlar tuzing.",
+  "en": "An If inside an If. Build richer conditions with and / or / not."
+ },
+ "classwork": [
+  {
+   "id": "nested-if-101",
+   "title": {
+    "uz": "Bank kartasi va balans."
+   },
+   "statement": {
+    "uz": "Foydalanuvchi kartasining turi (1 — kredit, 0 — debit) va balans summasi kiritiladi. Avval tekshiring: agar karta kredit bo'lsa, ichida yana tekshiring: agar balans 0 dan past bo'lsa \"Qarzingiz bor, to'lang\", aks holda \"Kredit kartasi ishlayapti\" deb chiqaring. Agar debit karta bo'lsa \"Debit karta, faqat o'z mablag'ingiz\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-102",
+   "title": {
+    "uz": "Onlayn do'kon va yetkazib berish."
+   },
+   "statement": {
+    "uz": "Buyurtma summasi va yetkazib berish usuli kiritiladi (1 — kuryer, 0 — o'zi olib ketish). Avval tekshiring: agar kuryer tanlangan bo'lsa, ichida yana tekshiring: agar summa 150000 dan katta yoki teng bo'lsa \"Bepul yetkazib berish\", aks holda \"Yetkazib berish 15000 so'm\" deb chiqaring. Agar o'zi olib ketish tanlangan bo'lsa \"O'zi olib ketish, qo'shimcha to'lov yo'q\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-103",
+   "title": {
+    "uz": "Sport zali a'zoligi."
+   },
+   "statement": {
+    "uz": "Yosh va a'zolik turi kiritiladi (1 — premium, 0 — oddiy). Avval tekshiring: agar premium a'zo bo'lsa, ichida yana tekshiring: agar yosh 25 dan kichik bo'lsa \"Yoshlar uchun maxsus treninglar ochiq\", aks holda \"Barcha premium xizmatlar ochiq\" deb chiqaring. Agar oddiy a'zo bo'lsa \"Faqat asosiy zallar\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-104",
+   "title": {
+    "uz": "Avtomobil sug'urtasi."
+   },
+   "statement": {
+    "uz": "Avtomobil yoshi (yil) va haydovchi tajribasi (yil) kiritiladi. Avval tekshiring: agar avtomobil 5 yildan eski bo'lsa, ichida yana tekshiring: agar tajriba 3 yildan kam bo'lsa \"Yuqori sug'urta narxi\", aks holda \"O'rtacha sug'urta narxi\" deb chiqaring. Agar avtomobil 5 yildan yangi yoki teng bo'lsa \"Past sug'urta narxi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-105",
+   "title": {
+    "uz": "Kutubxona kitobi."
+   },
+   "statement": {
+    "uz": "Kitobning qaytarilish muddati (kun) va a'zolik holati kiritiladi (1 — a'zo, 0 — emas). Avval tekshiring: agar a'zo bo'lsa, ichida yana tekshiring: agar muddat 0 dan past (kechikkan) bo'lsa \"Jarima to'lang\", aks holda \"Kitobni vaqtida qaytarishingiz mumkin\" deb chiqaring. Agar a'zo bo'lmasa \"Avval a'zo bo'ling\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-106",
+   "title": {
+    "uz": "Restoran bron qilish."
+   },
+   "statement": {
+    "uz": "Mehmonlar soni va stol turi kiritiladi (1 — VIP, 0 — oddiy). Avval tekshiring: agar VIP stol tanlangan bo'lsa, ichida yana tekshiring: agar mehmonlar 6 dan ko'p bo'lsa \"Katta VIP zal kerak\", aks holda \"Oddiy VIP stol yetarli\" deb chiqaring. Agar oddiy stol tanlangan bo'lsa \"Oddiy stol bron qilindi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-107",
+   "title": {
+    "uz": "Elektron chipta."
+   },
+   "statement": {
+    "uz": "Yosh va chipta holati kiritiladi (1 — elektron, 0 — qog'oz). Avval tekshiring: agar elektron chipta bo'lsa, ichida yana tekshiring: agar yosh 16 dan kichik bo'lsa \"Ota-ona ruxsati kerak\", aks holda \"Elektron chipta faol\" deb chiqaring. Agar qog'oz chipta bo'lsa \"Qog'oz chiptani kassadan oling\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-108",
+   "title": {
+    "uz": "Uyali aloqa tarifi."
+   },
+   "statement": {
+    "uz": "Balans va tarif turi kiritiladi (1 — cheksiz internet, 0 — cheklangan). Avval tekshiring: agar cheksiz internet tarifi bo'lsa, ichida yana tekshiring: agar balans 5000 dan kam bo'lsa \"Balansni to'ldiring, aks holda xizmat to'xtaydi\", aks holda \"Cheksiz internet ishlayapti\" deb chiqaring. Agar cheklangan tarif bo'lsa \"Internet limingiz bor\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-109",
+   "title": {
+    "uz": "Maktab olimpiadasi."
+   },
+   "statement": {
+    "uz": "Matematika va fizika bahosi kiritiladi. Avval tekshiring: agar matematika 80 dan katta yoki teng bo'lsa, ichida yana tekshiring: agar fizika ham 80 dan katta yoki teng bo'lsa \"Ikki fandan olimpiadaga tavsiya\", aks holda \"Faqat matematikadan tavsiya\" deb chiqaring. Agar matematika 80 dan past bo'lsa \"Olimpiadaga hali tayyor emas\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-110",
+   "title": {
+    "uz": "Parkovka tizimi."
+   },
+   "statement": {
+    "uz": "Avtomobil turi va parkovka vaqti (soat) kiritiladi (1 — yuk mashinasi, 0 — yengil). Avval tekshiring: agar yuk mashinasi bo'lsa, ichida yana tekshiring: agar vaqt 2 soatdan ko'p bo'lsa \"Maxsus zona, qo'shimcha to'lov\", aks holda \"Yuk mashinasi uchun oddiy to'lov\" deb chiqaring. Agar yengil avtomobil bo'lsa \"Oddiy parkovka\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-111",
+   "title": {
+    "uz": "Sog'liqni saqlash tekshiruvi."
+   },
+   "statement": {
+    "uz": "Qon bosimi (yuqori qiymat) va yosh kiritiladi. Avval tekshiring: agar qon bosimi 140 dan katta bo'lsa, ichida yana tekshiring: agar yosh 50 dan katta bo'lsa \"Shoshilinch shifokorga boring\", aks holda \"Nazorat ostida saqlang\" deb chiqaring. Agar qon bosimi 140 dan past yoki teng bo'lsa \"Qon bosimi normal\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-112",
+   "title": {
+    "uz": "Onlayn kurs."
+   },
+   "statement": {
+    "uz": "Kurs narxi va talaba holati kiritiladi (1 — talaba, 0 — emas). Avval tekshiring: agar talaba bo'lsa, ichida yana tekshiring: agar narx 300000 dan katta bo'lsa \"Talabalar uchun 30% chegirma\", aks holda \"Talabalar uchun 15% chegirma\" deb chiqaring. Agar talaba bo'lmasa \"To'liq narx\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-113",
+   "title": {
+    "uz": "Havo sifatini nazorat."
+   },
+   "statement": {
+    "uz": "PM2.5 darajasi va shamol tezligi kiritiladi. Avval tekshiring: agar PM2.5 50 dan katta bo'lsa (iflos), ichida yana tekshiring: agar shamol 10 dan kam bo'lsa \"Havo juda iflos, uyda qoling\", aks holda \"Havo iflos, lekin shamol tozalayapti\" deb chiqaring. Agar PM2.5 50 dan past yoki teng bo'lsa \"Havo sifati yaxshi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-114",
+   "title": {
+    "uz": "Bank omonati."
+   },
+   "statement": {
+    "uz": "Omonat summasi va muddat (oy) kiritiladi. Avval tekshiring: agar summa 5000000 dan katta yoki teng bo'lsa, ichida yana tekshiring: agar muddat 12 oydan ko'p bo'lsa \"Yuqori foiz stavkasi\", aks holda \"Standart foiz stavkasi\" deb chiqaring. Agar summa 5000000 dan kam bo'lsa \"Minimal omonat shartlari\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-115",
+   "title": {
+    "uz": "Futbol o'yini."
+   },
+   "statement": {
+    "uz": "Birinchi jamoa gollari va sariq kartochkalar soni kiritiladi. Avval tekshiring: agar gollar 2 dan ko'p bo'lsa, ichida yana tekshiring: agar sariq kartochka 3 dan kam bo'lsa \"Yaxshi o'yin, g'alaba yaqin\", aks holda \"Gollar ko'p, lekin intizom past\" deb chiqaring. Agar gollar 2 dan kam yoki teng bo'lsa \"Hali g'alaba uchun kam\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-116",
+   "title": {
+    "uz": "Elektr energiyasi hisoblagichi."
+   },
+   "statement": {
+    "uz": "Oylik sarf (kVt/soat) va tarif turi kiritiladi (1 — kunduzgi, 0 — tungi). Avval tekshiring: agar kunduzgi tarif bo'lsa, ichida yana tekshiring: agar sarf 300 dan ko'p bo'lsa \"Yuqori tarif, tejang\", aks holda \"Oddiy kunduzgi tarif\" deb chiqaring. Agar tungi tarif bo'lsa \"Tungi arzon tarif\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-117",
+   "title": {
+    "uz": "Mehmonxona bron."
+   },
+   "statement": {
+    "uz": "Kunlar soni va xona holati kiritiladi (1 — dengizga qaragan, 0 — oddiy). Avval tekshiring: agar dengizga qaragan xona bo'lsa, ichida yana tekshiring: agar kunlar 5 dan ko'p bo'lsa \"Uzun muddatli chegirma\", aks holda \"To'liq narx\" deb chiqaring. Agar oddiy xona bo'lsa \"Oddiy xona bron qilindi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-118",
+   "title": {
+    "uz": "Dori-darmon do'koni."
+   },
+   "statement": {
+    "uz": "Dori turi va yosh kiritiladi (1 — retseptli, 0 — retseptsiz). Avval tekshiring: agar retseptli dori bo'lsa, ichida yana tekshiring: agar yosh 18 dan kichik bo'lsa \"Faqat ota-ona bilan\", aks holda \"Retsept ko'rsatib oling\" deb chiqaring. Agar retseptsiz bo'lsa \"Erkin sotiladi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-119",
+   "title": {
+    "uz": "Velosiped ijarasi."
+   },
+   "statement": {
+    "uz": "Ijara vaqti (soat) va a'zolik holati kiritiladi (1 — a'zo, 0 — emas). Avval tekshiring: agar a'zo bo'lsa, ichida yana tekshiring: agar vaqt 3 soatdan ko'p bo'lsa \"Kunlik tarif qo'llanadi\", aks holda \"Soatlik arzon tarif\" deb chiqaring. Agar a'zo bo'lmasa \"Oddiy narx\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-120",
+   "title": {
+    "uz": "Kino teatri."
+   },
+   "statement": {
+    "uz": "Yosh va seans turi kiritiladi (1 — 3D, 0 — oddiy). Avval tekshiring: agar 3D seans bo'lsa, ichida yana tekshiring: agar yosh 12 dan kichik bo'lsa \"3D ko'zoynak bepul\", aks holda \"3D ko'zoynak 5000 so'm\" deb chiqaring. Agar oddiy seans bo'lsa \"Oddiy chipta\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  }
+ ],
+ "homework": [
+  {
+   "id": "nested-if-121",
+   "title": {
+    "uz": "Internet-do'kon chegirmasi."
+   },
+   "statement": {
+    "uz": "Xarid summasi va promo-kod holati kiritiladi (1 — bor, 0 — yo'q). Avval tekshiring: agar promo-kod bor bo'lsa, ichida yana tekshiring: agar summa 200000 dan katta bo'lsa \"25% chegirma + bepul yetkazish\", aks holda \"15% chegirma\" deb chiqaring. Agar promo-kod yo'q bo'lsa \"Chegirmasiz\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-122",
+   "title": {
+    "uz": "Avtobus chiptasi."
+   },
+   "statement": {
+    "uz": "Yosh va yo'nalish turi kiritiladi (1 — shaharlararo, 0 — shahar ichi). Avval tekshiring: agar shaharlararo bo'lsa, ichida yana tekshiring: agar yosh 60 dan katta bo'lsa \"Pensiya chegirmasi\", aks holda \"To'liq narx\" deb chiqaring. Agar shahar ichi bo'lsa \"Shahar ichi chipta\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-123",
+   "title": {
+    "uz": "Kompyuter o'yini."
+   },
+   "statement": {
+    "uz": "Yosh va o'yin reytingi kiritiladi (1 — 18+, 0 — hammaga). Avval tekshiring: agar o'yin 18+ bo'lsa, ichida yana tekshiring: agar yosh 18 dan katta yoki teng bo'lsa \"O'ynashingiz mumkin\", aks holda \"Yosh chegarasi\" deb chiqaring. Agar hammaga mo'ljallangan bo'lsa \"Erkin o'ynashingiz mumkin\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-124",
+   "title": {
+    "uz": "Suv hisoblagichi."
+   },
+   "statement": {
+    "uz": "Oylik sarf (kub metr) va uy turi kiritiladi (1 — ko'p qavatli, 0 — xususiy). Avval tekshiring: agar ko'p qavatli uy bo'lsa, ichida yana tekshiring: agar sarf 15 dan ko'p bo'lsa \"Yuqori tarif\", aks holda \"Oddiy tarif\" deb chiqaring. Agar xususiy uy bo'lsa \"Xususiy uy tarifi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-125",
+   "title": {
+    "uz": "Sport musobaqasi."
+   },
+   "statement": {
+    "uz": "Yosh va sport turi kiritiladi (1 — og'ir atletika, 0 — yengil atletika). Avval tekshiring: agar og'ir atletika bo'lsa, ichida yana tekshiring: agar yosh 16 dan katta yoki teng bo'lsa \"Kattalar toifasi\", aks holda \"Yoshlar toifasi\" deb chiqaring. Agar yengil atletika bo'lsa \"Yengil atletika guruhiga\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-126",
+   "title": {
+    "uz": "Kutubxona a'zoligi."
+   },
+   "statement": {
+    "uz": "Yosh va a'zolik muddati (oy) kiritiladi. Avval tekshiring: agar yosh 14 dan katta yoki teng bo'lsa, ichida yana tekshiring: agar muddat 6 oydan ko'p bo'lsa \"Uzoq muddatli a'zo\", aks holda \"Qisqa muddatli a'zo\" deb chiqaring. Agar yosh 14 dan kichik bo'lsa \"Bolalar a'zoligi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-127",
+   "title": {
+    "uz": "Taksi buyurtmasi."
+   },
+   "statement": {
+    "uz": "Masofa (km) va vaqt (soat) kiritiladi. Avval tekshiring: agar masofa 10 km dan ko'p bo'lsa, ichida yana tekshiring: agar vaqt 22:00 dan 06:00 gacha (tungi) bo'lsa \"Tungi + uzoq yo'l tarifi\", aks holda \"Uzoq yo'l tarifi\" deb chiqaring. Agar masofa 10 km dan kam yoki teng bo'lsa \"Oddiy tarif\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-128",
+   "title": {
+    "uz": "Maktab ovqatlanishi."
+   },
+   "statement": {
+    "uz": "Yosh va ovqat turi kiritiladi (1 — maxsus (allergiya), 0 — oddiy). Avval tekshiring: agar maxsus ovqat bo'lsa, ichida yana tekshiring: agar yosh 10 dan kichik bo'lsa \"Bolalar maxsus menyusi\", aks holda \"Katta o'quvchilar maxsus menyusi\" deb chiqaring. Agar oddiy ovqat bo'lsa \"Oddiy maktab ovqati\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-129",
+   "title": {
+    "uz": "Bank krediti."
+   },
+   "statement": {
+    "uz": "Yillik daromad va kredit summasi kiritiladi. Avval tekshiring: agar daromad 3000000 dan katta yoki teng bo'lsa, ichida yana tekshiring: agar kredit 50000000 dan kam bo'lsa \"Kredit tasdiqlanadi\", aks holda \"Qo'shimcha hujjatlar kerak\" deb chiqaring. Agar daromad 3000000 dan kam bo'lsa \"Kredit rad etiladi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-130",
+   "title": {
+    "uz": "Havo yo'llari."
+   },
+   "statement": {
+    "uz": "Yosh va parvoz turi kiritiladi (1 — xalqaro, 0 — ichki). Avval tekshiring: agar xalqaro parvoz bo'lsa, ichida yana tekshiring: agar yosh 2 dan kichik bo'lsa \"Chaqaloq uchun maxsus joy\", aks holda \"Oddiy xalqaro chipta\" deb chiqaring. Agar ichki parvoz bo'lsa \"Ichki reys chiptasi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-131",
+   "title": {
+    "uz": "Smartfon sotuvi."
+   },
+   "statement": {
+    "uz": "Narx va to'lov usuli kiritiladi (1 — muddatli, 0 — naqd). Avval tekshiring: agar muddatli to'lov tanlangan bo'lsa, ichida yana tekshiring: agar narx 5000000 dan katta bo'lsa \"12 oylik muddat\", aks holda \"6 oylik muddat\" deb chiqaring. Agar naqd to'lov bo'lsa \"Naqd to'lov, chegirma bor\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-132",
+   "title": {
+    "uz": "Bog'cha qabul."
+   },
+   "statement": {
+    "uz": "Yosh va navbat holati kiritiladi (1 — navbatda, 0 — yo'q). Avval tekshiring: agar navbatda bo'lsa, ichida yana tekshiring: agar yosh 3 dan katta yoki teng va 7 dan kichik bo'lsa \"Qabul qilinadi\", aks holda \"Yosh mos emas\" deb chiqaring. Agar navbatda bo'lmasa \"Avval navbatga yoziling\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-133",
+   "title": {
+    "uz": "Elektr skuter."
+   },
+   "statement": {
+    "uz": "Batareya foizi va masofa (km) kiritiladi. Avval tekshiring: agar batareya 20% dan kam bo'lsa, ichida yana tekshiring: agar masofa 5 km dan ko'p bo'lsa \"Zaryadlang, yetmaydi\", aks holda \"Yetadi, lekin ehtiyot bo'ling\" deb chiqaring. Agar batareya 20% dan ko'p yoki teng bo'lsa \"Yo'lga tayyor\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-134",
+   "title": {
+    "uz": "Online test."
+   },
+   "statement": {
+    "uz": "To'g'ri javoblar foizi va vaqt (daqiqa) kiritiladi. Avval tekshiring: agar foiz 70 dan katta yoki teng bo'lsa, ichida yana tekshiring: agar vaqt 30 daqiqadan kam bo'lsa \"A'lo natija, tez ishladingiz\", aks holda \"Yaxshi natija\" deb chiqaring. Agar foiz 70 dan past bo'lsa \"Qayta topshiring\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-135",
+   "title": {
+    "uz": "Uy hayvonlari."
+   },
+   "statement": {
+    "uz": "Hayvon turi va yosh kiritiladi (1 — it, 0 — mushuk). Avval tekshiring: agar it bo'lsa, ichida yana tekshiring: agar yosh 1 dan kichik bo'lsa \"Kuchukcha, maxsus ovqat\", aks holda \"Katta it ovqati\" deb chiqaring. Agar mushuk bo'lsa \"Mushuk uchun ovqat\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-136",
+   "title": {
+    "uz": "Konferensiya ro'yxati."
+   },
+   "statement": {
+    "uz": "Yosh va ishtirok turi kiritiladi (1 — ma'ruzachi, 0 — tinglovchi). Avval tekshiring: agar ma'ruzachi bo'lsa, ichida yana tekshiring: agar yosh 25 dan katta yoki teng bo'lsa \"Katta ma'ruzachilar sessiyasi\", aks holda \"Yosh olimlar sessiyasi\" deb chiqaring. Agar tinglovchi bo'lsa \"Oddiy ishtirokchi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-137",
+   "title": {
+    "uz": "Gaz hisoblagichi."
+   },
+   "statement": {
+    "uz": "Oylik sarf (kub metr) va fasl kiritiladi (1 — qish, 0 — yoz). Avval tekshiring: agar qish bo'lsa, ichida yana tekshiring: agar sarf 100 dan ko'p bo'lsa \"Yuqori qishki tarif\", aks holda \"Oddiy qishki tarif\" deb chiqaring. Agar yoz bo'lsa \"Yozgi past tarif\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-138",
+   "title": {
+    "uz": "Velosiped yo'li."
+   },
+   "statement": {
+    "uz": "Tezlik (km/soat) va yo'l turi kiritiladi (1 — maxsus velosiped yo'li, 0 — oddiy yo'l). Avval tekshiring: agar maxsus yo'l bo'lsa, ichida yana tekshiring: agar tezlik 25 dan ko'p bo'lsa \"Tezlikni kamaytiring\", aks holda \"Xavfsiz harakatlaning\" deb chiqaring. Agar oddiy yo'l bo'lsa \"Ehtiyot bo'ling, avtomobillar bor\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-139",
+   "title": {
+    "uz": "Kofe buyurtmasi."
+   },
+   "statement": {
+    "uz": "Kofe turi va hajm kiritiladi (1 — latte, 0 — espresso). Avval tekshiring: agar latte bo'lsa, ichida yana tekshiring: agar hajm katta (1) bo'lsa \"Katta latte\", aks holda \"Oddiy latte\" deb chiqaring. Agar espresso bo'lsa \"Espresso tayyor\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-140",
+   "title": {
+    "uz": "Maktab formasi."
+   },
+   "statement": {
+    "uz": "Sinf va forma holati kiritiladi (1 — bor, 0 — yo'q). Avval tekshiring: agar forma bor bo'lsa, ichida yana tekshiring: agar sinf 1–4 oralig'ida bo'lsa \"Boshlang'ich forma\", aks holda \"O'rta maktab formasi\" deb chiqaring. Agar forma yo'q bo'lsa \"Forma olish kerak\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-141",
+   "title": {
+    "uz": "Online banking."
+   },
+   "statement": {
+    "uz": "Balans va operatsiya turi kiritiladi (1 — o'tkazma, 0 — to'lov). Avval tekshiring: agar o'tkazma bo'lsa, ichida yana tekshiring: agar balans yetarli bo'lsa \"O'tkazma muvaffaqiyatli\", aks holda \"Mablag' yetarli emas\" deb chiqaring. Agar to'lov bo'lsa \"To'lov amalga oshirildi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-142",
+   "title": {
+    "uz": "Sport zali abonement."
+   },
+   "statement": {
+    "uz": "Yosh va abonement muddati (oy) kiritiladi. Avval tekshiring: agar yosh 18 dan katta yoki teng bo'lsa, ichida yana tekshiring: agar muddat 3 oydan ko'p bo'lsa \"Yillik chegirma\", aks holda \"Oylik tarif\" deb chiqaring. Agar yosh 18 dan kichik bo'lsa \"Yoshlar abonementi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-143",
+   "title": {
+    "uz": "Pochta jo'natmasi."
+   },
+   "statement": {
+    "uz": "Og'irlik (kg) va yetkazish turi kiritiladi (1 — ekspress, 0 — oddiy). Avval tekshiring: agar ekspress bo'lsa, ichida yana tekshiring: agar og'irlik 5 kg dan ko'p bo'lsa \"Qo'shimcha to'lov\", aks holda \"Standart ekspress\" deb chiqaring. Agar oddiy yetkazish bo'lsa \"Oddiy pochta\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-144",
+   "title": {
+    "uz": "Musiqa darsi."
+   },
+   "statement": {
+    "uz": "Yosh va asbob turi kiritiladi (1 — pianino, 0 — gitara). Avval tekshiring: agar pianino bo'lsa, ichida yana tekshiring: agar yosh 10 dan kichik bo'lsa \"Bolalar guruhi\", aks holda \"Kattalar guruhi\" deb chiqaring. Agar gitara bo'lsa \"Gitara darsi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-145",
+   "title": {
+    "uz": "Avtomobil yuvish."
+   },
+   "statement": {
+    "uz": "Avtomobil turi va xizmat turi kiritiladi (1 — to'liq, 0 — oddiy). Avval tekshiring: agar to'liq yuvish bo'lsa, ichida yana tekshiring: agar yuk mashinasi (1) bo'lsa \"Yuk mashinasi to'liq yuvish\", aks holda \"Yengil avto to'liq yuvish\" deb chiqaring. Agar oddiy yuvish bo'lsa \"Oddiy yuvish\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-146",
+   "title": {
+    "uz": "Online o'yin platformasi."
+   },
+   "statement": {
+    "uz": "Yosh va to'lov holati kiritiladi (1 — premium, 0 — bepul). Avval tekshiring: agar premium bo'lsa, ichida yana tekshiring: agar yosh 13 dan katta yoki teng bo'lsa \"Barcha o'yinlar ochiq\", aks holda \"Yosh chegarasi bor\" deb chiqaring. Agar bepul bo'lsa \"Cheklangan o'yinlar\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-147",
+   "title": {
+    "uz": "Dori retsepti."
+   },
+   "statement": {
+    "uz": "Yosh va dori kuchi kiritiladi (1 — kuchli, 0 — oddiy). Avval tekshiring: agar kuchli dori bo'lsa, ichida yana tekshiring: agar yosh 16 dan katta yoki teng bo'lsa \"Retsept bilan beriladi\", aks holda \"Bolalar uchun taqiqlangan\" deb chiqaring. Agar oddiy dori bo'lsa \"Erkin sotiladi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-148",
+   "title": {
+    "uz": "Park attraksioni."
+   },
+   "statement": {
+    "uz": "Bo'y (sm) va yosh kiritiladi. Avval tekshiring: agar bo'y 140 dan katta yoki teng bo'lsa, ichida yana tekshiring: agar yosh 12 dan katta yoki teng bo'lsa \"Barcha attraksionlar ochiq\", aks holda \"Ba'zi attraksionlar ochiq\" deb chiqaring. Agar bo'y 140 dan past bo'lsa \"Bo'yi yetarli emas\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-149",
+   "title": {
+    "uz": "Elektron kitob."
+   },
+   "statement": {
+    "uz": "Narx va a'zolik holati kiritiladi (1 — a'zo, 0 — emas). Avval tekshiring: agar a'zo bo'lsa, ichida yana tekshiring: agar narx 50000 dan katta bo'lsa \"A'zoga 20% chegirma\", aks holda \"A'zoga bepul\" deb chiqaring. Agar a'zo bo'lmasa \"To'liq narx\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-150",
+   "title": {
+    "uz": "Shahar transporti."
+   },
+   "statement": {
+    "uz": "Yosh va transport turi kiritiladi (1 — metro, 0 — avtobus). Avval tekshiring: agar metro bo'lsa, ichida yana tekshiring: agar yosh 7 dan kichik bo'lsa \"Bepul\", aks holda \"Metro chiptasi\" deb chiqaring. Agar avtobus bo'lsa \"Avtobus chiptasi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_Ichma_ich_if_yaxshilangan",
+   "judge": null,
+   "tests": []
+  }
+ ],
+ "extra": [
+  {
+   "id": "nested-if-151",
+   "title": {
+    "uz": "Yosh kiritiladi. Avval tekshiring: agar yosh 18 dan katta…"
+   },
+   "statement": {
+    "uz": "Yosh kiritiladi. Avval tekshiring: agar yosh 18 dan katta yoki teng bo'lsa, u katta odam. Katta odamlar ichida yana tekshiring: agar yosh 65 dan katta bo'lsa \"Nafaqaxo'r\", aks holda \"Ishchi\" deb chiqaring. Agar yosh 18 dan kichik bo'lsa \"Voyaga yetmagan\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-152",
+   "title": {
+    "uz": "O'quvchining bahosi kiritiladi. Avval tekshiring: agar…"
+   },
+   "statement": {
+    "uz": "O'quvchining bahosi kiritiladi. Avval tekshiring: agar baho 55 dan katta yoki teng bo'lsa, u o'tgan. O'tganlar ichida yana tekshiring: agar baho 90 dan katta bo'lsa \"A'lo\", aks holda \"O'tdi\" deb chiqaring. Agar baho 55 dan kichik bo'lsa \"Yiqildi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-153",
+   "title": {
+    "uz": "Havo harorati va yomg'ir holati kiritiladi (yomg'ir uchun…"
+   },
+   "statement": {
+    "uz": "Havo harorati va yomg'ir holati kiritiladi (yomg'ir uchun 1 — yog'yapti, 0 — yo'q). Avval tekshiring: agar yomg'ir yog'ayotgan bo'lsa, ichida yana tekshiring: agar harorat 10 dan past bo'lsa \"Palto va soyabon oling\", aks holda \"Soyabon oling\" deb chiqaring. Agar yomg'ir yo'q bo'lsa \"Soyabon shart emas\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-154",
+   "title": {
+    "uz": "Xaridorning xarid summasi va do'kon a'zoligi kiritiladi…"
+   },
+   "statement": {
+    "uz": "Xaridorning xarid summasi va do'kon a'zoligi kiritiladi (a'zolik uchun 1 — bor, 0 — yo'q). Avval tekshiring: agar xaridor a'zo bo'lsa, ichida yana tekshiring: agar xarid 100000 dan katta bo'lsa \"20% chegirma\", aks holda \"10% chegirma\" deb chiqaring. Agar a'zo bo'lmasa \"Chegirma yo'q\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-155",
+   "title": {
+    "uz": "Kishining yoshi va haydovchilik guvohnomasi kiritiladi…"
+   },
+   "statement": {
+    "uz": "Kishining yoshi va haydovchilik guvohnomasi kiritiladi (guvohnoma uchun 1 — bor, 0 — yo'q). Avval tekshiring: agar yosh 18 dan katta yoki teng bo'lsa, ichida yana tekshiring: agar guvohnoma bor bo'lsa \"Haydashi mumkin\", aks holda \"Avval guvohnoma oling\" deb chiqaring. Agar yosh 18 dan kichik bo'lsa \"Yoshi yetmagan\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-156",
+   "title": {
+    "uz": "Do'kondagi mahsulot soni kiritiladi. Avval tekshiring:…"
+   },
+   "statement": {
+    "uz": "Do'kondagi mahsulot soni kiritiladi. Avval tekshiring: agar mahsulot bor bo'lsa (son 0 dan katta), ichida yana tekshiring: agar son 10 dan kam bo'lsa \"Kam qoldi\", aks holda \"Yetarli\" deb chiqaring. Agar son 0 ga teng bo'lsa \"Mahsulot tugagan\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-157",
+   "title": {
+    "uz": "Bir kishining puli va mahsulot narxi kiritiladi. Avval…"
+   },
+   "statement": {
+    "uz": "Bir kishining puli va mahsulot narxi kiritiladi. Avval tekshiring: agar puli yetsa (pul narxdan katta yoki teng bo'lsa), ichida yana tekshiring: agar pul narxga teng bo'lsa \"Aniq to'ladi\", aks holda \"Qaytim bor\" deb chiqaring. Agar puli yetmasa \"Pul yetmadi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-158",
+   "title": {
+    "uz": "Bemorning tana harorati kiritiladi. Avval tekshiring:…"
+   },
+   "statement": {
+    "uz": "Bemorning tana harorati kiritiladi. Avval tekshiring: agar harorat 37 dan katta bo'lsa, u kasal. Kasallar ichida yana tekshiring: agar harorat 39 dan katta bo'lsa \"Tez shifokorga boring\", aks holda \"Dori iching va dam oling\" deb chiqaring. Agar harorat 37 dan katta bo'lmasa \"Sog'lom\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-159",
+   "title": {
+    "uz": "O'quvchining ikki fandan bahosi (matematika va ona tili)…"
+   },
+   "statement": {
+    "uz": "O'quvchining ikki fandan bahosi (matematika va ona tili) kiritiladi. Avval tekshiring: agar matematika bahosi 55 dan katta yoki teng bo'lsa, ichida yana tekshiring: agar ona tili bahosi ham 55 dan katta yoki teng bo'lsa \"Ikkala fandan o'tdi\", aks holda \"Faqat matematikadan o'tdi\" deb chiqaring. Agar matematikadan yiqilsa \"Matematikadan yiqildi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-160",
+   "title": {
+    "uz": "Ob-havo harorati va shamol tezligi kiritiladi. Avval…"
+   },
+   "statement": {
+    "uz": "Ob-havo harorati va shamol tezligi kiritiladi. Avval tekshiring: agar harorat 0 dan past bo'lsa, sovuq. Sovuq ichida yana tekshiring: agar shamol tezligi 20 dan katta bo'lsa \"Sovuq bo'ron, uyda qoling\", aks holda \"Sovuq, issiq kiyining\" deb chiqaring. Agar harorat 0 dan past bo'lmasa \"Ob-havo yaxshi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-161",
+   "title": {
+    "uz": "Yo'lovchining yoshi va chipta turi kiritiladi (1 — oddiy,…"
+   },
+   "statement": {
+    "uz": "Yo'lovchining yoshi va chipta turi kiritiladi (1 — oddiy, 2 — VIP). Avval tekshiring: agar chipta VIP bo'lsa, ichida yana tekshiring: agar yosh 60 dan katta bo'lsa \"VIP chegirmali chipta\", aks holda \"VIP to'liq chipta\" deb chiqaring. Agar chipta oddiy bo'lsa \"Oddiy chipta\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-162",
+   "title": {
+    "uz": "Bolaning yoshi va bo'yi (sm) kiritiladi. Attraksionga…"
+   },
+   "statement": {
+    "uz": "Bolaning yoshi va bo'yi (sm) kiritiladi. Attraksionga chiqish shartlari tekshiriladi. Avval tekshiring: agar yosh 7 dan katta yoki teng bo'lsa, ichida yana tekshiring: agar bo'y 120 dan katta yoki teng bo'lsa \"Attraksionga chiqishi mumkin\", aks holda \"Bo'yi yetarli emas\" deb chiqaring. Agar yosh 7 dan kichik bo'lsa \"Yoshi yetarli emas\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-163",
+   "title": {
+    "uz": "Ishchining ish staji (yil) va yoshi kiritiladi. Avval…"
+   },
+   "statement": {
+    "uz": "Ishchining ish staji (yil) va yoshi kiritiladi. Avval tekshiring: agar yosh 60 dan katta yoki teng bo'lsa, ichida yana tekshiring: agar staj 25 dan katta yoki teng bo'lsa \"To'liq nafaqa\", aks holda \"Qisman nafaqa\" deb chiqaring. Agar yosh 60 dan kichik bo'lsa \"Hali ishlaydi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-164",
+   "title": {
+    "uz": "Mahsulotning saqlash muddati kuni kiritiladi. Avval…"
+   },
+   "statement": {
+    "uz": "Mahsulotning saqlash muddati kuni kiritiladi. Avval tekshiring: agar muddat qolgan bo'lsa (kun 0 dan katta), ichida yana tekshiring: agar kun 3 dan kam bo'lsa \"Tez ishlating, muddati tugayapti\", aks holda \"Yaxshi holatda\" deb chiqaring. Agar kun 0 yoki undan kichik bo'lsa \"Muddati o'tgan, ishlatmang\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-165",
+   "title": {
+    "uz": "Talabaning yoshi va o'qish shakli kiritiladi (1 —…"
+   },
+   "statement": {
+    "uz": "Talabaning yoshi va o'qish shakli kiritiladi (1 — kunduzgi, 0 — sirtqi). Avval tekshiring: agar talaba kunduzgi o'qisa, ichida yana tekshiring: agar yosh 22 dan katta bo'lsa \"Kunduzgi, magistr bo'lishi mumkin\", aks holda \"Kunduzgi, bakalavr\" deb chiqaring. Agar sirtqi o'qisa \"Sirtqi talaba\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-166",
+   "title": {
+    "uz": "Yosh kiritiladi. Avval tekshiring: agar yosh 18 dan katta…"
+   },
+   "statement": {
+    "uz": "Yosh kiritiladi. Avval tekshiring: agar yosh 18 dan katta yoki teng bo'lsa, ichida yana tekshiring: agar yosh 60 dan katta bo'lsa \"Keksa\", aks holda \"Katta\" deb chiqaring. Agar yosh 18 dan kichik bo'lsa \"Bola\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-167",
+   "title": {
+    "uz": "Bahosi kiritiladi. Avval tekshiring: agar baho 55 dan…"
+   },
+   "statement": {
+    "uz": "Bahosi kiritiladi. Avval tekshiring: agar baho 55 dan katta yoki teng bo'lsa, ichida yana tekshiring: agar baho 85 dan katta bo'lsa \"A'lochi\", aks holda \"Yaxshi\" deb chiqaring. Agar baho 55 dan kichik bo'lsa \"Yiqildi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-168",
+   "title": {
+    "uz": "Harorat kiritiladi. Avval tekshiring: agar harorat 30 dan…"
+   },
+   "statement": {
+    "uz": "Harorat kiritiladi. Avval tekshiring: agar harorat 30 dan katta bo'lsa, issiq. Ichida yana tekshiring: agar harorat 40 dan katta bo'lsa \"Juda issiq\", aks holda \"Issiq\" deb chiqaring. Agar harorat 30 dan katta bo'lmasa \"Normal\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-169",
+   "title": {
+    "uz": "Mahsulot narxi va a'zolik kiritiladi (1 — a'zo, 0 —…"
+   },
+   "statement": {
+    "uz": "Mahsulot narxi va a'zolik kiritiladi (1 — a'zo, 0 — emas). Avval tekshiring: agar a'zo bo'lsa, ichida yana tekshiring: agar narx 200000 dan katta bo'lsa \"25% chegirma\", aks holda \"10% chegirma\" deb chiqaring. Agar a'zo bo'lmasa \"Chegirmasiz\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-170",
+   "title": {
+    "uz": "Kishining yoshi va talabalik holati kiritiladi (1 —…"
+   },
+   "statement": {
+    "uz": "Kishining yoshi va talabalik holati kiritiladi (1 — talaba, 0 — emas). Avval tekshiring: agar talaba bo'lsa, ichida yana tekshiring: agar yosh 18 dan katta bo'lsa \"Katta talaba\", aks holda \"Yosh talaba\" deb chiqaring. Agar talaba bo'lmasa \"Talaba emas\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-171",
+   "title": {
+    "uz": "Do'kon savdosi kiritiladi. Avval tekshiring: agar savdo…"
+   },
+   "statement": {
+    "uz": "Do'kon savdosi kiritiladi. Avval tekshiring: agar savdo 1000000 dan katta bo'lsa, yaxshi kun. Ichida yana tekshiring: agar savdo 2000000 dan katta bo'lsa \"Ajoyib kun\", aks holda \"Yaxshi kun\" deb chiqaring. Agar savdo 1000000 dan katta bo'lmasa \"Sekin kun\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-172",
+   "title": {
+    "uz": "O'quvchining davomati (%) kiritiladi. Avval tekshiring:…"
+   },
+   "statement": {
+    "uz": "O'quvchining davomati (%) kiritiladi. Avval tekshiring: agar davomat 60 dan katta yoki teng bo'lsa, ichida yana tekshiring: agar davomat 90 dan katta bo'lsa \"A'lo davomat\", aks holda \"Yaxshi davomat\" deb chiqaring. Agar davomat 60 dan kichik bo'lsa \"Yomon davomat\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-173",
+   "title": {
+    "uz": "Bemor harorati va yo'tal holati kiritiladi (1 — yo'tal…"
+   },
+   "statement": {
+    "uz": "Bemor harorati va yo'tal holati kiritiladi (1 — yo'tal bor, 0 — yo'q). Avval tekshiring: agar harorat 37 dan katta bo'lsa, ichida yana tekshiring: agar yo'tal ham bor bo'lsa \"Shamollagan\", aks holda \"Faqat isitma bor\" deb chiqaring. Agar harorat 37 dan katta bo'lmasa \"Sog'lom\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-174",
+   "title": {
+    "uz": "Yo'lovchi yoshi kiritiladi. Avval tekshiring: agar yosh 7…"
+   },
+   "statement": {
+    "uz": "Yo'lovchi yoshi kiritiladi. Avval tekshiring: agar yosh 7 dan katta yoki teng bo'lsa, ichida yana tekshiring: agar yosh 60 dan katta bo'lsa \"Yarim narx chipta\", aks holda \"To'liq narx chipta\" deb chiqaring. Agar yosh 7 dan kichik bo'lsa \"Bepul chipta\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-175",
+   "title": {
+    "uz": "Ikki jamoaning gollari kiritiladi. Avval tekshiring: agar…"
+   },
+   "statement": {
+    "uz": "Ikki jamoaning gollari kiritiladi. Avval tekshiring: agar birinchi jamoaning gollari ko'p bo'lsa \"1-jamoa g'olib\" deb chiqaring. Aks holda ichida yana tekshiring: agar gollar teng bo'lsa \"Durang\", aks holda \"2-jamoa g'olib\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-176",
+   "title": {
+    "uz": "Bolaning yoshi kiritiladi. Avval tekshiring: agar yosh 7…"
+   },
+   "statement": {
+    "uz": "Bolaning yoshi kiritiladi. Avval tekshiring: agar yosh 7 dan kichik bo'lsa \"Bog'cha\" deb chiqaring. Aks holda ichida yana tekshiring: agar yosh 18 dan kichik bo'lsa \"Maktab\", aks holda \"Katta\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-177",
+   "title": {
+    "uz": "Kishining puli kiritiladi. Avval tekshiring: agar pul…"
+   },
+   "statement": {
+    "uz": "Kishining puli kiritiladi. Avval tekshiring: agar pul 1000000 dan katta bo'lsa, boy. Ichida yana tekshiring: agar pul 5000000 dan katta bo'lsa \"Juda boy\", aks holda \"Boy\" deb chiqaring. Agar pul 1000000 dan katta bo'lmasa \"Oddiy\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-178",
+   "title": {
+    "uz": "Mahsulot narxi kiritiladi. Avval tekshiring: agar narx…"
+   },
+   "statement": {
+    "uz": "Mahsulot narxi kiritiladi. Avval tekshiring: agar narx 50000 dan katta bo'lsa, qimmat. Ichida yana tekshiring: agar narx 100000 dan katta bo'lsa \"Juda qimmat\", aks holda \"Qimmat\" deb chiqaring. Agar narx 50000 dan katta bo'lmasa \"Arzon\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-179",
+   "title": {
+    "uz": "Suvning harorati kiritiladi. Avval tekshiring: agar…"
+   },
+   "statement": {
+    "uz": "Suvning harorati kiritiladi. Avval tekshiring: agar harorat 100 dan katta yoki teng bo'lsa \"Qaynaydi\" deb chiqaring. Aks holda ichida yana tekshiring: agar harorat 0 dan kichik yoki teng bo'lsa \"Muzlaydi\", aks holda \"Suyuq holatda\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-180",
+   "title": {
+    "uz": "Ikki o'quvchining bahosi kiritiladi. Avval tekshiring:…"
+   },
+   "statement": {
+    "uz": "Ikki o'quvchining bahosi kiritiladi. Avval tekshiring: agar birinchisining bahosi yuqori bo'lsa \"Birinchi o'quvchi yaxshiroq\" deb chiqaring. Aks holda ichida yana tekshiring: agar baholar teng bo'lsa \"Teng\", aks holda \"Ikkinchi o'quvchi yaxshiroq\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-181",
+   "title": {
+    "uz": "Yomg'ir holati va shamol tezligi kiritiladi (1 — yomg'ir…"
+   },
+   "statement": {
+    "uz": "Yomg'ir holati va shamol tezligi kiritiladi (1 — yomg'ir bor, 0 — yo'q). Avval tekshiring: agar yomg'ir bor bo'lsa, ichida yana tekshiring: agar shamol 25 dan katta bo'lsa \"Bo'ronli yomg'ir\", aks holda \"Oddiy yomg'ir\" deb chiqaring. Agar yomg'ir yo'q bo'lsa \"Quruq ob-havo\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-182",
+   "title": {
+    "uz": "Do'kon a'zoligi va xarid summasi kiritiladi (1 — a'zo, 0…"
+   },
+   "statement": {
+    "uz": "Do'kon a'zoligi va xarid summasi kiritiladi (1 — a'zo, 0 — emas). Avval tekshiring: agar a'zo bo'lsa, ichida yana tekshiring: agar xarid 500000 dan katta bo'lsa \"Sovg'a bor\", aks holda \"Chegirma bor\" deb chiqaring. Agar a'zo bo'lmasa \"Oddiy xarid\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-183",
+   "title": {
+    "uz": "Kishining yoshi va ish holati kiritiladi (1 — ishlaydi, 0…"
+   },
+   "statement": {
+    "uz": "Kishining yoshi va ish holati kiritiladi (1 — ishlaydi, 0 — ishsiz). Avval tekshiring: agar odam ishlasa, ichida yana tekshiring: agar yosh 40 dan katta bo'lsa \"Tajribali ishchi\", aks holda \"Yosh ishchi\" deb chiqaring. Agar ishlamasa \"Ishsiz\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-184",
+   "title": {
+    "uz": "O'quvchining imtihon bali kiritiladi. Avval tekshiring:…"
+   },
+   "statement": {
+    "uz": "O'quvchining imtihon bali kiritiladi. Avval tekshiring: agar ball 60 dan katta yoki teng bo'lsa, qabul. Ichida yana tekshiring: agar ball 90 dan katta yoki teng bo'lsa \"Grant bilan qabul\", aks holda \"To'lov bilan qabul\" deb chiqaring. Agar ball 60 dan kichik bo'lsa \"Qabul qilinmadi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-185",
+   "title": {
+    "uz": "Bir oilaning daromadi va bolalar soni kiritiladi. Avval…"
+   },
+   "statement": {
+    "uz": "Bir oilaning daromadi va bolalar soni kiritiladi. Avval tekshiring: agar bolalar soni 3 dan katta yoki teng bo'lsa (ko'p bolali), ichida yana tekshiring: agar daromad 3000000 dan kichik bo'lsa \"Yordam kerak\", aks holda \"Ta'minlangan\" deb chiqaring. Agar bolalar soni 3 dan kam bo'lsa \"Oddiy oila\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-186",
+   "title": {
+    "uz": "Mahsulot og'irligi (kg) va turi kiritiladi (1 —…"
+   },
+   "statement": {
+    "uz": "Mahsulot og'irligi (kg) va turi kiritiladi (1 — oziq-ovqat, 0 — boshqa). Avval tekshiring: agar mahsulot oziq-ovqat bo'lsa, ichida yana tekshiring: agar og'irlik 10 dan katta bo'lsa \"Ko'p oziq-ovqat\", aks holda \"Oz oziq-ovqat\" deb chiqaring. Agar oziq-ovqat bo'lmasa \"Boshqa mahsulot\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-187",
+   "title": {
+    "uz": "Kishining vazni (kg) va bo'yi (sm) kiritiladi. Avval…"
+   },
+   "statement": {
+    "uz": "Kishining vazni (kg) va bo'yi (sm) kiritiladi. Avval tekshiring: agar bo'y 170 dan katta bo'lsa, baland. Ichida yana tekshiring: agar vazn 60 dan katta bo'lsa \"Baland va og'ir\", aks holda \"Baland va yengil\" deb chiqaring. Agar bo'y 170 dan katta bo'lmasa \"Past bo'y\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-188",
+   "title": {
+    "uz": "Sayohatchilar soni va mashina turi kiritiladi (1 —…"
+   },
+   "statement": {
+    "uz": "Sayohatchilar soni va mashina turi kiritiladi (1 — avtobus, 0 — yengil mashina). Avval tekshiring: agar avtobus bo'lsa, ichida yana tekshiring: agar odamlar 45 dan ko'p bo'lsa \"Bitta avtobus yetmaydi\", aks holda \"Bitta avtobus yetadi\" deb chiqaring. Agar yengil mashina bo'lsa \"Yengil mashina tanlandi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-189",
+   "title": {
+    "uz": "O'quvchining yoshi va sinfi kiritiladi. Avval tekshiring:…"
+   },
+   "statement": {
+    "uz": "O'quvchining yoshi va sinfi kiritiladi. Avval tekshiring: agar yosh 7 ga teng bo'lsa, ichida yana tekshiring: agar sinf 1 ga teng bo'lsa \"To'g'ri\", aks holda \"Yosh va sinf mos emas\" deb chiqaring. Agar yosh 7 ga teng bo'lmasa \"Boshqa yoshdagi o'quvchi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-190",
+   "title": {
+    "uz": "Bankdagi omonat summasi va mijoz turi kiritiladi (1 —…"
+   },
+   "statement": {
+    "uz": "Bankdagi omonat summasi va mijoz turi kiritiladi (1 — doimiy, 0 — yangi). Avval tekshiring: agar mijoz doimiy bo'lsa, ichida yana tekshiring: agar summa 10000000 dan katta bo'lsa \"Yuqori foiz\", aks holda \"Oddiy foiz\" deb chiqaring. Agar yangi mijoz bo'lsa \"Standart shart\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-191",
+   "title": {
+    "uz": "Harorat va fasl kiritiladi (fasl uchun 1 — yoz, 0 —…"
+   },
+   "statement": {
+    "uz": "Harorat va fasl kiritiladi (fasl uchun 1 — yoz, 0 — qish). Avval tekshiring: agar yoz bo'lsa, ichida yana tekshiring: agar harorat 35 dan katta bo'lsa \"Juda issiq yoz\", aks holda \"Oddiy yoz\" deb chiqaring. Agar qish bo'lsa \"Qish mavsumi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-192",
+   "title": {
+    "uz": "Buyurtma summasi va yetkazib berish turi kiritiladi (1 —…"
+   },
+   "statement": {
+    "uz": "Buyurtma summasi va yetkazib berish turi kiritiladi (1 — tez, 0 — oddiy). Avval tekshiring: agar tez yetkazish tanlangan bo'lsa, ichida yana tekshiring: agar summa 100000 dan katta bo'lsa \"Tez va bepul yetkazish\", aks holda \"Tez, lekin to'lovli yetkazish\" deb chiqaring. Agar oddiy yetkazish bo'lsa \"Oddiy yetkazish\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-193",
+   "title": {
+    "uz": "O'quvchining bahosi va xulqi kiritiladi (xulq uchun 1 —…"
+   },
+   "statement": {
+    "uz": "O'quvchining bahosi va xulqi kiritiladi (xulq uchun 1 — yaxshi, 0 — yomon). Avval tekshiring: agar baho 55 dan katta yoki teng bo'lsa, o'tdi. Ichida yana tekshiring: agar xulqi yaxshi bo'lsa \"Namunali o'quvchi\", aks holda \"O'tdi, lekin xulqni yaxshilash kerak\" deb chiqaring. Agar baho 55 dan kichik bo'lsa \"Yiqildi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-194",
+   "title": {
+    "uz": "Mahsulot soni va narxi kiritiladi. Avval tekshiring: agar…"
+   },
+   "statement": {
+    "uz": "Mahsulot soni va narxi kiritiladi. Avval tekshiring: agar mahsulot bor bo'lsa (son 0 dan katta), ichida yana tekshiring: agar narx 50000 dan katta bo'lsa \"Bor, lekin qimmat\", aks holda \"Bor va arzon\" deb chiqaring. Agar son 0 ga teng bo'lsa \"Mahsulot yo'q\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-195",
+   "title": {
+    "uz": "Foydalanuvchi ismini, yoshini kiritadi. Avval tekshiring:…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ismini, yoshini kiritadi. Avval tekshiring: agar yosh 18 dan katta yoki teng bo'lsa, ichida yana tekshiring: agar yosh 65 dan katta bo'lsa \"<ism>, siz nafaqadasiz\", aks holda \"<ism>, siz ishchisiz\" deb chiqaring. Agar yosh 18 dan kichik bo'lsa \"<ism>, siz hali yoshsiz\" deb chiqaring. (Chiqarishda ismni ham qo'shing.)"
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-196",
+   "title": {
+    "uz": "Yosh va guvohnoma holati kiritiladi (1 — bor, 0 — yo'q).…"
+   },
+   "statement": {
+    "uz": "Yosh va guvohnoma holati kiritiladi (1 — bor, 0 — yo'q). Avval tekshiring: agar yosh 18 dan katta yoki teng bo'lsa, ichida yana tekshiring: agar guvohnoma bor bo'lsa \"Mashina haydashi mumkin\", aks holda \"Avval guvohnoma olishi kerak\" deb chiqaring. Agar yosh 18 dan kichik bo'lsa \"Haydashga yoshi yetmagan\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-197",
+   "title": {
+    "uz": "Bir dorixonada dori narxi va retsept holati kiritiladi (1…"
+   },
+   "statement": {
+    "uz": "Bir dorixonada dori narxi va retsept holati kiritiladi (1 — retsept bor, 0 — yo'q). Avval tekshiring: agar retsept bor bo'lsa, ichida yana tekshiring: agar narx 50000 dan katta bo'lsa \"Retseptli qimmat dori\", aks holda \"Retseptli arzon dori\" deb chiqaring. Agar retsept yo'q bo'lsa \"Retseptsiz sotilmaydi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-198",
+   "title": {
+    "uz": "O'quvchining matematika va informatika bahosi kiritiladi.…"
+   },
+   "statement": {
+    "uz": "O'quvchining matematika va informatika bahosi kiritiladi. Avval tekshiring: agar informatika bahosi 55 dan katta yoki teng bo'lsa, ichida yana tekshiring: agar matematika ham 55 dan katta yoki teng bo'lsa \"Ikkala fandan o'tdi\", aks holda \"Faqat informatikadan o'tdi\" deb chiqaring. Agar informatikadan yiqilsa \"Informatikadan yiqildi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-199",
+   "title": {
+    "uz": "Buyurtma summasi va mijoz turi kiritiladi (1 — doimiy, 0…"
+   },
+   "statement": {
+    "uz": "Buyurtma summasi va mijoz turi kiritiladi (1 — doimiy, 0 — yangi). Avval tekshiring: agar summa 200000 dan katta bo'lsa, katta buyurtma. Ichida yana tekshiring: agar mijoz doimiy bo'lsa \"Katta buyurtma, sodiq mijoz\", aks holda \"Katta buyurtma, yangi mijoz\" deb chiqaring. Agar summa 200000 dan katta bo'lmasa \"Kichik buyurtma\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-200",
+   "title": {
+    "uz": "Bolaning yoshi va emizuvchilik holati kiritiladi (1 —…"
+   },
+   "statement": {
+    "uz": "Bolaning yoshi va emizuvchilik holati kiritiladi (1 — emizikli, 0 — emas). Avval tekshiring: agar yosh 3 dan kichik bo'lsa, ichida yana tekshiring: agar hali emizikli bo'lsa \"Chaqaloq\", aks holda \"Yosh bola\" deb chiqaring. Agar yosh 3 dan kichik bo'lmasa \"Katta bola\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-201",
+   "title": {
+    "uz": "Mehmonxona xonasi turi va kunlar soni kiritiladi (xona…"
+   },
+   "statement": {
+    "uz": "Mehmonxona xonasi turi va kunlar soni kiritiladi (xona turi: 1 — lyuks, 0 — oddiy). Avval tekshiring: agar lyuks xona bo'lsa, ichida yana tekshiring: agar kunlar 7 dan katta bo'lsa \"Lyuks xona, chegirma bor\", aks holda \"Lyuks xona, to'liq narx\" deb chiqaring. Agar oddiy xona bo'lsa \"Oddiy xona\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-202",
+   "title": {
+    "uz": "Foydalanuvchining vazni (kg) va sport turi kiritiladi (1…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchining vazni (kg) va sport turi kiritiladi (1 — og'ir atletika, 0 — yengil). Avval tekshiring: agar og'ir atletika bo'lsa, ichida yana tekshiring: agar vazn 90 dan katta bo'lsa \"Og'ir vazn toifasi\", aks holda \"O'rta vazn toifasi\" deb chiqaring. Agar yengil sport bo'lsa \"Yengil sport\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-203",
+   "title": {
+    "uz": "Telefon balansi va tarif turi kiritiladi (1 — internet…"
+   },
+   "statement": {
+    "uz": "Telefon balansi va tarif turi kiritiladi (1 — internet tarifi, 0 — oddiy). Avval tekshiring: agar internet tarifi bo'lsa, ichida yana tekshiring: agar balans 10000 dan katta bo'lsa \"Internet ishlaydi\", aks holda \"Balansni to'ldiring\" deb chiqaring. Agar oddiy tarif bo'lsa \"Faqat qo'ng'iroq uchun\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-204",
+   "title": {
+    "uz": "O'quvchining yoshi va to'garakka yozilish holati…"
+   },
+   "statement": {
+    "uz": "O'quvchining yoshi va to'garakka yozilish holati kiritiladi (1 — yozilgan, 0 — yo'q). Avval tekshiring: agar o'quvchi to'garakka yozilgan bo'lsa, ichida yana tekshiring: agar yosh 10 dan katta bo'lsa \"Katta guruh to'garagi\", aks holda \"Kichik guruh to'garagi\" deb chiqaring. Agar yozilmagan bo'lsa \"To'garakka yozilmagan\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-205",
+   "title": {
+    "uz": "Bir dala maydoni (gektar) va ekin turi kiritiladi (1 —…"
+   },
+   "statement": {
+    "uz": "Bir dala maydoni (gektar) va ekin turi kiritiladi (1 — paxta, 0 — boshqa). Avval tekshiring: agar paxta ekilgan bo'lsa, ichida yana tekshiring: agar maydon 50 dan katta bo'lsa \"Katta paxta dalasi\", aks holda \"Kichik paxta dalasi\" deb chiqaring. Agar paxta bo'lmasa \"Boshqa ekin\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-206",
+   "title": {
+    "uz": "Kitob narxi va o'quvchi turi kiritiladi (1 — kutubxona…"
+   },
+   "statement": {
+    "uz": "Kitob narxi va o'quvchi turi kiritiladi (1 — kutubxona a'zosi, 0 — emas). Avval tekshiring: agar a'zo bo'lsa, ichida yana tekshiring: agar narx 30000 dan katta bo'lsa \"A'zoga chegirma bilan\", aks holda \"A'zoga bepul\" deb chiqaring. Agar a'zo bo'lmasa \"To'liq narxda\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-207",
+   "title": {
+    "uz": "Yosh va chempionat toifasi kiritiladi (1 — professional,…"
+   },
+   "statement": {
+    "uz": "Yosh va chempionat toifasi kiritiladi (1 — professional, 0 — havaskor). Avval tekshiring: agar professional bo'lsa, ichida yana tekshiring: agar yosh 18 dan katta yoki teng bo'lsa \"Kattalar professional ligasi\", aks holda \"Yoshlar professional ligasi\" deb chiqaring. Agar havaskor bo'lsa \"Havaskorlar ligasi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-208",
+   "title": {
+    "uz": "Ikki shaharning harorati kiritiladi. Avval tekshiring:…"
+   },
+   "statement": {
+    "uz": "Ikki shaharning harorati kiritiladi. Avval tekshiring: agar birinchi shahar issiqroq bo'lsa \"1-shahar issiqroq\" deb chiqaring. Aks holda ichida yana tekshiring: agar haroratlar teng bo'lsa \"Haroratlar teng\", aks holda \"2-shahar issiqroq\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-209",
+   "title": {
+    "uz": "Mahsulot narxi va bayram holati kiritiladi (1 — bayram, 0…"
+   },
+   "statement": {
+    "uz": "Mahsulot narxi va bayram holati kiritiladi (1 — bayram, 0 — oddiy kun). Avval tekshiring: agar bayram bo'lsa, ichida yana tekshiring: agar narx 100000 dan katta bo'lsa \"Bayram chegirmasi 20%\", aks holda \"Bayram chegirmasi 10%\" deb chiqaring. Agar oddiy kun bo'lsa \"Chegirmasiz\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-210",
+   "title": {
+    "uz": "O'quvchining davomat kunlari va umumiy dars kunlari…"
+   },
+   "statement": {
+    "uz": "O'quvchining davomat kunlari va umumiy dars kunlari kiritiladi. Avval tekshiring: agar o'quvchi barcha darslarga kelgan bo'lsa (davomat = umumiy), \"To'liq davomat\" deb chiqaring. Aks holda ichida yana tekshiring: agar davomat umumiyning yarmidan ko'p bo'lsa \"Yaxshi davomat\", aks holda \"Kam davomat\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-211",
+   "title": {
+    "uz": "Avtomobil yoqilg'isi (litr) va yo'l turi kiritiladi (1 —…"
+   },
+   "statement": {
+    "uz": "Avtomobil yoqilg'isi (litr) va yo'l turi kiritiladi (1 — uzoq yo'l, 0 — shahar ichi). Avval tekshiring: agar uzoq yo'l bo'lsa, ichida yana tekshiring: agar yoqilg'i 40 dan kam bo'lsa \"Yoqilg'i quyib oling\", aks holda \"Yo'lga tayyor\" deb chiqaring. Agar shahar ichida bo'lsa \"Shahar yo'li, yetarli\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-212",
+   "title": {
+    "uz": "Bir restoranda buyurtma summasi va vaqt kiritiladi…"
+   },
+   "statement": {
+    "uz": "Bir restoranda buyurtma summasi va vaqt kiritiladi (soat). Avval tekshiring: agar vaqt 12 dan 15 gacha bo'lsa (tushlik vaqti), ichida yana tekshiring: agar summa 50000 dan katta bo'lsa \"Tushlik chegirmasi bor\", aks holda \"Tushlik, oddiy narx\" deb chiqaring. Agar tushlik vaqti bo'lmasa \"Oddiy vaqt\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-213",
+   "title": {
+    "uz": "O'quvchining bali va sinfi kiritiladi (sinf: 11 —…"
+   },
+   "statement": {
+    "uz": "O'quvchining bali va sinfi kiritiladi (sinf: 11 — bitiruvchi). Avval tekshiring: agar o'quvchi bitiruvchi sinf bo'lsa, ichida yana tekshiring: agar ball 90 dan katta bo'lsa \"Oliygohga tayyor\", aks holda \"Imtihonga tayyorlanish kerak\" deb chiqaring. Agar bitiruvchi bo'lmasa \"O'qishni davom ettiradi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-214",
+   "title": {
+    "uz": "Bir do'konda mahsulot muddati (kun) va chegirma holati…"
+   },
+   "statement": {
+    "uz": "Bir do'konda mahsulot muddati (kun) va chegirma holati kiritiladi (1 — chegirmada, 0 — yo'q). Avval tekshiring: agar mahsulot chegirmada bo'lsa, ichida yana tekshiring: agar muddat 5 dan kam bo'lsa \"Chegirmada, tez oling\", aks holda \"Chegirmada\" deb chiqaring. Agar chegirmada bo'lmasa \"Oddiy narx\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-if-215",
+   "title": {
+    "uz": "Yo'lovchi yoshi va nogironlik holati kiritiladi (1 —…"
+   },
+   "statement": {
+    "uz": "Yo'lovchi yoshi va nogironlik holati kiritiladi (1 — nogiron, 0 — yo'q). Avval tekshiring: agar yo'lovchi nogiron bo'lsa \"Bepul yo'l\" deb chiqaring. Aks holda ichida yana tekshiring: agar yosh 60 dan katta bo'lsa \"Chegirmali yo'l\", aks holda \"To'liq to'lov\" deb chiqaring."
+   },
+   "source": "Flowgorithm_ichma_ich_if",
+   "judge": null,
+   "tests": []
+  }
+ ]
+}

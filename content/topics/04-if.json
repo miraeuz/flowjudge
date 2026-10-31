@@ -1,0 +1,1506 @@
+{
+ "id": "if",
+ "order": 4,
+ "title": {
+  "uz": "If — shart",
+  "en": "If — conditions"
+ },
+ "lesson": {
+  "uz": "If bloki shartni tekshiradi: True bo'lsa bir yo'l, False bo'lsa boshqa yo'l. Taqqoslash: > < >= <= = <>.",
+  "en": "The If block checks a condition: one path for True, another for False. Compare with > < >= <= = <>."
+ },
+ "classwork": [
+  {
+   "id": "if-101",
+   "title": {
+    "uz": "Bir son kiritiladi. Agar u 10 dan katta bo'lsa \"Katta\",…"
+   },
+   "statement": {
+    "uz": "Bir son kiritiladi. Agar u 10 dan katta bo'lsa \"Katta\", aks holda \"Kichik\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-102",
+   "title": {
+    "uz": "Bir son kiritiladi. Agar u 100 dan katta bo'lsa \"Ha\", aks…"
+   },
+   "statement": {
+    "uz": "Bir son kiritiladi. Agar u 100 dan katta bo'lsa \"Ha\", aks holda \"Yo'q\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-103",
+   "title": {
+    "uz": "O'quvchining bahosi kiritiladi. Agar baho 55 dan katta…"
+   },
+   "statement": {
+    "uz": "O'quvchining bahosi kiritiladi. Agar baho 55 dan katta yoki teng bo'lsa \"O'tdi\", aks holda \"Yiqildi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-104",
+   "title": {
+    "uz": "Foydalanuvchining yoshi kiritiladi. Agar yosh 18 dan…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchining yoshi kiritiladi. Agar yosh 18 dan katta yoki teng bo'lsa \"Katta\", aks holda \"Bola\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-105",
+   "title": {
+    "uz": "Ikki son kiritiladi. Agar ular teng bo'lsa \"Teng\", aks…"
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Agar ular teng bo'lsa \"Teng\", aks holda \"Teng emas\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-106",
+   "title": {
+    "uz": "Ikki son kiritiladi. Agar birinchisi ikkinchisidan katta…"
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Agar birinchisi ikkinchisidan katta bo'lsa \"Birinchisi katta\", aks holda \"Ikkinchisi katta\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-107",
+   "title": {
+    "uz": "Bir mahsulot narxi kiritiladi. Agar narx 50000 dan katta…"
+   },
+   "statement": {
+    "uz": "Bir mahsulot narxi kiritiladi. Agar narx 50000 dan katta bo'lsa \"Qimmat\", aks holda \"Arzon\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-108",
+   "title": {
+    "uz": "Bugungi harorat kiritiladi. Agar harorat 0 dan past…"
+   },
+   "statement": {
+    "uz": "Bugungi harorat kiritiladi. Agar harorat 0 dan past bo'lsa \"Sovuq\", aks holda \"Sovuq emas\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-109",
+   "title": {
+    "uz": "Do'kondagi mahsulot soni kiritiladi. Agar 0 ga teng…"
+   },
+   "statement": {
+    "uz": "Do'kondagi mahsulot soni kiritiladi. Agar 0 ga teng bo'lsa \"Tugagan\", aks holda \"Bor\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-110",
+   "title": {
+    "uz": "Bir son kiritiladi. Agar u 2 ga bo'linsa \"Juft\", aks…"
+   },
+   "statement": {
+    "uz": "Bir son kiritiladi. Agar u 2 ga bo'linsa \"Juft\", aks holda \"Toq\" deb chiqaring. (Qoldiq uchun mod amalidan foydalaning: son mod 2)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-111",
+   "title": {
+    "uz": "Bir son kiritiladi. Agar u 0 ga teng bo'lsa \"Nol\", aks…"
+   },
+   "statement": {
+    "uz": "Bir son kiritiladi. Agar u 0 ga teng bo'lsa \"Nol\", aks holda \"Nol emas\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-112",
+   "title": {
+    "uz": "O'quvchining ball soni kiritiladi. Agar 90 dan katta yoki…"
+   },
+   "statement": {
+    "uz": "O'quvchining ball soni kiritiladi. Agar 90 dan katta yoki teng bo'lsa \"A'lo\", aks holda \"A'lo emas\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-113",
+   "title": {
+    "uz": "Bir odamning bo'yi (sm) kiritiladi. Agar bo'y 150 dan…"
+   },
+   "statement": {
+    "uz": "Bir odamning bo'yi (sm) kiritiladi. Agar bo'y 150 dan katta bo'lsa \"Baland\", aks holda \"Past\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-114",
+   "title": {
+    "uz": "Bir savatdagi olmalar soni kiritiladi. Agar 12 dan ko'p…"
+   },
+   "statement": {
+    "uz": "Bir savatdagi olmalar soni kiritiladi. Agar 12 dan ko'p bo'lsa \"Ko'p\", aks holda \"Kam\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-115",
+   "title": {
+    "uz": "Bir odamning yoshi kiritiladi. Agar yosh 65 dan katta…"
+   },
+   "statement": {
+    "uz": "Bir odamning yoshi kiritiladi. Agar yosh 65 dan katta bo'lsa \"Nafaqaxo'r\", aks holda \"Ishlaydi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-116",
+   "title": {
+    "uz": "Bir son kiritiladi. Agar u 10 ga bo'linsa \"10 ga…"
+   },
+   "statement": {
+    "uz": "Bir son kiritiladi. Agar u 10 ga bo'linsa \"10 ga bo'linadi\", aks holda \"bo'linmaydi\" deb chiqaring. (son mod 10)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-117",
+   "title": {
+    "uz": "Bir kishining vazni (kg) kiritiladi. Agar vazn 100 dan…"
+   },
+   "statement": {
+    "uz": "Bir kishining vazni (kg) kiritiladi. Agar vazn 100 dan katta bo'lsa \"Og'ir\", aks holda \"Og'ir emas\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-118",
+   "title": {
+    "uz": "Bir son kiritiladi. Agar u 5 dan katta bo'lsa uni 2 ga…"
+   },
+   "statement": {
+    "uz": "Bir son kiritiladi. Agar u 5 dan katta bo'lsa uni 2 ga ko'paytirib chiqaring, aks holda sonning o'zini chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-119",
+   "title": {
+    "uz": "Ikki o'quvchining bahosi kiritiladi. Agar birinchisining…"
+   },
+   "statement": {
+    "uz": "Ikki o'quvchining bahosi kiritiladi. Agar birinchisining bahosi yuqori bo'lsa \"Birinchisi yuqori\", aks holda \"Ikkinchisi yuqori\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-120",
+   "title": {
+    "uz": "Bir son kiritiladi. Agar u 7 ga teng bo'lsa \"Yetti\", aks…"
+   },
+   "statement": {
+    "uz": "Bir son kiritiladi. Agar u 7 ga teng bo'lsa \"Yetti\", aks holda \"Boshqa son\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  }
+ ],
+ "homework": [
+  {
+   "id": "if-121",
+   "title": {
+    "uz": "Foydalanuvchi o'z yoshini kiritadi. Agar yosh 7 dan…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi o'z yoshini kiritadi. Agar yosh 7 dan kichik bo'lsa \"Maktabga bormagan\", aks holda \"Maktab yoshida\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-122",
+   "title": {
+    "uz": "Bir mahsulotdan sotilgan soni kiritiladi. Agar 50 dan…"
+   },
+   "statement": {
+    "uz": "Bir mahsulotdan sotilgan soni kiritiladi. Agar 50 dan ko'p sotilgan bo'lsa \"Ko'p sotildi\", aks holda \"Kam sotildi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-123",
+   "title": {
+    "uz": "Bir son kiritiladi. Agar u 1000 dan katta bo'lsa \"Katta…"
+   },
+   "statement": {
+    "uz": "Bir son kiritiladi. Agar u 1000 dan katta bo'lsa \"Katta son\", aks holda \"Kichik son\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-124",
+   "title": {
+    "uz": "Harorat kiritiladi. Agar harorat 37 dan katta bo'lsa…"
+   },
+   "statement": {
+    "uz": "Harorat kiritiladi. Agar harorat 37 dan katta bo'lsa \"Isitma bor\", aks holda \"Normal\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-125",
+   "title": {
+    "uz": "Ikki son kiritiladi. Ularning yig'indisini toping. Agar…"
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Ularning yig'indisini toping. Agar yig'indi 100 dan katta bo'lsa \"Katta\", aks holda \"Kichik\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-126",
+   "title": {
+    "uz": "Bir bolaning vazni kiritiladi. Agar 40 kg dan og'ir…"
+   },
+   "statement": {
+    "uz": "Bir bolaning vazni kiritiladi. Agar 40 kg dan og'ir bo'lsa \"Katta\", aks holda \"Kichik\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-127",
+   "title": {
+    "uz": "Foydalanuvchi ismini va yoshini kiritadi. Agar yosh 18…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ismini va yoshini kiritadi. Agar yosh 18 dan katta yoki teng bo'lsa \"<ism>, siz kattasiz\", aks holda \"<ism>, siz yoshsiz\" deb (ismni qo'shib) chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-128",
+   "title": {
+    "uz": "Do'konda qolgan pul (so'm) kiritiladi. Agar pul 0 dan…"
+   },
+   "statement": {
+    "uz": "Do'konda qolgan pul (so'm) kiritiladi. Agar pul 0 dan katta bo'lsa \"Pul bor\", aks holda \"Pul yo'q\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-129",
+   "title": {
+    "uz": "Bir son kiritiladi. Agar u 50 dan katta bo'lsa \"Katta\",…"
+   },
+   "statement": {
+    "uz": "Bir son kiritiladi. Agar u 50 dan katta bo'lsa \"Katta\", 50 ga teng bo'lsa \"Ellik\", aks holda \"Kichik\" deb chiqaring. (uch tarmoqli shart)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-130",
+   "title": {
+    "uz": "O'quvchining bahosi kiritiladi. Agar baho 60 dan katta…"
+   },
+   "statement": {
+    "uz": "O'quvchining bahosi kiritiladi. Agar baho 60 dan katta bo'lsa \"Yaxshi\", aks holda \"Yaxshilash kerak\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-131",
+   "title": {
+    "uz": "Ikki son kiritiladi. Agar birinchisi kichik bo'lsa…"
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Agar birinchisi kichik bo'lsa \"Birinchisi kichik\", aks holda \"Ikkinchisi kichik\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-132",
+   "title": {
+    "uz": "Bir son kiritiladi. Agar u 2 ga bo'linsa \"Juft\", aks…"
+   },
+   "statement": {
+    "uz": "Bir son kiritiladi. Agar u 2 ga bo'linsa \"Juft\", aks holda \"Toq\" deb chiqaring. (son mod 2)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-133",
+   "title": {
+    "uz": "Yosh kiritiladi. Agar yosh 60 dan katta bo'lsa \"Keksa\",…"
+   },
+   "statement": {
+    "uz": "Yosh kiritiladi. Agar yosh 60 dan katta bo'lsa \"Keksa\", aks holda \"Keksa emas\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-134",
+   "title": {
+    "uz": "Mahsulot narxi kiritiladi. Agar narx 100000 dan katta…"
+   },
+   "statement": {
+    "uz": "Mahsulot narxi kiritiladi. Agar narx 100000 dan katta bo'lsa \"Qimmat\", aks holda \"Arzon\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-135",
+   "title": {
+    "uz": "Harorat kiritiladi. Agar harorat 30 dan yuqori bo'lsa…"
+   },
+   "statement": {
+    "uz": "Harorat kiritiladi. Agar harorat 30 dan yuqori bo'lsa \"Issiq\", aks holda \"Issiq emas\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-136",
+   "title": {
+    "uz": "Do'kondagi mahsulot soni kiritiladi. Agar 5 dan kam…"
+   },
+   "statement": {
+    "uz": "Do'kondagi mahsulot soni kiritiladi. Agar 5 dan kam bo'lsa \"Kam qoldi\", aks holda \"Yetarli\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-137",
+   "title": {
+    "uz": "Bir odamning bo'yi (sm) kiritiladi. Agar 170 dan baland…"
+   },
+   "statement": {
+    "uz": "Bir odamning bo'yi (sm) kiritiladi. Agar 170 dan baland bo'lsa \"Baland\", aks holda \"Past\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-138",
+   "title": {
+    "uz": "Bir son kiritiladi. Agar u 100 ga teng bo'lsa \"Yuz\", aks…"
+   },
+   "statement": {
+    "uz": "Bir son kiritiladi. Agar u 100 ga teng bo'lsa \"Yuz\", aks holda \"Yuz emas\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-139",
+   "title": {
+    "uz": "O'quvchining davomati (%) kiritiladi. Agar 75 dan katta…"
+   },
+   "statement": {
+    "uz": "O'quvchining davomati (%) kiritiladi. Agar 75 dan katta yoki teng bo'lsa \"Yaxshi davomat\", aks holda \"Yomon davomat\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-140",
+   "title": {
+    "uz": "Ikki son kiritiladi. Ularning ayirmasini toping. Agar…"
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Ularning ayirmasini toping. Agar ayirma 0 dan katta bo'lsa \"Musbat\", aks holda \"Musbat emas\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-141",
+   "title": {
+    "uz": "Bir mahsulotdan sotilgan soni kiritiladi. Agar 100 dan…"
+   },
+   "statement": {
+    "uz": "Bir mahsulotdan sotilgan soni kiritiladi. Agar 100 dan ko'p bo'lsa \"Juda ko'p\", aks holda \"Oddiy\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-142",
+   "title": {
+    "uz": "Yosh kiritiladi. Agar yosh 13 dan kichik bo'lsa \"Bola\",…"
+   },
+   "statement": {
+    "uz": "Yosh kiritiladi. Agar yosh 13 dan kichik bo'lsa \"Bola\", aks holda \"Bola emas\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-143",
+   "title": {
+    "uz": "Bir kishining puli va mahsulot narxi kiritiladi. Agar…"
+   },
+   "statement": {
+    "uz": "Bir kishining puli va mahsulot narxi kiritiladi. Agar puli yetsa (pul narxdan katta yoki teng bo'lsa) \"Sotib oladi\", aks holda \"Puli yetmaydi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-144",
+   "title": {
+    "uz": "Ikki o'quvchining yoshi kiritiladi. Agar birinchisi katta…"
+   },
+   "statement": {
+    "uz": "Ikki o'quvchining yoshi kiritiladi. Agar birinchisi katta bo'lsa \"Birinchisi katta\", aks holda \"Ikkinchisi katta\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-145",
+   "title": {
+    "uz": "Bir son kiritiladi. Agar u 1 dan katta bo'lsa \"Birdan…"
+   },
+   "statement": {
+    "uz": "Bir son kiritiladi. Agar u 1 dan katta bo'lsa \"Birdan katta\", aks holda \"Birdan katta emas\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-146",
+   "title": {
+    "uz": "Do'konning kunlik savdosi (so'm) kiritiladi. Agar 1000000…"
+   },
+   "statement": {
+    "uz": "Do'konning kunlik savdosi (so'm) kiritiladi. Agar 1000000 dan katta bo'lsa \"Yaxshi kun\", aks holda \"Sekin kun\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-147",
+   "title": {
+    "uz": "Bir son kiritiladi. Agar u 10 dan katta bo'lsa \"Katta\",…"
+   },
+   "statement": {
+    "uz": "Bir son kiritiladi. Agar u 10 dan katta bo'lsa \"Katta\", 10 ga teng bo'lsa \"O'n\", aks holda \"Kichik\" deb chiqaring. (uch tarmoqli shart)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-148",
+   "title": {
+    "uz": "O'quvchining bali kiritiladi. Agar 90 dan katta bo'lsa…"
+   },
+   "statement": {
+    "uz": "O'quvchining bali kiritiladi. Agar 90 dan katta bo'lsa \"A'lo\", 70 dan katta bo'lsa \"Yaxshi\", aks holda \"O'rtacha\" deb chiqaring. (uch tarmoqli shart)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-149",
+   "title": {
+    "uz": "Bir son kiritiladi. Agar u 0 dan katta bo'lsa \"Musbat\", 0…"
+   },
+   "statement": {
+    "uz": "Bir son kiritiladi. Agar u 0 dan katta bo'lsa \"Musbat\", 0 ga teng bo'lsa \"Nol\", aks holda \"Manfiy\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-150",
+   "title": {
+    "uz": "Bir bolaning yoshi kiritiladi. Agar 7 dan kichik bo'lsa…"
+   },
+   "statement": {
+    "uz": "Bir bolaning yoshi kiritiladi. Agar 7 dan kichik bo'lsa \"Bog'cha\", 18 dan kichik bo'lsa \"Maktab\", aks holda \"Katta\" deb chiqaring. (uch tarmoqli shart)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  }
+ ],
+ "extra": [
+  {
+   "id": "if-151",
+   "title": {
+    "uz": "Harorat kiritiladi. Agar 0 dan past bo'lsa \"Sovuq\", 25…"
+   },
+   "statement": {
+    "uz": "Harorat kiritiladi. Agar 0 dan past bo'lsa \"Sovuq\", 25 dan yuqori bo'lsa \"Issiq\", aks holda \"Normal\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-152",
+   "title": {
+    "uz": "Ikki son kiritiladi. Agar birinchisi katta bo'lsa…"
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Agar birinchisi katta bo'lsa \"Birinchisi katta\", teng bo'lsa \"Teng\", aks holda \"Ikkinchisi katta\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-153",
+   "title": {
+    "uz": "Bir mahsulot narxi kiritiladi. Agar 100000 dan katta…"
+   },
+   "statement": {
+    "uz": "Bir mahsulot narxi kiritiladi. Agar 100000 dan katta bo'lsa \"Qimmat\", 50000 dan katta bo'lsa \"O'rtacha\", aks holda \"Arzon\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-154",
+   "title": {
+    "uz": "Yosh kiritiladi. Agar 18 dan katta yoki teng bo'lsa \"Ovoz…"
+   },
+   "statement": {
+    "uz": "Yosh kiritiladi. Agar 18 dan katta yoki teng bo'lsa \"Ovoz berishi mumkin\", aks holda \"Ovoz berolmaydi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-155",
+   "title": {
+    "uz": "Ikki fan bahosi kiritiladi. Agar ikkalasi ham 55 dan…"
+   },
+   "statement": {
+    "uz": "Ikki fan bahosi kiritiladi. Agar ikkalasi ham 55 dan katta yoki teng bo'lsa \"Ikkalasi o'tdi\", aks holda \"Hammasi o'tmadi\" deb chiqaring. (VA / AND)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-156",
+   "title": {
+    "uz": "Yosh va talabalik holati kiritiladi (1 — talaba, 0 —…"
+   },
+   "statement": {
+    "uz": "Yosh va talabalik holati kiritiladi (1 — talaba, 0 — emas). Agar yosh 18 dan katta va talaba bo'lsa \"Chegirma bor\", aks holda \"Chegirma yo'q\" deb chiqaring. (VA / AND)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-157",
+   "title": {
+    "uz": "Bir son kiritiladi. Agar u 10 dan katta va 100 dan kichik…"
+   },
+   "statement": {
+    "uz": "Bir son kiritiladi. Agar u 10 dan katta va 100 dan kichik bo'lsa \"Oraliqda\", aks holda \"Tashqarida\" deb chiqaring. (VA / AND)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-158",
+   "title": {
+    "uz": "Yomg'ir holati kiritiladi (1 — yog'yapti, 0 — yo'q). Agar…"
+   },
+   "statement": {
+    "uz": "Yomg'ir holati kiritiladi (1 — yog'yapti, 0 — yo'q). Agar yomg'ir bo'lsa \"Soyabon ol\", aks holda \"Soyabon shart emas\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-159",
+   "title": {
+    "uz": "Bir mahsulotning narxi va soni kiritiladi. Jami to'lovni…"
+   },
+   "statement": {
+    "uz": "Bir mahsulotning narxi va soni kiritiladi. Jami to'lovni toping (jami = narx soni). Agar jami 100000 dan katta bo'lsa \"Katta xarid\", aks holda \"Oddiy xarid\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-160",
+   "title": {
+    "uz": "Ikki son kiritiladi. Agar ikkalasi ham musbat bo'lsa (0…"
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Agar ikkalasi ham musbat bo'lsa (0 dan katta) \"Ikkalasi musbat\", aks holda \"Yo'q\" deb chiqaring. (VA / AND)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-161",
+   "title": {
+    "uz": "O'quvchining yoshi kiritiladi. Agar yosh 6 yoki 7 bo'lsa…"
+   },
+   "statement": {
+    "uz": "O'quvchining yoshi kiritiladi. Agar yosh 6 yoki 7 bo'lsa \"1-sinfga mos\", aks holda \"Mos emas\" deb chiqaring. (YOKI / OR)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-162",
+   "title": {
+    "uz": "Bir son kiritiladi. Agar u 2 ga ham, 3 ga ham bo'linsa…"
+   },
+   "statement": {
+    "uz": "Bir son kiritiladi. Agar u 2 ga ham, 3 ga ham bo'linsa \"Ikkalasiga bo'linadi\", aks holda \"Yo'q\" deb chiqaring. (VA / AND, mod)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-163",
+   "title": {
+    "uz": "Do'konda olma va non narxi kiritiladi. Agar ikkalasi ham…"
+   },
+   "statement": {
+    "uz": "Do'konda olma va non narxi kiritiladi. Agar ikkalasi ham 5000 dan arzon bo'lsa \"Arzon do'kon\", aks holda \"Qimmat do'kon\" deb chiqaring. (VA / AND)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-164",
+   "title": {
+    "uz": "Bir kishining yoshi kiritiladi. Agar yosh 0 dan kichik…"
+   },
+   "statement": {
+    "uz": "Bir kishining yoshi kiritiladi. Agar yosh 0 dan kichik yoki 120 dan katta bo'lsa \"Noto'g'ri yosh\", aks holda \"To'g'ri yosh\" deb chiqaring. (YOKI / OR)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-165",
+   "title": {
+    "uz": "Ikki o'quvchining bahosi kiritiladi. O'rtachasini toping…"
+   },
+   "statement": {
+    "uz": "Ikki o'quvchining bahosi kiritiladi. O'rtachasini toping (ortacha = (a + b) / 2). Agar o'rtacha 55 dan katta yoki teng bo'lsa \"O'tdi\", aks holda \"Yiqildi\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-166",
+   "title": {
+    "uz": "Bir son kiritiladi. Agar u juft bo'lsa va 10 dan katta…"
+   },
+   "statement": {
+    "uz": "Bir son kiritiladi. Agar u juft bo'lsa va 10 dan katta bo'lsa \"Ha\", aks holda \"Yo'q\" deb chiqaring. (VA / AND, mod)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-167",
+   "title": {
+    "uz": "Yosh kiritiladi. Agar 7 dan kichik bo'lsa \"Bepul chipta\",…"
+   },
+   "statement": {
+    "uz": "Yosh kiritiladi. Agar 7 dan kichik bo'lsa \"Bepul chipta\", 60 dan katta bo'lsa \"Yarim narx\", aks holda \"To'liq narx\" deb chiqaring. (uch tarmoqli shart)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-168",
+   "title": {
+    "uz": "Harorat kiritiladi. Agar 36 dan katta yoki teng va 37 dan…"
+   },
+   "statement": {
+    "uz": "Harorat kiritiladi. Agar 36 dan katta yoki teng va 37 dan kichik yoki teng bo'lsa \"Normal\", aks holda \"Normal emas\" deb chiqaring. (VA / AND)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-169",
+   "title": {
+    "uz": "Bir mahsulotning soni kiritiladi. Agar 0 bo'lsa…"
+   },
+   "statement": {
+    "uz": "Bir mahsulotning soni kiritiladi. Agar 0 bo'lsa \"Tugagan\", 1 dan 10 gacha bo'lsa \"Kam\", aks holda \"Ko'p\" deb chiqaring. (uch tarmoqli shart)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-170",
+   "title": {
+    "uz": "Ikki son kiritiladi. Agar birinchisi ikkinchisiga…"
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Agar birinchisi ikkinchisiga bo'linsa (qoldiq 0) \"Bo'linadi\", aks holda \"Bo'linmaydi\" deb chiqaring. (mod)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-171",
+   "title": {
+    "uz": "Foydalanuvchi ismini va bahosini kiritadi. Agar baho 55…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ismini va bahosini kiritadi. Agar baho 55 dan katta yoki teng bo'lsa \"<ism>, tabriklaymiz\", aks holda \"<ism>, yana harakat qiling\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-172",
+   "title": {
+    "uz": "Bir kishining puli kiritiladi. Agar 1000000 dan katta…"
+   },
+   "statement": {
+    "uz": "Bir kishining puli kiritiladi. Agar 1000000 dan katta bo'lsa \"Boy\", 100000 dan katta bo'lsa \"O'rta\", aks holda \"Kam\" deb chiqaring. (uch tarmoqli shart)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-173",
+   "title": {
+    "uz": "Ikki son kiritiladi. Agar birinchisi kattaroq bo'lsa…"
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Agar birinchisi kattaroq bo'lsa farqini chiqaring (a − b), aks holda \"Birinchisi katta emas\" deb chiqaring."
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-174",
+   "title": {
+    "uz": "Yosh va guvohnoma holati kiritiladi (1 — bor, 0 — yo'q).…"
+   },
+   "statement": {
+    "uz": "Yosh va guvohnoma holati kiritiladi (1 — bor, 0 — yo'q). Agar yosh 18 dan katta yoki teng va guvohnoma bor bo'lsa \"Haydashi mumkin\", aks holda \"Mumkin emas\" deb chiqaring. (VA / AND)"
+   },
+   "source": "Flowgorithm_if_dars30_vazifa50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-175",
+   "title": {
+    "uz": "Uch do'stning puli kiritiladi. Eng ko'p puli bori kim…"
+   },
+   "statement": {
+    "uz": "Uch do'stning puli kiritiladi. Eng ko'p puli bori kim ekanini aniqlang."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-176",
+   "title": {
+    "uz": "Ikki fandan baho kiritiladi. Ikkalasi ham 55 dan katta…"
+   },
+   "statement": {
+    "uz": "Ikki fandan baho kiritiladi. Ikkalasi ham 55 dan katta yoki teng bo'lsa \"Qabul\", aks holda \"Qabul emas\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-177",
+   "title": {
+    "uz": "Yo'lovchining yoshi kiritiladi. 7 dan kichik — \"Bepul\",…"
+   },
+   "statement": {
+    "uz": "Yo'lovchining yoshi kiritiladi. 7 dan kichik — \"Bepul\", 7–60 — \"To'liq narx\", 60 dan katta — \"Yarim narx\" chiptasi."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-178",
+   "title": {
+    "uz": "Uch mahsulotning narxi kiritiladi. Eng qimmatini aniqlang."
+   },
+   "statement": {
+    "uz": "Uch mahsulotning narxi kiritiladi. Eng qimmatini aniqlang."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-179",
+   "title": {
+    "uz": "Harorat va yomg'ir holati (1 – yog'yapti, 0 – yo'q)…"
+   },
+   "statement": {
+    "uz": "Harorat va yomg'ir holati (1 – yog'yapti, 0 – yo'q) kiritiladi. Sovuq (harorat < 10) va yomg'ir bo'lsa \"Uyda qol\", aks holda \"Chiqsa bo'ladi\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-180",
+   "title": {
+    "uz": "O'quvchining bali kiritiladi. 90+ \"A'lo\", 70–89 \"Yaxshi\",…"
+   },
+   "statement": {
+    "uz": "O'quvchining bali kiritiladi. 90+ \"A'lo\", 70–89 \"Yaxshi\", 55–69 \"Qoniqarli\", aks holda \"Yomon\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-181",
+   "title": {
+    "uz": "Ikki kishining yoshi kiritiladi. Qaysi biri katta ekanini…"
+   },
+   "statement": {
+    "uz": "Ikki kishining yoshi kiritiladi. Qaysi biri katta ekanini aniqlang."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-182",
+   "title": {
+    "uz": "Do'konda xarid summasi kiritiladi. 500 000+ — 20%…"
+   },
+   "statement": {
+    "uz": "Do'konda xarid summasi kiritiladi. 500 000+ — 20% chegirma, 200 000–499 999 — 10%, aks holda chegirmasiz. To'lanadigan pulni chiqaring."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-183",
+   "title": {
+    "uz": "Uch o'quvchining bahosi kiritiladi. O'rtachasi 4 dan…"
+   },
+   "statement": {
+    "uz": "Uch o'quvchining bahosi kiritiladi. O'rtachasi 4 dan katta bo'lsa \"Guruh kuchli\", aks holda \"O'rtacha\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-184",
+   "title": {
+    "uz": "Oilada ota, ona va bolaning daromadi kiritiladi. Umumiy…"
+   },
+   "statement": {
+    "uz": "Oilada ota, ona va bolaning daromadi kiritiladi. Umumiy daromad 5 000 000+ bo'lsa \"Yaxshi ta'minlangan\", aks holda \"O'rtacha\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-185",
+   "title": {
+    "uz": "Ikki mahsulotning narxi kiritiladi. Qaysi biri…"
+   },
+   "statement": {
+    "uz": "Ikki mahsulotning narxi kiritiladi. Qaysi biri arzonligini aniqlang."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-186",
+   "title": {
+    "uz": "Kishining yoshi va talabalik holati (1 – talaba)…"
+   },
+   "statement": {
+    "uz": "Kishining yoshi va talabalik holati (1 – talaba) kiritiladi. Yosh 18+ va talaba bo'lsa \"Chegirmali chipta\", aks holda \"Oddiy chipta\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-187",
+   "title": {
+    "uz": "Bir kishining bo'yi (sm) va vazni (kg) kiritiladi. Bo'y…"
+   },
+   "statement": {
+    "uz": "Bir kishining bo'yi (sm) va vazni (kg) kiritiladi. Bo'y 170+ va vazn 60+ bo'lsa \"Sport uchun mos\", aks holda \"Mos emas\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-188",
+   "title": {
+    "uz": "Uch shaharning aholisi kiritiladi. Eng katta shaharni…"
+   },
+   "statement": {
+    "uz": "Uch shaharning aholisi kiritiladi. Eng katta shaharni aniqlang."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-189",
+   "title": {
+    "uz": "Ikki jamoaning gollari kiritiladi. G'olibni aniqlang yoki…"
+   },
+   "statement": {
+    "uz": "Ikki jamoaning gollari kiritiladi. G'olibni aniqlang yoki \"Durang\" deb chiqaring."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-190",
+   "title": {
+    "uz": "Do'kondagi mahsulot qoldig'i kiritiladi. 0 — \"Tugagan\",…"
+   },
+   "statement": {
+    "uz": "Do'kondagi mahsulot qoldig'i kiritiladi. 0 — \"Tugagan\", 1–10 — \"Kam qoldi\", aks holda \"Yetarli\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-191",
+   "title": {
+    "uz": "Ikki fanning bali kiritiladi. O'rtachasi 85+ \"A'lochi\",…"
+   },
+   "statement": {
+    "uz": "Ikki fanning bali kiritiladi. O'rtachasi 85+ \"A'lochi\", 60–84 \"Yaxshi\", aks holda \"Zaif\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-192",
+   "title": {
+    "uz": "Bir kishining haftalik daromadi va xarajati kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Bir kishining haftalik daromadi va xarajati kiritiladi. Jamg'arma (daromad − xarajat) 0 dan katta bo'lsa \"Jamg'ardi\", aks holda \"Qarzda\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-193",
+   "title": {
+    "uz": "Uch bolaning vazni kiritiladi. Eng og'irini aniqlang."
+   },
+   "statement": {
+    "uz": "Uch bolaning vazni kiritiladi. Eng og'irini aniqlang."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-194",
+   "title": {
+    "uz": "Ob-havo harorati kiritiladi. 0 dan past \"Muzlash\", 0–15…"
+   },
+   "statement": {
+    "uz": "Ob-havo harorati kiritiladi. 0 dan past \"Muzlash\", 0–15 \"Salqin\", 16–28 \"Iliq\", aks holda \"Issiq\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-195",
+   "title": {
+    "uz": "Ikki do'kondagi bir mahsulot narxi kiritiladi. Qaysi…"
+   },
+   "statement": {
+    "uz": "Ikki do'kondagi bir mahsulot narxi kiritiladi. Qaysi do'kon arzonroq ekanini aniqlang."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-196",
+   "title": {
+    "uz": "Kishining yoshi va guvohnoma holati (1 – bor) kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Kishining yoshi va guvohnoma holati (1 – bor) kiritiladi. Yosh 18+ va guvohnoma bor bo'lsa \"Haydashi mumkin\", aks holda \"Mumkin emas\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-197",
+   "title": {
+    "uz": "Uch fanning bali kiritiladi. Uchtasi ham 55+ bo'lsa…"
+   },
+   "statement": {
+    "uz": "Uch fanning bali kiritiladi. Uchtasi ham 55+ bo'lsa \"O'tdi\", aks holda \"Yiqildi\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-198",
+   "title": {
+    "uz": "Ikki o'quvchining davomati (%) kiritiladi. Kimning…"
+   },
+   "statement": {
+    "uz": "Ikki o'quvchining davomati (%) kiritiladi. Kimning davomati yaxshiroq ekanini aniqlang."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-199",
+   "title": {
+    "uz": "Xarid summasi va a'zolik holati (1 – bor) kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Xarid summasi va a'zolik holati (1 – bor) kiritiladi. A'zo bo'lsa 15% chegirma, bo'lmasa chegirmasiz. To'lovni chiqaring."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-200",
+   "title": {
+    "uz": "Bir kishining daromadi kiritiladi. 10 000 000+ \"Boy\", 3…"
+   },
+   "statement": {
+    "uz": "Bir kishining daromadi kiritiladi. 10 000 000+ \"Boy\", 3 000 000–9 999 999 \"O'rta\", aks holda \"Kam\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-201",
+   "title": {
+    "uz": "Uch mahsulotning og'irligi kiritiladi. Eng yengilini…"
+   },
+   "statement": {
+    "uz": "Uch mahsulotning og'irligi kiritiladi. Eng yengilini aniqlang."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-202",
+   "title": {
+    "uz": "Yomg'ir holati (1/0) va shamol tezligi kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Yomg'ir holati (1/0) va shamol tezligi kiritiladi. Yomg'ir bor va shamol 20+ bo'lsa \"Bo'ron\", aks holda \"Oddiy ob-havo\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-203",
+   "title": {
+    "uz": "Uch son kiritiladi. Yig'indisi 100+ \"Katta\", 50–99…"
+   },
+   "statement": {
+    "uz": "Uch son kiritiladi. Yig'indisi 100+ \"Katta\", 50–99 \"O'rta\", aks holda \"Kichik\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-204",
+   "title": {
+    "uz": "Bemorning tana harorati kiritiladi. 37.5+ \"Isitma bor\",…"
+   },
+   "statement": {
+    "uz": "Bemorning tana harorati kiritiladi. 37.5+ \"Isitma bor\", 36–37.4 \"Normal\", aks holda \"Past harorat\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-205",
+   "title": {
+    "uz": "Ikki kishining maoshi kiritiladi. Farqi 1 000 000+ bo'lsa…"
+   },
+   "statement": {
+    "uz": "Ikki kishining maoshi kiritiladi. Farqi 1 000 000+ bo'lsa \"Katta farq\", aks holda \"Kam farq\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-206",
+   "title": {
+    "uz": "O'quvchining 3 fandan bali kiritiladi. Hammasi 90+ bo'lsa…"
+   },
+   "statement": {
+    "uz": "O'quvchining 3 fandan bali kiritiladi. Hammasi 90+ bo'lsa \"Imtiyozli\", bittasi ham 55 dan kam bo'lsa \"Yiqildi\", aks holda \"O'rtacha\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-207",
+   "title": {
+    "uz": "Do'konga kelgan va sotilgan mahsulot soni kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Do'konga kelgan va sotilgan mahsulot soni kiritiladi. Qolgan 0 bo'lsa \"Tugadi\", 1–5 \"Kam\", aks holda \"Ko'p\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-208",
+   "title": {
+    "uz": "Uch shaharning harorati kiritiladi. Eng issiq shaharni…"
+   },
+   "statement": {
+    "uz": "Uch shaharning harorati kiritiladi. Eng issiq shaharni aniqlang."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-209",
+   "title": {
+    "uz": "Kishining yoshi kiritiladi. 0–6 \"Bog'cha\", 7–17 \"Maktab\",…"
+   },
+   "statement": {
+    "uz": "Kishining yoshi kiritiladi. 0–6 \"Bog'cha\", 7–17 \"Maktab\", 18–22 \"Universitet\", aks holda \"Ishchi\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-210",
+   "title": {
+    "uz": "Ikki jamoaning ochkolari kiritiladi. Farqi 10+ \"Katta…"
+   },
+   "statement": {
+    "uz": "Ikki jamoaning ochkolari kiritiladi. Farqi 10+ \"Katta g'alaba\", 1–9 \"Oddiy g'alaba\", 0 \"Durang\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-211",
+   "title": {
+    "uz": "Bir mahsulotning tannarxi va sotuv narxi kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Bir mahsulotning tannarxi va sotuv narxi kiritiladi. Sotuv katta bo'lsa \"Foyda\", teng bo'lsa \"Zararsiz\", aks holda \"Zarar\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-212",
+   "title": {
+    "uz": "Uch o'quvchining bo'yi kiritiladi. Eng baland o'quvchini…"
+   },
+   "statement": {
+    "uz": "Uch o'quvchining bo'yi kiritiladi. Eng baland o'quvchini aniqlang."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-213",
+   "title": {
+    "uz": "Xarid summasi kiritiladi. 1 000 000+ bo'lsa \"Sovg'a bor\",…"
+   },
+   "statement": {
+    "uz": "Xarid summasi kiritiladi. 1 000 000+ bo'lsa \"Sovg'a bor\", aks holda \"Sovg'a yo'q\". 10% chegirmali to'lovni ham chiqaring."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-214",
+   "title": {
+    "uz": "Kishining vazni (kg) va bo'yi (m) kiritiladi. Vazn 90+ va…"
+   },
+   "statement": {
+    "uz": "Kishining vazni (kg) va bo'yi (m) kiritiladi. Vazn 90+ va bo'y 1.6 dan past bo'lsa \"Parhez kerak\", aks holda \"Normal\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-215",
+   "title": {
+    "uz": "Ertalabki va kechki harorat kiritiladi. Qaysi vaqt…"
+   },
+   "statement": {
+    "uz": "Ertalabki va kechki harorat kiritiladi. Qaysi vaqt issiqroq ekanini aniqlang."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-216",
+   "title": {
+    "uz": "Uch do'kondagi bir mahsulot narxi kiritiladi. Eng arzon…"
+   },
+   "statement": {
+    "uz": "Uch do'kondagi bir mahsulot narxi kiritiladi. Eng arzon do'konni aniqlang."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-217",
+   "title": {
+    "uz": "O'quvchining yoshi va sinfi kiritiladi. Yosh 7 va sinf 1…"
+   },
+   "statement": {
+    "uz": "O'quvchining yoshi va sinfi kiritiladi. Yosh 7 va sinf 1 bo'lsa \"To'g'ri\", aks holda \"Tekshirish kerak\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-218",
+   "title": {
+    "uz": "Bir kishining daromadi va oila a'zolari soni kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Bir kishining daromadi va oila a'zolari soni kiritiladi. Bir kishiga to'g'ri keladigan pul 1 000 000 dan kam bo'lsa \"Kam ta'minlangan\", aks holda \"Ta'minlangan\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-219",
+   "title": {
+    "uz": "Ikki mahsulotning saqlash muddati (kun) kiritiladi. Qaysi…"
+   },
+   "statement": {
+    "uz": "Ikki mahsulotning saqlash muddati (kun) kiritiladi. Qaysi biri tezroq buzilishini aniqlang."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-220",
+   "title": {
+    "uz": "Sayohatchilar soni kiritiladi. 45 dan ko'p bo'lsa \"Ikki…"
+   },
+   "statement": {
+    "uz": "Sayohatchilar soni kiritiladi. 45 dan ko'p bo'lsa \"Ikki avtobus kerak\", aks holda \"Bitta avtobus yetadi\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-221",
+   "title": {
+    "uz": "Uch fanning bali kiritiladi. Yig'indisi 240+ \"A'lo\",…"
+   },
+   "statement": {
+    "uz": "Uch fanning bali kiritiladi. Yig'indisi 240+ \"A'lo\", 150–239 \"Yaxshi\", aks holda \"Zaif\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-222",
+   "title": {
+    "uz": "Kishining yoshi va ish staji kiritiladi. Yosh 60+ yoki…"
+   },
+   "statement": {
+    "uz": "Kishining yoshi va ish staji kiritiladi. Yosh 60+ yoki staj 30+ bo'lsa \"Nafaqaga chiqishi mumkin\", aks holda \"Ishlaydi\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-223",
+   "title": {
+    "uz": "Do'konning ertalabki va kechki savdosi kiritiladi. Umumiy…"
+   },
+   "statement": {
+    "uz": "Do'konning ertalabki va kechki savdosi kiritiladi. Umumiy savdo 1 000 000+ bo'lsa \"Yaxshi kun\", aks holda \"Sekin kun\"."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "if-224",
+   "title": {
+    "uz": "Uch nomzodning ovozlari kiritiladi. Eng ko'p ovoz olgan…"
+   },
+   "statement": {
+    "uz": "Uch nomzodning ovozlari kiritiladi. Eng ko'p ovoz olgan g'olibni aniqlang."
+   },
+   "source": "If_hayotiy_50",
+   "judge": null,
+   "tests": []
+  }
+ ]
+}

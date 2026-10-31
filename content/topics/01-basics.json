@@ -1,0 +1,1229 @@
+{
+ "id": "basics",
+ "order": 1,
+ "title": {
+  "uz": "Boshlash: Output va amallar",
+  "en": "Getting started: Output"
+ },
+ "lesson": {
+  "uz": "Flowgorithm oynasi, Start/End va Output bloklari. Berilgan qiymatlar bilan oddiy hisoblashlar.",
+  "en": "The Flowgorithm window, Start/End and Output blocks. Simple calculations with given values."
+ },
+ "classwork": [
+  {
+   "id": "basics-101",
+   "title": {
+    "uz": "a = 4, b = 7. a + b ni toping."
+   },
+   "statement": {
+    "uz": "a = 4, b = 7. a + b ni toping."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "11"
+    }
+   ]
+  },
+  {
+   "id": "basics-102",
+   "title": {
+    "uz": "a = 4, b = 7. a + b − 8 ni toping."
+   },
+   "statement": {
+    "uz": "a = 4, b = 7. a + b − 8 ni toping."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "3"
+    }
+   ]
+  },
+  {
+   "id": "basics-103",
+   "title": {
+    "uz": "a = 5, b = 3, c = 2. a + b + c ni toping."
+   },
+   "statement": {
+    "uz": "a = 5, b = 3, c = 2. a + b + c ni toping."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "10"
+    }
+   ]
+  },
+  {
+   "id": "basics-104",
+   "title": {
+    "uz": "a = 6. a × a ni toping."
+   },
+   "statement": {
+    "uz": "a = 6. a × a ni toping."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "36"
+    }
+   ]
+  },
+  {
+   "id": "basics-105",
+   "title": {
+    "uz": "a = 4. a × a + 5 ni toping."
+   },
+   "statement": {
+    "uz": "a = 4. a × a + 5 ni toping."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "21"
+    }
+   ]
+  },
+  {
+   "id": "basics-106",
+   "title": {
+    "uz": "a = 5, b = 6. (a + b) × (a − b) ni toping."
+   },
+   "statement": {
+    "uz": "a = 5, b = 6. (a + b) × (a − b) ni toping."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "-11"
+    }
+   ]
+  },
+  {
+   "id": "basics-107",
+   "title": {
+    "uz": "a = 7, b = 2. a × b + a ni toping."
+   },
+   "statement": {
+    "uz": "a = 7, b = 2. a × b + a ni toping."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "21"
+    }
+   ]
+  },
+  {
+   "id": "basics-108",
+   "title": {
+    "uz": "a = 8, b = 4, c = 2. a − b × c + 5 ni toping."
+   },
+   "statement": {
+    "uz": "a = 8, b = 4, c = 2. a − b × c + 5 ni toping."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "5"
+    }
+   ]
+  },
+  {
+   "id": "basics-109",
+   "title": {
+    "uz": "Ikkita son kiriting. Ularning yig'indisini toping."
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Ularning yig'indisini toping."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-110",
+   "title": {
+    "uz": "Ikkita son kiriting. Ularning ayirmasini toping."
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Ularning ayirmasini toping."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-111",
+   "title": {
+    "uz": "Ikkita son kiriting. Ularning ko'paytmasini toping."
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Ularning ko'paytmasini toping."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-112",
+   "title": {
+    "uz": "Ikkita son kiriting. Ularning bo'linmasini toping."
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Ularning bo'linmasini toping."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-113",
+   "title": {
+    "uz": "Ikkita son kiriting. Ularning yig'indisidan 5 ni ayiring."
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Ularning yig'indisidan 5 ni ayiring."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-114",
+   "title": {
+    "uz": "Ikkita son kiriting. Ularning ayirmasiga 3 ni qo'shing."
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Ularning ayirmasiga 3 ni qo'shing."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-115",
+   "title": {
+    "uz": "Ikkita son kiriting. Ularning ko'paytmasiga 4 ni qo'shing."
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Ularning ko'paytmasiga 4 ni qo'shing."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-116",
+   "title": {
+    "uz": "Ikkita son kiriting. Ularning yig'indisini 2 ga…"
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Ularning yig'indisini 2 ga ko'paytiring."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-117",
+   "title": {
+    "uz": "Ikkita son kiriting. Ularning ayirmasini 3 ga…"
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Ularning ayirmasini 3 ga ko'paytiring."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-118",
+   "title": {
+    "uz": "Uchta son kiriting. Ularning yig'indisini toping."
+   },
+   "statement": {
+    "uz": "Uchta son kiriting. Ularning yig'indisini toping."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-119",
+   "title": {
+    "uz": "Uchta son kiriting. Birinchi ikkitasining yig'indisidan…"
+   },
+   "statement": {
+    "uz": "Uchta son kiriting. Birinchi ikkitasining yig'indisidan uchinchisini ayiring."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-120",
+   "title": {
+    "uz": "Bitta son kiriting. Uning kvadratini toping."
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Uning kvadratini toping."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  }
+ ],
+ "homework": [
+  {
+   "id": "basics-121",
+   "title": {
+    "uz": "Bitta son kiriting. Uning kvadratiga 3 ni qo'shing."
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Uning kvadratiga 3 ni qo'shing."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-122",
+   "title": {
+    "uz": "Ikkita son kiriting. Birinchisini ikkinchisiga…"
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Birinchisini ikkinchisiga ko'paytiring va 2 ni ayiring."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-123",
+   "title": {
+    "uz": "Ikkita son kiriting. Ularning yig'indisidan ko'paytmasini…"
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Ularning yig'indisidan ko'paytmasini ayiring."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-124",
+   "title": {
+    "uz": "Uchta son kiriting. Birinchi ikkitasini ko'paytiring va…"
+   },
+   "statement": {
+    "uz": "Uchta son kiriting. Birinchi ikkitasini ko'paytiring va uchinchisini qo'shing."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-125",
+   "title": {
+    "uz": "Ikkita son kiriting. Ularning yig'indisini uchinchisiga…"
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Ularning yig'indisini uchinchisiga bo'ling (uchinchi sonni ham kiriting)."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-126",
+   "title": {
+    "uz": "Bitta son kiriting. Uni 2 ga ko'paytiring va 7 ni…"
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Uni 2 ga ko'paytiring va 7 ni qo'shing."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-127",
+   "title": {
+    "uz": "Ikkita son kiriting. Birinchisidan ikkinchisini ayiring…"
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Birinchisidan ikkinchisini ayiring va natijani 4 ga ko'paytiring."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-128",
+   "title": {
+    "uz": "Uchta son kiriting. Ularning yig'indisiga 10 ni qo'shing."
+   },
+   "statement": {
+    "uz": "Uchta son kiriting. Ularning yig'indisiga 10 ni qo'shing."
+   },
+   "source": "Algoritm_oddiy_misollar",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-129",
+   "title": {
+    "uz": "a = 12, b = 8, c = 5, d = 1. a + b − c + d ni toping."
+   },
+   "statement": {
+    "uz": "a = 12, b = 8, c = 5, d = 1. a + b − c + d ni toping."
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "16"
+    }
+   ]
+  },
+  {
+   "id": "basics-130",
+   "title": {
+    "uz": "a = 3, b = 7, c = 2, d = 4. a × 2 + b − c × d ni toping."
+   },
+   "statement": {
+    "uz": "a = 3, b = 7, c = 2, d = 4. a × 2 + b − c × d ni toping."
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "5"
+    }
+   ]
+  },
+  {
+   "id": "basics-131",
+   "title": {
+    "uz": "a = 20, b = 4, c = 3, d = 2, e = 1. a + b × c − d + e ni…"
+   },
+   "statement": {
+    "uz": "a = 20, b = 4, c = 3, d = 2, e = 1. a + b × c − d + e ni toping."
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "31"
+    }
+   ]
+  },
+  {
+   "id": "basics-132",
+   "title": {
+    "uz": "x = 4, y = 9, z = 2, w = 3. x² + y − z × w ni toping."
+   },
+   "statement": {
+    "uz": "x = 4, y = 9, z = 2, w = 3. x² + y − z × w ni toping."
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-133",
+   "title": {
+    "uz": "x = 5, y = 2, z = 3, w = 4. 2x + 3y − z + w ni toping."
+   },
+   "statement": {
+    "uz": "x = 5, y = 2, z = 3, w = 4. 2x + 3y − z + w ni toping."
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-134",
+   "title": {
+    "uz": "x = 7, y = 1, z = 5, w = 2. x × y + x − z + w ni toping."
+   },
+   "statement": {
+    "uz": "x = 7, y = 1, z = 5, w = 2. x × y + x − z + w ni toping."
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "11"
+    }
+   ]
+  },
+  {
+   "id": "basics-135",
+   "title": {
+    "uz": "x = 9, y = 3, z = 2, w = 6. x × 2 − y × 2 + z × w ni…"
+   },
+   "statement": {
+    "uz": "x = 9, y = 3, z = 2, w = 6. x × 2 − y × 2 + z × w ni toping."
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "24"
+    }
+   ]
+  },
+  {
+   "id": "basics-136",
+   "title": {
+    "uz": "Bir daftarning narxi 3000 so'm. 4 ta daftar uchun qancha…"
+   },
+   "statement": {
+    "uz": "Bir daftarning narxi 3000 so'm. 4 ta daftar uchun qancha pul kerak?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-137",
+   "title": {
+    "uz": "Bitta non 2500 so'm. 6 ta non uchun qancha to'lash kerak?"
+   },
+   "statement": {
+    "uz": "Bitta non 2500 so'm. 6 ta non uchun qancha to'lash kerak?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-138",
+   "title": {
+    "uz": "O'quvchi 5 ta daftarga 15000 so'm to'ladi. Bitta…"
+   },
+   "statement": {
+    "uz": "O'quvchi 5 ta daftarga 15000 so'm to'ladi. Bitta daftarning narxi qancha?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-139",
+   "title": {
+    "uz": "Avtobusda 12 ta o'quvchi bor. Har birida 2 ta kitob. Jami…"
+   },
+   "statement": {
+    "uz": "Avtobusda 12 ta o'quvchi bor. Har birida 2 ta kitob. Jami nechta kitob?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-140",
+   "title": {
+    "uz": "Sinfda 8 ta o'g'il va 10 ta qiz bor. Jami nechta o'quvchi?"
+   },
+   "statement": {
+    "uz": "Sinfda 8 ta o'g'il va 10 ta qiz bor. Jami nechta o'quvchi?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-141",
+   "title": {
+    "uz": "Bir qalam 1200 so'm. 5 ta qalam va 1 ta o'chirg'ich (2000…"
+   },
+   "statement": {
+    "uz": "Bir qalam 1200 so'm. 5 ta qalam va 1 ta o'chirg'ich (2000 so'm) uchun jami qancha?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-142",
+   "title": {
+    "uz": "Daraxtning balandligi 8 metr. Undan 3 metr pastroq joyda…"
+   },
+   "statement": {
+    "uz": "Daraxtning balandligi 8 metr. Undan 3 metr pastroq joyda qush uyasi bor. Qush uyasining balandligi qancha?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-143",
+   "title": {
+    "uz": "Bir soatda 60 daqiqa. 3 soatda necha daqiqa?"
+   },
+   "statement": {
+    "uz": "Bir soatda 60 daqiqa. 3 soatda necha daqiqa?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-144",
+   "title": {
+    "uz": "Bir kunda 24 soat. 5 kunda necha soat?"
+   },
+   "statement": {
+    "uz": "Bir kunda 24 soat. 5 kunda necha soat?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-145",
+   "title": {
+    "uz": "O'quvchi 4 ta kitob o'qidi. Har birida 80 sahifa. Jami…"
+   },
+   "statement": {
+    "uz": "O'quvchi 4 ta kitob o'qidi. Har birida 80 sahifa. Jami necha sahifa?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-146",
+   "title": {
+    "uz": "Do'konida 1 kg olma 8000 so'm. 3 kg olma uchun qancha pul…"
+   },
+   "statement": {
+    "uz": "Do'konida 1 kg olma 8000 so'm. 3 kg olma uchun qancha pul kerak?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-147",
+   "title": {
+    "uz": "Mashina soatiga 60 km yuradi. 2 soatda qancha yo'l bosadi?"
+   },
+   "statement": {
+    "uz": "Mashina soatiga 60 km yuradi. 2 soatda qancha yo'l bosadi?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-148",
+   "title": {
+    "uz": "Bir kutu ichida 24 ta shokolad. 3 ta kutuda nechta…"
+   },
+   "statement": {
+    "uz": "Bir kutu ichida 24 ta shokolad. 3 ta kutuda nechta shokolad?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-149",
+   "title": {
+    "uz": "O'quvchi 15 ta masala ishladi. Ulardan 7 tasi to'g'ri.…"
+   },
+   "statement": {
+    "uz": "O'quvchi 15 ta masala ishladi. Ulardan 7 tasi to'g'ri. Nechta noto'g'ri?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-150",
+   "title": {
+    "uz": "Sinfda 30 ta o'quvchi. Ulardan 12 tasi uy vazifasini…"
+   },
+   "statement": {
+    "uz": "Sinfda 30 ta o'quvchi. Ulardan 12 tasi uy vazifasini bajarib kelgan. Nechtasi bajarmagan?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  }
+ ],
+ "extra": [
+  {
+   "id": "basics-151",
+   "title": {
+    "uz": "Bir rasmda 5 ta qizil va 8 ta ko'k shar bor. Jami nechta…"
+   },
+   "statement": {
+    "uz": "Bir rasmda 5 ta qizil va 8 ta ko'k shar bor. Jami nechta shar?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-152",
+   "title": {
+    "uz": "Bog'da 9 ta olma daraxti va 6 ta nok daraxti bor. Jami…"
+   },
+   "statement": {
+    "uz": "Bog'da 9 ta olma daraxti va 6 ta nok daraxti bor. Jami nechta daraxt?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-153",
+   "title": {
+    "uz": "O'quvchi 20000 so'm olib keldi. 2 ta daftar (har biri…"
+   },
+   "statement": {
+    "uz": "O'quvchi 20000 so'm olib keldi. 2 ta daftar (har biri 3500 so'm) oldi. Qancha pul qoldi?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-154",
+   "title": {
+    "uz": "Bir futbol jamoasida 11 ta o'yinchi. 2 ta jamoa uchun…"
+   },
+   "statement": {
+    "uz": "Bir futbol jamoasida 11 ta o'yinchi. 2 ta jamoa uchun nechta o'yinchi kerak?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-155",
+   "title": {
+    "uz": "Bir kitobda 120 sahifa. O'quvchi 45 sahifani o'qidi.…"
+   },
+   "statement": {
+    "uz": "Bir kitobda 120 sahifa. O'quvchi 45 sahifani o'qidi. Necha sahifa qoldi?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-156",
+   "title": {
+    "uz": "Bir quti ichida 6 ta qalam. 5 ta qutida nechta qalam?"
+   },
+   "statement": {
+    "uz": "Bir quti ichida 6 ta qalam. 5 ta qutida nechta qalam?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-157",
+   "title": {
+    "uz": "Ona 4 ta non oldi, otasi yana 3 ta. Jami nechta non?"
+   },
+   "statement": {
+    "uz": "Ona 4 ta non oldi, otasi yana 3 ta. Jami nechta non?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-158",
+   "title": {
+    "uz": "Bir stolda 8 ta o'quvchi o'tiradi. 3 ta stolda nechta…"
+   },
+   "statement": {
+    "uz": "Bir stolda 8 ta o'quvchi o'tiradi. 3 ta stolda nechta o'quvchi?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-159",
+   "title": {
+    "uz": "Bir o'quvchi 7 ta daftarni 21000 so'mga oldi. Bitta…"
+   },
+   "statement": {
+    "uz": "Bir o'quvchi 7 ta daftarni 21000 so'mga oldi. Bitta daftar narxi qancha?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-160",
+   "title": {
+    "uz": "Mashina 90 km yo'l bosdi. Hali 30 km qoldi. Jami yo'l…"
+   },
+   "statement": {
+    "uz": "Mashina 90 km yo'l bosdi. Hali 30 km qoldi. Jami yo'l uzunligi qancha?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-161",
+   "title": {
+    "uz": "Bir sinfda 25 ta o'quvchi. Har biriga 2 ta daftar. Jami…"
+   },
+   "statement": {
+    "uz": "Bir sinfda 25 ta o'quvchi. Har biriga 2 ta daftar. Jami nechta daftar kerak?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-162",
+   "title": {
+    "uz": "Bir soatda 4 ta dars. 2 soatda nechta dars?"
+   },
+   "statement": {
+    "uz": "Bir soatda 4 ta dars. 2 soatda nechta dars?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-163",
+   "title": {
+    "uz": "O'quvchi 3 ta kitobga 45000 so'm to'ladi. Bitta kitob…"
+   },
+   "statement": {
+    "uz": "O'quvchi 3 ta kitobga 45000 so'm to'ladi. Bitta kitob narxi qancha?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-164",
+   "title": {
+    "uz": "Bog'da 15 ta gul. Ulardan 6 tasi qizil. Nechtasi boshqa…"
+   },
+   "statement": {
+    "uz": "Bog'da 15 ta gul. Ulardan 6 tasi qizil. Nechtasi boshqa rangda?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-165",
+   "title": {
+    "uz": "Bir paket ichida 10 ta pechenye. 4 ta paketda nechta…"
+   },
+   "statement": {
+    "uz": "Bir paket ichida 10 ta pechenye. 4 ta paketda nechta pechenye?"
+   },
+   "source": "Bloksxema_vazifalar_80ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-166",
+   "title": {
+    "uz": "“Salom” so'zini 3 marta chiqaring."
+   },
+   "statement": {
+    "uz": "“Salom” so'zini 3 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-167",
+   "title": {
+    "uz": "“Xayr” so'zini 5 marta chiqaring."
+   },
+   "statement": {
+    "uz": "“Xayr” so'zini 5 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-168",
+   "title": {
+    "uz": "O'z ismingizni 4 marta chiqaring."
+   },
+   "statement": {
+    "uz": "O'z ismingizni 4 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-169",
+   "title": {
+    "uz": "“Men bloksxema o'rganyapman” gapini 2 marta chiqaring."
+   },
+   "statement": {
+    "uz": "“Men bloksxema o'rganyapman” gapini 2 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-170",
+   "title": {
+    "uz": "“Yaxshi kun” so'zini 6 marta chiqaring."
+   },
+   "statement": {
+    "uz": "“Yaxshi kun” so'zini 6 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-171",
+   "title": {
+    "uz": "“O'zbekiston” so'zini 3 marta chiqaring."
+   },
+   "statement": {
+    "uz": "“O'zbekiston” so'zini 3 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-172",
+   "title": {
+    "uz": "“Matematika” so'zini 4 marta chiqaring."
+   },
+   "statement": {
+    "uz": "“Matematika” so'zini 4 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-173",
+   "title": {
+    "uz": "“Blok-sxema” so'zini 5 marta chiqaring."
+   },
+   "statement": {
+    "uz": "“Blok-sxema” so'zini 5 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-174",
+   "title": {
+    "uz": "“Salom dunyo” gapini 3 marta chiqaring."
+   },
+   "statement": {
+    "uz": "“Salom dunyo” gapini 3 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-175",
+   "title": {
+    "uz": "“Menga yoqadi” gapini 2 marta chiqaring."
+   },
+   "statement": {
+    "uz": "“Menga yoqadi” gapini 2 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-176",
+   "title": {
+    "uz": "“Bugun dars bor” gapini 4 marta chiqaring."
+   },
+   "statement": {
+    "uz": "“Bugun dars bor” gapini 4 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-177",
+   "title": {
+    "uz": "“Men maktabga boraman” gapini 3 marta chiqaring."
+   },
+   "statement": {
+    "uz": "“Men maktabga boraman” gapini 3 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-178",
+   "title": {
+    "uz": "“Kitob o'qiyman” gapini 5 marta chiqaring."
+   },
+   "statement": {
+    "uz": "“Kitob o'qiyman” gapini 5 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-179",
+   "title": {
+    "uz": "“Sport bilan shug'ullanaman” gapini 2 marta chiqaring."
+   },
+   "statement": {
+    "uz": "“Sport bilan shug'ullanaman” gapini 2 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-180",
+   "title": {
+    "uz": "“Sog'lom turmush” so'zini 3 marta chiqaring."
+   },
+   "statement": {
+    "uz": "“Sog'lom turmush” so'zini 3 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-181",
+   "title": {
+    "uz": "“Rahmat” so'zini 6 marta chiqaring."
+   },
+   "statement": {
+    "uz": "“Rahmat” so'zini 6 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-182",
+   "title": {
+    "uz": "“Kechirasiz” so'zini 4 marta chiqaring."
+   },
+   "statement": {
+    "uz": "“Kechirasiz” so'zini 4 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-183",
+   "title": {
+    "uz": "“Iltimos” so'zini 3 marta chiqaring."
+   },
+   "statement": {
+    "uz": "“Iltimos” so'zini 3 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-184",
+   "title": {
+    "uz": "“Yaxshi ishlar” gapini 2 marta chiqaring."
+   },
+   "statement": {
+    "uz": "“Yaxshi ishlar” gapini 2 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-185",
+   "title": {
+    "uz": "“Omad” so'zini 5 marta chiqaring."
+   },
+   "statement": {
+    "uz": "“Omad” so'zini 5 marta chiqaring."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-186",
+   "title": {
+    "uz": "a = 3, b = 7. a × 2 + b ni toping."
+   },
+   "statement": {
+    "uz": "a = 3, b = 7. a × 2 + b ni toping."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "13"
+    }
+   ]
+  },
+  {
+   "id": "basics-187",
+   "title": {
+    "uz": "x = 4, y = 9. x² + y² ni toping."
+   },
+   "statement": {
+    "uz": "x = 4, y = 9. x² + y² ni toping."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-188",
+   "title": {
+    "uz": "x = 5, y = 2. 2x + 3y ni toping."
+   },
+   "statement": {
+    "uz": "x = 5, y = 2. 2x + 3y ni toping."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-189",
+   "title": {
+    "uz": "x = 12, y = 6. x ÷ y + 8 ni toping."
+   },
+   "statement": {
+    "uz": "x = 12, y = 6. x ÷ y + 8 ni toping."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "10"
+    }
+   ]
+  },
+  {
+   "id": "basics-190",
+   "title": {
+    "uz": "x = 7, y = 1. x × y + x ni toping."
+   },
+   "statement": {
+    "uz": "x = 7, y = 1. x × y + x ni toping."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "14"
+    }
+   ]
+  },
+  {
+   "id": "basics-191",
+   "title": {
+    "uz": "x = 9, y = 3. x × 2 − y × 2 ni toping."
+   },
+   "statement": {
+    "uz": "x = 9, y = 3. x × 2 − y × 2 ni toping."
+   },
+   "source": "Bloksxema_vazifalar_100ta",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "12"
+    }
+   ]
+  }
+ ]
+}

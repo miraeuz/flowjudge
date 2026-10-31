@@ -1,0 +1,906 @@
+{
+ "id": "nested-for",
+ "order": 7,
+ "title": {
+  "uz": "Ichma-ich For",
+  "en": "Nested For"
+ },
+ "lesson": {
+  "uz": "For ichida For: tashqi tsikl — guruhlar, ichki tsikl — a'zolar.",
+  "en": "A For inside a For: the outer loop walks groups, the inner loop walks members."
+ },
+ "classwork": [
+  {
+   "id": "nested-for-101",
+   "title": {
+    "uz": "Ikki sinf o'quvchilariga salom"
+   },
+   "statement": {
+    "uz": "Maktabda 2 ta sinf bor. Har bir sinfda 4 ta o'quvchi o'qiydi. Tashqi for yordamida 2 ta sinfni aylanib chiqing. Har bir sinf uchun ichki for yordamida 4 marta “Salom, o'quvchi!” deb chiqaring. Har bir sinf tugagach “Bu sinf tugadi” deb yozing."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-102",
+   "title": {
+    "uz": "3 kunlik ovqatlanish"
+   },
+   "statement": {
+    "uz": "3 kun davomida ovqatlanasiz. Har kuni 3 ta ovqat bor. Tashqi for 3 kun, ichki for 3 ovqat uchun ishlaydi. Har bir ovqat uchun yedingizmi yoki yo'qmi deb kiritasiz (1 yoki 0). Har bir kun tugagach, shu kunda nechta ovqat yeganingizni sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-103",
+   "title": {
+    "uz": "Jamoalarga xabar yuborish"
+   },
+   "statement": {
+    "uz": "Sport klubida 3 ta jamoa bor. Har bir jamoada 3 ta o'yinchi bor. Tashqi for 3 jamoa, ichki for 3 o'yinchi uchun ishlaydi. Har bir o'yinchiga “Mashg'ulotga keling!” deb xabar chiqarasiz. Har bir jamoa tugagach “Bu jamoa uchun xabarlar yuborildi” deb yozing."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-104",
+   "title": {
+    "uz": "Uchta kassa tushumi"
+   },
+   "statement": {
+    "uz": "Do'konda 3 ta kassa bor. Har bir kassada 3 ta xaridor bor. Tashqi for 3 kassa, ichki for 3 xaridor uchun ishlaydi. Har bir xaridor to'lagan summani kiritasiz. Har bir kassa tugagach, shu kassada jami qancha pul tushganini hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-105",
+   "title": {
+    "uz": "3 haftalik yugurish"
+   },
+   "statement": {
+    "uz": "3 hafta davomida yugurasiz. Har bir haftada 3 kun yugurasiz. Tashqi for 3 hafta, ichki for 3 kun uchun ishlaydi. Har kuni necha kilometr yugurganingizni kiritasiz. Agar 2 km dan ko'p yoki teng yugursangiz “Yaxshi”, aks holda “Kam” deb chiqarasiz. Har bir hafta tugagach, shu haftada jami necha kilometr yugurganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-106",
+   "title": {
+    "uz": "O'yin raundlarida ball chiqarish"
+   },
+   "statement": {
+    "uz": "O'yinda 2 ta raund bor. Har bir raundda 4 ta o'yin o'ynaysiz. Tashqi for 2 raund, ichki for 4 o'yin uchun ishlaydi. Har bir o'yinda olgan ballingizni kiritasiz va shu ballni ekranga chiqarasiz. Har bir raund tugagach “Raund tugadi” deb yozing."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-107",
+   "title": {
+    "uz": "Bozor sotuvchilari"
+   },
+   "statement": {
+    "uz": "Bozorda 3 kun savdo bo'ladi. Har kuni 3 ta sotuvchi ishlaydi. Tashqi for 3 kun, ichki for 3 sotuvchi uchun ishlaydi. Har bir sotuvchi necha dona mahsulot sotganini kiritasiz. Har bir kun tugagach, shu kunda jami necha dona mahsulot sotilganini hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-108",
+   "title": {
+    "uz": "Kitob o'qish"
+   },
+   "statement": {
+    "uz": "2 oy davomida kitob o'qiysiz. Har bir oyda 4 kun o'qiysiz. Tashqi for 2 oy, ichki for 4 kun uchun ishlaydi. Har kuni necha sahifa o'qiganingizni kiritasiz. Agar 10 sahifadan ko'p yoki teng o'qisangiz “Yaxshi o'qidingiz”, aks holda “Kam o'qidingiz” deb chiqarasiz. Har bir oy tugagach, shu oyda jami necha sahifa o'qiganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-109",
+   "title": {
+    "uz": "Futbol jamoalariga gol yozish"
+   },
+   "statement": {
+    "uz": "Futbol turnirida 3 ta jamoa bor. Har bir jamoa 3 ta o'yin o'ynaydi. Tashqi for 3 jamoa, ichki for 3 o'yin uchun ishlaydi. Har bir o'yinda jamoa qancha gol urganini kiritasiz va shu gol sonini ekranga chiqarasiz. Har bir jamoa tugagach “Bu jamoa o'yinlari tugadi” deb yozing."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-110",
+   "title": {
+    "uz": "Uy ishlari"
+   },
+   "statement": {
+    "uz": "3 kun davomida uy ishlarini bajarasiz. Har kuni 3 ta vazifa bor. Tashqi for 3 kun, ichki for 3 vazifa uchun ishlaydi. Har bir vazifani bajardingizmi yoki yo'qmi deb kiritasiz (1 yoki 0). Har bir kun tugagach, shu kunda nechta vazifa bajarganingizni sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-111",
+   "title": {
+    "uz": "Telefon o'yin ballari"
+   },
+   "statement": {
+    "uz": "3 marta o'yin sessiyasi o'ynaysiz. Har bir sessiyada 3 ta raund bor. Tashqi for 3 sessiya, ichki for 3 raund uchun ishlaydi. Har bir raundda necha ball olganingizni kiritasiz. Har bir sessiya tugagach, shu sessiyada jami necha ball to'plaganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-112",
+   "title": {
+    "uz": "Fan baholari"
+   },
+   "statement": {
+    "uz": "Maktabda 3 ta fan bor. Har bir fandan 3 ta nazorat ishi yoziladi. Tashqi for 3 fan, ichki for 3 nazorat ishi uchun ishlaydi. Har bir bahoni kiritasiz (1–5). Agar baho 5 bo'lsa “A'lo”, aks holda “Oddiy baho” deb chiqarasiz. Har bir fan tugagach, shu fanda nechta a'lo baho olganingizni sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-113",
+   "title": {
+    "uz": "Velosiped yurishlari"
+   },
+   "statement": {
+    "uz": "4 kun davomida velosipedda yurasiz. Har kuni ertalab va kechqurun (2 marta) yurasiz. Tashqi for 4 kun, ichki for 2 marta yurish uchun ishlaydi. Har safar necha soat yurganingizni kiritasiz va shu soatni ekranga chiqarasiz. Har bir kun tugagach “Kun tugadi” deb yozing."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-114",
+   "title": {
+    "uz": "Oilaviy xarajatlar"
+   },
+   "statement": {
+    "uz": "2 hafta davomida xarajatlarni kuzatasiz. Har bir haftada 4 kun bor. Tashqi for 2 hafta, ichki for 4 kun uchun ishlaydi. Har kuni qancha pul sarflaganingizni kiritasiz. Har bir hafta tugagach, shu haftada jami qancha pul sarflaganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-115",
+   "title": {
+    "uz": "Basketbol ochkolari"
+   },
+   "statement": {
+    "uz": "Basketbol musobaqasida 2 ta jamoa bor. Har bir jamoada 3 ta o'yinchi bor. Tashqi for 2 jamoa, ichki for 3 o'yinchi uchun ishlaydi. Har bir o'yinchi necha ochko to'plaganini kiritasiz. Agar 8 ochkodan ko'p yoki teng to'plagan bo'lsa “Yaxshi”, aks holda “Oddiy” deb chiqarasiz. Har bir jamoa tugagach, shu jamoa jami necha ochko to'plaganini hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-116",
+   "title": {
+    "uz": "Do'kon mahsulotlari"
+   },
+   "statement": {
+    "uz": "Do'konda 3 ta kategoriya bor. Har bir kategoriyada 3 ta mahsulot bor. Tashqi for 3 kategoriya, ichki for 3 mahsulot uchun ishlaydi. Har bir mahsulotning narxini kiritasiz va shu narxni ekranga chiqarasiz. Har bir kategoriya tugagach “Bu kategoriya tugadi” deb yozing."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-117",
+   "title": {
+    "uz": "Sport zali mashqlari"
+   },
+   "statement": {
+    "uz": "3 kun davomida sport zaliga borasiz. Har kuni 3 xil mashq qilasiz. Tashqi for 3 kun, ichki for 3 mashq uchun ishlaydi. Har bir mashqda necha marta bajarishingizni kiritasiz. Har bir kun tugagach, shu kunda jami necha marta mashq qilganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-118",
+   "title": {
+    "uz": "Darsga kechikish"
+   },
+   "statement": {
+    "uz": "Maktabda 3 kun dars bor. Har kuni 4 ta dars o'tiladi. Tashqi for 3 kun, ichki for 4 dars uchun ishlaydi. Har bir darsga necha daqiqa kechikkaningizni kiritasiz. Agar 5 daqiqadan ko'p kechiksangiz “Kechikdingiz”, aks holda “Vaqtida” deb chiqarasiz. Har bir kun tugagach, shu kunda jami necha daqiqa kechikkaningizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-119",
+   "title": {
+    "uz": "O'yinchoqlar"
+   },
+   "statement": {
+    "uz": "O'yinchoq do'konida 2 ta bo'lim bor. Har bir bo'limda 4 ta o'yinchoq sotiladi. Tashqi for 2 bo'lim, ichki for 4 o'yinchoq uchun ishlaydi. Har bir o'yinchoqning narxini kiritasiz va shu narxni ekranga chiqarasiz. Har bir bo'lim tugagach “Bu bo'lim tugadi” deb yozing."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-120",
+   "title": {
+    "uz": "Online buyurtmalar"
+   },
+   "statement": {
+    "uz": "Online do'konda 3 kun davomida buyurtmalar keladi. Har kuni 3 ta buyurtma bor. Tashqi for 3 kun, ichki for 3 buyurtma uchun ishlaydi. Har bir buyurtmaning summasini kiritasiz. Agar 50 000 so'mdan ko'p yoki teng bo'lsa “Katta buyurtma”, aks holda “Oddiy buyurtma” deb chiqarasiz. Har bir kun tugagach, shu kunda jami qancha summa tushganini hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Yengil_Ichma_ich_20_masala",
+   "judge": null,
+   "tests": []
+  }
+ ],
+ "homework": [
+  {
+   "id": "nested-for-121",
+   "title": {
+    "uz": "Ikki sinf va o'quvchilar baholari"
+   },
+   "statement": {
+    "uz": "Maktabda 2 ta sinf bor. Har bir sinfda 4 ta o'quvchi o'qiydi. Tashqi for bilan 2 ta sinfni aylanib chiqing. Har bir sinf uchun ichki for bilan 4 ta o'quvchining bahosini kiritasiz (1–5). Har bir baho uchun: 5 bo'lsa “A'lo”, 4 bo'lsa “Yaxshi”, 3 bo'lsa “Qoniqarli”, 3 dan past bo'lsa “Qayta o'qish kerak” deb chiqarasiz. Har bir sinf tugagach, shu sinfda nechta a'lochi borligini sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-122",
+   "title": {
+    "uz": "5 kunlik ovqatlanish"
+   },
+   "statement": {
+    "uz": "5 kun davomida ovqatlanishingizni kuzatasiz. Har kuni 3 ta ovqat bor (nonushta, tushlik, kechki ovqat). Tashqi for 5 kun, ichki for 3 ovqat uchun ishlaydi. Har bir ovqat uchun yedingizmi yoki yo'qmi deb kiritasiz (1 yoki 0). 1 bo'lsa “Yedingiz”, 0 bo'lsa “Yemadingiz” deb chiqarasiz. Har bir kun tugagach, shu kunda nechta ovqat yeganingizni sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-123",
+   "title": {
+    "uz": "Ikki jamoa o'yinchilari"
+   },
+   "statement": {
+    "uz": "Sport klubida 2 ta jamoa bor. Har bir jamoada 5 ta o'yinchi bor. Tashqi for 2 jamoa, ichki for 5 o'yinchi uchun ishlaydi. Har bir o'yinchi yoshini kiritasiz. Agar yosh 15 dan katta yoki teng bo'lsa “Katta o'yinchi”, aks holda “Yosh o'yinchi” deb chiqarasiz. Har bir jamoa tugagach, shu jamoada nechta katta o'yinchi borligini sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-124",
+   "title": {
+    "uz": "Uchta kassa va xaridorlar"
+   },
+   "statement": {
+    "uz": "Do'konda 3 ta kassa bor. Har bir kassada 4 ta xaridor xizmat ko'rsatiladi. Tashqi for 3 kassa, ichki for 4 xaridor uchun ishlaydi. Har bir xaridor to'lagan summani kiritasiz. Agar 100 000 so'mdan ko'p yoki teng bo'lsa “Katta xaridor”, aks holda “Oddiy xaridor” deb chiqarasiz. Har bir kassa tugagach, shu kassada jami qancha pul tushganini hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-125",
+   "title": {
+    "uz": "3 haftalik yugurish"
+   },
+   "statement": {
+    "uz": "3 hafta davomida yugurasiz. Har bir haftada 4 kun yugurasiz. Tashqi for 3 hafta, ichki for 4 kun uchun ishlaydi. Har kuni necha kilometr yugurganingizni kiritasiz. Agar 3 km dan ko'p yoki teng yugursangiz “Yaxshi yugurdingiz”, aks holda “Yana yugurishingiz kerak” deb chiqarasiz. Har bir hafta tugagach, shu haftada jami necha kilometr yugurganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-126",
+   "title": {
+    "uz": "O'yin raundlari"
+   },
+   "statement": {
+    "uz": "O'yinda 3 ta raund bor. Har bir raundda 3 ta o'yin o'ynaysiz. Tashqi for 3 raund, ichki for 3 o'yin uchun ishlaydi. Har bir o'yinda o'z ballingizni va raqib ballini kiritasiz. Agar o'z ballingiz katta bo'lsa “Yutdingiz”, kichik bo'lsa “Yutqazdingiz”, teng bo'lsa “Durang” deb chiqarasiz. Har bir raund tugagach, shu raundda nechta o'yin yutganingizni sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-127",
+   "title": {
+    "uz": "Bozor kunlari"
+   },
+   "statement": {
+    "uz": "Bozorda 4 kun savdo bo'ladi. Har kuni 3 ta sotuvchi ishlaydi. Tashqi for 4 kun, ichki for 3 sotuvchi uchun ishlaydi. Har bir sotuvchi necha dona mahsulot sotganini kiritasiz. Agar 30 tadan ko'p yoki teng sotgan bo'lsa “Yaxshi sotuvchi”, aks holda “Kam sotdi” deb chiqarasiz. Har bir kun tugagach, shu kunda jami necha dona mahsulot sotilganini hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-128",
+   "title": {
+    "uz": "Kitob o'qish (2 oy)"
+   },
+   "statement": {
+    "uz": "2 oy davomida kitob o'qiysiz. Har bir oyda 5 kun o'qiysiz. Tashqi for 2 oy, ichki for 5 kun uchun ishlaydi. Har kuni necha sahifa o'qiganingizni kiritasiz. Agar 10 sahifadan ko'p yoki teng o'qisangiz “Yaxshi o'qidingiz”, aks holda “Yana o'qishingiz kerak” deb chiqarasiz. Har bir oy tugagach, shu oyda jami necha sahifa o'qiganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-129",
+   "title": {
+    "uz": "Futbol jamoalari"
+   },
+   "statement": {
+    "uz": "Futbol turnirida 3 ta jamoa bor. Har bir jamoa 4 ta o'yin o'ynaydi. Tashqi for 3 jamoa, ichki for 4 o'yin uchun ishlaydi. Har bir o'yinda jamoa qancha gol urganini kiritasiz. Agar 2 yoki undan ko'p gol urgan bo'lsa “Yaxshi o'yin”, aks holda “Zaif o'yin” deb chiqarasiz. Har bir jamoa tugagach, shu jamoa jami necha gol urganini hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-130",
+   "title": {
+    "uz": "Uy ishlari (4 kun)"
+   },
+   "statement": {
+    "uz": "4 kun davomida uy ishlarini bajarasiz. Har kuni 3 ta vazifa bor. Tashqi for 4 kun, ichki for 3 vazifa uchun ishlaydi. Har bir vazifani bajardingizmi yoki yo'qmi deb kiritasiz (1 yoki 0). 1 bo'lsa “Bajardingiz”, 0 bo'lsa “Bajarmadingiz” deb chiqarasiz. Har bir kun tugagach, shu kunda nechta vazifa bajarganingizni sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-131",
+   "title": {
+    "uz": "Telefon o'yin sessiyalari"
+   },
+   "statement": {
+    "uz": "4 marta o'yin sessiyasi o'ynaysiz. Har bir sessiyada 3 ta raund bor. Tashqi for 4 sessiya, ichki for 3 raund uchun ishlaydi. Har bir raundda necha ball olganingizni kiritasiz. Agar ball 70 dan katta yoki teng bo'lsa “Yaxshi raund”, aks holda “Zaif raund” deb chiqarasiz. Har bir sessiya tugagach, shu sessiyada jami necha ball to'plaganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-132",
+   "title": {
+    "uz": "Fanlar va nazorat ishlari"
+   },
+   "statement": {
+    "uz": "Maktabda 3 ta fan bor. Har bir fandan 3 ta nazorat ishi yoziladi. Tashqi for 3 fan, ichki for 3 nazorat ishi uchun ishlaydi. Har bir bahoni kiritasiz (1–5). 5 bo'lsa “A'lo”, 4 bo'lsa “Yaxshi”, 3 bo'lsa “Qoniqarli”, 3 dan past bo'lsa “Qayta topshirish kerak” deb chiqarasiz. Har bir fan tugagach, shu fanda nechta a'lo baho olganingizni sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-133",
+   "title": {
+    "uz": "Velosiped sayohati"
+   },
+   "statement": {
+    "uz": "5 kun davomida velosipedda yurasiz. Har kuni ertalab va kechqurun (2 marta) yurasiz. Tashqi for 5 kun, ichki for 2 marta yurish uchun ishlaydi. Har safar necha soat yurganingizni kiritasiz. Agar 1 soatdan ko'p yoki teng yursangiz “Yaxshi mashq”, aks holda “Qisqa yurish” deb chiqarasiz. Har bir kun tugagach, shu kunda jami necha soat yurganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-134",
+   "title": {
+    "uz": "Oilaviy byudjet (2 hafta)"
+   },
+   "statement": {
+    "uz": "2 hafta davomida byudjetni kuzatasiz. Har bir haftada 5 kun bor. Tashqi for 2 hafta, ichki for 5 kun uchun ishlaydi. Har kuni qancha pul topganingizni va qancha pul sarflaganingizni kiritasiz. Agar topganingiz sarflaganingizdan ko'p yoki teng bo'lsa “Foyda”, aks holda “Zarar” deb chiqarasiz. Har bir hafta tugagach, shu haftada jami topganingiz va jami sarflaganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-135",
+   "title": {
+    "uz": "Basketbol jamoalari"
+   },
+   "statement": {
+    "uz": "Basketbol musobaqasida 2 ta jamoa bor. Har bir jamoada 4 ta o'yinchi bor. Tashqi for 2 jamoa, ichki for 4 o'yinchi uchun ishlaydi. Har bir o'yinchi necha ochko to'plaganini kiritasiz. Agar 10 ochkodan ko'p yoki teng to'plagan bo'lsa “Yaxshi o'yinchi”, aks holda “Oddiy o'yinchi” deb chiqarasiz. Har bir jamoa tugagach, shu jamoa jami necha ochko to'plaganini hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-136",
+   "title": {
+    "uz": "Do'kon kategoriyalari"
+   },
+   "statement": {
+    "uz": "Do'konda 3 ta kategoriya bor. Har bir kategoriyada 4 ta mahsulot bor. Tashqi for 3 kategoriya, ichki for 4 mahsulot uchun ishlaydi. Har bir mahsulotning narxini kiritasiz. Agar narx 20 000 so'mdan katta yoki teng bo'lsa “Qimmat”, aks holda “Arzon” deb chiqarasiz. Har bir kategoriya tugagach, shu kategoriyada nechta qimmat mahsulot borligini sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-137",
+   "title": {
+    "uz": "Sport zali mashqlari"
+   },
+   "statement": {
+    "uz": "4 kun davomida sport zaliga borasiz. Har kuni 3 xil mashq qilasiz. Tashqi for 4 kun, ichki for 3 mashq uchun ishlaydi. Har bir mashqda necha marta bajarishingizni kiritasiz. Agar 15 tadan ko'p yoki teng bajarsangiz “Kuchli mashq”, aks holda “Oddiy mashq” deb chiqarasiz. Har bir kun tugagach, shu kunda jami necha marta mashq qilganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-138",
+   "title": {
+    "uz": "Maktab darslari"
+   },
+   "statement": {
+    "uz": "Maktabda 4 kun dars bor. Har kuni 5 ta dars o'tiladi. Tashqi for 4 kun, ichki for 5 dars uchun ishlaydi. Har bir darsga necha daqiqa kechikkaningizni kiritasiz. Agar 5 daqiqadan ko'p yoki teng kechiksangiz “Kechikdingiz”, aks holda “Vaqtida keldingiz” deb chiqarasiz. Har bir kun tugagach, shu kunda jami necha daqiqa kechikkaningizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-139",
+   "title": {
+    "uz": "O'yinchoq do'koni"
+   },
+   "statement": {
+    "uz": "O'yinchoq do'konida 3 ta bo'lim bor. Har bir bo'limda 4 ta o'yinchoq sotiladi. Tashqi for 3 bo'lim, ichki for 4 o'yinchoq uchun ishlaydi. Har bir o'yinchoqning narxini kiritasiz. Agar 30 000 so'mdan katta yoki teng bo'lsa “Qimmat o'yinchoq”, aks holda “Arzon o'yinchoq” deb chiqarasiz. Har bir bo'lim tugagach, shu bo'limda jami qancha pul tushganini hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-140",
+   "title": {
+    "uz": "Yugurish guruhlari"
+   },
+   "statement": {
+    "uz": "Yugurish musobaqasida 2 ta guruh bor. Har bir guruhda 4 ta ishtirokchi bor. Tashqi for 2 guruh, ichki for 4 ishtirokchi uchun ishlaydi. Har bir ishtirokchining yugurish vaqtini (soniya) kiritasiz. Agar vaqt 70 soniyadan kichik yoki teng bo'lsa “Tez yuguruvchi”, aks holda “Oddiy yuguruvchi” deb chiqarasiz. Har bir guruh tugagach, shu guruhda nechta tez yuguruvchi borligini sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-141",
+   "title": {
+    "uz": "Kunlik kaloriya"
+   },
+   "statement": {
+    "uz": "5 kun davomida ovqatlanishni kuzatasiz. Har kuni 3 ta ovqat bor. Tashqi for 5 kun, ichki for 3 ovqat uchun ishlaydi. Har bir ovqat uchun qancha kaloriya iste'mol qilganingizni kiritasiz. Agar 350 kaloriyadan ko'p yoki teng bo'lsa “Ko'p kaloriya”, aks holda “Oddiy kaloriya” deb chiqarasiz. Har bir kun tugagach, shu kunda jami necha kaloriya iste'mol qilganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-142",
+   "title": {
+    "uz": "O'yin darajalari"
+   },
+   "statement": {
+    "uz": "O'yinda 3 ta daraja bor. Har bir darajada 4 ta bosqich bor. Tashqi for 3 daraja, ichki for 4 bosqich uchun ishlaydi. Har bir bosqichda necha ball olganingizni kiritasiz. Agar ball 40 dan katta yoki teng bo'lsa “Muvaffaqiyatli”, aks holda “Muvaffaqiyatsiz” deb chiqarasiz. Har bir daraja tugagach, shu darajada jami necha ball to'plaganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-143",
+   "title": {
+    "uz": "Kutubxona bo'limlari"
+   },
+   "statement": {
+    "uz": "Kutubxonada 3 ta bo'lim bor. Har bir bo'limda 4 ta kitob bor. Tashqi for 3 bo'lim, ichki for 4 kitob uchun ishlaydi. Har bir kitobning sahifalar sonini kiritasiz. Agar 150 sahifadan ko'p yoki teng bo'lsa “Qalin kitob”, aks holda “Yupqa kitob” deb chiqarasiz. Har bir bo'lim tugagach, shu bo'limda nechta qalin kitob borligini sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-144",
+   "title": {
+    "uz": "Futbol mashg'ulotlari"
+   },
+   "statement": {
+    "uz": "Futbol jamoasi 4 kun mashg'ulot o'tkazadi. Har kuni 3 xil mashq bor. Tashqi for 4 kun, ichki for 3 mashq uchun ishlaydi. Har bir mashqda necha daqiqa shug'ullanganingizni kiritasiz. Agar 15 daqiqadan ko'p yoki teng shug'ullansangiz “Yaxshi mashg'ulot”, aks holda “Qisqa mashg'ulot” deb chiqarasiz. Har bir kun tugagach, shu kunda jami necha daqiqa mashg'ulot qilganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_For_Ortacha_25_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-145",
+   "title": {
+    "uz": "Maktab sinflari va o'quvchilar baholari"
+   },
+   "statement": {
+    "uz": "Maktabda 4 ta sinf bor. Har bir sinfda 5 ta o'quvchi o'qiydi. Siz har bir sinf uchun alohida ishlaysiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-146",
+   "title": {
+    "uz": "Haftalik ovqatlanish rejimini kuzatish"
+   },
+   "statement": {
+    "uz": "Siz 7 kun davomida ovqatlanishingizni kuzatmoqchisiz. Har kuni 3 ta asosiy ovqat bor: nonushta, tushlik va kechki ovqat."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-147",
+   "title": {
+    "uz": "Sport klubidagi jamoalar va o'yinchilar"
+   },
+   "statement": {
+    "uz": "Sport klubida 3 ta jamoa bor. Har bir jamoada 6 ta o'yinchi bor. Siz har bir o'yinchining yoshini kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-148",
+   "title": {
+    "uz": "Do'kon kassalari va xaridorlar"
+   },
+   "statement": {
+    "uz": "Do'konda 5 ta kassa bor. Har bir kassada 4 ta xaridor xizmat ko'rsatiladi. Siz har bir xaridor to'lagan summani kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-149",
+   "title": {
+    "uz": "Haftalik yugurish va kunlik masofalar"
+   },
+   "statement": {
+    "uz": "Siz 4 hafta davomida yugurasiz. Har bir haftada 5 kun yugurasiz. Har kuni necha kilometr yugurganingizni kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-150",
+   "title": {
+    "uz": "O'yin turniri — raundlar va o'yinlar"
+   },
+   "statement": {
+    "uz": "O'yin turnirida 5 ta raund bor. Har bir raundda 3 ta o'yin o'ynaysiz. Har bir o'yinda o'z ballingizni va raqib ballini kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  }
+ ],
+ "extra": [
+  {
+   "id": "nested-for-151",
+   "title": {
+    "uz": "Bozor savdosi — kunlar va sotuvchilar"
+   },
+   "statement": {
+    "uz": "Bozorda 6 kun davomida savdo bo'ladi. Har kuni 4 ta sotuvchi ishlaydi. Har bir sotuvchi necha dona mahsulot sotganini kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-152",
+   "title": {
+    "uz": "Kitob o'qish — oylar va kunlar"
+   },
+   "statement": {
+    "uz": "Siz 3 oy davomida kitob o'qiysiz. Har bir oyda 8 kun o'qiysiz. Har kuni necha sahifa o'qiganingizni kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-153",
+   "title": {
+    "uz": "Futbol turniri — jamoalar va o'yinlar"
+   },
+   "statement": {
+    "uz": "Futbol turnirida 4 ta jamoa bor. Har bir jamoa 5 ta o'yin o'ynaydi. Har bir o'yinda jamoa qancha gol urganini kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-154",
+   "title": {
+    "uz": "Uy ishlari — kunlar va vazifalar"
+   },
+   "statement": {
+    "uz": "Siz 5 kun davomida uy ishlarini bajarasiz. Har kuni 4 ta vazifa bor (masalan: yotoqxonani yig'ish, idish yuvish, dars qilish, bog' ishlari). Har bir vazifani bajardingizmi yoki yo'qmi deb kiritasiz (1 yoki 0)."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-155",
+   "title": {
+    "uz": "Telefon o'yinlari — sessiya va raundlar"
+   },
+   "statement": {
+    "uz": "Siz 6 marta o'yin sessiyasi o'ynaysiz. Har bir sessiyada 4 ta raund bor. Har bir raundda necha ball olganingizni kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-156",
+   "title": {
+    "uz": "Maktab fanlari va nazorat ishlari"
+   },
+   "statement": {
+    "uz": "Maktabda 5 ta fan bor. Har bir fandan 3 ta nazorat ishi yoziladi. Har bir nazorat ishi bahosini (1 dan 5 gacha) kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-157",
+   "title": {
+    "uz": "Velosiped sayohati — kunlar va soatlar"
+   },
+   "statement": {
+    "uz": "Siz 7 kun davomida velosipedda sayohat qilasiz. Har kuni ertalab, tushlikdan keyin va kechqurun yurasiz (3 marta). Har safar necha soat yurganingizni kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-158",
+   "title": {
+    "uz": "Oilaviy byudjet — haftalar va kunlar"
+   },
+   "statement": {
+    "uz": "Oilangiz byudjetini 3 hafta davomida kuzatasiz. Har bir haftada 7 kun bor. Har kuni qancha pul topganingizni va qancha pul sarflaganingizni alohida kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-159",
+   "title": {
+    "uz": "Basketbol o'yinlari — jamoalar va o'yinchilar"
+   },
+   "statement": {
+    "uz": "Basketbol musobaqasida 3 ta jamoa bor. Har bir jamoada 5 ta o'yinchi bor. Har bir o'yinchi necha ochko to'plaganini kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-160",
+   "title": {
+    "uz": "Do'kon mahsulotlari — kategoriyalar va mahsulotlar"
+   },
+   "statement": {
+    "uz": "Do'konda 4 ta kategoriya bor (masalan: meva, sabzavot, ichimlik, shirinlik). Har bir kategoriyada 5 ta mahsulot bor. Har bir mahsulotning narxini kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-161",
+   "title": {
+    "uz": "Sport zalidagi mashqlar — kunlar va mashq turlari"
+   },
+   "statement": {
+    "uz": "Siz 6 kun davomida sport zaliga borasiz. Har kuni 3 xil mashq qilasiz (push-up, otirdik turish, yugurish). Har bir mashqda necha marta bajarishingizni kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-162",
+   "title": {
+    "uz": "Maktab dars jadvali — kunlar va darslar"
+   },
+   "statement": {
+    "uz": "Maktabda 5 kun dars bor. Har kuni 6 ta dars o'tiladi. Har bir darsga necha daqiqa kechikkaningizni kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-163",
+   "title": {
+    "uz": "O'yinchoq do'koni — bo'limlar va o'yinchoqlar"
+   },
+   "statement": {
+    "uz": "O'yinchoq do'konida 4 ta bo'lim bor. Har bir bo'limda 6 ta o'yinchoq sotiladi. Har bir o'yinchoqning narxini kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-164",
+   "title": {
+    "uz": "Yugurish musobaqasi — guruhlar va ishtirokchilar"
+   },
+   "statement": {
+    "uz": "Yugurish musobaqasida 3 ta guruh bor. Har bir guruhda 5 ta ishtirokchi bor. Har bir ishtirokchining yugurish vaqtini (soniya) kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-165",
+   "title": {
+    "uz": "Nonushta, tushlik, kechki ovqat — haftalik rejim"
+   },
+   "statement": {
+    "uz": "Siz 7 kun davomida ovqatlanish rejimini kuzatasiz. Har kuni 3 ta ovqat bor. Har bir ovqat uchun qancha kaloriya iste'mol qilganingizni kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-166",
+   "title": {
+    "uz": "Kompyuter o'yinlari — darajalar va bosqichlar"
+   },
+   "statement": {
+    "uz": "O'yinda 4 ta daraja bor. Har bir darajada 5 ta bosqich bor. Har bir bosqichda necha ball olganingizni kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-167",
+   "title": {
+    "uz": "Kutubxona — bo'limlar va kitoblar"
+   },
+   "statement": {
+    "uz": "Kutubxonada 5 ta bo'lim bor. Har bir bo'limda 4 ta kitob bor. Har bir kitobning sahifalar sonini kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-168",
+   "title": {
+    "uz": "Futbol jamoasi mashg'ulotlari — kunlar va mashqlar"
+   },
+   "statement": {
+    "uz": "Futbol jamoasi 5 kun mashg'ulot o'tkazadi. Har kuni 4 xil mashq bor (yugurish, to'p uzatish, zarba berish, himoya). Har bir mashqda necha daqiqa shug'ullanganingizni kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-169",
+   "title": {
+    "uz": "Online do'kon — kunlar va buyurtmalar"
+   },
+   "statement": {
+    "uz": "Online do'konda 6 kun davomida buyurtmalar qabul qilinadi. Har kuni 5 ta buyurtma keladi. Har bir buyurtmaning summasini kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-170",
+   "title": {
+    "uz": "Til o'rganish — haftalar va kunlar"
+   },
+   "statement": {
+    "uz": "Siz 4 hafta davomida yangi til o'rganasiz. Har bir haftada 5 kun dars o'tasiz. Har kuni necha soat o'rganganingizni kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-171",
+   "title": {
+    "uz": "Maktab olimpiadasi — fanlar va ishtirokchilar"
+   },
+   "statement": {
+    "uz": "Maktab olimpiadasida 3 ta fan bor. Har bir fanda 6 ta ishtirokchi qatnashadi. Har bir ishtirokchining ballini kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-172",
+   "title": {
+    "uz": "Bog'dorchilik — kunlar va o'simliklar"
+   },
+   "statement": {
+    "uz": "Siz 5 kun davomida bog'da ishlaysiz. Har kuni 4 xil o'simlikni parvarish qilasiz. Har bir o'simlik uchun necha daqiqa vaqt sarflaganingizni kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-173",
+   "title": {
+    "uz": "Online o'yin — janglar va raundlar"
+   },
+   "statement": {
+    "uz": "Online o'yinda 5 ta jang bor. Har bir jangda 4 ta raund o'ynaysiz. Har bir raundda yutganingizni yoki yutqazganingizni kiritasiz (1 yoki 0)."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "nested-for-174",
+   "title": {
+    "uz": "Oilaviy sayohat — shaharlar va kunlar"
+   },
+   "statement": {
+    "uz": "Oilaviy sayohatda 3 ta shaharga borasiz. Har bir shaharda 4 kun qolasiz. Har kuni qancha kilometr sayohat qilganingizni kiritasiz."
+   },
+   "source": "Flowgorithm_Ichma_ich_For_30_masala",
+   "judge": null,
+   "tests": []
+  }
+ ]
+}

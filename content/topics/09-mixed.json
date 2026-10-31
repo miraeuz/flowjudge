@@ -1,0 +1,858 @@
+{
+ "id": "mixed",
+ "order": 9,
+ "title": {
+  "uz": "Aralash mashqlar",
+  "en": "Mixed practice"
+ },
+ "lesson": {
+  "uz": "Barcha o'tilgan mavzular: input, if, for, hisoblash.",
+  "en": "All topics so far: input, if, for and calculations."
+ },
+ "classwork": [
+  {
+   "id": "mixed-101",
+   "title": {
+    "uz": "Ikki butun son kiritiladi. Ularning yig'indisini…"
+   },
+   "statement": {
+    "uz": "Ikki butun son kiritiladi. Ularning yig'indisini chiqaring. → Integer (int)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-102",
+   "title": {
+    "uz": "Bitta son kiritiladi. Uni 5 ga ko'paytirib chiqaring. →…"
+   },
+   "statement": {
+    "uz": "Bitta son kiritiladi. Uni 5 ga ko'paytirib chiqaring. → Integer (int)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-103",
+   "title": {
+    "uz": "Ikki son kiritiladi. Ularning ayirmasini chiqaring. →…"
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Ularning ayirmasini chiqaring. → Integer (int)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-104",
+   "title": {
+    "uz": "Bir qutida 8 ta olma bor. Qutilar soni kiritiladi. Jami…"
+   },
+   "statement": {
+    "uz": "Bir qutida 8 ta olma bor. Qutilar soni kiritiladi. Jami olmalar sonini chiqaring. → Integer (int)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-105",
+   "title": {
+    "uz": "Sinfdagi o'g'il va qiz bolalar soni kiritiladi. Jami…"
+   },
+   "statement": {
+    "uz": "Sinfdagi o'g'il va qiz bolalar soni kiritiladi. Jami o'quvchilar sonini chiqaring. → Integer (int)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-106",
+   "title": {
+    "uz": "Bir bolaning yoshi kiritiladi. Uning 3 yildan keyingi…"
+   },
+   "statement": {
+    "uz": "Bir bolaning yoshi kiritiladi. Uning 3 yildan keyingi yoshini chiqaring. → Integer (int)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-107",
+   "title": {
+    "uz": "Ikki son kiritiladi. Ularning o'rtacha qiymatini…"
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Ularning o'rtacha qiymatini chiqaring. → Real (double)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-108",
+   "title": {
+    "uz": "Bir bolaning vazni (kg) kiritiladi. Uni ekranga…"
+   },
+   "statement": {
+    "uz": "Bir bolaning vazni (kg) kiritiladi. Uni ekranga chiqaring. → Real (double)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-109",
+   "title": {
+    "uz": "Do'konda 50 ta mahsulot bor edi. Sotilgani kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Do'konda 50 ta mahsulot bor edi. Sotilgani kiritiladi. Qolganini chiqaring. → Integer (int)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-110",
+   "title": {
+    "uz": "Bir mahsulot narxi (so'm) va soni kiritiladi. Jami…"
+   },
+   "statement": {
+    "uz": "Bir mahsulot narxi (so'm) va soni kiritiladi. Jami to'lovni chiqaring. → Integer (int)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-111",
+   "title": {
+    "uz": "Kiritilgan sekundlar soni necha soat, necha daqiqa va…"
+   },
+   "statement": {
+    "uz": "Kiritilgan sekundlar soni necha soat, necha daqiqa va necha sekundga bo'linishini chiqaring. → Integer (div / mod)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-112",
+   "title": {
+    "uz": "Uch xonali son kiritiladi. Uning raqamlari yig'indisini…"
+   },
+   "statement": {
+    "uz": "Uch xonali son kiritiladi. Uning raqamlari yig'indisini chiqaring. → Integer (div / mod)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-113",
+   "title": {
+    "uz": "Mahsulotning og'irligi grammda kiritiladi. Nechta…"
+   },
+   "statement": {
+    "uz": "Mahsulotning og'irligi grammda kiritiladi. Nechta kilogramm va nechta gramm ekanini chiqaring. → Integer (div / mod)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-114",
+   "title": {
+    "uz": "Bir mahsulot narxi va chegirma foizi kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Bir mahsulot narxi va chegirma foizi kiritiladi. Chegirmadan keyingi narxni chiqaring. → Real (double)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-115",
+   "title": {
+    "uz": "Uchburchakning asosi va balandligi kiritiladi. Yuzasini…"
+   },
+   "statement": {
+    "uz": "Uchburchakning asosi va balandligi kiritiladi. Yuzasini chiqaring (S = (a × b) / 2). → Real (double)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-116",
+   "title": {
+    "uz": "O'quvchining 5 ta fandan olgan baholari kiritiladi.…"
+   },
+   "statement": {
+    "uz": "O'quvchining 5 ta fandan olgan baholari kiritiladi. Yig'indi va o'rtacha bahoni chiqaring. → Real (double)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-117",
+   "title": {
+    "uz": "Avtomobil masofasi (km) va vaqti (soat) kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Avtomobil masofasi (km) va vaqti (soat) kiritiladi. O'rtacha tezligini chiqaring. → Real (double)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-118",
+   "title": {
+    "uz": "Sinfdagi o'quvchilar soni va daftarlar soni kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Sinfdagi o'quvchilar soni va daftarlar soni kiritiladi. Har biriga nechtadan tushishini va nechta ortishini chiqaring. → Integer (div / mod)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-119",
+   "title": {
+    "uz": "Doiraning radiusi kiritiladi. Yuzasini chiqaring (S =…"
+   },
+   "statement": {
+    "uz": "Doiraning radiusi kiritiladi. Yuzasini chiqaring (S = 3.14 × r × r). → Real (double)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-120",
+   "title": {
+    "uz": "3 xil mahsulotning og'irligi (kg) va 1 kg narxi…"
+   },
+   "statement": {
+    "uz": "3 xil mahsulotning og'irligi (kg) va 1 kg narxi kiritiladi. Umumiy tushumni chiqaring. → Real (double)"
+   },
+   "source": "Flowgorithm_sinf_20",
+   "judge": null,
+   "tests": []
+  }
+ ],
+ "homework": [
+  {
+   "id": "mixed-121",
+   "title": {
+    "uz": "Ismini necha marta yozish"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi o'z ismini (string) va necha marta yozmoqchi ekanligini (int) kiritadi. For tsikli yordamida ismini shuncha marta ekranga chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-122",
+   "title": {
+    "uz": "Ballar yig'indisi"
+   },
+   "statement": {
+    "uz": "O'quvchi 5 ta fanidan baho oldi. Har bir bahoni (int) kiritasiz. Barcha baholarning yig'indisini hisoblab chiqaring. Agar yig'indi 20 dan katta yoki teng bo'lsa “Yaxshi natija”, aks holda “Yana o'qish kerak” deb chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-123",
+   "title": {
+    "uz": "Do'kon chegirmasi"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi mahsulot narxini (double) va chegirma foizini (int) kiritadi. Chegirmadan keyingi narxni hisoblang (narx − narx foiz / 100) va chiqaring. Agar yakuniy narx 50000 dan kichik bo'lsa “Arzon”, aks holda “Qimmat” deb yozing."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-124",
+   "title": {
+    "uz": "Kunlik yugurish"
+   },
+   "statement": {
+    "uz": "7 kun davomida har kuni necha kilometr yugurganingizni (double) kiritasiz. Har kuni: agar 3 km dan ko'p yoki teng yugursangiz “Yaxshi yugurdingiz”, aks holda “Kam yugurdingiz” deb chiqaring. Oxirida jami necha kilometr yugurganingizni hisoblab chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-125",
+   "title": {
+    "uz": "Yoshni tekshirish"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ismini (string) va yoshini (int) kiritadi. Agar yosh 18 dan katta yoki teng bo'lsa “Ismi, siz kattasiz”, aks holda “Ismi, siz hali yoshsiz” deb chiqaring (ismni ham qo'shib)."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-126",
+   "title": {
+    "uz": "Uchta sonning o'rtachasi"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 3 ta son kiritadi (double). Ularning o'rtacha qiymatini hisoblang ((a+b+c)/3) va chiqaring. Agar o'rtacha 50 dan katta bo'lsa “Yuqori”, aks holda “Past” deb yozing."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-127",
+   "title": {
+    "uz": "Juft yoki toq"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 6 ta son kiritadi (int). Har bir son uchun: agar son 2 ga bo'linganda qoldiq 0 bo'lsa “Juft”, aks holda “Toq” deb chiqaring. Oxirida nechta juft son kiritilganini sanab chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-128",
+   "title": {
+    "uz": "Telefon balansi"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi hozirgi balansini (double) va necha marta to'ldirishni xohlasa shuncha marta summa kiritadi (for yordamida). Har safar to'ldirilgan summani balansga qo'shing. Oxirida yangi balansni chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-129",
+   "title": {
+    "uz": "Ikki sinf salomi"
+   },
+   "statement": {
+    "uz": "2 ta sinf bor. Har bir sinfda 4 ta o'quvchi bor. Tashqi for 2 sinf, ichki for 4 o'quvchi uchun ishlaydi. Har bir o'quvchiga “Salom!” deb chiqaring. Har bir sinf tugagach “Sinf tugadi” deb yozing."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-130",
+   "title": {
+    "uz": "Mahsulotlar narxi"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 5 ta mahsulot narxini (double) kiritadi. Har bir narx uchun: agar 30000 dan katta yoki teng bo'lsa “Qimmat”, aks holda “Arzon” deb chiqaring. Oxirida barcha mahsulotlarning umumiy narxini hisoblab chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-131",
+   "title": {
+    "uz": "Ismlar ro'yxati"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi necha ta do'sti borligini (int) kiritadi. Keyin for yordamida har bir do'stining ismini (string) kiritadi va “Do'stim: ismi” deb chiqaradi."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-132",
+   "title": {
+    "uz": "Qoldiq tekshirish"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 2 ta son kiritadi (int). Birinchi sonni ikkinchisiga bo'lib, qoldiqni (%) toping. Agar qoldiq 0 bo'lsa “Bo'linadi”, aks holda “Bo'linmaydi” deb chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-133",
+   "title": {
+    "uz": "4 kunlik ovqatlanish"
+   },
+   "statement": {
+    "uz": "4 kun davomida har kuni 3 ta ovqat bor. Tashqi for 4 kun, ichki for 3 ovqat uchun ishlaydi. Har bir ovqat uchun yedingizmi (1) yoki yo'qmi (0) deb kiritasiz. Har bir kun tugagach, shu kunda nechta ovqat yeganingizni sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-134",
+   "title": {
+    "uz": "Temperatura"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 5 kunlik haroratni (double) kiritadi. Har bir kun uchun: agar harorat 20 dan yuqori yoki teng bo'lsa “Issiq”, aks holda “Sovuq” deb chiqaring. Oxirida o'rtacha haroratni hisoblab chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-135",
+   "title": {
+    "uz": "Pul ayirboshlash"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi dollar miqdorini (double) va kursni (1 dollar necha so'm, double) kiritadi. So'mga aylantirib chiqaring (dollar kurs). Agar natija 1000000 dan katta bo'lsa “Katta summa”, aks holda “Oddiy summa” deb yozing."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-136",
+   "title": {
+    "uz": "Uy ishlari"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 6 ta uy ishini bajardi yoki yo'qligini kiritadi (1 yoki 0). Har biri uchun “Bajardim” yoki “Bajarmadim” deb chiqaring. Oxirida nechta ishni bajarganini sanab chiqaring. Agar 4 tadan ko'p bajargan bo'lsa “Yaxshi bola”, aks holda “Yana ishla” deb yozing."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-137",
+   "title": {
+    "uz": "Ikki jamoa o'yinchilari"
+   },
+   "statement": {
+    "uz": "2 ta jamoa bor. Har bir jamoada 4 ta o'yinchi bor. Tashqi for 2 jamoa, ichki for 4 o'yinchi uchun ishlaydi. Har bir o'yinchi yoshini (int) kiritasiz. Agar yosh 16 dan katta yoki teng bo'lsa “Katta”, aks holda “Yosh” deb chiqaring. Har bir jamoa tugagach, shu jamoada nechta katta o'yinchi borligini sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-138",
+   "title": {
+    "uz": "Kvadrat hisoblash"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 1 dan 10 gacha bo'lgan sonlar uchun for ishlatib, har birining kvadratini (son son) hisoblab chiqarsin."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-139",
+   "title": {
+    "uz": "Chegirma bilan xarid"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 4 ta mahsulot narxini (double) kiritadi. Har biriga 10% chegirma qo'llang (narx 0.9) va yangi narxni chiqaring. Oxirida barcha chegirmali narxlarning yig'indisini hisoblab chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-140",
+   "title": {
+    "uz": "Ismi va yoshi"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 5 ta odamning ismini (string) va yoshini (int) kiritadi. Har biri uchun “Ismi yoshda” deb chiqaring. Agar yosh 12 dan kichik bo'lsa “Bola”, aks holda “Yoshi katta” deb qo'shimcha yozing."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-141",
+   "title": {
+    "uz": "3 kunlik mashq"
+   },
+   "statement": {
+    "uz": "3 kun davomida har kuni 3 xil mashq qilasiz. Tashqi for 3 kun, ichki for 3 mashq uchun ishlaydi. Har bir mashqda necha marta bajarganingizni (int) kiritasiz. Har bir kun tugagach, shu kunda jami necha marta mashq qilganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-142",
+   "title": {
+    "uz": "Bo'lish amali"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 2 ta son kiritadi (double). Birinchi sonni ikkinchisiga bo'ling. Agar ikkinchi son 0 bo'lsa “Nolga bo'lish mumkin emas”, aks holda natijani chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-143",
+   "title": {
+    "uz": "Kunlik suv"
+   },
+   "statement": {
+    "uz": "7 kun davomida har kuni necha stakan suv ichganingizni (int) kiritasiz. Agar 8 stakandan ko'p yoki teng ichsangiz “Yaxshi”, aks holda “Kam” deb chiqaring. Oxirida jami necha stakan ichganingizni hisoblab chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-144",
+   "title": {
+    "uz": "Uchta kassa"
+   },
+   "statement": {
+    "uz": "Do'konda 3 ta kassa bor. Har bir kassada 3 ta xaridor bor. Tashqi for 3 kassa, ichki for 3 xaridor uchun ishlaydi. Har bir xaridor to'lagan summani (double) kiritasiz. Har bir kassa tugagach, shu kassada jami qancha pul tushganini hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-145",
+   "title": {
+    "uz": "Foiz hisoblash"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi asosiy summani (double) va foizni (int) kiritadi. Foiz miqdorini hisoblang (summa foiz / 100) va chiqaring. Keyin asosiy summa + foiz miqdorini ham chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-146",
+   "title": {
+    "uz": "Baholar"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 6 ta baho kiritadi (int). Har bir baho uchun: 5 — “A'lo”, 4 — “Yaxshi”, 3 — “Qoniqarli”, boshqa — “Past” deb chiqaring. Oxirida nechta a'lo baho borligini sanab chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-147",
+   "title": {
+    "uz": "Velosiped"
+   },
+   "statement": {
+    "uz": "5 kun davomida har kuni necha soat velosipedda yurganingizni (double) kiritasiz. Agar 1.5 soatdan ko'p yoki teng yursangiz “Yaxshi mashq”, aks holda “Qisqa” deb chiqaring. Oxirida jami soatni hisoblab chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-148",
+   "title": {
+    "uz": "Ikki haftalik xarajat"
+   },
+   "statement": {
+    "uz": "2 hafta davomida xarajat qilasiz. Har bir haftada 4 kun bor. Tashqi for 2 hafta, ichki for 4 kun uchun ishlaydi. Har kuni qancha pul sarflaganingizni (double) kiritasiz. Har bir hafta tugagach, shu haftada jami qancha sarflaganingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-149",
+   "title": {
+    "uz": "Sonlar yig'indisi"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi necha ta son kiritmoqchi ekanligini (int) kiritadi. Keyin for yordamida shuncha son kiritadi (int) va ularning yig'indisini hisoblab chiqaradi."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-150",
+   "title": {
+    "uz": "Musbat manfiy"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 7 ta son kiritadi (int). Har biri uchun: musbat bo'lsa “Musbat”, manfiy bo'lsa “Manfiy”, 0 bo'lsa “Nol” deb chiqaring. Oxirida nechta musbat son borligini sanab chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  }
+ ],
+ "extra": [
+  {
+   "id": "mixed-151",
+   "title": {
+    "uz": "O'yin ballari"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 5 marta o'yin o'ynaydi. Har safar ballini (int) kiritadi. Agar ball 50 dan katta yoki teng bo'lsa “Yaxshi o'yin”, aks holda “Yana o'yna” deb chiqaring. Oxirida umumiy ballni hisoblab chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-152",
+   "title": {
+    "uz": "Uchta sinf"
+   },
+   "statement": {
+    "uz": "3 ta sinf bor. Har bir sinfda 3 ta o'quvchi bor. Tashqi for 3 sinf, ichki for 3 o'quvchi uchun ishlaydi. Har bir o'quvchi bahosini (int) kiritasiz. Agar baho 5 bo'lsa “A'lo”, aks holda “Oddiy” deb chiqaring. Har bir sinf tugagach, shu sinfda nechta a'lochi borligini sanab chiqarasiz."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-153",
+   "title": {
+    "uz": "Vaqt hisoblash"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi soat va daqiqani (int) kiritadi. Umumiy daqiqani hisoblang (soat 60 + daqiqa) va chiqaring. Agar umumiy daqiqa 120 dan katta bo'lsa “Uzoq vaqt”, aks holda “Qisqa vaqt” deb yozing."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-154",
+   "title": {
+    "uz": "Meva narxlari"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 4 ta meva narxini (double) kiritadi. Har biriga 5% qo'shimcha soliq qo'shing (narx 1.05) va yangi narxni chiqaring. Oxirida barcha yangi narxlar yig'indisini hisoblab chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-155",
+   "title": {
+    "uz": "Ismlar va salom"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 4 ta ism kiritadi (string). Har bir ism uchun “Salom, ismi!” deb chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-156",
+   "title": {
+    "uz": "Qoldiq bilan tekshirish"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 8 ta son kiritadi (int). Har bir son 3 ga bo'linganda qoldiq 0 bo'lsa “3 ga bo'linadi”, aks holda “Bo'linmaydi” deb chiqaring. Oxirida nechta son 3 ga bo'linishini sanab chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-157",
+   "title": {
+    "uz": "2 kunlik 3 ovqat"
+   },
+   "statement": {
+    "uz": "2 kun davomida har kuni 3 ta ovqat yeysiz. Tashqi for 2 kun, ichki for 3 ovqat uchun ishlaydi. Har bir ovqat uchun kaloriya miqdorini (int) kiritasiz. Har bir kun tugagach, shu kunda jami kaloriyani hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-158",
+   "title": {
+    "uz": "Yosh farqi"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi o'z yoshini va do'stining yoshini (int) kiritadi. Farqni hisoblang (katta dan kichikni ayiring). Agar farq 5 dan katta bo'lsa “Katta farq”, aks holda “Kichik farq” deb chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-159",
+   "title": {
+    "uz": "Push-up"
+   },
+   "statement": {
+    "uz": "6 kun davomida har kuni necha marta push-up qilganingizni (int) kiritasiz. Agar 20 tadan ko'p yoki teng qilsangiz “Kuchli”, aks holda “Yana mashq qil” deb chiqaring. Oxirida jami necha marta qilganingizni hisoblab chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-160",
+   "title": {
+    "uz": "Mahsulot va miqdor"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi mahsulot narxini (double) va necha dona olishini (int) kiritadi. Umumiy summani hisoblang (narx miqdor). Agar umumiy summa 100000 dan katta bo'lsa “Katta xarid”, aks holda “Oddiy xarid” deb chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-161",
+   "title": {
+    "uz": "3 jamoa 3 o'yinchi"
+   },
+   "statement": {
+    "uz": "3 ta jamoa bor. Har bir jamoada 3 ta o'yinchi bor. Tashqi for 3 jamoa, ichki for 3 o'yinchi uchun ishlaydi. Har bir o'yinchi ochkosini (int) kiritasiz. Har bir jamoa tugagach, shu jamoa jami ochkosini hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-162",
+   "title": {
+    "uz": "Soatga aylantirish"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi daqiqani (int) kiritadi. Uni soat va qolgan daqiqaga aylantiring (soat = daqiqa / 60, qoldiq = daqiqa % 60). Natijani “X soat Y daqiqa” deb chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-163",
+   "title": {
+    "uz": "4 kunlik kitob"
+   },
+   "statement": {
+    "uz": "4 kun davomida har kuni necha sahifa o'qiganingizni (int) kiritasiz. Agar 15 sahifadan ko'p yoki teng o'qisangiz “Yaxshi”, aks holda “Kam” deb chiqaring. Oxirida jami sahifani hisoblab chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-164",
+   "title": {
+    "uz": "Ikki kassa"
+   },
+   "statement": {
+    "uz": "Do'konda 2 ta kassa bor. Har bir kassada 4 ta xaridor bor. Tashqi for 2 kassa, ichki for 4 xaridor uchun ishlaydi. Har bir xaridor summasini (double) kiritasiz. Agar summa 50000 dan katta yoki teng bo'lsa “Katta xaridor”, aks holda “Oddiy” deb chiqaring. Har bir kassa tugagach, jami tushumni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-165",
+   "title": {
+    "uz": "Uchta son amallari"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 3 ta son kiritadi (int). Ularning yig'indisini, ayirmasini (birinchidan ikkinchisini), ko'paytmasini va birinchini uchinchisiga bo'lgandagi butun qismini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-166",
+   "title": {
+    "uz": "Ismlar takrorlash"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ismini (string) va necha marta takrorlashni (int) kiritadi. For yordamida ismini shuncha marta chiqaring. Har safar oldiga tartib raqamini ham yozing (1. ismi, 2. ismi...)."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-167",
+   "title": {
+    "uz": "Kunlik foyda"
+   },
+   "statement": {
+    "uz": "5 kun davomida har kuni topganingiz (double) va sarflaganingizni (double) kiritasiz. Har kuni farqni hisoblang (topgan − sarflagan). Agar farq musbat bo'lsa “Foyda”, manfiy bo'lsa “Zarar”, 0 bo'lsa “Teng” deb chiqaring. Oxirida umumiy farqni hisoblab chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-168",
+   "title": {
+    "uz": "3 raund 3 o'yin"
+   },
+   "statement": {
+    "uz": "O'yinda 3 ta raund bor. Har bir raundda 3 ta o'yin o'ynaysiz. Tashqi for 3 raund, ichki for 3 o'yin uchun ishlaydi. Har bir o'yinda ballingizni (int) kiritasiz. Har bir raund tugagach, shu raundda jami ballingizni hisoblab chiqarasiz."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-169",
+   "title": {
+    "uz": "Bo'linish tekshiruvi"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 1 dan 20 gacha bo'lgan sonlar orasida for ishlatib, 5 ga bo'linadiganlarini topib chiqarsin (qoldiq % 5 == 0). Har birini ekranga chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "mixed-170",
+   "title": {
+    "uz": "Yakuniy hisobot"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi o'z ismini (string), necha kun o'qiganini (int) va har kuni o'rtacha necha soat o'qiganini (double) kiritadi. Umumiy o'qigan soatini hisoblang (kun soat). Agar umumiy soat 20 dan katta yoki teng bo'lsa “Ismi, siz yaxshi o'qiyapsiz”, aks holda “Ismi, yana ko'proq o'qing” deb chiqaring."
+   },
+   "source": "Flowgorithm_50_masala_Barcha_mavzular",
+   "judge": null,
+   "tests": []
+  }
+ ]
+}

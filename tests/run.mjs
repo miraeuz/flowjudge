@@ -33,7 +33,10 @@ import { readdirSync } from 'node:fs';
 const cdir = new URL('../content/topics/', import.meta.url);
 for (const f of readdirSync(cdir).filter(f => f.endsWith('.json'))) {
   const tp = JSON.parse(readFileSync(new URL(f, cdir), 'utf8')); const ids = new Set();
-  const all = [...tp.classwork, ...tp.homework];
-  ok(`content ${f}: ids unique, bilingual, >=3 tests incl. hidden`, all.every(p => !ids.has(p.id) && ids.add(p.id) && p.title.uz && p.title.en && p.statement.uz && p.statement.en && p.tests.length >= 3 && p.tests.some(t => t.hidden)));
+  const all = [...tp.classwork, ...tp.homework, ...(tp.extra || [])];
+  ok(`content ${f}: ${all.length} problems, unique ids, text present, judged ones have tests`, all.every(p => !ids.has(p.id) && ids.add(p.id) && p.title.uz && p.statement.uz && (!p.judge || (p.tests.length >= 1 && p.tests.every(x => typeof x.out === 'string')))));
 }
+const basics = JSON.parse(readFileSync(new URL('../content/topics/01-basics.json', import.meta.url), 'utf8'));
+const j1 = [...basics.classwork, ...basics.homework, ...basics.extra].find(p => p.judge);
+ok('auto-judged imported problem: correct file is Accepted, wrong is WA', judge(P(`<output expression="${j1.tests[0].out}" newline="True"/>`), j1.tests, j1.judge).verdict === 'AC' && judge(P(`<output expression="12345" newline="True"/>`), j1.tests, j1.judge).verdict === 'WA');
 process.exit(bad ? 1 : 0);

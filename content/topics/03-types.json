@@ -1,0 +1,2958 @@
+{
+ "id": "types",
+ "order": 3,
+ "title": {
+  "uz": "Integer, Real va div/mod",
+  "en": "Integer, Real and div/mod"
+ },
+ "lesson": {
+  "uz": "Butun sonlar uchun Integer, kasrlar uchun Real. div — butun bo'lish, mod — qoldiq.",
+  "en": "Integer for whole numbers, Real for fractions. div is integer division, mod is the remainder."
+ },
+ "classwork": [
+  {
+   "id": "types-101",
+   "title": {
+    "uz": "Ikki butun son kiritiladi. Ularning yig'indisini…"
+   },
+   "statement": {
+    "uz": "Ikki butun son kiritiladi. Ularning yig'indisini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-102",
+   "title": {
+    "uz": "Ikki butun son kiritiladi. Ularning ayirmasini chiqaring."
+   },
+   "statement": {
+    "uz": "Ikki butun son kiritiladi. Ularning ayirmasini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-103",
+   "title": {
+    "uz": "Ikki butun son kiritiladi. Ularning ko'paytmasini…"
+   },
+   "statement": {
+    "uz": "Ikki butun son kiritiladi. Ularning ko'paytmasini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-104",
+   "title": {
+    "uz": "Bitta butun son kiritiladi. Uning kvadratini chiqaring."
+   },
+   "statement": {
+    "uz": "Bitta butun son kiritiladi. Uning kvadratini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-105",
+   "title": {
+    "uz": "Uchta butun son kiritiladi. Ularning yig'indisini…"
+   },
+   "statement": {
+    "uz": "Uchta butun son kiritiladi. Ularning yig'indisini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-106",
+   "title": {
+    "uz": "Sinfdagi o'g'il bolalar va qiz bolalar soni kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Sinfdagi o'g'il bolalar va qiz bolalar soni kiritiladi. Jami o'quvchilar sonini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-107",
+   "title": {
+    "uz": "Bir qutida 6 ta shokolad bor. Qutilar soni kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Bir qutida 6 ta shokolad bor. Qutilar soni kiritiladi. Jami shokoladlar sonini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-108",
+   "title": {
+    "uz": "Bir bolaning hozirgi yoshi kiritiladi. Uning 5 yildan…"
+   },
+   "statement": {
+    "uz": "Bir bolaning hozirgi yoshi kiritiladi. Uning 5 yildan keyingi yoshini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-109",
+   "title": {
+    "uz": "Do'konda 100 ta mahsulot bor edi. Sotilgan mahsulotlar…"
+   },
+   "statement": {
+    "uz": "Do'konda 100 ta mahsulot bor edi. Sotilgan mahsulotlar soni kiritiladi. Qolgan mahsulotlar sonini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-110",
+   "title": {
+    "uz": "Bitta son kiritiladi. Uni 3 ga ko'paytiring va natijaga 2…"
+   },
+   "statement": {
+    "uz": "Bitta son kiritiladi. Uni 3 ga ko'paytiring va natijaga 2 ni qo'shib chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-111",
+   "title": {
+    "uz": "Ikki son kiritiladi. Ularning o'rtacha qiymatini…"
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Ularning o'rtacha qiymatini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-112",
+   "title": {
+    "uz": "Uchta o'quvchining bahosi kiritiladi. Ularning o'rtacha…"
+   },
+   "statement": {
+    "uz": "Uchta o'quvchining bahosi kiritiladi. Ularning o'rtacha bahosini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-113",
+   "title": {
+    "uz": "Bir bolaning vazni (kilogramm) kiritiladi. Uni ekranga…"
+   },
+   "statement": {
+    "uz": "Bir bolaning vazni (kilogramm) kiritiladi. Uni ekranga chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-114",
+   "title": {
+    "uz": "Bir odamning bo'yi (metrda) kiritiladi. Uni ekranga…"
+   },
+   "statement": {
+    "uz": "Bir odamning bo'yi (metrda) kiritiladi. Uni ekranga chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-115",
+   "title": {
+    "uz": "Bugungi havo harorati kiritiladi. Uni ekranga chiqaring."
+   },
+   "statement": {
+    "uz": "Bugungi havo harorati kiritiladi. Uni ekranga chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-116",
+   "title": {
+    "uz": "Ikki son kiritiladi. Birinchisini ikkinchisiga bo'lib,…"
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Birinchisini ikkinchisiga bo'lib, aniq natijani chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-117",
+   "title": {
+    "uz": "Olmaning 1 kilogramm narxi va olingan og'irligi (kg)…"
+   },
+   "statement": {
+    "uz": "Olmaning 1 kilogramm narxi va olingan og'irligi (kg) kiritiladi. Jami to'lovni chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-118",
+   "title": {
+    "uz": "Bir kishining oylik maoshi kiritiladi. Bir kunlik…"
+   },
+   "statement": {
+    "uz": "Bir kishining oylik maoshi kiritiladi. Bir kunlik maoshini chiqaring (oyda 30 kun)."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-119",
+   "title": {
+    "uz": "Uch bolaning vazni (kg) kiritiladi. Ularning o'rtacha…"
+   },
+   "statement": {
+    "uz": "Uch bolaning vazni (kg) kiritiladi. Ularning o'rtacha vaznini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-120",
+   "title": {
+    "uz": "Do'konning haftalik savdosi kiritiladi. Bir kunga…"
+   },
+   "statement": {
+    "uz": "Do'konning haftalik savdosi kiritiladi. Bir kunga o'rtacha savdoni chiqaring (7 kun)."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  }
+ ],
+ "homework": [
+  {
+   "id": "types-121",
+   "title": {
+    "uz": "Ali bir nechta daftar oldi. Daftarlar soni va bitta…"
+   },
+   "statement": {
+    "uz": "Ali bir nechta daftar oldi. Daftarlar soni va bitta daftar narxi (so'm) kiritiladi. Jami to'lovni chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-122",
+   "title": {
+    "uz": "Bir do'kondan olingan go'shtning og'irligi (kg, kasrli)…"
+   },
+   "statement": {
+    "uz": "Bir do'kondan olingan go'shtning og'irligi (kg, kasrli) kiritiladi. Uni ekranga chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-123",
+   "title": {
+    "uz": "To'g'ri to'rtburchakning eni va bo'yi (butun) kiritiladi.…"
+   },
+   "statement": {
+    "uz": "To'g'ri to'rtburchakning eni va bo'yi (butun) kiritiladi. Uning yuzasini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-124",
+   "title": {
+    "uz": "To'g'ri to'rtburchakning eni va bo'yi (butun) kiritiladi.…"
+   },
+   "statement": {
+    "uz": "To'g'ri to'rtburchakning eni va bo'yi (butun) kiritiladi. Uning perimetrini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-125",
+   "title": {
+    "uz": "Kvadratning tomoni kiritiladi. Uning perimetrini…"
+   },
+   "statement": {
+    "uz": "Kvadratning tomoni kiritiladi. Uning perimetrini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-126",
+   "title": {
+    "uz": "Bir avtobusda 45 o'rin bor. Avtobuslar soni kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Bir avtobusda 45 o'rin bor. Avtobuslar soni kiritiladi. Jami o'rinlar sonini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-127",
+   "title": {
+    "uz": "Ikki son kiritiladi. Ularning yig'indisini 2 ga bo'lib…"
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Ularning yig'indisini 2 ga bo'lib chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-128",
+   "title": {
+    "uz": "Bir bolaning tug'ilgan yili va hozirgi yil kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Bir bolaning tug'ilgan yili va hozirgi yil kiritiladi. Uning yoshini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-129",
+   "title": {
+    "uz": "Bir mahsulotning eski narxi va yangi narxi (so'm)…"
+   },
+   "statement": {
+    "uz": "Bir mahsulotning eski narxi va yangi narxi (so'm) kiritiladi. Narx qanchaga o'zgarganini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-130",
+   "title": {
+    "uz": "Bir kishining haftalik daromadi kiritiladi. Bir kunga…"
+   },
+   "statement": {
+    "uz": "Bir kishining haftalik daromadi kiritiladi. Bir kunga o'rtacha daromadni chiqaring (7 kun)."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-131",
+   "title": {
+    "uz": "Uchta shaharning aholisi (ming kishi) kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Uchta shaharning aholisi (ming kishi) kiritiladi. Ularning umumiy aholisini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-132",
+   "title": {
+    "uz": "Uchta shaharning aholisi kiritiladi. Ularning o'rtacha…"
+   },
+   "statement": {
+    "uz": "Uchta shaharning aholisi kiritiladi. Ularning o'rtacha aholisini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-133",
+   "title": {
+    "uz": "Bir kitobda sahifalar soni kiritiladi. O'quvchi kuniga 25…"
+   },
+   "statement": {
+    "uz": "Bir kitobda sahifalar soni kiritiladi. O'quvchi kuniga 25 sahifa o'qiydi. Necha kunga bo'linishini (aniq) chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-134",
+   "title": {
+    "uz": "Bir olma va bir nokning og'irligi (gramm, butun)…"
+   },
+   "statement": {
+    "uz": "Bir olma va bir nokning og'irligi (gramm, butun) kiritiladi. Ikkalasining umumiy og'irligini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-135",
+   "title": {
+    "uz": "Bir sonni kiritiladi. Uni 10 ga ko'paytirib chiqaring."
+   },
+   "statement": {
+    "uz": "Bir sonni kiritiladi. Uni 10 ga ko'paytirib chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-136",
+   "title": {
+    "uz": "Ikki o'quvchining bo'yi (santimetr) kiritiladi. Ularning…"
+   },
+   "statement": {
+    "uz": "Ikki o'quvchining bo'yi (santimetr) kiritiladi. Ularning o'rtacha bo'yini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-137",
+   "title": {
+    "uz": "Bir mahsulotning 1 dona narxi (so'm) kiritiladi. 12 dona…"
+   },
+   "statement": {
+    "uz": "Bir mahsulotning 1 dona narxi (so'm) kiritiladi. 12 dona narxini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-138",
+   "title": {
+    "uz": "Termometr ko'rsatgan tana harorati (masalan, 36.6)…"
+   },
+   "statement": {
+    "uz": "Termometr ko'rsatgan tana harorati (masalan, 36.6) kiritiladi. Uni chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-139",
+   "title": {
+    "uz": "Non narxi (so'm) va olinadigan nonlar soni kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Non narxi (so'm) va olinadigan nonlar soni kiritiladi. Jami to'lovni chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-140",
+   "title": {
+    "uz": "Bir bochkada suv miqdori (litr, kasrli) kiritiladi. Uni…"
+   },
+   "statement": {
+    "uz": "Bir bochkada suv miqdori (litr, kasrli) kiritiladi. Uni chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-141",
+   "title": {
+    "uz": "Bir dalada 8 qator bor, har qatorda ekilgan tuplar soni…"
+   },
+   "statement": {
+    "uz": "Bir dalada 8 qator bor, har qatorda ekilgan tuplar soni kiritiladi. Jami tuplar sonini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-142",
+   "title": {
+    "uz": "Umumiy pul (so'm) va bolalar soni kiritiladi. Pul teng…"
+   },
+   "statement": {
+    "uz": "Umumiy pul (so'm) va bolalar soni kiritiladi. Pul teng bo'linsa, har biriga qanchadan tushishini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-143",
+   "title": {
+    "uz": "Uch fanning balllari kiritiladi. Ularning yig'indisini…"
+   },
+   "statement": {
+    "uz": "Uch fanning balllari kiritiladi. Ularning yig'indisini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-144",
+   "title": {
+    "uz": "Bir mahsulot narxi (so'm va tiyin bilan, masalan 1250.5)…"
+   },
+   "statement": {
+    "uz": "Bir mahsulot narxi (so'm va tiyin bilan, masalan 1250.5) kiritiladi. Uni chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-145",
+   "title": {
+    "uz": "Bir yukning og'irligi (tonna, kasrli) kiritiladi. Uni…"
+   },
+   "statement": {
+    "uz": "Bir yukning og'irligi (tonna, kasrli) kiritiladi. Uni chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-146",
+   "title": {
+    "uz": "Bir savatda mevalar soni va savatlar soni kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Bir savatda mevalar soni va savatlar soni kiritiladi. Jami mevalar sonini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-147",
+   "title": {
+    "uz": "Ikki son kiritiladi. Birinchisidan ikkinchisini ayirib,…"
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Birinchisidan ikkinchisini ayirib, natijani 2 ga ko'paytirib chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-148",
+   "title": {
+    "uz": "Bir do'kon 5 kun ishladi. Har kungi savdosi jami…"
+   },
+   "statement": {
+    "uz": "Bir do'kon 5 kun ishladi. Har kungi savdosi jami kiritiladi. Bir kunga o'rtacha savdoni chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-149",
+   "title": {
+    "uz": "Bir bolaning vazni (kg) kiritiladi. U 2 kg ozgach, yangi…"
+   },
+   "statement": {
+    "uz": "Bir bolaning vazni (kg) kiritiladi. U 2 kg ozgach, yangi vaznini chiqaring."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-150",
+   "title": {
+    "uz": "Uchta sonning yig'indisiga 10 ni qo'shib chiqaring. Uch…"
+   },
+   "statement": {
+    "uz": "Uchta sonning yig'indisiga 10 ni qo'shib chiqaring. Uch son kiritiladi."
+   },
+   "source": "Flowgorithm_50_masala",
+   "judge": null,
+   "tests": []
+  }
+ ],
+ "extra": [
+  {
+   "id": "types-151",
+   "title": {
+    "uz": "Bir arqonning uzunligi santimetrda beriladi. Unda nechta…"
+   },
+   "statement": {
+    "uz": "Bir arqonning uzunligi santimetrda beriladi. Unda nechta to'liq metr borligini toping. (1 m = 100 sm)"
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-152",
+   "title": {
+    "uz": "Bir yukning og'irligi kilogrammda beriladi. Unda nechta…"
+   },
+   "statement": {
+    "uz": "Bir yukning og'irligi kilogrammda beriladi. Unda nechta to'liq tonna borligini toping. (1 t = 1000 kg)"
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-153",
+   "title": {
+    "uz": "Do'konga keltirilgan suvning litrlardagi miqdori…"
+   },
+   "statement": {
+    "uz": "Do'konga keltirilgan suvning litrlardagi miqdori beriladi. Suv 2 litrli shishalarga quyiladi. Nechta shisha to'liq to'ladi?"
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-154",
+   "title": {
+    "uz": "Bir maktabdagi o'quvchilar soni beriladi. Har bir sinfga…"
+   },
+   "statement": {
+    "uz": "Bir maktabdagi o'quvchilar soni beriladi. Har bir sinfga 25 o'quvchi joylashadi. Nechta sinf to'liq to'ladi?"
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-155",
+   "title": {
+    "uz": "Uchta o'quvchining vazni (kilogrammda) beriladi. Ularning…"
+   },
+   "statement": {
+    "uz": "Uchta o'quvchining vazni (kilogrammda) beriladi. Ularning o'rtacha vaznini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-156",
+   "title": {
+    "uz": "Ikki kunda sotilgan muzqaymoqlarning jami soni beriladi.…"
+   },
+   "statement": {
+    "uz": "Ikki kunda sotilgan muzqaymoqlarning jami soni beriladi. Bir kunga o'rtacha nechtadan to'g'ri kelganini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-157",
+   "title": {
+    "uz": "Bugungi havo harorati (masalan, 24.5 gradus) beriladi.…"
+   },
+   "statement": {
+    "uz": "Bugungi havo harorati (masalan, 24.5 gradus) beriladi. Uni ekranga chiqaring."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-158",
+   "title": {
+    "uz": "Bir sinfdagi o'quvchilar soni beriladi. Uni ekranga…"
+   },
+   "statement": {
+    "uz": "Bir sinfdagi o'quvchilar soni beriladi. Uni ekranga chiqaring."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-159",
+   "title": {
+    "uz": "Do'konda bir kunda tushgan pul (so'mda) beriladi. Uni 4…"
+   },
+   "statement": {
+    "uz": "Do'konda bir kunda tushgan pul (so'mda) beriladi. Uni 4 sherik teng bo'lishadi. Har biriga qancha pul tushishini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-160",
+   "title": {
+    "uz": "Sayohatga boradigan odamlar soni beriladi. Har bir…"
+   },
+   "statement": {
+    "uz": "Sayohatga boradigan odamlar soni beriladi. Har bir mashinaga 4 kishi o'tiradi. Nechta mashina to'liq to'ladi?"
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-161",
+   "title": {
+    "uz": "Kun boshidan o'tgan sekundlar soni beriladi. Nechta…"
+   },
+   "statement": {
+    "uz": "Kun boshidan o'tgan sekundlar soni beriladi. Nechta to'liq daqiqa o'tganini toping. (1 daqiqa = 60 sekund)"
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-162",
+   "title": {
+    "uz": "Kun boshidan o'tgan sekundlar soni beriladi. Nechta…"
+   },
+   "statement": {
+    "uz": "Kun boshidan o'tgan sekundlar soni beriladi. Nechta to'liq soat o'tganini toping. (1 soat = 3600 sekund)"
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-163",
+   "title": {
+    "uz": "Ikki xonali son beriladi. Uning o'nliklar va birliklar…"
+   },
+   "statement": {
+    "uz": "Ikki xonali son beriladi. Uning o'nliklar va birliklar xonasidagi raqamlarini alohida chiqaring."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-164",
+   "title": {
+    "uz": "Ikki xonali son beriladi. Uning raqamlari yig'indisini…"
+   },
+   "statement": {
+    "uz": "Ikki xonali son beriladi. Uning raqamlari yig'indisini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-165",
+   "title": {
+    "uz": "Uchta o'quvchining olgan bahosi beriladi. Ularning…"
+   },
+   "statement": {
+    "uz": "Uchta o'quvchining olgan bahosi beriladi. Ularning o'rtacha bahosini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-166",
+   "title": {
+    "uz": "Bir lentaning uzunligi santimetrda beriladi. Undan 15…"
+   },
+   "statement": {
+    "uz": "Bir lentaning uzunligi santimetrda beriladi. Undan 15 santimetrdan bo'laklar kesiladi. Nechta to'liq bo'lak chiqadi?"
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-167",
+   "title": {
+    "uz": "Bir non 3 bo'lakka bo'linadi. Nonlar soni beriladi. Jami…"
+   },
+   "statement": {
+    "uz": "Bir non 3 bo'lakka bo'linadi. Nonlar soni beriladi. Jami nechta bo'lak chiqishini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-168",
+   "title": {
+    "uz": "To'rtta bolaning yoshi beriladi. Ularning o'rtacha…"
+   },
+   "statement": {
+    "uz": "To'rtta bolaning yoshi beriladi. Ularning o'rtacha yoshini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-169",
+   "title": {
+    "uz": "Bir do'konning 5 kunlik jami savdosi (so'mda) beriladi.…"
+   },
+   "statement": {
+    "uz": "Bir do'konning 5 kunlik jami savdosi (so'mda) beriladi. Bir kunga o'rtacha qancha to'g'ri kelganini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-170",
+   "title": {
+    "uz": "Bir qutida 6 ta shokolad bor. Qutilar soni beriladi. Jami…"
+   },
+   "statement": {
+    "uz": "Bir qutida 6 ta shokolad bor. Qutilar soni beriladi. Jami nechta shokolad borligini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-171",
+   "title": {
+    "uz": "Ikki xonali son beriladi. Uning raqamlari o'rnini…"
+   },
+   "statement": {
+    "uz": "Ikki xonali son beriladi. Uning raqamlari o'rnini almashtirib hosil bo'lgan sonni toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-172",
+   "title": {
+    "uz": "Bir sinfdagi o'g'il bolalar va qiz bolalar soni alohida…"
+   },
+   "statement": {
+    "uz": "Bir sinfdagi o'g'il bolalar va qiz bolalar soni alohida beriladi. Sinfdagi jami o'quvchilar sonini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-173",
+   "title": {
+    "uz": "Uch xonali son beriladi. Uning yuzliklar xonasidagi…"
+   },
+   "statement": {
+    "uz": "Uch xonali son beriladi. Uning yuzliklar xonasidagi raqamni toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-174",
+   "title": {
+    "uz": "Bir yo'lning uzunligi kilometrda beriladi. Piyoda odam…"
+   },
+   "statement": {
+    "uz": "Bir yo'lning uzunligi kilometrda beriladi. Piyoda odam soatiga 5 kilometr yuradi. Bu yo'lni necha to'liq soatda bosib o'tishini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-175",
+   "title": {
+    "uz": "Ikki son beriladi. Ularning o'rtacha arifmetik qiymatini…"
+   },
+   "statement": {
+    "uz": "Ikki son beriladi. Ularning o'rtacha arifmetik qiymatini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-176",
+   "title": {
+    "uz": "Bir qopda 50 kilogramm un bor. Undan har kuni 3 kilogramm…"
+   },
+   "statement": {
+    "uz": "Bir qopda 50 kilogramm un bor. Undan har kuni 3 kilogramm ishlatiladi. Un necha to'liq kunga yetishini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-177",
+   "title": {
+    "uz": "Uch xonali son beriladi. Uning raqamlari yig'indisini…"
+   },
+   "statement": {
+    "uz": "Uch xonali son beriladi. Uning raqamlari yig'indisini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-178",
+   "title": {
+    "uz": "Bir avtobusda 40 o'rin bor. Yo'lovchilar soni beriladi.…"
+   },
+   "statement": {
+    "uz": "Bir avtobusda 40 o'rin bor. Yo'lovchilar soni beriladi. Yo'lovchilar uchun nechta avtobus to'liq to'ladi?"
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-179",
+   "title": {
+    "uz": "Bir mahsulotning narxi (so'mda) va olingan miqdori (dona)…"
+   },
+   "statement": {
+    "uz": "Bir mahsulotning narxi (so'mda) va olingan miqdori (dona) beriladi. Jami to'lanadigan pulni toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-180",
+   "title": {
+    "uz": "Sotib olingan mahsulot narxi va berilgan pul (so'mda)…"
+   },
+   "statement": {
+    "uz": "Sotib olingan mahsulot narxi va berilgan pul (so'mda) beriladi. Qaytim (qaytariladigan pul) qancha ekanini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-181",
+   "title": {
+    "uz": "Bir bog'dagi olma daraxtlari soni beriladi. Har bir…"
+   },
+   "statement": {
+    "uz": "Bir bog'dagi olma daraxtlari soni beriladi. Har bir daraxtdan 8 kilogramm olma yig'iladi. Jami necha kilogramm olma yig'ilishini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-182",
+   "title": {
+    "uz": "Bir sumkaning og'irligi grammda beriladi. Uning nechta…"
+   },
+   "statement": {
+    "uz": "Bir sumkaning og'irligi grammda beriladi. Uning nechta to'liq kilogramm ekanini toping. (1 kg = 1000 g)"
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-183",
+   "title": {
+    "uz": "Bir bochkadagi suvning litrlardagi miqdori beriladi. Suv…"
+   },
+   "statement": {
+    "uz": "Bir bochkadagi suvning litrlardagi miqdori beriladi. Suv 10 litrli chelaklarga quyiladi. Nechta chelak to'liq to'ladi?"
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-184",
+   "title": {
+    "uz": "Uchta do'stning to'plagan puli (so'mda) beriladi.…"
+   },
+   "statement": {
+    "uz": "Uchta do'stning to'plagan puli (so'mda) beriladi. Ularning jami pulini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-185",
+   "title": {
+    "uz": "Uchta do'stning to'plagan puli (so'mda) beriladi. Har…"
+   },
+   "statement": {
+    "uz": "Uchta do'stning to'plagan puli (so'mda) beriladi. Har biriga o'rtacha qancha to'g'ri kelishini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-186",
+   "title": {
+    "uz": "Bir kitobdagi sahifalar soni beriladi. O'quvchi kuniga 20…"
+   },
+   "statement": {
+    "uz": "Bir kitobdagi sahifalar soni beriladi. O'quvchi kuniga 20 sahifa o'qiydi. Kitobni necha to'liq kunda o'qib tugatishini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-187",
+   "title": {
+    "uz": "Bir bolaning bo'yi metrda (masalan, 1.35) beriladi. Uni…"
+   },
+   "statement": {
+    "uz": "Bir bolaning bo'yi metrda (masalan, 1.35) beriladi. Uni ekranga chiqaring."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-188",
+   "title": {
+    "uz": "Bir savatdagi mevalar soni beriladi. Ular 4 bolaga teng…"
+   },
+   "statement": {
+    "uz": "Bir savatdagi mevalar soni beriladi. Ular 4 bolaga teng bo'linadi. Har biriga nechtadan to'g'ri kelishini va nechta meva ortib qolishini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-189",
+   "title": {
+    "uz": "Ikki shahar orasidagi masofa kilometrda beriladi. Mashina…"
+   },
+   "statement": {
+    "uz": "Ikki shahar orasidagi masofa kilometrda beriladi. Mashina soatiga 80 kilometr yuradi. Necha to'liq soatda yetib borishini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-190",
+   "title": {
+    "uz": "Uchta mahsulotning narxi (so'mda) beriladi. Ularning…"
+   },
+   "statement": {
+    "uz": "Uchta mahsulotning narxi (so'mda) beriladi. Ularning o'rtacha narxini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-191",
+   "title": {
+    "uz": "Bir ishchining oylik maoshi (so'mda) beriladi. Uning bir…"
+   },
+   "statement": {
+    "uz": "Bir ishchining oylik maoshi (so'mda) beriladi. Uning bir kunlik maoshini toping (oyda 30 kun deb oling)."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-192",
+   "title": {
+    "uz": "Bir sinfdagi o'quvchilar soni va ular yig'gan jami pul…"
+   },
+   "statement": {
+    "uz": "Bir sinfdagi o'quvchilar soni va ular yig'gan jami pul (so'mda) beriladi. Har bir o'quvchiga o'rtacha qancha to'g'ri kelishini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-193",
+   "title": {
+    "uz": "Ikki xonali son beriladi. Uning raqamlari ko'paytmasini…"
+   },
+   "statement": {
+    "uz": "Ikki xonali son beriladi. Uning raqamlari ko'paytmasini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-194",
+   "title": {
+    "uz": "Uch xonali son beriladi. Uning birliklar xonasidagi…"
+   },
+   "statement": {
+    "uz": "Uch xonali son beriladi. Uning birliklar xonasidagi raqamni toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-195",
+   "title": {
+    "uz": "Uch xonali son beriladi. Uning o'nliklar xonasidagi…"
+   },
+   "statement": {
+    "uz": "Uch xonali son beriladi. Uning o'nliklar xonasidagi raqamni toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-196",
+   "title": {
+    "uz": "Bir qadoqda 5 ta sovun bor. Sovunlar soni beriladi.…"
+   },
+   "statement": {
+    "uz": "Bir qadoqda 5 ta sovun bor. Sovunlar soni beriladi. Nechta qadoq to'liq to'ladi?"
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-197",
+   "title": {
+    "uz": "Bir haftada sport bilan shug'ullanilgan vaqt daqiqada…"
+   },
+   "statement": {
+    "uz": "Bir haftada sport bilan shug'ullanilgan vaqt daqiqada beriladi. Bu necha to'liq soat ekanini toping. (1 soat = 60 daqiqa)"
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-198",
+   "title": {
+    "uz": "Termometr ko'rsatgan tana harorati (masalan, 36.6)…"
+   },
+   "statement": {
+    "uz": "Termometr ko'rsatgan tana harorati (masalan, 36.6) beriladi. Uni ekranga chiqaring."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-199",
+   "title": {
+    "uz": "Bir bolaning tug'ilgan yili va hozirgi yil beriladi.…"
+   },
+   "statement": {
+    "uz": "Bir bolaning tug'ilgan yili va hozirgi yil beriladi. Uning yoshini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-200",
+   "title": {
+    "uz": "Olmaning 1 kilogramm narxi (so'mda) va olingan olmaning…"
+   },
+   "statement": {
+    "uz": "Olmaning 1 kilogramm narxi (so'mda) va olingan olmaning og'irligi (kilogramm) beriladi. Jami to'lovni toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-201",
+   "title": {
+    "uz": "Ekskursiyaga boradigan o'quvchilar soni beriladi. Bir…"
+   },
+   "statement": {
+    "uz": "Ekskursiyaga boradigan o'quvchilar soni beriladi. Bir mashinaga 6 kishi sig'adi. Nechta mashina to'liq to'ladi?"
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-202",
+   "title": {
+    "uz": "Ikki o'quvchining olgan ballari beriladi. Ularning…"
+   },
+   "statement": {
+    "uz": "Ikki o'quvchining olgan ballari beriladi. Ularning o'rtacha balini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-203",
+   "title": {
+    "uz": "Bir daladagi g'o'zalar soni beriladi. Ular 100 tupdan…"
+   },
+   "statement": {
+    "uz": "Bir daladagi g'o'zalar soni beriladi. Ular 100 tupdan qatorlarga ekiladi. Nechta qator to'liq to'ladi?"
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-204",
+   "title": {
+    "uz": "Uch kunda sotilgan nonlarning jami soni beriladi. Bir…"
+   },
+   "statement": {
+    "uz": "Uch kunda sotilgan nonlarning jami soni beriladi. Bir kunga o'rtacha nechtadan to'g'ri kelganini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-205",
+   "title": {
+    "uz": "Bir qutiga 12 ta pechenye joylanadi. Pechenyelar soni…"
+   },
+   "statement": {
+    "uz": "Bir qutiga 12 ta pechenye joylanadi. Pechenyelar soni beriladi. Nechta quti to'liq to'ladi?"
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-206",
+   "title": {
+    "uz": "Bir bolaning cho'ntagidagi pul miqdori (so'mda) beriladi.…"
+   },
+   "statement": {
+    "uz": "Bir bolaning cho'ntagidagi pul miqdori (so'mda) beriladi. Bir daftar 3000 so'm turadi. U nechta to'liq daftar sotib ola olishini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-207",
+   "title": {
+    "uz": "Bir suzuvchining 4 kunda suzgan jami masofasi (metrda)…"
+   },
+   "statement": {
+    "uz": "Bir suzuvchining 4 kunda suzgan jami masofasi (metrda) beriladi. Bir kunga o'rtacha qancha suzganini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-208",
+   "title": {
+    "uz": "Ikki xonali son beriladi. Uning ikki raqamining o'rtacha…"
+   },
+   "statement": {
+    "uz": "Ikki xonali son beriladi. Uning ikki raqamining o'rtacha qiymatini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-209",
+   "title": {
+    "uz": "Bir do'konda 500 ta mahsulot bor. Ular har kuni 30 tadan…"
+   },
+   "statement": {
+    "uz": "Bir do'konda 500 ta mahsulot bor. Ular har kuni 30 tadan sotiladi. Mahsulotlar necha to'liq kunga yetishini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-210",
+   "title": {
+    "uz": "Bir odam bosib o'tgan yo'l metrda beriladi. U necha…"
+   },
+   "statement": {
+    "uz": "Bir odam bosib o'tgan yo'l metrda beriladi. U necha to'liq kilometr yurganini toping. (1 km = 1000 m)"
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-211",
+   "title": {
+    "uz": "Uch xonali son beriladi. Uning raqamlarini teskari…"
+   },
+   "statement": {
+    "uz": "Uch xonali son beriladi. Uning raqamlarini teskari tartibda yozib hosil bo'lgan sonni toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-212",
+   "title": {
+    "uz": "Bir avtobus 45 o'rinli. Sayohatga boradiganlar soni…"
+   },
+   "statement": {
+    "uz": "Bir avtobus 45 o'rinli. Sayohatga boradiganlar soni beriladi. Ular uchun nechta avtobus to'liq to'ladi?"
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-213",
+   "title": {
+    "uz": "Bir mahsulotning eski narxi va yangi narxi (so'mda)…"
+   },
+   "statement": {
+    "uz": "Bir mahsulotning eski narxi va yangi narxi (so'mda) beriladi. Narx qanchaga o'zgarganini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-214",
+   "title": {
+    "uz": "Bir bog'chadagi bolalar soni va tarbiyachilar soni…"
+   },
+   "statement": {
+    "uz": "Bir bog'chadagi bolalar soni va tarbiyachilar soni beriladi. Har bir tarbiyachiga o'rtacha nechtadan bola to'g'ri kelishini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-215",
+   "title": {
+    "uz": "Bir dorixonadagi dorilar soni beriladi. Har bir bemorga 4…"
+   },
+   "statement": {
+    "uz": "Bir dorixonadagi dorilar soni beriladi. Har bir bemorga 4 tadan dori beriladi. Nechta bemorga to'liq yetishini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-216",
+   "title": {
+    "uz": "Bir bolaning haftalik cho'ntak puli (so'mda) beriladi.…"
+   },
+   "statement": {
+    "uz": "Bir bolaning haftalik cho'ntak puli (so'mda) beriladi. Bir kunga o'rtacha qancha to'g'ri kelishini toping (haftada 7 kun)."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-217",
+   "title": {
+    "uz": "Bir bochkaga har daqiqada 8 litr suv quyiladi. Bochka…"
+   },
+   "statement": {
+    "uz": "Bir bochkaga har daqiqada 8 litr suv quyiladi. Bochka hajmi litrda beriladi. Bochka necha to'liq daqiqada to'lishini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-218",
+   "title": {
+    "uz": "Uchta shaharning aholisi soni beriladi. Ularning o'rtacha…"
+   },
+   "statement": {
+    "uz": "Uchta shaharning aholisi soni beriladi. Ularning o'rtacha aholisini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-219",
+   "title": {
+    "uz": "Bir mahsulot narxi tiyin bilan (masalan, 1250.5 so'm)…"
+   },
+   "statement": {
+    "uz": "Bir mahsulot narxi tiyin bilan (masalan, 1250.5 so'm) beriladi. Uni ekranga chiqaring."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-220",
+   "title": {
+    "uz": "Bir sinfdagi o'quvchilar soni beriladi. Ular 3 qatorga…"
+   },
+   "statement": {
+    "uz": "Bir sinfdagi o'quvchilar soni beriladi. Ular 3 qatorga teng bo'linadi. Har bir qatorda nechtadan o'quvchi bo'lishini va nechtasi ortib qolishini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-221",
+   "title": {
+    "uz": "Kun boshidan o'tgan sekundlar soni beriladi. Bu necha…"
+   },
+   "statement": {
+    "uz": "Kun boshidan o'tgan sekundlar soni beriladi. Bu necha soat, necha daqiqa va necha sekund ekanini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-222",
+   "title": {
+    "uz": "Bir mahsulotning 1 dona narxi (so'mda) beriladi. 100 dona…"
+   },
+   "statement": {
+    "uz": "Bir mahsulotning 1 dona narxi (so'mda) beriladi. 100 dona olsa, jami qancha bo'lishini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-223",
+   "title": {
+    "uz": "Ikki bolaning bo'yi santimetrda beriladi. Ularning…"
+   },
+   "statement": {
+    "uz": "Ikki bolaning bo'yi santimetrda beriladi. Ularning o'rtacha bo'yini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-224",
+   "title": {
+    "uz": "Bir do'konning 6 kunlik jami savdosi (so'mda) beriladi.…"
+   },
+   "statement": {
+    "uz": "Bir do'konning 6 kunlik jami savdosi (so'mda) beriladi. Bir kunga o'rtacha qancha ishlaganini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-225",
+   "title": {
+    "uz": "Bir qutida 8 ta qatlama bor. Qutilar soni beriladi. Jami…"
+   },
+   "statement": {
+    "uz": "Bir qutida 8 ta qatlama bor. Qutilar soni beriladi. Jami nechta qatlama borligini toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-226",
+   "title": {
+    "uz": "Bir odamning vazni kilogrammda kasr bilan (masalan, 68.4)…"
+   },
+   "statement": {
+    "uz": "Bir odamning vazni kilogrammda kasr bilan (masalan, 68.4) beriladi. Uni ekranga chiqaring."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-227",
+   "title": {
+    "uz": "Bir maktabdagi o'quvchilar soni beriladi. Har bir…"
+   },
+   "statement": {
+    "uz": "Bir maktabdagi o'quvchilar soni beriladi. Har bir sinfxonaga 30 o'quvchi joylashadi. Nechta sinfxona to'liq to'ladi?"
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-228",
+   "title": {
+    "uz": "Ikki xonali son beriladi. Uni 10 ga bo'lganda butun…"
+   },
+   "statement": {
+    "uz": "Ikki xonali son beriladi. Uni 10 ga bo'lganda butun qismini (o'nliklar raqamini) toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-229",
+   "title": {
+    "uz": "Ikki xonali son beriladi. Uni 10 ga bo'lganda qoldiqni…"
+   },
+   "statement": {
+    "uz": "Ikki xonali son beriladi. Uni 10 ga bo'lganda qoldiqni (birliklar raqamini) toping."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-230",
+   "title": {
+    "uz": "Bir daladan olingan bug'doy hosili tonnada kasr bilan…"
+   },
+   "statement": {
+    "uz": "Bir daladan olingan bug'doy hosili tonnada kasr bilan (masalan, 12.7) beriladi. Uni ekranga chiqaring."
+   },
+   "source": "Algoritm_int_double_80",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-231",
+   "title": {
+    "uz": "Ikki son kiritiladi. Ularning o'rtacha qiymatini toping."
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Ularning o'rtacha qiymatini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-232",
+   "title": {
+    "uz": "Bir bolaning vazni (kg) kiritiladi. Uni ekranga chiqaring."
+   },
+   "statement": {
+    "uz": "Bir bolaning vazni (kg) kiritiladi. Uni ekranga chiqaring."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-233",
+   "title": {
+    "uz": "Uch o'quvchining bahosi kiritiladi. Ularning o'rtacha…"
+   },
+   "statement": {
+    "uz": "Uch o'quvchining bahosi kiritiladi. Ularning o'rtacha bahosini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-234",
+   "title": {
+    "uz": "Ikki son kiritiladi. Birinchisini ikkinchisiga bo'ling."
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Birinchisini ikkinchisiga bo'ling."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-235",
+   "title": {
+    "uz": "Bir mahsulotning narxi va soni kiritiladi. Jami to'lovni…"
+   },
+   "statement": {
+    "uz": "Bir mahsulotning narxi va soni kiritiladi. Jami to'lovni toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-236",
+   "title": {
+    "uz": "Bir sinfdagi o'quvchilar soni kiritiladi. Ular 4 guruhga…"
+   },
+   "statement": {
+    "uz": "Bir sinfdagi o'quvchilar soni kiritiladi. Ular 4 guruhga bo'linadi. Har guruhda nechtadan bo'lishini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-237",
+   "title": {
+    "uz": "Ikki son kiritiladi. Ularning yig'indisini 2 ga bo'ling."
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Ularning yig'indisini 2 ga bo'ling."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-238",
+   "title": {
+    "uz": "Bugungi harorat kiritiladi. Uni ekranga chiqaring."
+   },
+   "statement": {
+    "uz": "Bugungi harorat kiritiladi. Uni ekranga chiqaring."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-239",
+   "title": {
+    "uz": "Bir kishining oylik maoshi kiritiladi. Bir kunlik…"
+   },
+   "statement": {
+    "uz": "Bir kishining oylik maoshi kiritiladi. Bir kunlik maoshini toping (oyda 30 kun)."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-240",
+   "title": {
+    "uz": "Uch bolaning vazni (kg) kiritiladi. Ularning o'rtacha…"
+   },
+   "statement": {
+    "uz": "Uch bolaning vazni (kg) kiritiladi. Ularning o'rtacha vaznini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-241",
+   "title": {
+    "uz": "Bir do'konning haftalik savdosi (so'mda) kiritiladi. Bir…"
+   },
+   "statement": {
+    "uz": "Bir do'konning haftalik savdosi (so'mda) kiritiladi. Bir kunga o'rtacha qancha to'g'ri kelishini toping (7 kun)."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-242",
+   "title": {
+    "uz": "Konfetlar soni va bolalar soni kiritiladi. Har biriga…"
+   },
+   "statement": {
+    "uz": "Konfetlar soni va bolalar soni kiritiladi. Har biriga nechtadan to'liq tekkanini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-243",
+   "title": {
+    "uz": "Bir mahsulotning og'irligi (grammda) kiritiladi. Uni…"
+   },
+   "statement": {
+    "uz": "Bir mahsulotning og'irligi (grammda) kiritiladi. Uni ekranga chiqaring."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-244",
+   "title": {
+    "uz": "Ikki son kiritiladi. Ularning ko'paytmasini toping."
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Ularning ko'paytmasini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-245",
+   "title": {
+    "uz": "Bir olma narxi (1 kg) va olingan og'irlik (kg)…"
+   },
+   "statement": {
+    "uz": "Bir olma narxi (1 kg) va olingan og'irlik (kg) kiritiladi. Jami to'lovni toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-246",
+   "title": {
+    "uz": "O'quvchilar soni va qatorlar soni kiritiladi. Har qatorda…"
+   },
+   "statement": {
+    "uz": "O'quvchilar soni va qatorlar soni kiritiladi. Har qatorda nechtadan o'quvchi bo'lishini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-247",
+   "title": {
+    "uz": "Bir bolaning tug'ilgan yili va hozirgi yil kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Bir bolaning tug'ilgan yili va hozirgi yil kiritiladi. Uning yoshini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-248",
+   "title": {
+    "uz": "Ikki son kiritiladi. Ularning ayirmasini toping."
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Ularning ayirmasini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-249",
+   "title": {
+    "uz": "Bir kitobning sahifalar soni kiritiladi. O'quvchi kuniga…"
+   },
+   "statement": {
+    "uz": "Bir kitobning sahifalar soni kiritiladi. O'quvchi kuniga 25 sahifa o'qiydi. Kitobni necha kunda tugatishini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-250",
+   "title": {
+    "uz": "Bir mahsulot narxi (tiyin bilan) kiritiladi. Uni ekranga…"
+   },
+   "statement": {
+    "uz": "Bir mahsulot narxi (tiyin bilan) kiritiladi. Uni ekranga chiqaring."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-251",
+   "title": {
+    "uz": "Uchta shaharning aholisi kiritiladi. Ularning o'rtacha…"
+   },
+   "statement": {
+    "uz": "Uchta shaharning aholisi kiritiladi. Ularning o'rtacha aholisini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-252",
+   "title": {
+    "uz": "Bir sonning kiritiladi. Uni 3 ga bo'lgandagi natijani…"
+   },
+   "statement": {
+    "uz": "Bir sonning kiritiladi. Uni 3 ga bo'lgandagi natijani toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-253",
+   "title": {
+    "uz": "Yo'lning uzunligi (km) kiritiladi. Odam soatiga 5 km…"
+   },
+   "statement": {
+    "uz": "Yo'lning uzunligi (km) kiritiladi. Odam soatiga 5 km yuradi. Necha to'liq soatda bosib o'tishini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-254",
+   "title": {
+    "uz": "Ikki bolaning bo'yi (sm) kiritiladi. Ularning o'rtacha…"
+   },
+   "statement": {
+    "uz": "Ikki bolaning bo'yi (sm) kiritiladi. Ularning o'rtacha bo'yini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-255",
+   "title": {
+    "uz": "Bir mahsulotning eski narxi va yangi narxi kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Bir mahsulotning eski narxi va yangi narxi kiritiladi. Narx qanchaga o'zgarganini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-256",
+   "title": {
+    "uz": "Umumiy pul va odamlar soni kiritiladi. Pul teng bo'linsa,…"
+   },
+   "statement": {
+    "uz": "Umumiy pul va odamlar soni kiritiladi. Pul teng bo'linsa, har biriga qanchadan tushishini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-257",
+   "title": {
+    "uz": "Bir yukning og'irligi (tonnada) kiritiladi. Uni ekranga…"
+   },
+   "statement": {
+    "uz": "Bir yukning og'irligi (tonnada) kiritiladi. Uni ekranga chiqaring."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-258",
+   "title": {
+    "uz": "Uch son kiritiladi. Ularning yig'indisini toping."
+   },
+   "statement": {
+    "uz": "Uch son kiritiladi. Ularning yig'indisini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-259",
+   "title": {
+    "uz": "Suvning miqdori (litrda) kiritiladi. Suv 10 litrli…"
+   },
+   "statement": {
+    "uz": "Suvning miqdori (litrda) kiritiladi. Suv 10 litrli chelaklarga quyiladi. Nechta chelak to'liq to'lishini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-260",
+   "title": {
+    "uz": "Bir mahsulotning 1 dona narxi kiritiladi. 12 dona olsa,…"
+   },
+   "statement": {
+    "uz": "Bir mahsulotning 1 dona narxi kiritiladi. 12 dona olsa, jami qancha bo'lishini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-261",
+   "title": {
+    "uz": "Bir bolaning vazni (kg, kasr bilan) kiritiladi. U 2 kg…"
+   },
+   "statement": {
+    "uz": "Bir bolaning vazni (kg, kasr bilan) kiritiladi. U 2 kg ozgach vaznini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-262",
+   "title": {
+    "uz": "Ikki sonning o'rtachasini toping. Ikki son kiritiladi."
+   },
+   "statement": {
+    "uz": "Ikki sonning o'rtachasini toping. Ikki son kiritiladi."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-263",
+   "title": {
+    "uz": "Kilometrdagi masofa kiritiladi. Mashina soatiga 80 km…"
+   },
+   "statement": {
+    "uz": "Kilometrdagi masofa kiritiladi. Mashina soatiga 80 km yuradi. Necha to'liq soatda yetib borishini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-264",
+   "title": {
+    "uz": "Bir kishining haftalik daromadi kiritiladi. Bir kunga…"
+   },
+   "statement": {
+    "uz": "Bir kishining haftalik daromadi kiritiladi. Bir kunga o'rtacha qancha to'g'ri kelishini toping (7 kun)."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-265",
+   "title": {
+    "uz": "Sahifalar soni va kunlar soni kiritiladi. Kuniga o'rtacha…"
+   },
+   "statement": {
+    "uz": "Sahifalar soni va kunlar soni kiritiladi. Kuniga o'rtacha nechta sahifadan o'qish kerakligini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-266",
+   "title": {
+    "uz": "Non narxi va soni kiritiladi. Jami qancha pul kerakligini…"
+   },
+   "statement": {
+    "uz": "Non narxi va soni kiritiladi. Jami qancha pul kerakligini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-267",
+   "title": {
+    "uz": "O'quvchilar soni kiritiladi. Bir mashinaga 6 kishi…"
+   },
+   "statement": {
+    "uz": "O'quvchilar soni kiritiladi. Bir mashinaga 6 kishi sig'adi. Nechta mashina to'liq to'lishini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-268",
+   "title": {
+    "uz": "Bir sonning kiritiladi. Uni 2 ga ko'paytiring va natijani…"
+   },
+   "statement": {
+    "uz": "Bir sonning kiritiladi. Uni 2 ga ko'paytiring va natijani chiqaring."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-269",
+   "title": {
+    "uz": "Uchta o'quvchining vazni kiritiladi. Ularning umumiy…"
+   },
+   "statement": {
+    "uz": "Uchta o'quvchining vazni kiritiladi. Ularning umumiy vaznini toping."
+   },
+   "source": "kiritishli_int_double_40",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-270",
+   "title": {
+    "uz": "Bir savatdagi olmalar soni va bolalar soni kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Bir savatdagi olmalar soni va bolalar soni kiritiladi. Har biriga nechtadan to'liq tekkanini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-271",
+   "title": {
+    "uz": "Ikki son kiritiladi. Ularning ko'paytmasidan 3 ni ayiring."
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Ularning ko'paytmasidan 3 ni ayiring."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-272",
+   "title": {
+    "uz": "Bir bolaning bo'yi (sm) kiritiladi. Uni ekranga chiqaring."
+   },
+   "statement": {
+    "uz": "Bir bolaning bo'yi (sm) kiritiladi. Uni ekranga chiqaring."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-273",
+   "title": {
+    "uz": "To'rt o'quvchining bahosi kiritiladi. Ularning o'rtacha…"
+   },
+   "statement": {
+    "uz": "To'rt o'quvchining bahosi kiritiladi. Ularning o'rtacha bahosini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-274",
+   "title": {
+    "uz": "Bir mahsulotning narxi kiritiladi. 5 dona olsa, jami…"
+   },
+   "statement": {
+    "uz": "Bir mahsulotning narxi kiritiladi. 5 dona olsa, jami qancha bo'lishini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-275",
+   "title": {
+    "uz": "Umumiy masofa (km) va vaqt (soat) kiritiladi. O'rtacha…"
+   },
+   "statement": {
+    "uz": "Umumiy masofa (km) va vaqt (soat) kiritiladi. O'rtacha tezlikni toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-276",
+   "title": {
+    "uz": "Bir qopdagi un miqdori (kg) va xaltalar soni kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Bir qopdagi un miqdori (kg) va xaltalar soni kiritiladi. Har xaltada necha kg bo'lishini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-277",
+   "title": {
+    "uz": "Ikki son kiritiladi. Ularning yig'indisini toping."
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Ularning yig'indisini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-278",
+   "title": {
+    "uz": "Bir odamning vazni (kg, kasr bilan) kiritiladi. Uni…"
+   },
+   "statement": {
+    "uz": "Bir odamning vazni (kg, kasr bilan) kiritiladi. Uni ekranga chiqaring."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-279",
+   "title": {
+    "uz": "Sinfdagi o'quvchilar soni kiritiladi. Yarmi qiz bola…"
+   },
+   "statement": {
+    "uz": "Sinfdagi o'quvchilar soni kiritiladi. Yarmi qiz bola bo'lsa, qizlar sonini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-280",
+   "title": {
+    "uz": "Uchta sonning yig'indisi va soni yordamida o'rtachasini…"
+   },
+   "statement": {
+    "uz": "Uchta sonning yig'indisi va soni yordamida o'rtachasini toping. Uch son kiritiladi."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-281",
+   "title": {
+    "uz": "Bir mahsulotning og'irligi (gramm) kiritiladi. Uni…"
+   },
+   "statement": {
+    "uz": "Bir mahsulotning og'irligi (gramm) kiritiladi. Uni ekranga chiqaring."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-282",
+   "title": {
+    "uz": "Do'kon 6 kunda ishlagan jami pul kiritiladi. Bir kunga…"
+   },
+   "statement": {
+    "uz": "Do'kon 6 kunda ishlagan jami pul kiritiladi. Bir kunga o'rtacha qancha to'g'ri kelishini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-283",
+   "title": {
+    "uz": "Ikki son kiritiladi. Kattasidan kichigini ayiring."
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Kattasidan kichigini ayiring."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-284",
+   "title": {
+    "uz": "Bir kishining kunlik ish haqi kiritiladi. 25 kun ishlasa,…"
+   },
+   "statement": {
+    "uz": "Bir kishining kunlik ish haqi kiritiladi. 25 kun ishlasa, jami qancha ishlashini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-285",
+   "title": {
+    "uz": "Suvning miqdori (litr) kiritiladi. 5 litrli idishlarga…"
+   },
+   "statement": {
+    "uz": "Suvning miqdori (litr) kiritiladi. 5 litrli idishlarga quyiladi. Nechta idish to'liq to'lishini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-286",
+   "title": {
+    "uz": "Bir bolaning yoshini kiritiladi. 5 yildan keyin necha…"
+   },
+   "statement": {
+    "uz": "Bir bolaning yoshini kiritiladi. 5 yildan keyin necha yoshda bo'lishini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-287",
+   "title": {
+    "uz": "Harorat ertalab va tushda kiritiladi. Harorat qancha…"
+   },
+   "statement": {
+    "uz": "Harorat ertalab va tushda kiritiladi. Harorat qancha o'zgarganini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-288",
+   "title": {
+    "uz": "Ikki mahsulotning narxi kiritiladi. Ularning o'rtacha…"
+   },
+   "statement": {
+    "uz": "Ikki mahsulotning narxi kiritiladi. Ularning o'rtacha narxini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-289",
+   "title": {
+    "uz": "Yo'lovchilar soni kiritiladi. Bir avtobusga 45 kishi…"
+   },
+   "statement": {
+    "uz": "Yo'lovchilar soni kiritiladi. Bir avtobusga 45 kishi sig'adi. Nechta avtobus to'liq to'lishini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-290",
+   "title": {
+    "uz": "Bir kitobdagi sahifalar soni kiritiladi. O'quvchi kuniga…"
+   },
+   "statement": {
+    "uz": "Bir kitobdagi sahifalar soni kiritiladi. O'quvchi kuniga 30 sahifa o'qiydi. Necha kunda tugatishini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-291",
+   "title": {
+    "uz": "Uch shaharning aholisi kiritiladi. Ularning umumiy…"
+   },
+   "statement": {
+    "uz": "Uch shaharning aholisi kiritiladi. Ularning umumiy aholisini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-292",
+   "title": {
+    "uz": "Bir mahsulotning narxi (so'm va tiyin) kiritiladi. Uni…"
+   },
+   "statement": {
+    "uz": "Bir mahsulotning narxi (so'm va tiyin) kiritiladi. Uni ekranga chiqaring."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-293",
+   "title": {
+    "uz": "Ikki son kiritiladi. Ularning yig'indisini 2 ga…"
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Ularning yig'indisini 2 ga ko'paytiring."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-294",
+   "title": {
+    "uz": "Bir bog'dagi daraxtlar soni kiritiladi. Har biridan 7 kg…"
+   },
+   "statement": {
+    "uz": "Bir bog'dagi daraxtlar soni kiritiladi. Har biridan 7 kg meva olinadi. Jami necha kg meva olinishini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-295",
+   "title": {
+    "uz": "Umumiy pul va bolalar soni kiritiladi. Pul teng bo'linsa,…"
+   },
+   "statement": {
+    "uz": "Umumiy pul va bolalar soni kiritiladi. Pul teng bo'linsa, har biriga qanchadan tushishini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-296",
+   "title": {
+    "uz": "Bir bochkadagi suv (litr) kiritiladi. Har kuni 6 litr…"
+   },
+   "statement": {
+    "uz": "Bir bochkadagi suv (litr) kiritiladi. Har kuni 6 litr ishlatiladi. Necha to'liq kunga yetishini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-297",
+   "title": {
+    "uz": "Bir olma va bir nokning og'irligi (gramm) kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Bir olma va bir nokning og'irligi (gramm) kiritiladi. Ikkalasining umumiy og'irligini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-298",
+   "title": {
+    "uz": "Bir sonning kiritiladi. Uni 10 ga ko'paytiring."
+   },
+   "statement": {
+    "uz": "Bir sonning kiritiladi. Uni 10 ga ko'paytiring."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-299",
+   "title": {
+    "uz": "Ikki bolaning vazni kiritiladi. Ularning o'rtacha vaznini…"
+   },
+   "statement": {
+    "uz": "Ikki bolaning vazni kiritiladi. Ularning o'rtacha vaznini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-300",
+   "title": {
+    "uz": "Do'konda mahsulotlar soni kiritiladi. Har kuni 20 tadan…"
+   },
+   "statement": {
+    "uz": "Do'konda mahsulotlar soni kiritiladi. Har kuni 20 tadan sotiladi. Necha to'liq kunga yetishini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-301",
+   "title": {
+    "uz": "Bir kg go'sht narxi va olingan og'irligi (kg) kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Bir kg go'sht narxi va olingan og'irligi (kg) kiritiladi. Jami to'lovni toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-302",
+   "title": {
+    "uz": "Sinfdagi o'quvchilar soni kiritiladi. Ular 5 qatorga…"
+   },
+   "statement": {
+    "uz": "Sinfdagi o'quvchilar soni kiritiladi. Ular 5 qatorga bo'linadi. Har qatorda nechtadan bo'lishini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-303",
+   "title": {
+    "uz": "Bir kishining haftalik daromadi kiritiladi. Bir kunga…"
+   },
+   "statement": {
+    "uz": "Bir kishining haftalik daromadi kiritiladi. Bir kunga o'rtacha qancha to'g'ri kelishini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-304",
+   "title": {
+    "uz": "Bir bolaning bo'yi (metr, kasr bilan) kiritiladi. Uni…"
+   },
+   "statement": {
+    "uz": "Bir bolaning bo'yi (metr, kasr bilan) kiritiladi. Uni ekranga chiqaring."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-305",
+   "title": {
+    "uz": "Umumiy sahifalar va kunlar soni kiritiladi. Kuniga…"
+   },
+   "statement": {
+    "uz": "Umumiy sahifalar va kunlar soni kiritiladi. Kuniga o'rtacha nechta sahifa o'qish kerakligini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-306",
+   "title": {
+    "uz": "Bir mahsulotning eski va yangi narxi kiritiladi. Narx…"
+   },
+   "statement": {
+    "uz": "Bir mahsulotning eski va yangi narxi kiritiladi. Narx qanchaga o'zgarganini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-307",
+   "title": {
+    "uz": "Uchta bolaning bo'yi (sm) kiritiladi. Ularning o'rtacha…"
+   },
+   "statement": {
+    "uz": "Uchta bolaning bo'yi (sm) kiritiladi. Ularning o'rtacha bo'yini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-308",
+   "title": {
+    "uz": "Konfetlar soni kiritiladi. 4 bolaga teng bo'linadi. Har…"
+   },
+   "statement": {
+    "uz": "Konfetlar soni kiritiladi. 4 bolaga teng bo'linadi. Har biriga nechtadan tekkanini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-309",
+   "title": {
+    "uz": "Bir yukning og'irligi (tonna, kasr bilan) kiritiladi. Uni…"
+   },
+   "statement": {
+    "uz": "Bir yukning og'irligi (tonna, kasr bilan) kiritiladi. Uni ekranga chiqaring."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-310",
+   "title": {
+    "uz": "Ikki son kiritiladi. Birinchisidan ikkinchisini ayirib,…"
+   },
+   "statement": {
+    "uz": "Ikki son kiritiladi. Birinchisidan ikkinchisini ayirib, natijani 2 ga ko'paytiring."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-311",
+   "title": {
+    "uz": "Bir odamning oylik maoshi kiritiladi. Bir kunlik maoshini…"
+   },
+   "statement": {
+    "uz": "Bir odamning oylik maoshi kiritiladi. Bir kunlik maoshini toping (30 kun)."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-312",
+   "title": {
+    "uz": "O'quvchilar soni va mashinalar soni kiritiladi. Har…"
+   },
+   "statement": {
+    "uz": "O'quvchilar soni va mashinalar soni kiritiladi. Har mashinaga nechtadan o'quvchi to'g'ri kelishini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-313",
+   "title": {
+    "uz": "Bir kishining vazni (kg) kiritiladi. U 3 kg vazn olgach…"
+   },
+   "statement": {
+    "uz": "Bir kishining vazni (kg) kiritiladi. U 3 kg vazn olgach vaznini toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-314",
+   "title": {
+    "uz": "Bir do'konda kunlik savdo 5 kun uchun jami kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Bir do'konda kunlik savdo 5 kun uchun jami kiritiladi. Bir kunga o'rtacha savdoni toping."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-315",
+   "title": {
+    "uz": "Uch son kiritiladi. Ularning yig'indisiga 10 ni qo'shing."
+   },
+   "statement": {
+    "uz": "Uch son kiritiladi. Ularning yig'indisiga 10 ni qo'shing."
+   },
+   "source": "kiritishli_int_double_50_2",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-316",
+   "title": {
+    "uz": "Kiritilgan sekundlar soni necha soat, necha daqiqa va…"
+   },
+   "statement": {
+    "uz": "Kiritilgan sekundlar soni necha soat, necha daqiqa va necha sekundga bo'linishini chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-317",
+   "title": {
+    "uz": "Mahsulotning og'irligi grammda kiritiladi. Uning ichida…"
+   },
+   "statement": {
+    "uz": "Mahsulotning og'irligi grammda kiritiladi. Uning ichida nechta tonna, nechta kilogramm va nechta gramm borligini chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-318",
+   "title": {
+    "uz": "Kiritilgan daqiqalar soni necha soat va necha daqiqaga…"
+   },
+   "statement": {
+    "uz": "Kiritilgan daqiqalar soni necha soat va necha daqiqaga bo'linishini chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-319",
+   "title": {
+    "uz": "Ikki xonali son kiritiladi. Uning raqamlari yig'indisini…"
+   },
+   "statement": {
+    "uz": "Ikki xonali son kiritiladi. Uning raqamlari yig'indisini chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-320",
+   "title": {
+    "uz": "Uch xonali son kiritiladi. Uning raqamlari yig'indisini…"
+   },
+   "statement": {
+    "uz": "Uch xonali son kiritiladi. Uning raqamlari yig'indisini chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-321",
+   "title": {
+    "uz": "Uch xonali son kiritiladi. Uning raqamlarini teskari…"
+   },
+   "statement": {
+    "uz": "Uch xonali son kiritiladi. Uning raqamlarini teskari tartibda yozib, hosil bo'lgan sonni chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-322",
+   "title": {
+    "uz": "Ikki xonali son kiritiladi. Uning raqamlari o'rnini…"
+   },
+   "statement": {
+    "uz": "Ikki xonali son kiritiladi. Uning raqamlari o'rnini almashtirib, hosil bo'lgan sonni chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-323",
+   "title": {
+    "uz": "Bir mahsulotning narxi va chegirma foizi kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Bir mahsulotning narxi va chegirma foizi kiritiladi. Chegirmadan keyingi yangi narxni chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-324",
+   "title": {
+    "uz": "Do'konda 3 xil mahsulot sotildi. Har birining soni va 1…"
+   },
+   "statement": {
+    "uz": "Do'konda 3 xil mahsulot sotildi. Har birining soni va 1 dona narxi kiritiladi. Umumiy tushumni chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-325",
+   "title": {
+    "uz": "Berilgan pul va mahsulot narxi (so'm) kiritiladi. Qaytim…"
+   },
+   "statement": {
+    "uz": "Berilgan pul va mahsulot narxi (so'm) kiritiladi. Qaytim qancha va uning ichida nechta to'liq 1000 so'mlik borligini chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-326",
+   "title": {
+    "uz": "Uchburchakning asosi va balandligi kiritiladi. Uning…"
+   },
+   "statement": {
+    "uz": "Uchburchakning asosi va balandligi kiritiladi. Uning yuzasini chiqaring (S = (a × b) / 2)."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-327",
+   "title": {
+    "uz": "To'g'ri to'rtburchakning eni va bo'yi kiritiladi. Uning…"
+   },
+   "statement": {
+    "uz": "To'g'ri to'rtburchakning eni va bo'yi kiritiladi. Uning yuzasi va perimetrini bir dasturda chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-328",
+   "title": {
+    "uz": "O'quvchining 5 ta fandan olgan baholari kiritiladi.…"
+   },
+   "statement": {
+    "uz": "O'quvchining 5 ta fandan olgan baholari kiritiladi. Ularning yig'indisi va o'rtacha bahosini chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-329",
+   "title": {
+    "uz": "Avtomobil bosib o'tgan masofa (km) va sarflagan vaqt…"
+   },
+   "statement": {
+    "uz": "Avtomobil bosib o'tgan masofa (km) va sarflagan vaqt (soat) kiritiladi. Uning o'rtacha tezligini chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-330",
+   "title": {
+    "uz": "Ishchining bir soatlik ish haqi va ishlagan soatlari…"
+   },
+   "statement": {
+    "uz": "Ishchining bir soatlik ish haqi va ishlagan soatlari kiritiladi. Umumiy maoshini chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-331",
+   "title": {
+    "uz": "Doiraning radiusi kiritiladi. Uning yuzasini chiqaring (S…"
+   },
+   "statement": {
+    "uz": "Doiraning radiusi kiritiladi. Uning yuzasini chiqaring (S = 3.14 × r × r)."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-332",
+   "title": {
+    "uz": "Doiraning radiusi kiritiladi. Uning aylana uzunligini…"
+   },
+   "statement": {
+    "uz": "Doiraning radiusi kiritiladi. Uning aylana uzunligini chiqaring (C = 2 × 3.14 × r)."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-333",
+   "title": {
+    "uz": "Harorat Farengeyt (F) da kiritiladi. Uni Selsiyga…"
+   },
+   "statement": {
+    "uz": "Harorat Farengeyt (F) da kiritiladi. Uni Selsiyga aylantiring: C = (F − 32) × 5 / 9."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-334",
+   "title": {
+    "uz": "Mahsulot narxi dollarda va dollar kursi (so'm)…"
+   },
+   "statement": {
+    "uz": "Mahsulot narxi dollarda va dollar kursi (so'm) kiritiladi. Narxning so'mdagi qiymatini chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-335",
+   "title": {
+    "uz": "Bir hafta davomida 7 kunning har birining xarajati…"
+   },
+   "statement": {
+    "uz": "Bir hafta davomida 7 kunning har birining xarajati kiritiladi. Haftalik umumiy va o'rtacha kunlik xarajatni chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-336",
+   "title": {
+    "uz": "Xonaning uzunligi, eni va balandligi (m) kiritiladi.…"
+   },
+   "statement": {
+    "uz": "Xonaning uzunligi, eni va balandligi (m) kiritiladi. Uning hajmini chiqaring (V = a × b × c)."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-337",
+   "title": {
+    "uz": "Mahsulotning 1 kg narxi, olingan og'irligi (kg) va…"
+   },
+   "statement": {
+    "uz": "Mahsulotning 1 kg narxi, olingan og'irligi (kg) va chegirma foizi kiritiladi. Chegirmadan keyingi to'lovni chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-338",
+   "title": {
+    "uz": "Sinfdagi o'quvchilar soni va tarqatiladigan daftarlar…"
+   },
+   "statement": {
+    "uz": "Sinfdagi o'quvchilar soni va tarqatiladigan daftarlar soni kiritiladi. Har o'quvchiga nechtadan tushishini va nechta daftar ortib qolishini chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-339",
+   "title": {
+    "uz": "Uch sonning yig'indisi va o'rtacha qiymatini bitta…"
+   },
+   "statement": {
+    "uz": "Uch sonning yig'indisi va o'rtacha qiymatini bitta dasturda chiqaring. Uch son kiritiladi."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-340",
+   "title": {
+    "uz": "Do'konning bir kunlik o'rtacha savdosi kiritiladi. Uning…"
+   },
+   "statement": {
+    "uz": "Do'konning bir kunlik o'rtacha savdosi kiritiladi. Uning 30 kunlik (oylik) umumiy savdosini chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-341",
+   "title": {
+    "uz": "Bankdagi omonat summasi va yillik foiz stavkasi…"
+   },
+   "statement": {
+    "uz": "Bankdagi omonat summasi va yillik foiz stavkasi kiritiladi. 1 yildan keyingi foydani chiqaring (foyda = summa × foiz / 100)."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-342",
+   "title": {
+    "uz": "Berilgan gramm shakar kiritiladi. Nechta 250 grammli…"
+   },
+   "statement": {
+    "uz": "Berilgan gramm shakar kiritiladi. Nechta 250 grammli paket to'lishini va nechta gramm ortib qolishini chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-343",
+   "title": {
+    "uz": "O'quvchining vazni (kg) va bo'yi (m) kiritiladi. Uning…"
+   },
+   "statement": {
+    "uz": "O'quvchining vazni (kg) va bo'yi (m) kiritiladi. Uning tana-massa indeksini chiqaring (BMI = vazn / (bo'y × bo'y))."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-344",
+   "title": {
+    "uz": "Xonaning uzunligi va eni (m) hamda 1 kvadrat metr…"
+   },
+   "statement": {
+    "uz": "Xonaning uzunligi va eni (m) hamda 1 kvadrat metr gilamning narxi kiritiladi. Butun poli uchun umumiy narxni chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "types-345",
+   "title": {
+    "uz": "3 xil mahsulotning og'irligi (kg), 1 kg narxi va har…"
+   },
+   "statement": {
+    "uz": "3 xil mahsulotning og'irligi (kg), 1 kg narxi va har biridan yaroqsiz (chirigan) qismi (kg) kiritiladi. Sotuvdan tushadigan sof pulni chiqaring."
+   },
+   "source": "Flowgorithm_30_qiyin",
+   "judge": null,
+   "tests": []
+  }
+ ]
+}
