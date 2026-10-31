@@ -23,16 +23,18 @@ const applyTheme = () => { document.documentElement.dataset.theme = theme === 's
 
 const themeSeg = () => `<div class="seg">${['system', 'light', 'dark'].map(x => `<button data-theme="${x}" class="${theme === x ? 'on' : ''}">${t('t_' + x)}</button>`).join('')}</div>`;
 const langSeg = () => `<div class="seg">${['uz', 'en'].map(x => `<button data-lang="${x}" class="${lang === x ? 'on' : ''}">${x.toUpperCase()}</button>`).join('')}</div>`;
+const isDark = () => theme === 'dark' || (theme === 'system' && matchMedia('(prefers-color-scheme: dark)').matches);
+const tgl = () => `<button class="tgl ${isDark() ? 'dark' : ''}" data-act="theme" role="switch" aria-checked="${isDark()}" aria-label="${t('t_dark')}"><span class="ico sun">☀</span><span class="ico moon">☾</span><i class="thumb"></i></button>`;
 const ring = (p, tone = 'lapis', inner = '') => `<span class="ring ${tone}"><svg viewBox="0 0 36 36"><circle class="rt" cx="18" cy="18" r="15.9"/><circle class="rv" cx="18" cy="18" r="15.9" pathLength="100" stroke-dasharray="${Math.round(p * 100)} 100" transform="rotate(-90 18 18)"/></svg><i>${inner}</i></span>`;
 const xpOf = () => Object.values(progress).filter(v => v > 0).length * 10;
 const lvl = xp => { let l = 1; while (xp >= 40 * l * l) l++; return { l, into: xp - 40 * (l - 1) ** 2, need: 40 * (2 * l - 1) }; };
 const streak = () => { const d = new Set(Object.values(progress).filter(v => v > 0).map(v => new Date(v).toDateString())); let n = 0, x = new Date(); if (!d.has(x.toDateString())) x.setDate(x.getDate() - 1); while (d.has(x.toDateString())) { n++; x.setDate(x.getDate() - 1); } return n; };
 const stats = tp => { const a = flat(tp); return { n: a.length, d: a.filter(p => progress[tp.id + '/' + p.id] > 0).length }; };
 const sidebar = () => { const cur = location.hash.split('/')[2], xp = xpOf(), v = lvl(xp);
-  return `<aside class="side"><button class="brand" data-go="#/"><span class="logo">F</span><span class="bt">Flowgorithm <b>Academy</b></span></button>
+  return `<aside class="side"><button class="brand" data-go="#/"><img class="logo" src="logo.svg" alt=""><span class="bt">Flowgorithm <b>Academy</b><small class="credit">Mirae Academy created this</small></span></button>
   <button class="searchbtn" data-act="pal">🔍 <span>${t('search')}</span><kbd>Ctrl K</kbd></button><button class="navi ${cur ? '' : 'on'}" data-go="#/">🏠 ${t('home')}</button><div class="label">${t('topics')}</div>
   <nav class="tree">${topics.map(x => { const s = stats(x); return `<button class="titem ${cur === x.id ? 'on' : ''}" data-go="#/t/${x.id}">${ring(s.n ? s.d / s.n : 0, 'lapis', s.n ? Math.round(100 * s.d / s.n) : 0)}<span class="tt">${esc(L(x.title))}</span><small>${s.d}/${s.n}</small></button>`; }).join('')}</nav>
-  <div class="foot">${themeSeg()}${langSeg()}<div class="me"><span class="av">${esc((act.name || '?')[0].toUpperCase())}</span><span class="who"><b>${esc(act.name || '')}</b><small>${t('lvl')} ${v.l} · ${xp} XP</small><progress value="${v.into}" max="${v.need}"></progress></span></div></div></aside>`; };
+  <div class="foot"><div class="tglrow">${tgl()}${langSeg()}</div><div class="me"><span class="av">${esc((act.name || '?')[0].toUpperCase())}</span><span class="who"><b>${esc(act.name || '')}</b><small>${t('lvl')} ${v.l} · ${xp} XP</small><progress value="${v.into}" max="${v.need}"></progress></span></div></div></aside>`; };
 const solvedIn = (tp, list) => list.filter(p => progress[`${tp.id}/${p.id}`]).length;
 
 function gate() {
@@ -89,7 +91,7 @@ const resultHtml = r => {
 
 function render() {
   applyTheme(); const [, , tid, pid] = location.hash.split('/');
-  if (act.state !== 'ok') { app.innerHTML = `<main class="solo"><div class="gatebar">${themeSeg()}${langSeg()}</div>${gate()}</main>`; return; }
+  if (act.state !== 'ok') { app.innerHTML = `<main class="solo"><div class="gatebar">${tgl()}${langSeg()}</div><div class="gatelogo"><img class="logo" src="logo.svg" alt=""><b>Flowgorithm Academy</b><small class="credit">Mirae Academy created this</small></div>${gate()}</main>`; return; }
   const tp = topics.find(x => x.id === tid), p = tp && flat(tp).find(x => x.id === pid);
   app.innerHTML = `<div class="shell">${sidebar()}<main><button class="btn ghost menu" data-act="menu">☰</button>${p ? problem(tp, p) : tp ? topic(tp) : home()}</main></div>`;
 }
@@ -119,6 +121,7 @@ document.addEventListener('click', async e => {
   const b = e.target.closest('button, [data-go]'); if (!b) return;
   if (b.dataset.go) { location.hash = b.dataset.go; closePal(); document.querySelector('.side')?.classList.remove('open'); }
   else if (b.dataset.lang) { lang = localStorage.lang = b.dataset.lang; render(); }
+  else if (b.dataset.act === 'theme') { theme = localStorage.theme = isDark() ? 'light' : 'dark'; render(); }
   else if (b.dataset.theme) { theme = localStorage.theme = b.dataset.theme; render(); }
   else if (b.dataset.act === 'menu') document.querySelector('.side')?.classList.toggle('open');
   else if (b.dataset.act === 'pal') openPal();

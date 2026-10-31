@@ -70,3 +70,17 @@ pre{margin:.3rem 0 .8rem;padding:.7rem .9rem;border-radius:var(--rm);background:
 .pbox{width:min(38rem,92vw);background:var(--surface);border:1px solid var(--line2);border-radius:var(--rl);padding:.8rem;box-shadow:0 2rem 5rem var(--shc)}#pr{display:grid;gap:2px;margin-top:.6rem;max-height:50vh;overflow:auto}
 .prow{display:grid;text-align:left;padding:.55rem .8rem;border-radius:var(--rm)}.prow:hover,.prow:focus-visible{background:var(--surface2)}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+/* v0.5 — liquid glass layer: soft blue + violet, translucent surfaces, branded logo, switch toggle */
+:root{--violet:light-dark(#7b5cf0,#a98bff)}
+body{background-color:var(--bg);background-image:radial-gradient(60rem 40rem at 8% -10%,color-mix(in srgb,var(--lapis) 24%,transparent),transparent 60%),radial-gradient(50rem 36rem at 100% 8%,color-mix(in srgb,var(--violet) 22%,transparent),transparent 60%);background-attachment:fixed}
+.side{background:color-mix(in srgb,var(--surface) 68%,transparent);-webkit-backdrop-filter:blur(24px) saturate(1.6);backdrop-filter:blur(24px) saturate(1.6)}
+.panel,.card,.stat,.gate{background:color-mix(in srgb,var(--surface) 80%,transparent);-webkit-backdrop-filter:blur(14px) saturate(1.4);backdrop-filter:blur(14px) saturate(1.4)}
+progress::-webkit-progress-value{background:linear-gradient(90deg,var(--lapis),var(--violet))}.seg button.on{background:linear-gradient(135deg,var(--lapis),var(--violet))}
+.logo{width:2.4rem;height:2.4rem;border-radius:.75rem;flex:none;box-shadow:0 .4rem 1rem color-mix(in srgb,var(--violet) 40%,transparent)}
+.credit{display:block;font:500 .62rem var(--body);letter-spacing:.04em;color:var(--text3);margin-top:2px}.bt{line-height:1.1}
+.tglrow{display:flex;gap:.6rem;align-items:center;justify-content:space-between}.tglrow .seg{flex:1}
+.tgl{position:relative;width:4.4rem;height:2.2rem;flex:none;border-radius:999px;background:linear-gradient(135deg,#9bbcff,#cdb4ff);border:1px solid var(--line);box-shadow:inset 0 .15rem .4rem rgb(0 0 0/.12);transition:background .4s}
+.tgl.dark{background:linear-gradient(135deg,#1c2a63,#3b2d78)}.tgl .ico{position:absolute;top:50%;transform:translateY(-50%);font-size:.95rem;line-height:1;color:#fff}.tgl .sun{left:.6rem}.tgl .moon{right:.6rem}
+.tgl .thumb{position:absolute;top:.2rem;left:.2rem;width:1.7rem;height:1.7rem;border-radius:50%;background:#fff;box-shadow:0 .2rem .6rem rgb(0 0 0/.3);transition:transform .35s cubic-bezier(.3,1.4,.5,1),background .3s}
+.tgl.dark .thumb{transform:translateX(2.2rem);background:#e8ecff}
+.gatelogo{display:grid;justify-items:center;gap:.3rem;margin-top:4vh;text-align:center}.gatelogo .logo{width:4rem;height:4rem;border-radius:1.2rem}.gatelogo b{font:700 1.1rem var(--display)}.gate{margin-top:2vh}
