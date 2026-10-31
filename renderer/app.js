@@ -6,13 +6,13 @@ uz: { tag:"Algoritmlarni amalda o‘rganing", topics:'Mavzular', solved:'Yechilg
   aT:'Faollashtirish', aN:'Ismingiz', aS:'Kod yuborish', aC:'6 xonali kod', aV:'Tasdiqlash', aH:'Kod Telegram botga yuboriladi. Uni administratordan oling.', sent:'Kod yuborildi. 10 daqiqa amal qiladi.',
   name:'Ismni kiriting', not_configured:'Ilova sozlanmagan (Telegram kaliti yo‘q)', send_failed:'Kod yuborilmadi. Internetni tekshiring', bad:'Kod noto‘g‘ri', expired:'Kod eskirgan, qaytadan so‘rang', locked:'Juda ko‘p urinish. Yangi kod so‘rang', rate:'Juda ko‘p so‘rov. Biroz kuting',
   s_expired:'Faollashtirish muddati tugadi — shu kod bilan yangilang', s_clock:'Kompyuter sanasi noto‘g‘ri', days:'kun qoldi',
-  AC:'Qabul qilindi', WA:'Noto‘g‘ri javob', RE:'Ishlash xatosi', TLE:'Vaqt tugadi', CE:'Fayl xatosi', exp:'Kutilgan', got:'Sizniki', input:'Kirish', t_system:'Tizim', t_light:'Kunduz', t_dark:'Tun', auto:'Avto-tekshiruv', practice:'Mashq (o‘zingiz tekshirasiz)', bench:'Ish stoli', run:'Ishga tushirish', submit:'Yuborish', mark:'Bajardim deb belgilash', inpHint:'Kirish qiymatlari — har biri yangi qatorda', needFile:'Avval .fprg faylni tanlang', big:'Fayl juda katta', search:'Qidirish…', extraT:'Qo‘shimcha' },
+  AC:'Qabul qilindi', WA:'Noto‘g‘ri javob', RE:'Ishlash xatosi', TLE:'Vaqt tugadi', CE:'Fayl xatosi', exp:'Kutilgan', got:'Sizniki', input:'Kirish', t_system:'Tizim', t_light:'Kunduz', t_dark:'Tun', auto:'Avto-tekshiruv', practice:'Mashq (o‘zingiz tekshirasiz)', bench:'Ish stoli', run:'Ishga tushirish', submit:'Yuborish', mark:'Bajardim deb belgilash', inpHint:'Kirish qiymatlari — har biri yangi qatorda', needFile:'Avval .fprg faylni tanlang', big:'Fayl juda katta', search:'Qidirish…', extraT:'Qo‘shimcha', hi:'Salom', first:'Birinchi qadam', cont:'Davom eting', start:'Boshlash', daysS:'kun', lvl:'Daraja', home:'Bosh sahifa', pend:'Tekshiruvchi kutayotgan', wait:'kutmoqda', pendNote:'ta masala uchun tekshiruvchi tayyorlanmoqda' },
 en: { tag:'Learn algorithms by doing', topics:'Topics', solved:'Solved', all:'Total problems', back:'← Back', lesson:'Lesson', cw:'Classwork', hw:'Homework', soon:'Problems are coming soon',
   inp:'Input format', out:'Output format', ex:'Examples', drop:'Drop your .fprg file here', or:'or', pick:'Choose file', busy:'Checking…', tests:'tests',
   aT:'Activation', aN:'Your name', aS:'Send code', aC:'6-digit code', aV:'Verify', aH:'The code is sent to a Telegram bot. Get it from the administrator.', sent:'Code sent. Valid for 10 minutes.',
   name:'Enter your name', not_configured:'App is not configured (no Telegram key)', send_failed:'Could not send the code. Check your internet', bad:'Wrong code', expired:'Code expired, request a new one', locked:'Too many attempts. Request a new code', rate:'Too many requests. Please wait',
   s_expired:'Activation expired — renew with the same flow', s_clock:'Your computer date looks wrong', days:'days left',
-  AC:'Accepted', WA:'Wrong answer', RE:'Runtime error', TLE:'Time limit', CE:'File error', exp:'Expected', got:'Yours', input:'Input', t_system:'System', t_light:'Day', t_dark:'Night', auto:'Auto-judged', practice:'Practice (self-check)', bench:'Workbench', run:'Run', submit:'Submit', mark:'Mark as done', inpHint:'Input values — one per line', needFile:'Choose a .fprg file first', big:'File is too large', search:'Search…', extraT:'Extra' } };
+  AC:'Accepted', WA:'Wrong answer', RE:'Runtime error', TLE:'Time limit', CE:'File error', exp:'Expected', got:'Yours', input:'Input', t_system:'System', t_light:'Day', t_dark:'Night', auto:'Auto-judged', practice:'Practice (self-check)', bench:'Workbench', run:'Run', submit:'Submit', mark:'Mark as done', inpHint:'Input values — one per line', needFile:'Choose a .fprg file first', big:'File is too large', search:'Search…', extraT:'Extra', hi:'Hello', first:'First step', cont:'Continue', start:'Start', daysS:'days', lvl:'Level', home:'Home', pend:'Awaiting checkers', wait:'pending', pendNote:'problems are waiting for their checker' } };
 let lang = localStorage.lang || (navigator.language.startsWith('uz') ? 'uz' : 'en'), theme = localStorage.theme || 'system';
 let tab = 'cw', q = '', curFile = null, curName = '', lastKey = '';
 let topics = [], progress = {}, act = { state: 'none' }, note = '', noteErr = false;
@@ -21,9 +21,18 @@ const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&
 const app = document.getElementById('app');
 const applyTheme = () => { document.documentElement.dataset.theme = theme === 'system' ? '' : theme; document.documentElement.lang = lang; };
 
-const header = () => `<header class="top"><div class="brand" data-go="#/"><span class="logo">F</span><span>Flowgorithm Academy</span></div>
- <div class="seg" role="group">${['system','light','dark'].map(x => `<button data-theme="${x}" class="${theme===x?'on':''}">${t('t_'+x)}</button>`).join('')}</div>
- <div class="seg" role="group">${['uz','en'].map(x => `<button data-lang="${x}" class="${lang===x?'on':''}">${x.toUpperCase()}</button>`).join('')}</div></header>`;
+const themeSeg = () => `<div class="seg">${['system', 'light', 'dark'].map(x => `<button data-theme="${x}" class="${theme === x ? 'on' : ''}">${t('t_' + x)}</button>`).join('')}</div>`;
+const langSeg = () => `<div class="seg">${['uz', 'en'].map(x => `<button data-lang="${x}" class="${lang === x ? 'on' : ''}">${x.toUpperCase()}</button>`).join('')}</div>`;
+const ring = (p, tone = 'lapis', inner = '') => `<span class="ring ${tone}"><svg viewBox="0 0 36 36"><circle class="rt" cx="18" cy="18" r="15.9"/><circle class="rv" cx="18" cy="18" r="15.9" pathLength="100" stroke-dasharray="${Math.round(p * 100)} 100" transform="rotate(-90 18 18)"/></svg><i>${inner}</i></span>`;
+const xpOf = () => Object.values(progress).filter(v => v > 0).length * 10;
+const lvl = xp => { let l = 1; while (xp >= 40 * l * l) l++; return { l, into: xp - 40 * (l - 1) ** 2, need: 40 * (2 * l - 1) }; };
+const streak = () => { const d = new Set(Object.values(progress).filter(v => v > 0).map(v => new Date(v).toDateString())); let n = 0, x = new Date(); if (!d.has(x.toDateString())) x.setDate(x.getDate() - 1); while (d.has(x.toDateString())) { n++; x.setDate(x.getDate() - 1); } return n; };
+const stats = tp => { const a = flat(tp); return { n: a.length, d: a.filter(p => progress[tp.id + '/' + p.id] > 0).length }; };
+const sidebar = () => { const cur = location.hash.split('/')[2], xp = xpOf(), v = lvl(xp);
+  return `<aside class="side"><button class="brand" data-go="#/"><span class="logo">F</span><span class="bt">Flowgorithm <b>Academy</b></span></button>
+  <button class="searchbtn" data-act="pal">🔍 <span>${t('search')}</span><kbd>Ctrl K</kbd></button><button class="navi ${cur ? '' : 'on'}" data-go="#/">🏠 ${t('home')}</button><div class="label">${t('topics')}</div>
+  <nav class="tree">${topics.map(x => { const s = stats(x); return `<button class="titem ${cur === x.id ? 'on' : ''}" data-go="#/t/${x.id}">${ring(s.n ? s.d / s.n : 0, 'lapis', s.n ? Math.round(100 * s.d / s.n) : 0)}<span class="tt">${esc(L(x.title))}</span><small>${s.d}/${s.n}</small></button>`; }).join('')}</nav>
+  <div class="foot">${themeSeg()}${langSeg()}<div class="me"><span class="av">${esc((act.name || '?')[0].toUpperCase())}</span><span class="who"><b>${esc(act.name || '')}</b><small>${t('lvl')} ${v.l} · ${xp} XP</small><progress value="${v.into}" max="${v.need}"></progress></span></div></div></aside>`; };
 const solvedIn = (tp, list) => list.filter(p => progress[`${tp.id}/${p.id}`]).length;
 
 function gate() {
@@ -34,11 +43,13 @@ function gate() {
   <div class="msg ${noteErr ? 'err' : ''}" id="note" role="status">${esc(note)}</div></div>`;
 }
 function home() {
-  const total = topics.reduce((n, x) => n + x.classwork.length + x.homework.length, 0), done = topics.reduce((n, x) => n + solvedIn(x, [...x.classwork, ...x.homework]), 0);
-  return `<h1>${t('tag')}</h1><p class="sub">Flowgorithm · ${act.name ? esc(act.name) + ' · ' : ''}${act.daysLeft ?? ''} ${act.daysLeft ? t('days') : ''}</p>
-  <div class="stats"><div class="stat"><b>${done}</b>${t('solved')}</div><div class="stat"><b>${total}</b>${t('all')}</div><div class="stat"><b>${topics.length}</b>${t('topics')}</div></div>
-  <div class="grid">${topics.map(x => { const n = x.classwork.length + x.homework.length, d = solvedIn(x, [...x.classwork, ...x.homework]);
-   return `<button class="card" data-go="#/t/${x.id}"><span class="num">${x.order}</span><h3>${esc(L(x.title))}</h3><small>${n} · ${d}/${n} ✓</small><progress value="${d}" max="${n || 1}"></progress></button>`; }).join('')}</div>`;
+  const xp = xpOf(), v = lvl(xp), all = topics.flatMap(tp => flat(tp).map(p => ({ tp, p }))), key = x => x.tp.id + '/' + x.p.id, done = all.filter(x => progress[key(x)] > 0).length;
+  const nx = all.find(x => !(progress[key(x)] > 0)), pend = topics.reduce((n, x) => n + (x.pending || 0), 0);
+  return `<header class="htop"><div><p class="date">${new Date().toLocaleDateString(lang === 'uz' ? 'uz-UZ' : 'en-GB', { weekday: 'long', day: 'numeric', month: 'long' })}</p><h1>${t('hi')}${act.name ? ', ' + esc(act.name) : ''} 👋</h1></div>
+  <div class="chips"><span class="chip">🔥 <b>${streak()}</b> ${t('daysS')}</span><span class="chip gold">⚡ <b>${xp}</b> XP</span></div></header>
+  ${nx ? `<section class="hero"><div class="glow"></div><p class="eyebrow">${done ? t('cont') : t('first')} · ${esc(L(nx.tp.title))}</p><h2>${esc(L(nx.p.title))}</h2><p class="short">${esc(L(nx.p.statement))}</p><button class="btn" data-go="#/t/${nx.tp.id}/${nx.p.id}">${done ? t('cont') : t('start')} →</button></section>` : ''}
+  <section class="stats"><div class="stat">${ring(v.into / v.need, 'gold', v.l)}<div><small>${t('lvl')}</small><b>${v.l}</b></div></div><div class="stat"><div><small>${t('solved')}</small><b>${done}<em>/${all.length}</em></b></div></div><div class="stat"><div><small>${t('pend')}</small><b>${pend}</b></div></div></section>
+  <h2 class="sech">${t('topics')}</h2><div class="grid">${topics.map(x => { const s = stats(x); return `<button class="card" data-go="#/t/${x.id}">${ring(s.n ? s.d / s.n : 0, 'lapis', x.order)}<h3>${esc(L(x.title))}</h3><small>${s.d}/${s.n} ✓${x.pending ? ` · +${x.pending} ${t('wait')}` : ''}</small><progress value="${s.d}" max="${s.n || 1}"></progress></button>`; }).join('')}</div>`;
 }
 const SEC = { cw: 'classwork', hw: 'homework', ex: 'extra' }, flat = tp => [...tp.classwork, ...tp.homework, ...(tp.extra || [])];
 const stOf = k => (progress[k] > 0 ? 'ok' : progress[k] < 0 ? 'self' : '');
@@ -53,7 +64,7 @@ function topic(tp) {
   <div class="glass panel"><h2>${t('lesson')}</h2><p>${esc(L(tp.lesson))}</p></div>
   <div class="glass panel"><div class="bar"><div class="seg">${tabs.map(k => `<button data-tab="${k}" class="${tab === k ? 'on' : ''}">${lbl[k]} · ${tp[SEC[k]].length}</button>`).join('')}</div>
   <input type="text" id="q" class="search" placeholder="${t('search')}" value="${esc(q)}"></div>
-  <progress value="${d}" max="${list.length || 1}"></progress><div id="plist">${plist(tp, list)}</div></div>`;
+  <progress value="${d}" max="${list.length || 1}"></progress>${tp.pending ? `<p class="sub">${tp.pending} ${t('pendNote')}</p>` : ''}<div id="plist">${plist(tp, list)}</div></div>`;
 }
 function problem(tp, p) {
   const all = flat(tp), i = all.indexOf(p), k = tp.id + '/' + p.id;
@@ -77,11 +88,10 @@ const resultHtml = r => {
 };
 
 function render() {
-  applyTheme(); const [, , tid, pid] = location.hash.split('/'); let body;
-  if (act.state !== 'ok') body = gate();
-  else { const tp = topics.find(x => x.id === tid), p = tp && [...tp.classwork, ...tp.homework].find(x => x.id === pid);
-    body = p ? problem(tp, p) : tp ? topic(tp) : home(); }
-  app.innerHTML = header() + `<main>${body}</main>`;
+  applyTheme(); const [, , tid, pid] = location.hash.split('/');
+  if (act.state !== 'ok') { app.innerHTML = `<main class="solo"><div class="gatebar">${themeSeg()}${langSeg()}</div>${gate()}</main>`; return; }
+  const tp = topics.find(x => x.id === tid), p = tp && flat(tp).find(x => x.id === pid);
+  app.innerHTML = `<div class="shell">${sidebar()}<main><button class="btn ghost menu" data-act="menu">☰</button>${p ? problem(tp, p) : tp ? topic(tp) : home()}</main></div>`;
 }
 async function submit(file) {   // picks the file (kept in memory only)
   if (!file) return; const big = file.size > 1e6; curFile = big ? null : await file.text(); curName = big ? '' : file.name;
@@ -97,13 +107,21 @@ async function doAct(a) {
     return show(r.error ? `<div class="res bad"><b>${t(r.kind || 'RE')}</b><p>${esc(r.error)}</p></div>` : `<div class="res"><b>${t('out')}</b><pre>${esc(r.out) || '∅'}</pre></div>`); }
   const r = await api.judge({ ...ids(), file: curFile }); show(resultHtml(r)); if (r.verdict === 'AC') progress = (await api.state()).progress;
 }
+function openPal() { if (document.getElementById('pal') || act.state !== 'ok') return; const d = document.createElement('div'); d.id = 'pal'; d.className = 'pal';
+  d.innerHTML = `<div class="pbox"><input id="ps" type="text" placeholder="${t('search')}" autocomplete="off"><div id="pr"></div></div>`; document.body.appendChild(d); fillPal(''); document.getElementById('ps').focus(); }
+const closePal = () => document.getElementById('pal')?.remove();
+function fillPal(v) { v = v.trim().toLowerCase(); const r = topics.flatMap(tp => flat(tp).map(p => ({ tp, p }))).filter(x => !v || (L(x.p.title) + ' ' + L(x.p.statement)).toLowerCase().includes(v)).slice(0, 12);
+  document.getElementById('pr').innerHTML = r.map(x => `<button class="prow" data-go="#/t/${x.tp.id}/${x.p.id}"><small>${esc(L(x.tp.title))}</small><span>${esc(L(x.p.title))}</span></button>`).join('') || '<p class="sub">—</p>'; }
+document.addEventListener('click', e => { if (e.target.id === 'pal') closePal(); });
 const setNote = (m, err) => { note = m; noteErr = !!err; const n = document.getElementById('note'); if (n) { n.textContent = m; n.className = 'msg' + (err ? ' err' : ''); } };
 
 document.addEventListener('click', async e => {
   const b = e.target.closest('button, [data-go]'); if (!b) return;
-  if (b.dataset.go) location.hash = b.dataset.go;
+  if (b.dataset.go) { location.hash = b.dataset.go; closePal(); document.querySelector('.side')?.classList.remove('open'); }
   else if (b.dataset.lang) { lang = localStorage.lang = b.dataset.lang; render(); }
   else if (b.dataset.theme) { theme = localStorage.theme = b.dataset.theme; render(); }
+  else if (b.dataset.act === 'menu') document.querySelector('.side')?.classList.toggle('open');
+  else if (b.dataset.act === 'pal') openPal();
   else if (b.dataset.tab) { tab = b.dataset.tab; q = ''; render(); }
   else if (['run', 'judge', 'mark'].includes(b.dataset.act)) doAct(b.dataset.act);
   else if (b.dataset.act === 'pick') document.getElementById('file').click();
@@ -115,13 +133,16 @@ document.addEventListener('change', e => { if (e.target.id === 'file') { submit(
 document.addEventListener('dragover', e => { const d = e.target.closest('#drop'); if (d) { e.preventDefault(); d.classList.add('over'); } });
 document.addEventListener('dragleave', e => e.target.closest?.('#drop')?.classList.remove('over'));
 document.addEventListener('drop', e => { const d = e.target.closest('#drop'); e.preventDefault(); if (d) { d.classList.remove('over'); submit(e.dataTransfer.files[0]); } });
-window.addEventListener('hashchange', () => { const k = ids().problem; if (k !== lastKey) { curFile = null; curName = ''; lastKey = k; } render(); });
-document.addEventListener('input', e => { if (e.target.id !== 'q') return; q = e.target.value.trim().toLowerCase();
+window.addEventListener('hashchange', () => { const k = ids().problem; if (k !== lastKey) { curFile = null; curName = ''; lastKey = k; } closePal(); render(); });
+document.addEventListener('input', e => { if (e.target.id === 'ps') return fillPal(e.target.value); if (e.target.id !== 'q') return; q = e.target.value.trim().toLowerCase();
   const tp = topics.find(x => x.id === ids().topic), el = document.getElementById('plist'); if (tp && el) el.innerHTML = plist(tp, tp[SEC[tab]] || []); });
 document.addEventListener('keydown', e => {
+  if (e.ctrlKey && e.key.toLowerCase() === 'k') { e.preventDefault(); return openPal(); }
+  if (e.key === 'Escape') closePal();
+  if (e.ctrlKey && e.key.toLowerCase() === 'b') document.querySelector('.shell')?.classList.toggle('collapsed');
   if (e.ctrlKey && e.key === 'Enter') return document.querySelector('[data-act=judge],[data-act=run]')?.click();
   if (e.ctrlKey && e.key === 'o') { e.preventDefault(); return document.getElementById('file')?.click(); }
-  if (e.target.matches('input,textarea') || !['ArrowLeft', 'ArrowRight'].includes(e.key)) return;
+  if (e.target.matches?.('input,textarea') || !['ArrowLeft', 'ArrowRight'].includes(e.key)) return;
   document.querySelectorAll('.nav button')[e.key === 'ArrowLeft' ? 0 : 1]?.click();
 });
 (async () => { act = await api.status(); topics = await api.topics(); progress = (await api.state()).progress; render(); })();

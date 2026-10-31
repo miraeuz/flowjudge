@@ -19,8 +19,34 @@
     "uz": "Bir son kiritiladi. Agar u 10 dan katta bo'lsa \"Katta\", aks holda \"Kichik\" deb chiqaring."
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "15",
+     "out": "Katta"
+    },
+    {
+     "in": "10",
+     "out": "Kichik"
+    },
+    {
+     "in": "3",
+     "out": "Kichik",
+     "hidden": true
+    },
+    {
+     "in": "-5",
+     "out": "Kichik",
+     "hidden": true
+    },
+    {
+     "in": "11",
+     "out": "Katta",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "if-102",
@@ -31,8 +57,29 @@
     "uz": "Bir son kiritiladi. Agar u 100 dan katta bo'lsa \"Ha\", aks holda \"Yo'q\" deb chiqaring."
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "150",
+     "out": "Ha"
+    },
+    {
+     "in": "100",
+     "out": "Yo'q"
+    },
+    {
+     "in": "99",
+     "out": "Yo'q",
+     "hidden": true
+    },
+    {
+     "in": "101",
+     "out": "Ha",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "if-103",
@@ -43,8 +90,29 @@
     "uz": "O'quvchining bahosi kiritiladi. Agar baho 55 dan katta yoki teng bo'lsa \"O'tdi\", aks holda \"Yiqildi\" deb chiqaring."
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "55",
+     "out": "O'tdi"
+    },
+    {
+     "in": "54",
+     "out": "Yiqildi"
+    },
+    {
+     "in": "100",
+     "out": "O'tdi",
+     "hidden": true
+    },
+    {
+     "in": "0",
+     "out": "Yiqildi",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "if-104",
@@ -55,8 +123,29 @@
     "uz": "Foydalanuvchining yoshi kiritiladi. Agar yosh 18 dan katta yoki teng bo'lsa \"Katta\", aks holda \"Bola\" deb chiqaring."
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "18",
+     "out": "Katta"
+    },
+    {
+     "in": "17",
+     "out": "Bola"
+    },
+    {
+     "in": "40",
+     "out": "Katta",
+     "hidden": true
+    },
+    {
+     "in": "5",
+     "out": "Bola",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "if-105",
@@ -67,8 +156,29 @@
     "uz": "Ikki son kiritiladi. Agar ular teng bo'lsa \"Teng\", aks holda \"Teng emas\" deb chiqaring."
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3\n3",
+     "out": "Teng"
+    },
+    {
+     "in": "3\n4",
+     "out": "Teng emas"
+    },
+    {
+     "in": "0\n0",
+     "out": "Teng",
+     "hidden": true
+    },
+    {
+     "in": "-1\n1",
+     "out": "Teng emas",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "if-106",
@@ -79,8 +189,29 @@
     "uz": "Ikki son kiritiladi. Agar birinchisi ikkinchisidan katta bo'lsa \"Birinchisi katta\", aks holda \"Ikkinchisi katta\" deb chiqaring."
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5\n3",
+     "out": "Birinchisi katta"
+    },
+    {
+     "in": "3\n5",
+     "out": "Ikkinchisi katta"
+    },
+    {
+     "in": "4\n4",
+     "out": "Ikkinchisi katta",
+     "hidden": true
+    },
+    {
+     "in": "-1\n-2",
+     "out": "Birinchisi katta",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "if-107",
@@ -91,8 +222,29 @@
     "uz": "Bir mahsulot narxi kiritiladi. Agar narx 50000 dan katta bo'lsa \"Qimmat\", aks holda \"Arzon\" deb chiqaring."
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "50001",
+     "out": "Qimmat"
+    },
+    {
+     "in": "50000",
+     "out": "Arzon"
+    },
+    {
+     "in": "1000",
+     "out": "Arzon",
+     "hidden": true
+    },
+    {
+     "in": "120000",
+     "out": "Qimmat",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "if-108",
@@ -103,8 +255,29 @@
     "uz": "Bugungi harorat kiritiladi. Agar harorat 0 dan past bo'lsa \"Sovuq\", aks holda \"Sovuq emas\" deb chiqaring."
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "-5",
+     "out": "Sovuq"
+    },
+    {
+     "in": "0",
+     "out": "Sovuq emas"
+    },
+    {
+     "in": "10",
+     "out": "Sovuq emas",
+     "hidden": true
+    },
+    {
+     "in": "-1",
+     "out": "Sovuq",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "if-109",
@@ -115,8 +288,29 @@
     "uz": "Do'kondagi mahsulot soni kiritiladi. Agar 0 ga teng bo'lsa \"Tugagan\", aks holda \"Bor\" deb chiqaring."
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "0",
+     "out": "Tugagan"
+    },
+    {
+     "in": "5",
+     "out": "Bor"
+    },
+    {
+     "in": "1",
+     "out": "Bor",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "Bor",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "if-110",
@@ -127,8 +321,34 @@
     "uz": "Bir son kiritiladi. Agar u 2 ga bo'linsa \"Juft\", aks holda \"Toq\" deb chiqaring. (Qoldiq uchun mod amalidan foydalaning: son mod 2)"
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "4",
+     "out": "Juft"
+    },
+    {
+     "in": "7",
+     "out": "Toq"
+    },
+    {
+     "in": "0",
+     "out": "Juft",
+     "hidden": true
+    },
+    {
+     "in": "-3",
+     "out": "Toq",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "Juft",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "if-111",
@@ -139,8 +359,29 @@
     "uz": "Bir son kiritiladi. Agar u 0 ga teng bo'lsa \"Nol\", aks holda \"Nol emas\" deb chiqaring."
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "0",
+     "out": "Nol"
+    },
+    {
+     "in": "5",
+     "out": "Nol emas"
+    },
+    {
+     "in": "-2",
+     "out": "Nol emas",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "Nol emas",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "if-112",
@@ -151,8 +392,29 @@
     "uz": "O'quvchining ball soni kiritiladi. Agar 90 dan katta yoki teng bo'lsa \"A'lo\", aks holda \"A'lo emas\" deb chiqaring."
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "90",
+     "out": "A'lo"
+    },
+    {
+     "in": "89",
+     "out": "A'lo emas"
+    },
+    {
+     "in": "100",
+     "out": "A'lo",
+     "hidden": true
+    },
+    {
+     "in": "40",
+     "out": "A'lo emas",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "if-113",
@@ -163,8 +425,29 @@
     "uz": "Bir odamning bo'yi (sm) kiritiladi. Agar bo'y 150 dan katta bo'lsa \"Baland\", aks holda \"Past\" deb chiqaring."
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "151",
+     "out": "Baland"
+    },
+    {
+     "in": "150",
+     "out": "Past"
+    },
+    {
+     "in": "170",
+     "out": "Baland",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "Past",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "if-114",
@@ -175,8 +458,29 @@
     "uz": "Bir savatdagi olmalar soni kiritiladi. Agar 12 dan ko'p bo'lsa \"Ko'p\", aks holda \"Kam\" deb chiqaring."
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "13",
+     "out": "Ko'p"
+    },
+    {
+     "in": "12",
+     "out": "Kam"
+    },
+    {
+     "in": "5",
+     "out": "Kam",
+     "hidden": true
+    },
+    {
+     "in": "40",
+     "out": "Ko'p",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "if-115",
@@ -187,8 +491,29 @@
     "uz": "Bir odamning yoshi kiritiladi. Agar yosh 65 dan katta bo'lsa \"Nafaqaxo'r\", aks holda \"Ishlaydi\" deb chiqaring."
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "66",
+     "out": "Nafaqaxo'r"
+    },
+    {
+     "in": "65",
+     "out": "Ishlaydi"
+    },
+    {
+     "in": "30",
+     "out": "Ishlaydi",
+     "hidden": true
+    },
+    {
+     "in": "80",
+     "out": "Nafaqaxo'r",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "if-116",
@@ -199,8 +524,34 @@
     "uz": "Bir son kiritiladi. Agar u 10 ga bo'linsa \"10 ga bo'linadi\", aks holda \"bo'linmaydi\" deb chiqaring. (son mod 10)"
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "20",
+     "out": "10 ga bo'linadi"
+    },
+    {
+     "in": "25",
+     "out": "bo'linmaydi"
+    },
+    {
+     "in": "0",
+     "out": "10 ga bo'linadi",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "10 ga bo'linadi",
+     "hidden": true
+    },
+    {
+     "in": "7",
+     "out": "bo'linmaydi",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "if-117",
@@ -211,8 +562,29 @@
     "uz": "Bir kishining vazni (kg) kiritiladi. Agar vazn 100 dan katta bo'lsa \"Og'ir\", aks holda \"Og'ir emas\" deb chiqaring."
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "101",
+     "out": "Og'ir"
+    },
+    {
+     "in": "100",
+     "out": "Og'ir emas"
+    },
+    {
+     "in": "60",
+     "out": "Og'ir emas",
+     "hidden": true
+    },
+    {
+     "in": "150",
+     "out": "Og'ir",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "if-118",
@@ -223,8 +595,34 @@
     "uz": "Bir son kiritiladi. Agar u 5 dan katta bo'lsa uni 2 ga ko'paytirib chiqaring, aks holda sonning o'zini chiqaring."
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "6",
+     "out": "12"
+    },
+    {
+     "in": "5",
+     "out": "5"
+    },
+    {
+     "in": "2",
+     "out": "2",
+     "hidden": true
+    },
+    {
+     "in": "-3",
+     "out": "-3",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "20",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "if-119",
@@ -235,8 +633,29 @@
     "uz": "Ikki o'quvchining bahosi kiritiladi. Agar birinchisining bahosi yuqori bo'lsa \"Birinchisi yuqori\", aks holda \"Ikkinchisi yuqori\" deb chiqaring."
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5\n4",
+     "out": "Birinchisi yuqori"
+    },
+    {
+     "in": "3\n5",
+     "out": "Ikkinchisi yuqori"
+    },
+    {
+     "in": "4\n4",
+     "out": "Ikkinchisi yuqori",
+     "hidden": true
+    },
+    {
+     "in": "2\n1",
+     "out": "Birinchisi yuqori",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "if-120",
@@ -247,8 +666,29 @@
     "uz": "Bir son kiritiladi. Agar u 7 ga teng bo'lsa \"Yetti\", aks holda \"Boshqa son\" deb chiqaring."
    },
    "source": "Flowgorithm_if_dars30_vazifa50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "7",
+     "out": "Yetti"
+    },
+    {
+     "in": "8",
+     "out": "Boshqa son"
+    },
+    {
+     "in": "0",
+     "out": "Boshqa son",
+     "hidden": true
+    },
+    {
+     "in": "-7",
+     "out": "Boshqa son",
+     "hidden": true
+    }
+   ]
   }
  ],
  "homework": [

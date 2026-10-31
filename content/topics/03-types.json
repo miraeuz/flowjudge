@@ -19,8 +19,29 @@
     "uz": "Ikki butun son kiritiladi. Ularning yig'indisini chiqaring."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "7\n3",
+     "out": "10"
+    },
+    {
+     "in": "10\n-4",
+     "out": "6"
+    },
+    {
+     "in": "0\n5",
+     "out": "5",
+     "hidden": true
+    },
+    {
+     "in": "120\n45",
+     "out": "165",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "types-102",
@@ -31,8 +52,29 @@
     "uz": "Ikki butun son kiritiladi. Ularning ayirmasini chiqaring."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "7\n3",
+     "out": "4"
+    },
+    {
+     "in": "10\n-4",
+     "out": "14"
+    },
+    {
+     "in": "0\n5",
+     "out": "-5",
+     "hidden": true
+    },
+    {
+     "in": "120\n45",
+     "out": "75",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "types-103",
@@ -43,8 +85,29 @@
     "uz": "Ikki butun son kiritiladi. Ularning ko'paytmasini chiqaring."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "7\n3",
+     "out": "21"
+    },
+    {
+     "in": "10\n-4",
+     "out": "-40"
+    },
+    {
+     "in": "0\n5",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "120\n45",
+     "out": "5400",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "types-104",
@@ -55,8 +118,29 @@
     "uz": "Bitta butun son kiritiladi. Uning kvadratini chiqaring."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "25"
+    },
+    {
+     "in": "12",
+     "out": "144"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "-7",
+     "out": "49",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "types-105",
@@ -67,8 +151,29 @@
     "uz": "Uchta butun son kiritiladi. Ularning yig'indisini chiqaring."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "1\n2\n3",
+     "out": "6"
+    },
+    {
+     "in": "10\n20\n30",
+     "out": "60"
+    },
+    {
+     "in": "0\n0\n5",
+     "out": "5",
+     "hidden": true
+    },
+    {
+     "in": "-4\n9\n2",
+     "out": "7",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "types-106",
@@ -79,8 +184,29 @@
     "uz": "Sinfdagi o'g'il bolalar va qiz bolalar soni kiritiladi. Jami o'quvchilar sonini chiqaring."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "12\n14",
+     "out": "26"
+    },
+    {
+     "in": "0\n20",
+     "out": "20"
+    },
+    {
+     "in": "15\n15",
+     "out": "30",
+     "hidden": true
+    },
+    {
+     "in": "3\n0",
+     "out": "3",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "types-107",
@@ -91,8 +217,29 @@
     "uz": "Bir qutida 6 ta shokolad bor. Qutilar soni kiritiladi. Jami shokoladlar sonini chiqaring."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "3",
+     "out": "18"
+    },
+    {
+     "in": "10",
+     "out": "60"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "25",
+     "out": "150",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "types-108",
@@ -103,8 +250,29 @@
     "uz": "Bir bolaning hozirgi yoshi kiritiladi. Uning 5 yildan keyingi yoshini chiqaring."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "12",
+     "out": "17"
+    },
+    {
+     "in": "17",
+     "out": "22"
+    },
+    {
+     "in": "30",
+     "out": "35",
+     "hidden": true
+    },
+    {
+     "in": "0",
+     "out": "5",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "types-109",
@@ -115,8 +283,29 @@
     "uz": "Do'konda 100 ta mahsulot bor edi. Sotilgan mahsulotlar soni kiritiladi. Qolgan mahsulotlar sonini chiqaring."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "12",
+     "out": "88"
+    },
+    {
+     "in": "0",
+     "out": "100"
+    },
+    {
+     "in": "100",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "45",
+     "out": "55",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "types-110",
@@ -127,8 +316,29 @@
     "uz": "Bitta son kiritiladi. Uni 3 ga ko'paytiring va natijaga 2 ni qo'shib chiqaring."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "4",
+     "out": "14"
+    },
+    {
+     "in": "0",
+     "out": "2"
+    },
+    {
+     "in": "-2",
+     "out": "-4",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "32",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "types-111",
@@ -139,8 +349,29 @@
     "uz": "Ikki son kiritiladi. Ularning o'rtacha qiymatini chiqaring."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "4\n6",
+     "out": "5"
+    },
+    {
+     "in": "5\n8",
+     "out": "6.5"
+    },
+    {
+     "in": "0\n0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "-3\n4",
+     "out": "0.5",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "types-112",
@@ -151,8 +382,29 @@
     "uz": "Uchta o'quvchining bahosi kiritiladi. Ularning o'rtacha bahosini chiqaring."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n4\n3",
+     "out": "4"
+    },
+    {
+     "in": "5\n5\n5",
+     "out": "5"
+    },
+    {
+     "in": "2\n3\n4",
+     "out": "3",
+     "hidden": true
+    },
+    {
+     "in": "3\n3\n4",
+     "out": "3.3333333333",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "types-113",
@@ -163,8 +415,29 @@
     "uz": "Bir bolaning vazni (kilogramm) kiritiladi. Uni ekranga chiqaring."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "36.6",
+     "out": "36.6"
+    },
+    {
+     "in": "45.5",
+     "out": "45.5"
+    },
+    {
+     "in": "70",
+     "out": "70",
+     "hidden": true
+    },
+    {
+     "in": "12.25",
+     "out": "12.25",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "types-114",
@@ -175,8 +448,29 @@
     "uz": "Bir odamning bo'yi (metrda) kiritiladi. Uni ekranga chiqaring."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "1.75",
+     "out": "1.75"
+    },
+    {
+     "in": "1.5",
+     "out": "1.5"
+    },
+    {
+     "in": "1.82",
+     "out": "1.82",
+     "hidden": true
+    },
+    {
+     "in": "2",
+     "out": "2",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "types-115",
@@ -187,8 +481,29 @@
     "uz": "Bugungi havo harorati kiritiladi. Uni ekranga chiqaring."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "24.5",
+     "out": "24.5"
+    },
+    {
+     "in": "-3.5",
+     "out": "-3.5"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "36.6",
+     "out": "36.6",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "types-116",
@@ -199,8 +514,29 @@
     "uz": "Ikki son kiritiladi. Birinchisini ikkinchisiga bo'lib, aniq natijani chiqaring."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "20\n4",
+     "out": "5"
+    },
+    {
+     "in": "7\n2",
+     "out": "3.5"
+    },
+    {
+     "in": "-9\n3",
+     "out": "-3",
+     "hidden": true
+    },
+    {
+     "in": "0\n5",
+     "out": "0",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "types-117",
@@ -211,8 +547,29 @@
     "uz": "Olmaning 1 kilogramm narxi va olingan og'irligi (kg) kiritiladi. Jami to'lovni chiqaring."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "12000\n2.5",
+     "out": "30000"
+    },
+    {
+     "in": "8000\n1",
+     "out": "8000"
+    },
+    {
+     "in": "15000\n0.5",
+     "out": "7500",
+     "hidden": true
+    },
+    {
+     "in": "0\n3",
+     "out": "0",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "types-118",
@@ -223,8 +580,29 @@
     "uz": "Bir kishining oylik maoshi kiritiladi. Bir kunlik maoshini chiqaring (oyda 30 kun)."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "900000",
+     "out": "30000"
+    },
+    {
+     "in": "1000000",
+     "out": "33333.3333333333"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "3000000",
+     "out": "100000",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "types-119",
@@ -235,8 +613,29 @@
     "uz": "Uch bolaning vazni (kg) kiritiladi. Ularning o'rtacha vaznini chiqaring."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "60.5\n70\n80",
+     "out": "70.1666666667"
+    },
+    {
+     "in": "50\n50\n50",
+     "out": "50"
+    },
+    {
+     "in": "33.3\n40.2\n45.9",
+     "out": "39.8",
+     "hidden": true
+    },
+    {
+     "in": "100\n90\n80",
+     "out": "90",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "types-120",
@@ -247,8 +646,29 @@
     "uz": "Do'konning haftalik savdosi kiritiladi. Bir kunga o'rtacha savdoni chiqaring (7 kun)."
    },
    "source": "Flowgorithm_50_masala",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "700000",
+     "out": "100000"
+    },
+    {
+     "in": "1000000",
+     "out": "142857.1428571429"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "350",
+     "out": "50",
+     "hidden": true
+    }
+   ]
   }
  ],
  "homework": [

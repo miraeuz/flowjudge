@@ -15,7 +15,8 @@ const loadTopics = () => { const d = path.join(__dirname, 'content', 'topics');
   topics = fs.readdirSync(d).filter(f => f.endsWith('.json')).sort().map(f => JSON.parse(fs.readFileSync(path.join(d, f), 'utf8'))).sort((a, b) => a.order - b.order); };
 const pub = p => ({ judged: !!(p.judge && p.tests.length), id: p.id, title: p.title, statement: p.statement, inputFormat: p.inputFormat, outputFormat: p.outputFormat,
   examples: p.tests.filter(t => !t.hidden).slice(0, 2).map(t => ({ in: t.in, out: t.out })) });
-const publicTopics = () => topics.map(t => ({ id: t.id, order: t.order, title: t.title, lesson: t.lesson, classwork: t.classwork.map(pub), homework: t.homework.map(pub), extra: (t.extra || []).map(pub) }));
+const has = p => p.tests.length > 0;   // a problem is shown only when it has a verified checker
+const publicTopics = () => topics.map(t => ({ id: t.id, order: t.order, title: t.title, lesson: t.lesson, classwork: t.classwork.filter(has).map(pub), homework: t.homework.filter(has).map(pub), extra: (t.extra || []).filter(has).map(pub), pending: [...t.classwork, ...t.homework, ...(t.extra || [])].filter(p => !has(p)).length }));
 
 // ---- activation (one-time Telegram code) ----
 const salt = crypto.randomBytes(16).toString('hex'), hash = c => crypto.createHash('sha256').update(c + salt).digest();

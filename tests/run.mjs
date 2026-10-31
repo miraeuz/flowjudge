@@ -39,4 +39,7 @@ for (const f of readdirSync(cdir).filter(f => f.endsWith('.json'))) {
 const basics = JSON.parse(readFileSync(new URL('../content/topics/01-basics.json', import.meta.url), 'utf8'));
 const j1 = [...basics.classwork, ...basics.homework, ...basics.extra].find(p => p.judge);
 ok('auto-judged imported problem: correct file is Accepted, wrong is WA', judge(P(`<output expression="${j1.tests[0].out}" newline="True"/>`), j1.tests, j1.judge).verdict === 'AC' && judge(P(`<output expression="12345" newline="True"/>`), j1.tests, j1.judge).verdict === 'WA');
+let judged = 0, weak = 0;
+for (const f of readdirSync(cdir).filter(f => f.endsWith('.json'))) { const tp = JSON.parse(readFileSync(new URL(f, cdir), 'utf8')); for (const p of [...tp.classwork, ...tp.homework, ...(tp.extra || [])]) if (p.tests.length) { judged++; if (p.tests.length < 1 || (p.tests.length > 1 && p.tests.filter(x => x.hidden).length < 1)) weak++; } }
+ok(`checkers: ${judged} problems have tests, none weak (multi-test ones all have hidden tests)`, judged >= 89 && weak === 0);
 process.exit(bad ? 1 : 0);

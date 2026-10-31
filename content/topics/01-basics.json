@@ -171,8 +171,29 @@
     "uz": "Ikkita son kiriting. Ularning yig'indisini toping."
    },
    "source": "Algoritm_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "7\n3",
+     "out": "10"
+    },
+    {
+     "in": "10\n-4",
+     "out": "6"
+    },
+    {
+     "in": "0\n5",
+     "out": "5",
+     "hidden": true
+    },
+    {
+     "in": "120\n45",
+     "out": "165",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "basics-110",
@@ -183,8 +204,29 @@
     "uz": "Ikkita son kiriting. Ularning ayirmasini toping."
    },
    "source": "Algoritm_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "7\n3",
+     "out": "4"
+    },
+    {
+     "in": "10\n-4",
+     "out": "14"
+    },
+    {
+     "in": "0\n5",
+     "out": "-5",
+     "hidden": true
+    },
+    {
+     "in": "120\n45",
+     "out": "75",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "basics-111",
@@ -195,8 +237,29 @@
     "uz": "Ikkita son kiriting. Ularning ko'paytmasini toping."
    },
    "source": "Algoritm_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "7\n3",
+     "out": "21"
+    },
+    {
+     "in": "10\n-4",
+     "out": "-40"
+    },
+    {
+     "in": "0\n5",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "120\n45",
+     "out": "5400",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "basics-112",
@@ -207,8 +270,29 @@
     "uz": "Ikkita son kiriting. Ularning bo'linmasini toping."
    },
    "source": "Algoritm_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "20\n4",
+     "out": "5"
+    },
+    {
+     "in": "7\n2",
+     "out": "3.5"
+    },
+    {
+     "in": "-9\n3",
+     "out": "-3",
+     "hidden": true
+    },
+    {
+     "in": "0\n5",
+     "out": "0",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "basics-113",
@@ -219,8 +303,29 @@
     "uz": "Ikkita son kiriting. Ularning yig'indisidan 5 ni ayiring."
    },
    "source": "Algoritm_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "7\n3",
+     "out": "5"
+    },
+    {
+     "in": "10\n-4",
+     "out": "1"
+    },
+    {
+     "in": "0\n5",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "120\n45",
+     "out": "160",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "basics-114",
@@ -231,8 +336,29 @@
     "uz": "Ikkita son kiriting. Ularning ayirmasiga 3 ni qo'shing."
    },
    "source": "Algoritm_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "7\n3",
+     "out": "7"
+    },
+    {
+     "in": "10\n-4",
+     "out": "17"
+    },
+    {
+     "in": "0\n5",
+     "out": "-2",
+     "hidden": true
+    },
+    {
+     "in": "120\n45",
+     "out": "78",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "basics-115",
@@ -243,8 +369,29 @@
     "uz": "Ikkita son kiriting. Ularning ko'paytmasiga 4 ni qo'shing."
    },
    "source": "Algoritm_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "7\n3",
+     "out": "25"
+    },
+    {
+     "in": "10\n-4",
+     "out": "-36"
+    },
+    {
+     "in": "0\n5",
+     "out": "4",
+     "hidden": true
+    },
+    {
+     "in": "120\n45",
+     "out": "5404",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "basics-116",
@@ -255,8 +402,29 @@
     "uz": "Ikkita son kiriting. Ularning yig'indisini 2 ga ko'paytiring."
    },
    "source": "Algoritm_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "7\n3",
+     "out": "20"
+    },
+    {
+     "in": "10\n-4",
+     "out": "12"
+    },
+    {
+     "in": "0\n5",
+     "out": "10",
+     "hidden": true
+    },
+    {
+     "in": "120\n45",
+     "out": "330",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "basics-117",
@@ -267,8 +435,29 @@
     "uz": "Ikkita son kiriting. Ularning ayirmasini 3 ga ko'paytiring."
    },
    "source": "Algoritm_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "7\n3",
+     "out": "12"
+    },
+    {
+     "in": "10\n-4",
+     "out": "42"
+    },
+    {
+     "in": "0\n5",
+     "out": "-15",
+     "hidden": true
+    },
+    {
+     "in": "120\n45",
+     "out": "225",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "basics-118",
@@ -279,8 +468,29 @@
     "uz": "Uchta son kiriting. Ularning yig'indisini toping."
    },
    "source": "Algoritm_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "1\n2\n3",
+     "out": "6"
+    },
+    {
+     "in": "10\n20\n30",
+     "out": "60"
+    },
+    {
+     "in": "0\n0\n5",
+     "out": "5",
+     "hidden": true
+    },
+    {
+     "in": "-4\n9\n2",
+     "out": "7",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "basics-119",
@@ -291,8 +501,29 @@
     "uz": "Uchta son kiriting. Birinchi ikkitasining yig'indisidan uchinchisini ayiring."
    },
    "source": "Algoritm_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "1\n2\n3",
+     "out": "0"
+    },
+    {
+     "in": "10\n20\n30",
+     "out": "0"
+    },
+    {
+     "in": "0\n0\n5",
+     "out": "-5",
+     "hidden": true
+    },
+    {
+     "in": "-4\n9\n2",
+     "out": "3",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "basics-120",
@@ -303,8 +534,29 @@
     "uz": "Bitta son kiriting. Uning kvadratini toping."
    },
    "source": "Algoritm_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "25"
+    },
+    {
+     "in": "12",
+     "out": "144"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "-7",
+     "out": "49",
+     "hidden": true
+    }
+   ]
   }
  ],
  "homework": [

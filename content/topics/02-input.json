@@ -209,8 +209,29 @@
     "uz": "Bitta son kiriting. Uni ekranga chiqaring."
    },
    "source": "Algoritm_input_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "7",
+     "out": "7"
+    },
+    {
+     "in": "0",
+     "out": "0"
+    },
+    {
+     "in": "-3",
+     "out": "-3",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "100",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "input-107",
@@ -221,8 +242,29 @@
     "uz": "Bitta son kiriting. Unga 5 ni qo'shing."
    },
    "source": "Algoritm_input_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "7",
+     "out": "12"
+    },
+    {
+     "in": "0",
+     "out": "5"
+    },
+    {
+     "in": "-3",
+     "out": "2",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "105",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "input-108",
@@ -233,8 +275,29 @@
     "uz": "Bitta son kiriting. Undan 3 ni ayiring."
    },
    "source": "Algoritm_input_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "7",
+     "out": "4"
+    },
+    {
+     "in": "0",
+     "out": "-3"
+    },
+    {
+     "in": "-3",
+     "out": "-6",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "97",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "input-109",
@@ -245,8 +308,29 @@
     "uz": "Bitta son kiriting. Uni 2 ga ko'paytiring."
    },
    "source": "Algoritm_input_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "7",
+     "out": "14"
+    },
+    {
+     "in": "0",
+     "out": "0"
+    },
+    {
+     "in": "-3",
+     "out": "-6",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "200",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "input-110",
@@ -257,8 +341,29 @@
     "uz": "Bitta son kiriting. Uni 4 ga bo'ling."
    },
    "source": "Algoritm_input_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "10",
+     "out": "2.5"
+    },
+    {
+     "in": "7",
+     "out": "1.75"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "-8",
+     "out": "-2",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "input-111",
@@ -269,8 +374,29 @@
     "uz": "Ikkita son kiriting. Ularning yig'indisiga 2 ni qo'shing."
    },
    "source": "Algoritm_input_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "7\n3",
+     "out": "12"
+    },
+    {
+     "in": "10\n-4",
+     "out": "8"
+    },
+    {
+     "in": "0\n5",
+     "out": "7",
+     "hidden": true
+    },
+    {
+     "in": "120\n45",
+     "out": "167",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "input-112",
@@ -281,8 +407,29 @@
     "uz": "Ikkita son kiriting. Ularning ayirmasidan 1 ni ayiring."
    },
    "source": "Algoritm_input_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "7\n3",
+     "out": "3"
+    },
+    {
+     "in": "10\n-4",
+     "out": "13"
+    },
+    {
+     "in": "0\n5",
+     "out": "-6",
+     "hidden": true
+    },
+    {
+     "in": "120\n45",
+     "out": "74",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "input-113",
@@ -293,8 +440,29 @@
     "uz": "Bitta son kiriting. Uni 5 ga ko'paytiring va 2 ni ayiring."
    },
    "source": "Algoritm_input_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "3",
+     "out": "13"
+    },
+    {
+     "in": "0",
+     "out": "-2"
+    },
+    {
+     "in": "-2",
+     "out": "-12",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "48",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "input-114",
@@ -305,8 +473,29 @@
     "uz": "Bitta son kiriting. Uni 2 ga ko'paytiring, keyin 7 ni qo'shing."
    },
    "source": "Algoritm_input_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "3",
+     "out": "13"
+    },
+    {
+     "in": "0",
+     "out": "7"
+    },
+    {
+     "in": "-2",
+     "out": "3",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "27",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "input-115",
@@ -317,8 +506,29 @@
     "uz": "Uchta son kiriting. Birinchi sonni ikkinchisiga qo'shing va uchinchisini ayiring."
    },
    "source": "Algoritm_input_oddiy_misollar",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "1\n2\n3",
+     "out": "0"
+    },
+    {
+     "in": "10\n20\n30",
+     "out": "0"
+    },
+    {
+     "in": "0\n0\n5",
+     "out": "-5",
+     "hidden": true
+    },
+    {
+     "in": "-4\n9\n2",
+     "out": "3",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "input-116",
@@ -329,8 +539,29 @@
     "uz": "Bir bolaning yoshi kiritiladi. Uning 5 yildan keyingi yoshini chiqaring."
    },
    "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "12",
+     "out": "17"
+    },
+    {
+     "in": "17",
+     "out": "22"
+    },
+    {
+     "in": "30",
+     "out": "35",
+     "hidden": true
+    },
+    {
+     "in": "0",
+     "out": "5",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "input-117",
@@ -341,8 +572,29 @@
     "uz": "Bir mahsulotning narxi kiritiladi. 3 donasining narxini chiqaring."
    },
    "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "2500",
+     "out": "7500"
+    },
+    {
+     "in": "10000",
+     "out": "30000"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "999",
+     "out": "2997",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "input-118",
@@ -353,8 +605,29 @@
     "uz": "Bir son kiritiladi. Uni 2 ga ko'paytirib chiqaring."
    },
    "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "4",
+     "out": "8"
+    },
+    {
+     "in": "0",
+     "out": "0"
+    },
+    {
+     "in": "-6",
+     "out": "-12",
+     "hidden": true
+    },
+    {
+     "in": "50",
+     "out": "100",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "input-119",
@@ -365,8 +638,29 @@
     "uz": "Bir odamning oylik maoshi kiritiladi. Bir kunlik maoshini chiqaring (oyda 30 kun)."
    },
    "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "900000",
+     "out": "30000"
+    },
+    {
+     "in": "1500000",
+     "out": "50000"
+    },
+    {
+     "in": "30000",
+     "out": "1000",
+     "hidden": true
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    }
+   ]
   },
   {
    "id": "input-120",
@@ -377,8 +671,29 @@
     "uz": "Arqonning uzunligi santimetrda kiritiladi. Necha metr ekanini chiqaring (100 sm = 1 m)."
    },
    "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "250",
+     "out": "2.5"
+    },
+    {
+     "in": "100",
+     "out": "1"
+    },
+    {
+     "in": "50",
+     "out": "0.5",
+     "hidden": true
+    },
+    {
+     "in": "1234",
+     "out": "12.34",
+     "hidden": true
+    }
+   ]
   }
  ],
  "homework": [
