@@ -7,3 +7,4 @@ python3 tools/build_practice.py
 python3 tools/build_nested.py
 python3 tools/build_bank.py
 python3 tools/build_book.py
+python3 tools/build_bookfull.py

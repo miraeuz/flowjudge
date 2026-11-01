@@ -6,15 +6,16 @@ uz: { tag:"Algoritmlarni amalda o‘rganing", topics:'Mavzular', solved:'Yechilg
   aT:'Faollashtirish', aN:'Ismingiz', aS:'Kod yuborish', aC:'6 xonali kod', aV:'Tasdiqlash', aH:'Kod Telegram botga yuboriladi. Uni administratordan oling.', sent:'Kod yuborildi. 10 daqiqa amal qiladi.',
   name:'Ismni kiriting', not_configured:'Ilova sozlanmagan (Telegram kaliti yo‘q)', send_failed:'Kod yuborilmadi. Internetni tekshiring', bad:'Kod noto‘g‘ri', expired:'Kod eskirgan, qaytadan so‘rang', locked:'Juda ko‘p urinish. Yangi kod so‘rang', rate:'Juda ko‘p so‘rov. Biroz kuting',
   s_expired:'Faollashtirish muddati tugadi — shu kod bilan yangilang', s_clock:'Kompyuter sanasi noto‘g‘ri', days:'kun qoldi',
-  AC:'Qabul qilindi', WA:'Noto‘g‘ri javob', RE:'Ishlash xatosi', TLE:'Vaqt tugadi', CE:'Fayl xatosi', exp:'Kutilgan', got:'Sizniki', input:'Kirish', t_system:'Tizim', t_light:'Kunduz', t_dark:'Tun', auto:'Avto-tekshiruv', practice:'Mashq (o‘zingiz tekshirasiz)', bench:'Ish stoli', run:'Ishga tushirish', submit:'Yuborish', mark:'Bajardim deb belgilash', inpHint:'Kirish qiymatlari — har biri yangi qatorda', needFile:'Avval .fprg faylni tanlang', big:'Fayl juda katta', search:'Qidirish…', extraT:'Qo‘shimcha', prT:'Amaliyot', bkT:'Mirae kitobi', hi:'Salom', first:'Birinchi qadam', cont:'Davom eting', start:'Boshlash', daysS:'kun', lvl:'Daraja', home:'Bosh sahifa', pend:'Tekshiruvchi kutayotgan', wait:'kutmoqda', pendNote:'ta masala uchun tekshiruvchi tayyorlanmoqda' },
+  AC:'Qabul qilindi', WA:'Noto‘g‘ri javob', RE:'Ishlash xatosi', TLE:'Vaqt tugadi', CE:'Fayl xatosi', exp:'Kutilgan', got:'Sizniki', input:'Kirish', t_system:'Tizim', t_light:'Kunduz', t_dark:'Tun', auto:'Avto-tekshiruv', practice:'Mashq (o‘zingiz tekshirasiz)', bench:'Ish stoli', run:'Ishga tushirish', submit:'Yuborish', mark:'Bajardim deb belgilash', inpHint:'Kirish qiymatlari — har biri yangi qatorda', needFile:'Avval .fprg faylni tanlang', big:'Fayl juda katta', search:'Qidirish…', extraT:'Qo‘shimcha', prT:'Amaliyot', bkT:'Mirae kitobi', hi:'Salom', first:'Birinchi qadam', cont:'Davom eting', start:'Boshlash', daysS:'kun', lvl:'Daraja', home:'Bosh sahifa', pend:'O‘zingiz tekshiradigan', wait:'o‘zingiz tekshirasiz', pendNote:'ta masalada avto-tekshiruv hali yo‘q: Ishga tushirib o‘zingiz tekshiring va “Bajardim” bosing' },
 en: { tag:'Learn algorithms by doing', topics:'Topics', solved:'Solved', all:'Total problems', back:'← Back', lesson:'Lesson', cw:'Classwork', hw:'Homework', soon:'Problems are coming soon',
   inp:'Input format', out:'Output format', ex:'Examples', drop:'Drop your .fprg file here', or:'or', pick:'Choose file', busy:'Checking…', tests:'tests',
   aT:'Activation', aN:'Your name', aS:'Send code', aC:'6-digit code', aV:'Verify', aH:'The code is sent to a Telegram bot. Get it from the administrator.', sent:'Code sent. Valid for 10 minutes.',
   name:'Enter your name', not_configured:'App is not configured (no Telegram key)', send_failed:'Could not send the code. Check your internet', bad:'Wrong code', expired:'Code expired, request a new one', locked:'Too many attempts. Request a new code', rate:'Too many requests. Please wait',
   s_expired:'Activation expired — renew with the same flow', s_clock:'Your computer date looks wrong', days:'days left',
-  AC:'Accepted', WA:'Wrong answer', RE:'Runtime error', TLE:'Time limit', CE:'File error', exp:'Expected', got:'Yours', input:'Input', t_system:'System', t_light:'Day', t_dark:'Night', auto:'Auto-judged', practice:'Practice (self-check)', bench:'Workbench', run:'Run', submit:'Submit', mark:'Mark as done', inpHint:'Input values — one per line', needFile:'Choose a .fprg file first', big:'File is too large', search:'Search…', extraT:'Extra', prT:'Practice', bkT:'Mirae book', hi:'Hello', first:'First step', cont:'Continue', start:'Start', daysS:'days', lvl:'Level', home:'Home', pend:'Awaiting checkers', wait:'pending', pendNote:'problems are waiting for their checker' } };
+  AC:'Accepted', WA:'Wrong answer', RE:'Runtime error', TLE:'Time limit', CE:'File error', exp:'Expected', got:'Yours', input:'Input', t_system:'System', t_light:'Day', t_dark:'Night', auto:'Auto-judged', practice:'Practice (self-check)', bench:'Workbench', run:'Run', submit:'Submit', mark:'Mark as done', inpHint:'Input values — one per line', needFile:'Choose a .fprg file first', big:'File is too large', search:'Search…', extraT:'Extra', prT:'Practice', bkT:'Mirae book', hi:'Hello', first:'First step', cont:'Continue', start:'Start', daysS:'days', lvl:'Level', home:'Home', pend:'Self-check', wait:'self-check', pendNote:'problems have no auto-check yet: run them, check the output yourself and press “Mark as done”' } };
 let lang = localStorage.lang || (navigator.language.startsWith('uz') ? 'uz' : 'en'), theme = localStorage.theme || 'system';
-let tab = 'cw', q = '', curFile = null, curName = '', lastKey = '';
+let zoom = +localStorage.zoom || 1, collapsed = localStorage.side === '1';
+let tab = 'bk', q = '', curFile = null, curName = '', lastKey = '';
 let topics = [], progress = {}, act = { state: 'none' }, note = '', noteErr = false;
 const t = k => D[lang][k] ?? k, L = o => (o && (o[lang] || o.uz || o.en)) || '';
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
@@ -30,11 +31,15 @@ const xpOf = () => Object.values(progress).filter(v => v > 0).length * 10;
 const lvl = xp => { let l = 1; while (xp >= 40 * l * l) l++; return { l, into: xp - 40 * (l - 1) ** 2, need: 40 * (2 * l - 1) }; };
 const streak = () => { const d = new Set(Object.values(progress).filter(v => v > 0).map(v => new Date(v).toDateString())); let n = 0, x = new Date(); if (!d.has(x.toDateString())) x.setDate(x.getDate() - 1); while (d.has(x.toDateString())) { n++; x.setDate(x.getDate() - 1); } return n; };
 const stats = tp => { const a = flat(tp); return { n: a.length, d: a.filter(p => progress[tp.id + '/' + p.id] > 0).length }; };
+const crumbs = () => { const [, , tid, pid] = location.hash.split('/'), tp = topics.find(x => x.id === tid), p = tp && flat(tp).find(x => x.id === pid);
+  return `<button data-go="#/">${t('home')}</button>` + (tp ? ` <i>›</i> <button data-go="#/t/${tp.id}">${esc(L(tp.title))}</button>` : '') + (p ? ` <i>›</i> <span>${esc(L(p.title))}</span>` : ''); };
+const zoomBox = () => `<div class="zoom" role="group"><button data-act="zout" aria-label="Zoom out">−</button><button data-act="zreset" title="Ctrl+0">${Math.round(zoom * 100)}%</button><button data-act="zin" aria-label="Zoom in">+</button></div>`;
+const topbar = () => `<div class="topbar"><button class="iconbtn" data-act="side" aria-label="Menu" title="Ctrl+B">☰</button><nav class="crumbs">${crumbs()}</nav><div class="tools">${zoomBox()}${tgl()}${langSeg()}</div></div>`;
 const sidebar = () => { const cur = location.hash.split('/')[2], xp = xpOf(), v = lvl(xp);
   return `<aside class="side"><button class="brand" data-go="#/"><img class="logo" src="mascot.png" alt=""><span class="bt"><span class="wm">m<i>ı</i>rae</span> <b>flow</b><small class="credit">Mirae Academy created this</small></span></button>
-  <button class="searchbtn" data-act="pal">🔍 <span>${t('search')}</span><kbd>Ctrl K</kbd></button><button class="navi ${cur ? '' : 'on'}" data-go="#/">🏠 ${t('home')}</button><div class="label">${t('topics')}</div>
-  <nav class="tree">${topics.map(x => { const s = stats(x); return `<button class="titem ${cur === x.id ? 'on' : ''}" data-go="#/t/${x.id}">${ring(s.n ? s.d / s.n : 0, 'lapis', s.n ? Math.round(100 * s.d / s.n) : 0)}<span class="tt">${esc(L(x.title))}</span><small>${s.d}/${s.n}</small></button>`; }).join('')}</nav>
-  <div class="foot"><div class="tglrow">${tgl()}${langSeg()}</div><div class="me"><span class="av">${esc((act.name || '?')[0].toUpperCase())}</span><span class="who"><b>${esc(act.name || '')}</b><small>${t('lvl')} ${v.l} · ${xp} XP</small><progress value="${v.into}" max="${v.need}"></progress></span></div></div></aside>`; };
+  <button class="searchbtn" data-act="pal">🔍 <span>${t('search')}</span><kbd>Ctrl K</kbd></button><button class="navi ${cur ? '' : 'on'}" data-go="#/" title="${t('home')}">🏠 <span class="nt">${t('home')}</span></button><div class="label">${t('topics')}</div>
+  <nav class="tree">${topics.map(x => { const s = stats(x); return `<button class="titem ${cur === x.id ? 'on' : ''}" data-go="#/t/${x.id}" title="${esc(L(x.title))}">${ring(s.n ? s.d / s.n : 0, 'lapis', s.n ? Math.round(100 * s.d / s.n) : 0)}<span class="tt">${esc(L(x.title))}</span><small>${s.d}/${s.n}</small></button>`; }).join('')}</nav>
+  <div class="foot"><div class="me"><span class="av">${esc((act.name || '?')[0].toUpperCase())}</span><span class="who"><b>${esc(act.name || '')}</b><small>${t('lvl')} ${v.l} · ${xp} XP</small><progress value="${v.into}" max="${v.need}"></progress></span></div></div></aside>`; };
 const solvedIn = (tp, list) => list.filter(p => progress[`${tp.id}/${p.id}`]).length;
 
 function gate() {
@@ -60,7 +65,7 @@ const plist = (tp, list) => {
   return f.length ? `<div class="list">${f.map(p => `<button class="row" data-go="#/t/${tp.id}/${p.id}"><span class="dot ${stOf(tp.id + '/' + p.id)}"></span><b>${list.indexOf(p) + 1}.</b><span class="rt">${esc(L(p.title))}</span>${p.judged ? `<span class="tag ok">${t('auto')}</span>` : ''}</button>`).join('')}</div>` : `<p class="sub">${t('soon')}</p>`;
 };
 function topic(tp) {
-  const tabs = ['cw', 'hw', 'bk', 'pr', 'ex'].filter(k => (tp[SEC[k]] || []).length); if (!tabs.includes(tab)) tab = tabs[0] || 'cw';
+  const tabs = ['bk', 'cw', 'hw', 'pr', 'ex'].filter(k => (tp[SEC[k]] || []).length); if (!tabs.includes(tab)) tab = tabs[0] || 'cw';
   const list = tp[SEC[tab]] || [], d = solvedIn(tp, list), lbl = { cw: t('cw'), hw: t('hw'), pr: t('prT'), bk: t('bkT'), ex: t('extraT') };
   return `<button class="crumb" data-go="#/">${t('back')}</button><h1>${esc(L(tp.title))}</h1>
   <div class="glass panel"><h2>${t('lesson')}</h2><p>${esc(L(tp.lesson))}</p></div>
@@ -93,7 +98,7 @@ function render() {
   applyTheme(); const [, , tid, pid] = location.hash.split('/');
   if (act.state !== 'ok') { app.innerHTML = `<main class="solo"><div class="gatebar">${tgl()}${langSeg()}</div><div class="gatelogo"><img class="logo" src="mascot.png" alt=""><b class="wm">m<i>ı</i>rae</b><b class="fl">flow</b><small class="credit">Mirae Academy created this</small></div>${gate()}</main>`; return; }
   const tp = topics.find(x => x.id === tid), p = tp && flat(tp).find(x => x.id === pid);
-  app.innerHTML = `<div class="shell">${sidebar()}<main><button class="btn ghost menu" data-act="menu">☰</button>${p ? problem(tp, p) : tp ? topic(tp) : home()}</main></div>`;
+  app.innerHTML = `<div class="shell${collapsed ? ' collapsed' : ''}">${sidebar()}<main>${topbar()}${p ? problem(tp, p) : tp ? topic(tp) : home()}</main></div>`;
 }
 async function submit(file) {   // picks the file (kept in memory only)
   if (!file) return; const big = file.size > 1e6; curFile = big ? null : await file.text(); curName = big ? '' : file.name;
@@ -109,6 +114,9 @@ async function doAct(a) {
     return show(r.error ? `<div class="res bad"><b>${t(r.kind || 'RE')}</b><p>${esc(r.error)}</p></div>` : `<div class="res"><b>${t('out')}</b><pre>${esc(r.out) || '∅'}</pre></div>`); }
   const r = await api.judge({ ...ids(), file: curFile }); show(resultHtml(r)); if (r.verdict === 'AC') progress = (await api.state()).progress;
 }
+const setZoom = z => { zoom = Math.min(1.6, Math.max(.7, Math.round(z * 10) / 10)); localStorage.zoom = zoom; api.zoom?.(zoom); const b = document.querySelector('[data-act=zreset]'); if (b) b.textContent = Math.round(zoom * 100) + '%'; };
+const toggleSide = () => { if (matchMedia('(max-width:900px)').matches) document.querySelector('.side')?.classList.toggle('open'); else { collapsed = !collapsed; localStorage.side = collapsed ? '1' : '0'; document.querySelector('.shell')?.classList.toggle('collapsed', collapsed); } };
+document.addEventListener('wheel', e => { if (e.ctrlKey) { e.preventDefault(); setZoom(zoom + (e.deltaY < 0 ? .1 : -.1)); } }, { passive: false });
 function openPal() { if (document.getElementById('pal') || act.state !== 'ok') return; const d = document.createElement('div'); d.id = 'pal'; d.className = 'pal';
   d.innerHTML = `<div class="pbox"><input id="ps" type="text" placeholder="${t('search')}" autocomplete="off"><div id="pr"></div></div>`; document.body.appendChild(d); fillPal(''); document.getElementById('ps').focus(); }
 const closePal = () => document.getElementById('pal')?.remove();
@@ -124,6 +132,10 @@ document.addEventListener('click', async e => {
   else if (b.dataset.act === 'theme') { theme = localStorage.theme = isDark() ? 'light' : 'dark'; render(); }
   else if (b.dataset.theme) { theme = localStorage.theme = b.dataset.theme; render(); }
   else if (b.dataset.act === 'menu') document.querySelector('.side')?.classList.toggle('open');
+  else if (b.dataset.act === 'side') toggleSide();
+  else if (b.dataset.act === 'zin') setZoom(zoom + .1);
+  else if (b.dataset.act === 'zout') setZoom(zoom - .1);
+  else if (b.dataset.act === 'zreset') setZoom(1);
   else if (b.dataset.act === 'pal') openPal();
   else if (b.dataset.tab) { tab = b.dataset.tab; q = ''; render(); }
   else if (['run', 'judge', 'mark'].includes(b.dataset.act)) doAct(b.dataset.act);
@@ -142,11 +154,14 @@ document.addEventListener('input', e => { if (e.target.id === 'ps') return fillP
 document.addEventListener('keydown', e => {
   if (e.ctrlKey && e.key.toLowerCase() === 'k') { e.preventDefault(); return openPal(); }
   if (e.key === 'Escape') closePal();
-  if (e.ctrlKey && e.key.toLowerCase() === 'b') document.querySelector('.shell')?.classList.toggle('collapsed');
+  if (e.ctrlKey && e.key.toLowerCase() === 'b') { e.preventDefault(); toggleSide(); }
+  if (e.ctrlKey && (e.key === '=' || e.key === '+')) { e.preventDefault(); setZoom(zoom + .1); }
+  if (e.ctrlKey && e.key === '-') { e.preventDefault(); setZoom(zoom - .1); }
+  if (e.ctrlKey && e.key === '0') { e.preventDefault(); setZoom(1); }
   if (e.ctrlKey && e.key === 'Enter') return document.querySelector('[data-act=judge],[data-act=run]')?.click();
   if (e.ctrlKey && e.key === 'o') { e.preventDefault(); return document.getElementById('file')?.click(); }
   if (e.target.matches?.('input,textarea') || !['ArrowLeft', 'ArrowRight'].includes(e.key)) return;
   document.querySelectorAll('.nav button')[e.key === 'ArrowLeft' ? 0 : 1]?.click();
 });
-(async () => { act = await api.status(); topics = await api.topics(); progress = (await api.state()).progress; render(); })();
+(async () => { api.zoom?.(zoom); act = await api.status(); topics = await api.topics(); progress = (await api.state()).progress; render(); })();
 })();

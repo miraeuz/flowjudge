@@ -5536,5 +5536,757 @@
     }
    ]
   }
+ ],
+ "book": [
+  {
+   "id": "nested-if-k01",
+   "title": {
+    "uz": "Foydalanuvchi yoshini kiritsin. Agar yoshi 18 dan katta yoki…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi yoshini kiritsin. Agar yoshi 18 dan katta yoki teng bo‘lsa: Agar yoshi 60 dan katta bo‘lsa → «Pensiyaga chiqqan», aks holda → «Ishlash yoshida». Aks holda → «Voyaga yetmagan»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "70",
+     "out": "Pensiyaga chiqqan"
+    },
+    {
+     "in": "60",
+     "out": "Ishlash yoshida"
+    },
+    {
+     "in": "18",
+     "out": "Ishlash yoshida",
+     "hidden": true
+    },
+    {
+     "in": "17",
+     "out": "Voyaga yetmagan",
+     "hidden": true
+    },
+    {
+     "in": "61",
+     "out": "Pensiyaga chiqqan",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-k02",
+   "title": {
+    "uz": "Foydalanuvchi bahosini kiritsin (1–5). Agar baho 4 yoki 5…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi bahosini kiritsin (1–5). Agar baho 4 yoki 5 bo‘lsa: Agar baho 5 bo‘lsa → «A’lo», aks holda → «Yaxshi». Aks holda → «Yaxshiroq o‘qish kerak»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "A'lo"
+    },
+    {
+     "in": "4",
+     "out": "Yaxshi"
+    },
+    {
+     "in": "3",
+     "out": "Yaxshiroq o'qish kerak",
+     "hidden": true
+    },
+    {
+     "in": "1",
+     "out": "Yaxshiroq o'qish kerak",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-k03",
+   "title": {
+    "uz": "Foydalanuvchi pul miqdorini kiritsin. Agar pul 50000 dan ko‘p…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi pul miqdorini kiritsin. Agar pul 50000 dan ko‘p bo‘lsa: Agar pul 100000 dan ko‘p bo‘lsa → «Yetarli pul bor», aks holda → «O‘rtacha pul». Aks holda → «Pul yetarli emas»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "150000",
+     "out": "Yetarli pul bor"
+    },
+    {
+     "in": "100000",
+     "out": "O'rtacha pul"
+    },
+    {
+     "in": "60000",
+     "out": "O'rtacha pul",
+     "hidden": true
+    },
+    {
+     "in": "50000",
+     "out": "Pul yetarli emas",
+     "hidden": true
+    },
+    {
+     "in": "1000",
+     "out": "Pul yetarli emas",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-k04",
+   "title": {
+    "uz": "Foydalanuvchi haroratni kiritsin. Agar harorat 0 dan katta…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi haroratni kiritsin. Agar harorat 0 dan katta bo‘lsa: Agar harorat 25 dan katta bo‘lsa → «Issiq», aks holda → «Iliq». Aks holda → «Sovuq»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "30",
+     "out": "Issiq"
+    },
+    {
+     "in": "25",
+     "out": "Iliq"
+    },
+    {
+     "in": "10",
+     "out": "Iliq",
+     "hidden": true
+    },
+    {
+     "in": "0",
+     "out": "Sovuq",
+     "hidden": true
+    },
+    {
+     "in": "-5",
+     "out": "Sovuq",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-k05",
+   "title": {
+    "uz": "Foydalanuvchi yoshini va bahosini kiritsin. Agar yoshi 16 dan…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi yoshini va bahosini kiritsin. Agar yoshi 16 dan katta bo‘lsa: Agar bahosi 5 bo‘lsa → «Barakalla!», aks holda → «Yaxshi, davom eting». Aks holda → «Hali yoshsiz»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "20\n5",
+     "out": "Barakalla!"
+    },
+    {
+     "in": "20\n4",
+     "out": "Yaxshi, davom eting"
+    },
+    {
+     "in": "16\n5",
+     "out": "Hali yoshsiz",
+     "hidden": true
+    },
+    {
+     "in": "10\n3",
+     "out": "Hali yoshsiz",
+     "hidden": true
+    },
+    {
+     "in": "17\n5",
+     "out": "Barakalla!",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-k06",
+   "title": {
+    "uz": "Foydalanuvchi ismini va yoshini kiritsin. Agar ism «Ali»…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ismini va yoshini kiritsin. Agar ism «Ali» bo‘lsa: Agar yoshi 18 dan katta bo‘lsa → «Salom katta Ali», aks holda → «Salom yosh Ali». Aks holda → «Salom»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "Ali\n20",
+     "out": "Salom katta Ali"
+    },
+    {
+     "in": "Ali\n18",
+     "out": "Salom yosh Ali"
+    },
+    {
+     "in": "Vali\n30",
+     "out": "Salom",
+     "hidden": true
+    },
+    {
+     "in": "Madina\n5",
+     "out": "Salom",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-k07",
+   "title": {
+    "uz": "Foydalanuvchi ballini kiritsin (0–100). Agar ball 60 dan…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ballini kiritsin (0–100). Agar ball 60 dan yuqori yoki teng bo‘lsa: Agar ball 85 dan yuqori bo‘lsa → «A’lo», aks holda → «Yaxshi». Aks holda → «O‘tmadi»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "90",
+     "out": "A'lo"
+    },
+    {
+     "in": "85",
+     "out": "Yaxshi"
+    },
+    {
+     "in": "60",
+     "out": "Yaxshi",
+     "hidden": true
+    },
+    {
+     "in": "59",
+     "out": "O'tmadi",
+     "hidden": true
+    },
+    {
+     "in": "0",
+     "out": "O'tmadi",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-k08",
+   "title": {
+    "uz": "Foydalanuvchi nechta xato qilganini kiritsin. Agar xato 0…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi nechta xato qilganini kiritsin. Agar xato 0 bo‘lsa → «Ajoyib!». Aks holda: Agar xato 3 dan kam bo‘lsa → «Yaxshi», aks holda → «Ko‘p xato qilibsiz»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "0",
+     "out": "Ajoyib!"
+    },
+    {
+     "in": "1",
+     "out": "Yaxshi"
+    },
+    {
+     "in": "2",
+     "out": "Yaxshi",
+     "hidden": true
+    },
+    {
+     "in": "3",
+     "out": "Ko'p xato qilibsiz",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "Ko'p xato qilibsiz",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-k09",
+   "title": {
+    "uz": "Foydalanuvchi kun raqamini kiritsin (1–7). Agar kun 6 yoki 7…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi kun raqamini kiritsin (1–7). Agar kun 6 yoki 7 bo‘lsa → «Dam olish kuni». Aks holda: Agar kun 1 bo‘lsa → «Dushanba – og‘ir kun», aks holda → «Oddiy ish kuni»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "6",
+     "out": "Dam olish kuni"
+    },
+    {
+     "in": "7",
+     "out": "Dam olish kuni"
+    },
+    {
+     "in": "1",
+     "out": "Dushanba – og'ir kun",
+     "hidden": true
+    },
+    {
+     "in": "3",
+     "out": "Oddiy ish kuni",
+     "hidden": true
+    },
+    {
+     "in": "5",
+     "out": "Oddiy ish kuni",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-k10",
+   "title": {
+    "uz": "Foydalanuvchi yoshini kiritsin. Agar yoshi 7 dan katta…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi yoshini kiritsin. Agar yoshi 7 dan katta bo‘lsa: Agar yoshi 17 dan kichik bo‘lsa → «Maktab o‘quvchisi», aks holda → «Maktabni tugatgan». Aks holda → «Maktab yoshiga yetmagan»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "10",
+     "out": "Maktab o'quvchisi"
+    },
+    {
+     "in": "16",
+     "out": "Maktab o'quvchisi"
+    },
+    {
+     "in": "17",
+     "out": "Maktabni tugatgan",
+     "hidden": true
+    },
+    {
+     "in": "30",
+     "out": "Maktabni tugatgan",
+     "hidden": true
+    },
+    {
+     "in": "7",
+     "out": "Maktab yoshiga yetmagan",
+     "hidden": true
+    },
+    {
+     "in": "5",
+     "out": "Maktab yoshiga yetmagan",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-k11",
+   "title": {
+    "uz": "Foydalanuvchi pulini va mahsulot narxini kiritsin. Agar puli…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi pulini va mahsulot narxini kiritsin. Agar puli narxdan ko‘p yoki teng bo‘lsa: Agar puli narxdan 2 marta ko‘p bo‘lsa → «Oson xarid qilasiz», aks holda → «Xarid qilishingiz mumkin». Aks holda → «Pulingiz yetmaydi»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "100\n40",
+     "out": "Oson xarid qilasiz"
+    },
+    {
+     "in": "100\n60",
+     "out": "Xarid qilishingiz mumkin"
+    },
+    {
+     "in": "100\n100",
+     "out": "Xarid qilishingiz mumkin",
+     "hidden": true
+    },
+    {
+     "in": "50\n100",
+     "out": "Pulingiz yetmaydi",
+     "hidden": true
+    },
+    {
+     "in": "300\n100",
+     "out": "Oson xarid qilasiz",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-k12",
+   "title": {
+    "uz": "Foydalanuvchi bahosini kiritsin. Agar baho 5 bo‘lsa → «A’lo».…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi bahosini kiritsin. Agar baho 5 bo‘lsa → «A’lo». Aks holda: Agar baho 4 bo‘lsa → «Yaxshi», aks holda → «Qoniqarli yoki yomon»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "A'lo"
+    },
+    {
+     "in": "4",
+     "out": "Yaxshi"
+    },
+    {
+     "in": "3",
+     "out": "Qoniqarli yoki yomon",
+     "hidden": true
+    },
+    {
+     "in": "2",
+     "out": "Qoniqarli yoki yomon",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-k13",
+   "title": {
+    "uz": "Foydalanuvchi nechta kitob o‘qiganini kiritsin. Agar 5 dan…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi nechta kitob o‘qiganini kiritsin. Agar 5 dan ko‘p bo‘lsa: Agar 15 dan ko‘p bo‘lsa → «Juda ko‘p o‘qibsiz», aks holda → «Yaxshi o‘qiyapsiz». Aks holda → «Ko‘proq o‘qing»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "20",
+     "out": "Juda ko'p o'qibsiz"
+    },
+    {
+     "in": "15",
+     "out": "Yaxshi o'qiyapsiz"
+    },
+    {
+     "in": "6",
+     "out": "Yaxshi o'qiyapsiz",
+     "hidden": true
+    },
+    {
+     "in": "5",
+     "out": "Ko'proq o'qing",
+     "hidden": true
+    },
+    {
+     "in": "0",
+     "out": "Ko'proq o'qing",
+     "hidden": true
+    },
+    {
+     "in": "16",
+     "out": "Juda ko'p o'qibsiz",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-k14",
+   "title": {
+    "uz": "Foydalanuvchi yoshini va jinsini kiritsin (o‘g‘il/qiz). Agar…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi yoshini va jinsini kiritsin (o‘g‘il/qiz). Agar yoshi 18 dan katta bo‘lsa: Agar jinsi «o‘g‘il» bo‘lsa → «Katta yigit», aks holda → «Katta qiz». Aks holda → «Hali yosh»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "20\no'g'il",
+     "out": "Katta yigit"
+    },
+    {
+     "in": "20\nqiz",
+     "out": "Katta qiz"
+    },
+    {
+     "in": "18\no'g'il",
+     "out": "Hali yosh",
+     "hidden": true
+    },
+    {
+     "in": "10\nqiz",
+     "out": "Hali yosh",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-k15",
+   "title": {
+    "uz": "Foydalanuvchi haroratni kiritsin. Agar harorat 30 dan yuqori…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi haroratni kiritsin. Agar harorat 30 dan yuqori bo‘lsa → «Juda issiq». Aks holda: Agar harorat 15 dan yuqori bo‘lsa → «Iliq», aks holda → «Sovuq»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "35",
+     "out": "Juda issiq"
+    },
+    {
+     "in": "30",
+     "out": "Iliq"
+    },
+    {
+     "in": "20",
+     "out": "Iliq",
+     "hidden": true
+    },
+    {
+     "in": "15",
+     "out": "Sovuq",
+     "hidden": true
+    },
+    {
+     "in": "5",
+     "out": "Sovuq",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-k16",
+   "title": {
+    "uz": "Foydalanuvchi ballini va yoshini kiritsin. Agar ball 70 dan…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ballini va yoshini kiritsin. Agar ball 70 dan yuqori bo‘lsa: Agar yoshi 16 dan katta bo‘lsa → «Yaxshi natija + katta yosh», aks holda → «Yaxshi natija». Aks holda → «Natija past»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "80\n20",
+     "out": "Yaxshi natija + katta yosh"
+    },
+    {
+     "in": "80\n16",
+     "out": "Yaxshi natija"
+    },
+    {
+     "in": "70\n30",
+     "out": "Natija past",
+     "hidden": true
+    },
+    {
+     "in": "50\n10",
+     "out": "Natija past",
+     "hidden": true
+    },
+    {
+     "in": "71\n17",
+     "out": "Yaxshi natija + katta yosh",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-k17",
+   "title": {
+    "uz": "Foydalanuvchi nechta dars qoldirganini kiritsin. Agar 0…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi nechta dars qoldirganini kiritsin. Agar 0 bo‘lsa → «Dars qoldirmabsiz». Aks holda: Agar 3 dan kam bo‘lsa → «Ozgina qoldiribsiz», aks holda → «Ko‘p dars qoldiribsiz»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "0",
+     "out": "Dars qoldirmabsiz"
+    },
+    {
+     "in": "1",
+     "out": "Ozgina qoldiribsiz"
+    },
+    {
+     "in": "2",
+     "out": "Ozgina qoldiribsiz",
+     "hidden": true
+    },
+    {
+     "in": "3",
+     "out": "Ko'p dars qoldiribsiz",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "Ko'p dars qoldiribsiz",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-k18",
+   "title": {
+    "uz": "Foydalanuvchi yoshini kiritsin. Agar 12 dan katta bo‘lsa:…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi yoshini kiritsin. Agar 12 dan katta bo‘lsa: Agar 18 dan kichik bo‘lsa → «O‘smir», aks holda → «Katta». Aks holda → «Bola»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "10",
+     "out": "Bola"
+    },
+    {
+     "in": "12",
+     "out": "Bola"
+    },
+    {
+     "in": "13",
+     "out": "O'smir",
+     "hidden": true
+    },
+    {
+     "in": "17",
+     "out": "O'smir",
+     "hidden": true
+    },
+    {
+     "in": "18",
+     "out": "Katta",
+     "hidden": true
+    },
+    {
+     "in": "40",
+     "out": "Katta",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-k19",
+   "title": {
+    "uz": "Foydalanuvchi pulini kiritsin. Agar 100000 dan ko‘p bo‘lsa →…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi pulini kiritsin. Agar 100000 dan ko‘p bo‘lsa → «Boyroq». Aks holda: Agar 30000 dan ko‘p bo‘lsa → «O‘rtacha», aks holda → «Kam pul»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "150000",
+     "out": "Boyroq"
+    },
+    {
+     "in": "100000",
+     "out": "O'rtacha"
+    },
+    {
+     "in": "50000",
+     "out": "O'rtacha",
+     "hidden": true
+    },
+    {
+     "in": "30000",
+     "out": "Kam pul",
+     "hidden": true
+    },
+    {
+     "in": "1000",
+     "out": "Kam pul",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-if-k20",
+   "title": {
+    "uz": "Foydalanuvchi ismini va bahosini kiritsin. Agar bahosi 5…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ismini va bahosini kiritsin. Agar bahosi 5 bo‘lsa: Agar ism «Ali» bo‘lsa → «A’lo, Ali!», aks holda → «A’lo». Aks holda → «Yaxshiroq o‘qing»."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "Ali\n5",
+     "out": "A'lo, Ali!"
+    },
+    {
+     "in": "Vali\n5",
+     "out": "A'lo"
+    },
+    {
+     "in": "Ali\n4",
+     "out": "Yaxshiroq o'qing",
+     "hidden": true
+    },
+    {
+     "in": "Madina\n3",
+     "out": "Yaxshiroq o'qing",
+     "hidden": true
+    }
+   ]
+  }
  ]
 }

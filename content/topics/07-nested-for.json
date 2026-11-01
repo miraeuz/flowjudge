@@ -1445,6 +1445,39 @@
    ]
   },
   {
+   "id": "nested-for-n22",
+   "title": {
+    "uz": "n × n yulduzcha to'rtburchagi"
+   },
+   "statement": {
+    "uz": "n kiritiladi. n × n o'lchamli yulduzcha to'rtburchagini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "*"
+    },
+    {
+     "in": "3",
+     "out": "* * *\n* * *\n* * *"
+    },
+    {
+     "in": "4",
+     "out": "* * * *\n* * * *\n* * * *\n* * * *",
+     "hidden": true
+    },
+    {
+     "in": "6",
+     "out": "* * * * * *\n* * * * * *\n* * * * * *\n* * * * * *\n* * * * * *\n* * * * * *",
+     "hidden": true
+    }
+   ]
+  },
+  {
    "id": "nested-for-n23",
    "title": {
     "uz": "Ketma-ket sonlar uchburchagi (4 qator)"
@@ -1530,6 +1563,39 @@
    ]
   },
   {
+   "id": "nested-for-n26",
+   "title": {
+    "uz": "Qator raqamigacha sonlar"
+   },
+   "statement": {
+    "uz": "n kiritiladi. n qatorli shakl chiqaring: har qatorda 1 dan qator raqamigacha bo'lgan sonlar chiqsin."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1"
+    },
+    {
+     "in": "3",
+     "out": "1\n1 2\n1 2 3"
+    },
+    {
+     "in": "5",
+     "out": "1\n1 2\n1 2 3\n1 2 3 4\n1 2 3 4 5",
+     "hidden": true
+    },
+    {
+     "in": "6",
+     "out": "1\n1 2\n1 2 3\n1 2 3 4\n1 2 3 4 5\n1 2 3 4 5 6",
+     "hidden": true
+    }
+   ]
+  },
+  {
    "id": "nested-for-n27",
    "title": {
     "uz": "Teskari yulduz shakli (5 qator)"
@@ -1545,6 +1611,91 @@
     {
      "in": "",
      "out": "* * * * *\n* * * *\n* * *\n* *\n*"
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n28",
+   "title": {
+    "uz": "Teskari yulduzcha shakli"
+   },
+   "statement": {
+    "uz": "n kiritiladi. Teskari yulduzcha shaklini chiqaring (birinchi qatorda n ta *, keyingilarida kamayib boradi)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "*"
+    },
+    {
+     "in": "3",
+     "out": "* * *\n* *\n*"
+    },
+    {
+     "in": "5",
+     "out": "* * * * *\n* * * *\n* * *\n* *\n*",
+     "hidden": true
+    },
+    {
+     "in": "7",
+     "out": "* * * * * * *\n* * * * * *\n* * * * *\n* * * *\n* * *\n* *\n*",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n29",
+   "title": {
+    "uz": "Karra jadvali 5×5 (to'liq)"
+   },
+   "statement": {
+    "uz": "1 dan 5 gacha karra jadvalini to'liq chiqaring (5×5)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "1 2 3 4 5\n2 4 6 8 10\n3 6 9 12 15\n4 8 12 16 20\n5 10 15 20 25"
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n30",
+   "title": {
+    "uz": "To'liq karra jadvali"
+   },
+   "statement": {
+    "uz": "n kiritiladi. 1 dan n gacha to'liq karra jadvalini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1"
+    },
+    {
+     "in": "3",
+     "out": "1 2 3\n2 4 6\n3 6 9"
+    },
+    {
+     "in": "4",
+     "out": "1 2 3 4\n2 4 6 8\n3 6 9 12\n4 8 12 16",
+     "hidden": true
+    },
+    {
+     "in": "6",
+     "out": "1 2 3 4 5 6\n2 4 6 8 10 12\n3 6 9 12 15 18\n4 8 12 16 20 24\n5 10 15 20 25 30\n6 12 18 24 30 36",
+     "hidden": true
     }
    ]
   },

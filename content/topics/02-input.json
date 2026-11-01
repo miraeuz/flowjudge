@@ -3400,5 +3400,2296 @@
    "tests": []
   }
  ],
- "practice": []
+ "practice": [],
+ "book": [
+  {
+   "id": "input-k01",
+   "title": {
+    "uz": "Foydalanuvchi ismini kiritsin. Ekranga «Salom, [ism]!» deb…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ismini kiritsin. Ekranga «Salom, [ism]!» deb chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "Ali",
+     "out": "Salom, Ali!"
+    },
+    {
+     "in": "Madina",
+     "out": "Salom, Madina!"
+    },
+    {
+     "in": "Jasur",
+     "out": "Salom, Jasur!",
+     "hidden": true
+    },
+    {
+     "in": "Zilola",
+     "out": "Salom, Zilola!",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k02",
+   "title": {
+    "uz": "Bitta son kiriting. Shu sonni ekranga chiqaring."
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Shu sonni ekranga chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "5"
+    },
+    {
+     "in": "12",
+     "out": "12"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "100",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k03",
+   "title": {
+    "uz": "Ikkita son kiriting. Ularning yig‘indisini chiqaring."
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Ularning yig‘indisini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3\n4",
+     "out": "7"
+    },
+    {
+     "in": "10\n-2",
+     "out": "8"
+    },
+    {
+     "in": "0\n7",
+     "out": "7",
+     "hidden": true
+    },
+    {
+     "in": "25\n5",
+     "out": "30",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k04",
+   "title": {
+    "uz": "Ikkita son kiriting. Ularning ayirmasini chiqaring."
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Ularning ayirmasini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3\n4",
+     "out": "-1"
+    },
+    {
+     "in": "10\n-2",
+     "out": "12"
+    },
+    {
+     "in": "0\n7",
+     "out": "-7",
+     "hidden": true
+    },
+    {
+     "in": "25\n5",
+     "out": "20",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k05",
+   "title": {
+    "uz": "Ikkita son kiriting. Ularning ko‘paytmasini chiqaring."
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Ularning ko‘paytmasini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3\n4",
+     "out": "12"
+    },
+    {
+     "in": "10\n-2",
+     "out": "-20"
+    },
+    {
+     "in": "0\n7",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "25\n5",
+     "out": "125",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k06",
+   "title": {
+    "uz": "Bitta son kiriting. Uning kvadratini chiqaring."
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Uning kvadratini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "25"
+    },
+    {
+     "in": "12",
+     "out": "144"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "10000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k07",
+   "title": {
+    "uz": "Foydalanuvchi yoshini kiritsin. Ekranga «Sizning yoshingiz:…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi yoshini kiritsin. Ekranga «Sizning yoshingiz: ...» deb chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "14",
+     "out": "Sizning yoshingiz: 14"
+    },
+    {
+     "in": "7",
+     "out": "Sizning yoshingiz: 7"
+    },
+    {
+     "in": "30",
+     "out": "Sizning yoshingiz: 30",
+     "hidden": true
+    },
+    {
+     "in": "65",
+     "out": "Sizning yoshingiz: 65",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k08",
+   "title": {
+    "uz": "Bir dona non narxini kiriting. 4 ta non qancha turishini…"
+   },
+   "statement": {
+    "uz": "Bir dona non narxini kiriting. 4 ta non qancha turishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3000",
+     "out": "12000"
+    },
+    {
+     "in": "2500",
+     "out": "10000"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "5000",
+     "out": "20000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k09",
+   "title": {
+    "uz": "Bir qalam narxini kiriting. 6 ta qalam qancha turishini…"
+   },
+   "statement": {
+    "uz": "Bir qalam narxini kiriting. 6 ta qalam qancha turishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3000",
+     "out": "18000"
+    },
+    {
+     "in": "2500",
+     "out": "15000"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "5000",
+     "out": "30000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k10",
+   "title": {
+    "uz": "Aliyning pulini kiriting. U 18000 so‘mlik kitob oldi. Qancha…"
+   },
+   "statement": {
+    "uz": "Aliyning pulini kiriting. U 18000 so‘mlik kitob oldi. Qancha puli qolganini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "50000",
+     "out": "32000"
+    },
+    {
+     "in": "18000",
+     "out": "0"
+    },
+    {
+     "in": "100000",
+     "out": "82000",
+     "hidden": true
+    },
+    {
+     "in": "20000",
+     "out": "2000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k11",
+   "title": {
+    "uz": "Sinifdagi o‘g‘il bolalar va qiz bolalar sonini kiriting. Jami…"
+   },
+   "statement": {
+    "uz": "Sinifdagi o‘g‘il bolalar va qiz bolalar sonini kiriting. Jami nechta o‘quvchi borligini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "18\n14",
+     "out": "32"
+    },
+    {
+     "in": "10\n12",
+     "out": "22"
+    },
+    {
+     "in": "0\n5",
+     "out": "5",
+     "hidden": true
+    },
+    {
+     "in": "25\n25",
+     "out": "50",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k12",
+   "title": {
+    "uz": "Avtobusda necha kishi borligini kiriting. Keyin necha kishi…"
+   },
+   "statement": {
+    "uz": "Avtobusda necha kishi borligini kiriting. Keyin necha kishi tushganini kiriting. Qolgan odamlar sonini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "45\n12",
+     "out": "33"
+    },
+    {
+     "in": "10\n10",
+     "out": "0"
+    },
+    {
+     "in": "30\n5",
+     "out": "25",
+     "hidden": true
+    },
+    {
+     "in": "60\n25",
+     "out": "35",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k13",
+   "title": {
+    "uz": "Bir kg olma narxini kiriting. 3 kg olma qancha turishini…"
+   },
+   "statement": {
+    "uz": "Bir kg olma narxini kiriting. 3 kg olma qancha turishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3000",
+     "out": "9000"
+    },
+    {
+     "in": "2500",
+     "out": "7500"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "5000",
+     "out": "15000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k14",
+   "title": {
+    "uz": "Daftar narxini va ruchka narxini kiriting. 2 ta daftar + 3 ta…"
+   },
+   "statement": {
+    "uz": "Daftar narxini va ruchka narxini kiriting. 2 ta daftar + 3 ta ruchka qancha turishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "4000\n3000",
+     "out": "17000"
+    },
+    {
+     "in": "5000\n2000",
+     "out": "16000"
+    },
+    {
+     "in": "0\n1000",
+     "out": "3000",
+     "hidden": true
+    },
+    {
+     "in": "3500\n2500",
+     "out": "14500",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k15",
+   "title": {
+    "uz": "Foydalanuvchi ismi va yoshini kiritsin. Ekranga quyidagicha…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ismi va yoshini kiritsin. Ekranga quyidagicha chiqaring:\nIsm: ...\nYosh: ..."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "Ali\n15",
+     "out": "Ism: Ali\nYosh: 15"
+    },
+    {
+     "in": "Madina\n9",
+     "out": "Ism: Madina\nYosh: 9"
+    },
+    {
+     "in": "Jasur\n30",
+     "out": "Ism: Jasur\nYosh: 30",
+     "hidden": true
+    },
+    {
+     "in": "Zilola\n12",
+     "out": "Ism: Zilola\nYosh: 12",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k16",
+   "title": {
+    "uz": "Hozirgi yilni kiriting. Foydalanuvchi necha yoshda ekanini…"
+   },
+   "statement": {
+    "uz": "Hozirgi yilni kiriting. Foydalanuvchi necha yoshda ekanini kiritsin. Tug‘ilgan yilini toping."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "2025\n14",
+     "out": "2011"
+    },
+    {
+     "in": "2024\n0",
+     "out": "2024"
+    },
+    {
+     "in": "2026\n30",
+     "out": "1996",
+     "hidden": true
+    },
+    {
+     "in": "2023\n10",
+     "out": "2013",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k17",
+   "title": {
+    "uz": "Bir mahsulot narxini va nechta olishini kiriting. Umumiy…"
+   },
+   "statement": {
+    "uz": "Bir mahsulot narxini va nechta olishini kiriting. Umumiy to‘lovni hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3000\n4",
+     "out": "12000"
+    },
+    {
+     "in": "2500\n10",
+     "out": "25000"
+    },
+    {
+     "in": "0\n5",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "999\n7",
+     "out": "6993",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k18",
+   "title": {
+    "uz": "Uchta baho kiriting. Ularning yig‘indisini chiqaring."
+   },
+   "statement": {
+    "uz": "Uchta baho kiriting. Ularning yig‘indisini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1\n2\n3",
+     "out": "6"
+    },
+    {
+     "in": "4\n5\n6",
+     "out": "15"
+    },
+    {
+     "in": "0\n0\n9",
+     "out": "9",
+     "hidden": true
+    },
+    {
+     "in": "10\n20\n30",
+     "out": "60",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k19",
+   "title": {
+    "uz": "Oila a’zolari sonini kiriting. Har biriga 2 tadan non bersa,…"
+   },
+   "statement": {
+    "uz": "Oila a’zolari sonini kiriting. Har biriga 2 tadan non bersa, jami necha non kerakligini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "10"
+    },
+    {
+     "in": "12",
+     "out": "24"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "200",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k20",
+   "title": {
+    "uz": "Bir kunlik ish haqini kiriting. 6 kun ishlasa qancha pul…"
+   },
+   "statement": {
+    "uz": "Bir kunlik ish haqini kiriting. 6 kun ishlasa qancha pul ishlashini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3000",
+     "out": "18000"
+    },
+    {
+     "in": "2500",
+     "out": "15000"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "5000",
+     "out": "30000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k21",
+   "title": {
+    "uz": "Kvadratning tomonini kiriting. Uning perimetrini toping."
+   },
+   "statement": {
+    "uz": "Kvadratning tomonini kiriting. Uning perimetrini toping."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "20"
+    },
+    {
+     "in": "12",
+     "out": "48"
+    },
+    {
+     "in": "1",
+     "out": "4",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "400",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k22",
+   "title": {
+    "uz": "Kvadratning tomonini kiriting. Uning yuzasini toping."
+   },
+   "statement": {
+    "uz": "Kvadratning tomonini kiriting. Uning yuzasini toping."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "25"
+    },
+    {
+     "in": "12",
+     "out": "144"
+    },
+    {
+     "in": "1",
+     "out": "1",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "10000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k23",
+   "title": {
+    "uz": "To‘g‘ri to‘rtburchakning uzunligi va enini kiriting. Yuzasini…"
+   },
+   "statement": {
+    "uz": "To‘g‘ri to‘rtburchakning uzunligi va enini kiriting. Yuzasini toping."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "7\n3",
+     "out": "21"
+    },
+    {
+     "in": "10\n4",
+     "out": "40"
+    },
+    {
+     "in": "1\n1",
+     "out": "1",
+     "hidden": true
+    },
+    {
+     "in": "25\n8",
+     "out": "200",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k24",
+   "title": {
+    "uz": "To‘g‘ri to‘rtburchakning uzunligi va enini kiriting.…"
+   },
+   "statement": {
+    "uz": "To‘g‘ri to‘rtburchakning uzunligi va enini kiriting. Perimetrini toping."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "7\n3",
+     "out": "20"
+    },
+    {
+     "in": "10\n4",
+     "out": "28"
+    },
+    {
+     "in": "1\n1",
+     "out": "4",
+     "hidden": true
+    },
+    {
+     "in": "25\n8",
+     "out": "66",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k25",
+   "title": {
+    "uz": "Kubning yon tomonini kiriting. Hajmini toping."
+   },
+   "statement": {
+    "uz": "Kubning yon tomonini kiriting. Hajmini toping."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "2",
+     "out": "8"
+    },
+    {
+     "in": "5",
+     "out": "125"
+    },
+    {
+     "in": "1",
+     "out": "1",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "1000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k26",
+   "title": {
+    "uz": "Ikkita son kiriting. Ularning o‘rta arifmetik qiymatini…"
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Ularning o‘rta arifmetik qiymatini toping."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "4\n6",
+     "out": "5"
+    },
+    {
+     "in": "5\n8",
+     "out": "6.5"
+    },
+    {
+     "in": "0\n0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "-3\n4",
+     "out": "0.5",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k27",
+   "title": {
+    "uz": "Foydalanuvchi bugun necha soat dars o‘qiganini kiritsin.…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi bugun necha soat dars o‘qiganini kiritsin. Ekranga «Bugun ... soat dars o‘qidingiz» deb chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3",
+     "out": "Bugun 3 soat dars o'qidingiz"
+    },
+    {
+     "in": "6",
+     "out": "Bugun 6 soat dars o'qidingiz"
+    },
+    {
+     "in": "0",
+     "out": "Bugun 0 soat dars o'qidingiz",
+     "hidden": true
+    },
+    {
+     "in": "8",
+     "out": "Bugun 8 soat dars o'qidingiz",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k28",
+   "title": {
+    "uz": "Bir stakan suv 200 ml. Foydalanuvchi necha stakan ichganini…"
+   },
+   "statement": {
+    "uz": "Bir stakan suv 200 ml. Foydalanuvchi necha stakan ichganini kiritsin. Jami necha ml suv ichganini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "200"
+    },
+    {
+     "in": "5",
+     "out": "1000"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "2000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k29",
+   "title": {
+    "uz": "Avtomobil 1 km yo‘lga 8 litr benzin sarflaydi. Foydalanuvchi…"
+   },
+   "statement": {
+    "uz": "Avtomobil 1 km yo‘lga 8 litr benzin sarflaydi. Foydalanuvchi necha km yurganini kiritsin. Qancha benzin ketganini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "10",
+     "out": "80"
+    },
+    {
+     "in": "50",
+     "out": "400"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "125",
+     "out": "1000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k30",
+   "title": {
+    "uz": "Bir soatlik internet 3000 so‘m. Foydalanuvchi necha soat…"
+   },
+   "statement": {
+    "uz": "Bir soatlik internet 3000 so‘m. Foydalanuvchi necha soat internet ishlatganini kiritsin. Qancha to‘lashi kerakligini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "3000"
+    },
+    {
+     "in": "3",
+     "out": "9000"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "30000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k31",
+   "title": {
+    "uz": "Uchta son kiriting. Ularning yig‘indisini va ko‘paytmasini…"
+   },
+   "statement": {
+    "uz": "Uchta son kiriting. Ularning yig‘indisini va ko‘paytmasini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1\n2\n3",
+     "out": "6\n6"
+    },
+    {
+     "in": "4\n5\n6",
+     "out": "15\n120"
+    },
+    {
+     "in": "0\n0\n9",
+     "out": "9\n0",
+     "hidden": true
+    },
+    {
+     "in": "10\n20\n30",
+     "out": "60\n6000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k32",
+   "title": {
+    "uz": "Ikkita son kiriting. Avval yig‘indisini, keyin ayirmasini,…"
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Avval yig‘indisini, keyin ayirmasini, keyin ko‘paytmasini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3\n4",
+     "out": "7\n-1\n12"
+    },
+    {
+     "in": "10\n-2",
+     "out": "8\n12\n-20"
+    },
+    {
+     "in": "0\n7",
+     "out": "7\n-7\n0",
+     "hidden": true
+    },
+    {
+     "in": "25\n5",
+     "out": "30\n20\n125",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k33",
+   "title": {
+    "uz": "Foydalanuvchi ismi, familiyasi va yoshini kiritsin. Chiroyli…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ismi, familiyasi va yoshini kiritsin. Chiroyli qilib chiqaring."
+   },
+   "source": "book",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "input-k34",
+   "title": {
+    "uz": "Bir kg guruch narxini kiriting. 2 kg va 5 kg guruch qancha…"
+   },
+   "statement": {
+    "uz": "Bir kg guruch narxini kiriting. 2 kg va 5 kg guruch qancha turishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "10000",
+     "out": "20000\n50000"
+    },
+    {
+     "in": "12000",
+     "out": "24000\n60000"
+    },
+    {
+     "in": "0",
+     "out": "0\n0",
+     "hidden": true
+    },
+    {
+     "in": "8500",
+     "out": "17000\n42500",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k35",
+   "title": {
+    "uz": "O‘quvchi 1 kunda necha sahifa kitob o‘qishini kiritsin. 7…"
+   },
+   "statement": {
+    "uz": "O‘quvchi 1 kunda necha sahifa kitob o‘qishini kiritsin. 7 kunda necha sahifa o‘qishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "10",
+     "out": "70"
+    },
+    {
+     "in": "25",
+     "out": "175"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "40",
+     "out": "280",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k36",
+   "title": {
+    "uz": "Bitta son kiriting. Uni 10 ga oshirib, keyin 2 ga ko‘paytirib…"
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Uni 10 ga oshirib, keyin 2 ga ko‘paytirib chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "30"
+    },
+    {
+     "in": "12",
+     "out": "44"
+    },
+    {
+     "in": "0",
+     "out": "20",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "220",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k37",
+   "title": {
+    "uz": "Ikkita son (a va b) kiriting. a * b + 10 ni hisoblang."
+   },
+   "statement": {
+    "uz": "Ikkita son (a va b) kiriting. a * b + 10 ni hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3\n4",
+     "out": "22"
+    },
+    {
+     "in": "10\n-2",
+     "out": "-10"
+    },
+    {
+     "in": "0\n7",
+     "out": "10",
+     "hidden": true
+    },
+    {
+     "in": "25\n5",
+     "out": "135",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k38",
+   "title": {
+    "uz": "Uchta son kiriting. (a + b) * c ni hisoblang."
+   },
+   "statement": {
+    "uz": "Uchta son kiriting. (a + b) * c ni hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1\n2\n3",
+     "out": "9"
+    },
+    {
+     "in": "4\n5\n6",
+     "out": "54"
+    },
+    {
+     "in": "0\n0\n9",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "10\n20\n30",
+     "out": "900",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k39",
+   "title": {
+    "uz": "Foydalanuvchi hozirgi soatni kiritsin (0–23). Ekranga «Hozir…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi hozirgi soatni kiritsin (0–23). Ekranga «Hozir soat: ...» deb chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "8",
+     "out": "Hozir soat: 8"
+    },
+    {
+     "in": "0",
+     "out": "Hozir soat: 0"
+    },
+    {
+     "in": "23",
+     "out": "Hozir soat: 23",
+     "hidden": true
+    },
+    {
+     "in": "15",
+     "out": "Hozir soat: 15",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k40",
+   "title": {
+    "uz": "Bir qadoq tuxum 10 dona. Foydalanuvchi necha qadoq olganini…"
+   },
+   "statement": {
+    "uz": "Bir qadoq tuxum 10 dona. Foydalanuvchi necha qadoq olganini kiritsin. Jami necha dona tuxum bo‘lishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "10"
+    },
+    {
+     "in": "3",
+     "out": "30"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "12",
+     "out": "120",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k41",
+   "title": {
+    "uz": "Foydalanuvchi bugun nechta dars o‘tganini kiritsin. Ekranga…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi bugun nechta dars o‘tganini kiritsin. Ekranga «Bugun siz ... ta dars o‘tdingiz» deb chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3",
+     "out": "Bugun siz 3 ta dars o'tdingiz"
+    },
+    {
+     "in": "6",
+     "out": "Bugun siz 6 ta dars o'tdingiz"
+    },
+    {
+     "in": "0",
+     "out": "Bugun siz 0 ta dars o'tdingiz",
+     "hidden": true
+    },
+    {
+     "in": "8",
+     "out": "Bugun siz 8 ta dars o'tdingiz",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k42",
+   "title": {
+    "uz": "Bir o‘quvchining 1 kunlik yo‘l pulini kiriting. 5 kunlik yo‘l…"
+   },
+   "statement": {
+    "uz": "Bir o‘quvchining 1 kunlik yo‘l pulini kiriting. 5 kunlik yo‘l pulini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3000",
+     "out": "15000"
+    },
+    {
+     "in": "2500",
+     "out": "12500"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "5000",
+     "out": "25000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k43",
+   "title": {
+    "uz": "Foydalanuvchi nechta do‘sti borligini kiritsin. Har biriga 2…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi nechta do‘sti borligini kiritsin. Har biriga 2 tadan shirinlik bersa, jami nechta shirinlik kerakligini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3",
+     "out": "6"
+    },
+    {
+     "in": "10",
+     "out": "20"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "25",
+     "out": "50",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k44",
+   "title": {
+    "uz": "Telefonning narxini kiriting. Uni 3 oyda to‘lash kerak. Har…"
+   },
+   "statement": {
+    "uz": "Telefonning narxini kiriting. Uni 3 oyda to‘lash kerak. Har oyda qancha to‘lash kerakligini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "900000",
+     "out": "300000"
+    },
+    {
+     "in": "1200000",
+     "out": "400000"
+    },
+    {
+     "in": "300000",
+     "out": "100000",
+     "hidden": true
+    },
+    {
+     "in": "60",
+     "out": "20",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k45",
+   "title": {
+    "uz": "Foydalanuvchi hozirgi oy raqamini kiritsin (1–12). Ekranga…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi hozirgi oy raqamini kiritsin (1–12). Ekranga «Hozir ...-oy» deb chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "Hozir 1-oy"
+    },
+    {
+     "in": "12",
+     "out": "Hozir 12-oy"
+    },
+    {
+     "in": "7",
+     "out": "Hozir 7-oy",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "Hozir 10-oy",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k46",
+   "title": {
+    "uz": "Bir futbol jamoasida nechta o‘yinchi borligini kiriting.…"
+   },
+   "statement": {
+    "uz": "Bir futbol jamoasida nechta o‘yinchi borligini kiriting. Ulardan 2 nafari zaxirada. Asosiy tarkibda nechta o‘yinchi borligini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "11",
+     "out": "9"
+    },
+    {
+     "in": "14",
+     "out": "12"
+    },
+    {
+     "in": "5",
+     "out": "3",
+     "hidden": true
+    },
+    {
+     "in": "20",
+     "out": "18",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k47",
+   "title": {
+    "uz": "Foydalanuvchi 1 soatda nechta bet kitob o‘qishini kiritsin. 4…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 1 soatda nechta bet kitob o‘qishini kiritsin. 4 soatda nechta bet o‘qishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "10",
+     "out": "40"
+    },
+    {
+     "in": "25",
+     "out": "100"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "40",
+     "out": "160",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k48",
+   "title": {
+    "uz": "Bir qop kartoshka 25 kg. Foydalanuvchi necha qop olganini…"
+   },
+   "statement": {
+    "uz": "Bir qop kartoshka 25 kg. Foydalanuvchi necha qop olganini kiritsin. Jami necha kg kartoshka bo‘lishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "25"
+    },
+    {
+     "in": "4",
+     "out": "100"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "250",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k49",
+   "title": {
+    "uz": "O‘quvchi 1 kunda nechta so‘z yodlashini kiritsin. 10 kunda…"
+   },
+   "statement": {
+    "uz": "O‘quvchi 1 kunda nechta so‘z yodlashini kiritsin. 10 kunda nechta so‘z yodlashini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "50"
+    },
+    {
+     "in": "12",
+     "out": "120"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "30",
+     "out": "300",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k50",
+   "title": {
+    "uz": "Foydalanuvchi oyiga qancha pul ishlashini kiritsin. 3 oyda…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi oyiga qancha pul ishlashini kiritsin. 3 oyda qancha ishlashini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3000",
+     "out": "9000"
+    },
+    {
+     "in": "2500",
+     "out": "7500"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "5000",
+     "out": "15000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k51",
+   "title": {
+    "uz": "Bir stul narxini kiriting. 6 ta stul qancha turishini…"
+   },
+   "statement": {
+    "uz": "Bir stul narxini kiriting. 6 ta stul qancha turishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3000",
+     "out": "18000"
+    },
+    {
+     "in": "2500",
+     "out": "15000"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "5000",
+     "out": "30000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k52",
+   "title": {
+    "uz": "Foydalanuvchi nechta kitob o‘qiganini kiritsin. Ekranga «Siz…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi nechta kitob o‘qiganini kiritsin. Ekranga «Siz ... ta kitob o‘qibsiz. Barakalla!» deb chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3",
+     "out": "Siz 3 ta kitob o'qibsiz. Barakalla!"
+    },
+    {
+     "in": "12",
+     "out": "Siz 12 ta kitob o'qibsiz. Barakalla!"
+    },
+    {
+     "in": "1",
+     "out": "Siz 1 ta kitob o'qibsiz. Barakalla!",
+     "hidden": true
+    },
+    {
+     "in": "20",
+     "out": "Siz 20 ta kitob o'qibsiz. Barakalla!",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k53",
+   "title": {
+    "uz": "Bir kunlik suv sarfini (litrda) kiriting. 7 kunlik suv…"
+   },
+   "statement": {
+    "uz": "Bir kunlik suv sarfini (litrda) kiriting. 7 kunlik suv sarfini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "100",
+     "out": "700"
+    },
+    {
+     "in": "150",
+     "out": "1050"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "80",
+     "out": "560",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k54",
+   "title": {
+    "uz": "Foydalanuvchi nechta xato qilganini kiritsin. Ekranga «Siz…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi nechta xato qilganini kiritsin. Ekranga «Siz ... ta xato qildingiz» deb chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "0",
+     "out": "Siz 0 ta xato qildingiz"
+    },
+    {
+     "in": "3",
+     "out": "Siz 3 ta xato qildingiz"
+    },
+    {
+     "in": "10",
+     "out": "Siz 10 ta xato qildingiz",
+     "hidden": true
+    },
+    {
+     "in": "1",
+     "out": "Siz 1 ta xato qildingiz",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k55",
+   "title": {
+    "uz": "Bir qalam va bir uchirg‘ich narxini kiriting. 4 ta qalam + 2…"
+   },
+   "statement": {
+    "uz": "Bir qalam va bir uchirg‘ich narxini kiriting. 4 ta qalam + 2 ta uchirg‘ich qancha turishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1000\n500",
+     "out": "5000"
+    },
+    {
+     "in": "1500\n800",
+     "out": "7600"
+    },
+    {
+     "in": "0\n300",
+     "out": "600",
+     "hidden": true
+    },
+    {
+     "in": "2000\n0",
+     "out": "8000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k56",
+   "title": {
+    "uz": "Foydalanuvchi tug‘ilgan kunini (kun raqami) kiritsin. Ekranga…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi tug‘ilgan kunini (kun raqami) kiritsin. Ekranga «Sizning tug‘ilgan kuningiz: ...» deb chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "15",
+     "out": "Sizning tug'ilgan kuningiz: 15"
+    },
+    {
+     "in": "1",
+     "out": "Sizning tug'ilgan kuningiz: 1"
+    },
+    {
+     "in": "31",
+     "out": "Sizning tug'ilgan kuningiz: 31",
+     "hidden": true
+    },
+    {
+     "in": "7",
+     "out": "Sizning tug'ilgan kuningiz: 7",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k57",
+   "title": {
+    "uz": "Bir poyabzal narxini kiriting. 2 juft poyabzal qancha…"
+   },
+   "statement": {
+    "uz": "Bir poyabzal narxini kiriting. 2 juft poyabzal qancha turishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "300000",
+     "out": "600000"
+    },
+    {
+     "in": "250000",
+     "out": "500000"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "180000",
+     "out": "360000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k58",
+   "title": {
+    "uz": "O‘quvchi 1 kunda necha daqiqa ingliz tili o‘rganishini…"
+   },
+   "statement": {
+    "uz": "O‘quvchi 1 kunda necha daqiqa ingliz tili o‘rganishini kiritsin. 5 kunda necha daqiqa o‘rganishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "20",
+     "out": "100"
+    },
+    {
+     "in": "30",
+     "out": "150"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "45",
+     "out": "225",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k59",
+   "title": {
+    "uz": "Foydalanuvchi hozirgi yilni va o‘zi necha yoshda ekanini…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi hozirgi yilni va o‘zi necha yoshda ekanini kiritsin. 10 yildan keyin necha yoshda bo‘lishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "2025\n14",
+     "out": "24"
+    },
+    {
+     "in": "2024\n20",
+     "out": "30"
+    },
+    {
+     "in": "2026\n0",
+     "out": "10",
+     "hidden": true
+    },
+    {
+     "in": "2023\n35",
+     "out": "45",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k60",
+   "title": {
+    "uz": "Bir paket sut 1 litr. Foydalanuvchi necha paket olganini…"
+   },
+   "statement": {
+    "uz": "Bir paket sut 1 litr. Foydalanuvchi necha paket olganini kiritsin. Jami necha litr sut bo‘lishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1"
+    },
+    {
+     "in": "3",
+     "out": "3"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "10",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k61",
+   "title": {
+    "uz": "Foydalanuvchi nechta gol urganini kiritsin. Ekranga «Siz ...…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi nechta gol urganini kiritsin. Ekranga «Siz ... ta gol urdingiz!» deb chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "Siz 1 ta gol urdingiz!"
+    },
+    {
+     "in": "3",
+     "out": "Siz 3 ta gol urdingiz!"
+    },
+    {
+     "in": "0",
+     "out": "Siz 0 ta gol urdingiz!",
+     "hidden": true
+    },
+    {
+     "in": "5",
+     "out": "Siz 5 ta gol urdingiz!",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k62",
+   "title": {
+    "uz": "Bir qadoq pechene 8 dona. Foydalanuvchi necha qadoq olganini…"
+   },
+   "statement": {
+    "uz": "Bir qadoq pechene 8 dona. Foydalanuvchi necha qadoq olganini kiritsin. Jami nechta pechene bo‘lishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "8"
+    },
+    {
+     "in": "4",
+     "out": "32"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "80",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k63",
+   "title": {
+    "uz": "O‘qituvchi 1 kunda nechta dars o‘tishini kiritsin. 6 kunlik…"
+   },
+   "statement": {
+    "uz": "O‘qituvchi 1 kunda nechta dars o‘tishini kiritsin. 6 kunlik dars sonini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3",
+     "out": "18"
+    },
+    {
+     "in": "5",
+     "out": "30"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "7",
+     "out": "42",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k64",
+   "title": {
+    "uz": "Foydalanuvchi 1 soatda nechta misol yechishini kiritsin. 3…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi 1 soatda nechta misol yechishini kiritsin. 3 soatda nechta misol yechishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "10",
+     "out": "30"
+    },
+    {
+     "in": "15",
+     "out": "45"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "25",
+     "out": "75",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k65",
+   "title": {
+    "uz": "Bir kishiga 3 ta non kerak. Foydalanuvchi mehmonlar sonini…"
+   },
+   "statement": {
+    "uz": "Bir kishiga 3 ta non kerak. Foydalanuvchi mehmonlar sonini kiritsin. Jami nechta non kerakligini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "15"
+    },
+    {
+     "in": "12",
+     "out": "36"
+    },
+    {
+     "in": "1",
+     "out": "3",
+     "hidden": true
+    },
+    {
+     "in": "30",
+     "out": "90",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k66",
+   "title": {
+    "uz": "Foydalanuvchi bugun nechta vazifa bajarganini kiritsin.…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi bugun nechta vazifa bajarganini kiritsin. Ekranga «Bugun ... ta vazifa bajardingiz» deb chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "Bugun 1 ta vazifa bajardingiz"
+    },
+    {
+     "in": "5",
+     "out": "Bugun 5 ta vazifa bajardingiz"
+    },
+    {
+     "in": "0",
+     "out": "Bugun 0 ta vazifa bajardingiz",
+     "hidden": true
+    },
+    {
+     "in": "9",
+     "out": "Bugun 9 ta vazifa bajardingiz",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k67",
+   "title": {
+    "uz": "Bir metr mato narxini kiriting. 5 metr mato qancha turishini…"
+   },
+   "statement": {
+    "uz": "Bir metr mato narxini kiriting. 5 metr mato qancha turishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3000",
+     "out": "15000"
+    },
+    {
+     "in": "2500",
+     "out": "12500"
+    },
+    {
+     "in": "0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "5000",
+     "out": "25000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k68",
+   "title": {
+    "uz": "Foydalanuvchi nechta xat yozganini kiritsin. Ekranga «Siz ...…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi nechta xat yozganini kiritsin. Ekranga «Siz ... ta xat yozdingiz» deb chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "Siz 1 ta xat yozdingiz"
+    },
+    {
+     "in": "4",
+     "out": "Siz 4 ta xat yozdingiz"
+    },
+    {
+     "in": "0",
+     "out": "Siz 0 ta xat yozdingiz",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "Siz 10 ta xat yozdingiz",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k69",
+   "title": {
+    "uz": "Bir banka limonad 2 banka = 1 litr deb oling. Foydalanuvchi…"
+   },
+   "statement": {
+    "uz": "Bir banka limonad 2 banka = 1 litr deb oling. Foydalanuvchi necha banka olganini kiritsin. Necha litr limonad bo‘lishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "4",
+     "out": "2"
+    },
+    {
+     "in": "10",
+     "out": "5"
+    },
+    {
+     "in": "2",
+     "out": "1",
+     "hidden": true
+    },
+    {
+     "in": "7",
+     "out": "3.5",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "input-k70",
+   "title": {
+    "uz": "Foydalanuvchi ismini kiritsin. Keyin necha yoshda ekanini…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ismini kiritsin. Keyin necha yoshda ekanini kiritsin. Ekranga:\nSalom, [ism]!\nSiz [yosh] yoshdasiz. deb chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "Ali\n15",
+     "out": "Salom, Ali!\nSiz 15 yoshdasiz."
+    },
+    {
+     "in": "Madina\n9",
+     "out": "Salom, Madina!\nSiz 9 yoshdasiz."
+    },
+    {
+     "in": "Jasur\n30",
+     "out": "Salom, Jasur!\nSiz 30 yoshdasiz.",
+     "hidden": true
+    },
+    {
+     "in": "Zilola\n12",
+     "out": "Salom, Zilola!\nSiz 12 yoshdasiz.",
+     "hidden": true
+    }
+   ]
+  }
+ ]
 }

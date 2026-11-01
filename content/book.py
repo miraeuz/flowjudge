@@ -72,4 +72,11 @@ W = [
 ("w29", "4 ga bo'linadiganlar soni", "n kiritiladi. 1 dan n gacha sonlar orasida nechta son 4 ga bo'linishini (son mod 4 = 0) toping.", lambda n: n // 4, [(3,), (4,), (20,), (100,)]),
 ("w30", "Juft yoki toq", "n kiritiladi. 1 dan n gacha sonlarni chiqaring: juft bo'lsa yoniga “Juft”, toq bo'lsa “Toq” deb yozing (masalan: 1 Toq).", lambda n: [f"{i} {'Juft' if i % 2 == 0 else 'Toq'}" for i in range(1, n + 1)], [(1,), (4,), (5,), (2,)]),
 ]
+_d = {r[0]: r for r in NF}
+NF += [("n22", "n × n yulduzcha to'rtburchagi", "n kiritiladi. n × n o'lchamli yulduzcha to'rtburchagini chiqaring.", _d['n02'][3], _d['n02'][4]),
+ ("n26", "Qator raqamigacha sonlar", "n kiritiladi. n qatorli shakl chiqaring: har qatorda 1 dan qator raqamigacha bo'lgan sonlar chiqsin.", _d['n12'][3], _d['n12'][4]),
+ ("n28", "Teskari yulduzcha shakli", "n kiritiladi. Teskari yulduzcha shaklini chiqaring (birinchi qatorda n ta *, keyingilarida kamayib boradi).", _d['n14'][3], _d['n14'][4]),
+ ("n29", "Karra jadvali 5×5 (to'liq)", "1 dan 5 gacha karra jadvalini to'liq chiqaring (5×5).", _d['n07'][3], _d['n07'][4]),
+ ("n30", "To'liq karra jadvali", "n kiritiladi. 1 dan n gacha to'liq karra jadvalini chiqaring.", _d['n08'][3], _d['n08'][4])]
+NF.sort(key=lambda r: int(r[0][1:]))
 BOOK = {'nested-for': (NF, 'lines'), 'while': (W, 'tokens')}

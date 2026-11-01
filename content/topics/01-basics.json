@@ -1478,5 +1478,1235 @@
    ]
   }
  ],
- "practice": []
+ "practice": [],
+ "book": [
+  {
+   "id": "basics-k01",
+   "title": {
+    "uz": "Ekranga «Salom» so‘zini chiqaring."
+   },
+   "statement": {
+    "uz": "Ekranga «Salom» so‘zini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "Salom"
+    }
+   ]
+  },
+  {
+   "id": "basics-k02",
+   "title": {
+    "uz": "Ekranga «Salom Ali» so‘zini chiqaring."
+   },
+   "statement": {
+    "uz": "Ekranga «Salom Ali» so‘zini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "Salom Ali"
+    }
+   ]
+  },
+  {
+   "id": "basics-k03",
+   "title": {
+    "uz": "Ekranga o‘z ismingizni chiqaring."
+   },
+   "statement": {
+    "uz": "Ekranga o‘z ismingizni chiqaring."
+   },
+   "source": "book",
+   "judge": null,
+   "tests": []
+  },
+  {
+   "id": "basics-k04",
+   "title": {
+    "uz": "a = 5 deb oling. a ni ekranga chiqaring."
+   },
+   "statement": {
+    "uz": "a = 5 deb oling. a ni ekranga chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "5"
+    }
+   ]
+  },
+  {
+   "id": "basics-k05",
+   "title": {
+    "uz": "a = 10, b = 20 deb oling. a va b ni chiqaring."
+   },
+   "statement": {
+    "uz": "a = 10, b = 20 deb oling. a va b ni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "10\n20"
+    }
+   ]
+  },
+  {
+   "id": "basics-k06",
+   "title": {
+    "uz": "a = 7, b = 3 deb oling. Yig‘indisini chiqaring (a + b)."
+   },
+   "statement": {
+    "uz": "a = 7, b = 3 deb oling. Yig‘indisini chiqaring (a + b)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "10"
+    }
+   ]
+  },
+  {
+   "id": "basics-k07",
+   "title": {
+    "uz": "a = 15, b = 4 deb oling. Ayirmasini chiqaring (a - b)."
+   },
+   "statement": {
+    "uz": "a = 15, b = 4 deb oling. Ayirmasini chiqaring (a - b)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "11"
+    }
+   ]
+  },
+  {
+   "id": "basics-k08",
+   "title": {
+    "uz": "a = 6, b = 8 deb oling. Ko‘paytmasini chiqaring (a * b)."
+   },
+   "statement": {
+    "uz": "a = 6, b = 8 deb oling. Ko‘paytmasini chiqaring (a * b)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "48"
+    }
+   ]
+  },
+  {
+   "id": "basics-k09",
+   "title": {
+    "uz": "a = 20, b = 5 deb oling. Bo‘linmasini chiqaring (a / b)."
+   },
+   "statement": {
+    "uz": "a = 20, b = 5 deb oling. Bo‘linmasini chiqaring (a / b)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "4"
+    }
+   ]
+  },
+  {
+   "id": "basics-k10",
+   "title": {
+    "uz": "a = 9 deb oling. a ning kvadratini chiqaring (a * a)."
+   },
+   "statement": {
+    "uz": "a = 9 deb oling. a ning kvadratini chiqaring (a * a)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "81"
+    }
+   ]
+  },
+  {
+   "id": "basics-k11",
+   "title": {
+    "uz": "a = 4, b = 7 deb oling. a ning kvadrati va b ning kvadratini…"
+   },
+   "statement": {
+    "uz": "a = 4, b = 7 deb oling. a ning kvadrati va b ning kvadratini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "16\n49"
+    }
+   ]
+  },
+  {
+   "id": "basics-k12",
+   "title": {
+    "uz": "a = 5, b = 3, c = 2 deb oling. a * b - c ni hisoblang va…"
+   },
+   "statement": {
+    "uz": "a = 5, b = 3, c = 2 deb oling. a * b - c ni hisoblang va chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "13"
+    }
+   ]
+  },
+  {
+   "id": "basics-k13",
+   "title": {
+    "uz": "a = 10, b = 4, c = 6 deb oling. a + b * c ni hisoblang va…"
+   },
+   "statement": {
+    "uz": "a = 10, b = 4, c = 6 deb oling. a + b * c ni hisoblang va chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "34"
+    }
+   ]
+  },
+  {
+   "id": "basics-k14",
+   "title": {
+    "uz": "a = 8, b = 3, c = 2 deb oling. (a + b) * c ni hisoblang va…"
+   },
+   "statement": {
+    "uz": "a = 8, b = 3, c = 2 deb oling. (a + b) * c ni hisoblang va chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "22"
+    }
+   ]
+  },
+  {
+   "id": "basics-k15",
+   "title": {
+    "uz": "a = 15, b = 5, c = 3 deb oling. a / b + c ni hisoblang va…"
+   },
+   "statement": {
+    "uz": "a = 15, b = 5, c = 3 deb oling. a / b + c ni hisoblang va chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "6"
+    }
+   ]
+  },
+  {
+   "id": "basics-k16",
+   "title": {
+    "uz": "a = 7, b = 2, c = 4 deb oling. a * b + c ni hisoblang va…"
+   },
+   "statement": {
+    "uz": "a = 7, b = 2, c = 4 deb oling. a * b + c ni hisoblang va chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "18"
+    }
+   ]
+  },
+  {
+   "id": "basics-k17",
+   "title": {
+    "uz": "a = 12, b = 3, c = 5 deb oling. a - b * c ni hisoblang va…"
+   },
+   "statement": {
+    "uz": "a = 12, b = 3, c = 5 deb oling. a - b * c ni hisoblang va chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "-3"
+    }
+   ]
+  },
+  {
+   "id": "basics-k18",
+   "title": {
+    "uz": "a = 6, b = 4, c = 2 deb oling. (a * b) / c ni hisoblang va…"
+   },
+   "statement": {
+    "uz": "a = 6, b = 4, c = 2 deb oling. (a * b) / c ni hisoblang va chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "12"
+    }
+   ]
+  },
+  {
+   "id": "basics-k19",
+   "title": {
+    "uz": "a = 9, b = 3, c = 1 deb oling. a / b - c ni hisoblang va…"
+   },
+   "statement": {
+    "uz": "a = 9, b = 3, c = 1 deb oling. a / b - c ni hisoblang va chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "2"
+    }
+   ]
+  },
+  {
+   "id": "basics-k20",
+   "title": {
+    "uz": "a = 5, b = 5, c = 5 deb oling. a + b + c ni hisoblang va…"
+   },
+   "statement": {
+    "uz": "a = 5, b = 5, c = 5 deb oling. a + b + c ni hisoblang va chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "15"
+    }
+   ]
+  },
+  {
+   "id": "basics-k21",
+   "title": {
+    "uz": "Bir dona non 3000 so‘m. 4 ta non qancha turishini hisoblang…"
+   },
+   "statement": {
+    "uz": "Bir dona non 3000 so‘m. 4 ta non qancha turishini hisoblang va chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "12000"
+    }
+   ]
+  },
+  {
+   "id": "basics-k22",
+   "title": {
+    "uz": "Bir qalam 2000 so‘m. 5 ta qalam qancha turishini hisoblang va…"
+   },
+   "statement": {
+    "uz": "Bir qalam 2000 so‘m. 5 ta qalam qancha turishini hisoblang va chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "10000"
+    }
+   ]
+  },
+  {
+   "id": "basics-k23",
+   "title": {
+    "uz": "Aliyda 50 000 so‘m bor. U 18 000 so‘mlik kitob oldi. Qancha…"
+   },
+   "statement": {
+    "uz": "Aliyda 50 000 so‘m bor. U 18 000 so‘mlik kitob oldi. Qancha puli qolganini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "32000"
+    }
+   ]
+  },
+  {
+   "id": "basics-k24",
+   "title": {
+    "uz": "Avtobusda 45 ta odam bor edi. 12 kishi tushdi. Necha kishi…"
+   },
+   "statement": {
+    "uz": "Avtobusda 45 ta odam bor edi. 12 kishi tushdi. Necha kishi qolganini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "33"
+    }
+   ]
+  },
+  {
+   "id": "basics-k25",
+   "title": {
+    "uz": "Sinifda 18 ta o‘g‘il va 14 ta qiz bor. Jami nechta o‘quvchi…"
+   },
+   "statement": {
+    "uz": "Sinifda 18 ta o‘g‘il va 14 ta qiz bor. Jami nechta o‘quvchi borligini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "32"
+    }
+   ]
+  },
+  {
+   "id": "basics-k26",
+   "title": {
+    "uz": "a = 25 deb oling. a ni 2 marta chiqaring."
+   },
+   "statement": {
+    "uz": "a = 25 deb oling. a ni 2 marta chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "25\n25"
+    }
+   ]
+  },
+  {
+   "id": "basics-k27",
+   "title": {
+    "uz": "a = 100 deb oling. a ni 3 marta chiqaring."
+   },
+   "statement": {
+    "uz": "a = 100 deb oling. a ni 3 marta chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "100\n100\n100"
+    }
+   ]
+  },
+  {
+   "id": "basics-k28",
+   "title": {
+    "uz": "Ekranga quyidagicha chiqaring:"
+   },
+   "statement": {
+    "uz": "Ekranga quyidagicha chiqaring:\nIsm: Ali\nYosh: 15"
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "Ism: Ali\nYosh: 15"
+    }
+   ]
+  },
+  {
+   "id": "basics-k29",
+   "title": {
+    "uz": "Ekranga quyidagicha chiqaring:"
+   },
+   "statement": {
+    "uz": "Ekranga quyidagicha chiqaring:\nMaktab: 45-maktab\nSinf: 8-A"
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "Maktab: 45-maktab\nSinf: 8-A"
+    }
+   ]
+  },
+  {
+   "id": "basics-k30",
+   "title": {
+    "uz": "x = 8, y = 5 deb oling. Avval x ni, keyin y ni, keyin…"
+   },
+   "statement": {
+    "uz": "x = 8, y = 5 deb oling. Avval x ni, keyin y ni, keyin ularning yig‘indisini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "8\n5\n13"
+    }
+   ]
+  },
+  {
+   "id": "basics-k31",
+   "title": {
+    "uz": "a = 3, b = 4, c = 5 deb oling. a * b + c ni chiqaring."
+   },
+   "statement": {
+    "uz": "a = 3, b = 4, c = 5 deb oling. a * b + c ni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "17"
+    }
+   ]
+  },
+  {
+   "id": "basics-k32",
+   "title": {
+    "uz": "a = 10, b = 2, c = 3 deb oling. a / b * c ni chiqaring."
+   },
+   "statement": {
+    "uz": "a = 10, b = 2, c = 3 deb oling. a / b * c ni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "15"
+    }
+   ]
+  },
+  {
+   "id": "basics-k33",
+   "title": {
+    "uz": "a = 7, b = 1, c = 8 deb oling. (a + b) * c ni chiqaring."
+   },
+   "statement": {
+    "uz": "a = 7, b = 1, c = 8 deb oling. (a + b) * c ni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "64"
+    }
+   ]
+  },
+  {
+   "id": "basics-k34",
+   "title": {
+    "uz": "Bir kg olma 12 000 so‘m. 3 kg olma qancha turishini hisoblang."
+   },
+   "statement": {
+    "uz": "Bir kg olma 12 000 so‘m. 3 kg olma qancha turishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "36000"
+    }
+   ]
+  },
+  {
+   "id": "basics-k35",
+   "title": {
+    "uz": "Daftar 4000 so‘m, ruchka 3000 so‘m. 2 ta daftar + 3 ta ruchka…"
+   },
+   "statement": {
+    "uz": "Daftar 4000 so‘m, ruchka 3000 so‘m. 2 ta daftar + 3 ta ruchka qancha turishini hisoblang."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "17000"
+    }
+   ]
+  },
+  {
+   "id": "basics-k36",
+   "title": {
+    "uz": "a = 2, b = 3, c = 4 deb oling. a * b * c ni chiqaring."
+   },
+   "statement": {
+    "uz": "a = 2, b = 3, c = 4 deb oling. a * b * c ni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "24"
+    }
+   ]
+  },
+  {
+   "id": "basics-k37",
+   "title": {
+    "uz": "a = 20, b = 5, c = 2 deb oling. a - b * c ni chiqaring."
+   },
+   "statement": {
+    "uz": "a = 20, b = 5, c = 2 deb oling. a - b * c ni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "10"
+    }
+   ]
+  },
+  {
+   "id": "basics-k38",
+   "title": {
+    "uz": "a = 16, b = 4, c = 3 deb oling. a / b + c ni chiqaring."
+   },
+   "statement": {
+    "uz": "a = 16, b = 4, c = 3 deb oling. a / b + c ni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "7"
+    }
+   ]
+  },
+  {
+   "id": "basics-k39",
+   "title": {
+    "uz": "Ekranga 5 marta «Salom» so‘zini chiqaring (har biri yangi…"
+   },
+   "statement": {
+    "uz": "Ekranga 5 marta «Salom» so‘zini chiqaring (har biri yangi qatorda)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "Salom\nSalom\nSalom\nSalom\nSalom"
+    }
+   ]
+  },
+  {
+   "id": "basics-k40",
+   "title": {
+    "uz": "Ekranga quyidagicha chiqaring:"
+   },
+   "statement": {
+    "uz": "Ekranga quyidagicha chiqaring:\n1. Kitob\n2. Daftar\n3. Ruchka"
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "1. Kitob\n2. Daftar\n3. Ruchka"
+    }
+   ]
+  },
+  {
+   "id": "basics-k41",
+   "title": {
+    "uz": "a = 5 deb oling. Ekranga «a ning qiymati = 5» deb chiqaring."
+   },
+   "statement": {
+    "uz": "a = 5 deb oling. Ekranga «a ning qiymati = 5» deb chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "a ning qiymati = 5"
+    }
+   ]
+  },
+  {
+   "id": "basics-k42",
+   "title": {
+    "uz": "ism = \"Ali\" deb oling. Ekranga «Salom Ali» deb chiqaring."
+   },
+   "statement": {
+    "uz": "ism = \"Ali\" deb oling. Ekranga «Salom Ali» deb chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "Salom Ali"
+    }
+   ]
+  },
+  {
+   "id": "basics-k43",
+   "title": {
+    "uz": "a = 8, b = 3 deb oling. Avval yig‘indisini, keyin ayirmasini…"
+   },
+   "statement": {
+    "uz": "a = 8, b = 3 deb oling. Avval yig‘indisini, keyin ayirmasini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "11\n5"
+    }
+   ]
+  },
+  {
+   "id": "basics-k44",
+   "title": {
+    "uz": "a = 4 deb oling. a ning qiymatini, keyin a + 1 ni, keyin a +…"
+   },
+   "statement": {
+    "uz": "a = 4 deb oling. a ning qiymatini, keyin a + 1 ni, keyin a + 2 ni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "4\n5\n6"
+    }
+   ]
+  },
+  {
+   "id": "basics-k45",
+   "title": {
+    "uz": "x = 10 deb oling. x ni 1 ga oshirib (x = x + 1), yangi…"
+   },
+   "statement": {
+    "uz": "x = 10 deb oling. x ni 1 ga oshirib (x = x + 1), yangi qiymatini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "11"
+    }
+   ]
+  },
+  {
+   "id": "basics-k46",
+   "title": {
+    "uz": "x = 20 deb oling. x ni 5 ga kamaytirib (x = x - 5), yangi…"
+   },
+   "statement": {
+    "uz": "x = 20 deb oling. x ni 5 ga kamaytirib (x = x - 5), yangi qiymatini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "15"
+    }
+   ]
+  },
+  {
+   "id": "basics-k47",
+   "title": {
+    "uz": "a = 6 deb oling. a ni 2 ga ko‘paytirib, natijani chiqaring."
+   },
+   "statement": {
+    "uz": "a = 6 deb oling. a ni 2 ga ko‘paytirib, natijani chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "12"
+    }
+   ]
+  },
+  {
+   "id": "basics-k48",
+   "title": {
+    "uz": "pul = 50000 deb oling. Undan 12000 so‘m ayirib, qolgan pulni…"
+   },
+   "statement": {
+    "uz": "pul = 50000 deb oling. Undan 12000 so‘m ayirib, qolgan pulni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "38000"
+    }
+   ]
+  },
+  {
+   "id": "basics-k49",
+   "title": {
+    "uz": "son = 15 deb oling. Uni 2 ga bo‘lib, natijani chiqaring."
+   },
+   "statement": {
+    "uz": "son = 15 deb oling. Uni 2 ga bo‘lib, natijani chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "7.5"
+    }
+   ]
+  },
+  {
+   "id": "basics-k50",
+   "title": {
+    "uz": "a = 3, b = 7 deb oling. a ning kvadrati + b ning kvadratini…"
+   },
+   "statement": {
+    "uz": "a = 3, b = 7 deb oling. a ning kvadrati + b ning kvadratini hisoblang va chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "58"
+    }
+   ]
+  },
+  {
+   "id": "basics-k51",
+   "title": {
+    "uz": "a = 9, b = 2, c = 4 deb oling. (a + b) * c - a ni hisoblang…"
+   },
+   "statement": {
+    "uz": "a = 9, b = 2, c = 4 deb oling. (a + b) * c - a ni hisoblang va chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "35"
+    }
+   ]
+  },
+  {
+   "id": "basics-k52",
+   "title": {
+    "uz": "a = 12, b = 5 deb oling. Avval a * b ni, keyin a + b ni…"
+   },
+   "statement": {
+    "uz": "a = 12, b = 5 deb oling. Avval a * b ni, keyin a + b ni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "60\n17"
+    }
+   ]
+  },
+  {
+   "id": "basics-k53",
+   "title": {
+    "uz": "yosh = 14 deb oling. Ekranga «Mening yoshim 14 da» deb…"
+   },
+   "statement": {
+    "uz": "yosh = 14 deb oling. Ekranga «Mening yoshim 14 da» deb chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "Mening yoshim 14 da"
+    }
+   ]
+  },
+  {
+   "id": "basics-k54",
+   "title": {
+    "uz": "sinf = 8 deb oling. Ekranga «Men 8-sinfda o‘qiyman» deb…"
+   },
+   "statement": {
+    "uz": "sinf = 8 deb oling. Ekranga «Men 8-sinfda o‘qiyman» deb chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "Men 8-sinfda o'qiyman"
+    }
+   ]
+  },
+  {
+   "id": "basics-k55",
+   "title": {
+    "uz": "a = 5, b = 5 deb oling. Ularning yig‘indisi va ko‘paytmasini…"
+   },
+   "statement": {
+    "uz": "a = 5, b = 5 deb oling. Ularning yig‘indisi va ko‘paytmasini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "10\n25"
+    }
+   ]
+  },
+  {
+   "id": "basics-k56",
+   "title": {
+    "uz": "a = 10 deb oling. a ni uch marta chiqaring (har biri yangi…"
+   },
+   "statement": {
+    "uz": "a = 10 deb oling. a ni uch marta chiqaring (har biri yangi qatorda)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "10\n10\n10"
+    }
+   ]
+  },
+  {
+   "id": "basics-k57",
+   "title": {
+    "uz": "narx = 4000 deb oling. 3 ta mahsulot qancha turishini…"
+   },
+   "statement": {
+    "uz": "narx = 4000 deb oling. 3 ta mahsulot qancha turishini hisoblang va chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "12000"
+    }
+   ]
+  },
+  {
+   "id": "basics-k58",
+   "title": {
+    "uz": "a = 2, b = 3, c = 4, d = 5 deb oling. a * b + c * d ni…"
+   },
+   "statement": {
+    "uz": "a = 2, b = 3, c = 4, d = 5 deb oling. a * b + c * d ni hisoblang va chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "26"
+    }
+   ]
+  },
+  {
+   "id": "basics-k59",
+   "title": {
+    "uz": "x = 7 deb oling. x * x * x ni hisoblang (kubini) va chiqaring."
+   },
+   "statement": {
+    "uz": "x = 7 deb oling. x * x * x ni hisoblang (kubini) va chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "343"
+    }
+   ]
+  },
+  {
+   "id": "basics-k60",
+   "title": {
+    "uz": "Ekranga quyidagicha chiqaring:"
+   },
+   "statement": {
+    "uz": "Ekranga quyidagicha chiqaring:\n1-qadam\n2-qadam\n3-qadam"
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "1-qadam\n2-qadam\n3-qadam"
+    }
+   ]
+  },
+  {
+   "id": "basics-k61",
+   "title": {
+    "uz": "a = 16, b = 4 deb oling. a / b va a - b ni chiqaring."
+   },
+   "statement": {
+    "uz": "a = 16, b = 4 deb oling. a / b va a - b ni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "4\n12"
+    }
+   ]
+  },
+  {
+   "id": "basics-k62",
+   "title": {
+    "uz": "a = 11, b = 3, c = 2 deb oling. a - b * c ni hisoblang va…"
+   },
+   "statement": {
+    "uz": "a = 11, b = 3, c = 2 deb oling. a - b * c ni hisoblang va chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "5"
+    }
+   ]
+  },
+  {
+   "id": "basics-k63",
+   "title": {
+    "uz": "ball1 = 5, ball2 = 4, ball3 = 5 deb oling. Uchta bahoning…"
+   },
+   "statement": {
+    "uz": "ball1 = 5, ball2 = 4, ball3 = 5 deb oling. Uchta bahoning yig‘indisini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "14"
+    }
+   ]
+  },
+  {
+   "id": "basics-k64",
+   "title": {
+    "uz": "a = 8 deb oling. a ni 1 ga oshirib, keyin yana 1 ga oshirib,…"
+   },
+   "statement": {
+    "uz": "a = 8 deb oling. a ni 1 ga oshirib, keyin yana 1 ga oshirib, oxirgi qiymatni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "10"
+    }
+   ]
+  },
+  {
+   "id": "basics-k65",
+   "title": {
+    "uz": "x = 100 deb oling. Undan 25 ni ayirib, keyin 10 ni qo‘shib,…"
+   },
+   "statement": {
+    "uz": "x = 100 deb oling. Undan 25 ni ayirib, keyin 10 ni qo‘shib, natijani chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "85"
+    }
+   ]
+  }
+ ]
 }

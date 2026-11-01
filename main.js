@@ -1,5 +1,5 @@
 'use strict';
-const { app, BrowserWindow, ipcMain } = require('electron');
+const { app, BrowserWindow, ipcMain, Menu } = require('electron');
 const fs = require('fs'), path = require('path'), https = require('https'), crypto = require('crypto'), os = require('os');
 const { pathToFileURL } = require('url');
 app.setPath('userData', path.join(app.getPath('appData'), 'Flowgorithm Academy'));   // keep existing activation + progress after the rename to Mirae Flow
@@ -16,8 +16,8 @@ const loadTopics = () => { const d = path.join(__dirname, 'content', 'topics');
   topics = fs.readdirSync(d).filter(f => f.endsWith('.json')).sort().map(f => JSON.parse(fs.readFileSync(path.join(d, f), 'utf8'))).sort((a, b) => a.order - b.order); };
 const pub = p => ({ judged: !!(p.judge && p.tests.length), id: p.id, title: p.title, statement: p.statement, inputFormat: p.inputFormat, outputFormat: p.outputFormat,
   examples: p.tests.filter(t => !t.hidden).slice(0, 2).map(t => ({ in: t.in, out: t.out })) });
-const has = p => p.tests.length > 0;   // a problem is shown only when it has a verified checker
-const publicTopics = () => topics.map(t => ({ id: t.id, order: t.order, title: t.title, lesson: t.lesson, classwork: t.classwork.filter(has).map(pub), homework: t.homework.filter(has).map(pub), extra: (t.extra || []).filter(has).map(pub), practice: (t.practice || []).filter(has).map(pub), book: (t.book || []).filter(has).map(pub), pending: [...t.classwork, ...t.homework, ...(t.extra || []), ...(t.practice || []), ...(t.book || [])].filter(p => !has(p)).length }));
+const has = () => true;   // every problem is shown; those without tests are self-check (Run + “Mark as done”)
+const publicTopics = () => topics.map(t => ({ id: t.id, order: t.order, title: t.title, lesson: t.lesson, classwork: t.classwork.filter(has).map(pub), homework: t.homework.filter(has).map(pub), extra: (t.extra || []).filter(has).map(pub), practice: (t.practice || []).filter(has).map(pub), book: (t.book || []).filter(has).map(pub), pending: [...t.classwork, ...t.homework, ...(t.extra || []), ...(t.practice || []), ...(t.book || [])].filter(p => !p.tests.length).length }));
 
 // ---- activation (one-time Telegram code) ----
 const salt = crypto.randomBytes(16).toString('hex'), hash = c => crypto.createHash('sha256').update(c + salt).digest();
@@ -93,5 +93,5 @@ function createWindow() {
   w.once('ready-to-show', () => w.show()); w.loadFile(path.join(__dirname, 'renderer', 'index.html'));
 }
 if (!app.requestSingleInstanceLock()) app.quit();
-else app.whenReady().then(() => { loadTopics(); createWindow(); app.on('activate', () => BrowserWindow.getAllWindows().length || createWindow()); });
+else app.whenReady().then(() => { if (process.platform !== 'darwin') Menu.setApplicationMenu(null); loadTopics(); createWindow(); app.on('activate', () => BrowserWindow.getAllWindows().length || createWindow()); });
 app.on('window-all-closed', () => process.platform === 'darwin' || app.quit());

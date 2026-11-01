@@ -150,8 +150,9 @@ const NUM = /^[-+]?(\d+\.?\d*|\.\d+)$/;
 const numsEq = (a, b, eps) => Math.abs(a - b) <= eps * Math.max(1, Math.abs(b));
 /** modes: 'tokens' (default: whitespace tokens, numbers with tolerance), 'numbers' (only numbers, ignores prompt text), 'exact' */
 export function compare(got, exp, { mode = 'tokens', eps = 1e-6 } = {}) {
-  const fixq = s => s.replace(/[‘’ʻʼ`´]/g, "'"); got = fixq(got); exp = fixq(exp);   // students type ’ or ' — treat alike
+  const fixq = s => s.replace(/[‘’ʻʼ`´]/g, "'").replace(/[–—]/g, '-'); got = fixq(got); exp = fixq(exp);   // students type ’ or ' — treat alike
   if (mode === 'exact') { const n = s => s.replace(/\r/g, '').split('\n').map(l => l.trimEnd()).join('\n').trimEnd(); return n(got) === n(exp); }
+  if (mode === 'shape') { const n = s => s.replace(/\r/g, '').split('\n').map(l => l.replace(/\s+/g, '')).join('\n').replace(/^\n+|\n+$/g, ''); return n(got) === n(exp); }
   if (mode === 'lines') { const n = s => s.replace(/\r/g, '').split('\n').map(l => l.trim().split(/\s+/).filter(Boolean).join(' ')).join('\n').replace(/^\n+|\n+$/g, ''); return n(got) === n(exp); }
   const toks = s => mode === 'numbers' ? (s.match(/[-+]?\d+\.?\d*|[-+]?\.\d+/g) || []) : s.split(/\s+/).filter(Boolean);
   const a = toks(got), b = toks(exp); if (a.length !== b.length) return false;
