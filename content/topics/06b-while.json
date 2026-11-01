@@ -9,9 +9,804 @@
   "uz": "While shart rost bo'lguncha takrorlaydi. Necha marta takrorlanishi oldindan noma'lum bo'lganda ishlating.",
   "en": "While repeats as long as a condition is true. Use it when you do not know in advance how many repetitions you need."
  },
- "classwork": [],
- "homework": [],
- "extra": [],
+ "classwork": [
+  {
+   "id": "while-c01",
+   "title": {
+    "uz": "PIN urinishlari"
+   },
+   "statement": {
+    "uz": "To'g'ri PIN — 1234. Urinishlar birma-bir kiritiladi, 1234 kiritilganda to'xtaydi. Jami nechta urinish bo'lganini chiqaring (to'g'ri urinish ham hisobda)."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n1234",
+     "out": "2"
+    },
+    {
+     "in": "1234",
+     "out": "1"
+    },
+    {
+     "in": "7\n8\n9\n1234",
+     "out": "4",
+     "hidden": true
+    },
+    {
+     "in": "0\n1234",
+     "out": "2",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-c02",
+   "title": {
+    "uz": "Kassa cheki"
+   },
+   "statement": {
+    "uz": "Mahsulot narxlari birma-bir kiritiladi, 0 kiritilsa chek yopiladi. Jami summani chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5000\n3000\n0",
+     "out": "8000"
+    },
+    {
+     "in": "0",
+     "out": "0"
+    },
+    {
+     "in": "100\n200\n300\n0",
+     "out": "600",
+     "hidden": true
+    },
+    {
+     "in": "1\n0",
+     "out": "1",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-c03",
+   "title": {
+    "uz": "Eng baland o'quvchi"
+   },
+   "statement": {
+    "uz": "Bo'ylar (sm) birma-bir kiritiladi, 0 kiritilsa tugaydi (kamida bitta bo'y bor). Eng baland bo'yni chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "150\n162\n158\n0",
+     "out": "162"
+    },
+    {
+     "in": "140\n0",
+     "out": "140"
+    },
+    {
+     "in": "170\n169\n171\n0",
+     "out": "171",
+     "hidden": true
+    },
+    {
+     "in": "155\n155\n0",
+     "out": "155",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-c04",
+   "title": {
+    "uz": "Kunlik suv"
+   },
+   "statement": {
+    "uz": "Har safar ichilgan stakan soni kiritiladi. Jami 8 stakanga yetguncha (yoki oshguncha) kiritiladi. Necha marta suv ichilganini chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "3\n2\n4",
+     "out": "3"
+    },
+    {
+     "in": "8",
+     "out": "1"
+    },
+    {
+     "in": "1\n1\n1\n1\n1\n1\n1\n1",
+     "out": "8",
+     "hidden": true
+    },
+    {
+     "in": "5\n5",
+     "out": "2",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-c05",
+   "title": {
+    "uz": "Qadam maqsadi"
+   },
+   "statement": {
+    "uz": "Maqsad — 10000 qadam. Har safar yurilgan qadamlar kiritiladi va yig'iladi; maqsadga yetganda to'xtaydi. Necha marta kiritilganini chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "4000\n3000\n3000",
+     "out": "3"
+    },
+    {
+     "in": "10000",
+     "out": "1"
+    },
+    {
+     "in": "2000\n2000\n2000\n2000\n2000",
+     "out": "5",
+     "hidden": true
+    },
+    {
+     "in": "9999\n1",
+     "out": "2",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-c06",
+   "title": {
+    "uz": "Sovuqqacha"
+   },
+   "statement": {
+    "uz": "Harorat birma-bir kiritiladi, 0 dan past harorat kiritilganda to'xtaydi. Nechta kunda harorat 0 yoki yuqori bo'lganini chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n3\n0\n-2",
+     "out": "3"
+    },
+    {
+     "in": "-1",
+     "out": "0"
+    },
+    {
+     "in": "10\n-5",
+     "out": "1",
+     "hidden": true
+    },
+    {
+     "in": "0\n0\n-1",
+     "out": "2",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-c07",
+   "title": {
+    "uz": "Bankomat so'rovlari"
+   },
+   "statement": {
+    "uz": "Avval hisobdagi pul B kiritiladi. Keyin yechish summalari birma-bir kiritiladi: summa qolgan pulga yetsa “Berildi” (pul kamayadi), yetmasa “Yetmaydi” va dastur to'xtaydi. Har so'rov natijasini alohida qatorda chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "100\n30\n50\n40",
+     "out": "Berildi\nBerildi\nYetmaydi"
+    },
+    {
+     "in": "100\n200",
+     "out": "Yetmaydi"
+    },
+    {
+     "in": "50\n10\n20\n20\n5",
+     "out": "Berildi\nBerildi\nBerildi\nYetmaydi",
+     "hidden": true
+    },
+    {
+     "in": "10\n10\n1",
+     "out": "Berildi\nYetmaydi",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-c08",
+   "title": {
+    "uz": "Tanlov ballari"
+   },
+   "statement": {
+    "uz": "Ballar birma-bir kiritiladi, -1 kiritilsa tugaydi. Ballar o'rtachasini (kasr bilan) chiqaring (kamida bitta ball bor)."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "80\n90\n100\n-1",
+     "out": "90"
+    },
+    {
+     "in": "50\n-1",
+     "out": "50"
+    },
+    {
+     "in": "70\n71\n-1",
+     "out": "70.5",
+     "hidden": true
+    },
+    {
+     "in": "0\n100\n-1",
+     "out": "50",
+     "hidden": true
+    }
+   ]
+  }
+ ],
+ "homework": [
+  {
+   "id": "while-h01",
+   "title": {
+    "uz": "Birinchi juft son"
+   },
+   "statement": {
+    "uz": "Sonlar birma-bir kiritiladi, birinchi juft son (son mod 2 = 0) kiritilganda to'xtaydi. Juft son nechanchi bo'lib kiritilganini chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "3\n5\n8",
+     "out": "3"
+    },
+    {
+     "in": "2",
+     "out": "1"
+    },
+    {
+     "in": "7\n9\n11\n4",
+     "out": "4",
+     "hidden": true
+    },
+    {
+     "in": "1\n3\n5\n7\n10",
+     "out": "5",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-h02",
+   "title": {
+    "uz": "Takroriy son"
+   },
+   "statement": {
+    "uz": "Sonlar birma-bir kiritiladi. Ketma-ket ikki marta bir xil son kiritilganda to'xtaydi. Jami nechta son kiritilganini chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "1\n2\n2",
+     "out": "3"
+    },
+    {
+     "in": "5\n5",
+     "out": "2"
+    },
+    {
+     "in": "1\n2\n3\n3",
+     "out": "4",
+     "hidden": true
+    },
+    {
+     "in": "4\n3\n4\n4",
+     "out": "4",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-h03",
+   "title": {
+    "uz": "Lift yuki"
+   },
+   "statement": {
+    "uz": "Liftga odamlar birin-ketin kiradi, har birining og'irligi (kg) kiritiladi. Lift 300 kg ko'tara oladi. Yangi odam kirsa jami og'irlik 300 dan oshsa, u kirmaydi va dastur to'xtaydi. Nechta odam kirganini chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "70\n80\n90\n100",
+     "out": "3"
+    },
+    {
+     "in": "310",
+     "out": "0"
+    },
+    {
+     "in": "100\n100\n100\n1",
+     "out": "3",
+     "hidden": true
+    },
+    {
+     "in": "50\n60\n200",
+     "out": "2",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-h04",
+   "title": {
+    "uz": "Yangi rekord"
+   },
+   "statement": {
+    "uz": "Natijalar birma-bir kiritiladi, 0 kiritilsa tugaydi. Oldingi barcha natijalardan yuqori bo'lgan (yangi rekord) natijalar nechta? Birinchi natija ham rekord hisoblanadi."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n3\n7\n7\n9\n0",
+     "out": "3"
+    },
+    {
+     "in": "4\n0",
+     "out": "1"
+    },
+    {
+     "in": "1\n2\n3\n0",
+     "out": "3",
+     "hidden": true
+    },
+    {
+     "in": "9\n8\n7\n0",
+     "out": "1",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-h05",
+   "title": {
+    "uz": "Chipta sotuvi"
+   },
+   "statement": {
+    "uz": "Zalda 20 ta o'rin bor. Xaridorlar birin-ketin necha chipta olmoqchi ekanini kiritadi. O'rin yetsa sotiladi, yetmasa dastur to'xtaydi. Avval nechta xaridorga sotilganini, keyin nechta o'rin qolganini alohida qatorlarda chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n10\n6",
+     "out": "2\n5"
+    },
+    {
+     "in": "21",
+     "out": "0\n20"
+    },
+    {
+     "in": "4\n4\n4\n4\n4\n1",
+     "out": "5\n0",
+     "hidden": true
+    },
+    {
+     "in": "20\n1",
+     "out": "1\n0",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-h06",
+   "title": {
+    "uz": "Marafon"
+   },
+   "statement": {
+    "uz": "Maqsad — 100 km. Har kuni yugurilgan km kiritiladi va yig'iladi; 100 ga yetganda to'xtaydi. Avval necha kunda yetilganini, keyin ortiqcha km ni (100 dan oshgani; aniq 100 bo'lsa 0) alohida qatorlarda chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "30\n40\n50",
+     "out": "3\n20"
+    },
+    {
+     "in": "100",
+     "out": "1\n0"
+    },
+    {
+     "in": "60\n40",
+     "out": "2\n0",
+     "hidden": true
+    },
+    {
+     "in": "20\n20\n20\n20\n30",
+     "out": "5\n10",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-h07",
+   "title": {
+    "uz": "Ro'yxatdan chiqish"
+   },
+   "statement": {
+    "uz": "Ismlar birma-bir kiritiladi (String), “STOP” kiritilsa tugaydi. STOP gacha nechta ism kiritilganini chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "Ali\nVali\nSTOP",
+     "out": "2"
+    },
+    {
+     "in": "STOP",
+     "out": "0"
+    },
+    {
+     "in": "Madina\nSTOP",
+     "out": "1",
+     "hidden": true
+    },
+    {
+     "in": "a\nb\nc\nSTOP",
+     "out": "3",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-h08",
+   "title": {
+    "uz": "O'sib boruvchi ketma-ketlik"
+   },
+   "statement": {
+    "uz": "Sonlar birma-bir kiritiladi. Har yangi son oldingisidan qat'iy katta bo'lishi kerak; shart buzilganda to'xtaydi. Buzilguncha nechta son to'g'ri tartibda kelganini chiqaring (buzgan son hisobga kirmaydi)."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "1\n2\n3\n3",
+     "out": "3"
+    },
+    {
+     "in": "5\n4",
+     "out": "1"
+    },
+    {
+     "in": "1\n5\n9\n2",
+     "out": "3",
+     "hidden": true
+    },
+    {
+     "in": "7\n7",
+     "out": "1",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-h09",
+   "title": {
+    "uz": "Ob-havo kuzatuvi"
+   },
+   "statement": {
+    "uz": "Harorat birma-bir kiritiladi. Ketma-ket 3 kun harorat 30 yoki undan yuqori bo'lganda to'xtaydi. Shu uchinchi kun jami nechanchi kiritilganini chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "31\n32\n33",
+     "out": "3"
+    },
+    {
+     "in": "31\n25\n31\n32\n33",
+     "out": "5"
+    },
+    {
+     "in": "30\n30\n30",
+     "out": "3",
+     "hidden": true
+    },
+    {
+     "in": "40\n10\n40\n40\n40",
+     "out": "5",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-h10",
+   "title": {
+    "uz": "Bank limiti"
+   },
+   "statement": {
+    "uz": "Bank kuniga 1000000 so'mgacha yechishga ruxsat beradi. Yechish summalari birma-bir kiritiladi; yangi summa qo'shilganda jami limitdan oshsa, u rad etiladi va dastur to'xtaydi. Muvaffaqiyatli yechilgan jami summani chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "400000\n500000\n200000",
+     "out": "900000"
+    },
+    {
+     "in": "1000000\n1",
+     "out": "1000000"
+    },
+    {
+     "in": "2000000",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "300000\n300000\n300000\n300000",
+     "out": "900000",
+     "hidden": true
+    }
+   ]
+  }
+ ],
+ "extra": [
+  {
+   "id": "while-x01",
+   "title": {
+    "uz": "Stakanlar soni"
+   },
+   "statement": {
+    "uz": "Idishda V millilitr suv bor. Bitta stakanga 250 ml quyiladi. Nechta to'liq stakan to'ladi?"
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "1000",
+     "out": "4"
+    },
+    {
+     "in": "249",
+     "out": "0"
+    },
+    {
+     "in": "1250",
+     "out": "5",
+     "hidden": true
+    },
+    {
+     "in": "250",
+     "out": "1",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-x02",
+   "title": {
+    "uz": "O'yin raundlari"
+   },
+   "statement": {
+    "uz": "O'yinda ballar har raundda kiritiladi. Ketma-ket 3 ta raundda ball 10 dan past bo'lsa o'yin tugaydi. Jami nechta raund o'ynalganini chiqaring (oxirgisi ham hisobda)."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "50\n5\n5\n5",
+     "out": "4"
+    },
+    {
+     "in": "1\n1\n1",
+     "out": "3"
+    },
+    {
+     "in": "20\n5\n5\n30\n5\n5\n5",
+     "out": "7",
+     "hidden": true
+    },
+    {
+     "in": "9\n9\n10\n9\n9\n9",
+     "out": "6",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-x03",
+   "title": {
+    "uz": "Parolni tasdiqlash"
+   },
+   "statement": {
+    "uz": "Parol juft-juft kiritiladi (parol va uning takrori). Ikkalasi bir xil bo'lguncha takrorlanadi. Nechanchi juftlikda mos kelganini chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "1\n2\n3\n3",
+     "out": "2"
+    },
+    {
+     "in": "5\n5",
+     "out": "1"
+    },
+    {
+     "in": "1\n2\n2\n1\n4\n4",
+     "out": "3",
+     "hidden": true
+    },
+    {
+     "in": "7\n8\n9\n9",
+     "out": "2",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-x04",
+   "title": {
+    "uz": "Birinchi katta xarid"
+   },
+   "statement": {
+    "uz": "Xarid summalari birma-bir kiritiladi. Umumiy summa 500000 dan oshganda to'xtaydi. Necha xariddan keyin oshganini chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "200000\n200000\n200000",
+     "out": "3"
+    },
+    {
+     "in": "600000",
+     "out": "1"
+    },
+    {
+     "in": "100000\n100000\n100000\n100000\n100001",
+     "out": "5",
+     "hidden": true
+    },
+    {
+     "in": "250000\n250000\n1",
+     "out": "3",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-x05",
+   "title": {
+    "uz": "Eng uzun sovuq davr"
+   },
+   "statement": {
+    "uz": "Harorat birma-bir kiritiladi, 99 kiritilsa tugaydi. Ketma-ket eng ko'p necha kun harorat 0 dan past bo'lganini chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "-1\n-2\n3\n-1\n-2\n-3\n99",
+     "out": "3"
+    },
+    {
+     "in": "5\n99",
+     "out": "0"
+    },
+    {
+     "in": "-5\n99",
+     "out": "1",
+     "hidden": true
+    },
+    {
+     "in": "-1\n1\n-1\n1\n99",
+     "out": "1",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-x06",
+   "title": {
+    "uz": "Chipta raqami xonalari"
+   },
+   "statement": {
+    "uz": "Chipta raqami (musbat butun) kiritiladi. U necha xonali ekanini chiqaring: raqamni 10 ga bo'lib (div) borib, qancha marta bo'lganingizni sanang."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "7",
+     "out": "1"
+    },
+    {
+     "in": "305",
+     "out": "3"
+    },
+    {
+     "in": "10",
+     "out": "2",
+     "hidden": true
+    },
+    {
+     "in": "99999",
+     "out": "5",
+     "hidden": true
+    }
+   ]
+  }
+ ],
  "practice": [
   {
    "id": "while-p01",
@@ -189,6 +984,802 @@
     {
      "in": "4321\n1234",
      "out": "Ochildi",
+     "hidden": true
+    }
+   ]
+  }
+ ],
+ "book": [
+  {
+   "id": "while-w01",
+   "title": {
+    "uz": "1 dan 10 gacha"
+   },
+   "statement": {
+    "uz": "1 dan 10 gacha bo'lgan sonlarni While yordamida chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+    }
+   ]
+  },
+  {
+   "id": "while-w02",
+   "title": {
+    "uz": "1 dan 20 gacha"
+   },
+   "statement": {
+    "uz": "1 dan 20 gacha bo'lgan sonlarni While yordamida chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20"
+    }
+   ]
+  },
+  {
+   "id": "while-w03",
+   "title": {
+    "uz": "10 dan 1 gacha"
+   },
+   "statement": {
+    "uz": "10 dan 1 gacha teskari tartibda sonlarni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "10\n9\n8\n7\n6\n5\n4\n3\n2\n1"
+    }
+   ]
+  },
+  {
+   "id": "while-w04",
+   "title": {
+    "uz": "1 dan 15 gacha yig'indi"
+   },
+   "statement": {
+    "uz": "1 dan 15 gacha bo'lgan sonlarning yig'indisini While bilan toping va chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "120"
+    }
+   ]
+  },
+  {
+   "id": "while-w05",
+   "title": {
+    "uz": "1 dan n gacha"
+   },
+   "statement": {
+    "uz": "n kiritiladi. 1 dan n gacha bo'lgan sonlarni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1"
+    },
+    {
+     "in": "5",
+     "out": "1\n2\n3\n4\n5"
+    },
+    {
+     "in": "8",
+     "out": "1\n2\n3\n4\n5\n6\n7\n8",
+     "hidden": true
+    },
+    {
+     "in": "3",
+     "out": "1\n2\n3",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-w06",
+   "title": {
+    "uz": "1 dan n gacha yig'indi"
+   },
+   "statement": {
+    "uz": "n kiritiladi. 1 dan n gacha bo'lgan sonlarning yig'indisini toping."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1"
+    },
+    {
+     "in": "5",
+     "out": "15"
+    },
+    {
+     "in": "10",
+     "out": "55",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "5050",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-w07",
+   "title": {
+    "uz": "30 gacha juft sonlar"
+   },
+   "statement": {
+    "uz": "1 dan 30 gacha bo'lgan juft sonlarni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "2\n4\n6\n8\n10\n12\n14\n16\n18\n20\n22\n24\n26\n28\n30"
+    }
+   ]
+  },
+  {
+   "id": "while-w08",
+   "title": {
+    "uz": "40 gacha toq sonlar"
+   },
+   "statement": {
+    "uz": "1 dan 40 gacha bo'lgan toq sonlarni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "1\n3\n5\n7\n9\n11\n13\n15\n17\n19\n21\n23\n25\n27\n29\n31\n33\n35\n37\n39"
+    }
+   ]
+  },
+  {
+   "id": "while-w09",
+   "title": {
+    "uz": "n gacha juft sonlar"
+   },
+   "statement": {
+    "uz": "n kiritiladi (n ≥ 2). 1 dan n gacha juft sonlarni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "2",
+     "out": "2"
+    },
+    {
+     "in": "7",
+     "out": "2\n4\n6"
+    },
+    {
+     "in": "10",
+     "out": "2\n4\n6\n8\n10",
+     "hidden": true
+    },
+    {
+     "in": "5",
+     "out": "2\n4",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-w10",
+   "title": {
+    "uz": "Salom 8 marta"
+   },
+   "statement": {
+    "uz": "Ekranga While yordamida 8 marta “Salom” so'zini chiqaring (har biri alohida qatorda)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "Salom\nSalom\nSalom\nSalom\nSalom\nSalom\nSalom\nSalom"
+    }
+   ]
+  },
+  {
+   "id": "while-w11",
+   "title": {
+    "uz": "Ismni 5 marta"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ismini kiritadi (String). Ismni 5 marta chiqaring (har biri alohida qatorda)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "Ali",
+     "out": "Ali\nAli\nAli\nAli\nAli"
+    },
+    {
+     "in": "Madina",
+     "out": "Madina\nMadina\nMadina\nMadina\nMadina"
+    },
+    {
+     "in": "Jasur",
+     "out": "Jasur\nJasur\nJasur\nJasur\nJasur",
+     "hidden": true
+    },
+    {
+     "in": "Zilola",
+     "out": "Zilola\nZilola\nZilola\nZilola\nZilola",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-w12",
+   "title": {
+    "uz": "Salom n marta"
+   },
+   "statement": {
+    "uz": "n kiritiladi. “Salom” so'zini n marta chiqaring (har biri alohida qatorda)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "Salom"
+    },
+    {
+     "in": "3",
+     "out": "Salom\nSalom\nSalom"
+    },
+    {
+     "in": "5",
+     "out": "Salom\nSalom\nSalom\nSalom\nSalom",
+     "hidden": true
+    },
+    {
+     "in": "2",
+     "out": "Salom\nSalom",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-w13",
+   "title": {
+    "uz": "50 gacha 5 ga bo'linadiganlar"
+   },
+   "statement": {
+    "uz": "1 dan 50 gacha bo'lgan sonlar orasida 5 ga bo'linadiganlarini (son mod 5 = 0) chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "5\n10\n15\n20\n25\n30\n35\n40\n45\n50"
+    }
+   ]
+  },
+  {
+   "id": "while-w14",
+   "title": {
+    "uz": "Juft sonlar soni"
+   },
+   "statement": {
+    "uz": "n kiritiladi. 1 dan n gacha sonlar orasida nechta juft son borligini toping."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "0"
+    },
+    {
+     "in": "10",
+     "out": "5"
+    },
+    {
+     "in": "7",
+     "out": "3",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "50",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-w15",
+   "title": {
+    "uz": "20 gacha kvadratlar"
+   },
+   "statement": {
+    "uz": "1 dan 20 gacha bo'lgan har bir sonning kvadratini (son × son) chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "1\n4\n9\n16\n25\n36\n49\n64\n81\n100\n121\n144\n169\n196\n225\n256\n289\n324\n361\n400"
+    }
+   ]
+  },
+  {
+   "id": "while-w16",
+   "title": {
+    "uz": "n gacha kvadratlar"
+   },
+   "statement": {
+    "uz": "n kiritiladi. 1 dan n gacha bo'lgan har bir sonning kvadratini (son × son) chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1"
+    },
+    {
+     "in": "4",
+     "out": "1\n4\n9\n16"
+    },
+    {
+     "in": "7",
+     "out": "1\n4\n9\n16\n25\n36\n49",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "1\n4\n9\n16\n25\n36\n49\n64\n81\n100",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-w17",
+   "title": {
+    "uz": "20 dan teskari juft sonlar"
+   },
+   "statement": {
+    "uz": "20 dan 1 gacha teskari tartibda juft sonlarni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "20\n18\n16\n14\n12\n10\n8\n6\n4\n2"
+    }
+   ]
+  },
+  {
+   "id": "while-w18",
+   "title": {
+    "uz": "a dan b gacha"
+   },
+   "statement": {
+    "uz": "a va b kiritiladi (a ≤ b). a dan b gacha sonlarni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1\n5",
+     "out": "1\n2\n3\n4\n5"
+    },
+    {
+     "in": "3\n3",
+     "out": "3"
+    },
+    {
+     "in": "10\n14",
+     "out": "10\n11\n12\n13\n14",
+     "hidden": true
+    },
+    {
+     "in": "-2\n2",
+     "out": "-2\n-1\n0\n1\n2",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-w19",
+   "title": {
+    "uz": "a dan b gacha yig'indi"
+   },
+   "statement": {
+    "uz": "a va b kiritiladi (a ≤ b). a dan b gacha bo'lgan sonlar yig'indisini toping."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1\n5",
+     "out": "15"
+    },
+    {
+     "in": "3\n3",
+     "out": "3"
+    },
+    {
+     "in": "10\n14",
+     "out": "60",
+     "hidden": true
+    },
+    {
+     "in": "-2\n2",
+     "out": "0",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-w20",
+   "title": {
+    "uz": "3 ga ham 5 ga ham bo'linadiganlar"
+   },
+   "statement": {
+    "uz": "1 dan 100 gacha sonlar orasida 3 ga ham, 5 ga ham bo'linadiganlarini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "15\n30\n45\n60\n75\n90"
+    }
+   ]
+  },
+  {
+   "id": "while-w21",
+   "title": {
+    "uz": "Toq sonlar yig'indisi"
+   },
+   "statement": {
+    "uz": "n kiritiladi. 1 dan n gacha toq sonlarning yig'indisini toping."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1"
+    },
+    {
+     "in": "10",
+     "out": "25"
+    },
+    {
+     "in": "7",
+     "out": "16",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "2500",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-w22",
+   "title": {
+    "uz": "Ism va n"
+   },
+   "statement": {
+    "uz": "Avval ism (String), keyin n kiritiladi. Ismni n marta chiqaring (har biri alohida qatorda)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "Ali\n3",
+     "out": "Ali\nAli\nAli"
+    },
+    {
+     "in": "Madina\n1",
+     "out": "Madina"
+    },
+    {
+     "in": "Jasur\n5",
+     "out": "Jasur\nJasur\nJasur\nJasur\nJasur",
+     "hidden": true
+    },
+    {
+     "in": "Zilola\n2",
+     "out": "Zilola\nZilola",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-w23",
+   "title": {
+    "uz": "15 dan katta bo'lsa Salom"
+   },
+   "statement": {
+    "uz": "1 dan 30 gacha sonlarni chiqaring. Son 15 dan katta bo'lsa, uning yoniga “Salom” deb yozing (masalan: 16 Salom)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12\n13\n14\n15\n16 Salom\n17 Salom\n18 Salom\n19 Salom\n20 Salom\n21 Salom\n22 Salom\n23 Salom\n24 Salom\n25 Salom\n26 Salom\n27 Salom\n28 Salom\n29 Salom\n30 Salom"
+    }
+   ]
+  },
+  {
+   "id": "while-w24",
+   "title": {
+    "uz": "n dan 1 gacha"
+   },
+   "statement": {
+    "uz": "n kiritiladi. n dan 1 gacha teskari tartibda sonlarni chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1"
+    },
+    {
+     "in": "5",
+     "out": "5\n4\n3\n2\n1"
+    },
+    {
+     "in": "3",
+     "out": "3\n2\n1",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "10\n9\n8\n7\n6\n5\n4\n3\n2\n1",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-w25",
+   "title": {
+    "uz": "40 gacha 7 ga bo'linadiganlar"
+   },
+   "statement": {
+    "uz": "1 dan 40 gacha bo'lgan sonlar orasida 7 ga bo'linadiganlarini chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "7\n14\n21\n28\n35"
+    }
+   ]
+  },
+  {
+   "id": "while-w26",
+   "title": {
+    "uz": "Yig'indi va ko'paytma"
+   },
+   "statement": {
+    "uz": "n kiritiladi (n kichik, 1–10). 1 dan n gacha sonlarning avval yig'indisini, keyin ko'paytmasini alohida qatorlarda chiqaring."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1\n1"
+    },
+    {
+     "in": "3",
+     "out": "6\n6"
+    },
+    {
+     "in": "5",
+     "out": "15\n120",
+     "hidden": true
+    },
+    {
+     "in": "6",
+     "out": "21\n720",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-w27",
+   "title": {
+    "uz": "2 qadam bilan"
+   },
+   "statement": {
+    "uz": "n kiritiladi. 1 dan n gacha 2 qadam bilan sonlarni chiqaring (1, 3, 5, ...)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1"
+    },
+    {
+     "in": "10",
+     "out": "1\n3\n5\n7\n9"
+    },
+    {
+     "in": "7",
+     "out": "1\n3\n5\n7",
+     "hidden": true
+    },
+    {
+     "in": "2",
+     "out": "1",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-w28",
+   "title": {
+    "uz": "50 dan 10 gacha, −5 qadam"
+   },
+   "statement": {
+    "uz": "50 dan 10 gacha −5 qadam bilan sonlarni chiqaring (50, 45, 40, ...)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "50\n45\n40\n35\n30\n25\n20\n15\n10"
+    }
+   ]
+  },
+  {
+   "id": "while-w29",
+   "title": {
+    "uz": "4 ga bo'linadiganlar soni"
+   },
+   "statement": {
+    "uz": "n kiritiladi. 1 dan n gacha sonlar orasida nechta son 4 ga bo'linishini (son mod 4 = 0) toping."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3",
+     "out": "0"
+    },
+    {
+     "in": "4",
+     "out": "1"
+    },
+    {
+     "in": "20",
+     "out": "5",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "25",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "while-w30",
+   "title": {
+    "uz": "Juft yoki toq"
+   },
+   "statement": {
+    "uz": "n kiritiladi. 1 dan n gacha sonlarni chiqaring: juft bo'lsa yoniga “Juft”, toq bo'lsa “Toq” deb yozing (masalan: 1 Toq)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1 Toq"
+    },
+    {
+     "in": "4",
+     "out": "1 Toq\n2 Juft\n3 Toq\n4 Juft"
+    },
+    {
+     "in": "5",
+     "out": "1 Toq\n2 Juft\n3 Toq\n4 Juft\n5 Toq",
+     "hidden": true
+    },
+    {
+     "in": "2",
+     "out": "1 Toq\n2 Juft",
      "hidden": true
     }
    ]

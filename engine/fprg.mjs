@@ -152,6 +152,7 @@ const numsEq = (a, b, eps) => Math.abs(a - b) <= eps * Math.max(1, Math.abs(b));
 export function compare(got, exp, { mode = 'tokens', eps = 1e-6 } = {}) {
   const fixq = s => s.replace(/[‘’ʻʼ`´]/g, "'"); got = fixq(got); exp = fixq(exp);   // students type ’ or ' — treat alike
   if (mode === 'exact') { const n = s => s.replace(/\r/g, '').split('\n').map(l => l.trimEnd()).join('\n').trimEnd(); return n(got) === n(exp); }
+  if (mode === 'lines') { const n = s => s.replace(/\r/g, '').split('\n').map(l => l.trim().split(/\s+/).filter(Boolean).join(' ')).join('\n').replace(/^\n+|\n+$/g, ''); return n(got) === n(exp); }
   const toks = s => mode === 'numbers' ? (s.match(/[-+]?\d+\.?\d*|[-+]?\.\d+/g) || []) : s.split(/\s+/).filter(Boolean);
   const a = toks(got), b = toks(exp); if (a.length !== b.length) return false;
   return a.every((x, i) => NUM.test(x) && NUM.test(b[i]) ? numsEq(+x, +b[i], eps) : x === b[i]);

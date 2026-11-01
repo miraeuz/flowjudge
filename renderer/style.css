@@ -84,3 +84,12 @@ progress::-webkit-progress-value{background:linear-gradient(90deg,var(--lapis),v
 .tgl .thumb{position:absolute;top:.2rem;left:.2rem;width:1.7rem;height:1.7rem;border-radius:50%;background:#fff;box-shadow:0 .2rem .6rem rgb(0 0 0/.3);transition:transform .35s cubic-bezier(.3,1.4,.5,1),background .3s}
 .tgl.dark .thumb{transform:translateX(2.2rem);background:#e8ecff}
 .gatelogo{display:grid;justify-items:center;gap:.3rem;margin-top:4vh;text-align:center}.gatelogo .logo{width:4rem;height:4rem;border-radius:1.2rem}.gatelogo b{font:700 1.1rem var(--display)}.gate{margin-top:2vh}
+/* v0.7 — Mirae Flow brand: violet + coral, ghost mascot, "mırae" wordmark */
+:root{--bg:light-dark(#F8F5FF,#0F0A1A);--bg2:light-dark(#EFE9FF,#160F26);--surface:light-dark(#FFFFFF,#1B1330);--surface2:light-dark(#F1EBFF,#241A3F);
+--line:light-dark(#E4DAFB,#33264F);--line2:light-dark(#CDBDF5,#4A3A70);--text:light-dark(#1E1235,#F4EEFF);--text2:light-dark(#4B3D6B,#C4B8E0);--text3:light-dark(#7A6D99,#9486B8);
+--lapis:light-dark(#7C3AED,#A78BFA);--violet:light-dark(#5B21B6,#8B5CF6);--turq:light-dark(#10A37F,#34D399);--ink:light-dark(#fff,#04261d);--gold:light-dark(#F97316,#FB923C);--rose:light-dark(#E11D48,#FB7185);--coral:#FB923C;--shc:light-dark(rgb(91 33 182/.16),rgb(5 2 15/.6))}
+.btn{background:linear-gradient(135deg,#7C3AED,#5B21B6);color:#fff;box-shadow:0 .5rem 1.2rem rgb(124 58 237/.35)}.btn.ghost{background:var(--surface2);color:var(--text);box-shadow:none}
+.logo{border-radius:50%;box-shadow:0 .3rem 1rem rgb(124 58 237/.4);object-fit:cover}.gatelogo .logo{width:5.5rem;height:5.5rem}
+.wm{font:700 1.3rem var(--display);color:var(--lapis);letter-spacing:-.05em}.wm i{font-style:normal;position:relative}.wm i::after{content:"";position:absolute;left:50%;top:.08em;width:.2em;height:.2em;margin-left:-.1em;border-radius:50%;background:var(--coral)}
+.bt{display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:0 .35rem;font-size:1rem}.bt b{color:var(--text);font:600 .9rem var(--display)}.bt .credit{grid-column:1/-1}
+.gatelogo .fl{font:600 1rem var(--display);color:var(--text2)}.eyebrow{color:var(--coral)}.chip.gold{color:var(--coral)}

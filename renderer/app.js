@@ -6,13 +6,13 @@ uz: { tag:"Algoritmlarni amalda o‘rganing", topics:'Mavzular', solved:'Yechilg
   aT:'Faollashtirish', aN:'Ismingiz', aS:'Kod yuborish', aC:'6 xonali kod', aV:'Tasdiqlash', aH:'Kod Telegram botga yuboriladi. Uni administratordan oling.', sent:'Kod yuborildi. 10 daqiqa amal qiladi.',
   name:'Ismni kiriting', not_configured:'Ilova sozlanmagan (Telegram kaliti yo‘q)', send_failed:'Kod yuborilmadi. Internetni tekshiring', bad:'Kod noto‘g‘ri', expired:'Kod eskirgan, qaytadan so‘rang', locked:'Juda ko‘p urinish. Yangi kod so‘rang', rate:'Juda ko‘p so‘rov. Biroz kuting',
   s_expired:'Faollashtirish muddati tugadi — shu kod bilan yangilang', s_clock:'Kompyuter sanasi noto‘g‘ri', days:'kun qoldi',
-  AC:'Qabul qilindi', WA:'Noto‘g‘ri javob', RE:'Ishlash xatosi', TLE:'Vaqt tugadi', CE:'Fayl xatosi', exp:'Kutilgan', got:'Sizniki', input:'Kirish', t_system:'Tizim', t_light:'Kunduz', t_dark:'Tun', auto:'Avto-tekshiruv', practice:'Mashq (o‘zingiz tekshirasiz)', bench:'Ish stoli', run:'Ishga tushirish', submit:'Yuborish', mark:'Bajardim deb belgilash', inpHint:'Kirish qiymatlari — har biri yangi qatorda', needFile:'Avval .fprg faylni tanlang', big:'Fayl juda katta', search:'Qidirish…', extraT:'Qo‘shimcha', prT:'Amaliyot', hi:'Salom', first:'Birinchi qadam', cont:'Davom eting', start:'Boshlash', daysS:'kun', lvl:'Daraja', home:'Bosh sahifa', pend:'Tekshiruvchi kutayotgan', wait:'kutmoqda', pendNote:'ta masala uchun tekshiruvchi tayyorlanmoqda' },
+  AC:'Qabul qilindi', WA:'Noto‘g‘ri javob', RE:'Ishlash xatosi', TLE:'Vaqt tugadi', CE:'Fayl xatosi', exp:'Kutilgan', got:'Sizniki', input:'Kirish', t_system:'Tizim', t_light:'Kunduz', t_dark:'Tun', auto:'Avto-tekshiruv', practice:'Mashq (o‘zingiz tekshirasiz)', bench:'Ish stoli', run:'Ishga tushirish', submit:'Yuborish', mark:'Bajardim deb belgilash', inpHint:'Kirish qiymatlari — har biri yangi qatorda', needFile:'Avval .fprg faylni tanlang', big:'Fayl juda katta', search:'Qidirish…', extraT:'Qo‘shimcha', prT:'Amaliyot', bkT:'Mirae kitobi', hi:'Salom', first:'Birinchi qadam', cont:'Davom eting', start:'Boshlash', daysS:'kun', lvl:'Daraja', home:'Bosh sahifa', pend:'Tekshiruvchi kutayotgan', wait:'kutmoqda', pendNote:'ta masala uchun tekshiruvchi tayyorlanmoqda' },
 en: { tag:'Learn algorithms by doing', topics:'Topics', solved:'Solved', all:'Total problems', back:'← Back', lesson:'Lesson', cw:'Classwork', hw:'Homework', soon:'Problems are coming soon',
   inp:'Input format', out:'Output format', ex:'Examples', drop:'Drop your .fprg file here', or:'or', pick:'Choose file', busy:'Checking…', tests:'tests',
   aT:'Activation', aN:'Your name', aS:'Send code', aC:'6-digit code', aV:'Verify', aH:'The code is sent to a Telegram bot. Get it from the administrator.', sent:'Code sent. Valid for 10 minutes.',
   name:'Enter your name', not_configured:'App is not configured (no Telegram key)', send_failed:'Could not send the code. Check your internet', bad:'Wrong code', expired:'Code expired, request a new one', locked:'Too many attempts. Request a new code', rate:'Too many requests. Please wait',
   s_expired:'Activation expired — renew with the same flow', s_clock:'Your computer date looks wrong', days:'days left',
-  AC:'Accepted', WA:'Wrong answer', RE:'Runtime error', TLE:'Time limit', CE:'File error', exp:'Expected', got:'Yours', input:'Input', t_system:'System', t_light:'Day', t_dark:'Night', auto:'Auto-judged', practice:'Practice (self-check)', bench:'Workbench', run:'Run', submit:'Submit', mark:'Mark as done', inpHint:'Input values — one per line', needFile:'Choose a .fprg file first', big:'File is too large', search:'Search…', extraT:'Extra', prT:'Practice', hi:'Hello', first:'First step', cont:'Continue', start:'Start', daysS:'days', lvl:'Level', home:'Home', pend:'Awaiting checkers', wait:'pending', pendNote:'problems are waiting for their checker' } };
+  AC:'Accepted', WA:'Wrong answer', RE:'Runtime error', TLE:'Time limit', CE:'File error', exp:'Expected', got:'Yours', input:'Input', t_system:'System', t_light:'Day', t_dark:'Night', auto:'Auto-judged', practice:'Practice (self-check)', bench:'Workbench', run:'Run', submit:'Submit', mark:'Mark as done', inpHint:'Input values — one per line', needFile:'Choose a .fprg file first', big:'File is too large', search:'Search…', extraT:'Extra', prT:'Practice', bkT:'Mirae book', hi:'Hello', first:'First step', cont:'Continue', start:'Start', daysS:'days', lvl:'Level', home:'Home', pend:'Awaiting checkers', wait:'pending', pendNote:'problems are waiting for their checker' } };
 let lang = localStorage.lang || (navigator.language.startsWith('uz') ? 'uz' : 'en'), theme = localStorage.theme || 'system';
 let tab = 'cw', q = '', curFile = null, curName = '', lastKey = '';
 let topics = [], progress = {}, act = { state: 'none' }, note = '', noteErr = false;
@@ -31,7 +31,7 @@ const lvl = xp => { let l = 1; while (xp >= 40 * l * l) l++; return { l, into: x
 const streak = () => { const d = new Set(Object.values(progress).filter(v => v > 0).map(v => new Date(v).toDateString())); let n = 0, x = new Date(); if (!d.has(x.toDateString())) x.setDate(x.getDate() - 1); while (d.has(x.toDateString())) { n++; x.setDate(x.getDate() - 1); } return n; };
 const stats = tp => { const a = flat(tp); return { n: a.length, d: a.filter(p => progress[tp.id + '/' + p.id] > 0).length }; };
 const sidebar = () => { const cur = location.hash.split('/')[2], xp = xpOf(), v = lvl(xp);
-  return `<aside class="side"><button class="brand" data-go="#/"><img class="logo" src="logo.svg" alt=""><span class="bt">Flowgorithm <b>Academy</b><small class="credit">Mirae Academy created this</small></span></button>
+  return `<aside class="side"><button class="brand" data-go="#/"><img class="logo" src="mascot.png" alt=""><span class="bt"><span class="wm">m<i>ı</i>rae</span> <b>flow</b><small class="credit">Mirae Academy created this</small></span></button>
   <button class="searchbtn" data-act="pal">🔍 <span>${t('search')}</span><kbd>Ctrl K</kbd></button><button class="navi ${cur ? '' : 'on'}" data-go="#/">🏠 ${t('home')}</button><div class="label">${t('topics')}</div>
   <nav class="tree">${topics.map(x => { const s = stats(x); return `<button class="titem ${cur === x.id ? 'on' : ''}" data-go="#/t/${x.id}">${ring(s.n ? s.d / s.n : 0, 'lapis', s.n ? Math.round(100 * s.d / s.n) : 0)}<span class="tt">${esc(L(x.title))}</span><small>${s.d}/${s.n}</small></button>`; }).join('')}</nav>
   <div class="foot"><div class="tglrow">${tgl()}${langSeg()}</div><div class="me"><span class="av">${esc((act.name || '?')[0].toUpperCase())}</span><span class="who"><b>${esc(act.name || '')}</b><small>${t('lvl')} ${v.l} · ${xp} XP</small><progress value="${v.into}" max="${v.need}"></progress></span></div></div></aside>`; };
@@ -53,15 +53,15 @@ function home() {
   <section class="stats"><div class="stat">${ring(v.into / v.need, 'gold', v.l)}<div><small>${t('lvl')}</small><b>${v.l}</b></div></div><div class="stat"><div><small>${t('solved')}</small><b>${done}<em>/${all.length}</em></b></div></div><div class="stat"><div><small>${t('pend')}</small><b>${pend}</b></div></div></section>
   <h2 class="sech">${t('topics')}</h2><div class="grid">${topics.map(x => { const s = stats(x); return `<button class="card" data-go="#/t/${x.id}">${ring(s.n ? s.d / s.n : 0, 'lapis', topics.indexOf(x) + 1)}<h3>${esc(L(x.title))}</h3><small>${s.d}/${s.n} ✓${x.pending ? ` · +${x.pending} ${t('wait')}` : ''}</small><progress value="${s.d}" max="${s.n || 1}"></progress></button>`; }).join('')}</div>`;
 }
-const SEC = { cw: 'classwork', hw: 'homework', pr: 'practice', ex: 'extra' }, flat = tp => [...tp.classwork, ...tp.homework, ...(tp.practice || []), ...(tp.extra || [])];
+const SEC = { cw: 'classwork', hw: 'homework', pr: 'practice', bk: 'book', ex: 'extra' }, flat = tp => [...tp.classwork, ...tp.homework, ...(tp.book || []), ...(tp.practice || []), ...(tp.extra || [])];
 const stOf = k => (progress[k] > 0 ? 'ok' : progress[k] < 0 ? 'self' : '');
 const plist = (tp, list) => {
   const f = q ? list.filter(p => (L(p.title) + ' ' + L(p.statement)).toLowerCase().includes(q)) : list;
   return f.length ? `<div class="list">${f.map(p => `<button class="row" data-go="#/t/${tp.id}/${p.id}"><span class="dot ${stOf(tp.id + '/' + p.id)}"></span><b>${list.indexOf(p) + 1}.</b><span class="rt">${esc(L(p.title))}</span>${p.judged ? `<span class="tag ok">${t('auto')}</span>` : ''}</button>`).join('')}</div>` : `<p class="sub">${t('soon')}</p>`;
 };
 function topic(tp) {
-  const tabs = ['cw', 'hw', 'pr', 'ex'].filter(k => (tp[SEC[k]] || []).length); if (!tabs.includes(tab)) tab = tabs[0] || 'cw';
-  const list = tp[SEC[tab]] || [], d = solvedIn(tp, list), lbl = { cw: t('cw'), hw: t('hw'), pr: t('prT'), ex: t('extraT') };
+  const tabs = ['cw', 'hw', 'bk', 'pr', 'ex'].filter(k => (tp[SEC[k]] || []).length); if (!tabs.includes(tab)) tab = tabs[0] || 'cw';
+  const list = tp[SEC[tab]] || [], d = solvedIn(tp, list), lbl = { cw: t('cw'), hw: t('hw'), pr: t('prT'), bk: t('bkT'), ex: t('extraT') };
   return `<button class="crumb" data-go="#/">${t('back')}</button><h1>${esc(L(tp.title))}</h1>
   <div class="glass panel"><h2>${t('lesson')}</h2><p>${esc(L(tp.lesson))}</p></div>
   <div class="glass panel"><div class="bar"><div class="seg">${tabs.map(k => `<button data-tab="${k}" class="${tab === k ? 'on' : ''}">${lbl[k]} · ${tp[SEC[k]].length}</button>`).join('')}</div>
@@ -91,7 +91,7 @@ const resultHtml = r => {
 
 function render() {
   applyTheme(); const [, , tid, pid] = location.hash.split('/');
-  if (act.state !== 'ok') { app.innerHTML = `<main class="solo"><div class="gatebar">${tgl()}${langSeg()}</div><div class="gatelogo"><img class="logo" src="logo.svg" alt=""><b>Flowgorithm Academy</b><small class="credit">Mirae Academy created this</small></div>${gate()}</main>`; return; }
+  if (act.state !== 'ok') { app.innerHTML = `<main class="solo"><div class="gatebar">${tgl()}${langSeg()}</div><div class="gatelogo"><img class="logo" src="mascot.png" alt=""><b class="wm">m<i>ı</i>rae</b><b class="fl">flow</b><small class="credit">Mirae Academy created this</small></div>${gate()}</main>`; return; }
   const tp = topics.find(x => x.id === tid), p = tp && flat(tp).find(x => x.id === pid);
   app.innerHTML = `<div class="shell">${sidebar()}<main><button class="btn ghost menu" data-act="menu">☰</button>${p ? problem(tp, p) : tp ? topic(tp) : home()}</main></div>`;
 }

@@ -2,6 +2,7 @@
 const { app, BrowserWindow, ipcMain } = require('electron');
 const fs = require('fs'), path = require('path'), https = require('https'), crypto = require('crypto'), os = require('os');
 const { pathToFileURL } = require('url');
+app.setPath('userData', path.join(app.getPath('appData'), 'Flowgorithm Academy'));   // keep existing activation + progress after the rename to Mirae Flow
 if (process.platform === 'linux' && process.env.APPIMAGE) app.commandLine.appendSwitch('no-sandbox'); // Ubuntu 23.10+ blocks the Chromium sandbox inside AppImages; the app only loads local files
 
 let cfg = {}; try { cfg = JSON.parse(fs.readFileSync(path.join(__dirname, 'config.json'), 'utf8')); } catch {}
@@ -16,7 +17,7 @@ const loadTopics = () => { const d = path.join(__dirname, 'content', 'topics');
 const pub = p => ({ judged: !!(p.judge && p.tests.length), id: p.id, title: p.title, statement: p.statement, inputFormat: p.inputFormat, outputFormat: p.outputFormat,
   examples: p.tests.filter(t => !t.hidden).slice(0, 2).map(t => ({ in: t.in, out: t.out })) });
 const has = p => p.tests.length > 0;   // a problem is shown only when it has a verified checker
-const publicTopics = () => topics.map(t => ({ id: t.id, order: t.order, title: t.title, lesson: t.lesson, classwork: t.classwork.filter(has).map(pub), homework: t.homework.filter(has).map(pub), extra: (t.extra || []).filter(has).map(pub), practice: (t.practice || []).filter(has).map(pub), pending: [...t.classwork, ...t.homework, ...(t.extra || []), ...(t.practice || [])].filter(p => !has(p)).length }));
+const publicTopics = () => topics.map(t => ({ id: t.id, order: t.order, title: t.title, lesson: t.lesson, classwork: t.classwork.filter(has).map(pub), homework: t.homework.filter(has).map(pub), extra: (t.extra || []).filter(has).map(pub), practice: (t.practice || []).filter(has).map(pub), book: (t.book || []).filter(has).map(pub), pending: [...t.classwork, ...t.homework, ...(t.extra || []), ...(t.practice || []), ...(t.book || [])].filter(p => !has(p)).length }));
 
 // ---- activation (one-time Telegram code) ----
 const salt = crypto.randomBytes(16).toString('hex'), hash = c => crypto.createHash('sha256').update(c + salt).digest();
@@ -45,7 +46,7 @@ ipcMain.handle('act:request', async (_, name) => {
   const now = Date.now(); reqLog = reqLog.filter(t => now - t < 10 * 60e3); if (reqLog.length >= 3) return { ok: false, error: 'rate' };
   reqLog.push(now); const code = String(crypto.randomInt(100000, 1000000));
   pending = { h: hash(code), exp: now + 10 * 60e3, tries: 0, name };
-  const ok = await tg(`🔐 Flowgorithm Academy\nIsm: ${name}\nKod: ${code}\nQurilma: ${os.hostname()} (${os.platform()})\nAmal qilish: 10 daqiqa`);
+  const ok = await tg(`🔐 Mirae Flow\nIsm: ${name}\nKod: ${code}\nQurilma: ${os.hostname()} (${os.platform()})\nAmal qilish: 10 daqiqa`);
   if (!ok) pending = null; return ok ? { ok: true } : { ok: false, error: 'send_failed' };
 });
 ipcMain.handle('act:verify', (_, code) => {
@@ -63,7 +64,7 @@ ipcMain.handle('topics', () => publicTopics());
 ipcMain.handle('state', () => ({ progress: readState().progress || {} }));
 ipcMain.handle('judge', async (_, a) => {
   if (status().state !== 'ok') return { error: 'Not activated' };
-  const t = topics.find(x => x.id === a?.topic), p = t && [...t.classwork, ...t.homework, ...(t.extra || []), ...(t.practice || [])].find(x => x.id === a.problem);
+  const t = topics.find(x => x.id === a?.topic), p = t && [...t.classwork, ...t.homework, ...(t.extra || []), ...(t.practice || []), ...(t.book || [])].find(x => x.id === a.problem);
   if (!p || typeof a.file !== 'string') return { error: 'Bad request' };
   if (!p.tests.length) return { error: 'No auto-tests for this problem: use Run' };
   const { judge } = await import(pathToFileURL(path.join(__dirname, 'engine', 'fprg.mjs')).href);
@@ -79,7 +80,7 @@ ipcMain.handle('run', async (_, a) => {   // sandbox: run the student's file on 
   try { return { out: run(a.file, String(a.input || '').slice(0, 1e5)) }; } catch (e) { return { error: e.message || 'Error', kind: e.kind || 'RE' }; }
 });
 ipcMain.handle('mark', (_, a) => {        // self-check for practice problems (no auto-tests)
-  const t = topics.find(x => x.id === a?.topic), p = t && [...t.classwork, ...t.homework, ...(t.extra || []), ...(t.practice || [])].find(x => x.id === a.problem);
+  const t = topics.find(x => x.id === a?.topic), p = t && [...t.classwork, ...t.homework, ...(t.extra || []), ...(t.practice || []), ...(t.book || [])].find(x => x.id === a.problem);
   if (!p || p.tests.length || status().state !== 'ok') return { error: 'Bad request' };
   const s = readState(), k = `${t.id}/${p.id}`; if (!(s.progress || {})[k]) { s.progress = { ...(s.progress || {}), [k]: -Date.now() }; writeState(s); }
   return { ok: true };

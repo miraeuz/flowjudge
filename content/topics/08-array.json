@@ -11,6 +11,802 @@
  },
  "classwork": [
   {
+   "id": "array-c01",
+   "title": {
+    "uz": "Eng baland o'quvchi"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda o'quvchilar soni N, keyin N ta bo'y (sm) kiritiladi. Eng baland bo'yni chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "4\n150\n162\n158\n160",
+     "out": "162"
+    },
+    {
+     "in": "1\n140",
+     "out": "140"
+    },
+    {
+     "in": "3\n170\n169\n171",
+     "out": "171",
+     "hidden": true
+    },
+    {
+     "in": "5\n155\n155\n155\n155\n155",
+     "out": "155",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-c02",
+   "title": {
+    "uz": "Jami va o'rtacha"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda kunlar soni N, keyin kunlik sotuv kiritiladi. Avval jami sotuvni, keyin o'rtachasini (kasr bilan) alohida qatorlarda chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "4\n100\n200\n300\n400",
+     "out": "1000\n250"
+    },
+    {
+     "in": "1\n50",
+     "out": "50\n50"
+    },
+    {
+     "in": "2\n10\n15",
+     "out": "25\n12.5",
+     "hidden": true
+    },
+    {
+     "in": "3\n7\n7\n7",
+     "out": "21\n7",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-c03",
+   "title": {
+    "uz": "Ro'yxatda bormi?"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta son, oxirida qidiriladigan son K kiritiladi. K ro'yxatda bo'lsa “Bor”, bo'lmasa “Yo'q” deb chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3\n5\n8\n2\n8",
+     "out": "Bor"
+    },
+    {
+     "in": "3\n5\n8\n2\n9",
+     "out": "Yo'q"
+    },
+    {
+     "in": "1\n4\n4",
+     "out": "Bor",
+     "hidden": true
+    },
+    {
+     "in": "4\n1\n2\n3\n4\n0",
+     "out": "Yo'q",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-c04",
+   "title": {
+    "uz": "Necha marta uchraydi"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta son, oxirida K kiritiladi. K soni ro'yxatda necha marta uchraganini chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n1\n2\n1\n3\n1\n1",
+     "out": "3"
+    },
+    {
+     "in": "3\n4\n5\n6\n7",
+     "out": "0"
+    },
+    {
+     "in": "4\n2\n2\n2\n2\n2",
+     "out": "4",
+     "hidden": true
+    },
+    {
+     "in": "1\n9\n9",
+     "out": "1",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-c05",
+   "title": {
+    "uz": "Foydali kunlar"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta kunlik foyda/zarar (manfiy — zarar) kiritiladi. Nechta kunda foyda (0 dan katta) bo'lganini chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n100\n-50\n0\n30\n-10",
+     "out": "2"
+    },
+    {
+     "in": "3\n-1\n-2\n-3",
+     "out": "0"
+    },
+    {
+     "in": "2\n5\n5",
+     "out": "2",
+     "hidden": true
+    },
+    {
+     "in": "1\n0",
+     "out": "0",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-c06",
+   "title": {
+    "uz": "Birinchi va oxirgi"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta son kiritiladi. Birinchi va oxirgi elementni alohida qatorlarda chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "4\n1\n2\n3\n4",
+     "out": "1\n4"
+    },
+    {
+     "in": "1\n7",
+     "out": "7\n7"
+    },
+    {
+     "in": "3\n9\n5\n2",
+     "out": "9\n2",
+     "hidden": true
+    },
+    {
+     "in": "2\n0\n8",
+     "out": "0\n8",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-c07",
+   "title": {
+    "uz": "Juft elementlar"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta son kiritiladi. Juft sonlarni (son mod 2 = 0) kiritilish tartibida alohida qatorlarda chiqaring (kamida bitta juft son bor)."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n1\n2\n3\n4\n5",
+     "out": "2\n4"
+    },
+    {
+     "in": "3\n7\n9\n10",
+     "out": "10"
+    },
+    {
+     "in": "4\n6\n8\n10\n12",
+     "out": "6\n8\n10\n12",
+     "hidden": true
+    },
+    {
+     "in": "2\n2\n3",
+     "out": "2",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-c08",
+   "title": {
+    "uz": "Narxlarni oshirish"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta narx (10 ga karrali) kiritiladi. Har bir narx 10% oshiriladi: yangi narx = narx + narx / 10. Yangi narxlarni alohida qatorlarda chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "3\n100\n250\n40",
+     "out": "110\n275\n44"
+    },
+    {
+     "in": "1\n1000",
+     "out": "1100"
+    },
+    {
+     "in": "2\n10\n20",
+     "out": "11\n22",
+     "hidden": true
+    },
+    {
+     "in": "4\n50\n60\n70\n80",
+     "out": "55\n66\n77\n88",
+     "hidden": true
+    }
+   ]
+  }
+ ],
+ "homework": [
+  {
+   "id": "array-h01",
+   "title": {
+    "uz": "Eng uzun ism"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta ism kiritiladi (String). Eng uzun ismni chiqaring; teng bo'lsa birinchisini."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3\nAli\nMadina\nZilola",
+     "out": "Madina"
+    },
+    {
+     "in": "1\nJasur",
+     "out": "Jasur"
+    },
+    {
+     "in": "2\nAli\nVali",
+     "out": "Vali",
+     "hidden": true
+    },
+    {
+     "in": "4\nSardor\nAnvar\nDilnoza\nNodir",
+     "out": "Dilnoza",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-h02",
+   "title": {
+    "uz": "Har xil sonlar"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta son kiritiladi. Nechta har xil son borligini chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n1\n2\n2\n3\n3",
+     "out": "3"
+    },
+    {
+     "in": "3\n4\n4\n4",
+     "out": "1"
+    },
+    {
+     "in": "4\n1\n2\n3\n4",
+     "out": "4",
+     "hidden": true
+    },
+    {
+     "in": "1\n9",
+     "out": "1",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-h03",
+   "title": {
+    "uz": "Kirim va chiqim"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda kunlar soni N, keyin N ta kirim, keyin N ta chiqim kiritiladi. Har kun uchun kirim − chiqimni alohida qatorlarda chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "3\n100\n200\n50\n30\n250\n50",
+     "out": "70\n-50\n0"
+    },
+    {
+     "in": "1\n10\n4",
+     "out": "6"
+    },
+    {
+     "in": "2\n0\n5\n5\n0",
+     "out": "-5\n5",
+     "hidden": true
+    },
+    {
+     "in": "2\n7\n7\n7\n7",
+     "out": "0\n0",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-h04",
+   "title": {
+    "uz": "Eng yaxshi ikki kun"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N (N ≥ 2), keyin N ta kunlik sotuv kiritiladi. Ketma-ket ikki kunning eng katta yig'indisini chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n1\n5\n2\n8\n1",
+     "out": "10"
+    },
+    {
+     "in": "2\n3\n4",
+     "out": "7"
+    },
+    {
+     "in": "4\n9\n1\n1\n9",
+     "out": "10",
+     "hidden": true
+    },
+    {
+     "in": "3\n5\n5\n5",
+     "out": "10",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-h05",
+   "title": {
+    "uz": "O'ngga siljitish"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta son kiritiladi. Ro'yxatni bir qadam o'ngga siljiting: oxirgi element boshiga o'tadi. Natijani alohida qatorlarda chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "4\n1\n2\n3\n4",
+     "out": "4\n1\n2\n3"
+    },
+    {
+     "in": "1\n5",
+     "out": "5"
+    },
+    {
+     "in": "3\n9\n8\n7",
+     "out": "7\n9\n8",
+     "hidden": true
+    },
+    {
+     "in": "2\n4\n6",
+     "out": "6\n4",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-h06",
+   "title": {
+    "uz": "Chekkalarni almashtirish"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta son kiritiladi. Birinchi va oxirgi elementlarni almashtirib, ro'yxatni alohida qatorlarda chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "4\n1\n2\n3\n4",
+     "out": "4\n2\n3\n1"
+    },
+    {
+     "in": "2\n5\n6",
+     "out": "6\n5"
+    },
+    {
+     "in": "3\n7\n8\n9",
+     "out": "9\n8\n7",
+     "hidden": true
+    },
+    {
+     "in": "1\n5",
+     "out": "5",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-h07",
+   "title": {
+    "uz": "Narx chegarasi"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta narx, oxirida chegara L kiritiladi. L dan qimmat narxlar L ga tenglashtiriladi. Natijani alohida qatorlarda chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "4\n50\n200\n80\n120\n100",
+     "out": "50\n100\n80\n100"
+    },
+    {
+     "in": "2\n10\n20\n50",
+     "out": "10\n20"
+    },
+    {
+     "in": "3\n300\n300\n300\n100",
+     "out": "100\n100\n100",
+     "hidden": true
+    },
+    {
+     "in": "1\n5\n9",
+     "out": "5",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-h08",
+   "title": {
+    "uz": "Teskari ham o'xshash"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta son kiritiladi. Ro'yxat oldidan ham, orqasidan ham bir xil o'qilsa “Ha”, aks holda “Yo'q” deb chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5\n1\n2\n3\n2\n1",
+     "out": "Ha"
+    },
+    {
+     "in": "4\n1\n2\n2\n1",
+     "out": "Ha"
+    },
+    {
+     "in": "3\n1\n2\n3",
+     "out": "Yo'q",
+     "hidden": true
+    },
+    {
+     "in": "1\n7",
+     "out": "Ha",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-h09",
+   "title": {
+    "uz": "Eng ko'p uchragan baho"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta baho kiritiladi. Eng ko'p uchragan bahoni chiqaring; teng bo'lsa kichigini."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "6\n5\n4\n5\n3\n4\n5",
+     "out": "5"
+    },
+    {
+     "in": "4\n2\n2\n3\n3",
+     "out": "2"
+    },
+    {
+     "in": "1\n4",
+     "out": "4",
+     "hidden": true
+    },
+    {
+     "in": "5\n1\n2\n3\n4\n5",
+     "out": "1",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-h10",
+   "title": {
+    "uz": "Yig'indi 100 dan oshdi"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta son kiritiladi. Boshidan qo'shib borganda yig'indi birinchi marta 100 dan oshgan elementning o'rnini (1 dan) chiqaring; oshmasa 0."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n30\n40\n20\n50\n10",
+     "out": "4"
+    },
+    {
+     "in": "3\n10\n10\n10",
+     "out": "0"
+    },
+    {
+     "in": "2\n100\n1",
+     "out": "2",
+     "hidden": true
+    },
+    {
+     "in": "4\n50\n50\n1\n1",
+     "out": "3",
+     "hidden": true
+    }
+   ]
+  }
+ ],
+ "extra": [
+  {
+   "id": "array-x01",
+   "title": {
+    "uz": "Eng arzon ikki mahsulot"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N (N ≥ 2), keyin N ta narx kiritiladi. Eng arzon ikki narxning yig'indisini chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "4\n5\n1\n9\n2",
+     "out": "3"
+    },
+    {
+     "in": "2\n4\n4",
+     "out": "8"
+    },
+    {
+     "in": "3\n10\n3\n7",
+     "out": "10",
+     "hidden": true
+    },
+    {
+     "in": "5\n8\n8\n1\n1\n5",
+     "out": "2",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-x02",
+   "title": {
+    "uz": "O'rtadagi element"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda toq N, keyin N ta son kiritiladi. O'rtadagi elementni chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n1\n2\n3\n4\n5",
+     "out": "3"
+    },
+    {
+     "in": "1\n9",
+     "out": "9"
+    },
+    {
+     "in": "3\n7\n8\n9",
+     "out": "8",
+     "hidden": true
+    },
+    {
+     "in": "7\n1\n2\n3\n4\n5\n6\n7",
+     "out": "4",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-x03",
+   "title": {
+    "uz": "Eng uzun o'sish"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta son kiritiladi. Ketma-ket qat'iy o'suvchi eng uzun bo'lakning uzunligini chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "6\n1\n2\n3\n1\n2\n3",
+     "out": "3"
+    },
+    {
+     "in": "3\n5\n5\n5",
+     "out": "1"
+    },
+    {
+     "in": "5\n1\n2\n3\n4\n5",
+     "out": "5",
+     "hidden": true
+    },
+    {
+     "in": "4\n4\n3\n2\n1",
+     "out": "1",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-x04",
+   "title": {
+    "uz": "Juft va toq yig'indi"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta son kiritiladi. Juft sonlar yig'indisini va toq sonlar yig'indisini (son mod 2 bo'yicha) alohida qatorlarda chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n1\n2\n3\n4\n5",
+     "out": "6\n9"
+    },
+    {
+     "in": "2\n10\n20",
+     "out": "30\n0"
+    },
+    {
+     "in": "3\n1\n3\n5",
+     "out": "0\n9",
+     "hidden": true
+    },
+    {
+     "in": "4\n2\n4\n7\n9",
+     "out": "6\n16",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-x05",
+   "title": {
+    "uz": "Chegirmali narxlar"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda N, keyin N ta narx, oxirida chegirma foizi P (butun) kiritiladi. Har bir chegirmali narxni alohida qatorda chiqaring: narx − narx × P / 100."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "3\n1000\n2000\n500\n10",
+     "out": "900\n1800\n450"
+    },
+    {
+     "in": "1\n200\n50",
+     "out": "100"
+    },
+    {
+     "in": "2\n100\n100\n0",
+     "out": "100\n100",
+     "hidden": true
+    },
+    {
+     "in": "2\n80\n40\n25",
+     "out": "60\n30",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "array-x06",
+   "title": {
+    "uz": "Eng yomg'irli oy"
+   },
+   "statement": {
+    "uz": "12 oy uchun yog'ingarchilik (mm) kiritiladi. Eng ko'p yomg'ir yoqqan oy raqamini (1–12) chiqaring; teng bo'lsa birinchisini."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "10\n20\n30\n40\n50\n60\n70\n80\n90\n100\n110\n120",
+     "out": "12"
+    },
+    {
+     "in": "5\n5\n5\n5\n5\n5\n5\n5\n5\n5\n5\n5",
+     "out": "1"
+    },
+    {
+     "in": "0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n9",
+     "out": "12",
+     "hidden": true
+    },
+    {
+     "in": "9\n0\n0\n0\n0\n0\n0\n0\n0\n0\n0\n9",
+     "out": "1",
+     "hidden": true
+    }
+   ]
+  },
+  {
    "id": "array-101",
    "title": {
     "uz": "Massiv berilgan: a = [5, 8, 3, 7, 2]. Barcha elementlarni…"
@@ -249,9 +1045,7 @@
    "source": "Array_kirishsiz_30",
    "judge": null,
    "tests": []
-  }
- ],
- "homework": [
+  },
   {
    "id": "array-121",
    "title": {
@@ -611,9 +1405,7 @@
    "source": "Array_hayotiy_30",
    "judge": null,
    "tests": []
-  }
- ],
- "extra": [
+  },
   {
    "id": "array-151",
    "title": {

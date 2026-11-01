@@ -903,5 +903,773 @@
    "tests": []
   }
  ],
- "practice": []
+ "practice": [],
+ "book": [
+  {
+   "id": "nested-for-n01",
+   "title": {
+    "uz": "Yulduzchalar to'rtburchagi"
+   },
+   "statement": {
+    "uz": "3 qator chiqaring, har birida 5 ta yulduzcha (*). Belgilar orasida bitta bo'sh joy bo'lsin."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "* * * * *\n* * * * *\n* * * * *"
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n02",
+   "title": {
+    "uz": "n qator, n ta yulduzcha"
+   },
+   "statement": {
+    "uz": "n kiritiladi. n qator chiqaring, har birida n ta yulduzcha (*)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "*"
+    },
+    {
+     "in": "3",
+     "out": "* * *\n* * *\n* * *"
+    },
+    {
+     "in": "4",
+     "out": "* * * *\n* * * *\n* * * *\n* * * *",
+     "hidden": true
+    },
+    {
+     "in": "6",
+     "out": "* * * * * *\n* * * * * *\n* * * * * *\n* * * * * *\n* * * * * *\n* * * * * *",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n03",
+   "title": {
+    "uz": "Qator raqami (4 qator)"
+   },
+   "statement": {
+    "uz": "4 qator chiqaring: birinchi qatorda 1 raqami 4 marta, ikkinchisida 2 raqami 4 marta, uchinchisida 3, to'rtinchisida 4."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "1 1 1 1\n2 2 2 2\n3 3 3 3\n4 4 4 4"
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n04",
+   "title": {
+    "uz": "Qator raqami n marta"
+   },
+   "statement": {
+    "uz": "n kiritiladi. n qator chiqaring. Har bir qatorda qator raqami n marta yozilsin."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1"
+    },
+    {
+     "in": "3",
+     "out": "1 1 1\n2 2 2\n3 3 3"
+    },
+    {
+     "in": "4",
+     "out": "1 1 1 1\n2 2 2 2\n3 3 3 3\n4 4 4 4",
+     "hidden": true
+    },
+    {
+     "in": "5",
+     "out": "1 1 1 1 1\n2 2 2 2 2\n3 3 3 3 3\n4 4 4 4 4\n5 5 5 5 5",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n05",
+   "title": {
+    "uz": "Uch qator 1 dan 5 gacha"
+   },
+   "statement": {
+    "uz": "3 qator chiqaring, har birida 1 dan 5 gacha sonlar (1 2 3 4 5)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "1 2 3 4 5\n1 2 3 4 5\n1 2 3 4 5"
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n06",
+   "title": {
+    "uz": "n qator 1 dan n gacha"
+   },
+   "statement": {
+    "uz": "n kiritiladi. n qator chiqaring, har birida 1 dan n gacha sonlar."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1"
+    },
+    {
+     "in": "3",
+     "out": "1 2 3\n1 2 3\n1 2 3"
+    },
+    {
+     "in": "4",
+     "out": "1 2 3 4\n1 2 3 4\n1 2 3 4\n1 2 3 4",
+     "hidden": true
+    },
+    {
+     "in": "6",
+     "out": "1 2 3 4 5 6\n1 2 3 4 5 6\n1 2 3 4 5 6\n1 2 3 4 5 6\n1 2 3 4 5 6\n1 2 3 4 5 6",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n07",
+   "title": {
+    "uz": "Karra jadvali 1–5"
+   },
+   "statement": {
+    "uz": "1 dan 5 gacha karra jadvalini chiqaring: 1-qatorda 1 2 3 4 5, 2-qatorda 2 4 6 8 10 va hokazo."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "1 2 3 4 5\n2 4 6 8 10\n3 6 9 12 15\n4 8 12 16 20\n5 10 15 20 25"
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n08",
+   "title": {
+    "uz": "Karra jadvali 1 dan n gacha"
+   },
+   "statement": {
+    "uz": "n kiritiladi. 1 dan n gacha karra jadvalini chiqaring (n qator, n ustun)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1"
+    },
+    {
+     "in": "3",
+     "out": "1 2 3\n2 4 6\n3 6 9"
+    },
+    {
+     "in": "4",
+     "out": "1 2 3 4\n2 4 6 8\n3 6 9 12\n4 8 12 16",
+     "hidden": true
+    },
+    {
+     "in": "6",
+     "out": "1 2 3 4 5 6\n2 4 6 8 10 12\n3 6 9 12 15 18\n4 8 12 16 20 24\n5 10 15 20 25 30\n6 12 18 24 30 36",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n09",
+   "title": {
+    "uz": "Yulduzchali uchburchak (4 qator)"
+   },
+   "statement": {
+    "uz": "Uchburchak chiqaring: 1-qatorda 1 ta *, 2-qatorda 2 ta * ... 4-qatorda 4 ta *."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "*\n* *\n* * *\n* * * *"
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n10",
+   "title": {
+    "uz": "n qatorli yulduz uchburchagi"
+   },
+   "statement": {
+    "uz": "n kiritiladi. n qatorli yulduzcha uchburchagini chiqaring (i-qatorda i ta *)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "*"
+    },
+    {
+     "in": "3",
+     "out": "*\n* *\n* * *"
+    },
+    {
+     "in": "5",
+     "out": "*\n* *\n* * *\n* * * *\n* * * * *",
+     "hidden": true
+    },
+    {
+     "in": "7",
+     "out": "*\n* *\n* * *\n* * * *\n* * * * *\n* * * * * *\n* * * * * * *",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n11",
+   "title": {
+    "uz": "Sonli uchburchak (4 qator)"
+   },
+   "statement": {
+    "uz": "Chiqaring: 1-qatorda 1, 2-qatorda 1 2, 3-qatorda 1 2 3, 4-qatorda 1 2 3 4."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "1\n1 2\n1 2 3\n1 2 3 4"
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n12",
+   "title": {
+    "uz": "n qatorli sonli uchburchak"
+   },
+   "statement": {
+    "uz": "n kiritiladi. i-qatorda 1 dan i gacha sonlar chiqsin (n qator)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1"
+    },
+    {
+     "in": "3",
+     "out": "1\n1 2\n1 2 3"
+    },
+    {
+     "in": "5",
+     "out": "1\n1 2\n1 2 3\n1 2 3 4\n1 2 3 4 5",
+     "hidden": true
+    },
+    {
+     "in": "6",
+     "out": "1\n1 2\n1 2 3\n1 2 3 4\n1 2 3 4 5\n1 2 3 4 5 6",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n13",
+   "title": {
+    "uz": "Teskari uchburchak (4 qator)"
+   },
+   "statement": {
+    "uz": "Chiqaring: 1-qatorda 4 ta *, keyin 3 ta, 2 ta va oxirgi qatorda 1 ta *."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "* * * *\n* * *\n* *\n*"
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n14",
+   "title": {
+    "uz": "Teskari yulduz uchburchagi"
+   },
+   "statement": {
+    "uz": "n kiritiladi. n qatorli teskari uchburchak: birinchi qatorda n ta *, keyingisida n−1 ta ... oxirgisida 1 ta *."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "*"
+    },
+    {
+     "in": "3",
+     "out": "* * *\n* *\n*"
+    },
+    {
+     "in": "5",
+     "out": "* * * * *\n* * * *\n* * *\n* *\n*",
+     "hidden": true
+    },
+    {
+     "in": "7",
+     "out": "* * * * * * *\n* * * * * *\n* * * * *\n* * * *\n* * *\n* *\n*",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n15",
+   "title": {
+    "uz": "Har bir son o'zicha marta (5 qator)"
+   },
+   "statement": {
+    "uz": "Chiqaring: 1-qatorda 1, 2-qatorda 2 2, 3-qatorda 3 3 3, 4-qatorda 4 4 4 4, 5-qatorda 5 5 5 5 5."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "1\n2 2\n3 3 3\n4 4 4 4\n5 5 5 5 5"
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n16",
+   "title": {
+    "uz": "n qator: son o'zicha marta"
+   },
+   "statement": {
+    "uz": "n kiritiladi. i-qatorda i soni i marta yozilsin (n qator)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1"
+    },
+    {
+     "in": "3",
+     "out": "1\n2 2\n3 3 3"
+    },
+    {
+     "in": "5",
+     "out": "1\n2 2\n3 3 3\n4 4 4 4\n5 5 5 5 5",
+     "hidden": true
+    },
+    {
+     "in": "6",
+     "out": "1\n2 2\n3 3 3\n4 4 4 4\n5 5 5 5 5\n6 6 6 6 6 6",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n17",
+   "title": {
+    "uz": "Kamayuvchi sonli qatorlar (4 qator)"
+   },
+   "statement": {
+    "uz": "Chiqaring: 1 2 3 4, keyin 1 2 3, keyin 1 2, oxirida 1 (har biri alohida qatorda)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "1 2 3 4\n1 2 3\n1 2\n1"
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n18",
+   "title": {
+    "uz": "Teskari sonli uchburchak"
+   },
+   "statement": {
+    "uz": "n kiritiladi. 1-qatorda 1 dan n gacha, 2-qatorda 1 dan n−1 gacha ... oxirgi qatorda faqat 1 chiqsin."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1"
+    },
+    {
+     "in": "3",
+     "out": "1 2 3\n1 2\n1"
+    },
+    {
+     "in": "5",
+     "out": "1 2 3 4 5\n1 2 3 4\n1 2 3\n1 2\n1",
+     "hidden": true
+    },
+    {
+     "in": "6",
+     "out": "1 2 3 4 5 6\n1 2 3 4 5\n1 2 3 4\n1 2 3\n1 2\n1",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n19",
+   "title": {
+    "uz": "Uch qator 1 dan 4 gacha"
+   },
+   "statement": {
+    "uz": "3 qator chiqaring, har birida 1 dan 4 gacha sonlar (ichma-ich For bilan)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "1 2 3 4\n1 2 3 4\n1 2 3 4"
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n20",
+   "title": {
+    "uz": "Qator va ustun"
+   },
+   "statement": {
+    "uz": "Avval qatorlar soni, keyin ustunlar soni kiritiladi. Shuncha qator chiqaring, har birida ustunlar soniga teng yulduzcha (*)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "3\n5",
+     "out": "* * * * *\n* * * * *\n* * * * *"
+    },
+    {
+     "in": "1\n4",
+     "out": "* * * *"
+    },
+    {
+     "in": "4\n1",
+     "out": "*\n*\n*\n*",
+     "hidden": true
+    },
+    {
+     "in": "2\n6",
+     "out": "* * * * * *\n* * * * * *",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n21",
+   "title": {
+    "uz": "Karra jadvali 1–4"
+   },
+   "statement": {
+    "uz": "1 dan 4 gacha karra jadvalini chiqaring (4 qator, 4 ustun)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "1 2 3 4\n2 4 6 8\n3 6 9 12\n4 8 12 16"
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n23",
+   "title": {
+    "uz": "Ketma-ket sonlar uchburchagi (4 qator)"
+   },
+   "statement": {
+    "uz": "Chiqaring: 1, keyin 2 3, keyin 4 5 6, keyin 7 8 9 10 (har biri alohida qatorda)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "1\n2 3\n4 5 6\n7 8 9 10"
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n24",
+   "title": {
+    "uz": "n qatorli ketma-ket sonlar"
+   },
+   "statement": {
+    "uz": "n kiritiladi. 1 dan boshlab ketma-ket sonlar bilan n qatorli uchburchak yasang: 1-qatorda 1 ta son, 2-qatorda 2 ta son va hokazo."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1"
+    },
+    {
+     "in": "3",
+     "out": "1\n2 3\n4 5 6"
+    },
+    {
+     "in": "4",
+     "out": "1\n2 3\n4 5 6\n7 8 9 10",
+     "hidden": true
+    },
+    {
+     "in": "5",
+     "out": "1\n2 3\n4 5 6\n7 8 9 10\n11 12 13 14 15",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n25",
+   "title": {
+    "uz": "Juft sonlar uchburchagi"
+   },
+   "statement": {
+    "uz": "n kiritiladi. i-qatorda dastlabki i ta juft son chiqsin: 1-qatorda 2, 2-qatorda 2 4, 3-qatorda 2 4 6 va hokazo (n qator)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "2"
+    },
+    {
+     "in": "3",
+     "out": "2\n2 4\n2 4 6"
+    },
+    {
+     "in": "4",
+     "out": "2\n2 4\n2 4 6\n2 4 6 8",
+     "hidden": true
+    },
+    {
+     "in": "6",
+     "out": "2\n2 4\n2 4 6\n2 4 6 8\n2 4 6 8 10\n2 4 6 8 10 12",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n27",
+   "title": {
+    "uz": "Teskari yulduz shakli (5 qator)"
+   },
+   "statement": {
+    "uz": "Chiqaring: 1-qatorda 5 ta *, keyin 4 ta, 3 ta, 2 ta va oxirgi qatorda 1 ta *."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "* * * * *\n* * * *\n* * *\n* *\n*"
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n31",
+   "title": {
+    "uz": "Kamayib boruvchi sonlar (5 qator)"
+   },
+   "statement": {
+    "uz": "Chiqaring: 1 1 1 1 1, keyin 2 2 2 2, keyin 3 3 3, keyin 4 4, oxirida 5."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "1 1 1 1 1\n2 2 2 2\n3 3 3\n4 4\n5"
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n32",
+   "title": {
+    "uz": "Kamayib boruvchi shakl"
+   },
+   "statement": {
+    "uz": "n kiritiladi. i-qatorda i soni (n − i + 1) marta yozilsin (n qator): 1-qatorda 1 soni n marta, oxirgi qatorda n soni 1 marta."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1"
+    },
+    {
+     "in": "3",
+     "out": "1 1 1\n2 2\n3"
+    },
+    {
+     "in": "5",
+     "out": "1 1 1 1 1\n2 2 2 2\n3 3 3\n4 4\n5",
+     "hidden": true
+    },
+    {
+     "in": "6",
+     "out": "1 1 1 1 1 1\n2 2 2 2 2\n3 3 3 3\n4 4 4\n5 5\n6",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n33",
+   "title": {
+    "uz": "Panjara belgisi"
+   },
+   "statement": {
+    "uz": "4 qator chiqaring, har birida 6 ta # belgisi (bo'sh joy bilan ajratilgan)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "# # # # # #\n# # # # # #\n# # # # # #\n# # # # # #"
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n34",
+   "title": {
+    "uz": "n qator, m ta #"
+   },
+   "statement": {
+    "uz": "Avval n, keyin m kiritiladi. n qator chiqaring, har birida m ta # belgisi."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "3\n5",
+     "out": "# # # # #\n# # # # #\n# # # # #"
+    },
+    {
+     "in": "1\n4",
+     "out": "# # # #"
+    },
+    {
+     "in": "4\n1",
+     "out": "#\n#\n#\n#",
+     "hidden": true
+    },
+    {
+     "in": "2\n6",
+     "out": "# # # # # #\n# # # # # #",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "nested-for-n35",
+   "title": {
+    "uz": "3×3 sonlar jadvali"
+   },
+   "statement": {
+    "uz": "Nested For bilan 3×3 jadval chiqaring: 1 2 3 / 4 5 6 / 7 8 9 (har bir qator alohida)."
+   },
+   "source": "book",
+   "judge": {
+    "mode": "lines"
+   },
+   "tests": [
+    {
+     "in": "",
+     "out": "1 2 3\n4 5 6\n7 8 9"
+    }
+   ]
+  }
+ ]
 }

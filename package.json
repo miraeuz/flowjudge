@@ -1,8 +1,8 @@
 {
   "name": "flowgorithm-academy",
-  "productName": "Flowgorithm Academy",
-  "version": "0.5.0",
-  "description": "Learn algorithms with Flowgorithm \u2014 lessons, problems and an automatic judge.",
+  "productName": "Mirae Flow",
+  "version": "0.7.0",
+  "description": "Mirae Flow \u2014 learn programming with visual flowcharts: lessons, problems and an automatic judge.",
   "author": "miraeuz <miraeuz@users.noreply.github.com>",
   "license": "MIT",
   "main": "main.js",
@@ -16,8 +16,8 @@
     "electron-builder": "^25.1.8"
   },
   "build": {
-    "appId": "uz.miraeuz.flowgorithmacademy",
-    "productName": "Flowgorithm Academy",
+    "appId": "uz.miraeuz.miraeflow",
+    "productName": "Mirae Flow",
     "directories": {
       "output": "release"
     },
@@ -38,7 +38,7 @@
           ]
         }
       ],
-      "artifactName": "Flowgorithm-Academy-Setup-${version}.exe"
+      "artifactName": "Mirae-Flow-Setup-${version}.exe"
     },
     "nsis": {
       "oneClick": true,
@@ -54,7 +54,7 @@
       ],
       "category": "Education",
       "synopsis": "Learn algorithms with Flowgorithm",
-      "artifactName": "Flowgorithm-Academy-${version}-linux.${ext}"
+      "artifactName": "Mirae-Flow-${version}-linux.${ext}"
     }
   }
 }

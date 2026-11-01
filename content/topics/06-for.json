@@ -11,6 +11,802 @@
  },
  "classwork": [
   {
+   "id": "for-c01",
+   "title": {
+    "uz": "Do'stlarga salom"
+   },
+   "statement": {
+    "uz": "N ta do'stingiz bor (N kiritiladi). Har biriga alohida qatorda “Salom” deb yozing."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "Salom"
+    },
+    {
+     "in": "3",
+     "out": "Salom\nSalom\nSalom"
+    },
+    {
+     "in": "5",
+     "out": "Salom\nSalom\nSalom\nSalom\nSalom",
+     "hidden": true
+    },
+    {
+     "in": "2",
+     "out": "Salom\nSalom",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-c02",
+   "title": {
+    "uz": "Navbat raqamlari"
+   },
+   "statement": {
+    "uz": "Poliklinikada N ta bemor bor (N kiritiladi). Navbat raqamlarini 1 dan N gacha alohida qatorlarda chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "1",
+     "out": "1"
+    },
+    {
+     "in": "4",
+     "out": "1\n2\n3\n4"
+    },
+    {
+     "in": "7",
+     "out": "1\n2\n3\n4\n5\n6\n7",
+     "hidden": true
+    },
+    {
+     "in": "3",
+     "out": "1\n2\n3",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-c03",
+   "title": {
+    "uz": "Haftalik xarajat"
+   },
+   "statement": {
+    "uz": "7 kun davomida har kunlik xarajat kiritiladi (har biri alohida qatorda). Haftalik jami xarajatni chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5000\n3000\n0\n12000\n7000\n0\n4500",
+     "out": "31500"
+    },
+    {
+     "in": "1000\n1000\n1000\n1000\n1000\n1000\n1000",
+     "out": "7000"
+    },
+    {
+     "in": "0\n0\n0\n0\n0\n0\n0",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "20000\n0\n15000\n0\n5000\n8000\n2000",
+     "out": "50000",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-c04",
+   "title": {
+    "uz": "Sovuq kunlar"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda kunlar soni N, keyin N ta harorat kiritiladi. Harorati 0 dan past bo'lgan kunlar nechta?"
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n-3\n4\n-1\n0\n7",
+     "out": "2"
+    },
+    {
+     "in": "3\n1\n2\n3",
+     "out": "0"
+    },
+    {
+     "in": "4\n-1\n-2\n-3\n-4",
+     "out": "4",
+     "hidden": true
+    },
+    {
+     "in": "1\n-5",
+     "out": "1",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-c05",
+   "title": {
+    "uz": "Raketa uchirish"
+   },
+   "statement": {
+    "uz": "Sanoq soni N kiritiladi. N dan 1 gacha teskari sanab, har sonni alohida qatorda chiqaring, oxirida “Start!” deb yozing."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3",
+     "out": "3\n2\n1\nStart!"
+    },
+    {
+     "in": "5",
+     "out": "5\n4\n3\n2\n1\nStart!"
+    },
+    {
+     "in": "1",
+     "out": "1\nStart!",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "10\n9\n8\n7\n6\n5\n4\n3\n2\n1\nStart!",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-c06",
+   "title": {
+    "uz": "O'rtacha baho"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda baholar soni N, keyin N ta baho kiritiladi. O'rtacha bahoni (kasr bilan) chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "3\n5\n4\n3",
+     "out": "4"
+    },
+    {
+     "in": "4\n5\n5\n4\n4",
+     "out": "4.5"
+    },
+    {
+     "in": "1\n3",
+     "out": "3",
+     "hidden": true
+    },
+    {
+     "in": "2\n4\n5",
+     "out": "4.5",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-c07",
+   "title": {
+    "uz": "Juft sahifalar"
+   },
+   "statement": {
+    "uz": "Kitobda N ta sahifa bor (N kiritiladi). Juft raqamli sahifalarni (son mod 2 = 0) 1 dan N gacha alohida qatorlarda chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "10",
+     "out": "2\n4\n6\n8\n10"
+    },
+    {
+     "in": "7",
+     "out": "2\n4\n6"
+    },
+    {
+     "in": "2",
+     "out": "2",
+     "hidden": true
+    },
+    {
+     "in": "5",
+     "out": "2\n4",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-c08",
+   "title": {
+    "uz": "Yetarli suv ichgan kunlar"
+   },
+   "statement": {
+    "uz": "7 kun davomida har kuni ichilgan stakan soni kiritiladi. Nechta kunda 8 yoki undan ko'p stakan ichilgan?"
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "8\n3\n9\n8\n7\n10\n2",
+     "out": "4"
+    },
+    {
+     "in": "1\n1\n1\n1\n1\n1\n1",
+     "out": "0"
+    },
+    {
+     "in": "8\n8\n8\n8\n8\n8\n8",
+     "out": "7",
+     "hidden": true
+    },
+    {
+     "in": "0\n9\n0\n9\n0\n9\n0",
+     "out": "3",
+     "hidden": true
+    }
+   ]
+  }
+ ],
+ "homework": [
+  {
+   "id": "for-h01",
+   "title": {
+    "uz": "Eng ko'p sotuv"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda kunlar soni N, keyin har kunlik sotuv (so'm) kiritiladi. Eng ko'p sotuvni chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "4\n120000\n90000\n150000\n110000",
+     "out": "150000"
+    },
+    {
+     "in": "1\n5000",
+     "out": "5000"
+    },
+    {
+     "in": "3\n7\n7\n7",
+     "out": "7",
+     "hidden": true
+    },
+    {
+     "in": "5\n1\n9\n3\n9\n2",
+     "out": "9",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-h02",
+   "title": {
+    "uz": "Eng sovuq kun"
+   },
+   "statement": {
+    "uz": "N kunlik harorat kiritiladi (birinchi qatorda N). Eng past haroratni chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "4\n5\n-2\n3\n0",
+     "out": "-2"
+    },
+    {
+     "in": "1\n10",
+     "out": "10"
+    },
+    {
+     "in": "3\n-1\n-5\n-3",
+     "out": "-5",
+     "hidden": true
+    },
+    {
+     "in": "5\n20\n18\n25\n18\n30",
+     "out": "18",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-h03",
+   "title": {
+    "uz": "Har beshinchi mijoz"
+   },
+   "statement": {
+    "uz": "Do'konda N ta mijoz xizmat ko'rsatildi (N kiritiladi). Mijoz raqami mod 5 = 0 bo'lsa (5-, 10-, 15- ...) sovg'a beriladi. Nechta sovg'a berildi?"
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "12",
+     "out": "2"
+    },
+    {
+     "in": "4",
+     "out": "0"
+    },
+    {
+     "in": "5",
+     "out": "1",
+     "hidden": true
+    },
+    {
+     "in": "50",
+     "out": "10",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-h04",
+   "title": {
+    "uz": "Oyma-oy jamg'arma"
+   },
+   "statement": {
+    "uz": "Har oy S so'm jamg'arasiz. Avval S, keyin oylar soni N kiritiladi. Har oy oxiridagi jami summani alohida qatorlarda chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "50000\n3",
+     "out": "50000\n100000\n150000"
+    },
+    {
+     "in": "10000\n1",
+     "out": "10000"
+    },
+    {
+     "in": "200000\n4",
+     "out": "200000\n400000\n600000\n800000",
+     "hidden": true
+    },
+    {
+     "in": "0\n2",
+     "out": "0\n0",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-h05",
+   "title": {
+    "uz": "Narx oshgan kunlar"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda kunlar soni N, keyin har kunlik narx kiritiladi. Narx oldingi kundagidan qimmat bo'lgan kunlar nechta?"
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n10\n12\n11\n15\n20",
+     "out": "3"
+    },
+    {
+     "in": "3\n5\n5\n5",
+     "out": "0"
+    },
+    {
+     "in": "4\n9\n8\n7\n6",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "2\n1\n2",
+     "out": "1",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-h06",
+   "title": {
+    "uz": "Konfet qutilari"
+   },
+   "statement": {
+    "uz": "Bitta qutida K ta konfet bor (K kiritiladi). 1 dan 10 gacha qutilar uchun jami konfet sonini alohida qatorlarda chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "6",
+     "out": "6\n12\n18\n24\n30\n36\n42\n48\n54\n60"
+    },
+    {
+     "in": "12",
+     "out": "12\n24\n36\n48\n60\n72\n84\n96\n108\n120"
+    },
+    {
+     "in": "1",
+     "out": "1\n2\n3\n4\n5\n6\n7\n8\n9\n10",
+     "hidden": true
+    },
+    {
+     "in": "25",
+     "out": "25\n50\n75\n100\n125\n150\n175\n200\n225\n250",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-h07",
+   "title": {
+    "uz": "Birinchi sovuq kun"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda kunlar soni N, keyin harorat kiritiladi. Harorati 0 dan past bo'lgan birinchi kun raqamini (1 dan) chiqaring; bunday kun bo'lmasa 0."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n3\n4\n-1\n2\n-5",
+     "out": "3"
+    },
+    {
+     "in": "3\n1\n2\n3",
+     "out": "0"
+    },
+    {
+     "in": "2\n-4\n-6",
+     "out": "1",
+     "hidden": true
+    },
+    {
+     "in": "4\n0\n0\n0\n-1",
+     "out": "4",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-h08",
+   "title": {
+    "uz": "Kunlik foyda"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda kunlar soni N, keyin har kun uchun ikkita son: daromad va xarajat kiritiladi. Umumiy foydani chiqaring (daromad − xarajat yig'indisi; manfiy bo'lishi mumkin)."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "2\n100\n40\n50\n70",
+     "out": "40"
+    },
+    {
+     "in": "1\n10\n20",
+     "out": "-10"
+    },
+    {
+     "in": "3\n500\n100\n300\n300\n200\n50",
+     "out": "550",
+     "hidden": true
+    },
+    {
+     "in": "2\n0\n0\n5\n5",
+     "out": "0",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-h09",
+   "title": {
+    "uz": "Narxlar va chegirma"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda mahsulotlar soni N, keyin narxlar kiritiladi. Narxi 100000 dan yuqori mahsulotga 10% chegirma beriladi. To'lanadigan jami summani chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "3\n50000\n200000\n100000",
+     "out": "330000"
+    },
+    {
+     "in": "2\n100001\n10",
+     "out": "90010.9"
+    },
+    {
+     "in": "1\n300000",
+     "out": "270000",
+     "hidden": true
+    },
+    {
+     "in": "4\n10\n20\n30\n40",
+     "out": "100",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-h10",
+   "title": {
+    "uz": "A'lo va ikki baholar"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda baholar soni N, keyin baholar (2–5) kiritiladi. Avval nechta 5 baho, keyin nechta 2 baho borligini alohida qatorlarda chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n5\n2\n5\n3\n2",
+     "out": "2\n2"
+    },
+    {
+     "in": "3\n4\n4\n4",
+     "out": "0\n0"
+    },
+    {
+     "in": "4\n5\n5\n5\n5",
+     "out": "4\n0",
+     "hidden": true
+    },
+    {
+     "in": "2\n2\n2",
+     "out": "0\n2",
+     "hidden": true
+    }
+   ]
+  }
+ ],
+ "extra": [
+  {
+   "id": "for-x01",
+   "title": {
+    "uz": "Yaroqsiz mahsulotlar"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda mahsulotlar soni N, keyin har biri uchun 1 (muddati o'tgan) yoki 0 (yaroqli) kiritiladi. Avval muddati o'tganlar, keyin yaroqlilar sonini alohida qatorlarda chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "5\n1\n0\n0\n1\n0",
+     "out": "2\n3"
+    },
+    {
+     "in": "3\n0\n0\n0",
+     "out": "0\n3"
+    },
+    {
+     "in": "2\n1\n1",
+     "out": "2\n0",
+     "hidden": true
+    },
+    {
+     "in": "4\n1\n0\n1\n0",
+     "out": "2\n2",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-x02",
+   "title": {
+    "uz": "Eng katta farq"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda kunlar soni N, keyin harorat kiritiladi. Eng yuqori va eng past harorat farqini chiqaring (kattasidan kichigini ayiring)."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "4\n5\n12\n-3\n8",
+     "out": "15"
+    },
+    {
+     "in": "1\n7",
+     "out": "0"
+    },
+    {
+     "in": "3\n10\n10\n10",
+     "out": "0",
+     "hidden": true
+    },
+    {
+     "in": "5\n20\n25\n18\n30\n22",
+     "out": "12",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-x03",
+   "title": {
+    "uz": "Kunlik reja"
+   },
+   "statement": {
+    "uz": "Kuniga 20 sahifa o'qish rejasi bor. Birinchi qatorda kunlar soni N, keyin har kuni o'qilgan sahifa kiritiladi. Har kun uchun alohida qatorda reja bajarilgan bo'lsa “Ha”, bo'lmasa “Yo'q” deb chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3\n25\n10\n20",
+     "out": "Ha\nYo'q\nHa"
+    },
+    {
+     "in": "2\n0\n19",
+     "out": "Yo'q\nYo'q"
+    },
+    {
+     "in": "4\n20\n20\n20\n20",
+     "out": "Ha\nHa\nHa\nHa",
+     "hidden": true
+    },
+    {
+     "in": "1\n5",
+     "out": "Yo'q",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-x04",
+   "title": {
+    "uz": "Yugurish natijalari"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda kunlar soni N, keyin har kuni yugurilgan km kiritiladi. Jami masofani va eng uzun kunlik masofani alohida qatorlarda chiqaring."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "3\n5\n8\n3",
+     "out": "16\n8"
+    },
+    {
+     "in": "1\n10",
+     "out": "10\n10"
+    },
+    {
+     "in": "4\n2\n2\n2\n2",
+     "out": "8\n2",
+     "hidden": true
+    },
+    {
+     "in": "5\n1\n9\n4\n9\n2",
+     "out": "25\n9",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-x05",
+   "title": {
+    "uz": "Qarzni to'lash"
+   },
+   "statement": {
+    "uz": "Qarz Q, har oylik to'lov P so'm, oylar soni N (shu tartibda kiritiladi). Har oydan keyingi qarz qoldig'ini alohida qatorlarda chiqaring; qoldiq 0 dan kam bo'lmaydi."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "numbers"
+   },
+   "tests": [
+    {
+     "in": "100000\n30000\n5",
+     "out": "70000\n40000\n10000\n0\n0"
+    },
+    {
+     "in": "50000\n50000\n2",
+     "out": "0\n0"
+    },
+    {
+     "in": "10000\n3000\n3",
+     "out": "7000\n4000\n1000",
+     "hidden": true
+    },
+    {
+     "in": "0\n100\n2",
+     "out": "0\n0",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "for-x06",
+   "title": {
+    "uz": "Xush kelibsiz"
+   },
+   "statement": {
+    "uz": "Birinchi qatorda mehmonlar soni N, keyin N ta ism kiritiladi (String). Har bir ism uchun alohida qatorda “Xush kelibsiz, ISM!” deb yozing."
+   },
+   "source": "bank2",
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "2\nAli\nVali",
+     "out": "Xush kelibsiz, Ali!\nXush kelibsiz, Vali!"
+    },
+    {
+     "in": "1\nMadina",
+     "out": "Xush kelibsiz, Madina!"
+    },
+    {
+     "in": "3\nAnvar\nZilola\nSardor",
+     "out": "Xush kelibsiz, Anvar!\nXush kelibsiz, Zilola!\nXush kelibsiz, Sardor!",
+     "hidden": true
+    },
+    {
+     "in": "2\nDilnoza\nJasur",
+     "out": "Xush kelibsiz, Dilnoza!\nXush kelibsiz, Jasur!",
+     "hidden": true
+    }
+   ]
+  },
+  {
    "id": "for-101",
    "title": {
     "uz": "Do'stlaringizga salom aytish"
@@ -249,9 +1045,7 @@
    "source": "Flowgorithm_For_Boshlovchilar_20_masala",
    "judge": null,
    "tests": []
-  }
- ],
- "homework": [
+  },
   {
    "id": "for-121",
    "title": {
@@ -611,9 +1405,7 @@
    "source": "For_masalalar_toplami",
    "judge": null,
    "tests": []
-  }
- ],
- "extra": [
+  },
   {
    "id": "for-151",
    "title": {
