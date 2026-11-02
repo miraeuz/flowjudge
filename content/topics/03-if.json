@@ -1,0 +1,1422 @@
+{
+ "id": "if",
+ "order": 3,
+ "title": {
+  "uz": "If — shart operatori",
+  "en": "If — conditions"
+ },
+ "lesson": {
+  "uz": "Oddiy if, if-else va bir nechta shartli hayotiy masalalar.",
+  "en": "Simple if, if-else and multi-condition everyday problems."
+ },
+ "classwork": [
+  {
+   "id": "if-1",
+   "title": {
+    "uz": "Bitta son kiriting. Agar 10 dan katta bo‘lsa «Katta», aks…"
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Agar 10 dan katta bo‘lsa «Katta», aks holda «Katta emas» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "15",
+     "out": "Katta"
+    },
+    {
+     "in": "10",
+     "out": "Katta emas"
+    },
+    {
+     "in": "3",
+     "out": "Katta emas",
+     "hidden": true
+    },
+    {
+     "in": "-5",
+     "out": "Katta emas",
+     "hidden": true
+    },
+    {
+     "in": "11",
+     "out": "Katta",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-2",
+   "title": {
+    "uz": "Bitta son kiriting. Agar 5 ga teng bo‘lsa «To‘g‘ri», aks…"
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Agar 5 ga teng bo‘lsa «To‘g‘ri», aks holda «Noto‘g‘ri» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "To'g'ri"
+    },
+    {
+     "in": "4",
+     "out": "Noto'g'ri"
+    },
+    {
+     "in": "6",
+     "out": "Noto'g'ri",
+     "hidden": true
+    },
+    {
+     "in": "0",
+     "out": "Noto'g'ri",
+     "hidden": true
+    },
+    {
+     "in": "-5",
+     "out": "Noto'g'ri",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-3",
+   "title": {
+    "uz": "Bitta son kiriting. Agar 0 ga teng bo‘lsa «Nol», aks holda…"
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Agar 0 ga teng bo‘lsa «Nol», aks holda «Nol emas» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "0",
+     "out": "Nol"
+    },
+    {
+     "in": "5",
+     "out": "Nol emas"
+    },
+    {
+     "in": "-2",
+     "out": "Nol emas",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "Nol emas",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-4",
+   "title": {
+    "uz": "Bitta son kiriting. Agar 100 dan kichik bo‘lsa «Kichik», aks…"
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Agar 100 dan kichik bo‘lsa «Kichik», aks holda «Kichik emas» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "50",
+     "out": "Kichik"
+    },
+    {
+     "in": "100",
+     "out": "Kichik emas"
+    },
+    {
+     "in": "99",
+     "out": "Kichik",
+     "hidden": true
+    },
+    {
+     "in": "150",
+     "out": "Kichik emas",
+     "hidden": true
+    },
+    {
+     "in": "-3",
+     "out": "Kichik",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-5",
+   "title": {
+    "uz": "Foydalanuvchi yoshini kiritsin. Agar 18 dan katta yoki teng…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi yoshini kiritsin. Agar 18 dan katta yoki teng bo‘lsa «Voyaga yetgan», aks holda «Voyaga yetmagan» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "18",
+     "out": "Voyaga yetgan"
+    },
+    {
+     "in": "17",
+     "out": "Voyaga yetmagan"
+    },
+    {
+     "in": "40",
+     "out": "Voyaga yetgan",
+     "hidden": true
+    },
+    {
+     "in": "5",
+     "out": "Voyaga yetmagan",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-6",
+   "title": {
+    "uz": "Bitta baho kiriting (1–5). Agar 5 bo‘lsa «A’lo» deb chiqaring."
+   },
+   "statement": {
+    "uz": "Bitta baho kiriting (1–5). Agar 5 bo‘lsa «A’lo» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "A'lo"
+    },
+    {
+     "in": "4",
+     "out": ""
+    },
+    {
+     "in": "3",
+     "out": "",
+     "hidden": true
+    },
+    {
+     "in": "1",
+     "out": "",
+     "hidden": true
+    },
+    {
+     "in": "2",
+     "out": "",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-7",
+   "title": {
+    "uz": "Bitta baho kiriting. Agar 4 yoki 5 bo‘lsa «Yaxshi», aks holda…"
+   },
+   "statement": {
+    "uz": "Bitta baho kiriting. Agar 4 yoki 5 bo‘lsa «Yaxshi», aks holda «Yaxshi emas» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "Yaxshi"
+    },
+    {
+     "in": "4",
+     "out": "Yaxshi"
+    },
+    {
+     "in": "3",
+     "out": "Yaxshi emas",
+     "hidden": true
+    },
+    {
+     "in": "2",
+     "out": "Yaxshi emas",
+     "hidden": true
+    },
+    {
+     "in": "1",
+     "out": "Yaxshi emas",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-8",
+   "title": {
+    "uz": "Foydalanuvchi parolini kiritsin. Agar «1234» bo‘lsa «Xush…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi parolini kiritsin. Agar «1234» bo‘lsa «Xush kelibsiz!», aks holda «Parol noto‘g‘ri» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "1234",
+     "out": "Xush kelibsiz!"
+    },
+    {
+     "in": "4321",
+     "out": "Parol noto'g'ri"
+    },
+    {
+     "in": "12345",
+     "out": "Parol noto'g'ri",
+     "hidden": true
+    },
+    {
+     "in": "0000",
+     "out": "Parol noto'g'ri",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-9",
+   "title": {
+    "uz": "Foydalanuvchi ismini kiritsin. Agar ism «Ali» bo‘lsa «Salom…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ismini kiritsin. Agar ism «Ali» bo‘lsa «Salom do‘stim!», aks holda «Salom» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "Ali",
+     "out": "Salom do'stim!"
+    },
+    {
+     "in": "Vali",
+     "out": "Salom"
+    },
+    {
+     "in": "Madina",
+     "out": "Salom",
+     "hidden": true
+    },
+    {
+     "in": "Jasur",
+     "out": "Salom",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-10",
+   "title": {
+    "uz": "Bitta son kiriting. Agar 1 dan 10 oralig‘ida bo‘lsa «To‘g‘ri…"
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Agar 1 dan 10 oralig‘ida bo‘lsa «To‘g‘ri oraliq», aks holda «Noto‘g‘ri oraliq» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "To'g'ri oraliq"
+    },
+    {
+     "in": "1",
+     "out": "To'g'ri oraliq"
+    },
+    {
+     "in": "10",
+     "out": "To'g'ri oraliq",
+     "hidden": true
+    },
+    {
+     "in": "0",
+     "out": "Noto'g'ri oraliq",
+     "hidden": true
+    },
+    {
+     "in": "11",
+     "out": "Noto'g'ri oraliq",
+     "hidden": true
+    },
+    {
+     "in": "-3",
+     "out": "Noto'g'ri oraliq",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-11",
+   "title": {
+    "uz": "Foydalanuvchi temperaturani kiritsin. Agar 0 dan past bo‘lsa…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi temperaturani kiritsin. Agar 0 dan past bo‘lsa «Sovuq», aks holda «Iliq» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "-5",
+     "out": "Sovuq"
+    },
+    {
+     "in": "0",
+     "out": "Iliq"
+    },
+    {
+     "in": "10",
+     "out": "Iliq",
+     "hidden": true
+    },
+    {
+     "in": "-1",
+     "out": "Sovuq",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-12",
+   "title": {
+    "uz": "Foydalanuvchi ballini kiritsin (0–100). Agar 60 dan yuqori…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ballini kiritsin (0–100). Agar 60 dan yuqori yoki teng bo‘lsa «O‘tdi», aks holda «O‘tmadi» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "60",
+     "out": "O'tdi"
+    },
+    {
+     "in": "59",
+     "out": "O'tmadi"
+    },
+    {
+     "in": "100",
+     "out": "O'tdi",
+     "hidden": true
+    },
+    {
+     "in": "0",
+     "out": "O'tmadi",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-13",
+   "title": {
+    "uz": "Foydalanuvchi kun raqamini kiritsin (1–7). Agar 6 yoki 7…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi kun raqamini kiritsin (1–7). Agar 6 yoki 7 bo‘lsa «Dam olish kuni», aks holda «Ish kuni» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "6",
+     "out": "Dam olish kuni"
+    },
+    {
+     "in": "7",
+     "out": "Dam olish kuni"
+    },
+    {
+     "in": "1",
+     "out": "Ish kuni",
+     "hidden": true
+    },
+    {
+     "in": "3",
+     "out": "Ish kuni",
+     "hidden": true
+    },
+    {
+     "in": "5",
+     "out": "Ish kuni",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-14",
+   "title": {
+    "uz": "Bitta son kiriting. Agar 10 dan katta bo‘lsa, uni 2 ga…"
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Agar 10 dan katta bo‘lsa, uni 2 ga ko‘paytirib chiqaring. Aks holda o‘zini chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "15",
+     "out": "30"
+    },
+    {
+     "in": "10",
+     "out": "10"
+    },
+    {
+     "in": "3",
+     "out": "3",
+     "hidden": true
+    },
+    {
+     "in": "-5",
+     "out": "-5",
+     "hidden": true
+    },
+    {
+     "in": "11",
+     "out": "22",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-15",
+   "title": {
+    "uz": "Bitta son kiriting. Agar 20 dan kichik bo‘lsa, unga 5 qo‘shib…"
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Agar 20 dan kichik bo‘lsa, unga 5 qo‘shib chiqaring. Aks holda o‘zini chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "10",
+     "out": "15"
+    },
+    {
+     "in": "20",
+     "out": "20"
+    },
+    {
+     "in": "25",
+     "out": "25",
+     "hidden": true
+    },
+    {
+     "in": "0",
+     "out": "5",
+     "hidden": true
+    },
+    {
+     "in": "19",
+     "out": "24",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-16",
+   "title": {
+    "uz": "Ikkita son kiriting. Qaysi biri katta ekanligini chiqaring."
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Qaysi biri katta ekanligini chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3\n9",
+     "out": "9"
+    },
+    {
+     "in": "9\n3",
+     "out": "9"
+    },
+    {
+     "in": "5\n5",
+     "out": "5",
+     "hidden": true
+    },
+    {
+     "in": "-1\n-5",
+     "out": "-1",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-17",
+   "title": {
+    "uz": "Ikkita son kiriting. Qaysi biri kichik ekanligini chiqaring."
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Qaysi biri kichik ekanligini chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3\n9",
+     "out": "3"
+    },
+    {
+     "in": "9\n3",
+     "out": "3"
+    },
+    {
+     "in": "5\n5",
+     "out": "5",
+     "hidden": true
+    },
+    {
+     "in": "-1\n-5",
+     "out": "-5",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-18",
+   "title": {
+    "uz": "Ikkita son kiriting. Agar ular teng bo‘lsa «Teng», aks holda…"
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Agar ular teng bo‘lsa «Teng», aks holda «Teng emas» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3\n3",
+     "out": "Teng"
+    },
+    {
+     "in": "3\n4",
+     "out": "Teng emas"
+    },
+    {
+     "in": "0\n0",
+     "out": "Teng",
+     "hidden": true
+    },
+    {
+     "in": "-1\n1",
+     "out": "Teng emas",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-19",
+   "title": {
+    "uz": "Foydalanuvchi yoshini kiritsin. 12 dan kichik → «Bola», 12–17…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi yoshini kiritsin. 12 dan kichik → «Bola», 12–17 → «O‘smir», 18 va undan katta → «Katta»."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "Bola"
+    },
+    {
+     "in": "12",
+     "out": "O'smir"
+    },
+    {
+     "in": "17",
+     "out": "O'smir",
+     "hidden": true
+    },
+    {
+     "in": "18",
+     "out": "Katta",
+     "hidden": true
+    },
+    {
+     "in": "40",
+     "out": "Katta",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-20",
+   "title": {
+    "uz": "Bitta son kiriting. Agar musbat bo‘lsa «Musbat», aks holda…"
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Agar musbat bo‘lsa «Musbat», aks holda «Musbat emas» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "Musbat"
+    },
+    {
+     "in": "0",
+     "out": "Musbat emas"
+    },
+    {
+     "in": "-3",
+     "out": "Musbat emas",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "Musbat",
+     "hidden": true
+    }
+   ]
+  }
+ ],
+ "homework": [
+  {
+   "id": "if-21",
+   "title": {
+    "uz": "Bitta son kiriting. Agar manfiy bo‘lsa «Manfiy», aks holda…"
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Agar manfiy bo‘lsa «Manfiy», aks holda «Manfiy emas» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "-5",
+     "out": "Manfiy"
+    },
+    {
+     "in": "0",
+     "out": "Manfiy emas"
+    },
+    {
+     "in": "3",
+     "out": "Manfiy emas",
+     "hidden": true
+    },
+    {
+     "in": "-100",
+     "out": "Manfiy",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-22",
+   "title": {
+    "uz": "Bitta son kiriting. Musbat, manfiy yoki nol ekanligini…"
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Musbat, manfiy yoki nol ekanligini aniqlang."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "Musbat"
+    },
+    {
+     "in": "-3",
+     "out": "Manfiy"
+    },
+    {
+     "in": "0",
+     "out": "Nol",
+     "hidden": true
+    },
+    {
+     "in": "100",
+     "out": "Musbat",
+     "hidden": true
+    },
+    {
+     "in": "-1",
+     "out": "Manfiy",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-23",
+   "title": {
+    "uz": "Bitta son kiriting. Agar juft bo‘lsa «Juft», aks holda «Toq»…"
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Agar juft bo‘lsa «Juft», aks holda «Toq» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "4",
+     "out": "Juft"
+    },
+    {
+     "in": "7",
+     "out": "Toq"
+    },
+    {
+     "in": "0",
+     "out": "Juft",
+     "hidden": true
+    },
+    {
+     "in": "-3",
+     "out": "Toq",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "Juft",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-24",
+   "title": {
+    "uz": "Bitta son kiriting. Agar juft va musbat bo‘lsa «Juft musbat»,…"
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Agar juft va musbat bo‘lsa «Juft musbat», aks holda «Boshqa holat» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "4",
+     "out": "Juft musbat"
+    },
+    {
+     "in": "7",
+     "out": "Boshqa holat"
+    },
+    {
+     "in": "0",
+     "out": "Boshqa holat",
+     "hidden": true
+    },
+    {
+     "in": "-4",
+     "out": "Boshqa holat",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "Juft musbat",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-25",
+   "title": {
+    "uz": "Ikkita son kiriting. Agar ikkalasi ham musbat bo‘lsa…"
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Agar ikkalasi ham musbat bo‘lsa «Ikkalasi ham musbat» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3\n4",
+     "out": "Ikkalasi ham musbat"
+    },
+    {
+     "in": "1\n1",
+     "out": "Ikkalasi ham musbat"
+    },
+    {
+     "in": "-1\n5",
+     "out": "",
+     "hidden": true
+    },
+    {
+     "in": "0\n3",
+     "out": "",
+     "hidden": true
+    },
+    {
+     "in": "5\n-2",
+     "out": "",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-26",
+   "title": {
+    "uz": "Ikkita son kiriting. Agar hech bo‘lmaganda bittasi musbat…"
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Agar hech bo‘lmaganda bittasi musbat bo‘lsa «Musbat son bor» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3\n-4",
+     "out": "Musbat son bor"
+    },
+    {
+     "in": "-1\n-1",
+     "out": ""
+    },
+    {
+     "in": "0\n0",
+     "out": "",
+     "hidden": true
+    },
+    {
+     "in": "-5\n2",
+     "out": "Musbat son bor",
+     "hidden": true
+    },
+    {
+     "in": "4\n4",
+     "out": "Musbat son bor",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-27",
+   "title": {
+    "uz": "Uchta son kiriting. Eng kattasini toping."
+   },
+   "statement": {
+    "uz": "Uchta son kiriting. Eng kattasini toping."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3\n9\n4",
+     "out": "9"
+    },
+    {
+     "in": "5\n5\n5",
+     "out": "5"
+    },
+    {
+     "in": "-1\n-5\n-3",
+     "out": "-1",
+     "hidden": true
+    },
+    {
+     "in": "10\n2\n10",
+     "out": "10",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-28",
+   "title": {
+    "uz": "Uchta son kiriting. Eng kichigini toping."
+   },
+   "statement": {
+    "uz": "Uchta son kiriting. Eng kichigini toping."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3\n9\n4",
+     "out": "3"
+    },
+    {
+     "in": "5\n5\n5",
+     "out": "5"
+    },
+    {
+     "in": "-1\n-5\n-3",
+     "out": "-5",
+     "hidden": true
+    },
+    {
+     "in": "10\n2\n10",
+     "out": "2",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-29",
+   "title": {
+    "uz": "Uchta baho kiriting. Agar hammasi 5 bo‘lsa «A’lo o‘quvchi»…"
+   },
+   "statement": {
+    "uz": "Uchta baho kiriting. Agar hammasi 5 bo‘lsa «A’lo o‘quvchi» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5\n5\n5",
+     "out": "A'lo o'quvchi"
+    },
+    {
+     "in": "5\n5\n4",
+     "out": ""
+    },
+    {
+     "in": "4\n4\n4",
+     "out": "",
+     "hidden": true
+    },
+    {
+     "in": "5\n3\n5",
+     "out": "",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-30",
+   "title": {
+    "uz": "Foydalanuvchi ismi va yoshini kiritsin. Agar yoshi 18 dan…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi ismi va yoshini kiritsin. Agar yoshi 18 dan katta bo‘lsa «Salom, [ism]! Siz kattasiz», aks holda «Salom, [ism]! Siz hali yoshsiz» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "Ali\n20",
+     "out": "Salom, Ali! Siz kattasiz"
+    },
+    {
+     "in": "Madina\n18",
+     "out": "Salom, Madina! Siz hali yoshsiz"
+    },
+    {
+     "in": "Jasur\n30",
+     "out": "Salom, Jasur! Siz kattasiz",
+     "hidden": true
+    },
+    {
+     "in": "Zilola\n12",
+     "out": "Salom, Zilola! Siz hali yoshsiz",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-31",
+   "title": {
+    "uz": "Bitta son kiriting. Agar 3 ga qoldiqsiz bo‘linsa «Bo‘linadi»,…"
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Agar 3 ga qoldiqsiz bo‘linsa «Bo‘linadi», aks holda «Bo‘linmaydi» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "9",
+     "out": "Bo'linadi"
+    },
+    {
+     "in": "10",
+     "out": "Bo'linmaydi"
+    },
+    {
+     "in": "0",
+     "out": "Bo'linadi",
+     "hidden": true
+    },
+    {
+     "in": "12",
+     "out": "Bo'linadi",
+     "hidden": true
+    },
+    {
+     "in": "7",
+     "out": "Bo'linmaydi",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-32",
+   "title": {
+    "uz": "Foydalanuvchi pul miqdorini kiritsin. Agar 50000 dan ko‘p…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi pul miqdorini kiritsin. Agar 50000 dan ko‘p bo‘lsa «Yetarli pul bor», aks holda «Pul yetarli emas» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "60000",
+     "out": "Yetarli pul bor"
+    },
+    {
+     "in": "50000",
+     "out": "Pul yetarli emas"
+    },
+    {
+     "in": "10000",
+     "out": "Pul yetarli emas",
+     "hidden": true
+    },
+    {
+     "in": "120000",
+     "out": "Yetarli pul bor",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-33",
+   "title": {
+    "uz": "Foydalanuvchi nechta xato qilganini kiritsin. Agar 0 bo‘lsa…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi nechta xato qilganini kiritsin. Agar 0 bo‘lsa «Ajoyib!», aks holda «Yana urinib ko‘ring» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "0",
+     "out": "Ajoyib!"
+    },
+    {
+     "in": "1",
+     "out": "Yana urinib ko'ring"
+    },
+    {
+     "in": "5",
+     "out": "Yana urinib ko'ring",
+     "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "Yana urinib ko'ring",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-34",
+   "title": {
+    "uz": "Bitta son kiriting. Agar 0 dan katta va 100 dan kichik bo‘lsa…"
+   },
+   "statement": {
+    "uz": "Bitta son kiriting. Agar 0 dan katta va 100 dan kichik bo‘lsa «Oraliqda», aks holda «Tashqarida» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "50",
+     "out": "Oraliqda"
+    },
+    {
+     "in": "0",
+     "out": "Tashqarida"
+    },
+    {
+     "in": "100",
+     "out": "Tashqarida",
+     "hidden": true
+    },
+    {
+     "in": "1",
+     "out": "Oraliqda",
+     "hidden": true
+    },
+    {
+     "in": "99",
+     "out": "Oraliqda",
+     "hidden": true
+    },
+    {
+     "in": "-5",
+     "out": "Tashqarida",
+     "hidden": true
+    },
+    {
+     "in": "150",
+     "out": "Tashqarida",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-35",
+   "title": {
+    "uz": "Ikkita son kiriting. Agar birinchisi ikkinchisidan katta…"
+   },
+   "statement": {
+    "uz": "Ikkita son kiriting. Agar birinchisi ikkinchisidan katta bo‘lsa ayirmasini, aks holda yig‘indisini chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "9\n4",
+     "out": "5"
+    },
+    {
+     "in": "3\n8",
+     "out": "11"
+    },
+    {
+     "in": "5\n5",
+     "out": "10",
+     "hidden": true
+    },
+    {
+     "in": "-2\n-7",
+     "out": "5",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-36",
+   "title": {
+    "uz": "Foydalanuvchi bugun nechta vazifa bajarganini kiritsin. Agar…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi bugun nechta vazifa bajarganini kiritsin. Agar 5 yoki undan ko‘p bo‘lsa «Barakalla!», aks holda «Yana biroz harakat qiling» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "Barakalla!"
+    },
+    {
+     "in": "4",
+     "out": "Yana biroz harakat qiling"
+    },
+    {
+     "in": "10",
+     "out": "Barakalla!",
+     "hidden": true
+    },
+    {
+     "in": "0",
+     "out": "Yana biroz harakat qiling",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-37",
+   "title": {
+    "uz": "Foydalanuvchi haroratni kiritsin. 0 dan past → «Juda sovuq»,…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi haroratni kiritsin. 0 dan past → «Juda sovuq», 0–15 → «Sovuq», 16–25 → «Iliq», 25 dan yuqori → «Issiq»."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "-5",
+     "out": "Juda sovuq"
+    },
+    {
+     "in": "0",
+     "out": "Sovuq"
+    },
+    {
+     "in": "15",
+     "out": "Sovuq",
+     "hidden": true
+    },
+    {
+     "in": "16",
+     "out": "Iliq",
+     "hidden": true
+    },
+    {
+     "in": "25",
+     "out": "Iliq",
+     "hidden": true
+    },
+    {
+     "in": "26",
+     "out": "Issiq",
+     "hidden": true
+    },
+    {
+     "in": "40",
+     "out": "Issiq",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-38",
+   "title": {
+    "uz": "Bitta baho kiriting. 5 → «A’lo», 4 → «Yaxshi», 3 →…"
+   },
+   "statement": {
+    "uz": "Bitta baho kiriting. 5 → «A’lo», 4 → «Yaxshi», 3 → «Qoniqarli», qolganlari → «Yomon»."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "5",
+     "out": "A'lo"
+    },
+    {
+     "in": "4",
+     "out": "Yaxshi"
+    },
+    {
+     "in": "3",
+     "out": "Qoniqarli",
+     "hidden": true
+    },
+    {
+     "in": "2",
+     "out": "Yomon",
+     "hidden": true
+    },
+    {
+     "in": "1",
+     "out": "Yomon",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-39",
+   "title": {
+    "uz": "Foydalanuvchi yoshini va bo‘yini (sm) kiritsin. Agar yoshi 12…"
+   },
+   "statement": {
+    "uz": "Foydalanuvchi yoshini va bo‘yini (sm) kiritsin. Agar yoshi 12 dan katta va bo‘yi 140 dan baland bo‘lsa «Kirish mumkin», aks holda «Kirish mumkin emas» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "13\n150",
+     "out": "Kirish mumkin"
+    },
+    {
+     "in": "12\n160",
+     "out": "Kirish mumkin emas"
+    },
+    {
+     "in": "15\n140",
+     "out": "Kirish mumkin emas",
+     "hidden": true
+    },
+    {
+     "in": "10\n120",
+     "out": "Kirish mumkin emas",
+     "hidden": true
+    },
+    {
+     "in": "14\n141",
+     "out": "Kirish mumkin",
+     "hidden": true
+    }
+   ]
+  },
+  {
+   "id": "if-40",
+   "title": {
+    "uz": "Uchta son kiriting. Agar ularning hammasi teng bo‘lsa «Uchala…"
+   },
+   "statement": {
+    "uz": "Uchta son kiriting. Agar ularning hammasi teng bo‘lsa «Uchala son teng», aks holda «Teng emas» deb chiqaring."
+   },
+   "judge": {
+    "mode": "tokens"
+   },
+   "tests": [
+    {
+     "in": "3\n3\n3",
+     "out": "Uchala son teng"
+    },
+    {
+     "in": "3\n3\n4",
+     "out": "Teng emas"
+    },
+    {
+     "in": "0\n0\n0",
+     "out": "Uchala son teng",
+     "hidden": true
+    },
+    {
+     "in": "1\n2\n3",
+     "out": "Teng emas",
+     "hidden": true
+    }
+   ]
+  }
+ ],
+ "extra": []
+}

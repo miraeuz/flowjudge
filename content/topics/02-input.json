@@ -2,3415 +2,22 @@
  "id": "input",
  "order": 2,
  "title": {
-  "uz": "Input — ma'lumot kiritish",
-  "en": "Input — reading data"
+  "uz": "Input va hisoblash",
+  "en": "Input and calculations"
  },
  "lesson": {
-  "uz": "Input bloki foydalanuvchidan qiymat oladi va o'zgaruvchiga saqlaydi. Tartib: Declare → Input → Assign → Output.",
-  "en": "The Input block reads a value from the user into a variable. Order: Declare → Input → Assign → Output."
+  "uz": "Input, Assign va Output. Asosan butun sonlar va hayotiy vaziyatlar.",
+  "en": "Input, Assign and Output. Mostly whole numbers and everyday situations."
  },
  "classwork": [
   {
-   "id": "input-01",
-   "title": {
-    "uz": "Do'kondagi daftarlar",
-    "en": "Notebooks in the shop"
-   },
-   "statement": {
-    "uz": "Do'konga keltirilgan daftarlar soni kiritiladi. Kun davomida 12 tasi sotildi. Nechta daftar qoldi?",
-    "en": "The number of notebooks delivered to a shop is entered. 12 were sold during the day. How many are left?"
-   },
-   "inputFormat": {
-    "uz": "Bitta butun son",
-    "en": "One integer"
-   },
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "50",
-     "out": "38"
-    },
-    {
-     "in": "12",
-     "out": "0"
-    },
-    {
-     "in": "100",
-     "out": "88",
-     "hidden": true
-    },
-    {
-     "in": "13",
-     "out": "1",
-     "hidden": true
-    }
-   ]
-  },
-  {
-   "id": "input-02",
-   "title": {
-    "uz": "Qalamlar qutisi",
-    "en": "Boxes of pencils"
-   },
-   "statement": {
-    "uz": "Bir qutida 6 ta qalam bor. Do'konga kelgan qutilar soni kiritiladi. Jami nechta qalam keltirildi?",
-    "en": "A box holds 6 pencils. The number of boxes delivered is entered. How many pencils arrived in total?"
-   },
-   "inputFormat": {
-    "uz": "Qutilar soni",
-    "en": "Number of boxes"
-   },
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "3",
-     "out": "18"
-    },
-    {
-     "in": "10",
-     "out": "60"
-    },
-    {
-     "in": "0",
-     "out": "0",
-     "hidden": true
-    },
-    {
-     "in": "25",
-     "out": "150",
-     "hidden": true
-    }
-   ]
-  },
-  {
-   "id": "input-03",
-   "title": {
-    "uz": "Muzqaymoq",
-    "en": "Ice cream"
-   },
-   "statement": {
-    "uz": "Anvarning cho'ntagidagi pul (so'mda) kiritiladi. U 2000 so'mga muzqaymoq oldi. Qancha pul qoldi?",
-    "en": "The amount of money in Anvar's pocket is entered. He bought ice cream for 2000. How much is left?"
-   },
-   "inputFormat": {
-    "uz": "Pul miqdori",
-    "en": "Amount of money"
-   },
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "5000",
-     "out": "3000"
-    },
-    {
-     "in": "2000",
-     "out": "0"
-    },
-    {
-     "in": "15000",
-     "out": "13000",
-     "hidden": true
-    },
-    {
-     "in": "2500",
-     "out": "500",
-     "hidden": true
-    }
-   ]
-  },
-  {
-   "id": "input-04",
-   "title": {
-    "uz": "Daftarlar narxi",
-    "en": "Price of notebooks"
-   },
-   "statement": {
-    "uz": "Bitta daftar narxi va sotib olinadigan daftarlar soni kiritiladi. Jami necha so'm to'lash kerak?",
-    "en": "The price of one notebook and the number to buy are entered. How much must be paid in total?"
-   },
-   "inputFormat": {
-    "uz": "Ikki qator: narx, soni",
-    "en": "Two lines: price, count"
-   },
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "3000\n4",
-     "out": "12000"
-    },
-    {
-     "in": "2500\n10",
-     "out": "25000"
-    },
-    {
-     "in": "1200\n0",
-     "out": "0",
-     "hidden": true
-    },
-    {
-     "in": "999\n7",
-     "out": "6993",
-     "hidden": true
-    }
-   ]
-  },
-  {
-   "id": "input-05",
-   "title": {
-    "uz": "Konfetlarni bo'lish",
-    "en": "Sharing candies"
-   },
-   "statement": {
-    "uz": "Konfetlar soni va bolalar soni kiritiladi. Har bir bolaga nechtadan konfet tushadi va nechta konfet ortib qoladi? (Ikki sonni chiqaring)",
-    "en": "The number of candies and children is entered. How many candies does each child get and how many are left over? (Print two numbers)"
-   },
-   "inputFormat": {
-    "uz": "Ikki qator: konfetlar, bolalar",
-    "en": "Two lines: candies, children"
-   },
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "50\n7",
-     "out": "7 1"
-    },
-    {
-     "in": "20\n5",
-     "out": "4 0"
-    },
-    {
-     "in": "3\n4",
-     "out": "0 3",
-     "hidden": true
-    },
-    {
-     "in": "100\n9",
-     "out": "11 1",
-     "hidden": true
-    }
-   ]
-  },
-  {
-   "id": "input-106",
-   "title": {
-    "uz": "Bitta son kiriting. Uni ekranga chiqaring."
-   },
-   "statement": {
-    "uz": "Bitta son kiriting. Uni ekranga chiqaring."
-   },
-   "source": "Algoritm_input_oddiy_misollar",
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "7",
-     "out": "7"
-    },
-    {
-     "in": "0",
-     "out": "0"
-    },
-    {
-     "in": "-3",
-     "out": "-3",
-     "hidden": true
-    },
-    {
-     "in": "100",
-     "out": "100",
-     "hidden": true
-    }
-   ]
-  },
-  {
-   "id": "input-107",
-   "title": {
-    "uz": "Bitta son kiriting. Unga 5 ni qo'shing."
-   },
-   "statement": {
-    "uz": "Bitta son kiriting. Unga 5 ni qo'shing."
-   },
-   "source": "Algoritm_input_oddiy_misollar",
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "7",
-     "out": "12"
-    },
-    {
-     "in": "0",
-     "out": "5"
-    },
-    {
-     "in": "-3",
-     "out": "2",
-     "hidden": true
-    },
-    {
-     "in": "100",
-     "out": "105",
-     "hidden": true
-    }
-   ]
-  },
-  {
-   "id": "input-108",
-   "title": {
-    "uz": "Bitta son kiriting. Undan 3 ni ayiring."
-   },
-   "statement": {
-    "uz": "Bitta son kiriting. Undan 3 ni ayiring."
-   },
-   "source": "Algoritm_input_oddiy_misollar",
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "7",
-     "out": "4"
-    },
-    {
-     "in": "0",
-     "out": "-3"
-    },
-    {
-     "in": "-3",
-     "out": "-6",
-     "hidden": true
-    },
-    {
-     "in": "100",
-     "out": "97",
-     "hidden": true
-    }
-   ]
-  },
-  {
-   "id": "input-109",
-   "title": {
-    "uz": "Bitta son kiriting. Uni 2 ga ko'paytiring."
-   },
-   "statement": {
-    "uz": "Bitta son kiriting. Uni 2 ga ko'paytiring."
-   },
-   "source": "Algoritm_input_oddiy_misollar",
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "7",
-     "out": "14"
-    },
-    {
-     "in": "0",
-     "out": "0"
-    },
-    {
-     "in": "-3",
-     "out": "-6",
-     "hidden": true
-    },
-    {
-     "in": "100",
-     "out": "200",
-     "hidden": true
-    }
-   ]
-  },
-  {
-   "id": "input-110",
-   "title": {
-    "uz": "Bitta son kiriting. Uni 4 ga bo'ling."
-   },
-   "statement": {
-    "uz": "Bitta son kiriting. Uni 4 ga bo'ling."
-   },
-   "source": "Algoritm_input_oddiy_misollar",
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "10",
-     "out": "2.5"
-    },
-    {
-     "in": "7",
-     "out": "1.75"
-    },
-    {
-     "in": "0",
-     "out": "0",
-     "hidden": true
-    },
-    {
-     "in": "-8",
-     "out": "-2",
-     "hidden": true
-    }
-   ]
-  },
-  {
-   "id": "input-111",
-   "title": {
-    "uz": "Ikkita son kiriting. Ularning yig'indisiga 2 ni qo'shing."
-   },
-   "statement": {
-    "uz": "Ikkita son kiriting. Ularning yig'indisiga 2 ni qo'shing."
-   },
-   "source": "Algoritm_input_oddiy_misollar",
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "7\n3",
-     "out": "12"
-    },
-    {
-     "in": "10\n-4",
-     "out": "8"
-    },
-    {
-     "in": "0\n5",
-     "out": "7",
-     "hidden": true
-    },
-    {
-     "in": "120\n45",
-     "out": "167",
-     "hidden": true
-    }
-   ]
-  },
-  {
-   "id": "input-112",
-   "title": {
-    "uz": "Ikkita son kiriting. Ularning ayirmasidan 1 ni ayiring."
-   },
-   "statement": {
-    "uz": "Ikkita son kiriting. Ularning ayirmasidan 1 ni ayiring."
-   },
-   "source": "Algoritm_input_oddiy_misollar",
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "7\n3",
-     "out": "3"
-    },
-    {
-     "in": "10\n-4",
-     "out": "13"
-    },
-    {
-     "in": "0\n5",
-     "out": "-6",
-     "hidden": true
-    },
-    {
-     "in": "120\n45",
-     "out": "74",
-     "hidden": true
-    }
-   ]
-  },
-  {
-   "id": "input-113",
-   "title": {
-    "uz": "Bitta son kiriting. Uni 5 ga ko'paytiring va 2 ni ayiring."
-   },
-   "statement": {
-    "uz": "Bitta son kiriting. Uni 5 ga ko'paytiring va 2 ni ayiring."
-   },
-   "source": "Algoritm_input_oddiy_misollar",
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "3",
-     "out": "13"
-    },
-    {
-     "in": "0",
-     "out": "-2"
-    },
-    {
-     "in": "-2",
-     "out": "-12",
-     "hidden": true
-    },
-    {
-     "in": "10",
-     "out": "48",
-     "hidden": true
-    }
-   ]
-  },
-  {
-   "id": "input-114",
-   "title": {
-    "uz": "Bitta son kiriting. Uni 2 ga ko'paytiring, keyin 7 ni…"
-   },
-   "statement": {
-    "uz": "Bitta son kiriting. Uni 2 ga ko'paytiring, keyin 7 ni qo'shing."
-   },
-   "source": "Algoritm_input_oddiy_misollar",
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "3",
-     "out": "13"
-    },
-    {
-     "in": "0",
-     "out": "7"
-    },
-    {
-     "in": "-2",
-     "out": "3",
-     "hidden": true
-    },
-    {
-     "in": "10",
-     "out": "27",
-     "hidden": true
-    }
-   ]
-  },
-  {
-   "id": "input-115",
-   "title": {
-    "uz": "Uchta son kiriting. Birinchi sonni ikkinchisiga qo'shing…"
-   },
-   "statement": {
-    "uz": "Uchta son kiriting. Birinchi sonni ikkinchisiga qo'shing va uchinchisini ayiring."
-   },
-   "source": "Algoritm_input_oddiy_misollar",
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "1\n2\n3",
-     "out": "0"
-    },
-    {
-     "in": "10\n20\n30",
-     "out": "0"
-    },
-    {
-     "in": "0\n0\n5",
-     "out": "-5",
-     "hidden": true
-    },
-    {
-     "in": "-4\n9\n2",
-     "out": "3",
-     "hidden": true
-    }
-   ]
-  },
-  {
-   "id": "input-116",
-   "title": {
-    "uz": "Bir bolaning yoshi kiritiladi. Uning 5 yildan keyingi…"
-   },
-   "statement": {
-    "uz": "Bir bolaning yoshi kiritiladi. Uning 5 yildan keyingi yoshini chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "12",
-     "out": "17"
-    },
-    {
-     "in": "17",
-     "out": "22"
-    },
-    {
-     "in": "30",
-     "out": "35",
-     "hidden": true
-    },
-    {
-     "in": "0",
-     "out": "5",
-     "hidden": true
-    }
-   ]
-  },
-  {
-   "id": "input-117",
-   "title": {
-    "uz": "Bir mahsulotning narxi kiritiladi. 3 donasining narxini…"
-   },
-   "statement": {
-    "uz": "Bir mahsulotning narxi kiritiladi. 3 donasining narxini chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "2500",
-     "out": "7500"
-    },
-    {
-     "in": "10000",
-     "out": "30000"
-    },
-    {
-     "in": "0",
-     "out": "0",
-     "hidden": true
-    },
-    {
-     "in": "999",
-     "out": "2997",
-     "hidden": true
-    }
-   ]
-  },
-  {
-   "id": "input-118",
-   "title": {
-    "uz": "Bir son kiritiladi. Uni 2 ga ko'paytirib chiqaring."
-   },
-   "statement": {
-    "uz": "Bir son kiritiladi. Uni 2 ga ko'paytirib chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "4",
-     "out": "8"
-    },
-    {
-     "in": "0",
-     "out": "0"
-    },
-    {
-     "in": "-6",
-     "out": "-12",
-     "hidden": true
-    },
-    {
-     "in": "50",
-     "out": "100",
-     "hidden": true
-    }
-   ]
-  },
-  {
-   "id": "input-119",
-   "title": {
-    "uz": "Bir odamning oylik maoshi kiritiladi. Bir kunlik maoshini…"
-   },
-   "statement": {
-    "uz": "Bir odamning oylik maoshi kiritiladi. Bir kunlik maoshini chiqaring (oyda 30 kun)."
-   },
-   "source": "Bir_input_50",
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "900000",
-     "out": "30000"
-    },
-    {
-     "in": "1500000",
-     "out": "50000"
-    },
-    {
-     "in": "30000",
-     "out": "1000",
-     "hidden": true
-    },
-    {
-     "in": "0",
-     "out": "0",
-     "hidden": true
-    }
-   ]
-  },
-  {
-   "id": "input-120",
-   "title": {
-    "uz": "Arqonning uzunligi santimetrda kiritiladi. Necha metr…"
-   },
-   "statement": {
-    "uz": "Arqonning uzunligi santimetrda kiritiladi. Necha metr ekanini chiqaring (100 sm = 1 m)."
-   },
-   "source": "Bir_input_50",
-   "judge": {
-    "mode": "numbers"
-   },
-   "tests": [
-    {
-     "in": "250",
-     "out": "2.5"
-    },
-    {
-     "in": "100",
-     "out": "1"
-    },
-    {
-     "in": "50",
-     "out": "0.5",
-     "hidden": true
-    },
-    {
-     "in": "1234",
-     "out": "12.34",
-     "hidden": true
-    }
-   ]
-  }
- ],
- "homework": [
-  {
-   "id": "input-121",
-   "title": {
-    "uz": "Bir kishining vazni grammda kiritiladi. Necha kilogramm…"
-   },
-   "statement": {
-    "uz": "Bir kishining vazni grammda kiritiladi. Necha kilogramm ekanini chiqaring (1000 g = 1 kg)."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-122",
-   "title": {
-    "uz": "Bir daftarning narxi kiritiladi. 10 ta daftar narxini…"
-   },
-   "statement": {
-    "uz": "Bir daftarning narxi kiritiladi. 10 ta daftar narxini chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-123",
-   "title": {
-    "uz": "Bir son kiritiladi. Unga 10 qo'shib chiqaring."
-   },
-   "statement": {
-    "uz": "Bir son kiritiladi. Unga 10 qo'shib chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-124",
-   "title": {
-    "uz": "Bir bolaning bo'yi santimetrda kiritiladi. Uni ekranga…"
-   },
-   "statement": {
-    "uz": "Bir bolaning bo'yi santimetrda kiritiladi. Uni ekranga chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-125",
-   "title": {
-    "uz": "Bir kishining haftalik maoshi kiritiladi. Bir kunlik…"
-   },
-   "statement": {
-    "uz": "Bir kishining haftalik maoshi kiritiladi. Bir kunlik maoshini chiqaring (7 kun)."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-126",
-   "title": {
-    "uz": "Bir mahsulotdan sotilgan soni kiritiladi. Har biri 5000…"
-   },
-   "statement": {
-    "uz": "Bir mahsulotdan sotilgan soni kiritiladi. Har biri 5000 so'm bo'lsa, tushumni chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-127",
-   "title": {
-    "uz": "Bir son kiritiladi. Uning yarmini chiqaring (2 ga…"
-   },
-   "statement": {
-    "uz": "Bir son kiritiladi. Uning yarmini chiqaring (2 ga bo'ling)."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-128",
-   "title": {
-    "uz": "Bir qutida 12 ta shokolad bor. Qutilar soni kiritiladi.…"
-   },
-   "statement": {
-    "uz": "Bir qutida 12 ta shokolad bor. Qutilar soni kiritiladi. Jami shokoladni chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-129",
-   "title": {
-    "uz": "Bir litr yog'ning narxi kiritiladi. 5 litr yog' narxini…"
-   },
-   "statement": {
-    "uz": "Bir litr yog'ning narxi kiritiladi. 5 litr yog' narxini chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-130",
-   "title": {
-    "uz": "Bir son kiritiladi. Uning kvadratini chiqaring."
-   },
-   "statement": {
-    "uz": "Bir son kiritiladi. Uning kvadratini chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-131",
-   "title": {
-    "uz": "Bir bolaning tug'ilgan yili kiritiladi. Hozirgi yil 2025…"
-   },
-   "statement": {
-    "uz": "Bir bolaning tug'ilgan yili kiritiladi. Hozirgi yil 2025 deb, yoshini chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-132",
-   "title": {
-    "uz": "Bir kishi kuniga 8000 so'm jamg'aradi. Kunlar soni…"
-   },
-   "statement": {
-    "uz": "Bir kishi kuniga 8000 so'm jamg'aradi. Kunlar soni kiritiladi. Jami jamg'armani chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-133",
-   "title": {
-    "uz": "Bir son kiritiladi. Undan 7 ni ayirib chiqaring."
-   },
-   "statement": {
-    "uz": "Bir son kiritiladi. Undan 7 ni ayirib chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-134",
-   "title": {
-    "uz": "Bir olma 150 gramm. Olmalar soni kiritiladi. Jami…"
-   },
-   "statement": {
-    "uz": "Bir olma 150 gramm. Olmalar soni kiritiladi. Jami og'irlikni chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-135",
-   "title": {
-    "uz": "Bir avtobusda 45 o'rin bor. Avtobuslar soni kiritiladi.…"
-   },
-   "statement": {
-    "uz": "Bir avtobusda 45 o'rin bor. Avtobuslar soni kiritiladi. Jami o'rinlarni chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-136",
-   "title": {
-    "uz": "Bir kishining oyligi kiritiladi. Yillik maoshini…"
-   },
-   "statement": {
-    "uz": "Bir kishining oyligi kiritiladi. Yillik maoshini chiqaring (12 oy)."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-137",
-   "title": {
-    "uz": "Bir qadam 1 metr. Qadamlar soni kiritiladi. Necha metr…"
-   },
-   "statement": {
-    "uz": "Bir qadam 1 metr. Qadamlar soni kiritiladi. Necha metr yurganini chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-138",
-   "title": {
-    "uz": "Bir non 4000 so'm. Nonlar soni kiritiladi. Jami narxini…"
-   },
-   "statement": {
-    "uz": "Bir non 4000 so'm. Nonlar soni kiritiladi. Jami narxini chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-139",
-   "title": {
-    "uz": "Bir son kiritiladi. Uni 3 ga ko'paytirib, natijaga 2…"
-   },
-   "statement": {
-    "uz": "Bir son kiritiladi. Uni 3 ga ko'paytirib, natijaga 2 qo'shib chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-140",
-   "title": {
-    "uz": "Daqiqalar soni kiritiladi. Necha sekund ekanini chiqaring…"
-   },
-   "statement": {
-    "uz": "Daqiqalar soni kiritiladi. Necha sekund ekanini chiqaring (1 daqiqa = 60 sekund)."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-141",
-   "title": {
-    "uz": "Soatlar soni kiritiladi. Necha daqiqa ekanini chiqaring…"
-   },
-   "statement": {
-    "uz": "Soatlar soni kiritiladi. Necha daqiqa ekanini chiqaring (1 soat = 60 daqiqa)."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-142",
-   "title": {
-    "uz": "Bir kishining vazni kiritiladi. 2 kg ozgach vaznini…"
-   },
-   "statement": {
-    "uz": "Bir kishining vazni kiritiladi. 2 kg ozgach vaznini chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-143",
-   "title": {
-    "uz": "Bir mahsulotning narxi kiritiladi. 20% ustama qo'shib…"
-   },
-   "statement": {
-    "uz": "Bir mahsulotning narxi kiritiladi. 20% ustama qo'shib yangi narxini chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-144",
-   "title": {
-    "uz": "Bir son kiritiladi. Uni o'ziga qo'shib (ikkilantirib)…"
-   },
-   "statement": {
-    "uz": "Bir son kiritiladi. Uni o'ziga qo'shib (ikkilantirib) chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-145",
-   "title": {
-    "uz": "Bir bolaning cho'ntagidagi pul kiritiladi. Bir muzqaymoq…"
-   },
-   "statement": {
-    "uz": "Bir bolaning cho'ntagidagi pul kiritiladi. Bir muzqaymoq 2000 so'm. Nechta muzqaymoq ola olishini chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-146",
-   "title": {
-    "uz": "Bir qutida 6 ta tuxum bor. Qutilar soni kiritiladi. Jami…"
-   },
-   "statement": {
-    "uz": "Bir qutida 6 ta tuxum bor. Qutilar soni kiritiladi. Jami tuxumni chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-147",
-   "title": {
-    "uz": "Bir kishining bo'yi metrda kiritiladi. Santimetrga…"
-   },
-   "statement": {
-    "uz": "Bir kishining bo'yi metrda kiritiladi. Santimetrga aylantirib chiqaring (× 100)."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-148",
-   "title": {
-    "uz": "Kilometrlar soni kiritiladi. Necha metr ekanini chiqaring…"
-   },
-   "statement": {
-    "uz": "Kilometrlar soni kiritiladi. Necha metr ekanini chiqaring (1 km = 1000 m)."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-149",
-   "title": {
-    "uz": "Bir daraxtdan 20 kg olma yig'iladi. Daraxtlar soni…"
-   },
-   "statement": {
-    "uz": "Bir daraxtdan 20 kg olma yig'iladi. Daraxtlar soni kiritiladi. Jami hosilni chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-150",
-   "title": {
-    "uz": "Bir sinfda 25 o'quvchi bor. Sinflar soni kiritiladi.…"
-   },
-   "statement": {
-    "uz": "Bir sinfda 25 o'quvchi bor. Sinflar soni kiritiladi. Maktabdagi jami o'quvchini chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  }
- ],
- "extra": [
-  {
-   "id": "input-151",
-   "title": {
-    "uz": "Bir kishi soatiga 30 000 so'm ishlaydi. Soatlar soni…"
-   },
-   "statement": {
-    "uz": "Bir kishi soatiga 30 000 so'm ishlaydi. Soatlar soni kiritiladi. Umumiy ish haqini chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-152",
-   "title": {
-    "uz": "Bir son kiritiladi. Uni 5 ga bo'lib chiqaring."
-   },
-   "statement": {
-    "uz": "Bir son kiritiladi. Uni 5 ga bo'lib chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-153",
-   "title": {
-    "uz": "Bir shishada 2 litr suv bor. Shishalar soni kiritiladi.…"
-   },
-   "statement": {
-    "uz": "Bir shishada 2 litr suv bor. Shishalar soni kiritiladi. Jami suvni chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-154",
-   "title": {
-    "uz": "Bir mahsulot 15 000 so'm. Berilgan pul kiritiladi.…"
-   },
-   "statement": {
-    "uz": "Bir mahsulot 15 000 so'm. Berilgan pul kiritiladi. Qaytimni chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-155",
-   "title": {
-    "uz": "Bir bolaning yoshi kiritiladi. 10 yil oldin necha yoshda…"
-   },
-   "statement": {
-    "uz": "Bir bolaning yoshi kiritiladi. 10 yil oldin necha yoshda bo'lganini chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-156",
-   "title": {
-    "uz": "Bir kg guruch 9000 so'm. Kilogramm soni kiritiladi. Jami…"
-   },
-   "statement": {
-    "uz": "Bir kg guruch 9000 so'm. Kilogramm soni kiritiladi. Jami narxni chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-157",
-   "title": {
-    "uz": "Bir son kiritiladi. Uning 3 barobarini chiqaring."
-   },
-   "statement": {
-    "uz": "Bir son kiritiladi. Uning 3 barobarini chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-158",
-   "title": {
-    "uz": "Bir qutida 10 ta qalam bor. Qutilar soni kiritiladi. Jami…"
-   },
-   "statement": {
-    "uz": "Bir qutida 10 ta qalam bor. Qutilar soni kiritiladi. Jami qalamni chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-159",
-   "title": {
-    "uz": "Tonnalar soni kiritiladi. Necha kilogramm ekanini…"
-   },
-   "statement": {
-    "uz": "Tonnalar soni kiritiladi. Necha kilogramm ekanini chiqaring (1 tonna = 1000 kg)."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-160",
-   "title": {
-    "uz": "Bir odam kuniga 5 km yuradi. Kunlar soni kiritiladi. Jami…"
-   },
-   "statement": {
-    "uz": "Bir odam kuniga 5 km yuradi. Kunlar soni kiritiladi. Jami masofani chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-161",
-   "title": {
-    "uz": "Bir son kiritiladi. Unga o'zining yarmini qo'shib…"
-   },
-   "statement": {
-    "uz": "Bir son kiritiladi. Unga o'zining yarmini qo'shib chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-162",
-   "title": {
-    "uz": "Bir kishining oyligi kiritiladi. 10% soliq ayirib, qo'lga…"
-   },
-   "statement": {
-    "uz": "Bir kishining oyligi kiritiladi. 10% soliq ayirib, qo'lga tegadigan pulni chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-163",
-   "title": {
-    "uz": "Bir mahsulotning narxi kiritiladi. 50% chegirma bilan…"
-   },
-   "statement": {
-    "uz": "Bir mahsulotning narxi kiritiladi. 50% chegirma bilan yarim narxini chiqaring."
-   },
-   "source": "Bir_input_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-164",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan bir butun son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan bir butun son kiritadi. Dastur shu sonni ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-165",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita butun son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita butun son kiritadi. Dastur shu ikkita sonning yig'indisini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-166",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita butun son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita butun son kiritadi. Dastur shu ikkita sonning ayirmasini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-167",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita butun son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita butun son kiritadi. Dastur shu ikkita sonning ko'paytmasini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-168",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita haqiqiy son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita haqiqiy son kiritadi. Dastur shu ikkita sonning bo'linmasini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-169",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan bir butun son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan bir butun son kiritadi. Dastur shu sonning kvadratini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-170",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan bir butun son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan bir butun son kiritadi. Dastur shu sonning kubini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-171",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan uchta butun son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan uchta butun son kiritadi. Dastur shu uchta sonning yig'indisini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-172",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan uchta butun son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan uchta butun son kiritadi. Dastur shu uchta sonning ko'paytmasini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-173",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita haqiqiy son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita haqiqiy son kiritadi. Dastur shu ikkita sonning o'rtacha arifmetik qiymatini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-174",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan bir butun son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan bir butun son kiritadi. Dastur shu songa 5 qo'shib, hosil bo'lgan natijani ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-175",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan bir butun son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan bir butun son kiritadi. Dastur shu sondan 10 ayirib, hosil bo'lgan natijani ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-176",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan bir butun son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan bir butun son kiritadi. Dastur shu sonni 2 ga ko'paytirib, hosil bo'lgan natijani ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-177",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan bir butun son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan bir butun son kiritadi. Dastur shu sonni 2 ga bo'lib, hosil bo'lgan natijani ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-178",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan to'rtta butun son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan to'rtta butun son kiritadi. Dastur shu to'rtta sonning yig'indisini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-179",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan nonning narxini (so'mda)…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan nonning narxini (so'mda) kiritadi. Dastur shu narxni ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-180",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan nonning narxi va sutning…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan nonning narxi va sutning narxini (so'mda) kiritadi. Dastur umumiy to'lanadigan summani hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-181",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan xonaning uzunligini (metrda)…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan xonaning uzunligini (metrda) va enini (metrda) kiritadi. Dastur xonaning yuzasini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-182",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan to'rtburchakning tomonlarini…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan to'rtburchakning tomonlarini (sm da) kiritadi. Dastur to'rtburchakning perimetrini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-183",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan kvadratning tomonini (sm da)…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan kvadratning tomonini (sm da) kiritadi. Dastur kvadratning yuzasini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-184",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan avtomobilning tezligini…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan avtomobilning tezligini (km/soat) va yurgan vaqtini (soat) kiritadi. Dastur bosib o'tilgan masofani hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-185",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan birinchi do'stning pulini va…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan birinchi do'stning pulini va ikkinchi do'stning pulini (so'mda) kiritadi. Dastur ularning umumiy pulini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-186",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan non, choy va chipta…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan non, choy va chipta narxlarini (so'mda) kiritadi. Dastur bir kunlik umumiy xarajatni hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-187",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan daftarning narxini va daftar…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan daftarning narxini va daftar sonini kiritadi. Dastur umumiy to'lanadigan summani hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-188",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan olma narxini (so'mda) va olma…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan olma narxini (so'mda) va olma sonini kiritadi. Dastur umumiy narxni hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-189",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan uchburchakning asosini va…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan uchburchakning asosini va balandligini (sm da) kiritadi. Dastur uchburchakning yuzasini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-190",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan doiraning radiusini (sm da)…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan doiraning radiusini (sm da) kiritadi. Dastur doiraning diametrini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-191",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan ishchining bir soatlik ish…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan ishchining bir soatlik ish haqi va ishlagan soatlar sonini kiritadi. Dastur ishchining kunlik ish haqini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-192",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan kitobning narxini va chegirma…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan kitobning narxini va chegirma foizini kiritadi. Dastur chegirmadan keyingi narxni hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-193",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita son kiritadi. Dastur…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita son kiritadi. Dastur birinchi sonni ikkinchi songa bo'lib, butun qismini ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-194",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan uchta haqiqiy son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan uchta haqiqiy son kiritadi. Dastur shu uchta sonning o'rtacha arifmetik qiymatini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-195",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan to'g'ri to'rtburchakning…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan to'g'ri to'rtburchakning uzunligi va enini (metrda) kiritadi. Dastur to'g'ri to'rtburchakning perimetrini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-196",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan o'quvchining birinchi,…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan o'quvchining birinchi, ikkinchi va uchinchi baholarini kiritadi. Dastur o'rtacha bahoni hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-197",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan suvning narxini (litr uchun)…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan suvning narxini (litr uchun) va olingan suv miqdorini (litrda) kiritadi. Dastur to'lanadigan summani hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-198",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan benzining narxini (litr…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan benzining narxini (litr uchun) va olingan benzin miqdorini (litrda) kiritadi. Dastur to'lanadigan summani hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-199",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan yoshini kiritadi. Dastur 10…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan yoshini kiritadi. Dastur 10 yildan keyin necha yosh bo'lishini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-200",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan tug'ilgan yilini kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan tug'ilgan yilini kiritadi. Dastur joriy yil 2026 deb hisoblab, yoshini topib ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-201",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita son kiritadi. Dastur…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita son kiritadi. Dastur ularning yig'indisi, ayirmasi va ko'paytmasini alohida-alohida ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-202",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan to'rtburchakning uzunligi,…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan to'rtburchakning uzunligi, eni va balandligini (sm da) kiritadi. Dastur parallelepipedning hajmini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-203",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan bir kilogramm guruch narxini…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan bir kilogramm guruch narxini va olingan guruch miqdorini (kg da) kiritadi. Dastur to'lanadigan summani hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-204",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan avtobus chiptasi narxini va…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan avtobus chiptasi narxini va yo'lovchilar sonini kiritadi. Dastur umumiy tushumni hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-205",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan o'quvchining darsga kelgan…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan o'quvchining darsga kelgan kunlar sonini va umumiy dars kunlari sonini kiritadi. Dastur qatnashish foizini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-206",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan birinchi mahsulot narxi,…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan birinchi mahsulot narxi, ikkinchi mahsulot narxi va uchinchi mahsulot narxini kiritadi. Dastur uchala mahsulotning umumiy narxini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-207",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan do'konning kunlik savdo…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan do'konning kunlik savdo summasini kiritadi. Dastur shu summadan 5 foiz soliqni hisoblab, sof foydani ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-208",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan o'quvchining vaznini (kg da)…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan o'quvchining vaznini (kg da) va bo'yini (sm da) kiritadi. Dastur faqat kiritilgan qiymatlarni ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-209",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita haqiqiy son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita haqiqiy son kiritadi. Dastur birinchi sondan ikkinchi sonni ayirib, natijani ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-210",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan uchta butun son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan uchta butun son kiritadi. Dastur birinchi songa ikkinchi sonni qo'shib, keyin uchinchi sonni ayirib, natijani ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-211",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan kitoblar sonini va har bir…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan kitoblar sonini va har bir kitobning narxini kiritadi. Dastur barcha kitoblar uchun to'lanadigan umumiy summani hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-212",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan to'rtburchakning to'rtta…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan to'rtburchakning to'rtta tomonini (sm da) kiritadi. Dastur perimetrini hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-213",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan ishchining oylik maoshini…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan ishchining oylik maoshini kiritadi. Dastur yillik maoshini (12 oy) hisoblab ekranga chiqarsin."
-   },
-   "source": "INPUT_masalalari_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-214",
-   "title": {
-    "uz": "Ali do'kondan olma sotib oldi. U nechta olma olganini…"
-   },
-   "statement": {
-    "uz": "Ali do'kondan olma sotib oldi. U nechta olma olganini klaviaturadan kiriting. Keyin Ali 3 ta olmani yedi. Ali da nechta olma qoldi?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-215",
-   "title": {
-    "uz": "Madinaning daftari bor edi. Uning nechta daftari…"
-   },
-   "statement": {
-    "uz": "Madinaning daftari bor edi. Uning nechta daftari borligini kiriting. Madina yana 2 ta yangi daftar sotib oldi. Endi Madinaning jami nechta daftari bor?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-216",
-   "title": {
-    "uz": "Sinfda nechta o'quvchi borligini kiriting. Bugun darsga 4…"
-   },
-   "statement": {
-    "uz": "Sinfda nechta o'quvchi borligini kiriting. Bugun darsga 4 ta o'quvchi kelmadi. Bugun sinfda nechta o'quvchi qatnashdi?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-217",
-   "title": {
-    "uz": "Onam bozorga chiqdi. U uyidan necha so'm pul olib…"
-   },
-   "statement": {
-    "uz": "Onam bozorga chiqdi. U uyidan necha so'm pul olib chiqqanini kiriting. Onam 5000 so'mga non va meva sotib oldi. Onamda qancha pul qoldi?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-218",
-   "title": {
-    "uz": "Jasurda bir nechta qalam bor edi. Uning nechta qalami…"
-   },
-   "statement": {
-    "uz": "Jasurda bir nechta qalam bor edi. Uning nechta qalami borligini kiriting. Jasur do'stiga 2 ta qalam berdi. Jasurda nechta qalam qoldi?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-219",
-   "title": {
-    "uz": "Bog'da bir nechta daraxt o'sardi. Bog'dagi daraxtlar…"
-   },
-   "statement": {
-    "uz": "Bog'da bir nechta daraxt o'sardi. Bog'dagi daraxtlar sonini kiriting. Bahorda bog'ga yana 5 ta yangi daraxt ekishdi. Endi bog'da jami nechta daraxt bor?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-220",
-   "title": {
-    "uz": "Bir qutida konfetlar bor. Qutidagi konfetlar sonini…"
-   },
-   "statement": {
-    "uz": "Bir qutida konfetlar bor. Qutidagi konfetlar sonini kiriting. Bu konfetlarni 4 ta bolaga teng bo'lib berishdi. Har bir bolaga nechtadan konfet tushadi?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-221",
-   "title": {
-    "uz": "Bir daftarning narxi necha so'm ekanini kiriting. Agar 3…"
-   },
-   "statement": {
-    "uz": "Bir daftarning narxi necha so'm ekanini kiriting. Agar 3 ta shunday daftar sotib olinsa, jami qancha pul to'lash kerak?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-222",
-   "title": {
-    "uz": "Avtobusda yo'lovchilar bor edi. Avtobusdagi yo'lovchilar…"
-   },
-   "statement": {
-    "uz": "Avtobusda yo'lovchilar bor edi. Avtobusdagi yo'lovchilar sonini kiriting. Keyingi bekatda 6 kishi avtobusdan tushdi. Avtobusda nechta yo'lovchi qoldi?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-223",
-   "title": {
-    "uz": "Kitob javonida kitoblar turardi. Javondagi kitoblar…"
-   },
-   "statement": {
-    "uz": "Kitob javonida kitoblar turardi. Javondagi kitoblar sonini kiriting. Ulardan 3 tasini olib, o'qish uchun berishdi. Javonda nechta kitob qoldi?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-224",
-   "title": {
-    "uz": "Bir paketda nonlar bor. Bitta paketdagi nonlar sonini…"
-   },
-   "statement": {
-    "uz": "Bir paketda nonlar bor. Bitta paketdagi nonlar sonini kiriting. Do'kondan 2 ta shunday paket non olib kelindi. Jami nechta non bo'ldi?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-225",
-   "title": {
-    "uz": "O'quvchining hozirgi yoshini kiriting. 3 yildan keyin bu…"
-   },
-   "statement": {
-    "uz": "O'quvchining hozirgi yoshini kiriting. 3 yildan keyin bu o'quvchi necha yoshda bo'ladi?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-226",
-   "title": {
-    "uz": "Suv idishida suv bor edi. Idishdagi suvning litrini…"
-   },
-   "statement": {
-    "uz": "Suv idishida suv bor edi. Idishdagi suvning litrini kiriting. Idishdan 2 litr suv olindi. Idishda necha litr suv qoldi?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-227",
-   "title": {
-    "uz": "Bir qalamning narxi necha so'm ekanini kiriting. Agar 5…"
-   },
-   "statement": {
-    "uz": "Bir qalamning narxi necha so'm ekanini kiriting. Agar 5 ta qalam sotib olinsa, jami qancha pul kerak bo'ladi?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-228",
-   "title": {
-    "uz": "Darsda o'quvchilar bor. Darsdagi o'quvchilar sonini…"
-   },
-   "statement": {
-    "uz": "Darsda o'quvchilar bor. Darsdagi o'quvchilar sonini kiriting. Ulardan 2 tasi qiz bola. Darsda nechta o'g'il bola bor?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-229",
-   "title": {
-    "uz": "Qopda kartoshka bor edi. Qopdagi kartoshkaning…"
-   },
-   "statement": {
-    "uz": "Qopda kartoshka bor edi. Qopdagi kartoshkaning kilogrammini kiriting. Qopdan 4 kilogram kartoshka olindi. Qopda necha kilogram kartoshka qoldi?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-230",
-   "title": {
-    "uz": "Bir kunlik ish haqi necha so'm ekanini kiriting. Agar…"
-   },
-   "statement": {
-    "uz": "Bir kunlik ish haqi necha so'm ekanini kiriting. Agar odam 6 kun ishlasa, u jami qancha pul ishlab topadi?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-231",
-   "title": {
-    "uz": "Maktabga borish uchun ketadigan vaqtni daqiqada kiriting.…"
-   },
-   "statement": {
-    "uz": "Maktabga borish uchun ketadigan vaqtni daqiqada kiriting. Uyga qaytish ham xuddi shuncha vaqt olsa, borib-kelish uchun jami necha daqiqa ketadi?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-232",
-   "title": {
-    "uz": "Bir qutida tuxumlar bor. Bitta qutidagi tuxumlar sonini…"
-   },
-   "statement": {
-    "uz": "Bir qutida tuxumlar bor. Bitta qutidagi tuxumlar sonini kiriting. Do'kondan 3 ta shunday quti tuxum olib kelindi. Jami nechta tuxum bo'ldi?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-233",
-   "title": {
-    "uz": "Bolada o'yinchoqlar bor edi. Uning nechta o'yinchoqi…"
-   },
-   "statement": {
-    "uz": "Bolada o'yinchoqlar bor edi. Uning nechta o'yinchoqi borligini kiriting. U do'stiga 1 ta o'yinchoq berdi. Keyin onasi unga yana 2 ta yangi o'yinchoq olib berdi. Endi bolada nechta o'yinchoq bor?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-234",
-   "title": {
-    "uz": "Daraxtga olma pishgan edi. Daraxtadagi olmalar sonini…"
-   },
-   "statement": {
-    "uz": "Daraxtga olma pishgan edi. Daraxtadagi olmalar sonini kiriting. Ulardan 5 tasini yig'ib olishdi. Daraxtada nechta olma qoldi?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-235",
-   "title": {
-    "uz": "Bir daftarda nechta varaq borligini kiriting. Agar 4 ta…"
-   },
-   "statement": {
-    "uz": "Bir daftarda nechta varaq borligini kiriting. Agar 4 ta shunday daftar bo'lsa, ularda jami nechta varaq bo'ladi?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-236",
-   "title": {
-    "uz": "Avtobus bekatdan yo'lga chiqdi. Avtobusdagi yo'lovchilar…"
-   },
-   "statement": {
-    "uz": "Avtobus bekatdan yo'lga chiqdi. Avtobusdagi yo'lovchilar sonini kiriting. Keyingi bekatda 3 kishi avtobusga chiqdi va 5 kishi tushdi. Endi avtobusda nechta yo'lovchi bor?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-237",
-   "title": {
-    "uz": "Do'konda nonning narxi necha so'm ekanini kiriting. 2 ta…"
-   },
-   "statement": {
-    "uz": "Do'konda nonning narxi necha so'm ekanini kiriting. 2 ta non va 1 ta shirinlik (shirinlikning narxi 3000 so'm) sotib olinsa, jami qancha pul to'lash kerak?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-238",
-   "title": {
-    "uz": "O'quvchi bir kunda nechta sahifa kitob o'qishini…"
-   },
-   "statement": {
-    "uz": "O'quvchi bir kunda nechta sahifa kitob o'qishini kiriting. Agar u 5 kun davomida har kuni shuncha sahifa o'qisa, jami nechta sahifa kitob o'qiydi?"
-   },
-   "source": "Algoritm_hayotiy_aniq_masalalar",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-239",
-   "title": {
-    "uz": "Do'konga bugun yangi keltirilgan olma soni klaviaturadan…"
-   },
-   "statement": {
-    "uz": "Do'konga bugun yangi keltirilgan olma soni klaviaturadan kiritilsin. Kun davomida ulardan 15 tasi sotildi. Do'konda nechta olma qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-240",
-   "title": {
-    "uz": "Bir qutida 6 ta qalam bor. Do'konga kelgan qutilar soni…"
-   },
-   "statement": {
-    "uz": "Bir qutida 6 ta qalam bor. Do'konga kelgan qutilar soni kiritilsin. Do'konga jami nechta qalam keltirildi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-241",
-   "title": {
-    "uz": "Anvarning cho'ntagidagi pul miqdori (so'mda) kiritilsin.…"
-   },
-   "statement": {
-    "uz": "Anvarning cho'ntagidagi pul miqdori (so'mda) kiritilsin. U 2000 so'mga muzqaymoq sotib oldi. Anvarda qancha pul qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-242",
-   "title": {
-    "uz": "Fermer xo'jaligida bugun sog'ilgan sut miqdori (litrda)…"
-   },
-   "statement": {
-    "uz": "Fermer xo'jaligida bugun sog'ilgan sut miqdori (litrda) kiritilsin. Ulardan 8 litri bozorga jo'natildi. Fermada necha litr sut qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-243",
-   "title": {
-    "uz": "Bir savatda 9 ta non bor. Novvoyxonadan kelgan savatlar…"
-   },
-   "statement": {
-    "uz": "Bir savatda 9 ta non bor. Novvoyxonadan kelgan savatlar soni kiritilsin. Jami nechta non keltirildi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-244",
-   "title": {
-    "uz": "Maktab oshxonasiga kelgan o'quvchilar soni kiritilsin.…"
-   },
-   "statement": {
-    "uz": "Maktab oshxonasiga kelgan o'quvchilar soni kiritilsin. Har bir o'quvchiga 2 tadan pirog berildi. Jami nechta pirog tarqatildi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-245",
-   "title": {
-    "uz": "Dorixonaga yangi keltirilgan dori qutilari soni…"
-   },
-   "statement": {
-    "uz": "Dorixonaga yangi keltirilgan dori qutilari soni kiritilsin. Kun davomida ulardan 7 tasi sotildi. Dorixonada nechta quti dori qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-246",
-   "title": {
-    "uz": "Zilola gulzorga gul ekdi. U ekkan gullar soni kiritilsin.…"
-   },
-   "statement": {
-    "uz": "Zilola gulzorga gul ekdi. U ekkan gullar soni kiritilsin. Keyin u yana 5 ta gul ekdi. Gulzorda jami nechta gul bo'ldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-247",
-   "title": {
-    "uz": "Bir quti pechenyeda 12 ta pechenye bor. Do'konga kelgan…"
-   },
-   "statement": {
-    "uz": "Bir quti pechenyeda 12 ta pechenye bor. Do'konga kelgan qutilar soni kiritilsin. Do'konga jami nechta pechenye keltirildi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-248",
-   "title": {
-    "uz": "Bog'bon daraxtdan olma uzdi. U uzgan olmalar soni…"
-   },
-   "statement": {
-    "uz": "Bog'bon daraxtdan olma uzdi. U uzgan olmalar soni kiritilsin. Olmalar 4 ta savatga teng bo'lib joylandi. Har bir savatga nechtadan olma tushdi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-249",
-   "title": {
-    "uz": "Kutubxonaga yangi keltirilgan kitoblar soni kiritilsin.…"
-   },
-   "statement": {
-    "uz": "Kutubxonaga yangi keltirilgan kitoblar soni kiritilsin. Ulardan 6 tasi o'quvchilarga berildi. Kutubxonada nechta yangi kitob qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-250",
-   "title": {
-    "uz": "Har bir mashinaga 4 tadan g'ildirak o'rnatiladi. Zavodga…"
-   },
-   "statement": {
-    "uz": "Har bir mashinaga 4 tadan g'ildirak o'rnatiladi. Zavodga kelgan mashinalar soni kiritilsin. Ularga jami nechta g'ildirak kerak bo'ladi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-251",
-   "title": {
-    "uz": "Bekatda turgan yo'lovchilar soni kiritilsin. Avtobus…"
-   },
-   "statement": {
-    "uz": "Bekatda turgan yo'lovchilar soni kiritilsin. Avtobus keldi va ulardan 9 tasi avtobusga chiqdi. Bekatda nechta yo'lovchi qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-252",
-   "title": {
-    "uz": "Tikuvchi bir kunda tikadigan ko'ylaklar soni kiritilsin.…"
-   },
-   "statement": {
-    "uz": "Tikuvchi bir kunda tikadigan ko'ylaklar soni kiritilsin. U 5 kun davomida har kuni shuncha ko'ylak tiksa, jami nechta ko'ylak tikadi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-253",
-   "title": {
-    "uz": "Do'konga yangi keltirilgan sharlar soni kiritilsin.…"
-   },
-   "statement": {
-    "uz": "Do'konga yangi keltirilgan sharlar soni kiritilsin. Bayram uchun ulardan 20 tasi sotildi. Do'konda nechta shar qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-254",
-   "title": {
-    "uz": "Bir paketda 5 kilogramm guruch bor. Omborga kelgan…"
-   },
-   "statement": {
-    "uz": "Bir paketda 5 kilogramm guruch bor. Omborga kelgan paketlar soni kiritilsin. Omborga jami necha kilogramm guruch keltirildi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-255",
-   "title": {
-    "uz": "Sardor to'plagan tangalar soni kiritilsin. U ulardan 8…"
-   },
-   "statement": {
-    "uz": "Sardor to'plagan tangalar soni kiritilsin. U ulardan 8 tasini ukasiga berdi. Sardorda nechta tanga qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-256",
-   "title": {
-    "uz": "Sinfdagi o'quvchilar soni kiritilsin. O'quvchilar 3 ta…"
-   },
-   "statement": {
-    "uz": "Sinfdagi o'quvchilar soni kiritilsin. O'quvchilar 3 ta guruhga teng bo'lindi. Har bir guruhda nechta o'quvchi bo'ldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-257",
-   "title": {
-    "uz": "Onasi bozordan olib kelgan tuxumlar soni kiritilsin.…"
-   },
-   "statement": {
-    "uz": "Onasi bozordan olib kelgan tuxumlar soni kiritilsin. Nonushta uchun ulardan 4 tasi ishlatildi. Nechta tuxum qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-258",
-   "title": {
-    "uz": "Bitta daftar 3000 so'm turadi. Nechta daftar sotib…"
-   },
-   "statement": {
-    "uz": "Bitta daftar 3000 so'm turadi. Nechta daftar sotib olinishi kiritilsin. Jami qancha pul to'lash kerak?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-259",
-   "title": {
-    "uz": "Bog'ga ekilgan ko'chatlar soni kiritilsin. Qishda ulardan…"
-   },
-   "statement": {
-    "uz": "Bog'ga ekilgan ko'chatlar soni kiritilsin. Qishda ulardan 3 tasi qurib qoldi. Bog'da nechta ko'chat qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-260",
-   "title": {
-    "uz": "Bir qutida 10 ta mix bor. Ustaga kerak bo'lgan qutilar…"
-   },
-   "statement": {
-    "uz": "Bir qutida 10 ta mix bor. Ustaga kerak bo'lgan qutilar soni kiritilsin. Ustada jami nechta mix bo'ldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-261",
-   "title": {
-    "uz": "Do'kondagi muzqaymoqlar soni kiritilsin. Yozda ulardan 25…"
-   },
-   "statement": {
-    "uz": "Do'kondagi muzqaymoqlar soni kiritilsin. Yozda ulardan 25 tasi sotildi. Do'konda nechta muzqaymoq qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-262",
-   "title": {
-    "uz": "Har bir avtobusda 40 o'rindiq bor. Yo'lga chiqqan…"
-   },
-   "statement": {
-    "uz": "Har bir avtobusda 40 o'rindiq bor. Yo'lga chiqqan avtobuslar soni kiritilsin. Jami nechta o'rindiq bor?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-263",
-   "title": {
-    "uz": "Fermer yig'gan kartoshka miqdori (kilogrammda)…"
-   },
-   "statement": {
-    "uz": "Fermer yig'gan kartoshka miqdori (kilogrammda) kiritilsin. Kartoshka 5 kilogrammdan qoplarga joylandi. Nechta qop to'ldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-264",
-   "title": {
-    "uz": "Sinfga keltirilgan ruchkalar soni kiritilsin. Ulardan 18…"
-   },
-   "statement": {
-    "uz": "Sinfga keltirilgan ruchkalar soni kiritilsin. Ulardan 18 tasi o'quvchilarga tarqatildi. Nechta ruchka qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-265",
-   "title": {
-    "uz": "Bir laganda 6 ta somsa bor. Oshxonada tayyorlangan…"
-   },
-   "statement": {
-    "uz": "Bir laganda 6 ta somsa bor. Oshxonada tayyorlangan laganlar soni kiritilsin. Jami nechta somsa tayyorlandi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-266",
-   "title": {
-    "uz": "Kamronda bor pul miqdori (so'mda) kiritilsin. U 4000…"
-   },
-   "statement": {
-    "uz": "Kamronda bor pul miqdori (so'mda) kiritilsin. U 4000 so'mga daftar va 1500 so'mga ruchka sotib oldi. Kamronda qancha pul qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-267",
-   "title": {
-    "uz": "Bog'chaga kelgan bolalar soni kiritilsin. Har bir bolaga…"
-   },
-   "statement": {
-    "uz": "Bog'chaga kelgan bolalar soni kiritilsin. Har bir bolaga 2 tadan olma berildi. Jami nechta olma kerak bo'ldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-268",
-   "title": {
-    "uz": "Do'konga keltirilgan sut paketlari soni kiritilsin.…"
-   },
-   "statement": {
-    "uz": "Do'konga keltirilgan sut paketlari soni kiritilsin. Ertalab 10 tasi, kechqurun 6 tasi sotildi. Do'konda nechta sut paketi qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-269",
-   "title": {
-    "uz": "Do'konga yangi keltirilgan daftarlar soni klaviaturadan…"
-   },
-   "statement": {
-    "uz": "Do'konga yangi keltirilgan daftarlar soni klaviaturadan kiritilsin. Kun davomida ulardan 12 tasi sotildi. Do'konda nechta daftar qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-270",
-   "title": {
-    "uz": "Bir qutida 8 ta sharbat bor. Do'konga kelgan qutilar soni…"
-   },
-   "statement": {
-    "uz": "Bir qutida 8 ta sharbat bor. Do'konga kelgan qutilar soni kiritilsin. Do'konga jami nechta sharbat keltirildi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-271",
-   "title": {
-    "uz": "Malikaning hamyonidagi pul miqdori (so'mda) kiritilsin. U…"
-   },
-   "statement": {
-    "uz": "Malikaning hamyonidagi pul miqdori (so'mda) kiritilsin. U 3500 so'mga kitob sotib oldi. Malikada qancha pul qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-272",
-   "title": {
-    "uz": "Sartaroshxonaga bugun kelgan mijozlar soni kiritilsin.…"
-   },
-   "statement": {
-    "uz": "Sartaroshxonaga bugun kelgan mijozlar soni kiritilsin. Ularning 7 tasi bola edi. Nechta katta yoshli mijoz keldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-273",
-   "title": {
-    "uz": "Bir qadoqda 10 ta pechak bor. Ustaga kerak bo'lgan…"
-   },
-   "statement": {
-    "uz": "Bir qadoqda 10 ta pechak bor. Ustaga kerak bo'lgan qadoqlar soni kiritilsin. Ustada jami nechta pechak bo'ldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-274",
-   "title": {
-    "uz": "Bog'chaga kelgan bolalar soni kiritilsin. Tushdan keyin…"
-   },
-   "statement": {
-    "uz": "Bog'chaga kelgan bolalar soni kiritilsin. Tushdan keyin ularning 5 tasini uyiga olib ketishdi. Bog'chada nechta bola qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-275",
-   "title": {
-    "uz": "Fermer bugun yig'gan pomidor miqdori (kilogrammda)…"
-   },
-   "statement": {
-    "uz": "Fermer bugun yig'gan pomidor miqdori (kilogrammda) kiritilsin. Pomidorlar 4 kilogrammdan qutilarga joylandi. Nechta quti to'ldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-276",
-   "title": {
-    "uz": "Kutubxonaga a'zo bo'lgan o'quvchilar soni kiritilsin. Har…"
-   },
-   "statement": {
-    "uz": "Kutubxonaga a'zo bo'lgan o'quvchilar soni kiritilsin. Har biriga 2 tadan kitob berildi. Jami nechta kitob berildi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-277",
-   "title": {
-    "uz": "Bir savatda 15 ta tuxum bor. Do'konga kelgan savatlar…"
-   },
-   "statement": {
-    "uz": "Bir savatda 15 ta tuxum bor. Do'konga kelgan savatlar soni kiritilsin. Do'konga jami nechta tuxum keltirildi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-278",
-   "title": {
-    "uz": "Nodirning to'plagan markalar soni kiritilsin. U ulardan 9…"
-   },
-   "statement": {
-    "uz": "Nodirning to'plagan markalar soni kiritilsin. U ulardan 9 tasini do'stiga sovg'a qildi. Nodirda nechta marka qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-279",
-   "title": {
-    "uz": "Sinf uchun sotib olingan bo'rlar soni kiritilsin. Dars…"
-   },
-   "statement": {
-    "uz": "Sinf uchun sotib olingan bo'rlar soni kiritilsin. Dars davomida ulardan 3 tasi ishlatildi. Nechta bo'r qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-280",
-   "title": {
-    "uz": "Har bir stolda 4 kishi o'tiradi. Oshxonadagi stollar soni…"
-   },
-   "statement": {
-    "uz": "Har bir stolda 4 kishi o'tiradi. Oshxonadagi stollar soni kiritilsin. Oshxonada jami nechta kishi o'tira oladi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-281",
-   "title": {
-    "uz": "Bekatga kelgan yo'lovchilar soni kiritilsin. Birinchi…"
-   },
-   "statement": {
-    "uz": "Bekatga kelgan yo'lovchilar soni kiritilsin. Birinchi avtobusga 8 kishi, ikkinchisiga 6 kishi chiqdi. Bekatda nechta yo'lovchi qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-282",
-   "title": {
-    "uz": "Novvoy bir soatda yopadigan non soni kiritilsin. U 6 soat…"
-   },
-   "statement": {
-    "uz": "Novvoy bir soatda yopadigan non soni kiritilsin. U 6 soat ishlasa, jami nechta non yopadi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-283",
-   "title": {
-    "uz": "Do'konga yangi keltirilgan qalamlar soni kiritilsin.…"
-   },
-   "statement": {
-    "uz": "Do'konga yangi keltirilgan qalamlar soni kiritilsin. Ulardan 30 tasi sotildi. Do'konda nechta qalam qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-284",
-   "title": {
-    "uz": "Bir qopda 25 kilogramm un bor. Omborga kelgan qoplar soni…"
-   },
-   "statement": {
-    "uz": "Bir qopda 25 kilogramm un bor. Omborga kelgan qoplar soni kiritilsin. Omborga jami necha kilogramm un keltirildi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-285",
-   "title": {
-    "uz": "Aziza uzgan gullar soni kiritilsin. Gullar 5 ta vazaga…"
-   },
-   "statement": {
-    "uz": "Aziza uzgan gullar soni kiritilsin. Gullar 5 ta vazaga teng bo'lib qo'yildi. Har bir vazaga nechtadan gul tushdi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-286",
-   "title": {
-    "uz": "Maktabga kelgan o'qituvchilar soni kiritilsin. Ularning 4…"
-   },
-   "statement": {
-    "uz": "Maktabga kelgan o'qituvchilar soni kiritilsin. Ularning 4 tasi ta'tilda edi. Bugun nechta o'qituvchi ishga keldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-287",
-   "title": {
-    "uz": "Bitta o'yinchoq 5000 so'm turadi. Nechta o'yinchoq sotib…"
-   },
-   "statement": {
-    "uz": "Bitta o'yinchoq 5000 so'm turadi. Nechta o'yinchoq sotib olinishi kiritilsin. Jami qancha pul to'lash kerak?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-288",
-   "title": {
-    "uz": "Bog'da o'sayotgan olma daraxtlari soni kiritilsin. Yangi…"
-   },
-   "statement": {
-    "uz": "Bog'da o'sayotgan olma daraxtlari soni kiritilsin. Yangi 7 ta ko'chat ekildi. Bog'da jami nechta olma daraxti bo'ldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-289",
-   "title": {
-    "uz": "Bir laganda 12 ta manti bor. Tayyorlangan laganlar soni…"
-   },
-   "statement": {
-    "uz": "Bir laganda 12 ta manti bor. Tayyorlangan laganlar soni kiritilsin. Jami nechta manti tayyorlandi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-290",
-   "title": {
-    "uz": "Ombordagi suv shishalari soni kiritilsin. Do'konga…"
-   },
-   "statement": {
-    "uz": "Ombordagi suv shishalari soni kiritilsin. Do'konga ulardan 40 tasi jo'natildi. Omborda nechta shisha qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-291",
-   "title": {
-    "uz": "Har bir qutiga 6 tadan lampochka joylanadi. Zavodda…"
-   },
-   "statement": {
-    "uz": "Har bir qutiga 6 tadan lampochka joylanadi. Zavodda tayyorlangan qutilar soni kiritilsin. Jami nechta lampochka joylandi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-292",
-   "title": {
-    "uz": "Sinfdagi o'quvchilar soni kiritilsin. Ekskursiya uchun…"
-   },
-   "statement": {
-    "uz": "Sinfdagi o'quvchilar soni kiritilsin. Ekskursiya uchun ular 2 ta avtobusga teng bo'lindi. Har bir avtobusda nechta o'quvchi bo'ldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-293",
-   "title": {
-    "uz": "Onasi tayyorlagan somsalar soni kiritilsin. Mehmonlar…"
-   },
-   "statement": {
-    "uz": "Onasi tayyorlagan somsalar soni kiritilsin. Mehmonlar ularning 8 tasini yeyishdi. Nechta somsa qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-294",
-   "title": {
-    "uz": "Do'kondagi shokoladlar soni kiritilsin. Bayramda ulardan…"
-   },
-   "statement": {
-    "uz": "Do'kondagi shokoladlar soni kiritilsin. Bayramda ulardan 45 tasi sotildi. Do'konda nechta shokolad qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-295",
-   "title": {
-    "uz": "Bitta bilet 7000 so'm turadi. Sotib olinadigan biletlar…"
-   },
-   "statement": {
-    "uz": "Bitta bilet 7000 so'm turadi. Sotib olinadigan biletlar soni kiritilsin. Jami qancha pul kerak bo'ladi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-296",
-   "title": {
-    "uz": "Bog'bon ekkan sabzavot ko'chatlari soni kiritilsin.…"
-   },
-   "statement": {
-    "uz": "Bog'bon ekkan sabzavot ko'chatlari soni kiritilsin. Ulardan 6 tasi qurib qoldi. Bog'da nechta ko'chat qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-297",
-   "title": {
-    "uz": "Bir quti sharbatda 24 ta stakan chiqadi. Sotib olingan…"
-   },
-   "statement": {
-    "uz": "Bir quti sharbatda 24 ta stakan chiqadi. Sotib olingan qutilar soni kiritilsin. Jami nechta stakan sharbat chiqadi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-298",
-   "title": {
-    "uz": "Kutubxonaga qaytarilgan kitoblar soni kiritilsin.…"
-   },
-   "statement": {
-    "uz": "Kutubxonaga qaytarilgan kitoblar soni kiritilsin. Ularning 5 tasi yirtilgan edi. Nechta soz kitob qaytarildi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-299",
-   "title": {
-    "uz": "Do'konga yangi kelgan tortlar soni kiritilsin. Kun…"
-   },
-   "statement": {
-    "uz": "Do'konga yangi kelgan tortlar soni kiritilsin. Kun davomida ulardan 9 tasi sotildi. Do'konda nechta tort qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-300",
-   "title": {
-    "uz": "Har bir bolaga 3 tadan konfet beriladi. Sinfdagi bolalar…"
-   },
-   "statement": {
-    "uz": "Har bir bolaga 3 tadan konfet beriladi. Sinfdagi bolalar soni kiritilsin. Jami nechta konfet kerak bo'ladi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-301",
-   "title": {
-    "uz": "Fermadagi tovuqlar bir kunda tuxum qo'yadi. Bugun…"
-   },
-   "statement": {
-    "uz": "Fermadagi tovuqlar bir kunda tuxum qo'yadi. Bugun yig'ilgan tuxumlar soni kiritilsin. Tuxumlar 6 talik uyachalarga joylandi. Nechta uyacha to'ldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-302",
-   "title": {
-    "uz": "Sohib yiqqan yong'oqlar soni kiritilsin. U ularni ukasi…"
-   },
-   "statement": {
-    "uz": "Sohib yiqqan yong'oqlar soni kiritilsin. U ularni ukasi bilan teng bo'lishdi. Har biriga nechtadan yong'oq tushdi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-303",
-   "title": {
-    "uz": "Do'konga keltirilgan sut paketlari soni kiritilsin.…"
-   },
-   "statement": {
-    "uz": "Do'konga keltirilgan sut paketlari soni kiritilsin. Ertalab 15 tasi sotildi. Do'konda nechta paket qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-304",
-   "title": {
-    "uz": "Sinfga olib kelingan gullar soni kiritilsin. Ular 4 ta…"
-   },
-   "statement": {
-    "uz": "Sinfga olib kelingan gullar soni kiritilsin. Ular 4 ta derazaga teng bo'lib qo'yildi. Har bir derazaga nechtadan gul tushdi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-305",
-   "title": {
-    "uz": "Onasi bozorga chiqarilgan pul miqdorini (so'mda)…"
-   },
-   "statement": {
-    "uz": "Onasi bozorga chiqarilgan pul miqdorini (so'mda) kiriting. U 6000 so'mga meva, 4000 so'mga non oldi. Onasida qancha pul qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-306",
-   "title": {
-    "uz": "Do'konda turgan velosipedlar soni kiritilsin. Ulardan 3…"
-   },
-   "statement": {
-    "uz": "Do'konda turgan velosipedlar soni kiritilsin. Ulardan 3 tasi sotildi. Do'konda nechta velosiped qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-307",
-   "title": {
-    "uz": "Har bir stakanga 2 ta qand solinadi. Choy uchun…"
-   },
-   "statement": {
-    "uz": "Har bir stakanga 2 ta qand solinadi. Choy uchun tayyorlangan stakanlar soni kiritilsin. Jami nechta qand kerak bo'ladi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-308",
-   "title": {
-    "uz": "Bog'dan yig'ilgan uzum miqdori (kilogrammda) kiritilsin.…"
-   },
-   "statement": {
-    "uz": "Bog'dan yig'ilgan uzum miqdori (kilogrammda) kiritilsin. Ulardan 5 kilogrammi sotildi. Bog'da necha kilogramm uzum qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-309",
-   "title": {
-    "uz": "Do'konga kelgan quti pechenyelar soni kiritilsin. Har bir…"
-   },
-   "statement": {
-    "uz": "Do'konga kelgan quti pechenyelar soni kiritilsin. Har bir qutida 10 tadan pechenye bor. Jami nechta pechenye keltirildi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-310",
-   "title": {
-    "uz": "Sardor bir kunda o'qigan sahifalar soni kiritilsin. U 7…"
-   },
-   "statement": {
-    "uz": "Sardor bir kunda o'qigan sahifalar soni kiritilsin. U 7 kun davomida har kuni shuncha o'qisa, jami nechta sahifa o'qiydi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-311",
-   "title": {
-    "uz": "Do'konga yangi kelgan koptoklar soni kiritilsin. Ularning…"
-   },
-   "statement": {
-    "uz": "Do'konga yangi kelgan koptoklar soni kiritilsin. Ularning 8 tasi maktabga berildi. Do'konda nechta koptok qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-312",
-   "title": {
-    "uz": "Bir uyada 5 ta gilos bor. Terilgan uyalar soni…"
-   },
-   "statement": {
-    "uz": "Bir uyada 5 ta gilos bor. Terilgan uyalar soni kiritilsin. Jami nechta gilos terildi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-313",
-   "title": {
-    "uz": "Sinfdagi partalar soni kiritilsin. Har bir partada 2…"
-   },
-   "statement": {
-    "uz": "Sinfdagi partalar soni kiritilsin. Har bir partada 2 o'quvchi o'tiradi. Sinfda jami nechta o'quvchi o'tira oladi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-314",
-   "title": {
-    "uz": "Dilnoza to'qigan sharflar soni kiritilsin. U ularning 3…"
-   },
-   "statement": {
-    "uz": "Dilnoza to'qigan sharflar soni kiritilsin. U ularning 3 tasini sotdi. Dilnozada nechta sharf qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-315",
-   "title": {
-    "uz": "Do'konga keltirilgan meva sharbatlari soni kiritilsin.…"
-   },
-   "statement": {
-    "uz": "Do'konga keltirilgan meva sharbatlari soni kiritilsin. Ular 8 talik qutilarga joylandi. Nechta quti to'ldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-316",
-   "title": {
-    "uz": "Har bir mehmonga 1 tadan piyola qo'yiladi. Kelgan…"
-   },
-   "statement": {
-    "uz": "Har bir mehmonga 1 tadan piyola qo'yiladi. Kelgan mehmonlar soni kiritilsin. Yana zaxira uchun 3 ta piyola qo'shildi. Jami nechta piyola kerak bo'ldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-317",
-   "title": {
-    "uz": "Do'kondagi qalpoqlar soni kiritilsin. Qishda ularning 22…"
-   },
-   "statement": {
-    "uz": "Do'kondagi qalpoqlar soni kiritilsin. Qishda ularning 22 tasi sotildi. Do'konda nechta qalpoq qoldi?"
-   },
-   "source": "Algoritm_hayotiy_kiritishli_50",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-318",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita butun son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita butun son kiritadi. Dastur birinchi sonni ikkinchi songa qo'shib, natijani ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-319",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita haqiqiy son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita haqiqiy son kiritadi. Dastur birinchi sonni ikkinchi songa ko'paytirib, natijani ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-320",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan uchta butun son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan uchta butun son kiritadi. Dastur ularning yig'indisini topib, keyin 2 ga ko'paytirib ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-321",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan bir butun son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan bir butun son kiritadi. Dastur shu sonni 4 ga ko'paytirib, keyin 10 qo'shib, natijani ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-322",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan nonning narxini va olingan…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan nonning narxini va olingan non sonini kiritadi. Dastur umumiy to'lanadigan summani hisoblab ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-323",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan qalamning narxini va qalam…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan qalamning narxini va qalam sonini kiritadi. Dastur umumiy narxni hisoblab ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-324",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan stolning uzunligini va enini…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan stolning uzunligini va enini (metrda) kiritadi. Dastur stolning yuzasini hisoblab ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-325",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan to'g'ri to'rtburchakning…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan to'g'ri to'rtburchakning uzunligi va enini (sm da) kiritadi. Dastur uning yuzasini hisoblab ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-326",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan o'quvchining birinchi va…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan o'quvchining birinchi va ikkinchi baholarini kiritadi. Dastur ikkala bahoning yig'indisini hisoblab ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-327",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan ishchining kunlik ish haqi va…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan ishchining kunlik ish haqi va ishlagan kunlar sonini kiritadi. Dastur oylik ish haqini hisoblab ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-328",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan bir kilogramm olma narxini va…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan bir kilogramm olma narxini va olingan olma miqdorini (kg da) kiritadi. Dastur to'lanadigan summani hisoblab ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-329",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan avtomobilning bir litr benzin…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan avtomobilning bir litr benzin sarfini va bosib o'tgan masofani kiritadi. Dastur sarflangan benzin miqdorini hisoblab ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-330",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan do'konning kunlik savdo…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan do'konning kunlik savdo summasini kiritadi. Dastur shu summadan 10 foiz soliqni hisoblab ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-331",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita son kiritadi. Dastur…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita son kiritadi. Dastur ikkinchi sonni birinchi songa qo'shib, keyin hosil bo'lgan natijani 2 ga ko'paytirib ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-332",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan uchta haqiqiy son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan uchta haqiqiy son kiritadi. Dastur birinchi va ikkinchi sonning yig'indisidan uchinchi sonni ayirib, natijani ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-333",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan o'quvchining yoshini…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan o'quvchining yoshini kiritadi. Dastur 5 yildan keyin necha yosh bo'lishini hisoblab ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-334",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan kitobning sahifalar sonini va…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan kitobning sahifalar sonini va bir kunda o'qilgan sahifalar sonini kiritadi. Dastur kitobni necha kunda tugatish mumkinligini hisoblab ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-335",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan birinchi mahsulot narxi va…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan birinchi mahsulot narxi va ikkinchi mahsulot narxini kiritadi. Dastur ikkala mahsulotning umumiy narxini hisoblab ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-336",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan suvning bir litr narxini va…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan suvning bir litr narxini va olingan suv miqdorini (litrda) kiritadi. Dastur to'lanadigan summani hisoblab ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-337",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan to'rtburchakning uzunligi,…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan to'rtburchakning uzunligi, eni va balandligini (sm da) kiritadi. Dastur uning hajmini hisoblab ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-338",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan o'quvchining darsga kelgan…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan o'quvchining darsga kelgan kunlar sonini kiritadi. Dastur shu songa 2 qo'shib, natijani ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-339",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan bir butun son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan bir butun son kiritadi. Dastur shu sonni 3 ga bo'lib, butun qismini ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-340",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita butun son kiritadi.…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan ikkita butun son kiritadi. Dastur ularning ayirmasini topib, keyin 5 ga ko'paytirib ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-341",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan non, sut va tuxum narxlarini…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan non, sut va tuxum narxlarini kiritadi. Dastur uchala mahsulotning umumiy narxini hisoblab ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-342",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan o'quvchining birinchi,…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan o'quvchining birinchi, ikkinchi, uchinchi va to'rtinchi baholarini kiritadi. Dastur o'rtacha bahoni hisoblab ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-343",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan ishchining soatlik ish haqi…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan ishchining soatlik ish haqi va ishlagan soatlar sonini kiritadi. Dastur kunlik ish haqini hisoblab ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-344",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan doiraning diametrini (sm da)…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan doiraning diametrini (sm da) kiritadi. Dastur doiraning radiusini hisoblab ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  },
-  {
-   "id": "input-345",
-   "title": {
-    "uz": "Foydalanuvchi klaviaturadan birinchi do'stning pulini,…"
-   },
-   "statement": {
-    "uz": "Foydalanuvchi klaviaturadan birinchi do'stning pulini, ikkinchi do'stning pulini va uchinchi do'stning pulini kiritadi. Dastur uchalasining umumiy pulini hisoblab ekranga chiqarsin."
-   },
-   "source": "Uyga_vazifa_INPUT_30",
-   "judge": null,
-   "tests": []
-  }
- ],
- "practice": [],
- "book": [
-  {
-   "id": "input-k01",
+   "id": "input-1",
    "title": {
     "uz": "Foydalanuvchi ismini kiritsin. Ekranga «Salom, [ism]!» deb…"
    },
    "statement": {
     "uz": "Foydalanuvchi ismini kiritsin. Ekranga «Salom, [ism]!» deb chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -3436,14 +43,13 @@
    ]
   },
   {
-   "id": "input-k02",
+   "id": "input-2",
    "title": {
     "uz": "Bitta son kiriting. Shu sonni ekranga chiqaring."
    },
    "statement": {
     "uz": "Bitta son kiriting. Shu sonni ekranga chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -3453,12 +59,12 @@
      "out": "5"
     },
     {
-     "in": "12",
-     "out": "12"
+     "in": "0",
+     "out": "0"
     },
     {
-     "in": "0",
-     "out": "0",
+     "in": "-3",
+     "out": "-3",
      "hidden": true
     },
     {
@@ -3469,113 +75,109 @@
    ]
   },
   {
-   "id": "input-k03",
+   "id": "input-3",
    "title": {
     "uz": "Ikkita son kiriting. Ularning yig‘indisini chiqaring."
    },
    "statement": {
     "uz": "Ikkita son kiriting. Ularning yig‘indisini chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "3\n4",
-     "out": "7"
+     "in": "7\n3",
+     "out": "10"
     },
     {
-     "in": "10\n-2",
-     "out": "8"
+     "in": "10\n-4",
+     "out": "6"
     },
     {
-     "in": "0\n7",
-     "out": "7",
+     "in": "0\n5",
+     "out": "5",
      "hidden": true
     },
     {
-     "in": "25\n5",
-     "out": "30",
+     "in": "120\n45",
+     "out": "165",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k04",
+   "id": "input-4",
    "title": {
     "uz": "Ikkita son kiriting. Ularning ayirmasini chiqaring."
    },
    "statement": {
     "uz": "Ikkita son kiriting. Ularning ayirmasini chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "3\n4",
-     "out": "-1"
+     "in": "7\n3",
+     "out": "4"
     },
     {
-     "in": "10\n-2",
-     "out": "12"
+     "in": "10\n-4",
+     "out": "14"
     },
     {
-     "in": "0\n7",
-     "out": "-7",
+     "in": "0\n5",
+     "out": "-5",
      "hidden": true
     },
     {
-     "in": "25\n5",
-     "out": "20",
+     "in": "120\n45",
+     "out": "75",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k05",
+   "id": "input-5",
    "title": {
     "uz": "Ikkita son kiriting. Ularning ko‘paytmasini chiqaring."
    },
    "statement": {
     "uz": "Ikkita son kiriting. Ularning ko‘paytmasini chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "3\n4",
-     "out": "12"
+     "in": "7\n3",
+     "out": "21"
     },
     {
-     "in": "10\n-2",
-     "out": "-20"
+     "in": "10\n-4",
+     "out": "-40"
     },
     {
-     "in": "0\n7",
+     "in": "0\n5",
      "out": "0",
      "hidden": true
     },
     {
-     "in": "25\n5",
-     "out": "125",
+     "in": "120\n45",
+     "out": "5400",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k06",
+   "id": "input-6",
    "title": {
     "uz": "Bitta son kiriting. Uning kvadratini chiqaring."
    },
    "statement": {
     "uz": "Bitta son kiriting. Uning kvadratini chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -3594,32 +196,31 @@
      "hidden": true
     },
     {
-     "in": "100",
-     "out": "10000",
+     "in": "-7",
+     "out": "49",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k07",
+   "id": "input-7",
    "title": {
     "uz": "Foydalanuvchi yoshini kiritsin. Ekranga «Sizning yoshingiz:…"
    },
    "statement": {
     "uz": "Foydalanuvchi yoshini kiritsin. Ekranga «Sizning yoshingiz: ...» deb chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "14",
-     "out": "Sizning yoshingiz: 14"
+     "in": "15",
+     "out": "Sizning yoshingiz: 15"
     },
     {
-     "in": "7",
-     "out": "Sizning yoshingiz: 7"
+     "in": "8",
+     "out": "Sizning yoshingiz: 8"
     },
     {
      "in": "30",
@@ -3627,21 +228,20 @@
      "hidden": true
     },
     {
-     "in": "65",
-     "out": "Sizning yoshingiz: 65",
+     "in": "12",
+     "out": "Sizning yoshingiz: 12",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k08",
+   "id": "input-8",
    "title": {
     "uz": "Bir dona non narxini kiriting. 4 ta non qancha turishini…"
    },
    "statement": {
     "uz": "Bir dona non narxini kiriting. 4 ta non qancha turishini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -3660,32 +260,31 @@
      "hidden": true
     },
     {
-     "in": "5000",
-     "out": "20000",
+     "in": "4500",
+     "out": "18000",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k09",
+   "id": "input-9",
    "title": {
     "uz": "Bir qalam narxini kiriting. 6 ta qalam qancha turishini…"
    },
    "statement": {
     "uz": "Bir qalam narxini kiriting. 6 ta qalam qancha turishini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "3000",
-     "out": "18000"
+     "in": "2000",
+     "out": "12000"
     },
     {
-     "in": "2500",
-     "out": "15000"
+     "in": "1500",
+     "out": "9000"
     },
     {
      "in": "0",
@@ -3693,21 +292,20 @@
      "hidden": true
     },
     {
-     "in": "5000",
-     "out": "30000",
+     "in": "3000",
+     "out": "18000",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k10",
+   "id": "input-10",
    "title": {
     "uz": "Aliyning pulini kiriting. U 18000 so‘mlik kitob oldi. Qancha…"
    },
    "statement": {
     "uz": "Aliyning pulini kiriting. U 18000 so‘mlik kitob oldi. Qancha puli qolganini chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -3726,21 +324,20 @@
      "hidden": true
     },
     {
-     "in": "20000",
-     "out": "2000",
+     "in": "25000",
+     "out": "7000",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k11",
+   "id": "input-11",
    "title": {
     "uz": "Sinifdagi o‘g‘il bolalar va qiz bolalar sonini kiriting. Jami…"
    },
    "statement": {
     "uz": "Sinifdagi o‘g‘il bolalar va qiz bolalar sonini kiriting. Jami nechta o‘quvchi borligini chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -3759,21 +356,20 @@
      "hidden": true
     },
     {
-     "in": "25\n25",
-     "out": "50",
+     "in": "15\n15",
+     "out": "30",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k12",
+   "id": "input-12",
    "title": {
     "uz": "Avtobusda necha kishi borligini kiriting. Keyin necha kishi…"
    },
    "statement": {
     "uz": "Avtobusda necha kishi borligini kiriting. Keyin necha kishi tushganini kiriting. Qolgan odamlar sonini chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -3783,41 +379,40 @@
      "out": "33"
     },
     {
-     "in": "10\n10",
+     "in": "30\n30",
      "out": "0"
     },
     {
-     "in": "30\n5",
-     "out": "25",
+     "in": "50\n8",
+     "out": "42",
      "hidden": true
     },
     {
-     "in": "60\n25",
-     "out": "35",
+     "in": "20\n5",
+     "out": "15",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k13",
+   "id": "input-13",
    "title": {
     "uz": "Bir kg olma narxini kiriting. 3 kg olma qancha turishini…"
    },
    "statement": {
     "uz": "Bir kg olma narxini kiriting. 3 kg olma qancha turishini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "3000",
-     "out": "9000"
+     "in": "12000",
+     "out": "36000"
     },
     {
-     "in": "2500",
-     "out": "7500"
+     "in": "10000",
+     "out": "30000"
     },
     {
      "in": "0",
@@ -3825,21 +420,20 @@
      "hidden": true
     },
     {
-     "in": "5000",
-     "out": "15000",
+     "in": "15000",
+     "out": "45000",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k14",
+   "id": "input-14",
    "title": {
     "uz": "Daftar narxini va ruchka narxini kiriting. 2 ta daftar + 3 ta…"
    },
    "statement": {
     "uz": "Daftar narxini va ruchka narxini kiriting. 2 ta daftar + 3 ta ruchka qancha turishini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -3865,14 +459,13 @@
    ]
   },
   {
-   "id": "input-k15",
+   "id": "input-15",
    "title": {
     "uz": "Foydalanuvchi ismi va yoshini kiritsin. Ekranga quyidagicha…"
    },
    "statement": {
     "uz": "Foydalanuvchi ismi va yoshini kiritsin. Ekranga quyidagicha chiqaring:\nIsm: ...\nYosh: ..."
    },
-   "source": "book",
    "judge": {
     "mode": "lines"
    },
@@ -3882,63 +475,61 @@
      "out": "Ism: Ali\nYosh: 15"
     },
     {
-     "in": "Madina\n9",
-     "out": "Ism: Madina\nYosh: 9"
+     "in": "Madina\n12",
+     "out": "Ism: Madina\nYosh: 12"
     },
     {
-     "in": "Jasur\n30",
-     "out": "Ism: Jasur\nYosh: 30",
+     "in": "Jasur\n17",
+     "out": "Ism: Jasur\nYosh: 17",
      "hidden": true
     },
     {
-     "in": "Zilola\n12",
-     "out": "Ism: Zilola\nYosh: 12",
+     "in": "Zilola\n14",
+     "out": "Ism: Zilola\nYosh: 14",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k16",
+   "id": "input-16",
    "title": {
     "uz": "Hozirgi yilni kiriting. Foydalanuvchi necha yoshda ekanini…"
    },
    "statement": {
     "uz": "Hozirgi yilni kiriting. Foydalanuvchi necha yoshda ekanini kiritsin. Tug‘ilgan yilini toping."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "2025\n14",
-     "out": "2011"
+     "in": "2025\n15",
+     "out": "2010"
     },
     {
-     "in": "2024\n0",
-     "out": "2024"
+     "in": "2025\n30",
+     "out": "1995"
     },
     {
-     "in": "2026\n30",
-     "out": "1996",
+     "in": "2024\n10",
+     "out": "2014",
      "hidden": true
     },
     {
-     "in": "2023\n10",
-     "out": "2013",
+     "in": "2025\n0",
+     "out": "2025",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k17",
+   "id": "input-17",
    "title": {
     "uz": "Bir mahsulot narxini va nechta olishini kiriting. Umumiy…"
    },
    "statement": {
     "uz": "Bir mahsulot narxini va nechta olishini kiriting. Umumiy to‘lovni hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -3948,107 +539,104 @@
      "out": "12000"
     },
     {
-     "in": "2500\n10",
-     "out": "25000"
+     "in": "12000\n2",
+     "out": "24000"
     },
     {
-     "in": "0\n5",
+     "in": "500\n0",
      "out": "0",
      "hidden": true
     },
     {
-     "in": "999\n7",
-     "out": "6993",
+     "in": "2500\n10",
+     "out": "25000",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k18",
+   "id": "input-18",
    "title": {
     "uz": "Uchta baho kiriting. Ularning yig‘indisini chiqaring."
    },
    "statement": {
     "uz": "Uchta baho kiriting. Ularning yig‘indisini chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "1\n2\n3",
-     "out": "6"
+     "in": "5\n4\n5",
+     "out": "14"
     },
     {
-     "in": "4\n5\n6",
-     "out": "15"
+     "in": "3\n3\n3",
+     "out": "9"
     },
     {
-     "in": "0\n0\n9",
-     "out": "9",
+     "in": "5\n5\n4",
+     "out": "14",
      "hidden": true
     },
     {
-     "in": "10\n20\n30",
-     "out": "60",
+     "in": "2\n3\n4",
+     "out": "9",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k19",
+   "id": "input-19",
    "title": {
     "uz": "Oila a’zolari sonini kiriting. Har biriga 2 tadan non bersa,…"
    },
    "statement": {
     "uz": "Oila a’zolari sonini kiriting. Har biriga 2 tadan non bersa, jami necha non kerakligini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
+     "in": "4",
+     "out": "8"
+    },
+    {
      "in": "5",
      "out": "10"
     },
     {
-     "in": "12",
-     "out": "24"
-    },
-    {
-     "in": "0",
-     "out": "0",
+     "in": "1",
+     "out": "2",
      "hidden": true
     },
     {
-     "in": "100",
-     "out": "200",
+     "in": "8",
+     "out": "16",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k20",
+   "id": "input-20",
    "title": {
     "uz": "Bir kunlik ish haqini kiriting. 6 kun ishlasa qancha pul…"
    },
    "statement": {
     "uz": "Bir kunlik ish haqini kiriting. 6 kun ishlasa qancha pul ishlashini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "3000",
-     "out": "18000"
+     "in": "100000",
+     "out": "600000"
     },
     {
-     "in": "2500",
-     "out": "15000"
+     "in": "80000",
+     "out": "480000"
     },
     {
      "in": "0",
@@ -4056,21 +644,22 @@
      "hidden": true
     },
     {
-     "in": "5000",
-     "out": "30000",
+     "in": "150000",
+     "out": "900000",
      "hidden": true
     }
    ]
-  },
+  }
+ ],
+ "homework": [
   {
-   "id": "input-k21",
+   "id": "input-21",
    "title": {
     "uz": "Kvadratning tomonini kiriting. Uning perimetrini toping."
    },
    "statement": {
     "uz": "Kvadratning tomonini kiriting. Uning perimetrini toping."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -4080,8 +669,8 @@
      "out": "20"
     },
     {
-     "in": "12",
-     "out": "48"
+     "in": "10",
+     "out": "40"
     },
     {
      "in": "1",
@@ -4089,21 +678,20 @@
      "hidden": true
     },
     {
-     "in": "100",
-     "out": "400",
+     "in": "25",
+     "out": "100",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k22",
+   "id": "input-22",
    "title": {
     "uz": "Kvadratning tomonini kiriting. Uning yuzasini toping."
    },
    "statement": {
     "uz": "Kvadratning tomonini kiriting. Uning yuzasini toping."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -4113,8 +701,8 @@
      "out": "25"
     },
     {
-     "in": "12",
-     "out": "144"
+     "in": "10",
+     "out": "100"
     },
     {
      "in": "1",
@@ -4122,87 +710,84 @@
      "hidden": true
     },
     {
-     "in": "100",
-     "out": "10000",
+     "in": "12",
+     "out": "144",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k23",
+   "id": "input-23",
    "title": {
     "uz": "To‘g‘ri to‘rtburchakning uzunligi va enini kiriting. Yuzasini…"
    },
    "statement": {
     "uz": "To‘g‘ri to‘rtburchakning uzunligi va enini kiriting. Yuzasini toping."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "7\n3",
-     "out": "21"
+     "in": "5\n3",
+     "out": "15"
     },
     {
-     "in": "10\n4",
-     "out": "40"
+     "in": "10\n10",
+     "out": "100"
     },
     {
-     "in": "1\n1",
-     "out": "1",
+     "in": "7\n1",
+     "out": "7",
      "hidden": true
     },
     {
-     "in": "25\n8",
-     "out": "200",
+     "in": "12\n4",
+     "out": "48",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k24",
+   "id": "input-24",
    "title": {
     "uz": "To‘g‘ri to‘rtburchakning uzunligi va enini kiriting.…"
    },
    "statement": {
     "uz": "To‘g‘ri to‘rtburchakning uzunligi va enini kiriting. Perimetrini toping."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "7\n3",
-     "out": "20"
+     "in": "5\n3",
+     "out": "16"
     },
     {
-     "in": "10\n4",
-     "out": "28"
+     "in": "10\n10",
+     "out": "40"
     },
     {
-     "in": "1\n1",
-     "out": "4",
+     "in": "7\n1",
+     "out": "16",
      "hidden": true
     },
     {
-     "in": "25\n8",
-     "out": "66",
+     "in": "12\n4",
+     "out": "32",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k25",
+   "id": "input-25",
    "title": {
     "uz": "Kubning yon tomonini kiriting. Hajmini toping."
    },
    "statement": {
     "uz": "Kubning yon tomonini kiriting. Hajmini toping."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -4212,12 +797,12 @@
      "out": "8"
     },
     {
-     "in": "5",
-     "out": "125"
+     "in": "3",
+     "out": "27"
     },
     {
-     "in": "1",
-     "out": "1",
+     "in": "5",
+     "out": "125",
      "hidden": true
     },
     {
@@ -4228,14 +813,13 @@
    ]
   },
   {
-   "id": "input-k26",
+   "id": "input-26",
    "title": {
     "uz": "Ikkita son kiriting. Ularning o‘rta arifmetik qiymatini…"
    },
    "statement": {
     "uz": "Ikkita son kiriting. Ularning o‘rta arifmetik qiymatini toping."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -4254,21 +838,20 @@
      "hidden": true
     },
     {
-     "in": "-3\n4",
-     "out": "0.5",
+     "in": "3\n10",
+     "out": "6.5",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k27",
+   "id": "input-27",
    "title": {
     "uz": "Foydalanuvchi bugun necha soat dars o‘qiganini kiritsin.…"
    },
    "statement": {
     "uz": "Foydalanuvchi bugun necha soat dars o‘qiganini kiritsin. Ekranga «Bugun ... soat dars o‘qidingiz» deb chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -4278,41 +861,40 @@
      "out": "Bugun 3 soat dars o'qidingiz"
     },
     {
-     "in": "6",
-     "out": "Bugun 6 soat dars o'qidingiz"
+     "in": "5",
+     "out": "Bugun 5 soat dars o'qidingiz"
     },
     {
-     "in": "0",
-     "out": "Bugun 0 soat dars o'qidingiz",
+     "in": "1",
+     "out": "Bugun 1 soat dars o'qidingiz",
      "hidden": true
     },
     {
-     "in": "8",
-     "out": "Bugun 8 soat dars o'qidingiz",
+     "in": "6",
+     "out": "Bugun 6 soat dars o'qidingiz",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k28",
+   "id": "input-28",
    "title": {
     "uz": "Bir stakan suv 200 ml. Foydalanuvchi necha stakan ichganini…"
    },
    "statement": {
     "uz": "Bir stakan suv 200 ml. Foydalanuvchi necha stakan ichganini kiritsin. Jami necha ml suv ichganini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "1",
-     "out": "200"
-    },
-    {
      "in": "5",
      "out": "1000"
+    },
+    {
+     "in": "8",
+     "out": "1600"
     },
     {
      "in": "0",
@@ -4320,21 +902,20 @@
      "hidden": true
     },
     {
-     "in": "10",
-     "out": "2000",
+     "in": "12",
+     "out": "2400",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k29",
+   "id": "input-29",
    "title": {
     "uz": "Avtomobil 1 km yo‘lga 8 litr benzin sarflaydi. Foydalanuvchi…"
    },
    "statement": {
     "uz": "Avtomobil 1 km yo‘lga 8 litr benzin sarflaydi. Foydalanuvchi necha km yurganini kiritsin. Qancha benzin ketganini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -4344,8 +925,8 @@
      "out": "80"
     },
     {
-     "in": "50",
-     "out": "400"
+     "in": "25",
+     "out": "200"
     },
     {
      "in": "0",
@@ -4353,36 +934,35 @@
      "hidden": true
     },
     {
-     "in": "125",
-     "out": "1000",
+     "in": "50",
+     "out": "400",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k30",
+   "id": "input-30",
    "title": {
     "uz": "Bir soatlik internet 3000 so‘m. Foydalanuvchi necha soat…"
    },
    "statement": {
     "uz": "Bir soatlik internet 3000 so‘m. Foydalanuvchi necha soat internet ishlatganini kiritsin. Qancha to‘lashi kerakligini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
+     "in": "2",
+     "out": "6000"
+    },
+    {
+     "in": "5",
+     "out": "15000"
+    },
+    {
      "in": "1",
-     "out": "3000"
-    },
-    {
-     "in": "3",
-     "out": "9000"
-    },
-    {
-     "in": "0",
-     "out": "0",
+     "out": "3000",
      "hidden": true
     },
     {
@@ -4393,14 +973,13 @@
    ]
   },
   {
-   "id": "input-k31",
+   "id": "input-31",
    "title": {
     "uz": "Uchta son kiriting. Ularning yig‘indisini va ko‘paytmasini…"
    },
    "statement": {
     "uz": "Uchta son kiriting. Ularning yig‘indisini va ko‘paytmasini chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -4410,108 +989,104 @@
      "out": "6\n6"
     },
     {
-     "in": "4\n5\n6",
-     "out": "15\n120"
+     "in": "10\n20\n30",
+     "out": "60\n6000"
     },
     {
-     "in": "0\n0\n9",
-     "out": "9\n0",
+     "in": "0\n0\n5",
+     "out": "5\n0",
      "hidden": true
     },
     {
-     "in": "10\n20\n30",
-     "out": "60\n6000",
+     "in": "-4\n9\n2",
+     "out": "7\n-72",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k32",
+   "id": "input-32",
    "title": {
     "uz": "Ikkita son kiriting. Avval yig‘indisini, keyin ayirmasini,…"
    },
    "statement": {
     "uz": "Ikkita son kiriting. Avval yig‘indisini, keyin ayirmasini, keyin ko‘paytmasini chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "3\n4",
-     "out": "7\n-1\n12"
+     "in": "7\n3",
+     "out": "10\n4\n21"
     },
     {
-     "in": "10\n-2",
-     "out": "8\n12\n-20"
+     "in": "10\n-4",
+     "out": "6\n14\n-40"
     },
     {
-     "in": "0\n7",
-     "out": "7\n-7\n0",
+     "in": "0\n5",
+     "out": "5\n-5\n0",
      "hidden": true
     },
     {
-     "in": "25\n5",
-     "out": "30\n20\n125",
+     "in": "120\n45",
+     "out": "165\n75\n5400",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k33",
+   "id": "input-33",
    "title": {
     "uz": "Foydalanuvchi ismi, familiyasi va yoshini kiritsin. Chiroyli…"
    },
    "statement": {
     "uz": "Foydalanuvchi ismi, familiyasi va yoshini kiritsin. Chiroyli qilib chiqaring."
    },
-   "source": "book",
    "judge": null,
    "tests": []
   },
   {
-   "id": "input-k34",
+   "id": "input-34",
    "title": {
     "uz": "Bir kg guruch narxini kiriting. 2 kg va 5 kg guruch qancha…"
    },
    "statement": {
     "uz": "Bir kg guruch narxini kiriting. 2 kg va 5 kg guruch qancha turishini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "10000",
-     "out": "20000\n50000"
-    },
-    {
      "in": "12000",
      "out": "24000\n60000"
     },
     {
-     "in": "0",
-     "out": "0\n0",
+     "in": "15000",
+     "out": "30000\n75000"
+    },
+    {
+     "in": "10000",
+     "out": "20000\n50000",
      "hidden": true
     },
     {
-     "in": "8500",
-     "out": "17000\n42500",
+     "in": "20000",
+     "out": "40000\n100000",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k35",
+   "id": "input-35",
    "title": {
     "uz": "O‘quvchi 1 kunda necha sahifa kitob o‘qishini kiritsin. 7…"
    },
    "statement": {
     "uz": "O‘quvchi 1 kunda necha sahifa kitob o‘qishini kiritsin. 7 kunda necha sahifa o‘qishini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -4525,8 +1100,8 @@
      "out": "175"
     },
     {
-     "in": "0",
-     "out": "0",
+     "in": "1",
+     "out": "7",
      "hidden": true
     },
     {
@@ -4537,14 +1112,13 @@
    ]
   },
   {
-   "id": "input-k36",
+   "id": "input-36",
    "title": {
     "uz": "Bitta son kiriting. Uni 10 ga oshirib, keyin 2 ga ko‘paytirib…"
    },
    "statement": {
     "uz": "Bitta son kiriting. Uni 10 ga oshirib, keyin 2 ga ko‘paytirib chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -4554,63 +1128,61 @@
      "out": "30"
     },
     {
-     "in": "12",
-     "out": "44"
+     "in": "0",
+     "out": "20"
     },
     {
-     "in": "0",
-     "out": "20",
+     "in": "-4",
+     "out": "12",
      "hidden": true
     },
     {
-     "in": "100",
-     "out": "220",
+     "in": "20",
+     "out": "60",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k37",
+   "id": "input-37",
    "title": {
     "uz": "Ikkita son (a va b) kiriting. a * b + 10 ni hisoblang."
    },
    "statement": {
     "uz": "Ikkita son (a va b) kiriting. a * b + 10 ni hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "3\n4",
-     "out": "22"
+     "in": "7\n3",
+     "out": "31"
     },
     {
-     "in": "10\n-2",
-     "out": "-10"
+     "in": "10\n-4",
+     "out": "-30"
     },
     {
-     "in": "0\n7",
+     "in": "0\n5",
      "out": "10",
      "hidden": true
     },
     {
-     "in": "25\n5",
-     "out": "135",
+     "in": "120\n45",
+     "out": "5410",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k38",
+   "id": "input-38",
    "title": {
     "uz": "Uchta son kiriting. (a + b) * c ni hisoblang."
    },
    "statement": {
     "uz": "Uchta son kiriting. (a + b) * c ni hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -4620,37 +1192,36 @@
      "out": "9"
     },
     {
-     "in": "4\n5\n6",
-     "out": "54"
+     "in": "10\n20\n30",
+     "out": "900"
     },
     {
-     "in": "0\n0\n9",
+     "in": "0\n0\n5",
      "out": "0",
      "hidden": true
     },
     {
-     "in": "10\n20\n30",
-     "out": "900",
+     "in": "-4\n9\n2",
+     "out": "10",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k39",
+   "id": "input-39",
    "title": {
     "uz": "Foydalanuvchi hozirgi soatni kiritsin (0–23). Ekranga «Hozir…"
    },
    "statement": {
     "uz": "Foydalanuvchi hozirgi soatni kiritsin (0–23). Ekranga «Hozir soat: ...» deb chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "8",
-     "out": "Hozir soat: 8"
+     "in": "9",
+     "out": "Hozir soat: 9"
     },
     {
      "in": "0",
@@ -4662,32 +1233,31 @@
      "hidden": true
     },
     {
-     "in": "15",
-     "out": "Hozir soat: 15",
+     "in": "14",
+     "out": "Hozir soat: 14",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k40",
+   "id": "input-40",
    "title": {
     "uz": "Bir qadoq tuxum 10 dona. Foydalanuvchi necha qadoq olganini…"
    },
    "statement": {
     "uz": "Bir qadoq tuxum 10 dona. Foydalanuvchi necha qadoq olganini kiritsin. Jami necha dona tuxum bo‘lishini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "1",
-     "out": "10"
-    },
-    {
      "in": "3",
      "out": "30"
+    },
+    {
+     "in": "10",
+     "out": "100"
     },
     {
      "in": "0",
@@ -4695,54 +1265,52 @@
      "hidden": true
     },
     {
-     "in": "12",
-     "out": "120",
+     "in": "25",
+     "out": "250",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k41",
+   "id": "input-41",
    "title": {
     "uz": "Foydalanuvchi bugun nechta dars o‘tganini kiritsin. Ekranga…"
    },
    "statement": {
     "uz": "Foydalanuvchi bugun nechta dars o‘tganini kiritsin. Ekranga «Bugun siz ... ta dars o‘tdingiz» deb chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "3",
-     "out": "Bugun siz 3 ta dars o'tdingiz"
+     "in": "4",
+     "out": "Bugun siz 4 ta dars o'tdingiz"
     },
     {
      "in": "6",
      "out": "Bugun siz 6 ta dars o'tdingiz"
     },
     {
-     "in": "0",
-     "out": "Bugun siz 0 ta dars o'tdingiz",
+     "in": "1",
+     "out": "Bugun siz 1 ta dars o'tdingiz",
      "hidden": true
     },
     {
-     "in": "8",
-     "out": "Bugun siz 8 ta dars o'tdingiz",
+     "in": "5",
+     "out": "Bugun siz 5 ta dars o'tdingiz",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k42",
+   "id": "input-42",
    "title": {
     "uz": "Bir o‘quvchining 1 kunlik yo‘l pulini kiriting. 5 kunlik yo‘l…"
    },
    "statement": {
     "uz": "Bir o‘quvchining 1 kunlik yo‘l pulini kiriting. 5 kunlik yo‘l pulini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -4752,63 +1320,61 @@
      "out": "15000"
     },
     {
-     "in": "2500",
-     "out": "12500"
+     "in": "5000",
+     "out": "25000"
     },
     {
-     "in": "0",
-     "out": "0",
+     "in": "2000",
+     "out": "10000",
      "hidden": true
     },
     {
-     "in": "5000",
-     "out": "25000",
+     "in": "4500",
+     "out": "22500",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k43",
+   "id": "input-43",
    "title": {
     "uz": "Foydalanuvchi nechta do‘sti borligini kiritsin. Har biriga 2…"
    },
    "statement": {
     "uz": "Foydalanuvchi nechta do‘sti borligini kiritsin. Har biriga 2 tadan shirinlik bersa, jami nechta shirinlik kerakligini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "3",
-     "out": "6"
+     "in": "5",
+     "out": "10"
     },
     {
      "in": "10",
      "out": "20"
     },
     {
-     "in": "0",
-     "out": "0",
+     "in": "1",
+     "out": "2",
      "hidden": true
     },
     {
-     "in": "25",
-     "out": "50",
+     "in": "20",
+     "out": "40",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k44",
+   "id": "input-44",
    "title": {
     "uz": "Telefonning narxini kiriting. Uni 3 oyda to‘lash kerak. Har…"
    },
    "statement": {
     "uz": "Telefonning narxini kiriting. Uni 3 oyda to‘lash kerak. Har oyda qancha to‘lash kerakligini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -4818,30 +1384,29 @@
      "out": "300000"
     },
     {
-     "in": "1200000",
-     "out": "400000"
+     "in": "3000000",
+     "out": "1000000"
     },
     {
-     "in": "300000",
-     "out": "100000",
+     "in": "600000",
+     "out": "200000",
      "hidden": true
     },
     {
-     "in": "60",
-     "out": "20",
+     "in": "1200000",
+     "out": "400000",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k45",
+   "id": "input-45",
    "title": {
     "uz": "Foydalanuvchi hozirgi oy raqamini kiritsin (1–12). Ekranga…"
    },
    "statement": {
     "uz": "Foydalanuvchi hozirgi oy raqamini kiritsin (1–12). Ekranga «Hozir ...-oy» deb chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -4851,30 +1416,29 @@
      "out": "Hozir 1-oy"
     },
     {
-     "in": "12",
-     "out": "Hozir 12-oy"
+     "in": "5",
+     "out": "Hozir 5-oy"
     },
     {
-     "in": "7",
-     "out": "Hozir 7-oy",
+     "in": "12",
+     "out": "Hozir 12-oy",
      "hidden": true
     },
     {
-     "in": "10",
-     "out": "Hozir 10-oy",
+     "in": "9",
+     "out": "Hozir 9-oy",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k46",
+   "id": "input-46",
    "title": {
     "uz": "Bir futbol jamoasida nechta o‘yinchi borligini kiriting.…"
    },
    "statement": {
     "uz": "Bir futbol jamoasida nechta o‘yinchi borligini kiriting. Ulardan 2 nafari zaxirada. Asosiy tarkibda nechta o‘yinchi borligini chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -4884,96 +1448,93 @@
      "out": "9"
     },
     {
-     "in": "14",
-     "out": "12"
+     "in": "15",
+     "out": "13"
     },
     {
-     "in": "5",
-     "out": "3",
+     "in": "12",
+     "out": "10",
      "hidden": true
     },
     {
-     "in": "20",
-     "out": "18",
+     "in": "18",
+     "out": "16",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k47",
+   "id": "input-47",
    "title": {
     "uz": "Foydalanuvchi 1 soatda nechta bet kitob o‘qishini kiritsin. 4…"
    },
    "statement": {
     "uz": "Foydalanuvchi 1 soatda nechta bet kitob o‘qishini kiritsin. 4 soatda nechta bet o‘qishini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
+     "in": "20",
+     "out": "80"
+    },
+    {
+     "in": "30",
+     "out": "120"
+    },
+    {
      "in": "10",
-     "out": "40"
-    },
-    {
-     "in": "25",
-     "out": "100"
-    },
-    {
-     "in": "0",
-     "out": "0",
+     "out": "40",
      "hidden": true
     },
     {
-     "in": "40",
-     "out": "160",
+     "in": "45",
+     "out": "180",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k48",
+   "id": "input-48",
    "title": {
     "uz": "Bir qop kartoshka 25 kg. Foydalanuvchi necha qop olganini…"
    },
    "statement": {
     "uz": "Bir qop kartoshka 25 kg. Foydalanuvchi necha qop olganini kiritsin. Jami necha kg kartoshka bo‘lishini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "1",
-     "out": "25"
-    },
-    {
-     "in": "4",
-     "out": "100"
-    },
-    {
-     "in": "0",
-     "out": "0",
-     "hidden": true
+     "in": "2",
+     "out": "50"
     },
     {
      "in": "10",
-     "out": "250",
+     "out": "250"
+    },
+    {
+     "in": "1",
+     "out": "25",
+     "hidden": true
+    },
+    {
+     "in": "40",
+     "out": "1000",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k49",
+   "id": "input-49",
    "title": {
     "uz": "O‘quvchi 1 kunda nechta so‘z yodlashini kiritsin. 10 kunda…"
    },
    "statement": {
     "uz": "O‘quvchi 1 kunda nechta so‘z yodlashini kiritsin. 10 kunda nechta so‘z yodlashini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -4983,96 +1544,95 @@
      "out": "50"
     },
     {
-     "in": "12",
-     "out": "120"
+     "in": "20",
+     "out": "200"
     },
     {
-     "in": "0",
-     "out": "0",
+     "in": "1",
+     "out": "10",
      "hidden": true
     },
     {
-     "in": "30",
-     "out": "300",
+     "in": "15",
+     "out": "150",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k50",
+   "id": "input-50",
    "title": {
     "uz": "Foydalanuvchi oyiga qancha pul ishlashini kiritsin. 3 oyda…"
    },
    "statement": {
     "uz": "Foydalanuvchi oyiga qancha pul ishlashini kiritsin. 3 oyda qancha ishlashini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "3000",
-     "out": "9000"
+     "in": "2000000",
+     "out": "6000000"
     },
     {
-     "in": "2500",
-     "out": "7500"
+     "in": "3000000",
+     "out": "9000000"
     },
     {
-     "in": "0",
-     "out": "0",
+     "in": "1500000",
+     "out": "4500000",
      "hidden": true
     },
     {
-     "in": "5000",
-     "out": "15000",
+     "in": "5000000",
+     "out": "15000000",
      "hidden": true
     }
    ]
-  },
+  }
+ ],
+ "extra": [
   {
-   "id": "input-k51",
+   "id": "input-51",
    "title": {
     "uz": "Bir stul narxini kiriting. 6 ta stul qancha turishini…"
    },
    "statement": {
     "uz": "Bir stul narxini kiriting. 6 ta stul qancha turishini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "3000",
-     "out": "18000"
+     "in": "50000",
+     "out": "300000"
     },
     {
-     "in": "2500",
-     "out": "15000"
+     "in": "80000",
+     "out": "480000"
     },
     {
-     "in": "0",
-     "out": "0",
+     "in": "120000",
+     "out": "720000",
      "hidden": true
     },
     {
-     "in": "5000",
-     "out": "30000",
+     "in": "35000",
+     "out": "210000",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k52",
+   "id": "input-52",
    "title": {
     "uz": "Foydalanuvchi nechta kitob o‘qiganini kiritsin. Ekranga «Siz…"
    },
    "statement": {
     "uz": "Foydalanuvchi nechta kitob o‘qiganini kiritsin. Ekranga «Siz ... ta kitob o‘qibsiz. Barakalla!» deb chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -5082,8 +1642,8 @@
      "out": "Siz 3 ta kitob o'qibsiz. Barakalla!"
     },
     {
-     "in": "12",
-     "out": "Siz 12 ta kitob o'qibsiz. Barakalla!"
+     "in": "10",
+     "out": "Siz 10 ta kitob o'qibsiz. Barakalla!"
     },
     {
      "in": "1",
@@ -5098,14 +1658,13 @@
    ]
   },
   {
-   "id": "input-k53",
+   "id": "input-53",
    "title": {
     "uz": "Bir kunlik suv sarfini (litrda) kiriting. 7 kunlik suv…"
    },
    "statement": {
     "uz": "Bir kunlik suv sarfini (litrda) kiriting. 7 kunlik suv sarfini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -5119,305 +1678,296 @@
      "out": "1050"
     },
     {
-     "in": "0",
-     "out": "0",
+     "in": "80",
+     "out": "560",
      "hidden": true
     },
     {
-     "in": "80",
-     "out": "560",
+     "in": "200",
+     "out": "1400",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k54",
+   "id": "input-54",
    "title": {
     "uz": "Foydalanuvchi nechta xato qilganini kiritsin. Ekranga «Siz…"
    },
    "statement": {
     "uz": "Foydalanuvchi nechta xato qilganini kiritsin. Ekranga «Siz ... ta xato qildingiz» deb chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
+     "in": "3",
+     "out": "Siz 3 ta xato qildingiz"
+    },
+    {
      "in": "0",
      "out": "Siz 0 ta xato qildingiz"
     },
     {
-     "in": "3",
-     "out": "Siz 3 ta xato qildingiz"
+     "in": "5",
+     "out": "Siz 5 ta xato qildingiz",
+     "hidden": true
     },
     {
      "in": "10",
      "out": "Siz 10 ta xato qildingiz",
      "hidden": true
-    },
-    {
-     "in": "1",
-     "out": "Siz 1 ta xato qildingiz",
-     "hidden": true
     }
    ]
   },
   {
-   "id": "input-k55",
+   "id": "input-55",
    "title": {
     "uz": "Bir qalam va bir uchirg‘ich narxini kiriting. 4 ta qalam + 2…"
    },
    "statement": {
     "uz": "Bir qalam va bir uchirg‘ich narxini kiriting. 4 ta qalam + 2 ta uchirg‘ich qancha turishini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "1000\n500",
-     "out": "5000"
+     "in": "2000\n500",
+     "out": "9000"
     },
     {
-     "in": "1500\n800",
-     "out": "7600"
+     "in": "1500\n300",
+     "out": "6600"
     },
     {
-     "in": "0\n300",
-     "out": "600",
+     "in": "3000\n1000",
+     "out": "14000",
      "hidden": true
     },
     {
-     "in": "2000\n0",
-     "out": "8000",
+     "in": "1000\n0",
+     "out": "4000",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k56",
+   "id": "input-56",
    "title": {
     "uz": "Foydalanuvchi tug‘ilgan kunini (kun raqami) kiritsin. Ekranga…"
    },
    "statement": {
     "uz": "Foydalanuvchi tug‘ilgan kunini (kun raqami) kiritsin. Ekranga «Sizning tug‘ilgan kuningiz: ...» deb chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
+     "in": "5",
+     "out": "Sizning tug'ilgan kuningiz: 5"
+    },
+    {
      "in": "15",
      "out": "Sizning tug'ilgan kuningiz: 15"
     },
     {
-     "in": "1",
-     "out": "Sizning tug'ilgan kuningiz: 1"
-    },
-    {
-     "in": "31",
-     "out": "Sizning tug'ilgan kuningiz: 31",
+     "in": "28",
+     "out": "Sizning tug'ilgan kuningiz: 28",
      "hidden": true
     },
     {
-     "in": "7",
-     "out": "Sizning tug'ilgan kuningiz: 7",
+     "in": "1",
+     "out": "Sizning tug'ilgan kuningiz: 1",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k57",
+   "id": "input-57",
    "title": {
     "uz": "Bir poyabzal narxini kiriting. 2 juft poyabzal qancha…"
    },
    "statement": {
     "uz": "Bir poyabzal narxini kiriting. 2 juft poyabzal qancha turishini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
+     "in": "150000",
+     "out": "300000"
+    },
+    {
+     "in": "200000",
+     "out": "400000"
+    },
+    {
      "in": "300000",
-     "out": "600000"
-    },
-    {
-     "in": "250000",
-     "out": "500000"
-    },
-    {
-     "in": "0",
-     "out": "0",
+     "out": "600000",
      "hidden": true
     },
     {
-     "in": "180000",
-     "out": "360000",
+     "in": "120000",
+     "out": "240000",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k58",
+   "id": "input-58",
    "title": {
     "uz": "O‘quvchi 1 kunda necha daqiqa ingliz tili o‘rganishini…"
    },
    "statement": {
     "uz": "O‘quvchi 1 kunda necha daqiqa ingliz tili o‘rganishini kiritsin. 5 kunda necha daqiqa o‘rganishini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "20",
-     "out": "100"
-    },
-    {
      "in": "30",
      "out": "150"
     },
     {
-     "in": "0",
-     "out": "0",
+     "in": "45",
+     "out": "225"
+    },
+    {
+     "in": "60",
+     "out": "300",
      "hidden": true
     },
     {
-     "in": "45",
-     "out": "225",
+     "in": "20",
+     "out": "100",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k59",
+   "id": "input-59",
    "title": {
     "uz": "Foydalanuvchi hozirgi yilni va o‘zi necha yoshda ekanini…"
    },
    "statement": {
     "uz": "Foydalanuvchi hozirgi yilni va o‘zi necha yoshda ekanini kiritsin. 10 yildan keyin necha yoshda bo‘lishini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "2025\n14",
-     "out": "24"
+     "in": "2025\n15",
+     "out": "25"
     },
     {
-     "in": "2024\n20",
-     "out": "30"
+     "in": "2025\n30",
+     "out": "40"
     },
     {
-     "in": "2026\n0",
-     "out": "10",
+     "in": "2024\n10",
+     "out": "20",
      "hidden": true
     },
     {
-     "in": "2023\n35",
-     "out": "45",
+     "in": "2025\n5",
+     "out": "15",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k60",
+   "id": "input-60",
    "title": {
     "uz": "Bir paket sut 1 litr. Foydalanuvchi necha paket olganini…"
    },
    "statement": {
     "uz": "Bir paket sut 1 litr. Foydalanuvchi necha paket olganini kiritsin. Jami necha litr sut bo‘lishini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "1",
-     "out": "1"
-    },
-    {
      "in": "3",
      "out": "3"
     },
     {
-     "in": "0",
-     "out": "0",
+     "in": "10",
+     "out": "10"
+    },
+    {
+     "in": "1",
+     "out": "1",
      "hidden": true
     },
     {
-     "in": "10",
-     "out": "10",
+     "in": "8",
+     "out": "8",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k61",
+   "id": "input-61",
    "title": {
     "uz": "Foydalanuvchi nechta gol urganini kiritsin. Ekranga «Siz ...…"
    },
    "statement": {
     "uz": "Foydalanuvchi nechta gol urganini kiritsin. Ekranga «Siz ... ta gol urdingiz!» deb chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
-    {
-     "in": "1",
-     "out": "Siz 1 ta gol urdingiz!"
-    },
     {
      "in": "3",
      "out": "Siz 3 ta gol urdingiz!"
     },
     {
      "in": "0",
-     "out": "Siz 0 ta gol urdingiz!",
-     "hidden": true
+     "out": "Siz 0 ta gol urdingiz!"
     },
     {
      "in": "5",
      "out": "Siz 5 ta gol urdingiz!",
      "hidden": true
+    },
+    {
+     "in": "10",
+     "out": "Siz 10 ta gol urdingiz!",
+     "hidden": true
     }
    ]
   },
   {
-   "id": "input-k62",
+   "id": "input-62",
    "title": {
     "uz": "Bir qadoq pechene 8 dona. Foydalanuvchi necha qadoq olganini…"
    },
    "statement": {
     "uz": "Bir qadoq pechene 8 dona. Foydalanuvchi necha qadoq olganini kiritsin. Jami nechta pechene bo‘lishini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
+     "in": "2",
+     "out": "16"
+    },
+    {
+     "in": "5",
+     "out": "40"
+    },
+    {
      "in": "1",
-     "out": "8"
-    },
-    {
-     "in": "4",
-     "out": "32"
-    },
-    {
-     "in": "0",
-     "out": "0",
+     "out": "8",
      "hidden": true
     },
     {
@@ -5428,29 +1978,28 @@
    ]
   },
   {
-   "id": "input-k63",
+   "id": "input-63",
    "title": {
     "uz": "O‘qituvchi 1 kunda nechta dars o‘tishini kiritsin. 6 kunlik…"
    },
    "statement": {
     "uz": "O‘qituvchi 1 kunda nechta dars o‘tishini kiritsin. 6 kunlik dars sonini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "3",
-     "out": "18"
-    },
-    {
      "in": "5",
      "out": "30"
     },
     {
-     "in": "0",
-     "out": "0",
+     "in": "6",
+     "out": "36"
+    },
+    {
+     "in": "4",
+     "out": "24",
      "hidden": true
     },
     {
@@ -5461,14 +2010,13 @@
    ]
   },
   {
-   "id": "input-k64",
+   "id": "input-64",
    "title": {
     "uz": "Foydalanuvchi 1 soatda nechta misol yechishini kiritsin. 3…"
    },
    "statement": {
     "uz": "Foydalanuvchi 1 soatda nechta misol yechishini kiritsin. 3 soatda nechta misol yechishini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -5478,41 +2026,40 @@
      "out": "30"
     },
     {
-     "in": "15",
-     "out": "45"
+     "in": "20",
+     "out": "60"
     },
     {
-     "in": "0",
-     "out": "0",
+     "in": "15",
+     "out": "45",
      "hidden": true
     },
     {
-     "in": "25",
-     "out": "75",
+     "in": "8",
+     "out": "24",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k65",
+   "id": "input-65",
    "title": {
     "uz": "Bir kishiga 3 ta non kerak. Foydalanuvchi mehmonlar sonini…"
    },
    "statement": {
     "uz": "Bir kishiga 3 ta non kerak. Foydalanuvchi mehmonlar sonini kiritsin. Jami nechta non kerakligini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "5",
-     "out": "15"
+     "in": "4",
+     "out": "12"
     },
     {
-     "in": "12",
-     "out": "36"
+     "in": "10",
+     "out": "30"
     },
     {
      "in": "1",
@@ -5520,28 +2067,27 @@
      "hidden": true
     },
     {
-     "in": "30",
-     "out": "90",
+     "in": "15",
+     "out": "45",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k66",
+   "id": "input-66",
    "title": {
     "uz": "Foydalanuvchi bugun nechta vazifa bajarganini kiritsin.…"
    },
    "statement": {
     "uz": "Foydalanuvchi bugun nechta vazifa bajarganini kiritsin. Ekranga «Bugun ... ta vazifa bajardingiz» deb chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "1",
-     "out": "Bugun 1 ta vazifa bajardingiz"
+     "in": "3",
+     "out": "Bugun 3 ta vazifa bajardingiz"
     },
     {
      "in": "5",
@@ -5553,87 +2099,84 @@
      "hidden": true
     },
     {
-     "in": "9",
-     "out": "Bugun 9 ta vazifa bajardingiz",
+     "in": "8",
+     "out": "Bugun 8 ta vazifa bajardingiz",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k67",
+   "id": "input-67",
    "title": {
     "uz": "Bir metr mato narxini kiriting. 5 metr mato qancha turishini…"
    },
    "statement": {
     "uz": "Bir metr mato narxini kiriting. 5 metr mato qancha turishini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "3000",
-     "out": "15000"
+     "in": "20000",
+     "out": "100000"
     },
     {
-     "in": "2500",
-     "out": "12500"
+     "in": "35000",
+     "out": "175000"
     },
     {
-     "in": "0",
-     "out": "0",
+     "in": "15000",
+     "out": "75000",
      "hidden": true
     },
     {
-     "in": "5000",
-     "out": "25000",
+     "in": "40000",
+     "out": "200000",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k68",
+   "id": "input-68",
    "title": {
     "uz": "Foydalanuvchi nechta xat yozganini kiritsin. Ekranga «Siz ...…"
    },
    "statement": {
     "uz": "Foydalanuvchi nechta xat yozganini kiritsin. Ekranga «Siz ... ta xat yozdingiz» deb chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
    "tests": [
     {
-     "in": "1",
-     "out": "Siz 1 ta xat yozdingiz"
+     "in": "2",
+     "out": "Siz 2 ta xat yozdingiz"
     },
     {
-     "in": "4",
-     "out": "Siz 4 ta xat yozdingiz"
-    },
-    {
-     "in": "0",
-     "out": "Siz 0 ta xat yozdingiz",
-     "hidden": true
+     "in": "5",
+     "out": "Siz 5 ta xat yozdingiz"
     },
     {
      "in": "10",
      "out": "Siz 10 ta xat yozdingiz",
      "hidden": true
+    },
+    {
+     "in": "1",
+     "out": "Siz 1 ta xat yozdingiz",
+     "hidden": true
     }
    ]
   },
   {
-   "id": "input-k69",
+   "id": "input-69",
    "title": {
     "uz": "Bir banka limonad 2 banka = 1 litr deb oling. Foydalanuvchi…"
    },
    "statement": {
     "uz": "Bir banka limonad 2 banka = 1 litr deb oling. Foydalanuvchi necha banka olganini kiritsin. Necha litr limonad bo‘lishini hisoblang."
    },
-   "source": "book",
    "judge": {
     "mode": "tokens"
    },
@@ -5647,26 +2190,25 @@
      "out": "5"
     },
     {
-     "in": "2",
-     "out": "1",
+     "in": "3",
+     "out": "1.5",
      "hidden": true
     },
     {
-     "in": "7",
-     "out": "3.5",
+     "in": "12",
+     "out": "6",
      "hidden": true
     }
    ]
   },
   {
-   "id": "input-k70",
+   "id": "input-70",
    "title": {
     "uz": "Foydalanuvchi ismini kiritsin. Keyin necha yoshda ekanini…"
    },
    "statement": {
     "uz": "Foydalanuvchi ismini kiritsin. Keyin necha yoshda ekanini kiritsin. Ekranga:\nSalom, [ism]!\nSiz [yosh] yoshdasiz. deb chiqaring."
    },
-   "source": "book",
    "judge": {
     "mode": "lines"
    },
@@ -5676,17 +2218,17 @@
      "out": "Salom, Ali!\nSiz 15 yoshdasiz."
     },
     {
-     "in": "Madina\n9",
-     "out": "Salom, Madina!\nSiz 9 yoshdasiz."
+     "in": "Madina\n12",
+     "out": "Salom, Madina!\nSiz 12 yoshdasiz."
     },
     {
-     "in": "Jasur\n30",
-     "out": "Salom, Jasur!\nSiz 30 yoshdasiz.",
+     "in": "Jasur\n17",
+     "out": "Salom, Jasur!\nSiz 17 yoshdasiz.",
      "hidden": true
     },
     {
-     "in": "Zilola\n12",
-     "out": "Salom, Zilola!\nSiz 12 yoshdasiz.",
+     "in": "Zilola\n14",
+     "out": "Salom, Zilola!\nSiz 14 yoshdasiz.",
      "hidden": true
     }
    ]

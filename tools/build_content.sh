@@ -1,10 +1,4 @@
 #!/bin/sh
-# usage: tools/build_content.sh DOCS_DIR   (re-imports worksheets, then adds verified checkers)
+# Rebuilds all topics from the teacher's sources only (book + old-chat Nested For)
 set -e
-python3 tools/import_problems.py "${1:-tools/_docs_tmp}"
-python3 tools/build_checkers.py
-python3 tools/build_practice.py
-python3 tools/build_nested.py
-python3 tools/build_bank.py
-python3 tools/build_book.py
-python3 tools/build_bookfull.py
+python3 tools/build_content.py
