@@ -1,0 +1,30 @@
+export const copy = {
+  uz: {
+    dashboard: 'Bosh sahifa', roadmap: 'O‘quv xaritasi', practice: 'Mashqlar', settings: 'Sozlamalar',
+    greeting: 'Xush kelibsiz, dasturchi!', overview: 'Bugungi rivojlanishingiz',
+    continue: 'O‘qishni davom ettirish', start: 'Boshlash', solved: 'Yechilgan', total: 'Jami masalalar',
+    attempts: 'Urinishlar', xp: 'Tajriba ballari', streak: 'Kunlik seriya',
+    roadmapTitle: 'Algoritm yo‘li', roadmapSub: 'Mavzular bo‘ylab bosqichma-bosqich rivojlaning.',
+    arenaTitle: 'Mashqlar maydoni', arenaSub: 'Masalani tanlang, Flowgorithm faylingizni yuklang va natijani tekshiring.',
+    classwork: 'Sinf ishi', homework: 'Uyga vazifa', mastery: 'Mustahkamlash',
+    all: 'Barchasi', beginner: 'Boshlang‘ich', middle: 'O‘rta', finish: 'Yakuniy',
+    upload: 'FPRG faylni yuklash', run: 'Tekshirish', chooseFile: 'Fayl tanlash',
+    notSolved: 'Hali yechilmagan', accepted: 'Qabul qilindi', wrong: 'Xato javob',
+    topicProgress: 'Mavzu bo‘yicha natija', todayTip: 'Bugungi tavsiya',
+    source: 'Manba: Mirae Flowgorithm masalalar to‘plami',
+  },
+  en: {
+    dashboard: 'Dashboard', roadmap: 'Learning map', practice: 'Practice', settings: 'Settings',
+    greeting: 'Welcome back, creator!', overview: 'Your learning overview',
+    continue: 'Continue learning', start: 'Start', solved: 'Solved', total: 'Total problems',
+    attempts: 'Attempts', xp: 'Experience points', streak: 'Daily streak',
+    roadmapTitle: 'Your algorithm path', roadmapSub: 'Build your skills one topic at a time.',
+    arenaTitle: 'Practice arena', arenaSub: 'Choose a task, upload your Flowgorithm file, and check the result.',
+    classwork: 'Classwork', homework: 'Homework', mastery: 'Mastery',
+    all: 'All', beginner: 'Beginner', middle: 'Middle', finish: 'Finish',
+    upload: 'Upload FPRG file', run: 'Run checker', chooseFile: 'Choose file',
+    notSolved: 'Not solved yet', accepted: 'Accepted', wrong: 'Wrong answer',
+    topicProgress: 'Topic progress', todayTip: 'Today’s recommendation',
+    source: 'Source: Mirae Flowgorithm problem collection',
+  }
+} as const;

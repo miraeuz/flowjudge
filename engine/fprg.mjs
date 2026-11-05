@@ -151,6 +151,11 @@ const numsEq = (a, b, eps) => Math.abs(a - b) <= eps * Math.max(1, Math.abs(b));
 /** modes: 'tokens' (default: whitespace tokens, numbers with tolerance), 'numbers' (only numbers, ignores prompt text), 'exact' */
 export function compare(got, exp, { mode = 'tokens', eps = 1e-6 } = {}) {
   const fixq = s => s.replace(/[‘’ʻʼ`´]/g, "'").replace(/[–—]/g, '-'); got = fixq(got); exp = fixq(exp);   // students type ’ or ' — treat alike
+  if (mode === 'yesno') {   // "is it divisible?" — accept Ha / Bo'linadi / Juft / 1 ... and Yo'q / Bo'linmaydi / Toq / 0 ...
+    const YES = ['ha', "bo'linadi", 'juft', 'true', '1', 'yes', "to'g'ri"], NO = ["yo'q", 'yoq', "bo'linmaydi", 'toq', 'false', '0', 'no', "noto'g'ri"];
+    const t = got.toLowerCase().split(/[^a-z0-9']+/).filter(Boolean), y = t.some(x => YES.includes(x)), n = t.some(x => NO.includes(x));
+    return (y && !n ? 'yes' : n && !y ? 'no' : '?') === exp.trim();
+  }
   if (mode === 'exact') { const n = s => s.replace(/\r/g, '').split('\n').map(l => l.trimEnd()).join('\n').trimEnd(); return n(got) === n(exp); }
   if (mode === 'shape') { const n = s => s.replace(/\r/g, '').split('\n').map(l => l.replace(/\s+/g, '')).join('\n').replace(/^\n+|\n+$/g, ''); return n(got) === n(exp); }
   if (mode === 'lines') { const n = s => s.replace(/\r/g, '').split('\n').map(l => l.trim().split(/\s+/).filter(Boolean).join(' ')).join('\n').replace(/^\n+|\n+$/g, ''); return n(got) === n(exp); }
@@ -166,9 +171,9 @@ export function judge(xml, tests, opts = {}) {
   const results = []; let first = null;
   for (const [i, t] of tests.entries()) {
     let v = 'AC', got = '', msg = '';
-    try { const r = new Run(fns, t.in ?? '', opts.maxSteps ?? 2e6); r.exec(fns.main.body, new Map()); got = r.out; if (!compare(got, t.out, opts)) v = 'WA'; }
+    try { const r = new Run(fns, t.in ?? '', opts.maxSteps ?? 2e6); r.exec(fns.main.body, new Map()); got = r.out; if (!(Array.isArray(t.out) ? t.out : [t.out]).some(o => compare(got, o, opts))) v = 'WA'; }
     catch (e) { v = e instanceof FlowError ? e.kind : 'RE'; msg = e instanceof FlowError ? e.message : 'Runtime error'; }
-    results.push({ n: i + 1, verdict: v, message: msg, ...(t.hidden ? {} : { input: t.in, expected: t.out, got }) });
+    results.push({ n: i + 1, verdict: v, message: msg, ...(t.hidden ? {} : { input: t.in, expected: Array.isArray(t.out) ? t.out[0] : t.out, got }) });
     if (v !== 'AC' && !first) first = v;
   }
   return { verdict: first || 'AC', passed: results.filter(r => r.verdict === 'AC').length, total: tests.length, results };

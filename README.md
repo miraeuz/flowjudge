@@ -1,12 +1,11 @@
-# Flowgorithm Academy
+# Mirae Flow
 
-Desktop app (Electron) to learn Flowgorithm: lessons, problems, and an automatic judge for `.fprg` files.
+Offline-first Flowgorithm learning platform: **website (PWA)** + **desktop installer** from one React codebase.
 
-- `engine/fprg.mjs` — .fprg interpreter + judge (`node tests/run.mjs`)
-- `content/topics/*.json` — topics, lessons, problems (uz/en) with visible + hidden tests
-- `main.js` — activation (one-time Telegram code), judge IPC; hidden tests never reach the UI
-- `renderer/` — liquid-glass UI, day/night/system theme, uz/en
+- `web/` — React + TypeScript + Tailwind app. Judges `.fprg` files **in the browser** with the bundled Flowgorithm interpreter (`engine/fprg.mjs`), keeps progress in `localStorage`, hash-routing so it works offline, from `file://` and under any sub-path.
+- `main.js`, `preload.js` — Electron shell for the installers (.exe / .deb / .AppImage); adds the one-time Telegram activation.
+- `content/` + `tools/build_bank.py` — builds `web/src/data/*.json` from the teacher's book (`content/source/`), attaching a checker to every problem.
+- `tests/run.mjs` — judge engine + bank tests (`node tests/run.mjs`).
 
-## Installers
-Push to `main` → Actions → **Build** → Artifacts (Windows, macOS, Linux).
-Add repository secrets `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` (Settings → Secrets and variables → Actions).
+Develop: `cd web && npm install && npm run dev`. Website build: `npm run build` (PWA). Desktop: `TARGET=desktop npm run build`, then `npm install && npm run dist` in the repo root.
+Releases: push a `v*` tag → GitHub Actions builds installers + website zip. Repository secrets `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` enable the activation code in the desktop build.

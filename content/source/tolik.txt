@@ -1,0 +1,992 @@
+**MIRAE**
+
+**Flowgorithm Masalalar To‘plami**
+
+*Boshlang‘ich daraja • To‘liq to‘plam*
+
+# **1-mavzu. Oddiy o‘zlashtirish va chiqarish (Input yo‘q)**
+
+*Faqat Assign va Output. Butun sonlar. Hayotiy oddiy misollar.*
+
+1. Ekranga «Salom» so‘zini chiqaring.
+
+2. Ekranga «Salom Ali» so‘zini chiqaring.
+
+3. Ekranga o‘z ismingizni chiqaring.
+
+4. a = 5 deb oling. a ni ekranga chiqaring.
+
+5. a = 10, b = 20 deb oling. a va b ni chiqaring.
+
+6. a = 7, b = 3 deb oling. Yig‘indisini chiqaring (a + b).
+
+7. a = 15, b = 4 deb oling. Ayirmasini chiqaring (a - b).
+
+8. a = 6, b = 8 deb oling. Ko‘paytmasini chiqaring (a * b).
+
+9. a = 20, b = 5 deb oling. Bo‘linmasini chiqaring (a / b).
+
+10. a = 9 deb oling. a ning kvadratini chiqaring (a * a).
+
+11. a = 4, b = 7 deb oling. a ning kvadrati va b ning kvadratini chiqaring.
+
+12. a = 5, b = 3, c = 2 deb oling. a * b - c ni hisoblang va chiqaring.
+
+13. a = 10, b = 4, c = 6 deb oling. a + b * c ni hisoblang va chiqaring.
+
+14. a = 8, b = 3, c = 2 deb oling. (a + b) * c ni hisoblang va chiqaring.
+
+15. a = 15, b = 5, c = 3 deb oling. a / b + c ni hisoblang va chiqaring.
+
+16. a = 7, b = 2, c = 4 deb oling. a * b + c ni hisoblang va chiqaring.
+
+17. a = 12, b = 3, c = 5 deb oling. a - b * c ni hisoblang va chiqaring.
+
+18. a = 6, b = 4, c = 2 deb oling. (a * b) / c ni hisoblang va chiqaring.
+
+19. a = 9, b = 3, c = 1 deb oling. a / b - c ni hisoblang va chiqaring.
+
+20. a = 5, b = 5, c = 5 deb oling. a + b + c ni hisoblang va chiqaring.
+
+21. Bir dona non 3000 so‘m. 4 ta non qancha turishini hisoblang va chiqaring.
+
+22. Bir qalam 2000 so‘m. 5 ta qalam qancha turishini hisoblang va chiqaring.
+
+23. Aliyda 50 000 so‘m bor. U 18 000 so‘mlik kitob oldi. Qancha puli qolganini chiqaring.
+
+24. Avtobusda 45 ta odam bor edi. 12 kishi tushdi. Necha kishi qolganini chiqaring.
+
+25. Sinifda 18 ta o‘g‘il va 14 ta qiz bor. Jami nechta o‘quvchi borligini chiqaring.
+
+26. a = 25 deb oling. a ni 2 marta chiqaring.
+
+27. a = 100 deb oling. a ni 3 marta chiqaring.
+
+28. Ekranga quyidagicha chiqaring: Ism: Ali / Yosh: 15
+
+29. Ekranga quyidagicha chiqaring: Maktab: 45-maktab / Sinf: 8-A
+
+30. x = 8, y = 5 deb oling. Avval x ni, keyin y ni, keyin ularning yig‘indisini chiqaring.
+
+31. a = 3, b = 4, c = 5 deb oling. a * b + c ni chiqaring.
+
+32. a = 10, b = 2, c = 3 deb oling. a / b * c ni chiqaring.
+
+33. a = 7, b = 1, c = 8 deb oling. (a + b) * c ni chiqaring.
+
+34. Bir kg olma 12 000 so‘m. 3 kg olma qancha turishini hisoblang.
+
+35. Daftar 4000 so‘m, ruchka 3000 so‘m. 2 ta daftar + 3 ta ruchka qancha turishini hisoblang.
+
+36. a = 2, b = 3, c = 4 deb oling. a * b * c ni chiqaring.
+
+37. a = 20, b = 5, c = 2 deb oling. a - b * c ni chiqaring.
+
+38. a = 16, b = 4, c = 3 deb oling. a / b + c ni chiqaring.
+
+39. Ekranga 5 marta «Salom» so‘zini chiqaring (har biri yangi qatorda).
+
+40. Ekranga quyidagicha chiqaring: 1. Kitob / 2. Daftar / 3. Ruchka
+
+41. a = 5 deb oling. Ekranga «a ning qiymati = 5» deb chiqaring.
+
+42. ism = "Ali" deb oling. Ekranga «Salom Ali» deb chiqaring.
+
+43. a = 8, b = 3 deb oling. Avval yig‘indisini, keyin ayirmasini chiqaring.
+
+44. a = 4 deb oling. a ning qiymatini, keyin a + 1 ni, keyin a + 2 ni chiqaring.
+
+45. x = 10 deb oling. x ni 1 ga oshirib (x = x + 1), yangi qiymatini chiqaring.
+
+46. x = 20 deb oling. x ni 5 ga kamaytirib (x = x - 5), yangi qiymatini chiqaring.
+
+47. a = 6 deb oling. a ni 2 ga ko‘paytirib, natijani chiqaring.
+
+48. pul = 50000 deb oling. Undan 12000 so‘m ayirib, qolgan pulni chiqaring.
+
+49. son = 15 deb oling. Uni 2 ga bo‘lib, natijani chiqaring.
+
+50. a = 3, b = 7 deb oling. a ning kvadrati + b ning kvadratini hisoblang va chiqaring.
+
+51. a = 9, b = 2, c = 4 deb oling. (a + b) * c - a ni hisoblang va chiqaring.
+
+52. a = 12, b = 5 deb oling. Avval a * b ni, keyin a + b ni chiqaring.
+
+53. yosh = 14 deb oling. Ekranga «Mening yoshim 14 da» deb chiqaring.
+
+54. sinf = 8 deb oling. Ekranga «Men 8-sinfda o‘qiyman» deb chiqaring.
+
+55. a = 5, b = 5 deb oling. Ularning yig‘indisi va ko‘paytmasini chiqaring.
+
+56. a = 10 deb oling. a ni uch marta chiqaring (har biri yangi qatorda).
+
+57. narx = 4000 deb oling. 3 ta mahsulot qancha turishini hisoblang va chiqaring.
+
+58. a = 2, b = 3, c = 4, d = 5 deb oling. a * b + c * d ni hisoblang va chiqaring.
+
+59. x = 7 deb oling. x * x * x ni hisoblang (kubini) va chiqaring.
+
+60. Ekranga quyidagicha chiqaring: 1-qadam / 2-qadam / 3-qadam
+
+61. a = 16, b = 4 deb oling. a / b va a - b ni chiqaring.
+
+62. a = 11, b = 3, c = 2 deb oling. a - b * c ni hisoblang va chiqaring.
+
+63. ball1 = 5, ball2 = 4, ball3 = 5 deb oling. Uchta bahoning yig‘indisini chiqaring.
+
+64. a = 8 deb oling. a ni 1 ga oshirib, keyin yana 1 ga oshirib, oxirgi qiymatni chiqaring.
+
+65. x = 100 deb oling. Undan 25 ni ayirib, keyin 10 ni qo‘shib, natijani chiqaring.
+
+# **2-mavzu. Input + Oddiy hisoblash (Hayotiy masalalar)**
+
+*Input, Assign va Output. Asosan butun sonlar va hayotiy vaziyatlar.*
+
+1. Foydalanuvchi ismini kiritsin. Ekranga «Salom, [ism]!» deb chiqaring.
+
+2. Bitta son kiriting. Shu sonni ekranga chiqaring.
+
+3. Ikkita son kiriting. Ularning yig‘indisini chiqaring.
+
+4. Ikkita son kiriting. Ularning ayirmasini chiqaring.
+
+5. Ikkita son kiriting. Ularning ko‘paytmasini chiqaring.
+
+6. Bitta son kiriting. Uning kvadratini chiqaring.
+
+7. Foydalanuvchi yoshini kiritsin. Ekranga «Sizning yoshingiz: ...» deb chiqaring.
+
+8. Bir dona non narxini kiriting. 4 ta non qancha turishini hisoblang.
+
+9. Bir qalam narxini kiriting. 6 ta qalam qancha turishini hisoblang.
+
+10. Aliyning pulini kiriting. U 18000 so‘mlik kitob oldi. Qancha puli qolganini chiqaring.
+
+11. Sinifdagi o‘g‘il bolalar va qiz bolalar sonini kiriting. Jami nechta o‘quvchi borligini chiqaring.
+
+12. Avtobusda necha kishi borligini kiriting. Keyin necha kishi tushganini kiriting. Qolgan odamlar sonini chiqaring.
+
+13. Bir kg olma narxini kiriting. 3 kg olma qancha turishini hisoblang.
+
+14. Daftar narxini va ruchka narxini kiriting. 2 ta daftar + 3 ta ruchka qancha turishini hisoblang.
+
+15. Foydalanuvchi ismi va yoshini kiritsin. Ekranga quyidagicha chiqaring: Ism: ... / Yosh: ...
+
+16. Hozirgi yilni kiriting. Foydalanuvchi necha yoshda ekanini kiritsin. Tug‘ilgan yilini toping.
+
+17. Bir mahsulot narxini va nechta olishini kiriting. Umumiy to‘lovni hisoblang.
+
+18. Uchta baho kiriting. Ularning yig‘indisini chiqaring.
+
+19. Oila a’zolari sonini kiriting. Har biriga 2 tadan non bersa, jami necha non kerakligini hisoblang.
+
+20. Bir kunlik ish haqini kiriting. 6 kun ishlasa qancha pul ishlashini hisoblang.
+
+21. Kvadratning tomonini kiriting. Uning perimetrini toping.
+
+22. Kvadratning tomonini kiriting. Uning yuzasini toping.
+
+23. To‘g‘ri to‘rtburchakning uzunligi va enini kiriting. Yuzasini toping.
+
+24. To‘g‘ri to‘rtburchakning uzunligi va enini kiriting. Perimetrini toping.
+
+25. Kubning yon tomonini kiriting. Hajmini toping.
+
+26. Ikkita son kiriting. Ularning o‘rta arifmetik qiymatini toping.
+
+27. Foydalanuvchi bugun necha soat dars o‘qiganini kiritsin. Ekranga «Bugun ... soat dars o‘qidingiz» deb chiqaring.
+
+28. Bir stakan suv 200 ml. Foydalanuvchi necha stakan ichganini kiritsin. Jami necha ml suv ichganini hisoblang.
+
+29. Avtomobil 1 km yo‘lga 8 litr benzin sarflaydi. Foydalanuvchi necha km yurganini kiritsin. Qancha benzin ketganini hisoblang.
+
+30. Bir soatlik internet 3000 so‘m. Foydalanuvchi necha soat internet ishlatganini kiritsin. Qancha to‘lashi kerakligini hisoblang.
+
+31. Uchta son kiriting. Ularning yig‘indisini va ko‘paytmasini chiqaring.
+
+32. Ikkita son kiriting. Avval yig‘indisini, keyin ayirmasini, keyin ko‘paytmasini chiqaring.
+
+33. Foydalanuvchi ismi, familiyasi va yoshini kiritsin. Chiroyli qilib chiqaring.
+
+34. Bir kg guruch narxini kiriting. 2 kg va 5 kg guruch qancha turishini hisoblang.
+
+35. O‘quvchi 1 kunda necha sahifa kitob o‘qishini kiritsin. 7 kunda necha sahifa o‘qishini hisoblang.
+
+36. Bitta son kiriting. Uni 10 ga oshirib, keyin 2 ga ko‘paytirib chiqaring.
+
+37. Ikkita son (a va b) kiriting. a * b + 10 ni hisoblang.
+
+38. Uchta son kiriting. (a + b) * c ni hisoblang.
+
+39. Foydalanuvchi hozirgi soatni kiritsin (0–23). Ekranga «Hozir soat: ...» deb chiqaring.
+
+40. Bir qadoq tuxum 10 dona. Foydalanuvchi necha qadoq olganini kiritsin. Jami necha dona tuxum bo‘lishini hisoblang.
+
+41. Foydalanuvchi bugun nechta dars o‘tganini kiritsin. Ekranga «Bugun siz ... ta dars o‘tdingiz» deb chiqaring.
+
+42. Bir o‘quvchining 1 kunlik yo‘l pulini kiriting. 5 kunlik yo‘l pulini hisoblang.
+
+43. Foydalanuvchi nechta do‘sti borligini kiritsin. Har biriga 2 tadan shirinlik bersa, jami nechta shirinlik kerakligini hisoblang.
+
+44. Telefonning narxini kiriting. Uni 3 oyda to‘lash kerak. Har oyda qancha to‘lash kerakligini hisoblang.
+
+45. Foydalanuvchi hozirgi oy raqamini kiritsin (1–12). Ekranga «Hozir ...-oy» deb chiqaring.
+
+46. Bir futbol jamoasida nechta o‘yinchi borligini kiriting. Ulardan 2 nafari zaxirada. Asosiy tarkibda nechta o‘yinchi borligini chiqaring.
+
+47. Foydalanuvchi 1 soatda nechta bet kitob o‘qishini kiritsin. 4 soatda nechta bet o‘qishini hisoblang.
+
+48. Bir qop kartoshka 25 kg. Foydalanuvchi necha qop olganini kiritsin. Jami necha kg kartoshka bo‘lishini hisoblang.
+
+49. O‘quvchi 1 kunda nechta so‘z yodlashini kiritsin. 10 kunda nechta so‘z yodlashini hisoblang.
+
+50. Foydalanuvchi oyiga qancha pul ishlashini kiritsin. 3 oyda qancha ishlashini hisoblang.
+
+51. Bir stul narxini kiriting. 6 ta stul qancha turishini hisoblang.
+
+52. Foydalanuvchi nechta kitob o‘qiganini kiritsin. Ekranga «Siz ... ta kitob o‘qibsiz. Barakalla!» deb chiqaring.
+
+53. Bir kunlik suv sarfini (litrda) kiriting. 7 kunlik suv sarfini hisoblang.
+
+54. Foydalanuvchi nechta xato qilganini kiritsin. Ekranga «Siz ... ta xato qildingiz» deb chiqaring.
+
+55. Bir qalam va bir uchirg‘ich narxini kiriting. 4 ta qalam + 2 ta uchirg‘ich qancha turishini hisoblang.
+
+56. Foydalanuvchi tug‘ilgan kunini (kun raqami) kiritsin. Ekranga «Sizning tug‘ilgan kuningiz: ...» deb chiqaring.
+
+57. Bir poyabzal narxini kiriting. 2 juft poyabzal qancha turishini hisoblang.
+
+58. O‘quvchi 1 kunda necha daqiqa ingliz tili o‘rganishini kiritsin. 5 kunda necha daqiqa o‘rganishini hisoblang.
+
+59. Foydalanuvchi hozirgi yilni va o‘zi necha yoshda ekanini kiritsin. 10 yildan keyin necha yoshda bo‘lishini hisoblang.
+
+60. Bir paket sut 1 litr. Foydalanuvchi necha paket olganini kiritsin. Jami necha litr sut bo‘lishini hisoblang.
+
+61. Foydalanuvchi nechta gol urganini kiritsin. Ekranga «Siz ... ta gol urdingiz!» deb chiqaring.
+
+62. Bir qadoq pechene 8 dona. Foydalanuvchi necha qadoq olganini kiritsin. Jami nechta pechene bo‘lishini hisoblang.
+
+63. O‘qituvchi 1 kunda nechta dars o‘tishini kiritsin. 6 kunlik dars sonini hisoblang.
+
+64. Foydalanuvchi 1 soatda nechta misol yechishini kiritsin. 3 soatda nechta misol yechishini hisoblang.
+
+65. Bir kishiga 3 ta non kerak. Foydalanuvchi mehmonlar sonini kiritsin. Jami nechta non kerakligini hisoblang.
+
+66. Foydalanuvchi bugun nechta vazifa bajarganini kiritsin. Ekranga «Bugun ... ta vazifa bajardingiz» deb chiqaring.
+
+67. Bir metr mato narxini kiriting. 5 metr mato qancha turishini hisoblang.
+
+68. Foydalanuvchi nechta xat yozganini kiritsin. Ekranga «Siz ... ta xat yozdingiz» deb chiqaring.
+
+69. Bir banka limonad 2 banka = 1 litr deb oling. Foydalanuvchi necha banka olganini kiritsin. Necha litr limonad bo‘lishini hisoblang.
+
+70. Foydalanuvchi ismini kiritsin. Keyin necha yoshda ekanini kiritsin. Ekranga: Salom, [ism]! / Siz [yosh] yoshdasiz. deb chiqaring.
+
+# **3-mavzu. Butun sonlar, bo‘lish va qoldiq (div / mod)**
+
+*Butun sonlarni bo‘lish va qoldiq olish. Raqamlarni ajratish, vaqtni aylantirish.*
+
+1. Ikkita butun son kiriting. Birinchisini ikkinchisiga bo‘lib, butun qismini chiqaring.
+
+2. Ikkita butun son kiriting. Birinchisini ikkinchisiga bo‘lgandagi qoldiqni chiqaring.
+
+3. Bitta butun son kiriting. Uni 10 ga bo‘lib, butun qismini chiqaring.
+
+4. Bitta butun son kiriting. Uni 10 ga bo‘lgandagi qoldiqni chiqaring (oxirgi raqam).
+
+5. Bitta butun son kiriting. Uni 2 ga bo‘lib, juft yoki toq ekanligini aniqlang (qoldiq orqali).
+
+6. Bitta ikki xonali son kiriting. Uning o‘nliklar xonasidagi raqamini chiqaring.
+
+7. Bitta ikki xonali son kiriting. Uning birliklar xonasidagi raqamini chiqaring.
+
+8. Bitta ikki xonali son kiriting. Raqamlari yig‘indisini toping.
+
+9. Bitta ikki xonali son kiriting. Raqamlarini teskari qilib yangi son hosil qiling (masalan: 25 → 52).
+
+10. Bitta uch xonali son kiriting. Uning yuzliklar xonasidagi raqamini chiqaring.
+
+11. Bitta uch xonali son kiriting. Uning o‘nliklar xonasidagi raqamini chiqaring.
+
+12. Bitta uch xonali son kiriting. Uning birliklar xonasidagi raqamini chiqaring.
+
+13. Bitta uch xonali son kiriting. Raqamlari yig‘indisini toping.
+
+14. Bitta uch xonali son kiriting. Raqamlarini teskari tartibda yozib yangi son hosil qiling (masalan: 123 → 321).
+
+15. Foydalanuvchi sekundlarda vaqt kiritsin. Uni minut va sekundga aylantiring. Masalan: 130 sekund → 2 minut 10 sekund.
+
+16. Foydalanuvchi sekundlarda vaqt kiritsin. Uni soat, minut va sekundga aylantiring.
+
+17. Foydalanuvchi kunlar sonini kiritsin. Uni hafta va kunga aylantiring. Masalan: 20 kun → 2 hafta 6 kun.
+
+18. Bitta son kiriting. U 5 ga qoldiqsiz bo‘linadimi yoki yo‘qmi — aniqlang.
+
+19. Bitta son kiriting. U 3 ga qoldiqsiz bo‘linadimi yoki yo‘qmi — aniqlang.
+
+20. Ikkita son kiriting. Birinchisi ikkinchisiga qoldiqsiz bo‘linadimi — aniqlang.
+
+21. Foydalanuvchi umumiy summani (so‘m) kiritsin. Uni 1000 so‘mlik va qolgan qismga ajrating.
+
+22. Foydalanuvchi umumiy summani kiritsin. Uni 500 so‘mlik, 100 so‘mlik va qolgan qismga ajrating.
+
+23. Bitta to‘rt xonali son kiriting. Uning birinchi (minglik) raqamini chiqaring.
+
+24. Bitta to‘rt xonali son kiriting. Raqamlari yig‘indisini toping.
+
+25. Foydalanuvchi necha soat ishlaganini kiritsin. Uni kun va soatga aylantiring (1 kun = 24 soat).
+
+26. Bitta son kiriting. Oxirgi ikki raqamini chiqaring (sonni 100 ga bo‘lgandagi qoldiq).
+
+27. Bitta son kiriting. Uni 100 ga bo‘lib, butun qismini chiqaring.
+
+28. Foydalanuvchi oy raqamini kiritsin (1–12). Bu oy yilning qaysi choragiga tegishli ekanini toping.
+
+29. Bitta ikki xonali son kiriting. Uning raqamlari ko‘paytmasini toping.
+
+30. Bitta uch xonali son kiriting. Uning birinchi va oxirgi raqamlari yig‘indisini toping.
+
+31. Foydalanuvchi umumiy o‘quvchilar sonini kiriting. Ularni 30 tadan sinflarga bo‘ling. Nechta to‘liq sinf chiqadi va nechta o‘quvchi ortib qoladi?
+
+32. Bitta son kiriting. Uni 9 ga bo‘lgandagi qoldiqni chiqaring.
+
+33. Foydalanuvchi yilni kiritsin. Bu yil 100 yillikning nechinchi yili ekanini toping (masalan: 2026 → 26).
+
+34. Bitta son kiriting. Uni 4 ga bo‘lib, butun qismi va qoldig‘ini chiqaring.
+
+35. Ikkita son kiriting (a va b). a ni b ga bo‘lib, butun qismi va qoldig‘ini chiqaring.
+
+36. Bitta uch xonali son kiriting. O‘rtadagi raqamini chiqaring.
+
+37. Foydalanuvchi sekund kiritadi. Necha to‘liq minut va necha sekund qolishini chiqaring.
+
+38. Bitta son kiriting. U 10 ga qoldiqsiz bo‘linadimi — aniqlang.
+
+39. Foydalanuvchi umumiy ballini kiritsin. Uni 5 baholik tizimga o‘tkazing (bo‘lish orqali).
+
+40. Bitta to‘rt xonali son kiriting. Uning birinchi ikkita raqamidan hosil bo‘lgan sonni chiqaring.
+
+# **4-mavzu. If (Shart operatori)**
+
+*Oddiy if, if-else va bir nechta shartli hayotiy masalalar.*
+
+1. Bitta son kiriting. Agar 10 dan katta bo‘lsa «Katta», aks holda «Katta emas» deb chiqaring.
+
+2. Bitta son kiriting. Agar 5 ga teng bo‘lsa «To‘g‘ri», aks holda «Noto‘g‘ri» deb chiqaring.
+
+3. Bitta son kiriting. Agar 0 ga teng bo‘lsa «Nol», aks holda «Nol emas» deb chiqaring.
+
+4. Bitta son kiriting. Agar 100 dan kichik bo‘lsa «Kichik», aks holda «Kichik emas» deb chiqaring.
+
+5. Foydalanuvchi yoshini kiritsin. Agar 18 dan katta yoki teng bo‘lsa «Voyaga yetgan», aks holda «Voyaga yetmagan» deb chiqaring.
+
+6. Bitta baho kiriting (1–5). Agar 5 bo‘lsa «A’lo» deb chiqaring.
+
+7. Bitta baho kiriting. Agar 4 yoki 5 bo‘lsa «Yaxshi», aks holda «Yaxshi emas» deb chiqaring.
+
+8. Foydalanuvchi parolini kiritsin. Agar «1234» bo‘lsa «Xush kelibsiz!», aks holda «Parol noto‘g‘ri» deb chiqaring.
+
+9. Foydalanuvchi ismini kiritsin. Agar ism «Ali» bo‘lsa «Salom do‘stim!», aks holda «Salom» deb chiqaring.
+
+10. Bitta son kiriting. Agar 1 dan 10 oralig‘ida bo‘lsa «To‘g‘ri oraliq», aks holda «Noto‘g‘ri oraliq» deb chiqaring.
+
+11. Foydalanuvchi temperaturani kiritsin. Agar 0 dan past bo‘lsa «Sovuq», aks holda «Iliq» deb chiqaring.
+
+12. Foydalanuvchi ballini kiritsin (0–100). Agar 60 dan yuqori yoki teng bo‘lsa «O‘tdi», aks holda «O‘tmadi» deb chiqaring.
+
+13. Foydalanuvchi kun raqamini kiritsin (1–7). Agar 6 yoki 7 bo‘lsa «Dam olish kuni», aks holda «Ish kuni» deb chiqaring.
+
+14. Bitta son kiriting. Agar 10 dan katta bo‘lsa, uni 2 ga ko‘paytirib chiqaring. Aks holda o‘zini chiqaring.
+
+15. Bitta son kiriting. Agar 20 dan kichik bo‘lsa, unga 5 qo‘shib chiqaring. Aks holda o‘zini chiqaring.
+
+16. Ikkita son kiriting. Qaysi biri katta ekanligini chiqaring.
+
+17. Ikkita son kiriting. Qaysi biri kichik ekanligini chiqaring.
+
+18. Ikkita son kiriting. Agar ular teng bo‘lsa «Teng», aks holda «Teng emas» deb chiqaring.
+
+19. Foydalanuvchi yoshini kiritsin. 12 dan kichik → «Bola», 12–17 → «O‘smir», 18 va undan katta → «Katta».
+
+20. Bitta son kiriting. Agar musbat bo‘lsa «Musbat», aks holda «Musbat emas» deb chiqaring.
+
+21. Bitta son kiriting. Agar manfiy bo‘lsa «Manfiy», aks holda «Manfiy emas» deb chiqaring.
+
+22. Bitta son kiriting. Musbat, manfiy yoki nol ekanligini aniqlang.
+
+23. Bitta son kiriting. Agar juft bo‘lsa «Juft», aks holda «Toq» deb chiqaring.
+
+24. Bitta son kiriting. Agar juft va musbat bo‘lsa «Juft musbat», aks holda «Boshqa holat» deb chiqaring.
+
+25. Ikkita son kiriting. Agar ikkalasi ham musbat bo‘lsa «Ikkalasi ham musbat» deb chiqaring.
+
+26. Ikkita son kiriting. Agar hech bo‘lmaganda bittasi musbat bo‘lsa «Musbat son bor» deb chiqaring.
+
+27. Uchta son kiriting. Eng kattasini toping.
+
+28. Uchta son kiriting. Eng kichigini toping.
+
+29. Uchta baho kiriting. Agar hammasi 5 bo‘lsa «A’lo o‘quvchi» deb chiqaring.
+
+30. Foydalanuvchi ismi va yoshini kiritsin. Agar yoshi 18 dan katta bo‘lsa «Salom, [ism]! Siz kattasiz», aks holda «Salom, [ism]! Siz hali yoshsiz» deb chiqaring.
+
+31. Bitta son kiriting. Agar 3 ga qoldiqsiz bo‘linsa «Bo‘linadi», aks holda «Bo‘linmaydi» deb chiqaring.
+
+32. Foydalanuvchi pul miqdorini kiritsin. Agar 50000 dan ko‘p bo‘lsa «Yetarli pul bor», aks holda «Pul yetarli emas» deb chiqaring.
+
+33. Foydalanuvchi nechta xato qilganini kiritsin. Agar 0 bo‘lsa «Ajoyib!», aks holda «Yana urinib ko‘ring» deb chiqaring.
+
+34. Bitta son kiriting. Agar 0 dan katta va 100 dan kichik bo‘lsa «Oraliqda», aks holda «Tashqarida» deb chiqaring.
+
+35. Ikkita son kiriting. Agar birinchisi ikkinchisidan katta bo‘lsa ayirmasini, aks holda yig‘indisini chiqaring.
+
+36. Foydalanuvchi bugun nechta vazifa bajarganini kiritsin. Agar 5 yoki undan ko‘p bo‘lsa «Barakalla!», aks holda «Yana biroz harakat qiling» deb chiqaring.
+
+37. Foydalanuvchi haroratni kiritsin. 0 dan past → «Juda sovuq», 0–15 → «Sovuq», 16–25 → «Iliq», 25 dan yuqori → «Issiq».
+
+38. Bitta baho kiriting. 5 → «A’lo», 4 → «Yaxshi», 3 → «Qoniqarli», qolganlari → «Yomon».
+
+39. Foydalanuvchi yoshini va bo‘yini (sm) kiritsin. Agar yoshi 12 dan katta va bo‘yi 140 dan baland bo‘lsa «Kirish mumkin», aks holda «Kirish mumkin emas» deb chiqaring.
+
+40. Uchta son kiriting. Agar ularning hammasi teng bo‘lsa «Uchala son teng», aks holda «Teng emas» deb chiqaring.
+
+41. Bitta son kiriting. Agar 50 dan katta bo‘lsa «Yuqori», aks holda «Past» deb chiqaring.
+
+42. Foydalanuvchi ismini kiritsin. Agar ism «Madina» bo‘lsa «Salom opajon!», aks holda «Salom» deb chiqaring.
+
+43. Bitta son kiriting. Agar 0 bo‘lsa «Nol kiritildi», aks holda «Boshqa son kiritildi» deb chiqaring.
+
+44. Foydalanuvchi yoshini kiritsin. Agar 7 dan kichik bo‘lsa «Maktabga hali erta», aks holda «Maktabga borishingiz mumkin» deb chiqaring.
+
+45. Bitta baho kiriting. Agar 2 bo‘lsa «Qayta topshirish kerak», aks holda «Qabul qilindi» deb chiqaring.
+
+46. Foydalanuvchi bugun nechta sahifa o‘qiganini kiritsin. Agar 20 dan ko‘p bo‘lsa «Zo‘r!», aks holda «Yana o‘qing» deb chiqaring.
+
+47. Bitta son kiriting. Agar 15 ga teng yoki undan katta bo‘lsa «Katta yoki teng», aks holda «Kichik» deb chiqaring.
+
+48. Foydalanuvchi pulini kiritsin. Agar 10000 dan ko‘p bo‘lsa «Xarid qilishingiz mumkin», aks holda «Pulingiz yetmaydi» deb chiqaring.
+
+49. Ikkita son kiriting. Agar birinchisi 10 dan katta va ikkinchisi 5 dan katta bo‘lsa «Ikkalasi ham katta», aks holda «Shart bajarilmadi» deb chiqaring.
+
+50. Foydalanuvchi nechta gol urganini kiritsin. Agar 3 yoki undan ko‘p bo‘lsa «Tasanno!», aks holda «Yana urinib ko‘ring» deb chiqaring.
+
+51. Bitta son kiriting. Agar juft bo‘lsa, uni 2 ga bo‘lib chiqaring. Aks holda o‘zini chiqaring.
+
+52. Foydalanuvchi haroratni kiritsin. Agar 30 dan yuqori bo‘lsa «Juda issiq», aks holda «Normal» deb chiqaring.
+
+53. Bitta son kiriting. Agar 100 ga teng bo‘lsa «Yuz», aks holda «Yuz emas» deb chiqaring.
+
+54. Foydalanuvchi ismi va familiyasini kiritsin. Agar ism «Ali» va familiya «Valiyev» bo‘lsa «Xush kelibsiz, Ali Valiyev!», aks holda «Salom» deb chiqaring.
+
+55. Uchta son kiriting. Agar birinchisi eng katta bo‘lsa «Birinchi eng katta», aks holda «Birinchi eng katta emas» deb chiqaring.
+
+56. Foydalanuvchi nechta xato qilganini kiritsin. 0 → «A’lo», 1–2 → «Yaxshi», 3 va undan ko‘p → «Yomon».
+
+57. Bitta son kiriting. Agar 2 ga ham, 3 ga ham qoldiqsiz bo‘linsa «6 ga bo‘linadi», aks holda «6 ga bo‘linmaydi» deb chiqaring.
+
+58. Foydalanuvchi yoshini kiritsin. Agar 14 dan katta va 18 dan kichik bo‘lsa «O‘smirlik chog‘i», aks holda «Boshqa yosh» deb chiqaring.
+
+59. Ikkita baho kiriting. Agar ikkalasi ham 5 bo‘lsa «Ikkalasi ham a’lo», aks holda «Hammasi a’lo emas» deb chiqaring.
+
+60. Foydalanuvchi bugun necha soat uxlaganini kiritsin. Agar 8 yoki undan ko‘p bo‘lsa «Yaxshi dam oldingiz», aks holda «Kam uxlabsiz» deb chiqaring.
+
+61. Bitta son kiriting. Agar manfiy bo‘lsa, uni musbatga aylantirib chiqaring. Aks holda o‘zini chiqaring.
+
+62. Foydalanuvchi oy raqamini kiritsin (1–12). Agar 12 bo‘lsa «Yangi yil oyi!», aks holda «Oddiy oy» deb chiqaring.
+
+63. Uchta son kiriting. Agar ularning yig‘indisi 100 dan katta bo‘lsa «Yig‘indi katta», aks holda «Yig‘indi kichik» deb chiqaring.
+
+64. Bitta son kiriting. Agar 1 dan 100 oralig‘ida bo‘lsa «100 ichida», aks holda «100 dan tashqari» deb chiqaring.
+
+65. Foydalanuvchi nechta kitob o‘qiganini kiritsin. Agar 10 dan ko‘p bo‘lsa «Kitobxon ekansiz!», aks holda «Ko‘proq o‘qing» deb chiqaring.
+
+66. Ikkita son kiriting. Agar birinchisi juft va ikkinchisi toq bo‘lsa «Turli xil», aks holda «Bir xil tur» deb chiqaring.
+
+67. Foydalanuvchi ballini kiritsin. 90–100 → «A’lo», 70–89 → «Yaxshi», 60–69 → «Qoniqarli», 60 dan past → «Yomon».
+
+68. Bitta son kiriting. Agar 0 dan katta bo‘lsa «Musbat», agar 0 dan kichik bo‘lsa «Manfiy», aks holda «Nol» deb chiqaring.
+
+69. Foydalanuvchi ismi, yoshi va bahosini kiritsin. Agar yoshi 16 dan katta va bahosi 5 bo‘lsa «Barakalla, [ism]!», aks holda «Davom eting, [ism]» deb chiqaring.
+
+# **5-mavzu. Nested If (Ichma-ich shart)**
+
+## **5.1. Nested If – 1-qism (2 darajali)**
+
+*Asosan 2 darajali nested If. Hayotiy vaziyatlar bilan.*
+
+1. Foydalanuvchi yoshini kiritsin. Agar yoshi 18 dan katta yoki teng bo‘lsa: Agar yoshi 60 dan katta bo‘lsa → «Pensiyaga chiqqan», aks holda → «Ishlash yoshida». Aks holda → «Voyaga yetmagan».
+
+2. Foydalanuvchi bahosini kiritsin (1–5). Agar baho 4 yoki 5 bo‘lsa: Agar baho 5 bo‘lsa → «A’lo», aks holda → «Yaxshi». Aks holda → «Yaxshiroq o‘qish kerak».
+
+3. Foydalanuvchi pul miqdorini kiritsin. Agar pul 50000 dan ko‘p bo‘lsa: Agar pul 100000 dan ko‘p bo‘lsa → «Yetarli pul bor», aks holda → «O‘rtacha pul». Aks holda → «Pul yetarli emas».
+
+4. Foydalanuvchi haroratni kiritsin. Agar harorat 0 dan katta bo‘lsa: Agar harorat 25 dan katta bo‘lsa → «Issiq», aks holda → «Iliq». Aks holda → «Sovuq».
+
+5. Foydalanuvchi yoshini va bahosini kiritsin. Agar yoshi 16 dan katta bo‘lsa: Agar bahosi 5 bo‘lsa → «Barakalla!», aks holda → «Yaxshi, davom eting». Aks holda → «Hali yoshsiz».
+
+6. Foydalanuvchi ismini va yoshini kiritsin. Agar ism «Ali» bo‘lsa: Agar yoshi 18 dan katta bo‘lsa → «Salom katta Ali», aks holda → «Salom yosh Ali». Aks holda → «Salom».
+
+7. Foydalanuvchi ballini kiritsin (0–100). Agar ball 60 dan yuqori yoki teng bo‘lsa: Agar ball 85 dan yuqori bo‘lsa → «A’lo», aks holda → «Yaxshi». Aks holda → «O‘tmadi».
+
+8. Foydalanuvchi nechta xato qilganini kiritsin. Agar xato 0 bo‘lsa → «Ajoyib!». Aks holda: Agar xato 3 dan kam bo‘lsa → «Yaxshi», aks holda → «Ko‘p xato qilibsiz».
+
+9. Foydalanuvchi kun raqamini kiritsin (1–7). Agar kun 6 yoki 7 bo‘lsa → «Dam olish kuni». Aks holda: Agar kun 1 bo‘lsa → «Dushanba – og‘ir kun», aks holda → «Oddiy ish kuni».
+
+10. Foydalanuvchi yoshini kiritsin. Agar yoshi 7 dan katta bo‘lsa: Agar yoshi 17 dan kichik bo‘lsa → «Maktab o‘quvchisi», aks holda → «Maktabni tugatgan». Aks holda → «Maktab yoshiga yetmagan».
+
+11. Foydalanuvchi pulini va mahsulot narxini kiritsin. Agar puli narxdan ko‘p yoki teng bo‘lsa: Agar puli narxdan 2 marta ko‘p bo‘lsa → «Oson xarid qilasiz», aks holda → «Xarid qilishingiz mumkin». Aks holda → «Pulingiz yetmaydi».
+
+12. Foydalanuvchi bahosini kiritsin. Agar baho 5 bo‘lsa → «A’lo». Aks holda: Agar baho 4 bo‘lsa → «Yaxshi», aks holda → «Qoniqarli yoki yomon».
+
+13. Foydalanuvchi nechta kitob o‘qiganini kiritsin. Agar 5 dan ko‘p bo‘lsa: Agar 15 dan ko‘p bo‘lsa → «Juda ko‘p o‘qibsiz», aks holda → «Yaxshi o‘qiyapsiz». Aks holda → «Ko‘proq o‘qing».
+
+14. Foydalanuvchi yoshini va jinsini kiritsin (o‘g‘il/qiz). Agar yoshi 18 dan katta bo‘lsa: Agar jinsi «o‘g‘il» bo‘lsa → «Katta yigit», aks holda → «Katta qiz». Aks holda → «Hali yosh».
+
+15. Foydalanuvchi haroratni kiritsin. Agar harorat 30 dan yuqori bo‘lsa → «Juda issiq». Aks holda: Agar harorat 15 dan yuqori bo‘lsa → «Iliq», aks holda → «Sovuq».
+
+16. Foydalanuvchi ballini va yoshini kiritsin. Agar ball 70 dan yuqori bo‘lsa: Agar yoshi 16 dan katta bo‘lsa → «Yaxshi natija + katta yosh», aks holda → «Yaxshi natija». Aks holda → «Natija past».
+
+17. Foydalanuvchi nechta dars qoldirganini kiritsin. Agar 0 bo‘lsa → «Dars qoldirmabsiz». Aks holda: Agar 3 dan kam bo‘lsa → «Ozgina qoldiribsiz», aks holda → «Ko‘p dars qoldiribsiz».
+
+18. Foydalanuvchi yoshini kiritsin. Agar 12 dan katta bo‘lsa: Agar 18 dan kichik bo‘lsa → «O‘smir», aks holda → «Katta». Aks holda → «Bola».
+
+19. Foydalanuvchi pulini kiritsin. Agar 100000 dan ko‘p bo‘lsa → «Boyroq». Aks holda: Agar 30000 dan ko‘p bo‘lsa → «O‘rtacha», aks holda → «Kam pul».
+
+20. Foydalanuvchi ismini va bahosini kiritsin. Agar bahosi 5 bo‘lsa: Agar ism «Ali» bo‘lsa → «A’lo, Ali!», aks holda → «A’lo». Aks holda → «Yaxshiroq o‘qing».
+
+## **5.2. Nested If – 2-qism (biroz chuqurroq)**
+
+1. Foydalanuvchi yoshini va jinsini kiritsin. Agar yoshi 18 dan katta bo‘lsa: Agar jinsi «o‘g‘il» bo‘lsa: Agar yoshi 30 dan katta bo‘lsa → «Katta yigit», aks holda → «Yosh yigit». Aks holda: Agar yoshi 30 dan katta bo‘lsa → «Katta ayol», aks holda → «Yosh qiz». Aks holda → «Voyaga yetmagan».
+
+2. Foydalanuvchi ballini kiritsin (0–100). Agar ball 60 dan yuqori bo‘lsa: Agar ball 75 dan yuqori bo‘lsa: Agar ball 90 dan yuqori bo‘lsa → «A’lo», aks holda → «Yaxshi». Aks holda → «Qoniqarli». Aks holda → «Yomon».
+
+3. Foydalanuvchi pulini kiritsin. Agar pul 30000 dan ko‘p bo‘lsa: Agar pul 70000 dan ko‘p bo‘lsa: Agar pul 150000 dan ko‘p bo‘lsa → «Juda yaxshi holat», aks holda → «Yaxshi holat». Aks holda → «O‘rtacha». Aks holda → «Qiyin holat».
+
+4. Foydalanuvchi yoshini va bahosini kiritsin. Agar yoshi 15 dan katta bo‘lsa: Agar bahosi 4 yoki 5 bo‘lsa: Agar bahosi 5 bo‘lsa → «A’lo va katta yosh», aks holda → «Yaxshi va katta yosh». Aks holda → «Baho past». Aks holda → «Yoshi kichik».
+
+5. Foydalanuvchi haroratni kiritsin. Agar harorat 0 dan katta bo‘lsa: Agar harorat 20 dan katta bo‘lsa: Agar harorat 30 dan katta bo‘lsa → «Juda issiq», aks holda → «Issiq». Aks holda → «Iliq». Aks holda → «Sovuq».
+
+6. Foydalanuvchi ismini, yoshini va bahosini kiritsin. Agar bahosi 5 bo‘lsa: Agar yoshi 16 dan katta bo‘lsa → «Barakalla, [ism]! A’lo natija», aks holda → «Barakalla, [ism]! Yosh va a’lo». Aks holda → «[ism], yaxshiroq o‘qing».
+
+7. Foydalanuvchi nechta xato qilganini kiritsin. Agar xato 0 bo‘lsa → «Ideal natija». Aks holda: Agar xato 3 dan kam bo‘lsa → «Yaxshi natija». Aks holda: Agar xato 7 dan kam bo‘lsa → «O‘rtacha», aks holda → «Yomon natija».
+
+8. Foydalanuvchi kun raqamini kiritsin (1–7). Agar kun 6 yoki 7 bo‘lsa → «Dam olish». Aks holda: Agar kun 1 yoki 2 bo‘lsa → «Hafta boshi», aks holda → «Hafta o‘rtasi».
+
+9. Foydalanuvchi yoshini kiritsin. Agar yoshi 7 dan katta bo‘lsa: Agar yoshi 18 dan kichik bo‘lsa: Agar yoshi 12 dan katta bo‘lsa → «O‘rta maktab», aks holda → «Boshlang‘ich maktab». Aks holda → «Maktabni tugatgan». Aks holda → «Maktab yoshiga yetmagan».
+
+10. Foydalanuvchi pulini va mahsulot narxini kiritsin. Agar puli narxdan ko‘p yoki teng bo‘lsa: Agar puli narxdan ancha ko‘p bo‘lsa (2 marta) → «Oson olasiz», aks holda → «Olasiz, lekin qat’iy». Aks holda: Agar puli narxning yarmidan ko‘p bo‘lsa → «Yaqin qolgansiz», aks holda → «Pulingiz ancha kam».
+
+11. Foydalanuvchi ballini kiritsin. Agar ball 50 dan yuqori bo‘lsa: Agar ball 70 dan yuqori bo‘lsa: Agar ball 90 dan yuqori bo‘lsa → «A’lo», aks holda → «Yaxshi». Aks holda → «O‘rtacha». Aks holda → «Yomon».
+
+12. Foydalanuvchi yoshini va jinsini kiritsin. Agar yoshi 18 dan katta bo‘lsa: Agar jinsi «qiz» bo‘lsa → «Katta qiz», aks holda → «Katta yigit». Aks holda: Agar jinsi «qiz» bo‘lsa → «Yosh qiz», aks holda → «Yosh bola».
+
+13. Foydalanuvchi nechta kitob o‘qiganini kiritsin. Agar 3 dan ko‘p bo‘lsa: Agar 10 dan ko‘p bo‘lsa: Agar 20 dan ko‘p bo‘lsa → «Juda ko‘p», aks holda → «Yaxshi». Aks holda → «O‘rtacha». Aks holda → «Kam o‘qibsiz».
+
+14. Foydalanuvchi bahosini va yoshini kiritsin. Agar bahosi 5 bo‘lsa: Agar yoshi 17 dan katta bo‘lsa → «Katta va a’lo», aks holda → «Yosh va a’lo». Aks holda: Agar bahosi 4 bo‘lsa → «Yaxshi», aks holda → «Past baho».
+
+15. Foydalanuvchi haroratni va yil faslini (1-qish, 2-bahor, 3-yoz, 4-kuz) kiritsin. Agar fasl yoz (3) bo‘lsa: Agar harorat 30 dan yuqori bo‘lsa → «Issiq yoz», aks holda → «Oddiy yoz». Aks holda: Agar harorat 10 dan past bo‘lsa → «Sovuq», aks holda → «Iliq».
+
+# **6-mavzu. For tsikli**
+
+## **6.1. For – 1-qism (oddiy chiqarish va qadam)**
+
+*Faqat chiqarish + qadam. Yig‘indi va murakkab hisoblash yo‘q.*
+
+1. 1 dan 20 gacha bo‘lgan sonlarni chiqaring.
+
+2. 1 dan 30 gacha bo‘lgan sonlarni chiqaring.
+
+3. 10 dan 1 gacha teskari tartibda sonlarni chiqaring.
+
+4. 1 dan 30 gacha bo‘lgan sonlarni 2 qadam bilan chiqaring (1 3 5 7 …).
+
+5. 2 dan 40 gacha bo‘lgan sonlarni 2 qadam bilan chiqaring (2 4 6 8 …).
+
+6. 40 dan 1 gacha –2 qadam bilan chiqaring (40 38 36 …).
+
+7. 50 dan 10 gacha –5 qadam bilan chiqaring.
+
+8. 1 dan 50 gacha bo‘lgan sonlarni 3 qadam bilan chiqaring.
+
+9. 5 dan 45 gacha 5 qadam bilan chiqaring.
+
+10. 100 dan 50 gacha –10 qadam bilan chiqaring.
+
+11. 1 dan 60 gacha bo‘lgan sonlarni chiqaring. Agar son 45 dan katta bo‘lsa, sonning yoniga «Salom» deb yozing.
+
+12. 1 dan 40 gacha bo‘lgan sonlarni chiqaring. Agar son 25 dan katta bo‘lsa, sonning yoniga «Katta» deb yozing.
+
+13. 1 dan 50 gacha bo‘lgan sonlarni chiqaring. Agar son juft bo‘lsa, sonning yoniga «Juft» deb yozing.
+
+14. 1 dan 30 gacha bo‘lgan sonlarni chiqaring. Agar son 10 dan katta bo‘lsa «Salom», aks holda faqat sonni chiqaring.
+
+15. 1 dan 25 gacha bo‘lgan sonlarni chiqaring. Har bir sonning yoniga « - chiqarildi» deb yozing.
+
+16. Ekranga 8 marta «Salom» so‘zini chiqaring.
+
+17. Ekranga 12 marta «Dunyo» so‘zini chiqaring.
+
+18. Foydalanuvchi ismini kiritsin. Shu ismni 6 marta chiqaring.
+
+19. Foydalanuvchi n sonini kiritsin. «Salom» so‘zini n marta chiqaring.
+
+20. Foydalanuvchi ismini va n sonini kiritsin. Ismni n marta chiqaring.
+
+21. 1 dan 15 gacha bo‘lgan sonlarni chiqaring. Har birining yoniga tartib raqamini yozing (masalan: 1-son, 2-son …).
+
+22. 10 dan 1 gacha teskari chiqaring va har birining yoniga «ketdi» deb yozing.
+
+23. 1 dan 40 gacha 2 qadam bilan chiqaring. Agar son 20 dan katta bo‘lsa, yoniga «Yuqori» deb yozing.
+
+24. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarni chiqaring.
+
+25. Foydalanuvchi n sonini kiritsin. 1 dan n gacha 2 qadam bilan chiqaring.
+
+26. Foydalanuvchi bugun nechta vazifa bajarganini kiritsin. Shu soncha marta «Vazifa bajarildi» deb chiqaring.
+
+27. Foydalanuvchi nechta mehmon kelganini kiritsin. Har bir mehmon uchun «Xush kelibsiz!» deb chiqaring.
+
+28. Foydalanuvchi nechta dars o‘tganini kiritsin. 1-dan shu songacha «1-dars», «2-dars», «3-dars»… deb chiqaring.
+
+29. 1 dan 30 gacha bo‘lgan sonlarni chiqaring. Agar son 15 dan katta bo‘lsa «Salom», agar 15 dan kichik bo‘lsa «Hayr» deb yoniga yozing.
+
+30. Foydalanuvchi ismini kiritsin va necha marta chiqarishni kiritsin. Ismni shu marta chiqaring.
+
+## **6.2. For – 2-qism (yig‘indi, sanash)**
+
+1. 1 dan 20 gacha bo‘lgan sonlarning yig‘indisini toping.
+
+2. 1 dan 30 gacha bo‘lgan sonlarning yig‘indisini toping.
+
+3. 1 dan 15 gacha bo‘lgan juft sonlarning yig‘indisini toping.
+
+4. 1 dan 25 gacha bo‘lgan toq sonlarning yig‘indisini toping.
+
+5. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarning yig‘indisini toping.
+
+6. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan juft sonlarning yig‘indisini toping.
+
+7. 1 dan 50 gacha bo‘lgan sonlar orasida nechta juft son borligini toping.
+
+8. 1 dan 50 gacha bo‘lgan sonlar orasida nechta toq son borligini toping.
+
+9. Foydalanuvchi n sonini kiritsin. 1 dan n gacha nechta juft son borligini toping.
+
+10. 1 dan 40 gacha bo‘lgan sonlar orasida 5 ga bo‘linadiganlarining yig‘indisini toping.
+
+11. 1 dan 10 gacha bo‘lgan sonlarning ko‘paytmasini toping.
+
+12. Foydalanuvchi n sonini kiritsin (n ≤ 10). 1 dan n gacha bo‘lgan sonlarning ko‘paytmasini toping.
+
+13. 1 dan 100 gacha bo‘lgan sonlar orasida 3 ga ham, 5 ga ham bo‘linadiganlarini chiqaring.
+
+14. 1 dan 100 gacha bo‘lgan sonlar orasida 3 ga yoki 5 ga bo‘linadiganlarini chiqaring.
+
+15. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarning o‘rta arifmetik qiymatini toping.
+
+16. 10 dan 50 gacha bo‘lgan sonlarning yig‘indisini toping.
+
+17. 20 dan 1 gacha teskari yig‘indi hisoblang (20+19+…+1).
+
+18. Foydalanuvchi a va b sonlarini kiritsin (a < b). a dan b gacha bo‘lgan sonlarning yig‘indisini toping.
+
+19. Foydalanuvchi a va b sonlarini kiritsin. a dan b gacha nechta juft son borligini toping.
+
+20. 1 dan 60 gacha bo‘lgan sonlarni chiqaring. Agar son 30 dan katta bo‘lsa yoniga «Salom» yozing.
+
+21. 1 dan 40 gacha bo‘lgan sonlarni chiqaring. Agar son juft bo‘lsa yoniga «Juft», toq bo‘lsa «Toq» yozing.
+
+22. Foydalanuvchi ismini kiritsin. Ismni 10 marta chiqaring.
+
+23. Foydalanuvchi n sonini kiritsin. «Salom» so‘zini n marta chiqaring.
+
+24. Foydalanuvchi nechta mehmon kelganini kiritsin. Har bir mehmon uchun «Xush kelibsiz!» deb chiqaring.
+
+25. Foydalanuvchi bugun nechta vazifa bajarganini kiritsin. Shu soncha marta «Vazifa bajarildi» deb chiqaring.
+
+26. Foydalanuvchi nechta dars o‘tganini kiritsin. «1-dars», «2-dars», «3-dars»… deb chiqaring.
+
+27. 1 dan 25 gacha bo‘lgan sonlarning kvadratlarini chiqaring.
+
+28. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarning kvadratlarini chiqaring.
+
+29. 1 dan 50 gacha bo‘lgan sonlar orasida 7 ga qoldiqsiz bo‘linadiganlarini chiqaring.
+
+30. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan toq sonlarning yig‘indisini toping.
+
+31. 1 dan 100 gacha bo‘lgan sonlar orasida nechta son 4 ga bo‘linishini toping.
+
+32. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlar orasida nechta son 3 ga bo‘linishini toping.
+
+33. 5 dan 35 gacha 5 qadam bilan yig‘indi hisoblang (5+10+15+…+35).
+
+34. Foydalanuvchi ismini va necha marta chiqarishni kiritsin. Ismni shu marta chiqaring.
+
+35. 1 dan 40 gacha bo‘lgan sonlarni chiqaring. Agar son 20 dan katta va juft bo‘lsa yoniga «Maxsus» deb yozing.
+
+## **6.3. For – 3-qism (Input + If ichida For)**
+
+1. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarni chiqaring.
+
+2. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarning yig‘indisini toping.
+
+3. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan juft sonlarni chiqaring.
+
+4. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan toq sonlarning yig‘indisini toping.
+
+5. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlar orasida nechta juft son borligini toping.
+
+6. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarni chiqaring. Agar son 10 dan katta bo‘lsa yoniga «Katta» deb yozing.
+
+7. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarni chiqaring. Agar son juft bo‘lsa yoniga «Juft», toq bo‘lsa «Toq» deb yozing.
+
+8. Foydalanuvchi a va b sonlarini kiritsin (a < b). a dan b gacha bo‘lgan sonlarni chiqaring.
+
+9. Foydalanuvchi a va b sonlarini kiritsin. a dan b gacha bo‘lgan sonlarning yig‘indisini toping.
+
+10. Foydalanuvchi a va b sonlarini kiritsin. a dan b gacha nechta juft son borligini toping.
+
+11. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlar orasida 3 ga bo‘linadiganlarini chiqaring.
+
+12. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlar orasida 5 ga bo‘linadiganlarining yig‘indisini toping.
+
+13. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarni chiqaring. Agar son 15 dan katta bo‘lsa yoniga «Salom» deb yozing.
+
+14. Foydalanuvchi n sonini kiritsin. 1 dan n gacha 2 qadam bilan sonlarni chiqaring.
+
+15. Foydalanuvchi n sonini kiritsin. n dan 1 gacha teskari tartibda sonlarni chiqaring.
+
+16. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarning kvadratlarini chiqaring.
+
+17. Foydalanuvchi ismini va n sonini kiritsin. Ismni n marta chiqaring.
+
+18. Foydalanuvchi n sonini kiritsin. Har bir son uchun «1-chi», «2-chi», «3-chi»… deb chiqaring.
+
+19. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarni chiqaring. Agar son 2 ga ham, 3 ga ham bo‘linsa yoniga «Maxsus» deb yozing.
+
+20. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlar orasida nechta son 7 ga bo‘linishini toping.
+
+21. Foydalanuvchi a va b sonlarini kiritsin. a dan b gacha bo‘lgan juft sonlarni chiqaring.
+
+22. Foydalanuvchi a va b sonlarini kiritsin. a dan b gacha bo‘lgan toq sonlarning yig‘indisini toping.
+
+23. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarni chiqaring. Agar son 20 dan katta bo‘lsa «Yuqori», aks holda «Past» deb yoniga yozing.
+
+24. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarning yig‘indisi va nechta juft son borligini toping.
+
+25. Foydalanuvchi n sonini kiritsin. «Salom» so‘zini n marta chiqaring. Har birining oldiga tartib raqamini yozing (1. Salom, 2. Salom …).
+
+26. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlar orasida 4 ga bo‘linadiganlarini chiqaring va ularning yig‘indisini toping.
+
+27. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarni teskari chiqaring. Agar son juft bo‘lsa yoniga «Juft» deb yozing.
+
+28. Foydalanuvchi a, b va k sonlarini kiritsin. a dan b gacha k qadam bilan sonlarni chiqaring.
+
+29. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlar orasida nechta son 3 ga yoki 5 ga bo‘linishini toping.
+
+30. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarni chiqaring. Agar son 10 dan kichik bo‘lsa «Kichik», 10 dan 20 gacha bo‘lsa «O‘rta», 20 dan katta bo‘lsa «Katta» deb yoniga yozing.
+
+31. Foydalanuvchi nechta o‘quvchi borligini kiritsin. Har bir o‘quvchi uchun «O‘quvchi 1 – salom», «O‘quvchi 2 – salom»… deb chiqaring.
+
+32. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarning kvadratlari yig‘indisini toping.
+
+33. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlar orasida eng katta juft sonni toping.
+
+34. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarni chiqaring. Agar son 5 ga bo‘linsa yoniga «*****» deb yozing.
+
+35. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlar uchun: juft bo‘lsa «Juft son», toq bo‘lsa «Toq son» deb chiqaring.
+
+## **6.4. Nested For (Ichma-ich For)**
+
+*Shakllar, uchburchaklar, karra jadvali.*
+
+1. Quyidagi ko‘rinishda chiqaring (3 qator, har birida 5 ta yulduzcha):
+* * * * *
+* * * * *
+* * * * *
+
+2. Foydalanuvchi n sonini kiritsin. n qator, har birida n ta * chiqaring.
+
+3. Quyidagi ko‘rinishda chiqaring:
+1 1 1 1
+2 2 2 2
+3 3 3 3
+4 4 4 4
+
+4. Foydalanuvchi n sonini kiritsin. n qator chiqaring. Har bir qatorda qator raqami n marta yozilsin.
+
+5. Quyidagi ko‘rinishda chiqaring:
+1 2 3 4 5
+1 2 3 4 5
+1 2 3 4 5
+
+6. Foydalanuvchi n sonini kiritsin. n qator, har birida 1 dan n gacha sonlar chiqsin.
+
+7. Quyidagi ko‘rinishda chiqaring (karra jadvali 1–5):
+1 2 3 4 5
+2 4 6 8 10
+3 6 9 12 15
+4 8 12 16 20
+5 10 15 20 25
+
+8. Foydalanuvchi n sonini kiritsin. 1 dan n gacha karra jadvalini chiqaring.
+
+9. Quyidagi uchburchak shaklida chiqaring:
+*
+* *
+* * *
+* * * *
+
+10. Foydalanuvchi n sonini kiritsin. n qatorli yulduzcha uchburchagini chiqaring.
+
+11. Quyidagi shaklda chiqaring:
+1
+1 2
+1 2 3
+1 2 3 4
+
+12. Foydalanuvchi n sonini kiritsin. Yuqoridagi kabi sonli uchburchak chiqaring.
+
+13. Quyidagi teskari uchburchakni chiqaring:
+* * * *
+* * *
+* *
+*
+
+14. Foydalanuvchi n sonini kiritsin. Teskari yulduzcha uchburchagini chiqaring.
+
+15. 1 dan 5 gacha bo‘lgan sonlar uchun har bir sonni o‘zicha marta chiqaring:
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+
+16. Foydalanuvchi n sonini kiritsin. Har bir sonni o‘zicha marta chiqaradigan shakl yasang.
+
+17. Quyidagi ko‘rinishda chiqaring:
+1 2 3 4
+1 2 3
+1 2
+1
+
+18. Foydalanuvchi n sonini kiritsin. Yuqoridagi kabi teskari sonli uchburchak chiqaring.
+
+19. 3 ta qator, har birida 1 dan 4 gacha sonlar chiqaring (nested For bilan).
+
+20. Foydalanuvchi qator va ustun sonlarini kiritsin. qator ta qator, har birida ustun ta * chiqaring.
+
+21. 1 dan 4 gacha bo‘lgan sonlarning karra jadvalini chiroyli chiqaring.
+
+22. Foydalanuvchi n sonini kiritsin. n × n o‘lchamli yulduzcha to‘rtburchagini chiqaring.
+
+23. Quyidagi shaklni chiqaring:
+1
+2 3
+4 5 6
+7 8 9 10
+
+24. Foydalanuvchi n sonini kiritsin. 1 dan boshlab ketma-ket sonlar bilan n qatorli uchburchak yasang.
+
+25. Foydalanuvchi n sonini kiritsin. n qatorli, har qatorda 1 dan qator raqamigacha bo‘lgan sonlar chiqsin.
+
+26. Quyidagi ko‘rinishda chiqaring:
+* * * * *
+* * * *
+* * *
+* *
+*
+
+27. Foydalanuvchi n sonini kiritsin. Teskari yulduzcha shaklini chiqaring.
+
+28. 1 dan 5 gacha karra jadvalini to‘liq chiqaring (5×5).
+
+29. Foydalanuvchi n sonini kiritsin. 1 dan n gacha to‘liq karra jadvalini chiqaring.
+
+30. Quyidagi shaklni chiqaring:
+1 1 1 1 1
+2 2 2 2
+3 3 3
+4 4
+5
+
+31. Foydalanuvchi n sonini kiritsin. Yuqoridagi kabi kamayib boruvchi shakl chiqaring.
+
+32. 4 qator, har birida 6 ta # belgisini chiqaring.
+
+33. Foydalanuvchi n va m sonlarini kiritsin. n qator, har birida m ta # chiqaring.
+
+34. Oddiy 3×3 kvadrat sonlar jadvalini nested For bilan chiqaring:
+1 2 3
+4 5 6
+7 8 9
+
+35. Foydalanuvchi n sonini kiritsin. n×n o‘lchamli sonlar jadvalini (1 dan boshlab) chiqaring.
+
+# **7-mavzu. While tsikli – 1-qism**
+
+*Oddiy While. For ga o‘xshash mashqlar While bilan yechiladi.*
+
+1. 1 dan 10 gacha bo‘lgan sonlarni While yordamida chiqaring.
+
+2. 1 dan 20 gacha bo‘lgan sonlarni While yordamida chiqaring.
+
+3. 10 dan 1 gacha teskari tartibda sonlarni chiqaring.
+
+4. 1 dan 15 gacha bo‘lgan sonlarning yig‘indisini While bilan toping.
+
+5. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarni chiqaring.
+
+6. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarning yig‘indisini toping.
+
+7. 1 dan 30 gacha bo‘lgan juft sonlarni chiqaring.
+
+8. 1 dan 40 gacha bo‘lgan toq sonlarni chiqaring.
+
+9. Foydalanuvchi n sonini kiritsin. 1 dan n gacha juft sonlarni chiqaring.
+
+10. Ekranga 8 marta «Salom» so‘zini While yordamida chiqaring.
+
+11. Foydalanuvchi ismini kiritsin. Ismni 5 marta chiqaring.
+
+12. Foydalanuvchi n sonini kiritsin. «Salom» so‘zini n marta chiqaring.
+
+13. 1 dan 50 gacha bo‘lgan sonlar orasida 5 ga bo‘linadiganlarini chiqaring.
+
+14. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlar orasida nechta juft son borligini toping.
+
+15. 1 dan 20 gacha bo‘lgan sonlarning kvadratlarini chiqaring.
+
+16. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarning kvadratlarini chiqaring.
+
+17. 20 dan 1 gacha teskari juft sonlarni chiqaring.
+
+18. Foydalanuvchi a va b sonlarini kiritsin (a < b). a dan b gacha sonlarni chiqaring.
+
+19. Foydalanuvchi a va b sonlarini kiritsin. a dan b gacha yig‘indini toping.
+
+20. 1 dan 100 gacha bo‘lgan sonlar orasida 3 ga ham, 5 ga ham bo‘linadiganlarini chiqaring.
+
+21. Foydalanuvchi n sonini kiritsin. 1 dan n gacha toq sonlarning yig‘indisini toping.
+
+22. Foydalanuvchi ismini va n sonini kiritsin. Ismni n marta chiqaring.
+
+23. 1 dan 30 gacha bo‘lgan sonlarni chiqaring. Agar son 15 dan katta bo‘lsa yoniga «Salom» yozing.
+
+24. Foydalanuvchi n sonini kiritsin. n dan 1 gacha teskari chiqaring.
+
+25. 1 dan 40 gacha bo‘lgan sonlar orasida 7 ga bo‘linadiganlarini chiqaring.
+
+26. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlarning yig‘indisi va ko‘paytmasini toping (n kichik bo‘lsin).
+
+27. Foydalanuvchi n sonini kiritsin. 1 dan n gacha 2 qadam bilan sonlarni chiqaring.
+
+28. 50 dan 10 gacha –5 qadam bilan sonlarni chiqaring.
+
+29. Foydalanuvchi n sonini kiritsin. 1 dan n gacha bo‘lgan sonlar orasida nechta son 4 ga bo‘linishini toping.
+
+30. Foydalanuvchi n sonini kiritsin. 1 dan n gacha sonlarni chiqaring. Agar juft bo‘lsa «Juft», toq bo‘lsa «Toq» deb yoniga yozing.
+
+— MIRAE Flowgorithm Masalalar To‘plami —
+
+Barcha mavzular to‘liq kiritildi

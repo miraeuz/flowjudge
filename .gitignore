@@ -4,5 +4,8 @@ dist/
 *.zip
 config.json
 .DS_Store
-tools/_docs_tmp/
 __pycache__/
+web/node_modules/
+web/dist/
+web/dev-dist/
+!web/public/**

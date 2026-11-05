@@ -1,14 +1,15 @@
 {
   "name": "flowgorithm-academy",
   "productName": "Mirae Flow",
-  "version": "0.9.0",
-  "description": "Mirae Flow \u2014 learn programming with visual flowcharts: lessons, problems and an automatic judge.",
+  "version": "1.0.0",
+  "description": "Mirae Flow \u2014 offline-first Flowgorithm learning platform (website + desktop installer)",
   "author": "miraeuz <miraeuz@users.noreply.github.com>",
   "license": "MIT",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "test": "node tests/run.mjs",
+    "build:web": "cd web && npm ci && npm run build",
     "dist": "electron-builder --publish never"
   },
   "devDependencies": {
@@ -24,9 +25,8 @@
     "files": [
       "main.js",
       "preload.js",
-      "renderer/**",
-      "engine/**",
-      "content/**",
+      "web/dist/**",
+      "build/icon.png",
       "config.json"
     ],
     "win": {
