@@ -1,7 +1,7 @@
 {
   "name": "mirae-flow",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
@@ -27,5 +27,5 @@
     "vite": "^8.3.5",
     "vite-plugin-pwa": "^1.1.0"
   },
-  "description": "Mirae Flow — offline-first Flowgorithm learning website with an in-browser judge"
+  "description": "Mirae Flow \u2014 offline-first Flowgorithm learning website with an in-browser judge"
 }

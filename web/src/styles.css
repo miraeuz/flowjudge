@@ -359,3 +359,71 @@ kbd { padding: .16rem .32rem; border: 1px solid var(--border); border-radius: .3
 .gate-card h1 { margin: 0; font-size: 1.5rem; }.gate-mascot { width: 6rem; height: 6rem; margin: 0 auto; border-radius: 50%; box-shadow: 0 .6rem 1.4rem rgba(124,58,237,.4); }
 .gate-card input { padding: .75rem .95rem; border-radius: .9rem; border: 1px solid var(--border-strong); background: var(--surface-tint); color: var(--ink); font: inherit; text-align: center; }
 .gate-hint { margin: 0; color: var(--ink-soft); font-size: .9rem; }.gate-error { margin: 0; color: #e11d48; font-weight: 600; font-size: .9rem; }
+
+/* ---- 1.0.1 profile and settings refinement ---- */
+.settings-layout-refined { gap: 1rem; align-items: stretch; }
+.settings-layout-refined > .panel { padding: 1.2rem; min-width: 0; }
+.settings-profile-panel, .settings-telegram-panel, .settings-judge-panel { padding: 1.35rem !important; }
+.settings-section-head { display: flex; align-items: center; gap: .8rem; min-width: 0; }
+.settings-section-head > div { min-width: 0; flex: 1; }
+.settings-section-head h3 { margin: 0; font-size: .88rem; letter-spacing: -.02em; }
+.settings-section-head p { margin: .22rem 0 0; color: var(--ink-faint); font-size: .68rem; line-height: 1.55; }
+.settings-completion { display: grid; width: 2.45rem; height: 2.45rem; flex: none; place-items: center; border-radius: 50%; color: var(--violet-700); background: rgba(124,58,237,.1); font-size: .76rem; font-weight: 850; }
+.settings-profile-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8rem; margin-top: 1.2rem; }
+.settings-field { display: grid; min-width: 0; gap: .36rem; color: var(--ink-soft); font-size: .72rem; font-weight: 750; }
+.settings-field input { width: 100%; min-width: 0; height: 2.85rem; padding: 0 .82rem; border: 1px solid var(--border); border-radius: .72rem; outline: 0; color: var(--ink); background: var(--surface-soft); font-size: .76rem; font-weight: 500; transition: border-color .18s ease, box-shadow .18s ease, background .18s ease; }
+.settings-field input::placeholder { color: var(--ink-faint); opacity: .8; }
+.settings-field input:focus { border-color: rgba(124,58,237,.62); background: var(--surface); box-shadow: 0 0 0 .2rem rgba(124,58,237,.1); }
+.settings-save-row { display: flex; align-items: center; justify-content: space-between; gap: .8rem; margin-top: 1rem; padding-top: .9rem; border-top: 1px solid var(--border); }
+.settings-subtext { color: var(--ink-faint); font-size: .66rem; line-height: 1.5; }
+.settings-feedback { margin: .8rem 0 0; padding: .65rem .8rem; border: 1px solid rgba(21,155,114,.2); border-radius: .7rem; color: var(--mint); background: rgba(21,155,114,.07); font-size: .7rem; line-height: 1.5; }
+.settings-feedback.is-error { border-color: rgba(225,29,72,.2); color: #e11d48; background: rgba(225,29,72,.07); }
+.settings-inline-toggle { display: flex; align-items: center; justify-content: space-between; gap: .8rem; margin: 1.1rem 0 .9rem; padding: .8rem .9rem; border: 1px solid var(--border); border-radius: .8rem; background: var(--surface-soft); }
+.settings-inline-toggle > span { display: flex; align-items: center; gap: .55rem; color: var(--ink-soft); font-size: .72rem; }
+.settings-inline-toggle > span svg { color: var(--violet-600); }
+.switch-control { position: relative; width: 2.8rem; height: 1.58rem; flex: none; padding: .18rem; border: 1px solid var(--border-strong); border-radius: 2rem; background: var(--surface-tint); cursor: pointer; transition: background .2s ease, border-color .2s ease; }
+.switch-control i { display: block; width: 1.08rem; height: 1.08rem; border-radius: 50%; background: var(--ink-faint); box-shadow: 0 .08rem .2rem rgba(0,0,0,.18); transition: transform .2s ease, background .2s ease; }
+.switch-control.on { border-color: var(--violet-600); background: var(--violet-600); }
+.switch-control.on i { transform: translateX(1.18rem); background: white; }
+.telegram-state { display: inline-flex; flex: none; align-items: center; gap: .38rem; padding: .35rem .55rem; border: 1px solid var(--border); border-radius: 2rem; color: var(--ink-faint); font-size: .62rem; font-weight: 750; white-space: nowrap; }
+.telegram-state i { width: .42rem; height: .42rem; border-radius: 50%; background: var(--ink-faint); }
+.telegram-state.connected { border-color: rgba(21,155,114,.25); color: var(--mint); background: rgba(21,155,114,.07); }
+.telegram-state.connected i { background: var(--mint); box-shadow: 0 0 0 .2rem rgba(21,155,114,.1); }
+.settings-telegram-grid { display: grid; grid-template-columns: minmax(0,1.3fr) minmax(12rem,.7fr); gap: .8rem; }
+.settings-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .55rem; margin-top: .9rem; }
+.settings-status-note { display: flex; align-items: flex-start; gap: .55rem; margin-top: .9rem; padding: .72rem .8rem; border: 1px solid var(--border); border-radius: .72rem; color: var(--ink-faint); background: var(--surface-soft); font-size: .67rem; line-height: 1.55; }
+.settings-status-note svg { flex: none; margin-top: .05rem; color: var(--violet-600); }
+.settings-status-note.warning { border-color: rgba(249,115,22,.22); color: var(--ink-soft); background: rgba(249,115,22,.06); }
+.settings-status-note.warning svg { color: var(--coral); }
+.button-danger-soft { display: inline-flex; min-height: 2.45rem; align-items: center; justify-content: center; gap: .42rem; padding: 0 .82rem; border: 1px solid rgba(225,29,72,.22); border-radius: .7rem; color: #e11d48; background: rgba(225,29,72,.06); font-size: .7rem; font-weight: 800; cursor: pointer; transition: background .18s ease, transform .18s ease; }
+.button-danger-soft:hover:not(:disabled) { background: rgba(225,29,72,.11); transform: translateY(-1px); }
+.button-danger-soft:disabled { opacity: .5; cursor: not-allowed; }
+.account-page-grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(19rem,.85fr); gap: 1rem; }
+.account-identity-card { display: flex; align-items: center; gap: 1rem; min-width: 0; padding: 1.25rem; }
+.account-identity-copy { min-width: 0; flex: 1; }
+.account-identity-copy h2 { margin: .2rem 0 .22rem; overflow-wrap: anywhere; font-size: 1.15rem; letter-spacing: -.04em; }
+.account-identity-copy p { margin: 0 0 .55rem; color: var(--ink-faint); font-size: .72rem; }
+.local-profile-chip { display: inline-flex; align-items: center; gap: .35rem; color: var(--mint); font-size: .63rem; font-weight: 750; }
+.account-data-card { min-width: 0; padding: 1.2rem; }
+.account-data-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .55rem; margin-top: 1rem; }
+.file-pick.is-disabled { opacity: .6; pointer-events: none; }
+.telegram-toast { position: fixed; z-index: 70; right: 1.25rem; bottom: 1.25rem; display: flex; max-width: min(28rem, calc(100vw - 2rem)); align-items: center; gap: .65rem; padding: .85rem 1rem; border: 1px solid var(--border-strong); border-radius: .9rem; color: var(--ink); background: var(--surface); box-shadow: var(--shadow-card); backdrop-filter: blur(18px); font-size: .74rem; }
+.telegram-toast > svg { flex: none; color: var(--mint); }
+.telegram-toast span { flex: 1; }
+.telegram-toast button { display: grid; width: 1.6rem; height: 1.6rem; flex: none; place-items: center; border-radius: .5rem; color: var(--ink-faint); background: var(--surface-soft); cursor: pointer; }
+
+@media (max-width: 62rem) {
+  .settings-profile-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .account-page-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 42rem) {
+  .settings-layout-refined { grid-template-columns: minmax(0,1fr); }
+  .settings-profile-grid, .settings-telegram-grid { grid-template-columns: minmax(0,1fr); }
+  .settings-section-head { align-items: flex-start; flex-wrap: wrap; }
+  .settings-section-head > div { flex-basis: calc(100% - 3.5rem); }
+  .settings-completion, .telegram-state { margin-left: 3rem; }
+  .settings-save-row { align-items: stretch; flex-direction: column; }
+  .settings-save-row .button-primary { width: 100%; }
+  .account-identity-card { align-items: flex-start; flex-wrap: wrap; }
+  .account-identity-card > .button-secondary { width: 100%; }
+}

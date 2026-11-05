@@ -1,14 +1,14 @@
 {
   "name": "flowgorithm-academy",
   "productName": "Mirae Flow",
-  "version": "1.0.0",
-  "description": "Mirae Flow \u2014 offline-first Flowgorithm learning platform (website + desktop installer)",
+  "version": "1.0.1",
+  "description": "Mirae Flow \u2014 offline-first Flowgorithm learning platform with local judge and secure optional Telegram notifications",
   "author": "miraeuz <miraeuz@users.noreply.github.com>",
   "license": "MIT",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "test": "node tests/run.mjs",
+    "test": "node tests/run.mjs && node tests/telegram.mjs",
     "build:web": "cd web && npm ci && npm run build",
     "dist": "electron-builder --publish never"
   },
@@ -27,7 +27,7 @@
       "preload.js",
       "web/dist/**",
       "build/icon.png",
-      "config.json"
+      "telegram-utils.cjs"
     ],
     "win": {
       "target": [

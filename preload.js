@@ -1,3 +1,17 @@
+'use strict';
 const { contextBridge, ipcRenderer } = require('electron');
-// The web app is the same code as the website; only the one-time Telegram activation needs the desktop shell.
-contextBridge.exposeInMainWorld('miraeNative', { activation: { status: () => ipcRenderer.invoke('act:status'), request: name => ipcRenderer.invoke('act:request', name), verify: code => ipcRenderer.invoke('act:verify', code) } });
+
+contextBridge.exposeInMainWorld('miraeNative', Object.freeze({
+  activation: Object.freeze({
+    status: () => ipcRenderer.invoke('act:status'),
+    request: name => ipcRenderer.invoke('act:request', name),
+    verify: code => ipcRenderer.invoke('act:verify', code),
+  }),
+  telegram: Object.freeze({
+    status: () => ipcRenderer.invoke('telegram:status'),
+    save: (token, chatId) => ipcRenderer.invoke('telegram:save', { token, chatId }),
+    test: () => ipcRenderer.invoke('telegram:test'),
+    clear: () => ipcRenderer.invoke('telegram:clear'),
+    notifySolved: payload => ipcRenderer.invoke('telegram:notifySolved', payload),
+  }),
+}));

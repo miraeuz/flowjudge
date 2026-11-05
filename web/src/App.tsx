@@ -5,13 +5,15 @@ import {
   Activity, ArrowLeft, ArrowRight, ArrowUpRight, Award, BarChart3,
   BookOpen, BookMarked, Check, CheckCircle2, ChevronDown, ChevronRight,
   CircleHelp, Clock3, Code2, Compass, FileCode2, Flame, GraduationCap,
-  Home, Languages, Layers3, ListFilter, LockKeyhole, LogIn, Menu,
+  Home, Languages, Layers3, ListFilter, LockKeyhole, Menu,
   Moon, Search, Settings2, ShieldCheck, Sparkles, Sun, Target, Trophy,
   UploadCloud, UserRound, Users, Workflow, X, Zap, ZoomIn, ZoomOut,
-  CircleDot, CircleX, CircleAlert, ExternalLink, Download,
+  CircleDot, CircleX, CircleAlert, ExternalLink, Download, Bell, Send, Save,
+  Trash2,
 } from 'lucide-react';
 import catalogData from './data/problemCatalog.json';
-import { api, ApiError, type ApiLeaderboardEntry, type ApiProblem, type ApiStats, type ApiSubmission, type ApiTopic, type ApiUser } from './lib/api';
+import { api, ApiError, type ApiLeaderboardEntry, type ApiProblem, type ApiStats, type ApiStudentProfile, type ApiSubmission, type ApiTopic, type ApiUser } from './lib/api';
+import { nativeBridge } from './lib/native';
 import { currentPath, resolveRoute, routePath } from './lib/routes';
 import { useMiraeStore, type NavigationPage, type ThemeMode } from './lib/storage';
 
@@ -65,7 +67,7 @@ function useStreak(dates: string[]) {
 }
 
 function App() {
-  const { theme, language, zoom, setTheme, setLanguage, setZoom, setActivePage } = useMiraeStore();
+  const { theme, language, zoom, telegramNotifications, setTheme, setLanguage, setZoom, setTelegramNotifications, setActivePage } = useMiraeStore();
   const [route, setRoute] = useState(() => resolveRoute(currentPath()));
   const [mobileMenu, setMobileMenu] = useState(false);
   const [problems, setProblems] = useState<Problem[]>(localCatalog.problems);
@@ -73,6 +75,7 @@ function App() {
   const [user, setUser] = useState<ApiUser | null>(null);
   const [apiOnline, setApiOnline] = useState(false);
   const [apiMessage, setApiMessage] = useState('');
+  const [telegramNotice, setTelegramNotice] = useState('');
   const [remoteStats, setRemoteStats] = useState<ApiStats | null>(null);
   const [globalSubmissions, setGlobalSubmissions] = useState<ApiSubmission[]>([]);
   const [leaderboard, setLeaderboard] = useState<ApiLeaderboardEntry[]>([]);
@@ -95,6 +98,7 @@ function App() {
 
   useEffect(() => { document.documentElement.style.fontSize = `${16 * zoom / 100}px`; }, [zoom]);
   useEffect(() => { document.documentElement.lang = language; }, [language]);
+  useEffect(() => { if (!telegramNotice) return; const timer = window.setTimeout(() => setTelegramNotice(''), 7000); return () => window.clearTimeout(timer); }, [telegramNotice]);
 
   useEffect(() => {
     const root = document.documentElement;
@@ -183,24 +187,17 @@ function App() {
     setGlobalSubmissions(submissions.items);
   };
 
-  const onAuth = (nextUser: ApiUser) => {
-    setUser(nextUser);
+  const saveStudentProfile = async (profile: Partial<ApiStudentProfile>) => {
+    const response = await api.updateProfile(profile);
+    setUser(response.user);
     setAccountRefresh((value) => value + 1);
-    navigate('dashboard');
-  };
-
-  const onLogout = async () => {
-    try { await api.logout(); } catch { /* Local guest mode remains available if the API is down. */ }
-    setUser(null);
-    setRemoteStats(null);
-    setGlobalSubmissions([]);
-    navigate('dashboard');
+    return response.user;
   };
 
   const submitFlowchart = async (problem: Problem, source: string) => {
     if (!user) {
       navigate('account');
-      setApiMessage(isUz ? 'Yechim yuborish uchun avval tizimga kiring.' : 'Sign in before submitting a solution.');
+      setApiMessage(isUz ? 'O‘quvchi profili hali yuklanmadi. Profil sahifasini oching va qayta urinib ko‘ring.' : 'The local student profile is not ready yet. Open the profile page and try again.');
       return null;
     }
     try {
@@ -208,6 +205,27 @@ function App() {
       setApiOnline(true);
       setApiMessage('');
       await loadUserData();
+      if (result.verdict === 'Accepted' && telegramNotifications) {
+        const bridge = nativeBridge();
+        if (bridge && user) {
+          try {
+            const notification = await bridge.telegram.notifySolved({
+              profileId: user.id,
+              firstName: user.firstName,
+              lastName: user.lastName,
+              displayName: user.displayName,
+              groupName: user.groupName,
+              problemId: problem.id,
+              problemTitle: problem.titleUz,
+            });
+            if (notification.status === 'sent') setTelegramNotice(isUz ? 'Telegramga natija xabari yuborildi.' : 'Completion notice sent to Telegram.');
+            else if (notification.status === 'queued') setTelegramNotice(isUz ? 'Telegram xabari navbatga qo‘shildi. Internet mavjud bo‘lganda yuboriladi.' : 'Telegram notice queued until internet is available.');
+            else if (notification.status === 'not_configured') setTelegramNotice(isUz ? 'Telegram sozlanmagan. Sozlamalar sahifasida botni ulang.' : 'Telegram is not configured. Connect the bot in Settings.');
+          } catch {
+            setTelegramNotice(isUz ? 'Telegram xabari yuborilmadi; masala natijasi saqlandi.' : 'Telegram notice failed; your accepted result is saved.');
+          }
+        }
+      }
       return result;
     } catch (error) {
       const message = error instanceof Error ? error.message : 'Submission failed.';
@@ -285,9 +303,9 @@ function App() {
           <small>{isUz ? 'Har kuni kichik qadam.' : 'A little progress every day.'}</small>
         </div>
         <div className="sidebar-bottom">
-          <button className={`side-link ${route.page === 'account' ? 'active' : ''}`} onClick={() => navigate('account')}><UserRound size={18}/><span>{user ? user.displayName : (isUz ? 'Kirish / profil' : 'Sign in / profile')}</span>{user && <i className="user-online-dot"/>}</button>
+          <button className={`side-link ${route.page === 'account' ? 'active' : ''}`} onClick={() => navigate('account')}><UserRound size={18}/><span>{user ? user.displayName : (isUz ? 'O‘quvchi profili' : 'Student profile')}</span>{user && <i className="user-online-dot"/>}</button>
           <button className={`side-link ${route.page === 'settings' ? 'active' : ''}`} onClick={() => navigate('settings')}><Settings2 size={18}/><span>{isUz ? 'Sozlamalar' : 'Settings'}</span></button>
-          <div className="sidebar-user-row"><span className="avatar-small">{user ? initials(user.displayName) : 'G'}</span><span><strong>{user?.displayName ?? 'Guest learner'}</strong><small>{user ? user.email : 'Browse in guest mode'}</small></span><span className={`api-mini-dot ${apiOnline ? 'online' : ''}`} title={apiOnline ? 'API connected' : 'API unavailable'}/></div>
+          <div className="sidebar-user-row"><span className="avatar-small">{user ? initials(user.displayName) : 'G'}</span><span><strong>{user?.displayName ?? 'Guest learner'}</strong><small>{user ? (user.groupName || 'Local student profile') : 'Browse as guest'}</small></span><span className={`api-mini-dot ${apiOnline ? 'online' : ''}`} title={apiOnline ? 'Local judge available' : 'Local data unavailable'}/></div>
         </div>
       </aside>
 
@@ -305,8 +323,9 @@ function App() {
           </div>
         </header>
 
-        {!apiOnline && <div className="api-banner"><CircleAlert size={15}/><span>{isUz ? 'Demo rejimi: serverga ulanish yo‘q. Masalalar ko‘rinadi, lekin akkaunt va onlayn tekshiruv ishlamaydi.' : 'Preview mode: the API is not connected. You can browse source problems, but accounts and online judging require the server.'}</span><button onClick={() => setAccountRefresh((value) => value + 1)}>{isUz ? 'Qayta ulanish' : 'Reconnect'}</button></div>}
+        {!apiOnline && <div className="api-banner"><CircleAlert size={15}/><span>{isUz ? 'Mahalliy ma’lumotlarni yuklab bo‘lmadi. Profil va natijalar ushbu qurilmada saqlanadi.' : 'Local data could not be loaded. Your saved profile and submissions remain on this device.'}</span><button onClick={() => setAccountRefresh((value) => value + 1)}>{isUz ? 'Qayta ulanish' : 'Reconnect'}</button></div>}
         {apiMessage && <div className="api-message"><CircleAlert size={15}/><span>{apiMessage}</span><button onClick={() => setApiMessage('')} aria-label="Dismiss"><X size={14}/></button></div>}
+        {telegramNotice && <div className="telegram-toast" role="status"><CheckCircle2 size={15}/><span>{telegramNotice}</span><button onClick={() => setTelegramNotice('')} aria-label="Dismiss"><X size={14}/></button></div>}
 
         <div className="platform-content">
           <AnimatePresence mode="wait">
@@ -318,8 +337,8 @@ function App() {
             {route.page === 'problem' && selectedProblem && <PageTransition keyName={`problem-${selectedProblem.id}`}><ProblemWorkspace problem={selectedProblem} user={user} apiOnline={apiOnline} onSubmit={submitFlowchart} onLogin={() => navigate('account')} onBack={() => navigate('problems')} onNext={() => { const ix = problems.findIndex((p) => p.id === selectedProblem.id); navigate('problem', problems[(ix + 1) % problems.length]?.id ?? 'BAS-001'); }}/></PageTransition>}
             {route.page === 'submissions' && <PageTransition keyName="submissions"><SubmissionsPage user={user} submissions={globalSubmissions} onLogin={() => navigate('account')} onProblem={(id) => navigate('problem', id)}/></PageTransition>}
             {route.page === 'leaderboard' && <PageTransition keyName="leaderboard"><LeaderboardPage entries={leaderboard} user={user}/></PageTransition>}
-            {route.page === 'account' && <PageTransition keyName="account"><AccountPage user={user} apiOnline={apiOnline} onAuth={onAuth} onLogout={onLogout}/></PageTransition>}
-            {route.page === 'settings' && <PageTransition keyName="settings"><SettingsPage theme={theme} language={language} zoom={zoom} setTheme={setTheme} setLanguage={setLanguage} setZoom={setZoom}/></PageTransition>}
+            {route.page === 'account' && <PageTransition keyName="account"><AccountPage user={user} onSettings={() => navigate('settings')} onImported={() => setAccountRefresh((value) => value + 1)}/></PageTransition>}
+            {route.page === 'settings' && <PageTransition keyName="settings"><SettingsPage user={user} onSaveProfile={saveStudentProfile} theme={theme} language={language} zoom={zoom} telegramNotifications={telegramNotifications} setTelegramNotifications={setTelegramNotifications} setTheme={setTheme} setLanguage={setLanguage} setZoom={setZoom}/></PageTransition>}
           </AnimatePresence>
         </div>
         <footer className="platform-footer"><span>© {new Date().getFullYear()} Mirae Flow</span><span>Flowgorithm · Algorithmic thinking</span><a href="https://www.flowgorithm.org/documentation/" target="_blank" rel="noreferrer">Flowgorithm documentation <ExternalLink size={12}/></a></footer>
@@ -374,7 +393,7 @@ function DashboardPage({ user, solved, attempts, streak, topics, problems, submi
     </div>
     <div className="dashboard-bottom-grid">
       <Panel><div className="panel-heading"><div><span className="eyebrow-small">CURRICULUM</span><h3>Active topics</h3></div><button className="text-link" onClick={onRoadmap}>View all <ArrowRight size={14}/></button></div><div className="active-topic-list">{topics.filter((topic) => topic.problemCount > 0).slice(0, 4).map((topic) => <div className="active-topic-row" key={topic.id}><span className="topic-num">{topic.id}</span><span className="active-topic-copy"><strong>{topic.titleEn}</strong><small>{topic.subtitleEn}</small></span><span className="active-topic-count">{topic.problemCount} problems</span><ChevronRight size={15}/></div>)}</div></Panel>
-      <Panel><div className="panel-heading"><div><span className="eyebrow-small">RECENT ACTIVITY</span><h3>Latest submissions</h3></div><button className="text-link" onClick={onProblems}>Practice <ArrowRight size={14}/></button></div>{submissions.length ? <div className="recent-submissions">{submissions.slice(0, 4).map((item) => <div className="recent-submission" key={item.id}><span className={`verdict-icon ${verdictTone(item.verdict)}`}>{item.verdict === 'Accepted' ? <Check size={14}/> : <X size={14}/>}</span><span><strong>{item.problemId}</strong><small>{new Date(item.createdAt).toLocaleString()}</small></span><b className={verdictTone(item.verdict)}>{item.verdict}</b></div>)}</div> : <div className="empty-inline"><Clock3 size={18}/><span>Your first online submission will appear here.</span></div>}</Panel>
+      <Panel><div className="panel-heading"><div><span className="eyebrow-small">RECENT ACTIVITY</span><h3>Latest submissions</h3></div><button className="text-link" onClick={onProblems}>Practice <ArrowRight size={14}/></button></div>{submissions.length ? <div className="recent-submissions">{submissions.slice(0, 4).map((item) => <div className="recent-submission" key={item.id}><span className={`verdict-icon ${verdictTone(item.verdict)}`}>{item.verdict === 'Accepted' ? <Check size={14}/> : <X size={14}/>}</span><span><strong>{item.problemId}</strong><small>{new Date(item.createdAt).toLocaleString()}</small></span><b className={verdictTone(item.verdict)}>{item.verdict}</b></div>)}</div> : <div className="empty-inline"><Clock3 size={18}/><span>Your first submission will appear here.</span></div>}</Panel>
     </div>
   </>;
 }
@@ -537,7 +556,7 @@ function ProblemWorkspace({ problem, user, apiOnline, onSubmit, onLogin, onBack,
   const sourceLines = source.split('\n').slice(0, 12).join('\n');
   return <>
     <div className="workspace-breadcrumb"><button onClick={onBack}><ArrowLeft size={15}/> Problemset</button><ChevronRight size={13}/><span>{problem.topicTitleEn}</span><ChevronRight size={13}/><strong>{problem.id}</strong><button className="next-problem" onClick={onNext}>Next problem <ArrowRight size={14}/></button></div>
-    <div className="workspace-heading"><div><div className="problem-number-line"><span>{problem.id}</span><span>·</span><span>{problem.topicTitleEn}</span><span>·</span><span>Problem {problem.topicSequenceNo}</span></div><h1>{problem.titleUz}</h1><div className="workspace-badges"><span className={`difficulty-pill ${problem.difficulty}`}>{difficultyLabel(problem.difficulty)}</span><span className="tag-pill">{problem.set}</span><span className="tag-pill"><Zap size={12}/>{problem.xp} XP</span><span className="tag-pill source-tag"><BookOpen size={12}/> Book source #{problem.sourceProblemNo}</span></div></div><div className="workspace-judge-state">{problem.judgeReady ? <span className="judge-live"><i/> Online judge enabled</span> : <span className="judge-pending"><Clock3 size={13}/> Checker in preparation</span>}</div></div>
+    <div className="workspace-heading"><div><div className="problem-number-line"><span>{problem.id}</span><span>·</span><span>{problem.topicTitleEn}</span><span>·</span><span>Problem {problem.topicSequenceNo}</span></div><h1>{problem.titleUz}</h1><div className="workspace-badges"><span className={`difficulty-pill ${problem.difficulty}`}>{difficultyLabel(problem.difficulty)}</span><span className="tag-pill">{problem.set}</span><span className="tag-pill"><Zap size={12}/>{problem.xp} XP</span><span className="tag-pill source-tag"><BookOpen size={12}/> Book source #{problem.sourceProblemNo}</span></div></div><div className="workspace-judge-state">{problem.judgeReady ? <span className="judge-live"><i/> Local judge ready</span> : <span className="judge-pending"><Clock3 size={13}/> Checker in preparation</span>}</div></div>
     <div className="workspace-grid">
       <section className="statement-column panel">
         <div className="workspace-tabs"><button className={activeTab === 'description' ? 'active' : ''} onClick={() => setActiveTab('description')}>Description</button><button className={activeTab === 'hints' ? 'active' : ''} onClick={() => setActiveTab('hints')}>Guidance</button><button className={activeTab === 'submissions' ? 'active' : ''} onClick={() => setActiveTab('submissions')}>Result</button></div>
@@ -552,11 +571,11 @@ function ProblemWorkspace({ problem, user, apiOnline, onSubmit, onLogin, onBack,
           <button className={`upload-dropzone ${fileName ? 'has-file' : ''} ${dragActive ? 'drag-active' : ''}`} onClick={() => inputRef.current?.click()} onDragOver={(event) => { event.preventDefault(); setDragActive(true); }} onDragLeave={() => setDragActive(false)} onDrop={(event) => { event.preventDefault(); setDragActive(false); const file = event.dataTransfer.files[0]; if (file) void loadFile(file); }}><span className="upload-symbol">{fileName ? <FileCode2 size={22}/> : <UploadCloud size={23}/>}</span><strong>{fileName || 'Choose a .fprg file'}</strong><small>{fileName ? 'File loaded and ready to submit' : 'Drop your file here or browse · Max 750 KB'}</small><span className="browse-file">Browse files</span></button>
           {fileError && <p className="field-error"><CircleAlert size={14}/>{fileError}</p>}
           {source && <div className="file-preview"><div><FileCode2 size={14}/><span>FPRG preview</span><small>{source.length.toLocaleString()} chars</small></div><pre>{sourceLines}</pre></div>}
-          {!problem.judgeReady && <div className="judge-disabled-note"><LockKeyhole size={15}/><span><strong>Online checker not published yet</strong>The statement is available, but this problem's test contract has not been prepared. No fake verdict will be returned.</span></div>}
-          {!user && <div className="sign-in-note"><UserRound size={15}/><span>Sign in to submit and save results to your account.</span><button onClick={onLogin}>Sign in</button></div>}
+          {!problem.judgeReady && <div className="judge-disabled-note"><LockKeyhole size={15}/><span><strong>Local checker not published yet</strong>The statement is available, but this problem's test contract has not been prepared. No fake verdict will be returned.</span></div>}
+          {!user && <div className="sign-in-note"><UserRound size={15}/><span>Complete your student profile to label your local submissions.</span><button onClick={onLogin}>Open profile</button></div>}
           {submitError && <p className="field-error"><CircleX size={14}/>{submitError}</p>}
           <button className="button-primary submit-button" onClick={() => void submit()} disabled={!fileName || !problem.judgeReady || submitState === 'loading' || !apiOnline || !user}>{submitState === 'loading' ? <><span className="spinner-small"/> Judging…</> : <><UploadCloud size={16}/> Submit solution</>}</button>
-          <div className="submit-meta-row"><span><ShieldCheck size={13}/> Server-side evaluation</span><span><Clock3 size={13}/> bounded execution</span></div>
+          <div className="submit-meta-row"><span><ShieldCheck size={13}/> Local offline evaluation</span><span><Clock3 size={13}/> bounded execution</span></div>
           {result && <SubmissionResult submission={result}/>}
         </section>
         <section className="panel submit-help"><span className="help-icon"><CircleHelp size={16}/></span><div><strong>Need help with Flowgorithm?</strong><p>Read the official shape documentation and make sure your file is saved in .fprg format.</p><a href="https://www.flowgorithm.org/documentation/" target="_blank" rel="noreferrer">Open documentation <ExternalLink size={12}/></a></div></section>
@@ -572,47 +591,197 @@ function SubmissionResult({ submission }: { submission: ApiSubmission }) {
 
 function SubmissionsPage({ user, submissions, onLogin, onProblem }: { user: ApiUser | null; submissions: ApiSubmission[]; onLogin: () => void; onProblem: (id: string) => void }) {
   return <>
-    <SectionHeader eyebrow="YOUR CODE HISTORY" title="Submissions" subtitle="Every online attempt, verdict and runtime in one place." action={user ? <span className="count-chip"><Activity size={15}/>{submissions.length} recent submissions</span> : undefined}/>
-    {!user ? <Panel className="auth-required"><LockKeyhole size={26}/><h3>Sign in to view submissions</h3><p>Your account keeps submission history across devices.</p><button className="button-primary" onClick={onLogin}><LogIn size={15}/> Sign in</button></Panel> : submissions.length === 0 ? <Panel className="empty-results"><FileCode2 size={28}/><strong>No submissions yet</strong><p>Open a judge-enabled problem and submit your first .fprg solution.</p></Panel> : <Panel className="table-panel"><div className="submission-table-head"><span>VERDICT</span><span>PROBLEM</span><span>TIME</span><span>RUNTIME</span><span>SUBMISSION ID</span></div>{submissions.map((item) => <button className="submission-table-row" key={item.id} onClick={() => onProblem(item.problemId)}><span className={`verdict-label ${verdictTone(item.verdict)}`}>{item.verdict === 'Accepted' ? <CheckCircle2 size={14}/> : <CircleX size={14}/>} {item.verdict}</span><strong>{item.problemId}</strong><span>{new Date(item.createdAt).toLocaleString()}</span><span>{item.runtimeMs} ms</span><code>{item.id.slice(0, 10)}</code></button>)}</Panel>}
+    <SectionHeader eyebrow="YOUR CODE HISTORY" title="Submissions" subtitle="Every attempt, verdict and runtime saved on this device." action={user ? <span className="count-chip"><Activity size={15}/>{submissions.length} recent submissions</span> : undefined}/>
+    {!user ? <Panel className="auth-required"><LockKeyhole size={26}/><h3>Student profile unavailable</h3><p>Local submission history is stored on this device.</p><button className="button-primary" onClick={onLogin}><UserRound size={15}/> Open profile</button></Panel> : submissions.length === 0 ? <Panel className="empty-results"><FileCode2 size={28}/><strong>No submissions yet</strong><p>Open a judge-enabled problem and submit your first .fprg solution.</p></Panel> : <Panel className="table-panel"><div className="submission-table-head"><span>VERDICT</span><span>PROBLEM</span><span>TIME</span><span>RUNTIME</span><span>SUBMISSION ID</span></div>{submissions.map((item) => <button className="submission-table-row" key={item.id} onClick={() => onProblem(item.problemId)}><span className={`verdict-label ${verdictTone(item.verdict)}`}>{item.verdict === 'Accepted' ? <CheckCircle2 size={14}/> : <CircleX size={14}/>} {item.verdict}</span><strong>{item.problemId}</strong><span>{new Date(item.createdAt).toLocaleString()}</span><span>{item.runtimeMs} ms</span><code>{item.id.slice(0, 10)}</code></button>)}</Panel>}
   </>;
 }
 
 function LeaderboardPage({ entries, user }: { entries: ApiLeaderboardEntry[]; user: ApiUser | null }) {
   return <>
-    <SectionHeader eyebrow="MIRAE COMMUNITY" title="Leaderboard" subtitle="Students ranked by unique accepted problems." action={<span className="count-chip"><Trophy size={15}/> All-time ranking</span>}/>
+    <SectionHeader eyebrow="LOCAL PROGRESS" title="Leaderboard" subtitle="A local progress snapshot. A shared ranking needs a server account system." action={<span className="count-chip"><Trophy size={15}/> On this device</span>}/>
     <Panel className="leaderboard-hero"><div className="leaderboard-cup"><Trophy size={34}/></div><div><span className="eyebrow-small">THE MOST IMPORTANT SCORE</span><h2>Consistency beats speed.</h2><p>Earn your place by solving problems and improving your algorithms.</p></div></Panel>
-    {entries.length ? <Panel className="table-panel"><div className="leaderboard-table-head"><span>RANK</span><span>STUDENT</span><span>SOLVED</span><span>STATUS</span></div>{entries.map((entry) => <div className={`leaderboard-row ${entry.userId === user?.id ? 'is-you' : ''}`} key={entry.userId}><strong className={`rank-number rank-${entry.rank}`}>{entry.rank <= 3 ? <Trophy size={15}/> : `#${entry.rank}`}</strong><span className="leaderboard-user"><i>{initials(entry.displayName)}</i><b>{entry.displayName}{entry.userId === user?.id && <small>YOU</small>}</b></span><strong className="solved-count">{entry.solved}</strong><span className="leader-status">Active</span></div>)}</Panel> : <Panel className="empty-results"><Users size={28}/><strong>No ranked students yet</strong><p>The leaderboard will fill as students submit accepted solutions.</p></Panel>}
+    {entries.length ? <Panel className="table-panel"><div className="leaderboard-table-head"><span>RANK</span><span>STUDENT</span><span>SOLVED</span><span>STATUS</span></div>{entries.map((entry) => <div className={`leaderboard-row ${entry.userId === user?.id ? 'is-you' : ''}`} key={entry.userId}><strong className={`rank-number rank-${entry.rank}`}>{entry.rank <= 3 ? <Trophy size={15}/> : `#${entry.rank}`}</strong><span className="leaderboard-user"><i>{initials(entry.displayName)}</i><b>{entry.displayName}{entry.userId === user?.id && <small>YOU</small>}</b></span><strong className="solved-count">{entry.solved}</strong><span className="leader-status">Active</span></div>)}</Panel> : <Panel className="empty-results"><Users size={28}/><strong>No ranked students yet</strong><p>Only this device’s local learner data is available in this edition.</p></Panel>}
   </>;
 }
 
-function AccountPage({ user, onAuth }: { user: ApiUser | null; apiOnline: boolean; onAuth: (user: ApiUser) => void; onLogout: () => void }) {
-  const [name, setName] = useState(user?.displayName ?? '');
+function AccountPage({ user, onSettings, onImported }: { user: ApiUser | null; onSettings: () => void; onImported: () => void }) {
   const [note, setNote] = useState('');
-  const save = async () => { try { const r = await api.register(name, user?.email ?? '', ''); onAuth(r.user); setNote('Saqlandi ✓'); } catch (err) { setNote(err instanceof Error ? err.message : 'Xato'); } };
-  const download = () => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([api.exportProgress()], { type: 'application/json' })); a.download = 'mirae-flow-progress.json'; a.click(); URL.revokeObjectURL(a.href); };
-  const upload = async (file?: File) => { if (!file) return; try { api.importProgress(await file.text()); setNote('Import qilindi ✓ — sahifani yangilang (F5)'); } catch { setNote('Fayl noto‘g‘ri'); } };
-  const reset = () => { if (window.confirm('Barcha natijalar o‘chiriladi. Davom etasizmi?')) { api.resetProgress(); setNote('Tozalandi — sahifani yangilang (F5)'); } };
+  const [busy, setBusy] = useState(false);
+  const download = () => {
+    const blob = new Blob([api.exportProgress()], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const anchor = document.createElement('a');
+    anchor.href = url; anchor.download = 'mirae-flow-progress.json'; anchor.click();
+    window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+  };
+  const upload = async (file?: File) => {
+    if (!file) return;
+    setBusy(true);
+    try { api.importProgress(await file.text()); onImported(); setNote('Progress imported successfully.'); }
+    catch (error) { setNote(error instanceof Error ? error.message : 'Could not import this file.'); }
+    finally { setBusy(false); }
+  };
+  const reset = () => {
+    if (!window.confirm('Delete all locally saved submissions? Your student profile will remain.')) return;
+    try { api.resetProgress(); onImported(); setNote('Local submission history cleared.'); }
+    catch (error) { setNote(error instanceof Error ? error.message : 'Could not clear local submissions.'); }
+  };
   return <>
-    <SectionHeader eyebrow="MIRAE PROFIL" title="Profil" subtitle="Ma’lumotlar faqat shu qurilmada saqlanadi — internet shart emas."/>
-    <Panel className="profile-panel"><div className="profile-avatar-large">{initials(user?.displayName ?? 'T')}</div><div className="profile-main"><span className="eyebrow-small">LOCAL PROFILE</span><h2>{user?.displayName ?? 'Talaba'}</h2>
-      <label className="profile-field"><span>Ism / Name</span><input value={name} onChange={(event) => setName(event.target.value)} maxLength={40}/></label>
-      <div className="profile-actions"><button className="button-primary" onClick={() => void save()}>Saqlash</button><button className="button-secondary" onClick={download}>Natijalarni yuklab olish</button><label className="button-secondary file-pick">Import<input type="file" accept="application/json" hidden onChange={(event) => void upload(event.target.files?.[0])}/></label><button className="button-secondary" onClick={reset}>Tozalash</button></div>
-      {note && <p className="profile-note" role="status">{note}</p>}</div></Panel>
-  </>;
-}
-
-function SettingsPage({ theme, language, zoom, setTheme, setLanguage, setZoom }: {
-  theme: ThemeMode; language: 'uz' | 'en'; zoom: number; setTheme: (value: ThemeMode) => void;
-  setLanguage: (value: 'uz' | 'en') => void; setZoom: (value: number) => void;
-}) {
-  return <>
-    <SectionHeader eyebrow="PREFERENCES" title="Settings" subtitle="Tune the learning environment to your needs."/>
-    <div className="settings-layout"><Panel><div className="setting-heading"><span className="setting-icon violet"><Sun size={18}/></span><div><h3>Appearance</h3><p>Use light, dark or follow your operating system.</p></div></div><div className="settings-options">{(['light','dark','system'] as ThemeMode[]).map((value) => <button key={value} className={theme === value ? 'selected' : ''} onClick={() => setTheme(value)}><span className={`theme-swatch ${value}`}>{value === 'light' ? <Sun size={16}/> : value === 'dark' ? <Moon size={16}/> : <><Sun size={13}/><Moon size={13}/></>}</span><b>{value[0].toUpperCase() + value.slice(1)}</b>{theme === value && <CheckCircle2 size={15}/>}</button>)}</div></Panel>
-      <Panel><div className="setting-heading"><span className="setting-icon orange"><Languages size={18}/></span><div><h3>Language</h3><p>Choose interface language. Original exercises remain in Uzbek.</p></div></div><div className="settings-options">{(['uz','en'] as const).map((value) => <button key={value} className={language === value ? 'selected' : ''} onClick={() => setLanguage(value)}><span className="theme-swatch language-swatch">{value.toUpperCase()}</span><b>{value === 'uz' ? 'O‘zbekcha' : 'English'}</b>{language === value && <CheckCircle2 size={15}/>}</button>)}</div></Panel>
-      <Panel className="settings-wide"><div className="setting-heading"><span className="setting-icon blue"><ZoomIn size={18}/></span><div><h3>Interface zoom</h3><p>Scale the interface from 85% to 125%.</p></div><strong className="setting-value">{zoom}%</strong></div><div className="zoom-range-row"><button className="icon-btn" onClick={() => setZoom(zoom - 5)}><ZoomOut size={16}/></button><input type="range" min="85" max="125" step="5" value={zoom} onChange={(event) => setZoom(Number(event.target.value))}/><button className="icon-btn" onClick={() => setZoom(zoom + 5)}><ZoomIn size={16}/></button></div></Panel>
-      <Panel className="settings-wide"><div className="setting-heading"><span className="setting-icon green"><ShieldCheck size={18}/></span><div><h3>Web platform & judging</h3><p>Mirae Flow uses a server-side judge for online submissions. Browser-side checks are not treated as official verdicts.</p></div></div><div className="platform-info-grid"><div><strong>444</strong><span>book exercises imported</span></div><div><strong>65</strong><span>Topic 1 judge-enabled</span></div><div><strong>8 / 12</strong><span>topics have source questions</span></div></div></Panel>
+    <SectionHeader eyebrow="STUDENT ACCOUNT" title="Student profile" subtitle="Review your learner details and manage the learning data saved on this device." action={<button className="button-primary" onClick={onSettings}><Settings2 size={15}/> Edit profile</button>}/>
+    <div className="account-page-grid">
+      <Panel className="account-identity-card">
+        <div className="profile-avatar-large">{initials(user?.displayName ?? 'Student')}</div>
+        <div className="account-identity-copy"><span className="eyebrow-small">LOCAL STUDENT PROFILE</span><h2>{user?.displayName || 'Student profile not completed'}</h2><p>{user?.groupName || 'Group not added'}{user?.school ? ` · ${user.school}` : ''}</p><span className="local-profile-chip"><CircleDot size={11}/> Saved on this device</span></div>
+        <button className="button-secondary" onClick={onSettings}>Manage student details <ArrowRight size={14}/></button>
+      </Panel>
+      <Panel className="account-data-card">
+        <div className="setting-heading"><span className="setting-icon blue"><ShieldCheck size={18}/></span><div><h3>Data & privacy</h3><p>This 1.0.1 edition stores profile and submissions in this browser/app profile. It does not sync accounts across devices.</p></div></div>
+        <div className="account-data-actions"><button className="button-primary" onClick={download}><Download size={15}/> Export progress</button><label className={`button-secondary file-pick ${busy ? 'is-disabled' : ''}`}>{busy ? 'Importing…' : 'Import progress'}<UploadCloud size={15}/><input type="file" accept="application/json,.json" hidden disabled={busy} onChange={(event) => { void upload(event.target.files?.[0]); event.currentTarget.value = ''; }}/></label><button className="button-danger-soft" onClick={reset}><Trash2 size={15}/> Clear submissions</button></div>
+        {note && <p className="settings-feedback" role="status">{note}</p>}
+      </Panel>
     </div>
   </>;
+}
+
+function SettingsPage({ user, onSaveProfile, theme, language, zoom, telegramNotifications, setTelegramNotifications, setTheme, setLanguage, setZoom }: {
+  user: ApiUser | null;
+  onSaveProfile: (value: Partial<ApiStudentProfile>) => Promise<ApiUser>;
+  theme: ThemeMode; language: 'uz' | 'en'; zoom: number; telegramNotifications: boolean;
+  setTelegramNotifications: (value: boolean) => void;
+  setTheme: (value: ThemeMode) => void; setLanguage: (value: 'uz' | 'en') => void; setZoom: (value: number) => void;
+}) {
+  const bridge = nativeBridge();
+  const isUz = language === 'uz';
+  const [profile, setProfile] = useState<ApiStudentProfile>({ firstName: '', lastName: '', groupName: '', school: '', phone: '', email: '' });
+  const [profileBusy, setProfileBusy] = useState(false);
+  const [profileNote, setProfileNote] = useState('');
+  const [telegramStatus, setTelegramStatus] = useState<{ configured: boolean; chatId: string; secureStorageAvailable: boolean } | null>(null);
+  const [botToken, setBotToken] = useState('');
+  const [botChatId, setBotChatId] = useState('');
+  const [telegramBusy, setTelegramBusy] = useState(false);
+  const [telegramNote, setTelegramNote] = useState('');
+  const [telegramError, setTelegramError] = useState(false);
+
+  useEffect(() => {
+    setProfile({ firstName: user?.firstName ?? '', lastName: user?.lastName ?? '', groupName: user?.groupName ?? '', school: user?.school ?? '', phone: user?.phone ?? '', email: user?.email ?? '' });
+  }, [user?.id, user?.firstName, user?.lastName, user?.groupName, user?.school, user?.phone, user?.email]);
+
+  useEffect(() => {
+    if (!bridge) return;
+    let active = true;
+    bridge.telegram.status().then((status) => { if (active) { setTelegramStatus(status); setBotChatId(status.chatId); } }).catch(() => { if (active) setTelegramNote(isUz ? 'Telegram holatini tekshirib bo‘lmadi.' : 'Could not read Telegram configuration.'); });
+    return () => { active = false; };
+  }, [bridge, isUz]);
+
+  const patchProfile = (key: keyof ApiStudentProfile, value: string) => setProfile((current) => ({ ...current, [key]: value }));
+  const saveProfile = async () => {
+    setProfileBusy(true); setProfileNote('');
+    try {
+      await onSaveProfile(profile);
+      setProfileNote(isUz ? 'O‘quvchi ma’lumotlari saqlandi.' : 'Student details saved on this device.');
+    } catch (error) {
+      setProfileNote(error instanceof Error ? error.message : 'Could not save profile.');
+    } finally { setProfileBusy(false); }
+  };
+  const saveTelegram = async () => {
+    if (!bridge) { setTelegramError(true); setTelegramNote(isUz ? 'Brauzer/PWA versiyasida bot tokenini kiritmang. Web xabarnomalari uchun server proxy kerak.' : 'Do not enter a bot token in the browser/PWA. Web notifications require a server-side proxy.'); return; }
+    setTelegramBusy(true); setTelegramNote(''); setTelegramError(false);
+    try {
+      const result = await bridge.telegram.save(botToken.trim(), botChatId.trim());
+      if (!result.ok) throw new Error(result.error || 'save_failed');
+      setBotToken('');
+      const status = await bridge.telegram.status(); setTelegramStatus(status); setBotChatId(status.chatId);
+      setTelegramNote(isUz ? 'Telegram sozlamalari xavfsiz saqlandi.' : 'Telegram settings saved securely.');
+    } catch (error) { setTelegramError(true); setTelegramNote(telegramErrorText(error, isUz)); }
+    finally { setTelegramBusy(false); }
+  };
+  const testTelegram = async () => {
+    if (!bridge) { setTelegramError(true); setTelegramNote(isUz ? 'Telegram testi faqat desktop ilovasida mavjud.' : 'Telegram testing is available in the desktop app only.'); return; }
+    setTelegramBusy(true); setTelegramNote(''); setTelegramError(false);
+    try {
+      const result = await bridge.telegram.test();
+      if (!result.ok) throw new Error(result.error || 'send_failed');
+      setTelegramNote(isUz ? 'Test xabari Telegramga yuborildi.' : 'Test message sent to Telegram.');
+    } catch (error) { setTelegramError(true); setTelegramNote(telegramErrorText(error, isUz)); }
+    finally { setTelegramBusy(false); }
+  };
+  const clearTelegram = async () => {
+    if (!bridge) return;
+    if (!window.confirm(isUz ? 'Telegram bot sozlamasini o‘chirasizmi?' : 'Remove the saved Telegram bot configuration?')) return;
+    setTelegramBusy(true);
+    try {
+      const result = await bridge.telegram.clear();
+      if (!result.ok) throw new Error(result.error || 'clear_failed');
+      setTelegramStatus(await bridge.telegram.status()); setBotToken(''); setBotChatId('');
+      setTelegramNote(isUz ? 'Telegram bot uzildi.' : 'Telegram bot disconnected.'); setTelegramError(false);
+    } catch (error) { setTelegramError(true); setTelegramNote(telegramErrorText(error, isUz)); }
+    finally { setTelegramBusy(false); }
+  };
+
+  const profileFields: { key: keyof ApiStudentProfile; label: string; hint: string; type?: 'email' | 'tel' }[] = [
+    { key: 'firstName', label: isUz ? 'Ism *' : 'First name *', hint: isUz ? 'Masalan: Ali' : 'e.g. Ali' },
+    { key: 'lastName', label: isUz ? 'Familiya' : 'Last name', hint: isUz ? 'Familiyangiz' : 'Your surname' },
+    { key: 'groupName', label: isUz ? 'Guruh / sinf' : 'Group / class', hint: isUz ? 'Masalan: 9-A yoki MF-01' : 'e.g. 9-A or MF-01' },
+    { key: 'school', label: isUz ? 'Maktab / akademiya' : 'School / academy', hint: isUz ? 'Ta’lim muassasasi nomi' : 'School or academy name' },
+    { key: 'phone', label: isUz ? 'Telefon' : 'Phone', hint: '+998…', type: 'tel' },
+    { key: 'email', label: 'Email', hint: 'name@example.com', type: 'email' },
+  ];
+
+  return <>
+    <SectionHeader eyebrow={isUz ? 'SHAXSIY SOZLAMALAR' : 'PERSONAL PREFERENCES'} title={isUz ? 'Sozlamalar' : 'Settings'} subtitle={isUz ? 'Profil, ko‘rinish, bildirishnomalar va mahalliy ma’lumotlarni boshqaring.' : 'Manage your student profile, appearance, notifications and local learning data.'}/>
+    <div className="settings-layout settings-layout-refined">
+      <Panel className="settings-wide settings-profile-panel">
+        <div className="settings-section-head"><span className="setting-icon violet"><UserRound size={18}/></span><div><h3>{isUz ? 'O‘quvchi ma’lumotlari' : 'Student profile'}</h3><p>{isUz ? 'Ism, familiya, guruh va aloqa ma’lumotlari. Telegram xabarida ism va guruh ko‘rsatiladi.' : 'Name, class and contact details. Telegram completion messages use the student name and group.'}</p></div><span className="settings-completion">{[profile.firstName, profile.lastName, profile.groupName, profile.school].filter((v) => v.trim()).length}/4</span></div>
+        <div className="settings-profile-grid">{profileFields.map((field) => <label className="settings-field" key={field.key}><span>{field.label}</span><input type={field.type || 'text'} value={profile[field.key]} onChange={(event) => patchProfile(field.key, event.target.value)} placeholder={field.hint} maxLength={field.key === 'school' ? 100 : field.key === 'phone' ? 30 : field.key === 'email' ? 120 : 50} autoComplete={field.key === 'firstName' ? 'given-name' : field.key === 'lastName' ? 'family-name' : field.key === 'email' ? 'email' : field.key === 'phone' ? 'tel' : 'off'}/></label>)}</div>
+        <div className="settings-save-row"><span className="settings-subtext">{isUz ? 'Ma’lumotlar ushbu qurilmada saqlanadi.' : 'Profile is saved locally on this device.'}</span><button className="button-primary" onClick={() => void saveProfile()} disabled={profileBusy || !profile.firstName.trim()}>{profileBusy ? <span className="spinner-small"/> : <Save size={15}/>} {isUz ? 'Profilni saqlash' : 'Save profile'}</button></div>
+        {profileNote && <p className="settings-feedback" role="status">{profileNote}</p>}
+      </Panel>
+
+      <Panel>
+        <div className="setting-heading"><span className="setting-icon violet"><Sun size={18}/></span><div><h3>{isUz ? 'Ko‘rinish' : 'Appearance'}</h3><p>{isUz ? 'Yorug‘, qorong‘i yoki tizim rejimi.' : 'Choose light, dark or follow your operating system.'}</p></div></div>
+        <div className="settings-options">{(['light','dark','system'] as ThemeMode[]).map((value) => <button key={value} className={theme === value ? 'selected' : ''} onClick={() => setTheme(value)}><span className={`theme-swatch ${value}`}>{value === 'light' ? <Sun size={16}/> : value === 'dark' ? <Moon size={16}/> : <><Sun size={13}/><Moon size={13}/></>}</span><b>{isUz ? (value === 'light' ? 'Yorug‘' : value === 'dark' ? 'Qorong‘i' : 'Tizim') : value[0].toUpperCase() + value.slice(1)}</b>{theme === value && <CheckCircle2 size={15}/>}</button>)}</div>
+      </Panel>
+      <Panel>
+        <div className="setting-heading"><span className="setting-icon orange"><Languages size={18}/></span><div><h3>{isUz ? 'Til' : 'Language'}</h3><p>{isUz ? 'Interfeys tilini tanlang. Kitob masalalari asl o‘zbekcha qoladi.' : 'Choose interface language. Original book statements remain in Uzbek.'}</p></div></div>
+        <div className="settings-options">{(['uz','en'] as const).map((value) => <button key={value} className={language === value ? 'selected' : ''} onClick={() => setLanguage(value)}><span className="theme-swatch language-swatch">{value.toUpperCase()}</span><b>{value === 'uz' ? 'O‘zbekcha' : 'English'}</b>{language === value && <CheckCircle2 size={15}/>}</button>)}</div>
+      </Panel>
+      <Panel className="settings-wide">
+        <div className="setting-heading"><span className="setting-icon blue"><ZoomIn size={18}/></span><div><h3>{isUz ? 'Interfeys masshtabi' : 'Interface zoom'}</h3><p>{isUz ? 'Matn va panellar hajmini qulaylashtiring.' : 'Adjust the size of text and panels.'}</p></div><strong className="setting-value">{zoom}%</strong></div>
+        <div className="zoom-range-row"><button className="icon-btn" onClick={() => setZoom(zoom - 5)} disabled={zoom <= 85} aria-label="Zoom out"><ZoomOut size={16}/></button><input aria-label="Interface zoom" type="range" min="85" max="125" step="5" value={zoom} onChange={(event) => setZoom(Number(event.target.value))}/><button className="icon-btn" onClick={() => setZoom(zoom + 5)} disabled={zoom >= 125} aria-label="Zoom in"><ZoomIn size={16}/></button><button className="button-secondary" onClick={() => setZoom(100)}>{isUz ? 'Tiklash' : 'Reset'}</button></div>
+      </Panel>
+
+      <Panel className="settings-wide settings-telegram-panel">
+        <div className="settings-section-head"><span className="setting-icon green"><Send size={18}/></span><div><h3>{isUz ? 'Telegram bildirishnomalari' : 'Telegram notifications'}</h3><p>{isUz ? 'O‘quvchi masalani birinchi marta muvaffaqiyatli yechganda tanlangan chatga xabar yuboriladi.' : 'Send a message to the configured chat when a student first solves a problem successfully.'}</p></div><span className={`telegram-state ${telegramStatus?.configured ? 'connected' : ''}`}><i/>{telegramStatus?.configured ? (isUz ? 'Ulangan' : 'Connected') : (isUz ? 'Ulanmagan' : 'Not connected')}</span></div>
+        <div className="settings-inline-toggle"><span><Bell size={16}/><b>{isUz ? 'Yechilgan masala haqida xabar' : 'Notify when a problem is solved'}</b></span><button type="button" role="switch" aria-checked={telegramNotifications} className={`switch-control ${telegramNotifications ? 'on' : ''}`} onClick={() => setTelegramNotifications(!telegramNotifications)}><i/></button></div>
+        {!bridge ? <div className="settings-status-note warning"><CircleAlert size={16}/><span>{isUz ? 'Brauzer/PWA rejimida bot tokenini kiritmang. Web versiyada Telegram uchun maxfiy tokenni serverda saqlaydigan backend kerak.' : 'Do not enter a bot token in the browser/PWA. The web version needs a backend proxy to keep the bot token private.'}</span></div> : <>
+          {telegramStatus && !telegramStatus.secureStorageAvailable && <div className="settings-status-note warning"><CircleAlert size={16}/><span>{isUz ? 'Operatsion tizimning himoyalangan kalit xotirasi mavjud emas. Telegram tokeni saqlash o‘chirildi.' : 'OS secure credential storage is unavailable. Saving a Telegram token is disabled on this device.'}</span></div>}
+          <div className="settings-telegram-grid"><label className="settings-field"><span>{isUz ? 'Bot API tokeni' : 'Bot API token'}</span><input type="password" value={botToken} onChange={(event) => setBotToken(event.target.value)} placeholder={telegramStatus?.configured ? (isUz ? 'Saqlangan · o‘zgartirish uchun yangi token kiriting' : 'Saved securely · enter a new token to replace') : '123456:ABC…'} autoComplete="new-password" spellCheck={false}/></label><label className="settings-field"><span>Telegram Chat ID</span><input value={botChatId} onChange={(event) => setBotChatId(event.target.value)} inputMode="numeric" placeholder="123456789" autoComplete="off"/></label></div>
+          <div className="settings-actions"><button className="button-primary" onClick={() => void saveTelegram()} disabled={telegramBusy || !botChatId.trim() || !telegramStatus?.secureStorageAvailable}>{telegramBusy ? <span className="spinner-small"/> : <Save size={15}/>} {isUz ? 'Saqlash' : 'Save securely'}</button><button className="button-secondary" onClick={() => void testTelegram()} disabled={telegramBusy || !telegramStatus?.configured}><Send size={15}/> {isUz ? 'Test xabari' : 'Send test'}</button>{telegramStatus?.configured && <button className="button-danger-soft" onClick={() => void clearTelegram()} disabled={telegramBusy}><Trash2 size={14}/>{isUz ? 'Uzish' : 'Disconnect'}</button>}</div>
+        </>}
+        {telegramNote && <p className={`settings-feedback ${telegramError ? 'is-error' : ''}`} role="status">{telegramNote}</p>}
+      </Panel>
+
+      <Panel className="settings-wide settings-judge-panel">
+        <div className="setting-heading"><span className="setting-icon green"><ShieldCheck size={18}/></span><div><h3>{isUz ? 'Tekshirish tizimi va maxfiylik' : 'Judge & privacy'}</h3><p>{isUz ? 'Ushbu 1.0.1 versiyada .fprg fayli va testlar qurilmaning o‘zida tekshiriladi. Bu offline mashq rejimi, serverdagi himoyalangan musobaqa hakamligi emas.' : 'In this 1.0.1 edition, .fprg files and tests run locally on this device. This is offline practice judging, not a protected server-side contest judge.'}</p></div></div>
+        <div className="platform-info-grid"><div><strong>444</strong><span>{isUz ? 'kitob masalalari' : 'book problems'}</span></div><div><strong>441</strong><span>{isUz ? 'avto-tekshiruvga tayyor' : 'checker-enabled'}</span></div><div><strong>12</strong><span>{isUz ? 'o‘quv mavzulari' : 'curriculum topics'}</span></div></div>
+        <div className="settings-status-note"><ShieldCheck size={16}/><span>{isUz ? 'Natijalar va profil ushbu qurilmaning foydalanuvchi profilida saqlanadi. Boshqa qurilmaga avtomatik sinxronlanmaydi.' : 'Profile and results are stored in this operating-system user profile. They are not automatically synchronized across devices.'}</span></div>
+      </Panel>
+    </div>
+  </>;
+}
+
+function telegramErrorText(error: unknown, isUz: boolean) {
+  const code = error instanceof Error ? error.message : 'unknown';
+  const messages: Record<string, [string, string]> = {
+    invalid_token: ['Bot token formati noto‘g‘ri.', 'The bot token format is invalid.'],
+    invalid_chat_id: ['Chat ID formati noto‘g‘ri.', 'The chat ID format is invalid.'],
+    secure_storage_unavailable: ['Operatsion tizim xavfsiz xotirasi mavjud emas.', 'Operating-system secure storage is unavailable.'],
+    secure_storage_failed: ['Tokenni xavfsiz saqlab bo‘lmadi.', 'Could not save the token securely.'],
+    not_configured: ['Telegram bot sozlanmagan.', 'Telegram bot is not configured.'],
+    send_failed: ['Telegram xabari yuborilmadi. Bot chatga yozish huquqiga ega ekanini tekshiring.', 'Telegram could not send the message. Check that the bot can message this chat.'],
+    clear_failed: ['Telegram sozlamalarini o‘chirib bo‘lmadi.', 'Could not remove Telegram settings.'],
+  };
+  return messages[code]?.[isUz ? 0 : 1] ?? (isUz ? 'Sozlamada xatolik yuz berdi.' : 'A settings error occurred.');
 }
 
 export default App;
